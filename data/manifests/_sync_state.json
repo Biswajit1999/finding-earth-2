@@ -1,0 +1,15 @@
+{
+  "last_sync_utc": "2026-08-24T19:59:44Z",
+  "datasets_ok": 1,
+  "datasets_failed": 0,
+  "total_source_records": 159801,
+  "outcomes": [
+    {
+      "dataset_id": "nasa_pscomppars",
+      "status": "ok",
+      "n_rows": 6354,
+      "elapsed_s": 12.45,
+      "error": ""
+    }
+  ]
+}

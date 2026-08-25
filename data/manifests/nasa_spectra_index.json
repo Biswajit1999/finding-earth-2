@@ -1,0 +1,33 @@
+{
+  "archive": "NASA Exoplanet Archive",
+  "archive_url": "https://exoplanetarchive.ipac.caltech.edu/",
+  "bytes_raw": 446922,
+  "citation": "This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.",
+  "columns": [
+    "pl_name",
+    "spec_type",
+    "authors",
+    "num_datapoints",
+    "instrument",
+    "facility",
+    "minwavelng",
+    "maxwavelng",
+    "mintranmid",
+    "maxtranmid",
+    "note",
+    "bibcode",
+    "spec_path"
+  ],
+  "dataset_id": "nasa_spectra_index",
+  "doi": "",
+  "earth2_version": "1.0.0",
+  "n_columns": 13,
+  "n_rows": 1826,
+  "notes": "Index of archived spectrum files. spec_type distinguishes transmission / emission / stellar. Carries file paths, wavelength coverage and bibcodes. [served from local cache]",
+  "query": "select * from spectra",
+  "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync",
+  "retrieved_utc": "2026-08-24T02:23:57Z",
+  "sha256": "ffb3a6f2b29d6b956d47f5e91ef95d1de1a28680b416eb36ea36309a13dd8284",
+  "source_table": "spectra",
+  "status": "ok"
+}
