@@ -1,0 +1,16 @@
+quantity,column,n_with_value,pct_with_value,uncertainty_applicable,n_with_uncertainty,pct_with_uncertainty
+Planet radius,pl_rade,6304,99.21,True,4395.0,69.17
+Planet mass,pl_bmasse,6323,99.51,True,3078.0,48.44
+Bulk density,pl_dens,6212,97.77,True,1470.0,23.14
+Orbital period,pl_orbper,6009,94.57,True,5515.0,86.8
+Semi-major axis,pl_orbsmax,5924,93.23,True,3946.0,62.1
+Orbital eccentricity,pl_orbeccen,5294,83.32,True,1920.0,30.22
+Incident flux,insol_used,5769,90.79,False,,
+Equilibrium temperature,teq_used,5831,91.77,False,,
+Stellar effective temperature,st_teff,6056,95.31,True,5744.0,90.4
+Stellar radius,st_rad,6032,94.93,True,5756.0,90.59
+Stellar mass,st_mass,6345,99.86,True,6069.0,95.51
+Stellar luminosity,st_lum,6038,95.03,True,3858.0,60.72
+Stellar metallicity,st_met,5711,89.88,True,5425.0,85.38
+Stellar age,st_age,4904,77.18,True,4648.0,73.15
+System distance,sy_dist,6327,99.58,True,6217.0,97.84

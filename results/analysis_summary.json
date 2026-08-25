@@ -1,0 +1,658 @@
+{
+  "generated_utc": "2026-08-24T21:35:12Z",
+  "earth2_version": "1.0.1",
+  "monte_carlo": {
+    "n_samples": 4000,
+    "seed": 20260824,
+    "n_planets": 6359,
+    "n_with_esi_posterior": 5711,
+    "median_esi_width": 0.02499047315880587,
+    "n_hz_conservative_prob_gt_0p5": 179,
+    "n_hz_conservative_prob_gt_0p9": 151,
+    "mean_uncertainty_coverage": 0.7034570425119254
+  },
+  "scale": {
+    "total_source_records": 164209,
+    "n_datasets_retrieved": 13,
+    "archives": [
+      "Gaia Archive (ESA)",
+      "NASA Exoplanet Archive"
+    ]
+  },
+  "population": {
+    "n_confirmed_planets": 6354,
+    "n_unique_host_systems": 4764,
+    "n_solar_system_controls": 5,
+    "n_multi_planet_systems": 1058,
+    "discovery_methods": {
+      "Transit": 4688,
+      "Radial Velocity": 1200,
+      "Microlensing": 283,
+      "Imaging": 98,
+      "Transit Timing Variations": 42,
+      "Eclipse Timing Variations": 17,
+      "Orbital Brightness Modulation": 9,
+      "Pulsar Timing": 8,
+      "Astrometry": 6,
+      "Pulsation Timing Variations": 2,
+      "Disk Kinematics": 1
+    },
+    "discovery_year_range": [
+      1992,
+      2026
+    ]
+  },
+  "measurement_coverage": {
+    "n_with_radius": 6304,
+    "n_with_any_mass_value": 6323,
+    "n_with_measured_mass": 2240,
+    "n_with_msini_lower_limit": 890,
+    "n_with_mass_inferred_from_radius": 2975,
+    "n_with_mass_upper_limit_only": 218,
+    "n_with_insolation": 5769,
+    "n_with_equilibrium_temperature": 5831,
+    "n_with_stellar_teff": 6056,
+    "n_with_distance": 6327,
+    "mass_class_breakdown": {
+      "inferred_mass_radius": 2975,
+      "measured": 2225,
+      "msini_lower_limit": 890,
+      "upper_limit": 218,
+      "missing": 31,
+      "msini_deprojected": 15
+    }
+  },
+  "observational_products": {
+    "n_with_rv_time_series": 565,
+    "n_with_photometric_time_series": 1064,
+    "n_with_stellar_spectra": 416,
+    "n_detected_by_transit": 4731,
+    "n_detected_by_radial_velocity": 2513
+  },
+  "gaia_crossmatch": {
+    "_note": "Exact source_id crossmatch against Gaia DR3, extracted from the NASA Exoplanet Archive's own gaia_dr3_id column -- no coordinate matching. A host with no gaia_dr3_id recorded by the archive has no row here; see earth2.data_sources.gaia and docs/DATA_SOURCES.md.",
+    "n_hosts_matched": 4408,
+    "n_ruwe_above_1p4": 412,
+    "n_non_single_star_flagged": 48,
+    "median_distance_disagreement_pct": 0.733
+  },
+  "habitable_zone": {
+    "_note": "'strict' counts evaluate the Kopparapu et al. (2013) fit only within its stated 2600-7200 K validity range. 'incl_extrapolated' additionally counts hosts outside that range with the temperature clamped to the boundary, flagged as extrapolation. The gap between the two is dominated by TRAPPIST-1, whose host at 2566 K sits 34 K below the floor.",
+    "n_in_conservative_hz_nominal": 174,
+    "n_in_optimistic_hz_nominal": 279,
+    "n_hz_undetermined": 652,
+    "n_hosts_outside_model_validity": 79,
+    "n_in_conservative_hz_incl_extrapolated": 177,
+    "n_in_optimistic_hz_incl_extrapolated": 284,
+    "n_conservative_hz_prob_gt_0p5": 177,
+    "n_conservative_hz_prob_gt_0p9": 149,
+    "n_optimistic_hz_prob_gt_0p5": 283,
+    "n_conservative_hz_and_below_1p6_re": 15,
+    "n_conservative_hz_and_below_1p6_re_with_measured_mass": 1,
+    "n_conservative_hz_and_below_1p6_re_incl_extrapolated": 18,
+    "n_conservative_hz_and_below_1p6_re_with_measured_mass_incl_extrapolated": 4
+  },
+  "atmosphere": {
+    "transmission_measurement_rows": 5948,
+    "emission_measurement_rows": 2361,
+    "planets_with_transmission_spectra": 104,
+    "planets_with_emission_spectra": 54,
+    "transmission_facilities": {
+      "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission": 2712,
+      "Hubble Space Telescope satellite": 1611,
+      "Gran Telescopio CANARIAS 10.4m telescope": 282,
+      "Very Large Telescope (Antu)": 162,
+      "Spitzer Space Telescope satellite": 149,
+      "Magellan II Landon Clay Telescope": 93,
+      "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)": 86,
+      "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory": 72,
+      "Magellan I Walter Baade Telescope": 65,
+      "Isaac Newton Group's William Herschel Telescope": 65,
+      "Nordic Optical Telescope": 60,
+      "STELLA Robotic Observatory": 59
+    },
+    "archived_spectrum_files_by_type": {
+      "Transmission": 940,
+      "Eclipse": 801,
+      "Direct Imaging": 85
+    }
+  },
+  "candidates": {
+    "tess_toi_total": 8136,
+    "tess_toi_by_disposition": {
+      "PC": 4915,
+      "FP": 1280,
+      "CP": 748,
+      "KP": 607,
+      "APC": 484,
+      "FA": 100,
+      "<NA>": 2
+    },
+    "kepler_koi_total": 8054,
+    "kepler_koi_by_disposition": {
+      "FALSE POSITIVE": 3965,
+      "CONFIRMED": 2731,
+      "CANDIDATE": 1358
+    },
+    "k2_total": 4068,
+    "k2_by_disposition": {
+      "CONFIRMED": 2379,
+      "CANDIDATE": 1374,
+      "FALSE POSITIVE": 293,
+      "REFUTED": 22
+    },
+    "kepler_tce_detections": 34032
+  },
+  "ranking": {
+    "n_rankable": 5672,
+    "n_not_rankable": 682,
+    "weights": {
+      "earth_similarity": 0.35,
+      "conservative_habitability": 0.4,
+      "observational_confidence": 0.25,
+      "characterisation_potential": 0.0
+    },
+    "top_candidates": [
+      {
+        "rank": 1,
+        "pl_name": "Proxima Cen b",
+        "hostname": "Proxima Cen",
+        "earth2_index": 0.8764,
+        "earth_similarity": 0.9149,
+        "conservative_habitability": 0.9462,
+        "observational_confidence": 0.73,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.02,
+        "sy_dist_pc": 1.3
+      },
+      {
+        "rank": 2,
+        "pl_name": "GJ 1061 d",
+        "hostname": "GJ 1061",
+        "earth2_index": 0.8755,
+        "earth_similarity": 0.8739,
+        "conservative_habitability": 0.896,
+        "observational_confidence": 0.8458,
+        "mass_class": "measured",
+        "pl_rade": 1.16,
+        "sy_dist_pc": 3.67
+      },
+      {
+        "rank": 3,
+        "pl_name": "GJ 1002 b",
+        "hostname": "GJ 1002",
+        "earth2_index": 0.8489,
+        "earth_similarity": 0.9142,
+        "conservative_habitability": 0.9453,
+        "observational_confidence": 0.6442,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.03,
+        "sy_dist_pc": 4.85
+      },
+      {
+        "rank": 4,
+        "pl_name": "Wolf 1069 b",
+        "hostname": "Wolf 1069",
+        "earth2_index": 0.839,
+        "earth_similarity": 0.8997,
+        "conservative_habitability": 0.9309,
+        "observational_confidence": 0.6442,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.08,
+        "sy_dist_pc": 9.58
+      },
+      {
+        "rank": 5,
+        "pl_name": "Teegarden's Star c",
+        "hostname": "Teegarden's Star",
+        "earth2_index": 0.8234,
+        "earth_similarity": 0.8071,
+        "conservative_habitability": 0.9478,
+        "observational_confidence": 0.6758,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.02,
+        "sy_dist_pc": 3.83
+      },
+      {
+        "rank": 6,
+        "pl_name": "Kepler-1649 c",
+        "hostname": "Kepler-1649",
+        "earth2_index": 0.7736,
+        "earth_similarity": 0.8875,
+        "conservative_habitability": 0.8985,
+        "observational_confidence": 0.5023,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.06,
+        "sy_dist_pc": 92.19
+      },
+      {
+        "rank": 7,
+        "pl_name": "GJ 1002 c",
+        "hostname": "GJ 1002",
+        "earth2_index": 0.7713,
+        "earth_similarity": 0.7514,
+        "conservative_habitability": 0.883,
+        "observational_confidence": 0.6442,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.1,
+        "sy_dist_pc": 4.85
+      },
+      {
+        "rank": 8,
+        "pl_name": "Kepler-1229 b",
+        "hostname": "Kepler-1229",
+        "earth2_index": 0.7161,
+        "earth_similarity": 0.8193,
+        "conservative_habitability": 0.733,
+        "observational_confidence": 0.5713,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.4,
+        "sy_dist_pc": 265.48
+      },
+      {
+        "rank": 9,
+        "pl_name": "GJ 667 C f",
+        "hostname": "GJ 667 C",
+        "earth2_index": 0.7024,
+        "earth_similarity": 0.8046,
+        "conservative_habitability": 0.676,
+        "observational_confidence": 0.6175,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.45,
+        "sy_dist_pc": 7.24
+      },
+      {
+        "rank": 10,
+        "pl_name": "TOI-700 d",
+        "hostname": "TOI-700",
+        "earth2_index": 0.6838,
+        "earth_similarity": 0.9431,
+        "conservative_habitability": 0.5524,
+        "observational_confidence": 0.6134,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.073,
+        "sy_dist_pc": 31.13
+      },
+      {
+        "rank": 11,
+        "pl_name": "Kepler-442 b",
+        "hostname": "Kepler-442",
+        "earth2_index": 0.6715,
+        "earth_similarity": 0.8481,
+        "conservative_habitability": 0.5687,
+        "observational_confidence": 0.6317,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.34,
+        "sy_dist_pc": 365.96
+      },
+      {
+        "rank": 12,
+        "pl_name": "Kepler-186 f",
+        "hostname": "Kepler-186",
+        "earth2_index": 0.6436,
+        "earth_similarity": 0.7562,
+        "conservative_habitability": 0.5784,
+        "observational_confidence": 0.609,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.17,
+        "sy_dist_pc": 177.59
+      },
+      {
+        "rank": 13,
+        "pl_name": "GJ 667 C e",
+        "hostname": "GJ 667 C",
+        "earth2_index": 0.6269,
+        "earth_similarity": 0.7074,
+        "conservative_habitability": 0.5693,
+        "observational_confidence": 0.6175,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.45,
+        "sy_dist_pc": 7.24
+      },
+      {
+        "rank": 14,
+        "pl_name": "TOI-715 b",
+        "hostname": "TOI-715",
+        "earth2_index": 0.625,
+        "earth_similarity": 0.8427,
+        "conservative_habitability": 0.5,
+        "observational_confidence": 0.5877,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.55,
+        "sy_dist_pc": 42.4
+      },
+      {
+        "rank": 15,
+        "pl_name": "LHS 1140 b",
+        "hostname": "LHS 1140",
+        "earth2_index": 0.589,
+        "earth_similarity": 0.764,
+        "conservative_habitability": 0.3431,
+        "observational_confidence": 0.9712,
+        "mass_class": "measured",
+        "pl_rade": 1.73,
+        "sy_dist_pc": 14.99
+      },
+      {
+        "rank": 16,
+        "pl_name": "Gl 725 B c",
+        "hostname": "Gl 725 B",
+        "earth2_index": 0.5824,
+        "earth_similarity": 0.7757,
+        "conservative_habitability": 0.4256,
+        "observational_confidence": 0.6442,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.66,
+        "sy_dist_pc": 6.84
+      },
+      {
+        "rank": 17,
+        "pl_name": "Kepler-62 f",
+        "hostname": "Kepler-62",
+        "earth2_index": 0.5806,
+        "earth_similarity": 0.4259,
+        "conservative_habitability": 0.7183,
+        "observational_confidence": 0.6372,
+        "mass_class": "upper_limit",
+        "pl_rade": 1.41,
+        "sy_dist_pc": 300.87
+      },
+      {
+        "rank": 18,
+        "pl_name": "Kepler-1652 b",
+        "hostname": "Kepler-1652",
+        "earth2_index": 0.5384,
+        "earth_similarity": 0.857,
+        "conservative_habitability": 0.3322,
+        "observational_confidence": 0.6081,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.6,
+        "sy_dist_pc": 252.0
+      },
+      {
+        "rank": 19,
+        "pl_name": "GJ 3378 b",
+        "hostname": "GJ 3378",
+        "earth2_index": 0.5221,
+        "earth_similarity": 0.9197,
+        "conservative_habitability": 0.2707,
+        "observational_confidence": 0.6758,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.32,
+        "sy_dist_pc": 7.72
+      },
+      {
+        "rank": 20,
+        "pl_name": "Kepler-1544 b",
+        "hostname": "Kepler-1544",
+        "earth2_index": 0.5138,
+        "earth_similarity": 0.8412,
+        "conservative_habitability": 0.2898,
+        "observational_confidence": 0.6441,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.78,
+        "sy_dist_pc": 335.09
+      },
+      {
+        "rank": 21,
+        "pl_name": "GJ 251 c",
+        "hostname": "GJ 251",
+        "earth2_index": 0.4737,
+        "earth_similarity": 0.7285,
+        "conservative_habitability": 0.2682,
+        "observational_confidence": 0.6442,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.8,
+        "sy_dist_pc": 5.58
+      },
+      {
+        "rank": 22,
+        "pl_name": "Kepler-296 f",
+        "hostname": "Kepler-296",
+        "earth2_index": 0.4676,
+        "earth_similarity": 0.7809,
+        "conservative_habitability": 0.2615,
+        "observational_confidence": 0.5779,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.8,
+        "sy_dist_pc": 167.0
+      },
+      {
+        "rank": 23,
+        "pl_name": "Kepler-452 b",
+        "hostname": "Kepler-452",
+        "earth2_index": 0.4229,
+        "earth_similarity": 0.8546,
+        "conservative_habitability": 0.1817,
+        "observational_confidence": 0.6108,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.63,
+        "sy_dist_pc": 551.73
+      },
+      {
+        "rank": 24,
+        "pl_name": "Kepler-438 b",
+        "hostname": "Kepler-438",
+        "earth2_index": 0.4147,
+        "earth_similarity": 0.8513,
+        "conservative_habitability": 0.1694,
+        "observational_confidence": 0.6344,
+        "mass_class": "inferred_mass_radius",
+        "pl_rade": 1.12,
+        "sy_dist_pc": 195.94
+      },
+      {
+        "rank": 25,
+        "pl_name": "GJ 667 C c",
+        "hostname": "GJ 667 C",
+        "earth2_index": 0.3944,
+        "earth_similarity": 0.8369,
+        "conservative_habitability": 0.1441,
+        "observational_confidence": 0.6891,
+        "mass_class": "msini_lower_limit",
+        "pl_rade": 1.77,
+        "sy_dist_pc": 7.24
+      }
+    ]
+  },
+  "provenance": {
+    "n_datasets": 13,
+    "n_datasets_ok": 13,
+    "n_datasets_failed": 0,
+    "total_source_records": 164209,
+    "archives": [
+      "Gaia Archive (ESA)",
+      "NASA Exoplanet Archive"
+    ],
+    "datasets": [
+      {
+        "dataset_id": "gaia_dr3_crossmatch",
+        "archive": "Gaia Archive (ESA)",
+        "source_table": "gaiadr3.gaia_source",
+        "n_rows": 4408,
+        "n_columns": 17,
+        "retrieved_utc": "2026-08-24T20:22:19Z",
+        "status": "ok",
+        "sha256_short": "d7c5fcfe56f4",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_di_stars",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "di_stars_exep",
+        "n_rows": 164,
+        "n_columns": 59,
+        "retrieved_utc": "2026-08-24T02:23:58Z",
+        "status": "ok",
+        "sha256_short": "38052f559fc9",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_emissionspec",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "emissionspec",
+        "n_rows": 2361,
+        "n_columns": 18,
+        "retrieved_utc": "2026-08-24T02:23:57Z",
+        "status": "ok",
+        "sha256_short": "8d78a5057343",
+        "doi": "10.26133/NEA9"
+      },
+      {
+        "dataset_id": "nasa_k2pandc",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "k2pandc",
+        "n_rows": 4068,
+        "n_columns": 38,
+        "retrieved_utc": "2026-08-24T02:23:50Z",
+        "status": "ok",
+        "sha256_short": "1444b1fa2b15",
+        "doi": "10.26133/NEA1"
+      },
+      {
+        "dataset_id": "nasa_koi_dr25",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "q1_q17_dr25_koi",
+        "n_rows": 8054,
+        "n_columns": 37,
+        "retrieved_utc": "2026-08-24T02:23:53Z",
+        "status": "ok",
+        "sha256_short": "5a62619a39df",
+        "doi": "10.26133/NEA4"
+      },
+      {
+        "dataset_id": "nasa_microlensing",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "ml",
+        "n_rows": 895,
+        "n_columns": 11,
+        "retrieved_utc": "2026-08-24T02:23:58Z",
+        "status": "ok",
+        "sha256_short": "7f7d795fca9d",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_ps",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "ps",
+        "n_rows": 40106,
+        "n_columns": 124,
+        "retrieved_utc": "2026-08-24T02:23:48Z",
+        "status": "ok",
+        "sha256_short": "5ea9c394849d",
+        "doi": "10.26133/NEA12"
+      },
+      {
+        "dataset_id": "nasa_pscomppars",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "pscomppars",
+        "n_rows": 6354,
+        "n_columns": 151,
+        "retrieved_utc": "2026-08-24T19:59:44Z",
+        "status": "ok",
+        "sha256_short": "73eed33e0d57",
+        "doi": "10.26133/NEA13"
+      },
+      {
+        "dataset_id": "nasa_spectra_index",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "spectra",
+        "n_rows": 1826,
+        "n_columns": 13,
+        "retrieved_utc": "2026-08-24T02:23:57Z",
+        "status": "ok",
+        "sha256_short": "ffb3a6f2b29d",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_stellarhosts",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "stellarhosts",
+        "n_rows": 47857,
+        "n_columns": 38,
+        "retrieved_utc": "2026-08-24T02:24:00Z",
+        "status": "ok",
+        "sha256_short": "45513b70c576",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_tce_dr25",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "q1_q17_dr25_tce",
+        "n_rows": 34032,
+        "n_columns": 23,
+        "retrieved_utc": "2026-08-24T02:23:56Z",
+        "status": "ok",
+        "sha256_short": "246512d90dc8",
+        "doi": ""
+      },
+      {
+        "dataset_id": "nasa_toi",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "toi",
+        "n_rows": 8136,
+        "n_columns": 91,
+        "retrieved_utc": "2026-08-24T02:23:49Z",
+        "status": "ok",
+        "sha256_short": "77b693084fe4",
+        "doi": "10.26134/ExoFOP5"
+      },
+      {
+        "dataset_id": "nasa_transitspec",
+        "archive": "NASA Exoplanet Archive",
+        "source_table": "transitspec",
+        "n_rows": 5948,
+        "n_columns": 27,
+        "retrieved_utc": "2026-08-24T02:23:56Z",
+        "status": "ok",
+        "sha256_short": "ace18f6adaee",
+        "doi": "10.26133/NEA10"
+      }
+    ]
+  },
+  "measurement_provenance": {
+    "n_links": 89131,
+    "by_kind": {
+      "publication": 77395,
+      "archive_calculated": 11736
+    },
+    "n_distinct_publications": 1814,
+    "n_with_ads_bibcode": 66228,
+    "n_planets_covered": 6354,
+    "most_cited_sources": {
+      "Morton et al. 2016": 9263,
+      "Q1-Q17 DR25 KOI Table": 8164,
+      "TICv8": 7442,
+      "Rowe et al. 2014": 3336,
+      "Fulton & Petigura 2018": 2299,
+      "Gajdo\u0161 et al. 2019": 2115,
+      "Berger et al. 2018": 1981,
+      "Stassun et al. 2017": 1561,
+      "ExoFOP": 955,
+      "Gaia DR2": 719,
+      "Feng et al. 2022": 678,
+      "Valizadegan et al. 2022": 598,
+      "Bonomo et al. 2023": 577,
+      "Livingston et al. 2018": 575,
+      "Polanski et al. 2024": 556
+    },
+    "archive_calculated_by_parameter": {
+      "pl_dens": 4665,
+      "pl_bmasse": 2975,
+      "pl_rade": 1525,
+      "pl_insol": 1321,
+      "pl_eqt": 1089,
+      "st_lum": 161
+    }
+  },
+  "software": {
+    "earth2": "1.0.1",
+    "python": "3.9.19",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scipy": "1.10.1",
+    "astropy": "6.0.1",
+    "platform": "Windows-10-10.0.26200-SP0"
+  },
+  "runtime_seconds": 95.7
+}

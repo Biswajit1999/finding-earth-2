@@ -1,0 +1,264 @@
+{
+  "ledger": "earth2-analysis",
+  "generated_utc": "2026-08-24T21:35:13Z",
+  "n_steps": 11,
+  "steps": [
+    {
+      "step": "load_processed_tables",
+      "description": "Load synced archive tables from the local Parquet cache.",
+      "inputs": [
+        "nasa_pscomppars",
+        "nasa_ps",
+        "nasa_transitspec",
+        "nasa_emissionspec",
+        "nasa_toi",
+        "nasa_koi_dr25",
+        "nasa_k2pandc",
+        "nasa_tce_dr25",
+        "gaia_dr3_crossmatch"
+      ],
+      "outputs": [
+        "dataframes"
+      ],
+      "equation": "",
+      "citation": "",
+      "parameters": {},
+      "n_rows_in": 0,
+      "n_rows_out": 6354,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": "{\"earth2\": \"1.0.1\", \"python\": \"3.9.19\", \"numpy\": \"1.26.4\", \"pandas\": \"2.2.2\", \"scipy\": \"1.10.1\", \"astropy\": \"6.0.1\", \"platform\": \"Windows-10-10.0.26200-SP0\"}"
+    },
+    {
+      "step": "classify_mass_provenance",
+      "description": "Separate measured masses from radial-velocity minimum masses and from masses predicted by a mass-radius relation, which carry no information beyond radius.",
+      "inputs": [
+        "pl_bmasse",
+        "pl_bmassprov",
+        "pl_bmasselim"
+      ],
+      "outputs": [
+        "mass_class",
+        "mass_is_measured",
+        "mass_is_inferred"
+      ],
+      "equation": "",
+      "citation": "",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "derive_insolation",
+      "description": "Incident stellar flux in Earth units, from the catalogue where available, otherwise S = 10**st_lum / a^2.",
+      "inputs": [
+        "pl_insol",
+        "st_lum",
+        "pl_orbsmax"
+      ],
+      "outputs": [
+        "insol_used",
+        "insol_source"
+      ],
+      "equation": "S = L / a^2,  L = 10**st_lum",
+      "citation": "",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "derive_equilibrium_temperature",
+      "description": "Equilibrium temperature derived self-consistently from insolation at a fixed Bond albedo, in preference to catalogue values that assume heterogeneous albedos.",
+      "inputs": [
+        "insol_used",
+        "pl_eqt"
+      ],
+      "outputs": [
+        "teq_used",
+        "teq_source"
+      ],
+      "equation": "T_eq = 278.5 * S**0.25 * (1 - A)**0.25",
+      "citation": "",
+      "parameters": {
+        "bond_albedo": 0.306
+      },
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "earth_similarity_index",
+      "description": "Four-term two-tier Earth Similarity Index; temperature referenced to Earth's equilibrium temperature (254 K), not its surface temperature.",
+      "inputs": [
+        "pl_rade",
+        "pl_dens_used",
+        "pl_vesc_kms",
+        "teq_used"
+      ],
+      "outputs": [
+        "esi_interior",
+        "esi_surface",
+        "esi_global"
+      ],
+      "equation": "ESI_x = (1 - |(x-x0)/(x+x0)|)**(w/n)",
+      "citation": "schulzemakuch2011",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "habitable_zone_membership",
+      "description": "Conservative and optimistic habitable-zone membership from incident flux and stellar effective temperature; NaN outside the fit's 2600-7200 K validity range.",
+      "inputs": [
+        "insol_used",
+        "st_teff"
+      ],
+      "outputs": [
+        "hz_conservative",
+        "hz_optimistic",
+        "hz_position_conservative"
+      ],
+      "equation": "S_eff = S_eff_sun + a*T + b*T^2 + c*T^3 + d*T^4,  T = Teff - 5780",
+      "citation": "kopparapu2013,kopparapu2013erratum",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "attach_reference_evidence",
+      "description": "Count independent published parameter sets and distinct references per planet from the ps table, and measure inter-publication disagreement in radius.",
+      "inputs": [
+        "ps.pl_name",
+        "ps.pl_refname",
+        "ps.pl_rade"
+      ],
+      "outputs": [
+        "n_param_sets",
+        "n_references",
+        "rade_rel_spread"
+      ],
+      "equation": "",
+      "citation": "",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "attach_atmosphere_availability",
+      "description": "Count published transmission-spectrum and emission-spectrum measurements per planet. Planetary-atmosphere data only; stellar spectra are excluded.",
+      "inputs": [
+        "transitspec.plntname",
+        "emissionspec.plntname"
+      ],
+      "outputs": [
+        "n_transmission_points",
+        "n_emission_points",
+        "has_atmosphere_data"
+      ],
+      "equation": "",
+      "citation": "",
+      "parameters": {},
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "attach_gaia_crossmatch",
+      "description": "Attach Gaia DR3 astrometry (parallax, proper motion, RUWE, non-single-star flag) by exact source_id, extracted from the NASA Exoplanet Archive's gaia_dr3_id column and joined on hostname.",
+      "inputs": [
+        "hostname",
+        "gaia_dr3_crossmatch.source_id"
+      ],
+      "outputs": [
+        "gaia_source_id",
+        "gaia_parallax_mas",
+        "gaia_parallax_error_mas",
+        "gaia_ruwe",
+        "gaia_non_single_star",
+        "gaia_pmra_masyr",
+        "gaia_pmdec_masyr",
+        "gaia_phot_g_mean_mag",
+        "gaia_distance_pc",
+        "gaia_distance_disagreement_frac"
+      ],
+      "equation": "",
+      "citation": "GaiaDR3",
+      "parameters": {
+        "n_planets_matched": 5970
+      },
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "software": ""
+    },
+    {
+      "step": "monte_carlo_propagation",
+      "description": "Sample every parameter with a published uncertainty from a two-piece normal and recompute all derived quantities per draw, yielding posterior percentiles and habitable-zone membership probabilities.",
+      "inputs": [
+        "pl_rade",
+        "pl_bmasse",
+        "st_teff",
+        "st_lum",
+        "pl_orbsmax",
+        "pl_insol"
+      ],
+      "outputs": [
+        "esi_global_p16/p50/p84",
+        "hz_conservative_prob",
+        "hz_optimistic_prob"
+      ],
+      "equation": "",
+      "citation": "",
+      "parameters": {
+        "n_samples": 4000,
+        "seed": 20260824,
+        "distribution": "two-piece (split) normal"
+      },
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:34:56Z",
+      "software": ""
+    },
+    {
+      "step": "rank_candidates",
+      "description": "Compute four interpretable component scores and combine the weighted ones with a weighted GEOMETRIC mean, so a disqualifying component cannot be compensated by strong performance elsewhere.",
+      "inputs": [
+        "score_earth_similarity",
+        "score_conservative_habitability",
+        "score_observational_confidence",
+        "score_characterisation_potential"
+      ],
+      "outputs": [
+        "earth2_index",
+        "earth2_rank"
+      ],
+      "equation": "",
+      "citation": "kopparapu2013,schulzemakuch2011,rogers2015,kempton2018",
+      "parameters": {
+        "weights": {
+          "earth_similarity": 0.35,
+          "conservative_habitability": 0.4,
+          "observational_confidence": 0.25,
+          "characterisation_potential": 0.0
+        },
+        "combination": "weighted geometric mean",
+        "epsilon_floor": 0.01
+      },
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-24T21:34:57Z",
+      "software": ""
+    }
+  ]
+}
