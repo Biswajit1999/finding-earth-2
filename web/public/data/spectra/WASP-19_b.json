@@ -1,0 +1,887 @@
+{
+ "planet": "WASP-19 b",
+ "kind": "transmission",
+ "n_points": 81,
+ "wavelength_range_um": [
+  0.4858,
+  4.5
+ ],
+ "facilities": [
+  "0.3-m Perth Exoplanet Survey Telescope",
+  "Danish 1.54m telescope at European Southern Observatory",
+  "Faulkes Telescope South",
+  "Hubble Space Telescope satellite",
+  "La Silla Observatory's 60-cm TRAPPIST Telescope",
+  "Magellan II Landon Clay Telescope",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+  "New Technology Telescope",
+  "Spitzer Space Telescope satellite",
+  "The Swiss Euler 1.2m Telescope",
+  "Very Large Telescope (Antu)"
+ ],
+ "instruments": [
+  "DFOSC imager",
+  "EFOSC2",
+  "EulerCam",
+  "FORS2",
+  "GROND",
+  "Infrared Array Camera (IRAC)",
+  "MMIRS",
+  "Merope 2Kx2K",
+  "Space Telescope Imaging Spectrograph",
+  "TRAPPISTCam",
+  "Wide Field Camera 3"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 52,
+  "plntransdep_percent": 29
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9,
+    2.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3,
+    3.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.4858,
+   "bandwidth_um": null,
+   "depth_ppm": 20181.04,
+   "depth_ppm_err": 107.97,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.56,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20277.76,
+   "depth_ppm_err": 427.2,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.57,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20306.25,
+   "depth_ppm_err": 299.25,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.58,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19796.49,
+   "depth_ppm_err": 196.98,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.581,
+   "bandwidth_um": 0.022,
+   "depth_ppm": 20420.41,
+   "depth_ppm_err": 357.25,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.59,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20506.24,
+   "depth_ppm_err": 443.92,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.601,
+   "bandwidth_um": 0.018,
+   "depth_ppm": 20135.61,
+   "depth_ppm_err": 539.22,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.61,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20477.61,
+   "depth_ppm_err": 529.47,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.62,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20420.41,
+   "depth_ppm_err": 442.99,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 20655.44,
+   "depth_ppm_err": 160.97,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.63,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19796.49,
+   "depth_ppm_err": 295.47,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6405,
+   "bandwidth_um": 0.021,
+   "depth_ppm": 20363.29,
+   "depth_ppm_err": 513.72,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 21673.73,
+   "depth_ppm_err": 794.99,
+   "source": "plnratror_squared",
+   "facility": "0.3-m Perth Exoplanet Survey Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 19678.48,
+   "depth_ppm_err": 339.48,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC imager"
+  },
+  {
+   "wavelength_um": 0.65,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20563.56,
+   "depth_ppm_err": 358.5,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6605,
+   "bandwidth_um": 0.019,
+   "depth_ppm": 20135.61,
+   "depth_ppm_err": 297.99,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.664,
+   "bandwidth_um": 0.099,
+   "depth_ppm": 20649.69,
+   "depth_ppm_err": 373.62,
+   "source": "plnratror_squared",
+   "facility": "The Swiss Euler 1.2m Telescope",
+   "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.67,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19796.49,
+   "depth_ppm_err": 365.82,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.68,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19460.25,
+   "depth_ppm_err": 167.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6813,
+   "bandwidth_um": 0.0224,
+   "depth_ppm": 19937.44,
+   "depth_ppm_err": 423.6,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6814,
+   "bandwidth_um": 0.0838,
+   "depth_ppm": 20592.25,
+   "depth_ppm_err": 401.8,
+   "source": "plnratror_squared",
+   "facility": "New Technology Telescope",
+   "instrument": "EFOSC2"
+  },
+  {
+   "wavelength_um": 0.6814,
+   "bandwidth_um": 0.0838,
+   "depth_ppm": 20078.89,
+   "depth_ppm_err": 368.42,
+   "source": "plnratror_squared",
+   "facility": "New Technology Telescope",
+   "instrument": "EFOSC2"
+  },
+  {
+   "wavelength_um": 0.6814,
+   "bandwidth_um": 0.0838,
+   "depth_ppm": 20449.0,
+   "depth_ppm_err": 228.8,
+   "source": "plnratror_squared",
+   "facility": "New Technology Telescope",
+   "instrument": "EFOSC2"
+  },
+  {
+   "wavelength_um": 0.69,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19488.16,
+   "depth_ppm_err": 446.72,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7013,
+   "bandwidth_um": 0.175,
+   "depth_ppm": 19265.44,
+   "depth_ppm_err": 319.24,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7113,
+   "bandwidth_um": 0.0225,
+   "depth_ppm": 20078.89,
+   "depth_ppm_err": 311.74,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.72,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20220.84,
+   "depth_ppm_err": 327.06,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7312,
+   "bandwidth_um": 0.175,
+   "depth_ppm": 19600.0,
+   "depth_ppm_err": 259.0,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.74,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19600.0,
+   "depth_ppm_err": 252.0,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.748,
+   "bandwidth_um": 0.016,
+   "depth_ppm": 19740.25,
+   "depth_ppm_err": 337.2,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.76,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 390.32,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.76,
+   "bandwidth_um": 0.091,
+   "depth_ppm": 17848.96,
+   "depth_ppm_err": 694.72,
+   "source": "plnratror_squared",
+   "facility": "The Swiss Euler 1.2m Telescope",
+   "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.768,
+   "bandwidth_um": 0.024,
+   "depth_ppm": 19544.04,
+   "depth_ppm_err": 433.38,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7706,
+   "bandwidth_um": null,
+   "depth_ppm": 20695.7,
+   "depth_ppm_err": 230.18,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.7795,
+   "bandwidth_um": 0.099,
+   "depth_ppm": 19768.36,
+   "depth_ppm_err": 224.96,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.78,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19852.81,
+   "depth_ppm_err": 309.98,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.79,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20192.41,
+   "depth_ppm_err": 269.99,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20592.25,
+   "depth_ppm_err": 330.05,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.81,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 21316.0,
+   "depth_ppm_err": 292.0,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.82,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 20534.89,
+   "depth_ppm_err": 229.28,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.838,
+   "bandwidth_um": 0.19,
+   "depth_ppm": 20081.72,
+   "depth_ppm_err": 266.41,
+   "source": "plnratror_squared",
+   "facility": "La Silla Observatory's 60-cm TRAPPIST Telescope",
+   "instrument": "TRAPPISTCam"
+  },
+  {
+   "wavelength_um": 0.866,
+   "bandwidth_um": 0.13,
+   "depth_ppm": 800.0,
+   "depth_ppm_err": 290.0,
+   "source": "plntransdep_percent",
+   "facility": "Faulkes Telescope South",
+   "instrument": "Merope 2Kx2K"
+  },
+  {
+   "wavelength_um": 0.9124,
+   "bandwidth_um": 0.068,
+   "depth_ppm": 20391.84,
+   "depth_ppm_err": 399.84,
+   "source": "plnratror_squared",
+   "facility": "The Swiss Euler 1.2m Telescope",
+   "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 20183.88,
+   "depth_ppm_err": 164.8,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.9295,
+   "bandwidth_um": 0.201,
+   "depth_ppm": 19684.09,
+   "depth_ppm_err": 224.48,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 1.118,
+   "bandwidth_um": null,
+   "depth_ppm": 20159.0,
+   "depth_ppm_err": 175.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.137,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19768.36,
+   "depth_ppm_err": 137.79,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.146,
+   "bandwidth_um": null,
+   "depth_ppm": 20241.0,
+   "depth_ppm_err": 206.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.174,
+   "bandwidth_um": null,
+   "depth_ppm": 19905.0,
+   "depth_ppm_err": 172.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.202,
+   "bandwidth_um": null,
+   "depth_ppm": 20071.0,
+   "depth_ppm_err": 180.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.23,
+   "bandwidth_um": null,
+   "depth_ppm": 19269.0,
+   "depth_ppm_err": 189.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.237,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19628.01,
+   "depth_ppm_err": 92.47,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.258,
+   "bandwidth_um": null,
+   "depth_ppm": 19880.0,
+   "depth_ppm_err": 180.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.286,
+   "bandwidth_um": null,
+   "depth_ppm": 19941.0,
+   "depth_ppm_err": 187.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.29,
+   "bandwidth_um": 0.08,
+   "depth_ppm": 20600.0,
+   "depth_ppm_err": 280.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 1.314,
+   "bandwidth_um": null,
+   "depth_ppm": 20176.0,
+   "depth_ppm_err": 151.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.337,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19824.64,
+   "depth_ppm_err": 87.3,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.343,
+   "bandwidth_um": null,
+   "depth_ppm": 19943.0,
+   "depth_ppm_err": 174.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.371,
+   "bandwidth_um": null,
+   "depth_ppm": 20318.0,
+   "depth_ppm_err": 168.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.399,
+   "bandwidth_um": null,
+   "depth_ppm": 20317.0,
+   "depth_ppm_err": 157.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.427,
+   "bandwidth_um": null,
+   "depth_ppm": 20546.0,
+   "depth_ppm_err": 176.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.437,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20192.41,
+   "depth_ppm_err": 110.84,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.45,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 21170.0,
+   "depth_ppm_err": 310.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 1.455,
+   "bandwidth_um": null,
+   "depth_ppm": 20363.0,
+   "depth_ppm_err": 171.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.483,
+   "bandwidth_um": null,
+   "depth_ppm": 19923.0,
+   "depth_ppm_err": 196.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.511,
+   "bandwidth_um": null,
+   "depth_ppm": 20470.0,
+   "depth_ppm_err": 187.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.537,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20078.89,
+   "depth_ppm_err": 158.7,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.539,
+   "bandwidth_um": null,
+   "depth_ppm": 20053.0,
+   "depth_ppm_err": 205.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.55,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 21060.0,
+   "depth_ppm_err": 150.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 1.568,
+   "bandwidth_um": null,
+   "depth_ppm": 20350.0,
+   "depth_ppm_err": 196.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.597,
+   "bandwidth_um": null,
+   "depth_ppm": 20578.0,
+   "depth_ppm_err": 197.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.624,
+   "bandwidth_um": null,
+   "depth_ppm": 20142.0,
+   "depth_ppm_err": 188.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.637,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 19881.0,
+   "depth_ppm_err": 109.98,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.65,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20560.0,
+   "depth_ppm_err": 300.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 1.75,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20300.0,
+   "depth_ppm_err": 160.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 2.0,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20600.0,
+   "depth_ppm_err": 310.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 2.1,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20890.0,
+   "depth_ppm_err": 100.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 2.2,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20700.0,
+   "depth_ppm_err": 180.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 2.3,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 20480.0,
+   "depth_ppm_err": 470.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 19572.01,
+   "depth_ppm_err": 447.68,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 20363.29,
+   "depth_ppm_err": 599.34,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

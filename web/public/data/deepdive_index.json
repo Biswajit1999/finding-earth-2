@@ -1,0 +1,115 @@
+{
+ "generated_utc": "2026-08-24T22:53:49Z",
+ "systems": [
+  {
+   "planet": "GJ 1002 b",
+   "slug": "GJ_1002_b",
+   "hostname": "GJ 1002",
+   "earth2_index": 0.8489,
+   "earth2_rank": 3,
+   "distance_pc": 4.849,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": null
+  },
+  {
+   "planet": "GJ 1002 c",
+   "slug": "GJ_1002_c",
+   "hostname": "GJ 1002",
+   "earth2_index": 0.7713,
+   "earth2_rank": 7,
+   "distance_pc": 4.849,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": null
+  },
+  {
+   "planet": "GJ 1061 d",
+   "slug": "GJ_1061_d",
+   "hostname": "GJ 1061",
+   "earth2_index": 0.8755,
+   "earth2_rank": 2,
+   "distance_pc": 3.673,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": null
+  },
+  {
+   "planet": "GJ 667 C f",
+   "slug": "GJ_667_C_f",
+   "hostname": "GJ 667 C",
+   "earth2_index": 0.7024,
+   "earth2_rank": 9,
+   "distance_pc": 7.244,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": null
+  },
+  {
+   "planet": "Kepler-1229 b",
+   "slug": "Kepler-1229_b",
+   "hostname": "Kepler-1229",
+   "earth2_index": 0.7161,
+   "earth2_rank": 8,
+   "distance_pc": 265.482,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": false,
+   "transit_status": "fit_not_validated"
+  },
+  {
+   "planet": "Kepler-1649 c",
+   "slug": "Kepler-1649_c",
+   "hostname": "Kepler-1649",
+   "earth2_index": 0.7736,
+   "earth2_rank": 6,
+   "distance_pc": 92.191,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": false,
+   "transit_status": "fit_not_validated"
+  },
+  {
+   "planet": "Proxima Cen b",
+   "slug": "Proxima_Cen_b",
+   "hostname": "Proxima Cen",
+   "earth2_index": 0.8764,
+   "earth2_rank": 1,
+   "distance_pc": 1.301,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": null
+  },
+  {
+   "planet": "Teegarden's Star c",
+   "slug": "Teegarden's_Star_c",
+   "hostname": "Teegarden's Star",
+   "earth2_index": 0.8234,
+   "earth2_rank": 5,
+   "distance_pc": 3.831,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": false,
+   "transit_status": null
+  },
+  {
+   "planet": "TOI-700 d",
+   "slug": "TOI-700_d",
+   "hostname": "TOI-700",
+   "earth2_index": 0.6838,
+   "earth2_rank": 10,
+   "distance_pc": 31.127,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": true,
+   "transit_status": "fit_not_validated"
+  },
+  {
+   "planet": "Wolf 1069 b",
+   "slug": "Wolf_1069_b",
+   "hostname": "Wolf 1069",
+   "earth2_index": 0.839,
+   "earth2_rank": 4,
+   "distance_pc": 9.583,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": false,
+   "transit_status": null
+  }
+ ]
+}

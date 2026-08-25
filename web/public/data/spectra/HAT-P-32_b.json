@@ -1,0 +1,616 @@
+{
+ "planet": "HAT-P-32 b",
+ "kind": "transmission",
+ "n_points": 60,
+ "wavelength_range_um": [
+  0.3585,
+  0.9255
+ ],
+ "facilities": [
+  "Calar Alto Observatory's 2.2 meter Telescope",
+  "Fred Lawrence Whipple Observatory's 1.2 meter Telescope",
+  "Gillett Gemini North Telescope",
+  "Gran Telescopio CANARIAS 10.4m telescope",
+  "Isaac Newton Group's William Herschel Telescope",
+  "Large Binocular Telescope Observatory",
+  "Multiple Observatories"
+ ],
+ "instruments": [
+  "BUSCA",
+  "GMOS",
+  "KeplerCam",
+  "MODS1",
+  "Multiple Instruments",
+  "OSIRIS",
+  "ULTRACAM"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 60
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.3585,
+   "bandwidth_um": null,
+   "depth_ppm": 23116.16,
+   "depth_ppm_err": 366.42,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ULTRACAM"
+  },
+  {
+   "wavelength_um": 0.4407,
+   "bandwidth_um": null,
+   "depth_ppm": 23525.42,
+   "depth_ppm_err": 237.74,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.4475,
+   "bandwidth_um": 0.235,
+   "depth_ppm": 22952.25,
+   "depth_ppm_err": 363.6,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
+  },
+  {
+   "wavelength_um": 0.4858,
+   "bandwidth_um": null,
+   "depth_ppm": 23421.24,
+   "depth_ppm_err": 324.44,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.5276,
+   "bandwidth_um": null,
+   "depth_ppm": 22593.1,
+   "depth_ppm_err": 667.38,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.528,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22689.4,
+   "depth_ppm_err": 245.53,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5413,
+   "bandwidth_um": null,
+   "depth_ppm": 23204.43,
+   "depth_ppm_err": 121.86,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.548,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23021.99,
+   "depth_ppm_err": 230.63,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5537,
+   "bandwidth_um": null,
+   "depth_ppm": 23173.97,
+   "depth_ppm_err": 382.1,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.5551,
+   "bandwidth_um": null,
+   "depth_ppm": 23140.49,
+   "depth_ppm_err": 228.18,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.568,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23082.72,
+   "depth_ppm_err": 168.64,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5688,
+   "bandwidth_um": null,
+   "depth_ppm": 22994.69,
+   "depth_ppm_err": 115.25,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.58,
+   "bandwidth_um": null,
+   "depth_ppm": 22928.02,
+   "depth_ppm_err": 322.52,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ULTRACAM"
+  },
+  {
+   "wavelength_um": 0.5825,
+   "bandwidth_um": null,
+   "depth_ppm": 23067.53,
+   "depth_ppm_err": 121.5,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.588,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23262.35,
+   "depth_ppm_err": 106.76,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5962,
+   "bandwidth_um": null,
+   "depth_ppm": 23110.08,
+   "depth_ppm_err": 148.98,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.608,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23070.57,
+   "depth_ppm_err": 173.15,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6099,
+   "bandwidth_um": null,
+   "depth_ppm": 22716.52,
+   "depth_ppm_err": 153.73,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6236,
+   "bandwidth_um": null,
+   "depth_ppm": 22825.17,
+   "depth_ppm_err": 175.25,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.628,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23076.65,
+   "depth_ppm_err": 182.29,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 23152.67,
+   "depth_ppm_err": 240.41,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.6374,
+   "bandwidth_um": null,
+   "depth_ppm": 22749.69,
+   "depth_ppm_err": 268.48,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 22713.5,
+   "depth_ppm_err": 165.78,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.648,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22979.53,
+   "depth_ppm_err": 177.36,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6546,
+   "bandwidth_um": null,
+   "depth_ppm": 22605.12,
+   "depth_ppm_err": 177.41,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.668,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23143.54,
+   "depth_ppm_err": 147.57,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6686,
+   "bandwidth_um": null,
+   "depth_ppm": 23104.0,
+   "depth_ppm_err": 221.92,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6825,
+   "bandwidth_um": null,
+   "depth_ppm": 22955.28,
+   "depth_ppm_err": 230.3,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.688,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22689.4,
+   "depth_ppm_err": 150.63,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6965,
+   "bandwidth_um": null,
+   "depth_ppm": 22937.1,
+   "depth_ppm_err": 130.25,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.708,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22737.62,
+   "depth_ppm_err": 150.79,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7105,
+   "bandwidth_um": null,
+   "depth_ppm": 23113.12,
+   "depth_ppm_err": 243.25,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7245,
+   "bandwidth_um": null,
+   "depth_ppm": 22973.46,
+   "depth_ppm_err": 124.29,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.728,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23064.5,
+   "depth_ppm_err": 115.42,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7385,
+   "bandwidth_um": null,
+   "depth_ppm": 22897.74,
+   "depth_ppm_err": 90.79,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.748,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23091.84,
+   "depth_ppm_err": 156.52,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7525,
+   "bandwidth_um": null,
+   "depth_ppm": 22816.1,
+   "depth_ppm_err": 169.18,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7664,
+   "bandwidth_um": null,
+   "depth_ppm": 22970.43,
+   "depth_ppm_err": 133.37,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7705,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 23323.4,
+   "depth_ppm_err": 146.61,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7806,
+   "bandwidth_um": null,
+   "depth_ppm": 22716.52,
+   "depth_ppm_err": 114.55,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7825,
+   "bandwidth_um": 0.435,
+   "depth_ppm": 22650.25,
+   "depth_ppm_err": 150.5,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
+  },
+  {
+   "wavelength_um": 0.788,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23009.86,
+   "depth_ppm_err": 188.1,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 22924.99,
+   "depth_ppm_err": 457.26,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.7979,
+   "bandwidth_um": null,
+   "depth_ppm": 23295.92,
+   "depth_ppm_err": 204.52,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.808,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23292.86,
+   "depth_ppm_err": 120.57,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.812,
+   "bandwidth_um": null,
+   "depth_ppm": 22934.07,
+   "depth_ppm_err": 166.58,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.8261,
+   "bandwidth_um": null,
+   "depth_ppm": 22810.06,
+   "depth_ppm_err": 126.87,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.828,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22665.3,
+   "depth_ppm_err": 213.78,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8403,
+   "bandwidth_um": null,
+   "depth_ppm": 22749.69,
+   "depth_ppm_err": 177.98,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.848,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23061.46,
+   "depth_ppm_err": 138.19,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8544,
+   "bandwidth_um": null,
+   "depth_ppm": 22623.17,
+   "depth_ppm_err": 189.52,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.868,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23210.52,
+   "depth_ppm_err": 167.58,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8685,
+   "bandwidth_um": null,
+   "depth_ppm": 23381.47,
+   "depth_ppm_err": 275.24,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.8826,
+   "bandwidth_um": null,
+   "depth_ppm": 23158.75,
+   "depth_ppm_err": 353.06,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.888,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 23332.56,
+   "depth_ppm_err": 207.74,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8967,
+   "bandwidth_um": null,
+   "depth_ppm": 22692.41,
+   "depth_ppm_err": 228.97,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.908,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 22918.93,
+   "depth_ppm_err": 278.56,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.9109,
+   "bandwidth_um": null,
+   "depth_ppm": 22626.18,
+   "depth_ppm_err": 162.45,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 22949.22,
+   "depth_ppm_err": 228.75,
+   "source": "plnratror_squared",
+   "facility": "Fred Lawrence Whipple Observatory's 1.2 meter Telescope",
+   "instrument": "KeplerCam"
+  },
+  {
+   "wavelength_um": 0.9255,
+   "bandwidth_um": null,
+   "depth_ppm": 22680.36,
+   "depth_ppm_err": 349.39,
+   "source": "plnratror_squared",
+   "facility": "Gillett Gemini North Telescope",
+   "instrument": "GMOS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

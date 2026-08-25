@@ -1,0 +1,133 @@
+{
+ "planet": "WASP-46 b",
+ "kind": "transmission",
+ "n_points": 7,
+ "wavelength_range_um": [
+  0.477,
+  0.9134
+ ],
+ "facilities": [
+  "Danish 1.54m telescope at European Southern Observatory",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+  "New Techology Telescope",
+  "The Swiss Euler 1.2m Telescope"
+ ],
+ "instruments": [
+  "DFOSC",
+  "EFOSC2",
+  "EulerCam",
+  "GROND"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 7
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.477,
+   "bandwidth_um": 0.1379,
+   "depth_ppm": 19460.25,
+   "depth_ppm_err": 86.49,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.5169,
+   "bandwidth_um": 0.0776,
+   "depth_ppm": 19490.95,
+   "depth_ppm_err": 131.23,
+   "source": "plnratror_squared",
+   "facility": "New Techology Telescope",
+   "instrument": "EFOSC2"
+  },
+  {
+   "wavelength_um": 0.6231,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 19440.72,
+   "depth_ppm_err": 89.24,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.6489,
+   "bandwidth_um": 0.1647,
+   "depth_ppm": 19572.01,
+   "depth_ppm_err": 120.31,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.6641,
+   "bandwidth_um": 0.085,
+   "depth_ppm": 19085.42,
+   "depth_ppm_err": 312.22,
+   "source": "plnratror_squared",
+   "facility": "The Swiss Euler 1.2m Telescope",
+   "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.7625,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 19240.46,
+   "depth_ppm_err": 108.19,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.9134,
+   "bandwidth_um": 0.137,
+   "depth_ppm": 19765.55,
+   "depth_ppm_err": 118.1,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

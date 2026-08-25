@@ -1,0 +1,979 @@
+{
+ "planet": "WASP-31 b",
+ "kind": "transmission",
+ "n_points": 93,
+ "wavelength_range_um": [
+  0.33,
+  4.5
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite",
+  "Magellan I Walter Baade Telescope",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "IMACS spectrograph",
+  "Infrared Array Camera (IRAC)",
+  "Space Telescope Imaging Spectrograph",
+  "Wide Field Camera 3"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 93
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9,
+    2.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3,
+    3.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.33,
+   "bandwidth_um": 0.08,
+   "depth_ppm": 16448.06,
+   "depth_ppm_err": 382.19,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.3825,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 16517.39,
+   "depth_ppm_err": 285.31,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4032,
+   "bandwidth_um": 0.0163,
+   "depth_ppm": 16131.54,
+   "depth_ppm_err": 269.26,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4093,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17795.56,
+   "depth_ppm_err": 35537.76,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.4182,
+   "bandwidth_um": 0.0137,
+   "depth_ppm": 15870.96,
+   "depth_ppm_err": 194.01,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4243,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16589.44,
+   "depth_ppm_err": 33191.76,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.4325,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16101.07,
+   "depth_ppm_err": 261.39,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4393,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16770.25,
+   "depth_ppm_err": 33540.5,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.445,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15959.27,
+   "depth_ppm_err": 255.19,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4543,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17397.61,
+   "depth_ppm_err": 34782.03,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.455,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 16009.84,
+   "depth_ppm_err": 230.28,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.465,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 16139.16,
+   "depth_ppm_err": 215.97,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4676,
+   "bandwidth_um": 0.0115,
+   "depth_ppm": 16874.01,
+   "depth_ppm_err": 33774.0,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.475,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15931.49,
+   "depth_ppm_err": 222.15,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.485,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15772.85,
+   "depth_ppm_err": 208.48,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4869,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17582.76,
+   "depth_ppm_err": 35152.26,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.495,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15697.58,
+   "depth_ppm_err": 243.06,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4993,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16512.25,
+   "depth_ppm_err": 33024.5,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.505,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15378.48,
+   "depth_ppm_err": 267.86,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5143,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17161.0,
+   "depth_ppm_err": 34308.9,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.515,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15670.03,
+   "depth_ppm_err": 267.89,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.525,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15552.58,
+   "depth_ppm_err": 271.87,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5293,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17318.56,
+   "depth_ppm_err": 34650.28,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.535,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15351.21,
+   "depth_ppm_err": 250.28,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5443,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16615.21,
+   "depth_ppm_err": 33230.42,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.545,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 16146.78,
+   "depth_ppm_err": 294.8,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.555,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15452.98,
+   "depth_ppm_err": 303.32,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5593,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17397.61,
+   "depth_ppm_err": 34755.65,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.565,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15695.08,
+   "depth_ppm_err": 285.64,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.575,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15460.44,
+   "depth_ppm_err": 340.69,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5765,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 17187.21,
+   "depth_ppm_err": 34361.31,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5839,
+   "bandwidth_um": 0.0078,
+   "depth_ppm": 16162.04,
+   "depth_ppm_err": 348.34,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.006,
+   "depth_ppm": 16978.09,
+   "depth_ppm_err": 33943.15,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5896,
+   "bandwidth_um": 0.0035,
+   "depth_ppm": 16134.08,
+   "depth_ppm_err": 581.75,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.5991,
+   "bandwidth_um": 0.0157,
+   "depth_ppm": 15490.29,
+   "depth_ppm_err": 281.28,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.602,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 16692.64,
+   "depth_ppm_err": 33385.28,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6135,
+   "bandwidth_um": 0.013,
+   "depth_ppm": 14981.76,
+   "depth_ppm_err": 433.3,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6189,
+   "bandwidth_um": 0.0138,
+   "depth_ppm": 17030.25,
+   "depth_ppm_err": 34060.5,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.625,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 15109.33,
+   "depth_ppm_err": 299.92,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6295,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17213.44,
+   "depth_ppm_err": 34426.88,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6375,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 15289.32,
+   "depth_ppm_err": 279.45,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6485,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16512.25,
+   "depth_ppm_err": 33024.5,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6525,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 15903.73,
+   "depth_ppm_err": 325.36,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6631,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16978.09,
+   "depth_ppm_err": 33969.21,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.67,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15898.69,
+   "depth_ppm_err": 287.49,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6781,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16281.76,
+   "depth_ppm_err": 32550.76,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.69,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15838.22,
+   "depth_ppm_err": 284.42,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6931,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16978.09,
+   "depth_ppm_err": 33943.15,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7081,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16796.16,
+   "depth_ppm_err": 33631.2,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.71,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15232.5,
+   "depth_ppm_err": 281.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.7231,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16384.0,
+   "depth_ppm_err": 32768.0,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7325,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 15777.87,
+   "depth_ppm_err": 346.68,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.7381,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16615.21,
+   "depth_ppm_err": 33243.31,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7548,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 15505.23,
+   "depth_ppm_err": 278.92,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.7554,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 16027.56,
+   "depth_ppm_err": 32042.46,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7681,
+   "bandwidth_um": 0.006,
+   "depth_ppm": 17056.36,
+   "depth_ppm_err": 34112.72,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7682,
+   "bandwidth_um": 0.0075,
+   "depth_ppm": 17790.22,
+   "depth_ppm_err": 533.52,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.7798,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 16179.84,
+   "depth_ppm_err": 32346.96,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.791,
+   "bandwidth_um": 0.038,
+   "depth_ppm": 15430.61,
+   "depth_ppm_err": 342.85,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 16179.84,
+   "depth_ppm_err": 32346.96,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8131,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 17318.56,
+   "depth_ppm_err": 34610.8,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8293,
+   "bandwidth_um": 0.0385,
+   "depth_ppm": 15835.71,
+   "depth_ppm_err": 357.39,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.8336,
+   "bandwidth_um": 0.026,
+   "depth_ppm": 16641.0,
+   "depth_ppm_err": 33269.1,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8735,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 16144.24,
+   "depth_ppm_err": 218.54,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.8983,
+   "bandwidth_um": 0.1174,
+   "depth_ppm": 16103.61,
+   "depth_ppm_err": 32207.22,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.9643,
+   "bandwidth_um": 0.1315,
+   "depth_ppm": 15752.76,
+   "depth_ppm_err": 406.65,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 1.144,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15227.56,
+   "depth_ppm_err": 192.5,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.164,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15425.64,
+   "depth_ppm_err": 253.37,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.184,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15715.13,
+   "depth_ppm_err": 183.03,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.204,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15785.41,
+   "depth_ppm_err": 188.46,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.224,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15843.26,
+   "depth_ppm_err": 171.18,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.244,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15383.44,
+   "depth_ppm_err": 163.72,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.264,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15700.09,
+   "depth_ppm_err": 192.96,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.284,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15840.74,
+   "depth_ppm_err": 211.44,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.304,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15560.07,
+   "depth_ppm_err": 169.65,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.324,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15480.34,
+   "depth_ppm_err": 216.49,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.344,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15627.5,
+   "depth_ppm_err": 215.02,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.364,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15989.6,
+   "depth_ppm_err": 220.02,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.384,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 16030.09,
+   "depth_ppm_err": 192.45,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.404,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15787.92,
+   "depth_ppm_err": 233.71,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.424,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15808.03,
+   "depth_ppm_err": 233.86,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.444,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15532.64,
+   "depth_ppm_err": 296.62,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.464,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15745.23,
+   "depth_ppm_err": 311.19,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.484,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 16350.74,
+   "depth_ppm_err": 263.41,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.504,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15992.13,
+   "depth_ppm_err": 364.2,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.524,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15997.19,
+   "depth_ppm_err": 344.03,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.544,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 16004.78,
+   "depth_ppm_err": 349.17,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.564,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15490.29,
+   "depth_ppm_err": 440.59,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.584,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15343.78,
+   "depth_ppm_err": 470.71,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.604,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 14984.21,
+   "depth_ppm_err": 421.09,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.624,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 15492.78,
+   "depth_ppm_err": 472.99,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 15448.0,
+   "depth_ppm_err": 325.64,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 14723.4,
+   "depth_ppm_err": 424.69,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

@@ -1,0 +1,1300 @@
+{
+ "planet": "WASP-127 b",
+ "kind": "transmission",
+ "n_points": 136,
+ "wavelength_range_um": [
+  0.405,
+  1.013
+ ],
+ "facilities": [
+  "Gran Telescopio CANARIAS 10.4m telescope",
+  "Nordic Optical Telescope"
+ ],
+ "instruments": [
+  "ALFOSC",
+  "OSIRIS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 136
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.405,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 12723.84,
+   "depth_ppm_err": 406.08,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.425,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9545.29,
+   "depth_ppm_err": 879.3,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.425,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11685.61,
+   "depth_ppm_err": 864.8,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.445,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9682.56,
+   "depth_ppm_err": 570.72,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.445,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11946.49,
+   "depth_ppm_err": 437.2,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.465,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10444.84,
+   "depth_ppm_err": 511.0,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.465,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11750.56,
+   "depth_ppm_err": 433.6,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.485,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10221.21,
+   "depth_ppm_err": 363.96,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.485,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11257.21,
+   "depth_ppm_err": 381.96,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.505,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9721.96,
+   "depth_ppm_err": 473.28,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.505,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11130.25,
+   "depth_ppm_err": 611.9,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.5242,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10000.0,
+   "depth_ppm_err": 380.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.525,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11004.01,
+   "depth_ppm_err": 398.62,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.525,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9920.16,
+   "depth_ppm_err": 378.48,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.5292,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9177.64,
+   "depth_ppm_err": 536.48,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5342,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10404.0,
+   "depth_ppm_err": 306.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5392,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9920.16,
+   "depth_ppm_err": 398.4,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5442,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9662.89,
+   "depth_ppm_err": 432.52,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.545,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10836.81,
+   "depth_ppm_err": 791.16,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.545,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9525.76,
+   "depth_ppm_err": 429.44,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.5492,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10160.64,
+   "depth_ppm_err": 302.4,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5542,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 280.56,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5592,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9254.44,
+   "depth_ppm_err": 365.56,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5642,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10322.56,
+   "depth_ppm_err": 264.16,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.565,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9025.0,
+   "depth_ppm_err": 551.0,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.565,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10424.41,
+   "depth_ppm_err": 837.22,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.5692,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 240.48,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5742,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10261.69,
+   "depth_ppm_err": 182.34,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5792,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10241.44,
+   "depth_ppm_err": 182.16,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5842,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10567.84,
+   "depth_ppm_err": 143.92,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.585,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9801.0,
+   "depth_ppm_err": 336.6,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.585,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10465.29,
+   "depth_ppm_err": 388.74,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.5892,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10629.61,
+   "depth_ppm_err": 144.34,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5942,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10506.25,
+   "depth_ppm_err": 164.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5992,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10383.61,
+   "depth_ppm_err": 183.42,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6042,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10140.49,
+   "depth_ppm_err": 221.54,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.605,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9662.89,
+   "depth_ppm_err": 373.54,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.605,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9428.41,
+   "depth_ppm_err": 368.98,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.6092,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10485.76,
+   "depth_ppm_err": 184.32,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6142,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9900.25,
+   "depth_ppm_err": 139.3,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6192,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10221.21,
+   "depth_ppm_err": 80.88,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6242,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10160.64,
+   "depth_ppm_err": 181.44,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.625,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10878.49,
+   "depth_ppm_err": 813.54,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.625,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9120.25,
+   "depth_ppm_err": 515.7,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.6292,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9900.25,
+   "depth_ppm_err": 179.1,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6342,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9940.09,
+   "depth_ppm_err": 338.98,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6392,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10100.25,
+   "depth_ppm_err": 201.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6442,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10588.41,
+   "depth_ppm_err": 164.64,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.645,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 407.4,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.645,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 543.2,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.6492,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10241.44,
+   "depth_ppm_err": 263.12,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6542,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10160.64,
+   "depth_ppm_err": 241.92,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6592,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10020.01,
+   "depth_ppm_err": 180.18,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6642,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10100.25,
+   "depth_ppm_err": 180.9,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.665,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9820.81,
+   "depth_ppm_err": 396.4,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.665,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10920.25,
+   "depth_ppm_err": 689.7,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.6692,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10670.89,
+   "depth_ppm_err": 144.62,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6742,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10281.96,
+   "depth_ppm_err": 243.36,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6792,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10060.09,
+   "depth_ppm_err": 180.54,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6842,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9980.01,
+   "depth_ppm_err": 239.76,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.685,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10650.24,
+   "depth_ppm_err": 474.72,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.685,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10120.36,
+   "depth_ppm_err": 523.12,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.6892,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9721.96,
+   "depth_ppm_err": 177.48,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6942,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9900.25,
+   "depth_ppm_err": 159.2,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6992,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10140.49,
+   "depth_ppm_err": 140.98,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7042,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10241.44,
+   "depth_ppm_err": 222.64,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.705,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 521.04,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.705,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11193.64,
+   "depth_ppm_err": 634.8,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.7092,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10020.01,
+   "depth_ppm_err": 180.18,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7142,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9960.04,
+   "depth_ppm_err": 159.68,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7192,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 180.36,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7242,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10120.36,
+   "depth_ppm_err": 281.68,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.725,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11342.25,
+   "depth_ppm_err": 319.5,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.725,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10363.24,
+   "depth_ppm_err": 468.28,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.7292,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 240.48,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7342,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9940.09,
+   "depth_ppm_err": 239.28,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7392,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10180.81,
+   "depth_ppm_err": 242.16,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7442,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10180.81,
+   "depth_ppm_err": 242.16,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.745,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11728.89,
+   "depth_ppm_err": 411.54,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.745,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10120.36,
+   "depth_ppm_err": 603.6,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.7492,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10424.41,
+   "depth_ppm_err": 204.2,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7542,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10404.0,
+   "depth_ppm_err": 285.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7705,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10629.61,
+   "depth_ppm_err": 226.82,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.775,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11556.25,
+   "depth_ppm_err": 666.5,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.775,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9467.29,
+   "depth_ppm_err": 836.78,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.7755,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10140.49,
+   "depth_ppm_err": 161.12,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7805,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10261.69,
+   "depth_ppm_err": 162.08,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7855,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10040.04,
+   "depth_ppm_err": 200.4,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7905,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10547.29,
+   "depth_ppm_err": 184.86,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.795,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11109.16,
+   "depth_ppm_err": 463.76,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.795,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10000.0,
+   "depth_ppm_err": 400.0,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.7955,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9980.01,
+   "depth_ppm_err": 299.7,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8005,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10567.84,
+   "depth_ppm_err": 246.72,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8055,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10281.96,
+   "depth_ppm_err": 405.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8105,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10302.25,
+   "depth_ppm_err": 162.4,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.815,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9350.89,
+   "depth_ppm_err": 599.54,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.815,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8836.0,
+   "depth_ppm_err": 545.2,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.8155,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9564.84,
+   "depth_ppm_err": 195.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8205,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9960.04,
+   "depth_ppm_err": 159.68,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8255,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9940.09,
+   "depth_ppm_err": 159.52,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8305,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9900.25,
+   "depth_ppm_err": 218.9,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.835,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10080.16,
+   "depth_ppm_err": 562.24,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.835,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8949.16,
+   "depth_ppm_err": 510.84,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.8355,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9940.09,
+   "depth_ppm_err": 219.34,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8405,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9702.25,
+   "depth_ppm_err": 334.9,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8455,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9486.76,
+   "depth_ppm_err": 564.92,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8505,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9682.56,
+   "depth_ppm_err": 452.64,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.855,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10465.29,
+   "depth_ppm_err": 777.48,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.855,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8987.04,
+   "depth_ppm_err": 568.8,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.8555,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9980.01,
+   "depth_ppm_err": 319.68,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8605,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9840.64,
+   "depth_ppm_err": 218.24,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8655,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9331.56,
+   "depth_ppm_err": 193.2,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8705,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9604.0,
+   "depth_ppm_err": 352.8,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.875,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 9428.41,
+   "depth_ppm_err": 835.06,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.875,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10941.16,
+   "depth_ppm_err": 564.84,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.8755,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9044.01,
+   "depth_ppm_err": 323.34,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8805,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9506.25,
+   "depth_ppm_err": 409.5,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8855,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9741.69,
+   "depth_ppm_err": 394.8,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8905,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9860.49,
+   "depth_ppm_err": 536.22,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.895,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10732.96,
+   "depth_ppm_err": 745.92,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.8955,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9428.41,
+   "depth_ppm_err": 679.7,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.9005,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9702.25,
+   "depth_ppm_err": 551.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.9055,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 9880.36,
+   "depth_ppm_err": 357.84,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.913,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10629.61,
+   "depth_ppm_err": 824.8,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.915,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11067.04,
+   "depth_ppm_err": 694.32,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.923,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10100.25,
+   "depth_ppm_err": 924.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.933,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10342.89,
+   "depth_ppm_err": 366.12,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.935,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 11046.01,
+   "depth_ppm_err": 924.88,
+   "source": "plnratror_squared",
+   "facility": "Nordic Optical Telescope",
+   "instrument": "ALFOSC"
+  },
+  {
+   "wavelength_um": 0.943,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10342.89,
+   "depth_ppm_err": 610.2,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.953,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10140.49,
+   "depth_ppm_err": 443.08,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.963,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9940.09,
+   "depth_ppm_err": 378.86,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.973,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9604.0,
+   "depth_ppm_err": 646.8,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.983,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10322.56,
+   "depth_ppm_err": 650.24,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.993,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9564.84,
+   "depth_ppm_err": 704.16,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 1.003,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9623.61,
+   "depth_ppm_err": 902.52,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 1.013,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9506.25,
+   "depth_ppm_err": 663.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

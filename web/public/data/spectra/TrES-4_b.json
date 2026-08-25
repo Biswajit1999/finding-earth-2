@@ -1,0 +1,165 @@
+{
+ "planet": "TrES-4 b",
+ "kind": "transmission",
+ "n_points": 10,
+ "wavelength_range_um": [
+  1.1225,
+  1.638
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite"
+ ],
+ "instruments": [
+  "WFC3"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 10
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    1.13,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 1.1225,
+   "bandwidth_um": 0.063,
+   "depth_ppm": 8686.24,
+   "depth_ppm_err": 447.36,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.1805,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 9025.0,
+   "depth_ppm_err": 427.5,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.232,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 8372.25,
+   "depth_ppm_err": 420.9,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.2825,
+   "bandwidth_um": 0.051,
+   "depth_ppm": 8817.21,
+   "depth_ppm_err": 563.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.333,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 9350.89,
+   "depth_ppm_err": 348.12,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.3855,
+   "bandwidth_um": 0.055,
+   "depth_ppm": 8892.49,
+   "depth_ppm_err": 396.06,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.441,
+   "bandwidth_um": 0.056,
+   "depth_ppm": 8873.64,
+   "depth_ppm_err": 414.48,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.499,
+   "bandwidth_um": 0.06,
+   "depth_ppm": 9101.16,
+   "depth_ppm_err": 362.52,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.5625,
+   "bandwidth_um": 0.067,
+   "depth_ppm": 8372.25,
+   "depth_ppm_err": 457.5,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.638,
+   "bandwidth_um": 0.084,
+   "depth_ppm": 10160.64,
+   "depth_ppm_err": 544.32,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

@@ -1,0 +1,165 @@
+{
+ "planet": "HAT-P-23 b",
+ "kind": "transmission",
+ "n_points": 11,
+ "wavelength_range_um": [
+  0.3585,
+  0.9222
+ ],
+ "facilities": [
+  "Calar Alto Observatory's 1.2 meter Telescope",
+  "Calar Alto Observatory's 2.2 meter Telescope"
+ ],
+ "instruments": [
+  "BUSCA",
+  "DLR-MKIII camera"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 11
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.3585,
+   "bandwidth_um": null,
+   "depth_ppm": 14674.9,
+   "depth_ppm_err": 2965.51,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.4858,
+   "bandwidth_um": null,
+   "depth_ppm": 14056.47,
+   "depth_ppm_err": 455.27,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 13614.22,
+   "depth_ppm_err": 282.37,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 12882.25,
+   "depth_ppm_err": 606.09,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 14932.84,
+   "depth_ppm_err": 251.73,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 12866.36,
+   "depth_ppm_err": 292.65,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 12535.04,
+   "depth_ppm_err": 403.06,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 13763.98,
+   "depth_ppm_err": 265.14,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 12488.06,
+   "depth_ppm_err": 1113.03,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 14467.28,
+   "depth_ppm_err": 483.53,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 13236.5,
+   "depth_ppm_err": 476.31,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

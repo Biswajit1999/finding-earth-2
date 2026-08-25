@@ -1,0 +1,212 @@
+{
+ "planet": "WASP-4 b",
+ "kind": "transmission",
+ "n_points": 16,
+ "wavelength_range_um": [
+  0.525,
+  0.8665
+ ],
+ "facilities": [
+  "4.1m Southern Astrophysical Research (SOAR) Telescope at Cerro Pachon",
+  "Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon",
+  "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)"
+ ],
+ "instruments": [
+  "GMOS",
+  "SOI",
+  "Y4KCam"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 16
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.525,
+   "bandwidth_um": 0.25,
+   "depth_ppm": 23592.96,
+   "depth_ppm_err": 399.36,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6125,
+   "bandwidth_um": 0.175,
+   "depth_ppm": 24460.96,
+   "depth_ppm_err": 187.68,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6125,
+   "bandwidth_um": 0.175,
+   "depth_ppm": 24554.89,
+   "depth_ppm_err": 156.7,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 22171.21,
+   "depth_ppm_err": 848.73,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 23901.16,
+   "depth_ppm_err": 726.62,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7125,
+   "bandwidth_um": 0.375,
+   "depth_ppm": 24056.01,
+   "depth_ppm_err": 186.12,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 24273.64,
+   "depth_ppm_err": 373.92,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 22680.36,
+   "depth_ppm_err": 496.98,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 22410.09,
+   "depth_ppm_err": 389.22,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 22801.0,
+   "depth_ppm_err": 921.1,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 23870.25,
+   "depth_ppm_err": 540.75,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 24398.44,
+   "depth_ppm_err": 749.76,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.8665,
+   "bandwidth_um": null,
+   "depth_ppm": 24806.25,
+   "depth_ppm_err": 504.0,
+   "source": "plnratror_squared",
+   "facility": "4.1m Southern Astrophysical Research (SOAR) Telescope at Cerro Pachon",
+   "instrument": "SOI"
+  },
+  {
+   "wavelength_um": 0.8665,
+   "bandwidth_um": null,
+   "depth_ppm": 23256.25,
+   "depth_ppm_err": 427.0,
+   "source": "plnratror_squared",
+   "facility": "4.1m Southern Astrophysical Research (SOAR) Telescope at Cerro Pachon",
+   "instrument": "SOI"
+  },
+  {
+   "wavelength_um": 0.8665,
+   "bandwidth_um": null,
+   "depth_ppm": 23500.89,
+   "depth_ppm_err": 490.56,
+   "source": "plnratror_squared",
+   "facility": "4.1m Southern Astrophysical Research (SOAR) Telescope at Cerro Pachon",
+   "instrument": "SOI"
+  },
+  {
+   "wavelength_um": 0.8665,
+   "bandwidth_um": null,
+   "depth_ppm": 24617.61,
+   "depth_ppm_err": 580.53,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

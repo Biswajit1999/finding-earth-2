@@ -1,0 +1,348 @@
+{
+ "planet": "Teegarden's Star c",
+ "hostname": "Teegarden's Star",
+ "generated_utc": "2026-08-24T22:50:22Z",
+ "narrative": {
+  "location": "Teegarden's Star lies 12.49 light-years (3.831 pc) from the Sun.",
+  "host_star": "Teegarden's Star is a M7.0 V star with 0.097\u00d7 the Sun's mass and 0.12\u00d7 its radius (effective temperature 3034 K, versus the Sun's 5772 K).",
+  "system": "It is a single star hosting 3 known planets.",
+  "planet": "Teegarden's Star c is 1.02\u00d7 Earth's radius, at least 1.05\u00d7 Earth's mass (a radial-velocity minimum mass, not the true mass), completing one orbit every 11.4 days at 0.0455 AU, on a mildly eccentric orbit (e = 0.04).",
+  "climate": "It receives about 0.35\u00d7 the flux Earth gets from the Sun, for an equilibrium temperature near 196 K (Earth's is 254 K)."
+ },
+ "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
+ "ranking": {
+  "earth2_rank": 5,
+  "earth2_index": 0.8234,
+  "scores": {
+   "earth_similarity": 0.8071,
+   "conservative_habitability": 0.9478,
+   "observational_confidence": 0.6758,
+   "characterisation_potential": null
+  },
+  "component_ranks": {
+   "earth_similarity": 46,
+   "conservative_habitability": 1,
+   "observational_confidence": 2116
+  }
+ },
+ "planet_parameters": {
+  "radius_earth": {
+   "value": 1.02,
+   "err_upper": null,
+   "err_lower": null,
+   "p16": 1.02,
+   "p50": 1.02,
+   "p84": 1.02
+  },
+  "mass_earth": {
+   "value": 1.05,
+   "err_upper": 0.14,
+   "err_lower": -0.13,
+   "class": "msini_lower_limit",
+   "class_meaning": "Radial-velocity minimum mass: the true mass is M/sin(i), so this is a LOWER limit."
+  },
+  "density_g_cm3": {
+   "value": 5.44,
+   "source": "catalogue"
+  },
+  "escape_velocity_kms": 11.349,
+  "orbital_period_days": 11.416,
+  "semi_major_axis_au": 0.0455,
+  "eccentricity": 0.04,
+  "insolation_earth": {
+   "value": 0.35,
+   "source": "catalogue",
+   "p16": 0.3297,
+   "p84": 0.3695
+  },
+  "equilibrium_temperature_k": {
+   "value": 195.52,
+   "source": "derived_from_insolation_albedo_0.306",
+   "albedo_assumed": 0.306,
+   "p16": 192.61,
+   "p84": 198.18,
+   "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
+  }
+ },
+ "host_star": {
+  "name": "Teegarden's Star",
+  "teff_k": 3034.0,
+  "radius_sun": 0.12,
+  "mass_sun": 0.097,
+  "luminosity_log_sun": -3.1415,
+  "metallicity_dex": -0.11,
+  "age_gyr": 8.0,
+  "spectral_type": "M7.0 V",
+  "distance_pc": 3.831,
+  "distance_ly": 12.494,
+  "v_mag": 15.13,
+  "j_mag": 8.394,
+  "k_mag": 7.585,
+  "n_stars_in_system": 1,
+  "n_planets_in_system": 3
+ },
+ "gaia_crossmatch": {
+  "source_id": "35227046884571776",
+  "parallax_mas": 260.9884,
+  "parallax_error_mas": 0.0934,
+  "distance_pc": 3.832,
+  "distance_disagreement_vs_archive_pct": 0.02,
+  "ruwe": 1.304,
+  "ruwe_note": null,
+  "non_single_star_flag": false,
+  "proper_motion_mas_yr": {
+   "ra": 3429.083,
+   "dec": -3805.541
+  }
+ },
+ "habitable_zone": {
+  "conservative_nominal": 1.0,
+  "optimistic_nominal": 1.0,
+  "conservative_probability": 1.0,
+  "optimistic_probability": 1.0,
+  "position_across_conservative_hz": 0.8142,
+  "model_extrapolated": false,
+  "teff_offset_from_validity_k": 0.0,
+  "teff_valid_fraction_of_draws": 1.0,
+  "boundaries_seff": {
+   "recent_venus": 1.4984,
+   "runaway_greenhouse": 0.8652,
+   "moist_greenhouse": 0.8559,
+   "maximum_greenhouse": 0.2324,
+   "early_mars": 0.2058
+  },
+  "boundaries_au": {
+   "recent_venus": 0.02195,
+   "runaway_greenhouse": 0.02889,
+   "moist_greenhouse": 0.02904,
+   "maximum_greenhouse": 0.05574,
+   "early_mars": 0.05923
+  },
+  "model": "Kopparapu et al. (2013), ApJ 765, 131, with the 2013 erratum coefficients"
+ },
+ "earth_similarity": {
+  "esi_global": 0.8191,
+  "esi_p16": 0.7913,
+  "esi_p50": 0.8071,
+  "esi_p84": 0.8202,
+  "esi_interior": 0.9936,
+  "esi_surface": 0.6753,
+  "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
+ },
+ "evidence": {
+  "n_independent_references": 2,
+  "n_published_parameter_sets": 2,
+  "radius_literature_spread": null,
+  "uncertainty_coverage": 0.8333,
+  "params_without_uncertainty": 1,
+  "discovery_method": "Radial Velocity",
+  "discovery_year": 2019,
+  "discovery_facility": "Calar Alto Observatory",
+  "detected_by_transit": false,
+  "detected_by_radial_velocity": true,
+  "controversial_flag": false
+ },
+ "observability": {
+  "tsm": null,
+  "esm": null,
+  "rv_semi_amplitude_ms": 1.4136,
+  "n_transmission_points": 0,
+  "n_emission_points": 0,
+  "n_rv_time_series": 0,
+  "n_photometric_time_series": 0,
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+ },
+ "system": {
+  "siblings": [
+   {
+    "pl_name": "Teegarden's Star b",
+    "pl_rade": 1.05,
+    "pl_bmasse": 1.16,
+    "pl_orbper": 4.90634,
+    "pl_orbsmax": 0.0259,
+    "insol_used": 1.08,
+    "teq_used": 259.1,
+    "hz_conservative_prob": 0.004,
+    "earth2_index": 0.142,
+    "mass_class": "msini_lower_limit"
+   },
+   {
+    "pl_name": "Teegarden's Star d",
+    "pl_rade": 0.954,
+    "pl_bmasse": 0.82,
+    "pl_orbper": 26.13,
+    "pl_orbsmax": 0.0791,
+    "insol_used": 0.12,
+    "teq_used": 149.6,
+    "hz_conservative_prob": 0.0,
+    "earth2_index": 0.1212,
+    "mass_class": "msini_lower_limit"
+   }
+  ]
+ },
+ "measurement_provenance": [
+  {
+   "parameter": "pl_rade",
+   "parameter_label": "Planet radius",
+   "value": 1.02,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "pl_bmasse",
+   "parameter_label": "Planet mass",
+   "value": 1.05,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "pl_orbper",
+   "parameter_label": "Orbital period",
+   "value": 11.416,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "pl_orbsmax",
+   "parameter_label": "Semi-major axis",
+   "value": 0.0455,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "pl_insol",
+   "parameter_label": "Incident flux",
+   "value": 0.35,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "pl_eqt",
+   "parameter_label": "Equilibrium temperature",
+   "value": 209.0,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "pl_dens",
+   "parameter_label": "Bulk density",
+   "value": 5.44,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "pl_orbeccen",
+   "parameter_label": "Orbital eccentricity",
+   "value": 0.04,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_teff",
+   "parameter_label": "Stellar effective temperature",
+   "value": 3034.0,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_rad",
+   "parameter_label": "Stellar radius",
+   "value": 0.12,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_mass",
+   "parameter_label": "Stellar mass",
+   "value": 0.097,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_lum",
+   "parameter_label": "Stellar luminosity",
+   "value": -3.14146,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_met",
+   "parameter_label": "Stellar metallicity",
+   "value": -0.11,
+   "source_kind": "publication",
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D"
+  },
+  {
+   "parameter": "st_age",
+   "parameter_label": "Stellar age",
+   "value": 8.0,
+   "source_kind": "publication",
+   "reference_label": "Zechmeister et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...627A..49Z/abstract",
+   "bibcode": "2019A&A...627A..49Z"
+  },
+  {
+   "parameter": "sy_dist",
+   "parameter_label": "System distance",
+   "value": 3.83078,
+   "source_kind": "publication",
+   "reference_label": "TICv8",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract",
+   "bibcode": "2019AJ....158..138S"
+  }
+ ],
+ "identifiers": {
+  "system_name": "Teegarden's Star"
+ },
+ "aliases": [
+  "Gaia DR3 35227046884571776 c",
+  "LSPM J0253+1652 c",
+  "Teegarden's Star c",
+  "2MASS J02530084+1652532 c",
+  "TIC 257870150 c",
+  "Gaia DR2 35227046884571776 c"
+ ],
+ "transmission_spectrum": {
+  "available": false,
+  "message": "No published transmission spectrum exists for this planet in the NASA Exoplanet Archive."
+ },
+ "transit_analysis": {
+  "attempted": false,
+  "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
+ },
+ "rv_analysis": {
+  "target": "Teegarden's Star",
+  "analysed_utc": "2026-08-24T22:50:22Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
+ }
+}

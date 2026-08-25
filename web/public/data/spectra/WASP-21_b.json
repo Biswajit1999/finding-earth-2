@@ -1,0 +1,624 @@
+{
+ "planet": "WASP-21 b",
+ "kind": "transmission",
+ "n_points": 62,
+ "wavelength_range_um": [
+  0.4635,
+  0.903
+ ],
+ "facilities": [
+  "Gran Telescopio CANARIAS 10.4m telescope",
+  "Isaac Newton Group's William Herschel Telescope"
+ ],
+ "instruments": [
+  "ACAM",
+  "OSIRIS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 62
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.4635,
+   "bandwidth_um": 0.027,
+   "depth_ppm": 11372.09,
+   "depth_ppm_err": 319.92,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.486,
+   "bandwidth_um": 0.018,
+   "depth_ppm": 11331.6,
+   "depth_ppm_err": 174.58,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.509,
+   "bandwidth_um": 0.028,
+   "depth_ppm": 11126.03,
+   "depth_ppm_err": 156.11,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.529,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9920.16,
+   "depth_ppm_err": 249.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5355,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 11001.91,
+   "depth_ppm_err": 161.53,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.539,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10120.36,
+   "depth_ppm_err": 251.5,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.549,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10060.09,
+   "depth_ppm_err": 260.78,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5589,
+   "bandwidth_um": 0.0218,
+   "depth_ppm": 10592.53,
+   "depth_ppm_err": 170.85,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.559,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10712.25,
+   "depth_ppm_err": 258.75,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.569,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10670.89,
+   "depth_ppm_err": 227.26,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5733,
+   "bandwidth_um": 0.007,
+   "depth_ppm": 10170.72,
+   "depth_ppm_err": 244.06,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.579,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 11004.01,
+   "depth_ppm_err": 230.78,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5798,
+   "bandwidth_um": 0.006,
+   "depth_ppm": 10828.48,
+   "depth_ppm_err": 253.91,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.5853,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10745.4,
+   "depth_ppm_err": 325.49,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.589,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 11815.69,
+   "depth_ppm_err": 369.58,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.003,
+   "depth_ppm": 11966.17,
+   "depth_ppm_err": 282.23,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.5933,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 10926.52,
+   "depth_ppm_err": 353.31,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.5988,
+   "bandwidth_um": 0.006,
+   "depth_ppm": 10338.82,
+   "depth_ppm_err": 307.07,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.599,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 11046.01,
+   "depth_ppm_err": 241.73,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6053,
+   "bandwidth_um": 0.007,
+   "depth_ppm": 10557.56,
+   "depth_ppm_err": 246.6,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.609,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 11004.01,
+   "depth_ppm_err": 230.78,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6159,
+   "bandwidth_um": 0.0142,
+   "depth_ppm": 10886.84,
+   "depth_ppm_err": 175.29,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.619,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10485.76,
+   "depth_ppm_err": 276.48,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 11067.04,
+   "depth_ppm_err": 231.44,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.633,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10639.92,
+   "depth_ppm_err": 125.84,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.639,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10878.49,
+   "depth_ppm_err": 239.89,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.649,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10526.76,
+   "depth_ppm_err": 225.72,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.658,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 10586.35,
+   "depth_ppm_err": 121.41,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.659,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10526.76,
+   "depth_ppm_err": 235.98,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.669,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10506.25,
+   "depth_ppm_err": 246.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.679,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10060.09,
+   "depth_ppm_err": 240.72,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.6855,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 10578.12,
+   "depth_ppm_err": 131.65,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.689,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10732.96,
+   "depth_ppm_err": 227.92,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.699,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10060.09,
+   "depth_ppm_err": 250.75,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7047,
+   "bandwidth_um": 0.0135,
+   "depth_ppm": 10420.33,
+   "depth_ppm_err": 106.16,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.709,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10588.41,
+   "depth_ppm_err": 246.96,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.719,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10241.44,
+   "depth_ppm_err": 263.12,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7242,
+   "bandwidth_um": 0.0255,
+   "depth_ppm": 10371.39,
+   "depth_ppm_err": 136.47,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.729,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10080.16,
+   "depth_ppm_err": 251.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.739,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10444.84,
+   "depth_ppm_err": 245.28,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7445,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 10404.0,
+   "depth_ppm_err": 163.2,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.749,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10342.89,
+   "depth_ppm_err": 274.59,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7695,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 10487.81,
+   "depth_ppm_err": 141.33,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.773,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10547.29,
+   "depth_ppm_err": 267.02,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.783,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9960.04,
+   "depth_ppm_err": 249.5,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.793,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10444.84,
+   "depth_ppm_err": 245.28,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.797,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10355.1,
+   "depth_ppm_err": 101.76,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.803,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10383.61,
+   "depth_ppm_err": 254.75,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.813,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10160.64,
+   "depth_ppm_err": 322.56,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.822,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 10469.38,
+   "depth_ppm_err": 180.08,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.823,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9900.25,
+   "depth_ppm_err": 278.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.833,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10962.09,
+   "depth_ppm_err": 282.69,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.843,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10444.84,
+   "depth_ppm_err": 306.6,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8485,
+   "bandwidth_um": 0.023,
+   "depth_ppm": 10543.18,
+   "depth_ppm_err": 127.32,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.853,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10281.96,
+   "depth_ppm_err": 334.62,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.863,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10140.49,
+   "depth_ppm_err": 342.38,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.87,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 10646.11,
+   "depth_ppm_err": 175.41,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.873,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10080.16,
+   "depth_ppm_err": 341.36,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.883,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 9781.21,
+   "depth_ppm_err": 445.05,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.893,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10000.0,
+   "depth_ppm_err": 440.0,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.9,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 10644.05,
+   "depth_ppm_err": 220.78,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group's William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.903,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 10261.69,
+   "depth_ppm_err": 698.97,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

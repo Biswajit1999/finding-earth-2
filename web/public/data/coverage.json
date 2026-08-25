@@ -1,0 +1,140 @@
+{
+ "generated_utc": "2026-08-24T22:53:46Z",
+ "rows": [
+  {
+   "quantity": "Planet radius",
+   "column": "pl_rade",
+   "n_with_value": 6304,
+   "pct_with_value": 99.21,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 4395.0,
+   "pct_with_uncertainty": 69.17
+  },
+  {
+   "quantity": "Planet mass",
+   "column": "pl_bmasse",
+   "n_with_value": 6323,
+   "pct_with_value": 99.51,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 3078.0,
+   "pct_with_uncertainty": 48.44
+  },
+  {
+   "quantity": "Bulk density",
+   "column": "pl_dens",
+   "n_with_value": 6212,
+   "pct_with_value": 97.77,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 1470.0,
+   "pct_with_uncertainty": 23.14
+  },
+  {
+   "quantity": "Orbital period",
+   "column": "pl_orbper",
+   "n_with_value": 6009,
+   "pct_with_value": 94.57,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 5515.0,
+   "pct_with_uncertainty": 86.8
+  },
+  {
+   "quantity": "Semi-major axis",
+   "column": "pl_orbsmax",
+   "n_with_value": 5924,
+   "pct_with_value": 93.23,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 3946.0,
+   "pct_with_uncertainty": 62.1
+  },
+  {
+   "quantity": "Orbital eccentricity",
+   "column": "pl_orbeccen",
+   "n_with_value": 5294,
+   "pct_with_value": 83.32,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 1920.0,
+   "pct_with_uncertainty": 30.22
+  },
+  {
+   "quantity": "Incident flux",
+   "column": "insol_used",
+   "n_with_value": 5769,
+   "pct_with_value": 90.79,
+   "uncertainty_applicable": false,
+   "n_with_uncertainty": null,
+   "pct_with_uncertainty": null
+  },
+  {
+   "quantity": "Equilibrium temperature",
+   "column": "teq_used",
+   "n_with_value": 5831,
+   "pct_with_value": 91.77,
+   "uncertainty_applicable": false,
+   "n_with_uncertainty": null,
+   "pct_with_uncertainty": null
+  },
+  {
+   "quantity": "Stellar effective temperature",
+   "column": "st_teff",
+   "n_with_value": 6056,
+   "pct_with_value": 95.31,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 5744.0,
+   "pct_with_uncertainty": 90.4
+  },
+  {
+   "quantity": "Stellar radius",
+   "column": "st_rad",
+   "n_with_value": 6032,
+   "pct_with_value": 94.93,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 5756.0,
+   "pct_with_uncertainty": 90.59
+  },
+  {
+   "quantity": "Stellar mass",
+   "column": "st_mass",
+   "n_with_value": 6345,
+   "pct_with_value": 99.86,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 6069.0,
+   "pct_with_uncertainty": 95.51
+  },
+  {
+   "quantity": "Stellar luminosity",
+   "column": "st_lum",
+   "n_with_value": 6038,
+   "pct_with_value": 95.03,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 3858.0,
+   "pct_with_uncertainty": 60.72
+  },
+  {
+   "quantity": "Stellar metallicity",
+   "column": "st_met",
+   "n_with_value": 5711,
+   "pct_with_value": 89.88,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 5425.0,
+   "pct_with_uncertainty": 85.38
+  },
+  {
+   "quantity": "Stellar age",
+   "column": "st_age",
+   "n_with_value": 4904,
+   "pct_with_value": 77.18,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 4648.0,
+   "pct_with_uncertainty": 73.15
+  },
+  {
+   "quantity": "System distance",
+   "column": "sy_dist",
+   "n_with_value": 6327,
+   "pct_with_value": 99.58,
+   "uncertainty_applicable": true,
+   "n_with_uncertainty": 6217.0,
+   "pct_with_uncertainty": 97.84
+  }
+ ]
+}

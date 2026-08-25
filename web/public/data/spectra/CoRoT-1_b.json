@@ -1,0 +1,273 @@
+{
+ "planet": "CoRoT-1 b",
+ "kind": "transmission",
+ "n_points": 20,
+ "wavelength_range_um": [
+  0.86,
+  2.312
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite",
+  "Infrared Telescope Facility"
+ ],
+ "instruments": [
+  "SpeX and MORIS",
+  "WFC3"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 20
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.86,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 19293.21,
+   "depth_ppm_err": 333.36,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 0.98,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 21025.0,
+   "depth_ppm_err": 783.0,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.083,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20967.04,
+   "depth_ppm_err": 376.48,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.144,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 19044.0,
+   "depth_ppm_err": 662.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.194,
+   "bandwidth_um": 0.048,
+   "depth_ppm": 19881.0,
+   "depth_ppm_err": 789.6,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.241,
+   "bandwidth_um": 0.046,
+   "depth_ppm": 19154.56,
+   "depth_ppm_err": 539.76,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.259,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20736.0,
+   "depth_ppm_err": 403.2,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.2875,
+   "bandwidth_um": 0.047,
+   "depth_ppm": 19881.0,
+   "depth_ppm_err": 648.6,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.334,
+   "bandwidth_um": 0.046,
+   "depth_ppm": 19293.21,
+   "depth_ppm_err": 1041.75,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.381,
+   "bandwidth_um": 0.048,
+   "depth_ppm": 19881.0,
+   "depth_ppm_err": 676.8,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.43,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 19488.16,
+   "depth_ppm_err": 1005.12,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.434,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 21726.76,
+   "depth_ppm_err": 471.68,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.481,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 18769.0,
+   "depth_ppm_err": 890.5,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.534,
+   "bandwidth_um": 0.054,
+   "depth_ppm": 17082.49,
+   "depth_ppm_err": 614.29,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.59,
+   "bandwidth_um": 0.058,
+   "depth_ppm": 17397.61,
+   "depth_ppm_err": 527.6,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "WFC3"
+  },
+  {
+   "wavelength_um": 1.61,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20022.25,
+   "depth_ppm_err": 283.0,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.786,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20334.76,
+   "depth_ppm_err": 741.52,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 1.961,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20477.61,
+   "depth_ppm_err": 829.98,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 2.137,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 20736.0,
+   "depth_ppm_err": 633.6,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  },
+  {
+   "wavelength_um": 2.312,
+   "bandwidth_um": 0.1755,
+   "depth_ppm": 21609.0,
+   "depth_ppm_err": 588.0,
+   "source": "plnratror_squared",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX and MORIS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

@@ -1,0 +1,672 @@
+{
+ "planet": "WASP-80 b",
+ "kind": "transmission",
+ "n_points": 58,
+ "wavelength_range_um": [
+  0.47,
+  4.5
+ ],
+ "facilities": [
+  "Danish 1.54m telescope at European Southern Observatory",
+  "Infrared Survey Facility",
+  "Isaac Newton Group William Herschel Telescope",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+  "Multiple Observatories",
+  "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+  "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "ACAM",
+  "DFOSC",
+  "GROND",
+  "ISLE",
+  "Infrared Array Camera (IRAC)",
+  "Multiple Instruments",
+  "SIRIUS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 58
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9,
+    2.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3,
+    3.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.47,
+   "bandwidth_um": null,
+   "depth_ppm": 28920.4,
+   "depth_ppm_err": 263.59,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.479,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 30534.07,
+   "depth_ppm_err": 283.08,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.48,
+   "bandwidth_um": null,
+   "depth_ppm": 31933.69,
+   "depth_ppm_err": 2287.36,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.48,
+   "bandwidth_um": null,
+   "depth_ppm": 30380.49,
+   "depth_ppm_err": 1603.56,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.509,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 29401.96,
+   "depth_ppm_err": 658.44,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.534,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 30064.09,
+   "depth_ppm_err": 839.21,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.554,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 29929.0,
+   "depth_ppm_err": 975.72,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.569,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30029.42,
+   "depth_ppm_err": 759.01,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.579,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30418.85,
+   "depth_ppm_err": 533.69,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.589,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29217.06,
+   "depth_ppm_err": 786.28,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.599,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30450.25,
+   "depth_ppm_err": 743.37,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.609,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29780.4,
+   "depth_ppm_err": 493.55,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.619,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29991.31,
+   "depth_ppm_err": 412.17,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.62,
+   "bandwidth_um": null,
+   "depth_ppm": 29477.46,
+   "depth_ppm_err": 214.61,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 28913.6,
+   "depth_ppm_err": 632.55,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.639,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29525.55,
+   "depth_ppm_err": 474.25,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.649,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29528.99,
+   "depth_ppm_err": 419.29,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.65,
+   "bandwidth_um": null,
+   "depth_ppm": 30136.96,
+   "depth_ppm_err": 590.24,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.65,
+   "bandwidth_um": null,
+   "depth_ppm": 29275.21,
+   "depth_ppm_err": 1317.47,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.659,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29470.59,
+   "depth_ppm_err": 315.87,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.669,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29179.47,
+   "depth_ppm_err": 515.88,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.679,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29312.86,
+   "depth_ppm_err": 404.06,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.689,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29597.76,
+   "depth_ppm_err": 412.9,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.699,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29522.11,
+   "depth_ppm_err": 323.02,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.709,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29128.25,
+   "depth_ppm_err": 174.08,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.719,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30262.08,
+   "depth_ppm_err": 466.21,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.729,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29504.93,
+   "depth_ppm_err": 353.85,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.739,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29104.36,
+   "depth_ppm_err": 385.56,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.749,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29107.77,
+   "depth_ppm_err": 337.81,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.77,
+   "bandwidth_um": null,
+   "depth_ppm": 29652.84,
+   "depth_ppm_err": 225.58,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.779,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 28978.25,
+   "depth_ppm_err": 173.63,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.789,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 28961.23,
+   "depth_ppm_err": 197.41,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.799,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 28910.2,
+   "depth_ppm_err": 180.23,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": null,
+   "depth_ppm": 30310.81,
+   "depth_ppm_err": 522.3,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": null,
+   "depth_ppm": 31612.84,
+   "depth_ppm_err": 1386.84,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": null,
+   "depth_ppm": 29491.19,
+   "depth_ppm_err": 192.34,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.809,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29288.9,
+   "depth_ppm_err": 191.68,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.819,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 28720.08,
+   "depth_ppm_err": 298.27,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.829,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29254.68,
+   "depth_ppm_err": 259.98,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.839,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29223.9,
+   "depth_ppm_err": 266.68,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.849,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30123.07,
+   "depth_ppm_err": 298.52,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.859,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 30241.21,
+   "depth_ppm_err": 431.27,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.869,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29590.88,
+   "depth_ppm_err": 357.8,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.879,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 29873.67,
+   "depth_ppm_err": 324.94,
+   "source": "plnratror_squared",
+   "facility": "Isaac Newton Group William Herschel Telescope",
+   "instrument": "ACAM"
+  },
+  {
+   "wavelength_um": 0.9,
+   "bandwidth_um": null,
+   "depth_ppm": 29333.41,
+   "depth_ppm_err": 236.35,
+   "source": "plnratror_squared",
+   "facility": "Multiple Observatories",
+   "instrument": "Multiple Instruments"
+  },
+  {
+   "wavelength_um": 1.215,
+   "bandwidth_um": null,
+   "depth_ppm": 28425.96,
+   "depth_ppm_err": 539.52,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+   "instrument": "ISLE"
+  },
+  {
+   "wavelength_um": 1.215,
+   "bandwidth_um": null,
+   "depth_ppm": 29036.16,
+   "depth_ppm_err": 313.54,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+   "instrument": "ISLE"
+  },
+  {
+   "wavelength_um": 1.25,
+   "bandwidth_um": null,
+   "depth_ppm": 29701.08,
+   "depth_ppm_err": 292.98,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 1.25,
+   "bandwidth_um": null,
+   "depth_ppm": 28561.0,
+   "depth_ppm_err": 473.2,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 1.25,
+   "bandwidth_um": null,
+   "depth_ppm": 28798.09,
+   "depth_ppm_err": 509.1,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 1.63,
+   "bandwidth_um": null,
+   "depth_ppm": 28968.04,
+   "depth_ppm_err": 578.68,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 1.63,
+   "bandwidth_um": null,
+   "depth_ppm": 29206.81,
+   "depth_ppm_err": 410.16,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 1.63,
+   "bandwidth_um": null,
+   "depth_ppm": 28493.44,
+   "depth_ppm_err": 472.64,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 2.14,
+   "bandwidth_um": null,
+   "depth_ppm": 28190.41,
+   "depth_ppm_err": 772.34,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 2.14,
+   "bandwidth_um": null,
+   "depth_ppm": 27955.84,
+   "depth_ppm_err": 735.68,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 2.14,
+   "bandwidth_um": null,
+   "depth_ppm": 29172.64,
+   "depth_ppm_err": 546.56,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 29367.68,
+   "depth_ppm_err": 130.24,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 29687.29,
+   "depth_ppm_err": 136.12,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

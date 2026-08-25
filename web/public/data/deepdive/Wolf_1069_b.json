@@ -1,0 +1,305 @@
+{
+ "planet": "Wolf 1069 b",
+ "hostname": "Wolf 1069",
+ "generated_utc": "2026-08-24T22:50:21Z",
+ "narrative": {
+  "location": "Wolf 1069 lies 31.26 light-years (9.583 pc) from the Sun.",
+  "host_star": "Wolf 1069 is a M5.0 V star with 0.167\u00d7 the Sun's mass and 0.181\u00d7 its radius (effective temperature 3158 K, versus the Sun's 5772 K).",
+  "system": "It is a single star hosting 1 known planet.",
+  "planet": "Wolf 1069 b is 1.08\u00d7 Earth's radius, at least 1.26\u00d7 Earth's mass (a radial-velocity minimum mass, not the true mass), completing one orbit every 15.6 days at 0.0672 AU.",
+  "climate": "It receives about 0.65\u00d7 the flux Earth gets from the Sun, for an equilibrium temperature near 228 K (Earth's is 254 K)."
+ },
+ "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
+ "ranking": {
+  "earth2_rank": 4,
+  "earth2_index": 0.839,
+  "scores": {
+   "earth_similarity": 0.8997,
+   "conservative_habitability": 0.9309,
+   "observational_confidence": 0.6442,
+   "characterisation_potential": null
+  },
+  "component_ranks": {
+   "earth_similarity": 12,
+   "conservative_habitability": 4,
+   "observational_confidence": 2586
+  }
+ },
+ "planet_parameters": {
+  "radius_earth": {
+   "value": 1.08,
+   "err_upper": null,
+   "err_lower": null,
+   "p16": 1.08,
+   "p50": 1.08,
+   "p84": 1.08
+  },
+  "mass_earth": {
+   "value": 1.26,
+   "err_upper": 0.21,
+   "err_lower": -0.21,
+   "class": "msini_lower_limit",
+   "class_meaning": "Radial-velocity minimum mass: the true mass is M/sin(i), so this is a LOWER limit."
+  },
+  "density_g_cm3": {
+   "value": 5.5,
+   "source": "catalogue"
+  },
+  "escape_velocity_kms": 12.082,
+  "orbital_period_days": 15.564,
+  "semi_major_axis_au": 0.0672,
+  "eccentricity": null,
+  "insolation_earth": {
+   "value": 0.652,
+   "source": "catalogue",
+   "p16": 0.6257,
+   "p84": 0.6806
+  },
+  "equilibrium_temperature_k": {
+   "value": 228.42,
+   "source": "derived_from_insolation_albedo_0.306",
+   "albedo_assumed": 0.306,
+   "p16": 226.07,
+   "p84": 230.88,
+   "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
+  }
+ },
+ "host_star": {
+  "name": "Wolf 1069",
+  "teff_k": 3158.0,
+  "radius_sun": 0.1813,
+  "mass_sun": 0.167,
+  "luminosity_log_sun": -2.5311,
+  "metallicity_dex": 0.07,
+  "age_gyr": null,
+  "spectral_type": "M5.0 V",
+  "distance_pc": 9.583,
+  "distance_ly": 31.257,
+  "v_mag": 13.993,
+  "j_mag": 9.029,
+  "k_mag": 8.095,
+  "n_stars_in_system": 1,
+  "n_planets_in_system": 1
+ },
+ "gaia_crossmatch": {
+  "source_id": "2188318517720321664",
+  "parallax_mas": 104.4415,
+  "parallax_error_mas": 0.0261,
+  "distance_pc": 9.575,
+  "distance_disagreement_vs_archive_pct": 0.09,
+  "ruwe": 1.419,
+  "ruwe_note": "RUWE > 1.4 is the conventional flag for a poorly-fit or unresolved-binary single-star astrometric solution.",
+  "non_single_star_flag": false,
+  "proper_motion_mas_yr": {
+   "ra": 261.038,
+   "dec": 542.906
+  }
+ },
+ "habitable_zone": {
+  "conservative_nominal": 1.0,
+  "optimistic_nominal": 1.0,
+  "conservative_probability": 1.0,
+  "optimistic_probability": 1.0,
+  "position_across_conservative_hz": 0.3407,
+  "model_extrapolated": false,
+  "teff_offset_from_validity_k": 0.0,
+  "teff_valid_fraction_of_draws": 1.0,
+  "boundaries_seff": {
+   "recent_venus": 1.505,
+   "runaway_greenhouse": 0.8672,
+   "moist_greenhouse": 0.8596,
+   "maximum_greenhouse": 0.2356,
+   "early_mars": 0.2094
+  },
+  "boundaries_au": {
+   "recent_venus": 0.04423,
+   "runaway_greenhouse": 0.05826,
+   "moist_greenhouse": 0.05852,
+   "maximum_greenhouse": 0.11178,
+   "early_mars": 0.11857
+  },
+  "model": "Kopparapu et al. (2013), ApJ 765, 131, with the 2013 erratum coefficients"
+ },
+ "earth_similarity": {
+  "esi_global": 0.9145,
+  "esi_p16": 0.879,
+  "esi_p50": 0.8997,
+  "esi_p84": 0.9125,
+  "esi_interior": 0.9882,
+  "esi_surface": 0.8463,
+  "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
+ },
+ "evidence": {
+  "n_independent_references": 1,
+  "n_published_parameter_sets": 1,
+  "radius_literature_spread": null,
+  "uncertainty_coverage": 0.8333,
+  "params_without_uncertainty": 1,
+  "discovery_method": "Radial Velocity",
+  "discovery_year": 2023,
+  "discovery_facility": "Calar Alto Observatory",
+  "detected_by_transit": false,
+  "detected_by_radial_velocity": true,
+  "controversial_flag": false
+ },
+ "observability": {
+  "tsm": null,
+  "esm": null,
+  "rv_semi_amplitude_ms": 1.0642,
+  "n_transmission_points": 0,
+  "n_emission_points": 0,
+  "n_rv_time_series": 0,
+  "n_photometric_time_series": 0,
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+ },
+ "system": {
+  "siblings": []
+ },
+ "measurement_provenance": [
+  {
+   "parameter": "pl_rade",
+   "parameter_label": "Planet radius",
+   "value": 1.08,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "pl_bmasse",
+   "parameter_label": "Planet mass",
+   "value": 1.26,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "pl_orbper",
+   "parameter_label": "Orbital period",
+   "value": 15.564,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "pl_orbsmax",
+   "parameter_label": "Semi-major axis",
+   "value": 0.0672,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "pl_insol",
+   "parameter_label": "Incident flux",
+   "value": 0.652,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "pl_eqt",
+   "parameter_label": "Equilibrium temperature",
+   "value": 250.1,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "pl_dens",
+   "parameter_label": "Bulk density",
+   "value": 5.5,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "st_teff",
+   "parameter_label": "Stellar effective temperature",
+   "value": 3158.0,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "st_rad",
+   "parameter_label": "Stellar radius",
+   "value": 0.1813,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "st_mass",
+   "parameter_label": "Stellar mass",
+   "value": 0.167,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "st_lum",
+   "parameter_label": "Stellar luminosity",
+   "value": -2.53106,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "st_met",
+   "parameter_label": "Stellar metallicity",
+   "value": 0.07,
+   "source_kind": "publication",
+   "reference_label": "Kossakowski et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...670A..84K/abstract",
+   "bibcode": "2023A&A...670A..84K"
+  },
+  {
+   "parameter": "sy_dist",
+   "parameter_label": "System distance",
+   "value": 9.58341,
+   "source_kind": "publication",
+   "reference_label": "TICv8",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract",
+   "bibcode": "2019AJ....158..138S"
+  }
+ ],
+ "identifiers": {
+  "system_name": "Wolf 1069"
+ },
+ "aliases": [
+  "Gaia DR3 2188318517720321664 b",
+  "Wolf 1069 b",
+  "GJ 1253 b",
+  "TIC 352617553 b",
+  "2MASS J20260528+5834224 b",
+  "Gaia DR2 2188318517720321664 b"
+ ],
+ "transmission_spectrum": {
+  "available": false,
+  "message": "No published transmission spectrum exists for this planet in the NASA Exoplanet Archive."
+ },
+ "transit_analysis": {
+  "attempted": false,
+  "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
+ },
+ "rv_analysis": {
+  "target": "Wolf 1069",
+  "analysed_utc": "2026-08-24T22:50:21Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
+ }
+}

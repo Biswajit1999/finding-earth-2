@@ -1,0 +1,357 @@
+{
+ "planet": "WASP-79 b",
+ "kind": "transmission",
+ "n_points": 26,
+ "wavelength_range_um": [
+  0.647,
+  4.5
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite",
+  "Magellan II Landon Clay Telescope",
+  "Spitzer Space Telescope satellite",
+  "Transiting Exoplanet Survey Satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)",
+  "LDSS-3C",
+  "TESS CCD Array",
+  "Wide Field Camera 3"
+ ],
+ "depth_sources": {
+  "plntransdep_percent": 26
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9,
+    2.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3,
+    3.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.647,
+   "bandwidth_um": 0.045,
+   "depth_ppm": 10725.0,
+   "depth_ppm_err": 316.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.7,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 10955.0,
+   "depth_ppm_err": 206.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.741,
+   "bandwidth_um": 0.032,
+   "depth_ppm": 11026.0,
+   "depth_ppm_err": 101.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.797,
+   "bandwidth_um": 0.055,
+   "depth_ppm": 11175.0,
+   "depth_ppm_err": 73.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.808,
+   "bandwidth_um": 0.445,
+   "depth_ppm": 11396.0,
+   "depth_ppm_err": 140.0,
+   "source": "plntransdep_percent",
+   "facility": "Transiting Exoplanet Survey Satellite",
+   "instrument": "TESS CCD Array"
+  },
+  {
+   "wavelength_um": 0.85,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 11209.0,
+   "depth_ppm_err": 204.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.9,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 11610.0,
+   "depth_ppm_err": 205.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 0.95,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 12071.0,
+   "depth_ppm_err": 215.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 1.0,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 11282.0,
+   "depth_ppm_err": 332.0,
+   "source": "plntransdep_percent",
+   "facility": "Magellan II Landon Clay Telescope",
+   "instrument": "LDSS-3C"
+  },
+  {
+   "wavelength_um": 1.143,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11486.0,
+   "depth_ppm_err": 50.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.177,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11514.0,
+   "depth_ppm_err": 53.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.212,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11398.0,
+   "depth_ppm_err": 51.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.248,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11395.0,
+   "depth_ppm_err": 47.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.282,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11385.0,
+   "depth_ppm_err": 61.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.317,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11431.0,
+   "depth_ppm_err": 52.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.353,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11418.0,
+   "depth_ppm_err": 51.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.388,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11634.0,
+   "depth_ppm_err": 53.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.422,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11524.0,
+   "depth_ppm_err": 51.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.458,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11533.0,
+   "depth_ppm_err": 61.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.493,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11532.0,
+   "depth_ppm_err": 53.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.527,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11412.0,
+   "depth_ppm_err": 54.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.562,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11420.0,
+   "depth_ppm_err": 65.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.598,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11287.0,
+   "depth_ppm_err": 56.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.632,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 11201.0,
+   "depth_ppm_err": 72.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 3.56,
+   "bandwidth_um": 0.76,
+   "depth_ppm": 11224.0,
+   "depth_ppm_err": 80.0,
+   "source": "plntransdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": 1.12,
+   "depth_ppm": 11396.0,
+   "depth_ppm_err": 103.0,
+   "source": "plntransdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

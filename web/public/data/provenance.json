@@ -1,0 +1,164 @@
+{
+ "generated_utc": "2026-08-24T22:53:46Z",
+ "total_source_records": 164209,
+ "datasets": [
+  {
+   "dataset_id": "gaia_dr3_crossmatch",
+   "archive": "Gaia Archive (ESA)",
+   "source_table": "gaiadr3.gaia_source",
+   "n_rows": 4408,
+   "n_columns": 17,
+   "retrieved_utc": "2026-08-24T20:22:19Z",
+   "status": "ok",
+   "sha256_short": "d7c5fcfe56f4",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_di_stars",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "di_stars_exep",
+   "n_rows": 164,
+   "n_columns": 59,
+   "retrieved_utc": "2026-08-24T02:23:58Z",
+   "status": "ok",
+   "sha256_short": "38052f559fc9",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_emissionspec",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "emissionspec",
+   "n_rows": 2361,
+   "n_columns": 18,
+   "retrieved_utc": "2026-08-24T02:23:57Z",
+   "status": "ok",
+   "sha256_short": "8d78a5057343",
+   "doi": "10.26133/NEA9"
+  },
+  {
+   "dataset_id": "nasa_k2pandc",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "k2pandc",
+   "n_rows": 4068,
+   "n_columns": 38,
+   "retrieved_utc": "2026-08-24T02:23:50Z",
+   "status": "ok",
+   "sha256_short": "1444b1fa2b15",
+   "doi": "10.26133/NEA1"
+  },
+  {
+   "dataset_id": "nasa_koi_dr25",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "q1_q17_dr25_koi",
+   "n_rows": 8054,
+   "n_columns": 37,
+   "retrieved_utc": "2026-08-24T02:23:53Z",
+   "status": "ok",
+   "sha256_short": "5a62619a39df",
+   "doi": "10.26133/NEA4"
+  },
+  {
+   "dataset_id": "nasa_microlensing",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "ml",
+   "n_rows": 895,
+   "n_columns": 11,
+   "retrieved_utc": "2026-08-24T02:23:58Z",
+   "status": "ok",
+   "sha256_short": "7f7d795fca9d",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_ps",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "ps",
+   "n_rows": 40106,
+   "n_columns": 124,
+   "retrieved_utc": "2026-08-24T02:23:48Z",
+   "status": "ok",
+   "sha256_short": "5ea9c394849d",
+   "doi": "10.26133/NEA12"
+  },
+  {
+   "dataset_id": "nasa_pscomppars",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "pscomppars",
+   "n_rows": 6354,
+   "n_columns": 151,
+   "retrieved_utc": "2026-08-24T19:59:44Z",
+   "status": "ok",
+   "sha256_short": "73eed33e0d57",
+   "doi": "10.26133/NEA13"
+  },
+  {
+   "dataset_id": "nasa_spectra_index",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "spectra",
+   "n_rows": 1826,
+   "n_columns": 13,
+   "retrieved_utc": "2026-08-24T02:23:57Z",
+   "status": "ok",
+   "sha256_short": "ffb3a6f2b29d",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_stellarhosts",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "stellarhosts",
+   "n_rows": 47857,
+   "n_columns": 38,
+   "retrieved_utc": "2026-08-24T02:24:00Z",
+   "status": "ok",
+   "sha256_short": "45513b70c576",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_tce_dr25",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "q1_q17_dr25_tce",
+   "n_rows": 34032,
+   "n_columns": 23,
+   "retrieved_utc": "2026-08-24T02:23:56Z",
+   "status": "ok",
+   "sha256_short": "246512d90dc8",
+   "doi": ""
+  },
+  {
+   "dataset_id": "nasa_toi",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "toi",
+   "n_rows": 8136,
+   "n_columns": 91,
+   "retrieved_utc": "2026-08-24T02:23:49Z",
+   "status": "ok",
+   "sha256_short": "77b693084fe4",
+   "doi": "10.26134/ExoFOP5"
+  },
+  {
+   "dataset_id": "nasa_transitspec",
+   "archive": "NASA Exoplanet Archive",
+   "source_table": "transitspec",
+   "n_rows": 5948,
+   "n_columns": 27,
+   "retrieved_utc": "2026-08-24T02:23:56Z",
+   "status": "ok",
+   "sha256_short": "ace18f6adaee",
+   "doi": "10.26133/NEA10"
+  }
+ ],
+ "sync_state": {
+  "last_sync_utc": "2026-08-24T19:59:44Z",
+  "datasets_ok": 1,
+  "datasets_failed": 0,
+  "total_source_records": 159801,
+  "outcomes": [
+   {
+    "dataset_id": "nasa_pscomppars",
+    "status": "ok",
+    "n_rows": 6354,
+    "elapsed_s": 12.45,
+    "error": ""
+   }
+  ]
+ }
+}

@@ -1,0 +1,253 @@
+{
+ "planet": "WASP-6 b",
+ "kind": "transmission",
+ "n_points": 21,
+ "wavelength_range_um": [
+  0.4823,
+  0.8517
+ ],
+ "facilities": [
+  "Magellan I Walter Baade Telescope"
+ ],
+ "instruments": [
+  "IMACS spectrograph"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 21
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.4823,
+   "bandwidth_um": 0.209,
+   "depth_ppm": 20449.0,
+   "depth_ppm_err": 586.3,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5031,
+   "bandwidth_um": 0.188,
+   "depth_ppm": 18906.25,
+   "depth_ppm_err": 453.75,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5201,
+   "bandwidth_um": 0.173,
+   "depth_ppm": 19768.36,
+   "depth_ppm_err": 435.86,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5378,
+   "bandwidth_um": 0.18,
+   "depth_ppm": 19600.0,
+   "depth_ppm_err": 448.0,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5558,
+   "bandwidth_um": 0.179,
+   "depth_ppm": 19404.49,
+   "depth_ppm_err": 250.74,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5758,
+   "bandwidth_um": 0.223,
+   "depth_ppm": 19293.21,
+   "depth_ppm_err": 194.46,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.5958,
+   "bandwidth_um": 0.176,
+   "depth_ppm": 19376.64,
+   "depth_ppm_err": 180.96,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6158,
+   "bandwidth_um": 0.223,
+   "depth_ppm": 19044.0,
+   "depth_ppm_err": 165.6,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6361,
+   "bandwidth_um": 0.185,
+   "depth_ppm": 19182.25,
+   "depth_ppm_err": 166.2,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6547,
+   "bandwidth_um": 0.185,
+   "depth_ppm": 19321.0,
+   "depth_ppm_err": 236.3,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.67,
+   "bandwidth_um": 0.38,
+   "depth_ppm": 19712.16,
+   "depth_ppm_err": 280.8,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6744,
+   "bandwidth_um": 0.191,
+   "depth_ppm": 19044.0,
+   "depth_ppm_err": 331.2,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.6943,
+   "bandwidth_um": 0.225,
+   "depth_ppm": 19182.25,
+   "depth_ppm_err": 304.7,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7135,
+   "bandwidth_um": 0.16,
+   "depth_ppm": 18851.29,
+   "depth_ppm_err": 260.87,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7315,
+   "bandwidth_um": 0.2,
+   "depth_ppm": 18171.04,
+   "depth_ppm_err": 269.6,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7488,
+   "bandwidth_um": 0.147,
+   "depth_ppm": 18523.21,
+   "depth_ppm_err": 313.03,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7648,
+   "bandwidth_um": 0.172,
+   "depth_ppm": 18468.81,
+   "depth_ppm_err": 231.03,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.7861,
+   "bandwidth_um": 0.254,
+   "depth_ppm": 18306.09,
+   "depth_ppm_err": 257.07,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8097,
+   "bandwidth_um": 0.217,
+   "depth_ppm": 18714.24,
+   "depth_ppm_err": 328.32,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8305,
+   "bandwidth_um": 0.2,
+   "depth_ppm": 19348.81,
+   "depth_ppm_err": 375.57,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  },
+  {
+   "wavelength_um": 0.8517,
+   "bandwidth_um": 0.225,
+   "depth_ppm": 19488.16,
+   "depth_ppm_err": 349.0,
+   "source": "plnratror_squared",
+   "facility": "Magellan I Walter Baade Telescope",
+   "instrument": "IMACS spectrograph"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

@@ -1,0 +1,266 @@
+{
+ "planet": "WASP-103 b",
+ "kind": "transmission",
+ "n_points": 22,
+ "wavelength_range_um": [
+  0.3943,
+  0.9134
+ ],
+ "facilities": [
+  "Danish 1.54m telescope at European Southern Observatory",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+  "Very Large Telescope (Antu)"
+ ],
+ "instruments": [
+  "DFOSC",
+  "FORS2",
+  "GROND"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 22
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.3943,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13130.87,
+   "depth_ppm_err": 676.08,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4093,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12523.85,
+   "depth_ppm_err": 228.3,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4243,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12939.06,
+   "depth_ppm_err": 241.15,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4393,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12807.45,
+   "depth_ppm_err": 260.29,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4543,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12730.61,
+   "depth_ppm_err": 157.96,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4693,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12993.72,
+   "depth_ppm_err": 109.43,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.477,
+   "bandwidth_um": 0.1379,
+   "depth_ppm": 14304.16,
+   "depth_ppm_err": 442.52,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.4843,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12945.89,
+   "depth_ppm_err": 197.98,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4993,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13169.86,
+   "depth_ppm_err": 137.71,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5143,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13185.93,
+   "depth_ppm_err": 114.83,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5293,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13027.94,
+   "depth_ppm_err": 146.1,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5443,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13402.69,
+   "depth_ppm_err": 106.51,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5593,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13014.25,
+   "depth_ppm_err": 134.61,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5743,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12957.27,
+   "depth_ppm_err": 127.49,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 13107.96,
+   "depth_ppm_err": 238.14,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.002,
+   "depth_ppm": 13451.36,
+   "depth_ppm_err": 324.74,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6043,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 12989.16,
+   "depth_ppm_err": 216.54,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6231,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 13853.29,
+   "depth_ppm_err": 223.63,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.6589,
+   "bandwidth_um": 0.1647,
+   "depth_ppm": 13456.0,
+   "depth_ppm_err": 185.6,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.7625,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 12678.76,
+   "depth_ppm_err": 326.54,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.82,
+   "bandwidth_um": 0.14,
+   "depth_ppm": 13386.49,
+   "depth_ppm_err": 277.68,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.9134,
+   "bandwidth_um": 0.137,
+   "depth_ppm": 13294.09,
+   "depth_ppm_err": 357.43,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

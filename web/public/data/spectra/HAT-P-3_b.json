@@ -1,0 +1,157 @@
+{
+ "planet": "HAT-P-3 b",
+ "kind": "transmission",
+ "n_points": 7,
+ "wavelength_range_um": [
+  0.4407,
+  1.4085
+ ],
+ "facilities": [
+  "0.51m KPNO Visitor Center Telescope (KPNO-VCT) at Kitt Peak National Observatory (KPNO)",
+  "National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM)",
+  "National Optical Astronomy Observatory (NOAO) 2.1 meter Telescope at Kitt Peak National Observatory (KPNO)",
+  "University of Monterrey (UDEM) 0.36m telescope at Observatorio de la Universidad de Monterrey"
+ ],
+ "instruments": [
+  "CCD camera",
+  "FLAMINGOS",
+  "MEXMAN",
+  "SBIG STL-1301E"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 7
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.4407,
+   "bandwidth_um": null,
+   "depth_ppm": 12365.44,
+   "depth_ppm_err": 567.12,
+   "source": "plnratror_squared",
+   "facility": "0.51m KPNO Visitor Center Telescope (KPNO-VCT) at Kitt Peak National Observatory (KPNO)",
+   "instrument": "CCD camera"
+  },
+  {
+   "wavelength_um": 0.538,
+   "bandwidth_um": 0.098,
+   "depth_ppm": 12343.21,
+   "depth_ppm_err": 399.96,
+   "source": "plnratror_squared",
+   "facility": "National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM)",
+   "instrument": "MEXMAN"
+  },
+  {
+   "wavelength_um": 0.63,
+   "bandwidth_um": 0.118,
+   "depth_ppm": 11642.41,
+   "depth_ppm_err": 280.54,
+   "source": "plnratror_squared",
+   "facility": "National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM)",
+   "instrument": "MEXMAN"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 11968.36,
+   "depth_ppm_err": 262.56,
+   "source": "plnratror_squared",
+   "facility": "University of Monterrey (UDEM) 0.36m telescope at Observatorio de la Universidad de Monterrey",
+   "instrument": "SBIG STL-1301E"
+  },
+  {
+   "wavelength_um": 0.894,
+   "bandwidth_um": 0.337,
+   "depth_ppm": 11728.89,
+   "depth_ppm_err": 324.9,
+   "source": "plnratror_squared",
+   "facility": "National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM)",
+   "instrument": "MEXMAN"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 12746.41,
+   "depth_ppm_err": 338.7,
+   "source": "plnratror_squared",
+   "facility": "0.51m KPNO Visitor Center Telescope (KPNO-VCT) at Kitt Peak National Observatory (KPNO)",
+   "instrument": "CCD camera"
+  },
+  {
+   "wavelength_um": 1.4085,
+   "bandwidth_um": 0.923,
+   "depth_ppm": 11750.56,
+   "depth_ppm_err": 173.44,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 2.1 meter Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "FLAMINGOS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

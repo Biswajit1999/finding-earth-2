@@ -1,0 +1,273 @@
+{
+ "planet": "KELT-9 b",
+ "kind": "transmission",
+ "n_points": 23,
+ "wavelength_range_um": [
+  0.4805,
+  0.8665
+ ],
+ "facilities": [
+  "Calar Alto Observatorys 3.5 meter Telescope",
+  "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory"
+ ],
+ "instruments": [
+  "CARMENES",
+  "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+ ],
+ "depth_sources": {
+  "plntransdep_percent": 23
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.4805,
+   "bandwidth_um": null,
+   "depth_ppm": 1020.0,
+   "depth_ppm_err": 175.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.4824,
+   "bandwidth_um": null,
+   "depth_ppm": 1340.0,
+   "depth_ppm_err": 145.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.4861,
+   "bandwidth_um": null,
+   "depth_ppm": 7830.0,
+   "depth_ppm_err": 95.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.4924,
+   "bandwidth_um": null,
+   "depth_ppm": 4140.0,
+   "depth_ppm_err": 165.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.4958,
+   "bandwidth_um": null,
+   "depth_ppm": 1210.0,
+   "depth_ppm_err": 125.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5018,
+   "bandwidth_um": null,
+   "depth_ppm": 4600.0,
+   "depth_ppm_err": 160.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5167,
+   "bandwidth_um": null,
+   "depth_ppm": 1570.0,
+   "depth_ppm_err": 135.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5169,
+   "bandwidth_um": null,
+   "depth_ppm": 4750.0,
+   "depth_ppm_err": 145.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5173,
+   "bandwidth_um": null,
+   "depth_ppm": 1720.0,
+   "depth_ppm_err": 155.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5184,
+   "bandwidth_um": null,
+   "depth_ppm": 1570.0,
+   "depth_ppm_err": 165.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5189,
+   "bandwidth_um": null,
+   "depth_ppm": 1170.0,
+   "depth_ppm_err": 175.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5198,
+   "bandwidth_um": null,
+   "depth_ppm": 1840.0,
+   "depth_ppm_err": 145.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5227,
+   "bandwidth_um": null,
+   "depth_ppm": 1420.0,
+   "depth_ppm_err": 140.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5235,
+   "bandwidth_um": null,
+   "depth_ppm": 1730.0,
+   "depth_ppm_err": 130.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5276,
+   "bandwidth_um": null,
+   "depth_ppm": 2680.0,
+   "depth_ppm_err": 160.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5317,
+   "bandwidth_um": null,
+   "depth_ppm": 3170.0,
+   "depth_ppm_err": 145.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.5363,
+   "bandwidth_um": null,
+   "depth_ppm": 1540.0,
+   "depth_ppm_err": 155.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.6456,
+   "bandwidth_um": null,
+   "depth_ppm": 1810.0,
+   "depth_ppm_err": 200.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.6563,
+   "bandwidth_um": null,
+   "depth_ppm": 11030.0,
+   "depth_ppm_err": 95.0,
+   "source": "plntransdep_percent",
+   "facility": "LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory",
+   "instrument": "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
+  },
+  {
+   "wavelength_um": 0.6565,
+   "bandwidth_um": null,
+   "depth_ppm": 10200.0,
+   "depth_ppm_err": 900.0,
+   "source": "plntransdep_percent",
+   "facility": "Calar Alto Observatorys 3.5 meter Telescope",
+   "instrument": "CARMENES"
+  },
+  {
+   "wavelength_um": 0.85,
+   "bandwidth_um": null,
+   "depth_ppm": 4000.0,
+   "depth_ppm_err": 500.0,
+   "source": "plntransdep_percent",
+   "facility": "Calar Alto Observatorys 3.5 meter Telescope",
+   "instrument": "CARMENES"
+  },
+  {
+   "wavelength_um": 0.8544,
+   "bandwidth_um": null,
+   "depth_ppm": 5100.0,
+   "depth_ppm_err": 500.0,
+   "source": "plntransdep_percent",
+   "facility": "Calar Alto Observatorys 3.5 meter Telescope",
+   "instrument": "CARMENES"
+  },
+  {
+   "wavelength_um": 0.8665,
+   "bandwidth_um": null,
+   "depth_ppm": 4800.0,
+   "depth_ppm_err": 600.0,
+   "source": "plntransdep_percent",
+   "facility": "Calar Alto Observatorys 3.5 meter Telescope",
+   "instrument": "CARMENES"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

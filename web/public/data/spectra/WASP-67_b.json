@@ -1,0 +1,133 @@
+{
+ "planet": "WASP-67 b",
+ "kind": "transmission",
+ "n_points": 7,
+ "wavelength_range_um": [
+  0.459,
+  0.8989
+ ],
+ "facilities": [
+  "Danish 1.54m telescope at European Southern Observatory",
+  "La Silla Observatory's 60-cm TRAPPIST Telescope",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+  "The Swiss Euler 1.2m Telescope"
+ ],
+ "instruments": [
+  "DFOSC",
+  "EulerCam",
+  "GROND",
+  "TRAPPISTCam"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 7
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.459,
+   "bandwidth_um": 0.1379,
+   "depth_ppm": 17503.29,
+   "depth_ppm_err": 3307.5,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.622,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 18090.25,
+   "depth_ppm_err": 1291.2,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.6489,
+   "bandwidth_um": 0.1647,
+   "depth_ppm": 20880.25,
+   "depth_ppm_err": 3193.45,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.6641,
+   "bandwidth_um": 0.085,
+   "depth_ppm": 52441.0,
+   "depth_ppm_err": 52670.0,
+   "source": "plnratror_squared",
+   "facility": "The Swiss Euler 1.2m Telescope",
+   "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.764,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 17875.69,
+   "depth_ppm_err": 1270.15,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.838,
+   "bandwidth_um": 0.19,
+   "depth_ppm": 17161.0,
+   "depth_ppm_err": 2567.6,
+   "source": "plnratror_squared",
+   "facility": "La Silla Observatory's 60-cm TRAPPIST Telescope",
+   "instrument": "TRAPPISTCam"
+  },
+  {
+   "wavelength_um": 0.8989,
+   "bandwidth_um": 0.137,
+   "depth_ppm": 20277.76,
+   "depth_ppm_err": 2904.96,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

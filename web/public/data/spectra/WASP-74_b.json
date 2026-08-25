@@ -1,0 +1,361 @@
+{
+ "planet": "WASP-74 b",
+ "kind": "transmission",
+ "n_points": 27,
+ "wavelength_range_um": [
+  0.459,
+  2.17
+ ],
+ "facilities": [
+  "Calar Alto Observatory's 1.2 meter Telescope",
+  "Danish 1.54m telescope at European Southern Observatory",
+  "Hubble Space Telescope satellite",
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory"
+ ],
+ "instruments": [
+  "DFOSC",
+  "DLR-MKIII camera",
+  "GROND",
+  "Wide Field Camera 3"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 27
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.459,
+   "bandwidth_um": 0.149,
+   "depth_ppm": 8497.15,
+   "depth_ppm_err": 202.8,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.622,
+   "bandwidth_um": 0.169,
+   "depth_ppm": 9147.01,
+   "depth_ppm_err": 350.04,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.764,
+   "bandwidth_um": 0.1,
+   "depth_ppm": 9023.1,
+   "depth_ppm_err": 178.58,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.787,
+   "bandwidth_um": 0.11,
+   "depth_ppm": 8613.7,
+   "depth_ppm_err": 185.62,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.798,
+   "bandwidth_um": 0.122,
+   "depth_ppm": 8686.24,
+   "depth_ppm_err": 41.01,
+   "source": "plnratror_squared",
+   "facility": "Danish 1.54m telescope at European Southern Observatory",
+   "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.899,
+   "bandwidth_um": 0.127,
+   "depth_ppm": 8745.99,
+   "depth_ppm_err": 243.15,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 1.126,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8270.08,
+   "depth_ppm_err": 50.93,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.156,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8275.54,
+   "depth_ppm_err": 43.67,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.184,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8222.86,
+   "depth_ppm_err": 47.15,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.212,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8273.72,
+   "depth_ppm_err": 56.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.238,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8315.62,
+   "depth_ppm_err": 41.95,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.24,
+   "bandwidth_um": 0.237,
+   "depth_ppm": 8125.22,
+   "depth_ppm_err": 283.04,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 1.266,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8259.17,
+   "depth_ppm_err": 38.17,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.292,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8324.74,
+   "depth_ppm_err": 40.15,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.319,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8366.76,
+   "depth_ppm_err": 43.91,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.345,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8244.64,
+   "depth_ppm_err": 45.4,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.372,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8385.06,
+   "depth_ppm_err": 38.46,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8330.21,
+   "depth_ppm_err": 43.81,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.428,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8311.97,
+   "depth_ppm_err": 49.23,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.457,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8383.23,
+   "depth_ppm_err": 36.62,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.487,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8308.32,
+   "depth_ppm_err": 49.22,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.518,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8228.3,
+   "depth_ppm_err": 43.54,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.551,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8251.91,
+   "depth_ppm_err": 36.34,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.586,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8321.09,
+   "depth_ppm_err": 49.26,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.625,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 8228.3,
+   "depth_ppm_err": 41.73,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.647,
+   "bandwidth_um": 0.27,
+   "depth_ppm": 8649.0,
+   "depth_ppm_err": 301.32,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 2.17,
+   "bandwidth_um": 0.303,
+   "depth_ppm": 8211.98,
+   "depth_ppm_err": 342.54,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

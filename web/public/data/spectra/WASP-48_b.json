@@ -1,0 +1,158 @@
+{
+ "planet": "WASP-48 b",
+ "kind": "transmission",
+ "n_points": 10,
+ "wavelength_range_um": [
+  0.3585,
+  0.7886
+ ],
+ "facilities": [
+  "Calar Alto Observatory's 1.2 meter Telescope",
+  "Calar Alto Observatory's 2.2 meter Telescope",
+  "Cassini 1.52m Telescope"
+ ],
+ "instruments": [
+  "BFOSC",
+  "BUSCA",
+  "DLR-MKIII camera"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 10
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.3585,
+   "bandwidth_um": null,
+   "depth_ppm": 9030.7,
+   "depth_ppm_err": 2622.83,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.4858,
+   "bandwidth_um": null,
+   "depth_ppm": 6801.3,
+   "depth_ppm_err": 671.31,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 7921.0,
+   "depth_ppm_err": 653.26,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 6970.58,
+   "depth_ppm_err": 389.06,
+   "source": "plnratror_squared",
+   "facility": "Cassini 1.52m Telescope",
+   "instrument": "BFOSC"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 8150.48,
+   "depth_ppm_err": 146.25,
+   "source": "plnratror_squared",
+   "facility": "Cassini 1.52m Telescope",
+   "instrument": "BFOSC"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 9240.98,
+   "depth_ppm_err": 242.25,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 6099.61,
+   "depth_ppm_err": 204.62,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 8884.95,
+   "depth_ppm_err": 378.93,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 9308.39,
+   "depth_ppm_err": 88.76,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 8820.97,
+   "depth_ppm_err": 272.37,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

@@ -1,0 +1,505 @@
+{
+ "planet": "WASP-96 b",
+ "kind": "transmission",
+ "n_points": 49,
+ "wavelength_range_um": [
+  0.3756,
+  0.7973
+ ],
+ "facilities": [
+  "Very Large Telescope (Antu)"
+ ],
+ "instruments": [
+  "FORS2"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 49
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.3756,
+   "bandwidth_um": 0.0513,
+   "depth_ppm": 13176.74,
+   "depth_ppm_err": 348.96,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4053,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13103.38,
+   "depth_ppm_err": 416.67,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4133,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12954.99,
+   "depth_ppm_err": 380.16,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4213,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13349.49,
+   "depth_ppm_err": 385.9,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4293,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13130.87,
+   "depth_ppm_err": 469.82,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4373,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12816.5,
+   "depth_ppm_err": 369.06,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4453,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13236.5,
+   "depth_ppm_err": 296.83,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4533,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13146.92,
+   "depth_ppm_err": 282.06,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4613,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13137.74,
+   "depth_ppm_err": 286.55,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4693,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12907.23,
+   "depth_ppm_err": 263.58,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4773,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12728.35,
+   "depth_ppm_err": 225.64,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4853,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12823.3,
+   "depth_ppm_err": 294.42,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.4933,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13087.36,
+   "depth_ppm_err": 237.95,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5013,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13112.54,
+   "depth_ppm_err": 316.05,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5093,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12827.83,
+   "depth_ppm_err": 253.7,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5173,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12809.71,
+   "depth_ppm_err": 228.62,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5253,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12807.45,
+   "depth_ppm_err": 217.29,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5333,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13096.51,
+   "depth_ppm_err": 203.7,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5413,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12916.32,
+   "depth_ppm_err": 215.94,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5493,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12907.23,
+   "depth_ppm_err": 202.23,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5573,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12818.77,
+   "depth_ppm_err": 230.97,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5653,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13319.47,
+   "depth_ppm_err": 219.28,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5733,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13222.7,
+   "depth_ppm_err": 218.48,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5813,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13579.24,
+   "depth_ppm_err": 195.77,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13653.92,
+   "depth_ppm_err": 215.0,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.5973,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13567.59,
+   "depth_ppm_err": 200.35,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6053,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13472.24,
+   "depth_ppm_err": 199.64,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6133,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13328.7,
+   "depth_ppm_err": 187.03,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6213,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13195.12,
+   "depth_ppm_err": 220.55,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6293,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13567.59,
+   "depth_ppm_err": 230.63,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6373,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13126.28,
+   "depth_ppm_err": 219.97,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6453,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13222.7,
+   "depth_ppm_err": 209.28,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6533,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13347.18,
+   "depth_ppm_err": 231.06,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6613,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12732.87,
+   "depth_ppm_err": 200.86,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6693,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13298.7,
+   "depth_ppm_err": 186.82,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6773,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13091.94,
+   "depth_ppm_err": 267.74,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.6893,
+   "bandwidth_um": 0.016,
+   "depth_ppm": 12519.37,
+   "depth_ppm_err": 174.55,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7013,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12793.87,
+   "depth_ppm_err": 203.6,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7093,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13185.93,
+   "depth_ppm_err": 220.47,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7173,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13059.92,
+   "depth_ppm_err": 194.28,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7253,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13140.04,
+   "depth_ppm_err": 222.38,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7333,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13391.12,
+   "depth_ppm_err": 217.55,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7413,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12898.14,
+   "depth_ppm_err": 183.98,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7493,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 13007.4,
+   "depth_ppm_err": 218.98,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7613,
+   "bandwidth_um": 0.016,
+   "depth_ppm": 13162.97,
+   "depth_ppm_err": 172.09,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7733,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12796.13,
+   "depth_ppm_err": 246.6,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7813,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12861.83,
+   "depth_ppm_err": 217.75,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7893,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12850.49,
+   "depth_ppm_err": 278.87,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.7973,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 12739.64,
+   "depth_ppm_err": 264.12,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

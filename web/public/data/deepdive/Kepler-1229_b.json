@@ -1,0 +1,512 @@
+{
+ "planet": "Kepler-1229 b",
+ "hostname": "Kepler-1229",
+ "generated_utc": "2026-08-24T22:50:58Z",
+ "narrative": {
+  "location": "Kepler-1229 lies 865.89 light-years (265.482 pc) from the Sun.",
+  "host_star": "Kepler-1229 is the host star with 0.54\u00d7 the Sun's mass and 0.51\u00d7 its radius (effective temperature 3784 K, versus the Sun's 5772 K).",
+  "system": "It is a single star hosting 1 known planet.",
+  "planet": "Kepler-1229 b is 1.4\u00d7 Earth's radius, an estimated 2.54\u00d7 Earth's mass, inferred from its radius rather than measured, completing one orbit every 86.8 days at 0.3006 AU.",
+  "climate": "It receives about 0.52\u00d7 the flux Earth gets from the Sun, for an equilibrium temperature near 216 K (Earth's is 254 K)."
+ },
+ "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
+ "ranking": {
+  "earth2_rank": 8,
+  "earth2_index": 0.7161,
+  "scores": {
+   "earth_similarity": 0.8193,
+   "conservative_habitability": 0.733,
+   "observational_confidence": 0.5713,
+   "characterisation_potential": 0.2087
+  },
+  "component_ranks": {
+   "earth_similarity": 40,
+   "conservative_habitability": 8,
+   "observational_confidence": 3889
+  }
+ },
+ "planet_parameters": {
+  "radius_earth": {
+   "value": 1.4,
+   "err_upper": 0.11,
+   "err_lower": -0.13,
+   "p16": 1.2671,
+   "p50": 1.398,
+   "p84": 1.5067
+  },
+  "mass_earth": {
+   "value": 2.54,
+   "err_upper": null,
+   "err_lower": null,
+   "class": "inferred_mass_radius",
+   "class_meaning": "NOT measured. Predicted from the radius by a mass-radius relation, so it carries no information beyond the radius."
+  },
+  "density_g_cm3": {
+   "value": 5.09,
+   "source": "catalogue"
+  },
+  "escape_velocity_kms": 15.067,
+  "orbital_period_days": 86.828989,
+  "semi_major_axis_au": 0.3006,
+  "eccentricity": 0.0,
+  "insolation_earth": {
+   "value": 0.524,
+   "source": "catalogue",
+   "p16": 0.4744,
+   "p84": 0.578
+  },
+  "equilibrium_temperature_k": {
+   "value": 216.27,
+   "source": "derived_from_insolation_albedo_0.306",
+   "albedo_assumed": 0.306,
+   "p16": 210.96,
+   "p84": 221.64,
+   "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
+  }
+ },
+ "host_star": {
+  "name": "Kepler-1229",
+  "teff_k": 3784.0,
+  "radius_sun": 0.51,
+  "mass_sun": 0.54,
+  "luminosity_log_sun": -1.533,
+  "metallicity_dex": -0.06,
+  "age_gyr": 3.72,
+  "spectral_type": null,
+  "distance_pc": 265.482,
+  "distance_ly": 865.885,
+  "v_mag": 16.124,
+  "j_mag": 13.228,
+  "k_mag": 12.374,
+  "n_stars_in_system": 1,
+  "n_planets_in_system": 1
+ },
+ "gaia_crossmatch": {
+  "source_id": "2086316205543022336",
+  "parallax_mas": 3.7282,
+  "parallax_error_mas": 0.0376,
+  "distance_pc": 268.229,
+  "distance_disagreement_vs_archive_pct": 1.03,
+  "ruwe": 1.675,
+  "ruwe_note": "RUWE > 1.4 is the conventional flag for a poorly-fit or unresolved-binary single-star astrometric solution.",
+  "non_single_star_flag": false,
+  "proper_motion_mas_yr": {
+   "ra": 21.58,
+   "dec": -3.987
+  }
+ },
+ "habitable_zone": {
+  "conservative_nominal": 1.0,
+  "optimistic_nominal": 1.0,
+  "conservative_probability": 1.0,
+  "optimistic_probability": 1.0,
+  "position_across_conservative_hz": 0.5695,
+  "model_extrapolated": false,
+  "teff_offset_from_validity_k": 0.0,
+  "teff_valid_fraction_of_draws": 1.0,
+  "boundaries_seff": {
+   "recent_venus": 1.5455,
+   "runaway_greenhouse": 0.881,
+   "moist_greenhouse": 0.8827,
+   "maximum_greenhouse": 0.2541,
+   "early_mars": 0.2292
+  },
+  "boundaries_au": {
+   "recent_venus": 0.13771,
+   "runaway_greenhouse": 0.18239,
+   "moist_greenhouse": 0.18222,
+   "maximum_greenhouse": 0.33962,
+   "early_mars": 0.35756
+  },
+  "model": "Kopparapu et al. (2013), ApJ 765, 131, with the 2013 erratum coefficients"
+ },
+ "earth_similarity": {
+  "esi_global": 0.8335,
+  "esi_p16": 0.7923,
+  "esi_p50": 0.8193,
+  "esi_p84": 0.8417,
+  "esi_interior": 0.9289,
+  "esi_surface": 0.7479,
+  "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
+ },
+ "evidence": {
+  "n_independent_references": 11,
+  "n_published_parameter_sets": 11,
+  "radius_literature_spread": 0.6891,
+  "uncertainty_coverage": 0.8333,
+  "params_without_uncertainty": 1,
+  "discovery_method": "Transit",
+  "discovery_year": 2016,
+  "discovery_facility": "Kepler",
+  "detected_by_transit": true,
+  "detected_by_radial_velocity": false,
+  "controversial_flag": false
+ },
+ "observability": {
+  "tsm": 0.423,
+  "esm": 0.004,
+  "rv_semi_amplitude_ms": 0.5531,
+  "n_transmission_points": 0,
+  "n_emission_points": 0,
+  "n_rv_time_series": 0,
+  "n_photometric_time_series": 0,
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+ },
+ "system": {
+  "siblings": []
+ },
+ "measurement_provenance": [
+  {
+   "parameter": "pl_rade",
+   "parameter_label": "Planet radius",
+   "value": 1.4,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "pl_bmasse",
+   "parameter_label": "Planet mass",
+   "value": 2.54,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "pl_orbper",
+   "parameter_label": "Orbital period",
+   "value": 86.828989,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "pl_orbsmax",
+   "parameter_label": "Semi-major axis",
+   "value": 0.3006,
+   "source_kind": "publication",
+   "reference_label": "Torres et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154..264T/abstract",
+   "bibcode": "2017AJ....154..264T"
+  },
+  {
+   "parameter": "pl_insol",
+   "parameter_label": "Incident flux",
+   "value": 0.524,
+   "source_kind": "publication",
+   "reference_label": "Berger et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018ApJ...866...99B/abstract",
+   "bibcode": "2018ApJ...866...99B"
+  },
+  {
+   "parameter": "pl_eqt",
+   "parameter_label": "Equilibrium temperature",
+   "value": 212.0,
+   "source_kind": "publication",
+   "reference_label": "Torres et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154..264T/abstract",
+   "bibcode": "2017AJ....154..264T"
+  },
+  {
+   "parameter": "pl_dens",
+   "parameter_label": "Bulk density",
+   "value": 5.09,
+   "source_kind": "archive_calculated",
+   "reference_label": "Calculated Value",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/pscp_calc.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "pl_orbeccen",
+   "parameter_label": "Orbital eccentricity",
+   "value": 0.0,
+   "source_kind": "publication",
+   "reference_label": "Q1-Q17 DR25 KOI Table",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html",
+   "bibcode": null
+  },
+  {
+   "parameter": "st_teff",
+   "parameter_label": "Stellar effective temperature",
+   "value": 3784.0,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "st_rad",
+   "parameter_label": "Stellar radius",
+   "value": 0.51,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "st_mass",
+   "parameter_label": "Stellar mass",
+   "value": 0.54,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "st_lum",
+   "parameter_label": "Stellar luminosity",
+   "value": -1.533,
+   "source_kind": "publication",
+   "reference_label": "Torres et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154..264T/abstract",
+   "bibcode": "2017AJ....154..264T"
+  },
+  {
+   "parameter": "st_met",
+   "parameter_label": "Stellar metallicity",
+   "value": -0.06,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "st_age",
+   "parameter_label": "Stellar age",
+   "value": 3.72,
+   "source_kind": "publication",
+   "reference_label": "Morton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...822...86M/abstract",
+   "bibcode": "2016ApJ...822...86M"
+  },
+  {
+   "parameter": "sy_dist",
+   "parameter_label": "System distance",
+   "value": 265.482,
+   "source_kind": "publication",
+   "reference_label": "TICv8",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..138S/abstract",
+   "bibcode": "2019AJ....158..138S"
+  }
+ ],
+ "identifiers": {
+  "system_name": "Kepler-1229"
+ },
+ "aliases": [
+  "Gaia DR3 2086316205543022336 b",
+  "TIC 273373582 b",
+  "Gaia DR2 2086316205543022336 b",
+  "KOI-2418 b",
+  "K02418.01",
+  "KOI-2418.01",
+  "Kepler-1229 b",
+  "KIC 10027247 b",
+  "2MASS J19495680+4659481 b",
+  "WISE J194956.83+465948.1 b"
+ ],
+ "transmission_spectrum": {
+  "available": false,
+  "message": "No published transmission spectrum exists for this planet in the NASA Exoplanet Archive."
+ },
+ "transit_analysis": {
+  "target": "Kepler-1229",
+  "requested_mission": "TESS",
+  "analysed_utc": "2026-08-24T22:50:58Z",
+  "status": "fit_not_validated",
+  "n_products_found": 28,
+  "products": [
+   {
+    "mission": "TESS Sector 14",
+    "author": "CDIPS",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0014-cam2-ccd4_tess_v01_llc.fits",
+    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0014-cam2-ccd4_tess_v01_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 14",
+    "author": "TASOC",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06_ens-lc.fits",
+    "obs_id": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 14",
+    "author": "TARS",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tars_tess_ffi_s0014-0000000273373582_tess_v01_lc.fits",
+    "obs_id": "hlsp_tars_tess_ffi_s0014-0000000273373582_tess",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 14",
+    "author": "TASOC",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06_cbv-lc.fits",
+    "obs_id": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 15",
+    "author": "CDIPS",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0015-cam2-ccd3_tess_v01_llc.fits",
+    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0015-cam2-ccd3_tess_v01_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 15",
+    "author": "TARS",
+    "exptime": 1800.0,
+    "year": 2019,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tars_tess_ffi_s0015-0000000273373582_tess_v01_lc.fits",
+    "obs_id": "hlsp_tars_tess_ffi_s0015-0000000273373582_tess",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 41",
+    "author": "SPOC",
+    "exptime": 120.0,
+    "year": 2021,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "tess2021204101404-s0041-0000000273373582-0212-s_lc.fits",
+    "obs_id": "tess2021204101404-s0041-0000000273373582-0212-s",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 41",
+    "author": "TESS-SPOC",
+    "exptime": 600.0,
+    "year": 2021,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tess-spoc_tess_phot_0000000273373582-s0041_tess_v1_lc.fits",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000273373582-s0041_tess_v1_tp",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 41",
+    "author": "QLP",
+    "exptime": 600.0,
+    "year": 2021,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_qlp_tess_ffi_s0041-0000000273373582_tess_v01_llc.fits",
+    "obs_id": "hlsp_qlp_tess_ffi_s0041-0000000273373582_tess_v01_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 41",
+    "author": "TARS",
+    "exptime": 600.0,
+    "year": 2021,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tars_tess_ffi_s0041-0000000273373582_tess_v01_lc.fits",
+    "obs_id": "hlsp_tars_tess_ffi_s0041-0000000273373582_tess",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 41",
+    "author": "CDIPS",
+    "exptime": 1800.0,
+    "year": 2021,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0041-cam2-ccd4_tess_v01_llc.fits",
+    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0041-cam2-ccd4_tess_v01_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 54",
+    "author": "SPOC",
+    "exptime": 120.0,
+    "year": 2022,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "tess2022190063128-s0054-0000000273373582-0227-s_lc.fits",
+    "obs_id": "tess2022190063128-s0054-0000000273373582-0227-s",
+    "searched_target": "Kepler-1229"
+   }
+  ],
+  "light_curve": {
+   "target": "Kepler-1229",
+   "mission": "TESS Sector 41",
+   "author": "SPOC",
+   "exptime_s": 120.0,
+   "n_raw_cadences": 18322,
+   "n_used_cadences": 18322,
+   "baseline_days": 26.58897386477429,
+   "median_flux_precision_ppm": 39731.097154882635,
+   "retrieved_utc": "2026-08-24T22:51:25Z",
+   "note": "stitched 1 product(s), mission default quality mask applied"
+  },
+  "t0_time_system": {
+   "published_bjd": 2455022.26884,
+   "converted_to": "TESS Sector 41",
+   "converted_value": -1977.7311599999666,
+   "note": "Published BJD midpoint converted to the mission offset time system."
+  },
+  "n_after_detrend_and_clip": 18316,
+  "ephemeris": {
+   "period_days": 86.828989,
+   "t0": -1977.7311599999666,
+   "duration_hours": 6.001
+  },
+  "fit": {
+   "depth_ppm": 143184.87679509496,
+   "depth_ppm_err": 0.0,
+   "duration_hours": 6.0009999999999994,
+   "ingress_hours": 0.90015,
+   "t0_offset_days": 0.0,
+   "radius_ratio_approx": 0.37839777588550244,
+   "rms_residual_ppm": 37110.223339795346,
+   "n_points": 18316,
+   "n_in_transit": 0,
+   "converged": true,
+   "depth_snr": null,
+   "significant": false,
+   "method": "trapezoid (limb-darkening uncorrected)",
+   "caveat": "Depth is fitted with a trapezoid and is not corrected for limb darkening; the derived radius ratio is therefore an overestimate of a few percent in the optical. Published catalogue radii use limb-darkened models and take precedence."
+  },
+  "catalogue_check": {
+   "expected_depth_ppm": 857.0,
+   "fitted_depth_ppm": 143184.87679509496,
+   "ratio_fitted_to_published": 167.077,
+   "consistent_with_published": false,
+   "tolerance": "factor of 1.6",
+   "interpretation": "Fitted depth disagrees with the published value. In a multi-planet system this usually means the fold is contaminated by other planets' transits rather than isolating the target. This fit is NOT reported as a measurement."
+  }
+ },
+ "rv_analysis": {
+  "target": "Kepler-1229",
+  "analysed_utc": "2026-08-24T22:51:25Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
+ }
+}

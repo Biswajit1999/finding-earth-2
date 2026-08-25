@@ -1,0 +1,567 @@
+{
+ "planet": "HAT-P-19 b",
+ "kind": "transmission",
+ "n_points": 57,
+ "wavelength_range_um": [
+  0.5641,
+  0.7642
+ ],
+ "facilities": [
+  "STELLA Robotic Observatory"
+ ],
+ "instruments": [
+  "WiFSIP"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 57
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.5641,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 20220.84,
+   "depth_ppm_err": 767.88,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5691,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 20249.29,
+   "depth_ppm_err": 654.58,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5717,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19937.44,
+   "depth_ppm_err": 367.12,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5742,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19824.64,
+   "depth_ppm_err": 591.36,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5767,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19460.25,
+   "depth_ppm_err": 362.7,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5792,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19044.0,
+   "depth_ppm_err": 469.2,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5842,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18441.64,
+   "depth_ppm_err": 461.72,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5892,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 501.84,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5892,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 501.84,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5917,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19099.24,
+   "depth_ppm_err": 414.6,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5942,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18468.81,
+   "depth_ppm_err": 462.06,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.5992,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19016.41,
+   "depth_ppm_err": 524.02,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6041,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18961.29,
+   "depth_ppm_err": 716.04,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6091,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18090.25,
+   "depth_ppm_err": 538.0,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6116,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19321.0,
+   "depth_ppm_err": 389.2,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6141,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19993.96,
+   "depth_ppm_err": 622.16,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6191,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19293.21,
+   "depth_ppm_err": 472.26,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6216,
+   "bandwidth_um": 0.0599,
+   "depth_ppm": 19209.96,
+   "depth_ppm_err": 332.64,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6241,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19516.09,
+   "depth_ppm_err": 419.1,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6291,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19154.56,
+   "depth_ppm_err": 442.88,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6316,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19376.64,
+   "depth_ppm_err": 389.76,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6342,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18988.84,
+   "depth_ppm_err": 689.0,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6392,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19404.49,
+   "depth_ppm_err": 417.9,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6442,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19628.01,
+   "depth_ppm_err": 504.36,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6492,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19071.61,
+   "depth_ppm_err": 524.78,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6517,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19376.64,
+   "depth_ppm_err": 389.76,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6542,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19656.04,
+   "depth_ppm_err": 448.64,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6562,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 19516.09,
+   "depth_ppm_err": 558.8,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6592,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19016.41,
+   "depth_ppm_err": 579.18,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6617,
+   "bandwidth_um": 0.1999,
+   "depth_ppm": 19321.0,
+   "depth_ppm_err": 333.6,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6641,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19348.81,
+   "depth_ppm_err": 500.76,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6691,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18604.96,
+   "depth_ppm_err": 436.48,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6716,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19126.89,
+   "depth_ppm_err": 331.92,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6741,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19209.96,
+   "depth_ppm_err": 443.52,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6791,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19126.89,
+   "depth_ppm_err": 414.9,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6841,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 501.84,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6891,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19321.0,
+   "depth_ppm_err": 389.2,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6916,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19265.44,
+   "depth_ppm_err": 277.6,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6941,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18906.25,
+   "depth_ppm_err": 467.5,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.6992,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19348.81,
+   "depth_ppm_err": 472.94,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7042,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 18741.61,
+   "depth_ppm_err": 794.02,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7092,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19376.64,
+   "depth_ppm_err": 389.76,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7117,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19376.64,
+   "depth_ppm_err": 334.08,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7127,
+   "bandwidth_um": 0.1079,
+   "depth_ppm": 19348.81,
+   "depth_ppm_err": 306.02,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7142,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19404.49,
+   "depth_ppm_err": 668.64,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7192,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19182.25,
+   "depth_ppm_err": 609.4,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7242,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19712.16,
+   "depth_ppm_err": 393.12,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7291,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 20107.24,
+   "depth_ppm_err": 453.76,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7316,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19796.49,
+   "depth_ppm_err": 309.54,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7341,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19684.09,
+   "depth_ppm_err": 448.96,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7391,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19099.24,
+   "depth_ppm_err": 442.24,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7441,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19768.36,
+   "depth_ppm_err": 478.04,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7491,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19572.01,
+   "depth_ppm_err": 419.7,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7516,
+   "bandwidth_um": 0.0199,
+   "depth_ppm": 19937.44,
+   "depth_ppm_err": 338.88,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7541,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 418.2,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7592,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 20506.24,
+   "depth_ppm_err": 515.52,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  },
+  {
+   "wavelength_um": 0.7642,
+   "bandwidth_um": 0.0049,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 501.84,
+   "source": "plnratror_squared",
+   "facility": "STELLA Robotic Observatory",
+   "instrument": "WiFSIP"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

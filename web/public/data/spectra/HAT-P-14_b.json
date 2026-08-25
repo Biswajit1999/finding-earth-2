@@ -1,0 +1,135 @@
+{
+ "planet": "HAT-P-14 b",
+ "kind": "transmission",
+ "n_points": 7,
+ "wavelength_range_um": [
+  0.479,
+  0.87
+ ],
+ "facilities": [
+  "Asiago Observatory's Copernico Telescope",
+  "Faulkes Telescope North",
+  "Fred Lawrence Whipple Observatory's 1.2 meter Telescope",
+  "Liverpool 2 meter telesope at Observatorio del Roque de los Muchachos",
+  "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope"
+ ],
+ "instruments": [
+  "AFOSC",
+  "Keplercam",
+  "MuSCAT",
+  "RISE",
+  "Spectral camera"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 7
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.479,
+   "bandwidth_um": null,
+   "depth_ppm": 6674.89,
+   "depth_ppm_err": 310.46,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+   "instrument": "MuSCAT"
+  },
+  {
+   "wavelength_um": 0.616,
+   "bandwidth_um": null,
+   "depth_ppm": 7396.0,
+   "depth_ppm_err": 447.2,
+   "source": "plnratror_squared",
+   "facility": "Liverpool 2 meter telesope at Observatorio del Roque de los Muchachos",
+   "instrument": "RISE"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 6674.89,
+   "depth_ppm_err": 228.76,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+   "instrument": "MuSCAT"
+  },
+  {
+   "wavelength_um": 0.648,
+   "bandwidth_um": null,
+   "depth_ppm": 7157.16,
+   "depth_ppm_err": 304.56,
+   "source": "plnratror_squared",
+   "facility": "Asiago Observatory's Copernico Telescope",
+   "instrument": "AFOSC"
+  },
+  {
+   "wavelength_um": 0.773,
+   "bandwidth_um": null,
+   "depth_ppm": 6872.41,
+   "depth_ppm_err": 281.86,
+   "source": "plnratror_squared",
+   "facility": "Fred Lawrence Whipple Observatory's 1.2 meter Telescope",
+   "instrument": "Keplercam"
+  },
+  {
+   "wavelength_um": 0.869,
+   "bandwidth_um": null,
+   "depth_ppm": 6084.0,
+   "depth_ppm_err": 218.4,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 1.88m Telescope",
+   "instrument": "MuSCAT"
+  },
+  {
+   "wavelength_um": 0.87,
+   "bandwidth_um": null,
+   "depth_ppm": 6756.84,
+   "depth_ppm_err": 312.36,
+   "source": "plnratror_squared",
+   "facility": "Faulkes Telescope North",
+   "instrument": "Spectral camera"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

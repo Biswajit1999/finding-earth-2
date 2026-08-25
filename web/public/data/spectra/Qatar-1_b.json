@@ -1,0 +1,161 @@
+{
+ "planet": "Qatar-1 b",
+ "kind": "transmission",
+ "n_points": 12,
+ "wavelength_range_um": [
+  0.53,
+  0.704
+ ],
+ "facilities": [
+  "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory"
+ ],
+ "instruments": [
+  "GMOS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 12
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.53,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 23378.41,
+   "depth_ppm_err": 91.74,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5625,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 23134.41,
+   "depth_ppm_err": 182.52,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 23317.29,
+   "depth_ppm_err": 91.62,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.605,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 23378.41,
+   "depth_ppm_err": 122.32,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6175,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 23500.89,
+   "depth_ppm_err": 153.3,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6317,
+   "bandwidth_um": 0.0135,
+   "depth_ppm": 23164.84,
+   "depth_ppm_err": 121.76,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6442,
+   "bandwidth_um": 0.0115,
+   "depth_ppm": 23073.61,
+   "depth_ppm_err": 121.52,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6585,
+   "bandwidth_um": 0.017,
+   "depth_ppm": 23286.76,
+   "depth_ppm_err": 91.56,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6735,
+   "bandwidth_um": 0.013,
+   "depth_ppm": 23073.61,
+   "depth_ppm_err": 151.9,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6865,
+   "bandwidth_um": 0.013,
+   "depth_ppm": 23256.25,
+   "depth_ppm_err": 183.0,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6965,
+   "bandwidth_um": 0.007,
+   "depth_ppm": 22921.96,
+   "depth_ppm_err": 90.84,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.704,
+   "bandwidth_um": 0.008,
+   "depth_ppm": 22921.96,
+   "depth_ppm_err": 121.12,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

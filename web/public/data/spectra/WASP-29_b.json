@@ -1,0 +1,188 @@
+{
+ "planet": "WASP-29 b",
+ "kind": "transmission",
+ "n_points": 15,
+ "wavelength_range_um": [
+  0.5211,
+  0.7175
+ ],
+ "facilities": [
+  "Gemini South Telescope"
+ ],
+ "instruments": [
+  "GMOS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 15
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.5211,
+   "bandwidth_um": null,
+   "depth_ppm": 9235.21,
+   "depth_ppm_err": 518.94,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5348,
+   "bandwidth_um": null,
+   "depth_ppm": 9584.41,
+   "depth_ppm_err": 313.28,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5485,
+   "bandwidth_um": null,
+   "depth_ppm": 9428.41,
+   "depth_ppm_err": 349.56,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5622,
+   "bandwidth_um": null,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 310.4,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5759,
+   "bandwidth_um": null,
+   "depth_ppm": 9467.29,
+   "depth_ppm_err": 252.98,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5896,
+   "bandwidth_um": null,
+   "depth_ppm": 9486.76,
+   "depth_ppm_err": 253.24,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6033,
+   "bandwidth_um": null,
+   "depth_ppm": 9525.76,
+   "depth_ppm_err": 253.76,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.617,
+   "bandwidth_um": null,
+   "depth_ppm": 9623.61,
+   "depth_ppm_err": 255.06,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6307,
+   "bandwidth_um": null,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 271.6,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6445,
+   "bandwidth_um": null,
+   "depth_ppm": 9389.61,
+   "depth_ppm_err": 271.32,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6616,
+   "bandwidth_um": null,
+   "depth_ppm": 9467.29,
+   "depth_ppm_err": 311.36,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6756,
+   "bandwidth_um": null,
+   "depth_ppm": 9506.25,
+   "depth_ppm_err": 624.0,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6895,
+   "bandwidth_um": null,
+   "depth_ppm": 9389.61,
+   "depth_ppm_err": 368.22,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7035,
+   "bandwidth_um": null,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 620.8,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.7175,
+   "bandwidth_um": null,
+   "depth_ppm": 9409.0,
+   "depth_ppm_err": 349.2,
+   "source": "plnratror_squared",
+   "facility": "Gemini South Telescope",
+   "instrument": "GMOS"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

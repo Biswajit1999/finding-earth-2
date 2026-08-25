@@ -1,0 +1,136 @@
+{
+ "planet": "WASP-98 b",
+ "kind": "transmission",
+ "n_points": 8,
+ "wavelength_range_um": [
+  0.459,
+  0.8989
+ ],
+ "facilities": [
+  "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory"
+ ],
+ "instruments": [
+  "GROND"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 8
+ },
+ "expected_bands": [
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.459,
+   "bandwidth_um": 0.1379,
+   "depth_ppm": 26082.25,
+   "depth_ppm_err": 1518.1,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.459,
+   "bandwidth_um": 0.1379,
+   "depth_ppm": 24429.69,
+   "depth_ppm_err": 781.5,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.622,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 25281.0,
+   "depth_ppm_err": 1176.6,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.622,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 24649.0,
+   "depth_ppm_err": 533.8,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.764,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 25568.01,
+   "depth_ppm_err": 1055.34,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.764,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 25664.04,
+   "depth_ppm_err": 576.72,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.8989,
+   "bandwidth_um": 0.137,
+   "depth_ppm": 25058.89,
+   "depth_ppm_err": 1044.78,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.8989,
+   "bandwidth_um": 0.137,
+   "depth_ppm": 24680.41,
+   "depth_ppm_err": 471.3,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}

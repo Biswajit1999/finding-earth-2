@@ -1,0 +1,1720 @@
+{
+ "planet": "XO-2 N b",
+ "kind": "transmission",
+ "n_points": 178,
+ "wavelength_range_um": [
+  0.36,
+  1.765
+ ],
+ "facilities": [
+  "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+  "Gran Telescopio CANARIAS 10.4m telescope",
+  "Hubble Space Telescope satellite",
+  "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+  "Steward Observatory's 1.5 meter Kuiper Telescope"
+ ],
+ "instruments": [
+  "GMOS",
+  "KOSMOS",
+  "Mont4k CCD",
+  "Near Infrared Camera and Multi-Object Spectrometer",
+  "OSIRIS"
+ ],
+ "depth_sources": {
+  "plnratror_squared": 163,
+  "plntransdep_percent": 15
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    0.69,
+    0.76,
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    0.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "Na",
+   "label": "Sodium",
+   "bands_um": [
+    0.589
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 10962.09,
+   "depth_ppm_err": 544.44,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 10712.25,
+   "depth_ppm_err": 434.7,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 11214.81,
+   "depth_ppm_err": 317.7,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 11491.84,
+   "depth_ppm_err": 428.8,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 10629.61,
+   "depth_ppm_err": 824.8,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 11815.69,
+   "depth_ppm_err": 913.08,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.36,
+   "bandwidth_um": null,
+   "depth_ppm": 10753.69,
+   "depth_ppm_err": 788.12,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.384,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 10855.56,
+   "depth_ppm_err": 187.54,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.3951,
+   "bandwidth_um": 0.0182,
+   "depth_ppm": 10712.25,
+   "depth_ppm_err": 664.47,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.4072,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 10840.97,
+   "depth_ppm_err": 187.42,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.4133,
+   "bandwidth_um": 0.0182,
+   "depth_ppm": 10876.4,
+   "depth_ppm_err": 394.22,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.4304,
+   "bandwidth_um": 0.0231,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 153.93,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.4315,
+   "bandwidth_um": 0.0181,
+   "depth_ppm": 10824.32,
+   "depth_ppm_err": 316.28,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 10857.64,
+   "depth_ppm_err": 1125.36,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 11577.76,
+   "depth_ppm_err": 828.52,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 10774.44,
+   "depth_ppm_err": 664.32,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 10609.0,
+   "depth_ppm_err": 412.0,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 11109.16,
+   "depth_ppm_err": 326.74,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 10609.0,
+   "depth_ppm_err": 401.7,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.4535,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 10737.1,
+   "depth_ppm_err": 113.98,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.4723,
+   "bandwidth_um": 0.0181,
+   "depth_ppm": 10685.36,
+   "depth_ppm_err": 169.53,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.4767,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 10780.67,
+   "depth_ppm_err": 116.29,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.4908,
+   "bandwidth_um": 0.0188,
+   "depth_ppm": 10660.56,
+   "depth_ppm_err": 163.13,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.4999,
+   "bandwidth_um": 0.0231,
+   "depth_ppm": 10797.29,
+   "depth_ppm_err": 101.83,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.509,
+   "bandwidth_um": 0.0176,
+   "depth_ppm": 10809.76,
+   "depth_ppm_err": 164.27,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.523,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 10797.29,
+   "depth_ppm_err": 103.91,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5271,
+   "bandwidth_um": 0.0185,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 168.5,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5353,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10778.59,
+   "depth_ppm_err": 199.33,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5369,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10761.99,
+   "depth_ppm_err": 203.33,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5384,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10764.06,
+   "depth_ppm_err": 211.65,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.54,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10757.84,
+   "depth_ppm_err": 217.81,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5415,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10701.9,
+   "depth_ppm_err": 221.38,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5431,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10836.81,
+   "depth_ppm_err": 208.2,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5445,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10735.03,
+   "depth_ppm_err": 248.66,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5446,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10778.59,
+   "depth_ppm_err": 188.95,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5462,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10784.82,
+   "depth_ppm_err": 199.39,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5463,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10662.63,
+   "depth_ppm_err": 185.87,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5477,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10793.13,
+   "depth_ppm_err": 184.92,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.548,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10664.69,
+   "depth_ppm_err": 169.36,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5493,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10847.22,
+   "depth_ppm_err": 202.05,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5496,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10853.47,
+   "depth_ppm_err": 187.52,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5508,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10774.44,
+   "depth_ppm_err": 188.92,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5513,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10799.37,
+   "depth_ppm_err": 207.84,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5524,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10766.14,
+   "depth_ppm_err": 222.05,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.553,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10677.09,
+   "depth_ppm_err": 192.19,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5539,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10743.32,
+   "depth_ppm_err": 192.79,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5546,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10677.09,
+   "depth_ppm_err": 179.79,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5554,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10751.62,
+   "depth_ppm_err": 190.79,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5563,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10666.76,
+   "depth_ppm_err": 190.04,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.557,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10735.03,
+   "depth_ppm_err": 219.65,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5579,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10807.68,
+   "depth_ppm_err": 228.71,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5585,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10843.06,
+   "depth_ppm_err": 208.26,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5596,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10868.06,
+   "depth_ppm_err": 214.76,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5601,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 228.82,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5613,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10878.49,
+   "depth_ppm_err": 198.17,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5616,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10801.44,
+   "depth_ppm_err": 261.9,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5629,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10855.56,
+   "depth_ppm_err": 154.2,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5632,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10811.84,
+   "depth_ppm_err": 212.12,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5645,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10884.75,
+   "depth_ppm_err": 169.01,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5647,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10834.73,
+   "depth_ppm_err": 201.93,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5663,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10693.63,
+   "depth_ppm_err": 184.07,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5663,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10801.44,
+   "depth_ppm_err": 187.07,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5678,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10832.65,
+   "depth_ppm_err": 197.75,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5679,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10714.32,
+   "depth_ppm_err": 188.39,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5694,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10845.14,
+   "depth_ppm_err": 195.78,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5697,
+   "bandwidth_um": 0.0018,
+   "depth_ppm": 10820.16,
+   "depth_ppm_err": 172.67,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5709,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10840.97,
+   "depth_ppm_err": 177.0,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5715,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10928.61,
+   "depth_ppm_err": 175.63,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5725,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10891.01,
+   "depth_ppm_err": 175.32,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5732,
+   "bandwidth_um": 0.0018,
+   "depth_ppm": 10951.62,
+   "depth_ppm_err": 192.56,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5739,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10863.89,
+   "depth_ppm_err": 177.19,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5749,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10824.32,
+   "depth_ppm_err": 187.27,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5755,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10882.66,
+   "depth_ppm_err": 198.21,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5766,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10770.29,
+   "depth_ppm_err": 184.73,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.577,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10968.37,
+   "depth_ppm_err": 242.97,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5783,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10753.69,
+   "depth_ppm_err": 226.07,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5786,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10909.8,
+   "depth_ppm_err": 227.7,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5799,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10776.52,
+   "depth_ppm_err": 211.77,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5802,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10893.1,
+   "depth_ppm_err": 204.57,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5816,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10772.36,
+   "depth_ppm_err": 228.34,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5817,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10903.54,
+   "depth_ppm_err": 190.04,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5833,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10924.43,
+   "depth_ppm_err": 183.96,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5833,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10766.14,
+   "depth_ppm_err": 195.07,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5848,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10884.75,
+   "depth_ppm_err": 194.05,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5849,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10855.56,
+   "depth_ppm_err": 181.29,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5864,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10951.62,
+   "depth_ppm_err": 192.56,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5866,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 11138.69,
+   "depth_ppm_err": 156.2,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5878,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 11014.5,
+   "depth_ppm_err": 149.03,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5882,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 11187.29,
+   "depth_ppm_err": 203.08,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5894,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 11193.64,
+   "depth_ppm_err": 184.09,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5898,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 11365.69,
+   "depth_ppm_err": 228.15,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5909,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10976.75,
+   "depth_ppm_err": 186.49,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5916,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 11149.25,
+   "depth_ppm_err": 192.17,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5925,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10932.79,
+   "depth_ppm_err": 207.03,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5933,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10799.37,
+   "depth_ppm_err": 209.92,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.594,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10880.58,
+   "depth_ppm_err": 187.76,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5949,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10728.82,
+   "depth_ppm_err": 196.8,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5956,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10847.22,
+   "depth_ppm_err": 185.39,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5967,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10784.82,
+   "depth_ppm_err": 172.39,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5971,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 180.98,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5984,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10801.44,
+   "depth_ppm_err": 209.94,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.5987,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10803.52,
+   "depth_ppm_err": 197.49,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10755.76,
+   "depth_ppm_err": 226.09,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6002,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10863.89,
+   "depth_ppm_err": 206.38,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6017,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10722.6,
+   "depth_ppm_err": 209.17,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6018,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10884.75,
+   "depth_ppm_err": 281.69,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6033,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10859.72,
+   "depth_ppm_err": 260.52,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6034,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10753.69,
+   "depth_ppm_err": 215.7,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6048,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10909.8,
+   "depth_ppm_err": 282.02,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.605,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10845.14,
+   "depth_ppm_err": 206.2,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6064,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10828.48,
+   "depth_ppm_err": 160.25,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6067,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10897.27,
+   "depth_ppm_err": 229.66,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6079,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10888.92,
+   "depth_ppm_err": 171.13,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6083,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10786.9,
+   "depth_ppm_err": 220.18,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6095,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10859.72,
+   "depth_ppm_err": 187.58,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.61,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10706.04,
+   "depth_ppm_err": 223.5,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.611,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10882.66,
+   "depth_ppm_err": 183.6,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6117,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10726.74,
+   "depth_ppm_err": 223.71,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6126,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10764.06,
+   "depth_ppm_err": 182.6,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6133,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10691.56,
+   "depth_ppm_err": 210.94,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6141,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10807.68,
+   "depth_ppm_err": 278.61,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.615,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10801.44,
+   "depth_ppm_err": 195.39,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6157,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10840.97,
+   "depth_ppm_err": 264.46,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6167,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10718.46,
+   "depth_ppm_err": 190.5,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6172,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10799.37,
+   "depth_ppm_err": 184.98,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6183,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10693.63,
+   "depth_ppm_err": 210.96,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6188,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10836.81,
+   "depth_ppm_err": 162.4,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.62,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10677.09,
+   "depth_ppm_err": 229.39,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6203,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 193.46,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6217,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10668.82,
+   "depth_ppm_err": 202.45,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6219,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10847.22,
+   "depth_ppm_err": 193.72,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6233,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10718.46,
+   "depth_ppm_err": 190.5,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6234,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10874.32,
+   "depth_ppm_err": 158.51,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.625,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10863.89,
+   "depth_ppm_err": 145.92,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.625,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10847.22,
+   "depth_ppm_err": 212.47,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6265,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10840.97,
+   "depth_ppm_err": 145.77,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6266,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10818.08,
+   "depth_ppm_err": 237.14,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.628,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10786.9,
+   "depth_ppm_err": 132.94,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6282,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10774.44,
+   "depth_ppm_err": 234.59,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6296,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10807.68,
+   "depth_ppm_err": 124.75,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.63,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10751.62,
+   "depth_ppm_err": 230.19,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6311,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10838.89,
+   "depth_ppm_err": 118.69,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6316,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10677.09,
+   "depth_ppm_err": 227.33,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
+  },
+  {
+   "wavelength_um": 0.6327,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10780.67,
+   "depth_ppm_err": 116.29,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6342,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10751.62,
+   "depth_ppm_err": 184.57,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6358,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10801.44,
+   "depth_ppm_err": 160.05,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6373,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10741.25,
+   "depth_ppm_err": 190.7,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6389,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10749.54,
+   "depth_ppm_err": 215.65,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6404,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10822.24,
+   "depth_ppm_err": 205.98,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.642,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10832.65,
+   "depth_ppm_err": 210.24,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6434,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10735.03,
+   "depth_ppm_err": 215.51,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.645,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10772.36,
+   "depth_ppm_err": 195.13,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6465,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10761.99,
+   "depth_ppm_err": 209.55,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6481,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10764.06,
+   "depth_ppm_err": 240.7,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6496,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10770.29,
+   "depth_ppm_err": 255.3,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6512,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10749.54,
+   "depth_ppm_err": 228.1,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6528,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10845.14,
+   "depth_ppm_err": 214.53,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6542,
+   "bandwidth_um": 0.0015,
+   "depth_ppm": 10799.37,
+   "depth_ppm_err": 205.76,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6558,
+   "bandwidth_um": 0.0016,
+   "depth_ppm": 10751.62,
+   "depth_ppm_err": 296.55,
+   "source": "plnratror_squared",
+   "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
+   "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.6792,
+   "bandwidth_um": 0.0012,
+   "depth_ppm": 11041.81,
+   "depth_ppm_err": 109.28,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7582,
+   "bandwidth_um": 0.0012,
+   "depth_ppm": 11320.96,
+   "depth_ppm_err": 123.42,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.7665,
+   "bandwidth_um": 0.0012,
+   "depth_ppm": 11419.06,
+   "depth_ppm_err": 128.23,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 0.8839,
+   "bandwidth_um": 0.0012,
+   "depth_ppm": 10737.1,
+   "depth_ppm_err": 105.69,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
+  },
+  {
+   "wavelength_um": 1.205,
+   "bandwidth_um": null,
+   "depth_ppm": 9780.0,
+   "depth_ppm_err": 460.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.245,
+   "bandwidth_um": null,
+   "depth_ppm": 10320.0,
+   "depth_ppm_err": 400.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.285,
+   "bandwidth_um": null,
+   "depth_ppm": 10780.0,
+   "depth_ppm_err": 420.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.325,
+   "bandwidth_um": null,
+   "depth_ppm": 10910.0,
+   "depth_ppm_err": 400.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.365,
+   "bandwidth_um": null,
+   "depth_ppm": 11170.0,
+   "depth_ppm_err": 350.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.405,
+   "bandwidth_um": null,
+   "depth_ppm": 11190.0,
+   "depth_ppm_err": 420.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.445,
+   "bandwidth_um": null,
+   "depth_ppm": 10520.0,
+   "depth_ppm_err": 390.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.485,
+   "bandwidth_um": null,
+   "depth_ppm": 10360.0,
+   "depth_ppm_err": 400.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.525,
+   "bandwidth_um": null,
+   "depth_ppm": 10510.0,
+   "depth_ppm_err": 390.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.565,
+   "bandwidth_um": null,
+   "depth_ppm": 10800.0,
+   "depth_ppm_err": 370.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.605,
+   "bandwidth_um": null,
+   "depth_ppm": 10570.0,
+   "depth_ppm_err": 400.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.645,
+   "bandwidth_um": null,
+   "depth_ppm": 11070.0,
+   "depth_ppm_err": 390.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.685,
+   "bandwidth_um": null,
+   "depth_ppm": 10070.0,
+   "depth_ppm_err": 380.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.725,
+   "bandwidth_um": null,
+   "depth_ppm": 10410.0,
+   "depth_ppm_err": 390.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  },
+  {
+   "wavelength_um": 1.765,
+   "bandwidth_um": null,
+   "depth_ppm": 10650.0,
+   "depth_ppm_err": 390.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Near Infrared Camera and Multi-Object Spectrometer"
+  }
+ ],
+ "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."
+}
