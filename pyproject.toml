@@ -1,0 +1,102 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "earth2"
+version = "1.0.1"
+description = "A reproducible, data-driven search for potentially Earth-like worlds across the public astronomical archives"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { file = "LICENSE" }
+authors = [{ name = "Biswajit Jana" }]
+keywords = ["astronomy", "exoplanets", "habitability", "astrophysics", "reproducible-research"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+dependencies = [
+  "numpy>=1.23",
+  "pandas>=2.0",
+  "scipy>=1.9",
+  "astropy>=5.3",
+  "astroquery>=0.4.6",
+  "pyarrow>=12.0",
+  "requests>=2.28",
+  "matplotlib>=3.7",
+  "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+products = ["lightkurve>=2.3", "pyvo>=1.4", "dace-query>=3.0"]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "ruff>=0.4",
+  "mypy>=1.8",
+  "jupyter>=1.0",
+  "nbformat>=5.9",
+]
+
+[project.scripts]
+earth2 = "earth2.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/Biswajit1999/finding-earth-2"
+Repository = "https://github.com/Biswajit1999/finding-earth-2"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+earth2 = ["py.typed", "resources/*.json", "resources/*.yaml"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+markers = [
+  "network: test requires live archive access (deselect with -m 'not network')",
+  "slow: long-running test",
+]
+filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4", "SIM", "RET", "NPY"]
+# UP031: %-style formatting is used deliberately throughout the CLI's printed
+# progress output ("%-22s %7d rows" column alignment reads better than the
+# str.format equivalent); not a correctness issue either way.
+ignore = ["E501", "B008", "SIM108", "UP031"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E402"]
+"notebooks/*" = ["E402", "F401", "I001", "E702"]  # sys.path.insert must precede the earth2 imports it enables; E702 matches the existing figures.py exemption for compact plot-then-show lines
+# Terse `ax.set_x(...); ax.set_y(...)` and `fig.savefig(out); plt.close(fig)`
+# pairs are a deliberate, contained style choice for the figure generators.
+"src/earth2/reporting/figures.py" = ["E702"]
+
+[tool.mypy]
+# No python_version pin here on purpose: the test matrix runs mypy under two
+# different interpreters (3.10 and 3.12), and a hardcoded target broke that.
+# Pinning "3.10" made mypy on the 3.12 leg reject numpy's own bundled stub
+# (numpy>=2.5, which ships a PEP 695 `type` alias in __init__.pyi) because
+# pip resolves a *newer* numpy on 3.12 than it does on 3.10 -- a dependency
+# stub's syntax requirements can vary by resolved version per interpreter, so
+# a single static floor can't represent "the versions CI tests". Leaving this
+# unset makes mypy default to the version of the interpreter actually running
+# it, which is exactly what each matrix leg wants.
+ignore_missing_imports = true
+warn_unused_ignores = false
+disallow_untyped_defs = false
+files = ["src/earth2"]

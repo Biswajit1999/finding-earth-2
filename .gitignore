@@ -1,0 +1,66 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+.turbo/
+*.tsbuildinfo
+.vercel/
+playwright-report/
+test-results/
+blob-report/
+
+# --- Environment ---
+.env
+.env.local
+.env*.local
+.DS_Store
+Thumbs.db
+
+# --- Data policy -------------------------------------------------------
+# Raw archive payloads are NEVER committed. They are large, they belong to
+# the archives, and they are fully reconstructible from the manifests in
+# data/manifests/ via `python -m earth2 sync`.
+data/raw/**
+!data/raw/.gitkeep
+
+# Downloaded bulk science products (light curves, spectra FITS, RV files)
+data/products/**
+!data/products/.gitkeep
+*.fits
+*.fits.gz
+
+
+# Mirrored archive tables. These are a CACHE: byte-reconstructible from the
+# committed manifests in data/manifests/ via `python -m earth2 sync`. The
+# scientific outputs derived from them live in results/ and ARE committed.
+data/processed/**
+!data/processed/.gitkeep
+
+# Full analysis catalogue: a regenerable intermediate (every column, all rows).
+# The published outputs are candidate_ranking.*, data_coverage.csv,
+# analysis_summary.json, measurement_provenance.csv and the provenance files.
+results/analysis_catalogue.parquet
+
+# Deep-dive JSON embeds fetched light curves and RV series; regenerable via
+# `python -m earth2 deepdive --transit --rv`. The web export under
+# web/public/data/ IS committed, because the site must build without network.
+results/deepdive/**
+
+# Local AI-assistant tooling config -- never part of the project deliverable
+.claude/
