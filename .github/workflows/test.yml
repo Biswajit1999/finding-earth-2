@@ -1,0 +1,158 @@
+name: Test
+
+# Uses the data already committed under results/ and web/public/data/ -- this
+# workflow validates code correctness and data-contract integrity on every
+# push, without depending on live archive availability. The scheduled
+# data-refresh workflow is what talks to the archives.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  python:
+    name: Python tests, lint, type check
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install package
+        run: python -m pip install -e ".[dev]"
+
+      - name: Ruff lint
+        run: ruff check src/ tests/ notebooks/
+
+      - name: Mypy type check
+        run: mypy src/earth2
+
+      - name: Run test suite
+        run: |
+          pytest tests/ -v --cov=earth2 --cov-report=term-missing --cov-fail-under=40
+
+      - name: Release invariants (results/ artefacts, not just functions)
+        run: python scripts/check_release_invariants.py
+
+  data-validation:
+    name: Validate generated data contracts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install package
+        run: python -m pip install -e "."
+
+      - name: Validate every exported JSON is strictly valid (no bare NaN)
+        run: |
+          python - <<'PY'
+          import json, pathlib, sys
+
+          def strict(p):
+              json.loads(
+                  p.read_text(encoding="utf-8"),
+                  parse_constant=lambda tok: (_ for _ in ()).throw(ValueError(tok)),
+              )
+
+          bad = []
+          for f in sorted(pathlib.Path("web/public/data").rglob("*.json")):
+              try:
+                  strict(f)
+              except Exception as exc:  # noqa: BLE001
+                  bad.append((str(f), str(exc)[:120]))
+
+          if bad:
+              for f, e in bad:
+                  print(f"INVALID: {f}: {e}")
+              sys.exit(1)
+          print(f"{sum(1 for _ in pathlib.Path('web/public/data').rglob('*.json'))} JSON files OK")
+          PY
+
+      - name: Confirm no fabricated record counts
+        run: |
+          python - <<'PY'
+          import json, sys
+
+          s = json.load(open("results/analysis_summary.json", encoding="utf-8"))
+          n = s["population"]["n_confirmed_planets"]
+          errors = []
+
+          if n <= 0:
+              errors.append("n_confirmed_planets is not positive")
+          # Controls must never be folded into the exoplanet count.
+          if s["population"].get("n_solar_system_controls", 0) not in (0, 5):
+              errors.append("unexpected control count -- check control set")
+          # Coverage counts can never exceed the population they are drawn from.
+          cov = s["measurement_coverage"]
+          for k in ("n_with_radius", "n_with_any_mass_value", "n_with_measured_mass"):
+              if cov.get(k, 0) > n:
+                  errors.append(f"{k}={cov[k]} exceeds n_confirmed_planets={n}")
+
+          if errors:
+              for e in errors:
+                  print("FAIL:", e)
+              sys.exit(1)
+          print(f"OK: {n} confirmed planets, coverage counts within bounds")
+          PY
+
+  notebooks:
+    name: Execute reproducibility notebooks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install package
+        run: python -m pip install -e ".[dev]"
+
+      - name: Execute every notebook against the committed results/
+        run: |
+          for nb in notebooks/*.ipynb; do
+            echo "=== $nb ==="
+            jupyter nbconvert --to notebook --execute --stdout "$nb" > /dev/null
+          done
+
+  web:
+    name: Frontend lint, type check and build
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Build static export
+        run: npm run build
