@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its outputs, please cite it as below, and cite the underlying data archives listed in docs/DATA_SOURCES.md."
+title: "Finding Earth 2.0 in Distant Worlds"
+type: software
+authors:
+  - family-names: "Jana"
+    given-names: "Biswajit"
+repository-code: "https://github.com/Biswajit1999/finding-earth-2"
+license: MIT
+version: 1.0.1
+date-released: 2026-08-24
+abstract: >
+  A reproducible, data-driven search for potentially Earth-like worlds across
+  the public astronomical archives. Ingests confirmed-planet, candidate, and
+  atmospheric-spectroscopy records from the NASA Exoplanet Archive, radial
+  velocities from DACE, and light curves from MAST; propagates measurement
+  uncertainty by Monte Carlo; and ranks candidates on four interpretable,
+  independently reported criteria (Earth similarity, conservative
+  habitability, observational confidence, characterisation potential).
+keywords:
+  - exoplanets
+  - astrobiology
+  - habitable zone
+  - computational astrophysics
+  - reproducible research
