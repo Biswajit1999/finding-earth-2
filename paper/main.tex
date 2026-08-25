@@ -1,0 +1,766 @@
+\documentclass[11pt,twocolumn]{article}
+
+% ---------------------------------------------------------------------------
+% Finding Earth 2.0 in Distant Worlds
+% A reproducible, data-driven search for potentially Earth-like worlds
+% across the public astronomical archives.
+%
+% Compiles with any standard TeX distribution (TeX Live / MiKTeX), no extra
+% class files required:
+%
+%   pdflatex main && bibtex main && pdflatex main && pdflatex main
+%
+% ---------------------------------------------------------------------------
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1.9cm,columnsep=0.7cm]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage[colorlinks=true,linkcolor=blue!50!black,citecolor=blue!50!black,
+            urlcolor=blue!50!black]{hyperref}
+\usepackage[round,authoryear]{natbib}
+\usepackage{xcolor}
+\usepackage{times}
+
+\captionsetup{font=small,labelfont=bf,skip=6pt}
+\setlength{\parskip}{2pt}
+
+\newcommand{\earth}{\oplus}
+\newcommand{\Rearth}{R_{\earth}}
+\newcommand{\Mearth}{M_{\earth}}
+\newcommand{\Teff}{T_{\mathrm{eff}}}
+\newcommand{\Teq}{T_{\mathrm{eq}}}
+\newcommand{\Seff}{S_{\mathrm{eff}}}
+\newcommand{\earthtwo}{\textsc{earth2}}
+
+\title{\textbf{Finding Earth 2.0 in Distant Worlds:\\
+A Reproducible, Uncertainty-Aware Search for Potentially\\
+Earth-Like Worlds Across the Public Astronomical Archives}}
+
+\author{Biswajit Jana}
+\date{}
+
+\begin{document}
+\twocolumn[
+    \maketitle
+    \begin{abstract}
+    \noindent
+    We present a reproducible computational pipeline that searches the
+    public astronomical archives for potentially Earth-like exoplanets and
+    ranks them on physically motivated, interpretable criteria rather than a
+    supervised machine-learning model, for which no labelled training set of
+    inhabited exoplanets exists. The pipeline ingests 164{,}209
+    provenance-tracked records from twelve NASA Exoplanet Archive tables
+    plus an exact-identifier crossmatch against Gaia DR3 astrometry,
+    cross-references public radial-velocity time series from the Data \&
+    Analysis Center for Exoplanets (DACE) and light curves from the
+    Mikulski Archive for Space Telescopes (MAST), and propagates every
+    published measurement uncertainty through a 4{,}000-draw Monte Carlo per
+    planet. Candidates are scored on four independent axes -- Earth
+    similarity, conservative habitable-zone consistency, observational
+    confidence, and atmospheric-characterisation potential -- combined by a
+    non-compensatory weighted geometric mean so that strong performance on
+    one axis cannot mask a disqualifying weakness on another. Of 6{,}354
+    confirmed planets analysed, only 15 are simultaneously consistent with
+    the conservative habitable zone and small enough to be plausibly rocky,
+    and only one of those has a dynamically measured mass; the rest carry
+    masses predicted from their radius by a mass--radius relation. The
+    computed ranking independently recovers Proxima Centauri~b and several
+    nearby M-dwarf terrestrial candidates as the leading systems, without
+    these being selected by hand; TRAPPIST-1's planets, despite measured
+    masses and transit data, are down-weighted because their host's
+    effective temperature sits outside the habitable-zone model's calibrated
+    range for all but a small fraction of its uncertainty posterior
+    (Section~\ref{sec:hz}). We report the
+    methodology, the resulting candidate list with full provenance, and the
+    limitations of the approach -- most importantly, that the Earth
+    Similarity Index computed from data that exists for real exoplanets
+    cannot distinguish an Earth-like world from a Venus-like one. No claim
+    of habitability confirmation, biosignature detection, or evidence for
+    life is made for any object in this catalogue.
+    \end{abstract}
+    \vspace{0.6cm}
+]
+
+% =============================================================================
+\section{Introduction}
+% =============================================================================
+
+Public reporting on exoplanet discoveries routinely collapses several
+distinct claims into a single headline: that a planet is Earth-sized, that it
+orbits within its star's habitable zone, that it is ``potentially
+habitable,'' and occasionally that it ``could host life.'' These are not
+interchangeable statements, and they are supported by different kinds of
+evidence. A planet can be Earth-sized and molten; a planet can sit within the
+habitable zone and be a volatile-rich mini-Neptune with no solid surface at
+all. This project treats that conflation as an engineering problem: every
+quantity we compute answers exactly one of these questions, and every result
+we report states which question it answers.
+
+We distinguish five properties that are frequently, and incorrectly, treated
+as synonyms:
+
+\begin{itemize}
+  \item \textbf{Earth similarity} -- do the bulk radius, density, escape
+    velocity, and equilibrium temperature resemble Earth's?
+  \item \textbf{Habitable-zone position} -- is the incident stellar flux
+    compatible with surface liquid water under a stated climate model?
+  \item \textbf{Rocky plausibility} -- does the radius fall below the regime
+    in which planets are predominantly volatile-rich?
+  \item \textbf{Atmospheric observability} -- could an atmosphere be
+    characterised with current instrumentation?
+  \item \textbf{Evidence for life} -- not established for any object in
+    this work, and not estimated by any metric we compute.
+\end{itemize}
+
+Sections~\ref{sec:data}--\ref{sec:methods} describe the data sources and
+methodology; Section~\ref{sec:results} presents the resulting population
+statistics and candidate ranking; Section~\ref{sec:discussion} discusses
+observational selection effects and the biosignature-interpretation
+literature; Section~\ref{sec:limitations} states what this analysis cannot
+establish; Section~\ref{sec:conclusions} concludes.
+
+% =============================================================================
+\section{Data and Provenance}
+\label{sec:data}
+% =============================================================================
+
+The analysis spine is the NASA Exoplanet Archive's Planetary Systems
+Composite Parameters table \citep{NasaExoplanetArchive}, cross-checked
+against the per-publication Planetary Systems table
+\citep{NasaExoplanetArchivePS} to count independent references and measure
+inter-publication disagreement. Table~\ref{tab:datasets} lists every
+archive table ingested and the number of rows retrieved in the analysis run
+reported here. Every retrieval is
+recorded in a manifest carrying the literal query string, the resolved URL,
+a UTC timestamp, and a SHA-256 hash of the payload as received, so that
+archive drift (a published value changing between two dates) is detectable
+rather than silent. Raw payloads are not redistributed; they are
+reconstructible from the recorded query against the live archive.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Archive tables ingested by the pipeline. \texttt{pscomppars} is the
+analysis spine (one row per confirmed planet, each column drawn from the
+best available publication); \texttt{ps} is the per-publication evidence
+layer used to count independent references. \texttt{transitspec} and
+\texttt{emissionspec} are genuine planetary-atmosphere spectroscopy,
+distinct from any stellar spectra.}
+\label{tab:datasets}
+\begin{tabular}{lr}
+\toprule
+Table & Rows \\
+\midrule
+\texttt{pscomppars} (confirmed planets)     & 6{,}354  \\
+\texttt{ps} (published parameter sets)      & 40{,}106 \\
+\texttt{stellarhosts}                       & 47{,}857 \\
+\texttt{q1\_q17\_dr25\_tce} (Kepler TCEs)    & 34{,}032 \\
+\texttt{toi} (TESS candidates)              & 8{,}136  \\
+\texttt{q1\_q17\_dr25\_koi} (Kepler KOIs)    & 8{,}054  \\
+\texttt{transitspec}                        & 5{,}948  \\
+\texttt{k2pandc} (K2 planets/candidates)     & 4{,}068  \\
+\texttt{emissionspec}                       & 2{,}361  \\
+\texttt{spectra} (file index)                & 1{,}826  \\
+\texttt{ml} (microlensing)                   & 895   \\
+\texttt{di\_stars\_exep}                     & 164   \\
+\texttt{gaiadr3.gaia\_source} (crossmatch)   & 4{,}408 \\
+\midrule
+\textbf{Total source records}               & \textbf{164{,}209} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Public radial-velocity time series were retrieved from DACE
+\citep{Dace2015}, including the stellar activity indicators (log
+$R'_{\mathrm{HK}}$, H$\alpha$, the Ca~\textsc{ii} H\&K index, and the
+cross-correlation-function bisector span) measured from the same spectra.
+Public light curves were retrieved from MAST via metadata-first search.
+Entity resolution across survey identifiers (Gaia, TIC, EPIC, K2, TOI) used
+the archive's own alias-lookup service rather than string similarity, which
+we consider an unreliable basis for joining astronomical catalogues.
+
+Separately, every confirmed-planet host star was cross-matched against Gaia
+DR3 \citep{GaiaDR3} by its exact \texttt{source\_id} -- extracted from the
+\texttt{gaia\_dr3\_id} string the NASA archive already records for 94\% of
+confirmed planets (4,408 of 4,764 host systems) -- rather than by sky
+position, so the match carries no tolerance radius or ambiguity to flag. This
+adds an astrometric distance independent of the archive's adopted
+\texttt{sy\_dist} (\texttt{1000\,/\,parallax}, agreeing with the archive to a
+median of 0.7\% across all matched hosts; Figure~\ref{fig:gaia}) and the
+Renormalised Unit Weight Error (RUWE), Gaia's own single-star astrometric
+fit-quality statistic: 412 planets' hosts exceed the conventional RUWE > 1.4
+threshold associated with a poorly-fit or unresolved-binary solution, context
+relevant to any candidate whose stellar (and hence planetary) radius rests on
+an assumption of single-star astrometry. Gaia's own derived astrophysical
+parameters are not blended into the adopted stellar parameters used
+elsewhere in this pipeline, to avoid reintroducing the single-paper-per-row
+inconsistency Section~\ref{sec:data} already notes for the composite table.
+
+% =============================================================================
+\section{Methods}
+\label{sec:methods}
+% =============================================================================
+
+\subsection{Mass provenance}
+\label{sec:massprov}
+
+The archive's composite mass column mixes four categories of evidence that
+must not be treated as equivalent: a directly measured dynamical mass; a
+radial-velocity minimum mass $M\sin i$; a mass predicted from the radius via
+a mass--radius relation; and a value reported only as an upper limit. Of
+6{,}354 confirmed planets, 2{,}240 (35\%) have a measured mass, 890 (14\%)
+carry an $M\sin i$ lower limit, 218 (3\%) carry an upper limit only, and
+2{,}975 (47\%) carry a mass inferred from the radius. Using an inferred mass
+to compute bulk density or escape velocity re-encodes the radius rather than
+adding independent information, which would make a similarity index appear
+to combine four independent properties while in fact being driven by one.
+We classify every planet's mass provenance explicitly and discount inferred
+masses in the observational-confidence score (Section~\ref{sec:confidence}).
+
+\subsection{Habitable-zone model}
+\label{sec:hz}
+
+Habitable-zone boundaries follow \citet{Kopparapu2013}, using the corrected
+coefficients published in the erratum \citep{Kopparapu2013Erratum} rather
+than the original Table~3, which the arXiv preprint of the paper still
+carries and which differs from the corrected value by over a percent in
+flux at the inner edge. The effective stellar flux at a boundary is
+\begin{equation}
+  \Seff = \Seff_{,\odot} + aT + bT^2 + cT^3 + dT^4,
+  \label{eq:seff}
+\end{equation}
+with $T = \Teff - 5780\,\mathrm{K}$, valid for $2600\,\mathrm{K} \le \Teff
+\le 7200\,\mathrm{K}$; outside this range the model returns an explicit
+``not applicable'' value rather than a silently extrapolated one. Five
+boundaries are computed from Equation~\eqref{eq:seff} with the coefficients
+of \citet{Kopparapu2013Erratum} (recent Venus, runaway greenhouse, moist
+greenhouse, maximum greenhouse, early Mars), and the corresponding orbital
+distance is $d = \sqrt{L/\Seff}$~au, with $L$ in solar luminosities. We report two zone definitions separately: the
+\emph{conservative} zone (runaway greenhouse to maximum greenhouse) and the
+\emph{optimistic} zone (recent Venus to early Mars), because the
+disagreement between them reflects genuine unresolved climate-modelling
+uncertainty rather than noise to be averaged away.
+
+TRAPPIST-1's host star ($\Teff = 2566\,\mathrm{K}$) sits 34~K below the
+model's stated validity floor. We report its planets' habitable-zone status
+both strictly (undetermined) and under an explicitly flagged extrapolation
+that clamps the temperature to the boundary, and we report what fraction of
+the Monte Carlo posterior actually falls within the valid range before
+quoting a clamped probability.
+
+\subsection{Earth Similarity Index}
+\label{sec:esi}
+
+We compute the Earth Similarity Index of \citet{SchulzeMakuch2011}. Writing
+$F_i = 1 - \left|\frac{x_i - x_{i,0}}{x_i + x_{i,0}}\right|$ for each of the
+four properties (radius, weight $w=0.57$; density, $w=1.07$; escape
+velocity, $w=0.70$; temperature, $w=5.58$), the global index is the
+four-variable geometric mean
+\begin{equation}
+  \mathrm{ESI}_{\mathrm{global}} = \prod_{i=1}^{4} F_i^{\,w_i/4}.
+  \label{eq:esi}
+\end{equation}
+We compute this in two tiers for reporting purposes -- an interior tier
+(radius, density) and a surface tier (escape velocity, temperature) -- each
+formed as the \emph{product} of its two already-weighted terms
+($F_i^{w_i/2}$, i.e. $n=2$ within a two-property tier), with the two tiers
+then combined by a single geometric mean
+($\mathrm{ESI}_{\mathrm{global}} = \sqrt{\mathrm{ESI}_{\mathrm{interior}}
+\cdot \mathrm{ESI}_{\mathrm{surface}}}$) so that $\mathrm{ESI}_{\mathrm{interior}}$
+and $\mathrm{ESI}_{\mathrm{surface}}$ remain individually inspectable. This is
+algebraically identical to Equation~\eqref{eq:esi}; an earlier implementation
+took an additional, incorrect square root when forming each tier, which
+silently compounded to $F_i^{w_i/8}$ overall and systematically pushed every
+non-Earth score toward 1. We verify the vectorised implementation against an
+independently coded flat evaluation of Equation~\eqref{eq:esi} in
+\texttt{tests/test\_habitability\_esi.py} for the Solar System controls and
+200 random parameter draws.
+
+The published index references its temperature term to Earth's
+\emph{surface} temperature (288~K). Exoplanet catalogues supply only
+\emph{equilibrium} temperature, which excludes greenhouse warming by
+construction. We therefore reference the temperature term to Earth's own
+equilibrium temperature (254~K, computed at the same Bond albedo used
+throughout this pipeline) rather than mixing the two conventions. The
+consequence must be stated plainly: Venus scores $\mathrm{ESI} = 0.92$ under
+this definition, because its high Bond albedo gives it an equilibrium
+temperature \emph{cooler} than Earth's. An Earth Similarity Index computed
+from data that actually exists for real exoplanets cannot separate a
+temperate rocky world from a runaway-greenhouse one. We verify this is not
+an implementation artefact by running Venus through the identical pipeline
+as a labelled control (Section~\ref{sec:limitations}).
+
+\subsection{Uncertainty propagation}
+\label{sec:mc}
+
+Every parameter with a published asymmetric uncertainty is sampled from a
+two-piece (split) normal distribution: draws with $z \sim \mathcal{N}(0,1)$
+are scaled by the upper reported uncertainty when $z>0$ and the lower
+uncertainty when $z \le 0$. We use 4{,}000 draws per planet with a fixed
+seed. Draws that are non-positive on a positive-definite quantity (radius,
+mass, temperature) are rejected and redrawn rather than clipped to zero,
+which would bias the posterior median upward for poorly constrained small
+planets. Parameters with a value but no published uncertainty are sampled
+as a delta function, and the resulting artificially narrow posterior is
+tracked explicitly (\texttt{mc\_uncertainty\_coverage}) rather than treated
+as equivalent to a genuinely well-measured quantity.
+
+\subsection{Rocky plausibility}
+
+Following \citet{Rogers2015} and the radius-valley result of
+\citet{Fulton2017}, rocky plausibility is modelled as a logistic function
+of radius,
+\begin{equation}
+  p(\mathrm{rocky}) = \left[1 + \exp\!\left(\frac{\Rearth - 1.6}{0.20}\right)\right]^{-1},
+\end{equation}
+centred on $1.6\,\Rearth$ and spanning the observed $1.5$--$2.0\,\Rearth$
+radius valley, rather than imposing a hard cutoff the data does not
+support.
+
+\subsection{Composite ranking}
+\label{sec:confidence}
+
+Four component scores are computed for every planet: Earth similarity (the
+Monte Carlo median ESI), conservative habitability (habitable-zone membership
+probability, multiplied by the fraction of Monte Carlo draws for which the
+host's sampled effective temperature actually fell inside the habitable-zone
+model's calibrated range, multiplied by rocky plausibility -- a product, so
+neither term alone can rescue a disqualified planet, and a host whose Teff
+sits mostly outside the model's domain cannot read as a confident member on
+the strength of the small minority of draws the model could evaluate),
+observational
+confidence (a weighted combination of mass-provenance quality, propagated
+uncertainty coverage, independent reference depth, and inter-publication
+agreement), and characterisation potential (the Transmission Spectroscopy
+Metric of \citealt{Kempton2018}, undefined for non-transiting planets). The
+four are combined by a weighted \emph{geometric} mean,
+\begin{equation}
+  I = \exp\!\left(\sum_i w_i \ln \max(s_i, \epsilon)\right), \quad
+  \sum_i w_i = 1,\ \epsilon = 0.01,
+  \label{eq:composite}
+\end{equation}
+with default weights 0.35 (similarity), 0.40 (habitability), 0.25
+(confidence), and 0.0 (characterisation, excluded by default because it
+structurally penalises non-transiting planets such as Proxima Centauri~b
+for a reason unrelated to habitability). A geometric mean is
+non-compensatory: an object with excellent measurements and strong
+observability but zero habitable-zone consistency still receives a
+near-zero composite index, which an arithmetic mean would not guarantee.
+
+\subsection{Transit and radial-velocity validation}
+\label{sec:validation}
+
+For deep-dive systems with public MAST light curves, we detrend with a
+Savitzky--Golay filter whose window is forced to at least three times the
+transit duration, clip outliers upward only (a symmetric clip would remove
+the transit itself), fold on the published ephemeris after converting it
+into the mission's own time system, and fit a trapezoid. Every fit is
+checked against the published depth and rejected as unvalidated beyond a
+factor of 1.6 disagreement; validated on four bright benchmark planets
+(HD~189733~b, WASP-39~b, HD~209458~b, WASP-19~b) at 0.77--0.99 of the
+published depth.
+
+For radial-velocity analysis, every candidate period is checked against the
+periodograms of the co-measured stellar activity indicators, because a
+rotating, spotted star produces an apparent velocity signal with no planet
+behind it. A circular-orbit fit is reported as a measurement only if it
+passes three criteria: at least 20 velocities, amplitude significance
+$\ge 3\sigma$, and residual scatter below five times the fitted amplitude.
+This gate was added after an unconstrained fit to 33 velocities of
+TRAPPIST-1 returned an apparent 10--41~$\Mearth$ planet for objects whose
+true masses are near one Earth mass.
+
+% =============================================================================
+\section{Results}
+\label{sec:results}
+% =============================================================================
+
+\subsection{Population overview}
+
+Figure~\ref{fig:massradius} shows the mass--radius distribution of the full
+analysed catalogue, split by mass provenance. The population synthesised
+from measured masses alone traces the expected rocky-to-volatile transition
+near $1.6\,\Rearth$; the much larger population with radius-inferred masses
+necessarily follows the assumed mass--radius relation by construction and
+carries no independent density information.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/mass_radius.png}
+\caption{Mass--radius diagram for the analysed catalogue, coloured by mass
+provenance (measured, $M\sin i$ lower limit, or inferred from radius via a
+mass--radius relation). Diagonal lines mark constant bulk density; the
+horizontal line marks $1.6\,\Rearth$, above which most planets are not
+predominantly rocky \citep{Rogers2015}. Solar System bodies are shown as
+labelled reference points, not exoplanet observations.}
+\label{fig:massradius}
+\end{figure}
+
+Figure~\ref{fig:periodradius} places the population in period--radius
+space. The known population is concentrated at short periods and
+intermediate radii, reflecting the sensitivity of transit and
+radial-velocity surveys rather than the true underlying occurrence rate at
+longer periods.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/period_radius.png}
+\caption{Orbital period against planet radius for the full catalogue,
+coloured by discovery method. Open circles mark the top eight computed
+Earth-2.0 candidates, labelled with leader lines. Earth is shown as a
+reference point.}
+\label{fig:periodradius}
+\end{figure}
+
+\subsection{Habitable-zone population}
+
+Figure~\ref{fig:fluxradius} shows incident stellar flux against radius,
+with the conservative habitable zone for a Sun-like host shaded. Of 6{,}354
+confirmed planets, 174 fall within the conservative habitable zone under a
+strict (non-extrapolated) evaluation and 279 under the optimistic
+definition. Intersecting habitable-zone membership with rocky plausibility
+($\Rearth < 1.6$) narrows this to \textbf{15 planets}, of which
+\textbf{only one} has a dynamically measured mass. Figure~\ref{fig:teq}
+shows the equilibrium-temperature distribution with the same
+habitable-zone flux boundaries converted to temperature at Earth's Bond
+albedo.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/flux_radius_hz.png}
+\caption{Incident stellar flux against planet radius. Planets inside the
+conservative habitable zone are coloured by their computed Earth-2.0 index;
+all others are shown in grey. The shaded band is the conservative
+habitable zone for a Sun-like host (Section~\ref{sec:hz}).}
+\label{fig:fluxradius}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/equilibrium_temperature.png}
+\caption{Equilibrium-temperature distribution across the analysed
+catalogue (Bond albedo 0.306, applied uniformly). The shaded band is the
+conservative habitable-zone flux range (Section~\ref{sec:hz}) converted to
+temperature at the same albedo, evaluated at the Sun's effective
+temperature; it is derived from the identical model used everywhere else
+in this pipeline, not a separately chosen illustrative range.}
+\label{fig:teq}
+\end{figure}
+
+Figure~\ref{fig:hz} shows the full habitable-zone boundary structure as a
+function of host effective temperature, with every confirmed planet placed
+by flux and $\Teff$. Figure~\ref{fig:hr} places the host stars themselves
+on a Hertzsprung--Russell diagram, highlighting that hosts of
+habitable-zone candidates are drawn overwhelmingly from cool, low-mass
+stars.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/hz_diagram.png}
+\caption{Habitable-zone boundaries after \citet{Kopparapu2013} (erratum
+coefficients) as a function of host effective temperature. Shaded regions
+mark the conservative and optimistic zones; points are confirmed planets
+with radius $<2\,\Rearth$, coloured by computed Earth-2.0 index. Solar
+System bodies are marked as reference points.}
+\label{fig:hz}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/hr_diagram.png}
+\caption{Hertzsprung--Russell diagram of host stars in the analysed
+catalogue. Hosts of planets within the conservative habitable zone are
+highlighted; the shaded band marks the $2600$--$7200$~K validity range of
+the habitable-zone model (Section~\ref{sec:hz}).}
+\label{fig:hr}
+\end{figure}
+
+Figure~\ref{fig:distance} shows the distance distribution of the full
+catalogue with the top-ranked candidates marked: they cluster within a few
+to a few tens of parsecs, a direct consequence of the fact that a temperate
+Earth-sized planet is currently detectable at all only around the nearest,
+quietest stars (Section~\ref{sec:discussion}).
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/distance_distribution.png}
+\caption{Distance distribution of the analysed catalogue. Vertical lines
+mark the distances of the top eight computed candidates; sibling planets in
+the same system are merged into a single labelled line.}
+\label{fig:distance}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/gaia_parallax_check.png}
+\caption{Independent distance cross-check for the 4,408 confirmed-planet
+host stars matched to Gaia DR3 by exact \texttt{source\_id}: the archive's
+adopted distance against $1000/\mathrm{parallax}$ computed directly from
+this project's own Gaia crossmatch. Points are coloured by Gaia's RUWE
+statistic (clipped at 3.0); outlined points exceed RUWE $>1.4$, the
+conventional threshold for a poorly-fit or unresolved-binary astrometric
+solution. The two distances agree to a median of 0.7\% across all matched
+hosts.}
+\label{fig:gaia}
+\end{figure}
+
+\subsection{Candidate ranking}
+
+Table~\ref{tab:top10} lists the ten highest-ranked candidates by the
+composite Earth-2.0 index (Equation~\ref{eq:composite}), computed with the
+default weights and never hand-selected. The ranking independently recovers
+Proxima Centauri~b, GJ~1061~d, GJ~1002~b/c, Wolf~1069~b, Teegarden's Star~c,
+and GJ~667~C~f as the leading candidates -- nearby M-dwarf terrestrial
+planets the literature already treats among the foremost temperate
+candidates -- which we take as evidence that the underlying physics is
+implemented correctly rather than as a novel population discovery.
+TRAPPIST-1's planets, prominent in earlier (pre-correction) runs of this
+pipeline, do not appear in the top 22: their host star's effective
+temperature (2566~K) sits below the habitable-zone model's stated 2600~K
+validity floor, so the great majority of their Monte Carlo temperature
+posterior falls outside the model's domain, and the conservative-habitability
+score (Section~\ref{sec:confidence}) is discounted accordingly rather than
+reporting a confident-looking probability computed from the small minority of
+draws the model could evaluate.
+
+\begin{table*}[t]
+\centering
+\small
+\caption{The ten highest-ranked Earth-2.0 candidates, from the computed
+ranking. $I$: composite index; $S$: Earth-similarity score; $H$:
+conservative-habitability score; $C$: observational-confidence score. Mass
+provenance follows Section~\ref{sec:massprov}; ``M$\sin i$'' denotes a
+radial-velocity minimum mass.}
+\label{tab:top10}
+\begin{tabular}{lllrrrrrrr}
+\toprule
+Rank & Planet & Host & $I$ & $S$ & $H$ & $C$ & $R_p\,[\Rearth]$ & Mass provenance & $d$~[pc] \\
+\midrule
+1  & Proxima Centauri~b  & Proxima Centauri  & 0.876 & 0.915 & 0.946 & 0.730 & 1.02  & M$\sin i$       & 1.3   \\
+2  & GJ~1061~d           & GJ~1061           & 0.875 & 0.874 & 0.896 & 0.846 & 1.16  & measured        & 3.7   \\
+3  & GJ~1002~b           & GJ~1002           & 0.849 & 0.914 & 0.945 & 0.644 & 1.03  & M$\sin i$       & 4.8   \\
+4  & Wolf~1069~b         & Wolf~1069         & 0.839 & 0.900 & 0.931 & 0.644 & 1.08  & M$\sin i$       & 9.6   \\
+5  & Teegarden's Star~c  & Teegarden's Star  & 0.823 & 0.807 & 0.948 & 0.676 & 1.02  & M$\sin i$       & 3.8   \\
+6  & Kepler-1649~c       & Kepler-1649       & 0.774 & 0.888 & 0.898 & 0.502 & 1.06  & inferred        & 92.2  \\
+7  & GJ~1002~c           & GJ~1002           & 0.771 & 0.751 & 0.883 & 0.644 & 1.10  & M$\sin i$       & 4.8   \\
+8  & Kepler-1229~b       & Kepler-1229       & 0.716 & 0.819 & 0.733 & 0.571 & 1.40  & inferred        & 265.5 \\
+9  & GJ~667~C~f          & GJ~667~C          & 0.702 & 0.805 & 0.676 & 0.617 & 1.45  & M$\sin i$       & 7.2   \\
+10 & TOI-700~d           & TOI-700           & 0.684 & 0.943 & 0.552 & 0.613 & 1.07  & inferred        & 31.1  \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Evidence coverage}
+
+A high composite index built on weak evidence is a different result from a
+high index built on strong evidence, and a single table column cannot make
+that distinction visible. Figure~\ref{fig:evidence} shows, for each of the
+22 highest-ranked candidates, the actual evidential basis behind its score:
+mass provenance quality, propagated-uncertainty coverage, independent
+reference depth, habitable-zone model validity, and the availability of
+transiting, radial-velocity, and spectroscopic data. The pattern is
+immediate: the RV-detected M-dwarf candidates (Proxima Centauri~b,
+GJ~1002~b/c, Teegarden's Star~c, Wolf~1069~b, GJ~667~C~f) score strongly on
+similarity and habitability but carry $M\sin i$ masses and no transit or
+spectroscopic data, while the transiting Kepler/TOI candidates
+(Kepler-1649~c, Kepler-1229~b, TOI-700~d and others further down the list)
+have masses predicted from radius rather than measured independently. Only
+two systems in the top 22 combine a dynamically measured mass with either
+population -- GJ~1061~d (non-transiting) and LHS~1140~b (transiting) -- which
+is itself the evidence-coverage gap this figure exists to expose.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figures/evidence_matrix.png}
+\caption{Data-confidence matrix for the 22 highest-ranked candidates.
+Each column is an independent evidential fact, not a decorative colour
+scale: mass provenance quality (Section~\ref{sec:massprov}), fraction of
+propagated parameters with a published uncertainty, log-scaled independent
+reference depth, whether the host lies within the habitable-zone model's
+validity range, and whether transit, radial-velocity, and atmospheric
+spectroscopy data exist. Checkmarks denote a saturated (1.0) value; a dash
+denotes zero.}
+\label{fig:evidence}
+\end{figure*}
+
+\subsection{Uncertainty-aware posteriors}
+
+Figure~\ref{fig:posterior} shows Monte Carlo posterior clouds in
+radius--density space for the six highest-ranked candidates, drawn fresh
+from each planet's own published asymmetric uncertainties using the sampler
+described in Section~\ref{sec:mc}. The width of each cloud is itself a
+result: Kepler-1649~c, whose mass is predicted from its radius rather than
+measured, carries a visibly wider ESI posterior than the five
+directly-measured or $M\sin i$ candidates ranked above it, information a
+single point estimate with symmetric error bars would not convey.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.85\linewidth]{figures/posterior_clouds.png}
+\caption{Monte Carlo posterior clouds (6{,}000 draws per planet) in
+radius--density space for the six highest-ranked candidates, propagated
+from each planet's own published asymmetric uncertainties. Filled points
+mark posterior medians; Earth is shown as a reference point. Leader lines
+connect each label to its cloud, spread along the top margin because the
+medians cluster within a narrow radius range.}
+\label{fig:posterior}
+\end{figure*}
+
+\subsection{Atmospheric spectroscopy}
+
+The archive holds 5{,}948 genuine transmission-spectroscopy measurements
+across 104 planets, harmonised here from two incompatible archive depth
+representations (percentage transit depth and planet--star radius ratio)
+into a single part-per-million scale; failing to harmonise both silently
+truncates a spectrum assembled from only one representation. This is
+strictly planetary-atmosphere data, kept separate throughout this project
+from the archive's stellar-spectra holdings, which constrain the host star
+and underpin radial-velocity work but carry no direct information about a
+planet's atmosphere. Figure~\ref{fig:spectrum} shows the best-observed
+example in the archive, WASP-39~b, with expected molecular band positions
+annotated -- explicitly as band positions, never as detections, which are a
+matter for the peer-reviewed analyses cited alongside the data, not for a
+dashed line drawn by this pipeline.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{figures/transmission_spectrum.png}
+\caption{Published transmission spectrum of WASP-39~b, the best-observed
+planetary atmosphere in the archive at the time of this analysis (1{,}625
+points across six facilities). Dashed vertical lines mark expected
+molecular band positions, not detections.}
+\label{fig:spectrum}
+\end{figure}
+
+% =============================================================================
+\section{Discussion}
+\label{sec:discussion}
+% =============================================================================
+
+\subsection{Observational selection effects}
+
+The discovery-method distribution of the analysed catalogue reflects
+instrument sensitivity, not the true underlying exoplanet population.
+Transit surveys favour short periods and large planet--star radius ratios;
+radial-velocity surveys favour massive, close-in planets around bright,
+quiet stars; direct imaging favours young, wide-separation giants. A
+temperate Earth-mass planet around a Sun-like star is disfavoured by every
+major detection method simultaneously: its transit probability is low, its
+expected radial-velocity semi-amplitude is of order 9~cm~s$^{-1}$ -- below
+the demonstrated floor of even the highest-precision current
+spectrographs -- and it is too close to its host for direct imaging. The
+concentration of high-ranking candidates around M dwarfs
+(Figure~\ref{fig:hr}) is therefore partly a statement about which stars are
+easiest to search, not solely a statement about where temperate rocky
+planets preferentially occur.
+
+\subsection{Biosignature context}
+
+This work computes no probability of biology for any planet, and no metric
+in this project is designed to approximate one. There is no calibrated
+likelihood function for life on exoplanets: a single confirmed inhabited
+world, no confirmed uninhabited control with a directly comparable
+atmosphere, and an incomplete theory of abiotic false positives for the
+candidate biosignature gases. Molecular oxygen and ozone have documented
+abiotic production routes -- water photolysis followed by hydrogen escape,
+and CO$_2$ photolysis in a dry atmosphere -- that are expected to be
+especially important around M dwarfs, whose extended pre-main-sequence
+ultraviolet luminosity can drive several ocean masses of water loss before
+the host settles onto the main sequence. Methane has geological sources
+(serpentinisation, volcanism) independent of biology. A credible biological
+interpretation of any future atmospheric detection would require, at
+minimum: simultaneous disequilibrium between multiple species rather than a
+single gas; a characterised stellar ultraviolet environment; reported
+cloud- and haze-degeneracy constraints; explicit retrieval degeneracies
+rather than a single best-fit abundance; and independent reproduction
+across instruments or analysis pipelines.
+
+% =============================================================================
+\section{Limitations}
+\label{sec:limitations}
+% =============================================================================
+
+We state four limitations as prominently as the results, because each was
+discovered by empirically testing the pipeline against known values rather
+than assumed in advance.
+
+\textbf{The Earth Similarity Index cannot separate Earth from Venus.} Venus
+scores $\mathrm{ESI}=0.93$ (Section~\ref{sec:esi}) because its high albedo
+gives it an equilibrium temperature cooler than Earth's, and equilibrium
+temperature is the only temperature exoplanet catalogues can supply. This
+is a property of the available observations, not a defect of this
+implementation.
+
+\textbf{Roughly half of catalogue masses were never measured.} 2{,}975 of
+6{,}354 planets (47\%) carry a mass predicted from the radius
+(Section~\ref{sec:massprov}); density and escape velocity derived from such
+a mass add no information beyond the radius itself.
+
+\textbf{The habitable-zone model does not formally cover TRAPPIST-1's
+host.} At $\Teff = 2566$~K, 34~K below the model's stated floor, its
+planets' habitable-zone status is reported both strictly and under an
+explicitly flagged extrapolation (Section~\ref{sec:hz}), and the
+conservative-habitability score used in ranking is discounted by the
+fraction of the Monte Carlo posterior actually inside the model's valid
+range (Section~\ref{sec:confidence}) rather than treating the conditional
+probability among only the valid draws as if it applied to the whole
+posterior -- which is why TRAPPIST-1's planets, prominent in earlier runs of
+this pipeline, do not appear in Table~\ref{tab:top10} or among the top 22
+candidates in Figure~\ref{fig:evidence}, despite their otherwise strong
+Earth-similarity scores.
+
+\textbf{An Earth twin's atmospheric transmission signal is of order
+1~part-per-million} for a realistic nitrogen--oxygen atmosphere around a
+Sun-like star -- roughly an order of magnitude below a hydrogen-dominated
+atmosphere of the same scale height, and below demonstrated JWST precision.
+Detecting an Earth analogue and characterising its atmosphere remain
+separated by a generation of instrumentation.
+
+Full Gaia DR3 astrometric bulk crossmatching and the ESO Science Archive
+were evaluated during the research phase and not integrated into this
+release; neither was required to reach a scientifically meaningful sample
+size, and Gaia identifiers already reachable through the archive's own
+alias service provide entity resolution without a second bulk-archive
+integration.
+
+% =============================================================================
+\section{Conclusions}
+\label{sec:conclusions}
+% =============================================================================
+
+The search for a second Earth is not currently constrained by how many
+exoplanets are known. Of 6{,}354 confirmed planets, only 15 are
+simultaneously consistent with the conservative habitable zone and
+plausibly rocky, and only one of those has an actually measured mass. The
+search is constrained by how few candidates are measured well enough to
+support the claim of Earth similarity at all. A physically grounded,
+uncertainty-propagating, and evidentially explicit ranking framework
+surfaces a short, specific, and reproducible list of candidates worth
+prioritising for further observation, while keeping the boundary between
+what is measured and what is merely plausible visible at every step rather
+than collapsed into a single score.
+
+\section*{Data Availability}
+
+The complete pipeline, generated results, per-measurement provenance
+records, and an interactive companion interface are available at
+\url{https://github.com/Biswajit1999/finding-earth-2}, released under the
+MIT licence. The underlying astronomical datasets remain governed by the
+terms of their originating archives (NASA Exoplanet Archive, MAST, DACE).
+
+\section*{Acknowledgements}
+
+This research has made use of the NASA Exoplanet Archive, operated by the
+California Institute of Technology under contract with NASA's Exoplanet
+Exploration Program; the Mikulski Archive for Space Telescopes (MAST) at
+the Space Telescope Science Institute; and the Data \& Analysis Center for
+Exoplanets (DACE), operated by the University of Geneva.
+
+\bibliographystyle{plainnat}
+\bibliography{../references/references}
+
+\end{document}
