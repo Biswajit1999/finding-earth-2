@@ -8,10 +8,62 @@ import pytest
 
 from earth2.preprocessing import (
     attach_gaia_crossmatch,
+    attach_reference_evidence,
     classify_mass_provenance,
     derive_equilibrium_temperature,
     derive_insolation,
 )
+
+
+def test_reference_evidence_surfaces_mixed_composite_and_default_solution_agreement():
+    catalogue = pd.DataFrame({
+        "pl_name": ["Test b"],
+        "pl_rade": [1.00],
+        "pl_bmasse": [1.10],
+        "pl_orbper": [365.0],
+        "pl_rade_reflink": ["<a href='paper-a'>Paper A</a>"],
+        "pl_bmasse_reflink": ["<a href='paper-b'>Paper B</a>"],
+        "pl_orbper_reflink": ["<a href='paper-a'>Paper A</a>"],
+    })
+    ps = pd.DataFrame({
+        "pl_name": ["Test b", "Test b"],
+        "default_flag": [1, 0],
+        "pl_refname": ["Paper A", "Paper B"],
+        "pl_rade": [1.02, 1.20],
+        "pl_bmasse": [1.00, 1.40],
+        "pl_orbper": [365.0, 365.1],
+    })
+
+    out = attach_reference_evidence(catalogue, ps)
+
+    assert out.loc[0, "composite_parameter_source_count"] == 2
+    assert bool(out.loc[0, "composite_uses_mixed_sources"])
+    assert bool(out.loc[0, "default_solution_present"])
+    assert out.loc[0, "default_solution_overlap_count"] == 3
+    assert out.loc[0, "default_solution_parameter_coverage"] == pytest.approx(1.0)
+    assert out.loc[0, "composite_default_median_fractional_difference"] == pytest.approx(
+        2 * 0.02 / 2.02,
+    )
+
+
+def test_reference_evidence_marks_missing_default_solution_without_inventing_agreement():
+    catalogue = pd.DataFrame({
+        "pl_name": ["Test b"],
+        "pl_rade": [1.0],
+        "pl_rade_reflink": ["Paper A"],
+    })
+    ps = pd.DataFrame({
+        "pl_name": ["Test b"],
+        "default_flag": [0],
+        "pl_refname": ["Paper A"],
+        "pl_rade": [1.0],
+    })
+
+    out = attach_reference_evidence(catalogue, ps)
+
+    assert not bool(out.loc[0, "default_solution_present"])
+    assert np.isnan(out.loc[0, "default_solution_parameter_coverage"])
+    assert np.isnan(out.loc[0, "composite_default_median_fractional_difference"])
 
 
 def test_measured_mass_classified_correctly():

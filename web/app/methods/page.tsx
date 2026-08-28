@@ -79,6 +79,28 @@ ESI_global   = √(ESI_interior · ESI_surface)`}</Eq>
             .
           </p>
 
+          <h2 id="source-coherence">Composite-source coherence</h2>
+          <p>
+            NASA&rsquo;s <code>pscomppars</code> table chooses a preferred source
+            separately for each parameter, so one row can mix radius, mass,
+            orbit, and stellar values from different publications. The
+            per-publication <code>ps</code> table is therefore retained as a
+            second evidence layer. For each planet we report the number of
+            distinct sources used by the composite, the overlap with the
+            archive&rsquo;s coherent <code>default_flag=1</code> solution, and the
+            median symmetric fractional difference over shared linear-valued
+            parameters.
+          </p>
+          <Eq>{`fractional difference = 2·|x_composite − x_default|
+                        / (|x_composite| + |x_default|)
+
+reported median over shared parameters; undefined when no overlap exists`}</Eq>
+          <p>
+            This is a diagnostic rather than another ranking weight. Combining
+            publications can improve completeness, so &ldquo;mixed-source&rdquo;
+            is not itself evidence of poor quality; hiding the mixture would be.
+          </p>
+
           <h2 id="mc">Monte Carlo uncertainty propagation</h2>
           <p>
             Every parameter with a published asymmetric uncertainty is sampled

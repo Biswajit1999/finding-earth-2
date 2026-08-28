@@ -316,6 +316,31 @@ export function DeepDiveProfile({ dd }: { dd: DeepDive }) {
                 <dt className="text-[var(--color-muted)]">Published parameter sets</dt>
                 <dd className="font-[family-name:var(--font-mono)] tabular-nums">{ev.n_published_parameter_sets ?? "—"}</dd>
               </div>
+              {ev.composite_parameter_source_count !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Composite parameter sources</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {ev.composite_parameter_source_count ?? "—"}
+                    {ev.composite_uses_mixed_sources ? " · mixed" : ""}
+                  </dd>
+                </div>
+              )}
+              {ev.default_solution_parameter_coverage !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Default-solution coverage</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {pct(ev.default_solution_parameter_coverage)}
+                  </dd>
+                </div>
+              )}
+              {ev.composite_default_median_fractional_difference !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Composite ↔ default difference</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {pct(ev.composite_default_median_fractional_difference)} median
+                  </dd>
+                </div>
+              )}
               <div className="flex justify-between gap-2">
                 <dt className="text-[var(--color-muted)]">Uncertainty coverage</dt>
                 <dd className="font-[family-name:var(--font-mono)] tabular-nums">{pct(ev.uncertainty_coverage)}</dd>
@@ -331,6 +356,12 @@ export function DeepDiveProfile({ dd }: { dd: DeepDive }) {
               {ev.controversial_flag && (
                 <p className="mt-2 text-[11.5px] text-[var(--color-rose)]">
                   Flagged as controversial by the archive.
+                </p>
+              )}
+              {ev.composite_uses_mixed_sources && (
+                <p className="mt-2 text-[11.5px] leading-relaxed text-[var(--color-muted)]">
+                  The archive composite selects values from multiple publications.
+                  This is disclosed separately and is not automatically penalised.
                 </p>
               )}
             </dl>
@@ -433,6 +464,22 @@ export function BasicProfile({ p }: { p: Planet }) {
           <Row label="Eccentricity" value={num(p.ecc, 3)} />
           <Row label="Incident flux" value={num(p.insol, 3) + " S⊕"} />
           <Row label="Equilibrium temperature" value={num(p.teq, 1) + " K"} />
+          {p.compositeSourceCount !== null && (
+            <Row
+              label="Composite parameter sources"
+              value={num(p.compositeSourceCount, 0) + (p.compositeUsesMixedSources ? " · mixed" : "")}
+              sub="The archive may select different publications for different parameters; mixed-source is disclosed, not automatically penalised."
+            />
+          )}
+          {p.defaultSolutionCoverage !== null && (
+            <Row
+              label="Default-solution coverage"
+              value={pct(p.defaultSolutionCoverage)}
+              sub={p.compositeDefaultDifference !== null
+                ? `${pct(p.compositeDefaultDifference)} median composite-to-default difference over shared parameters.`
+                : undefined}
+            />
+          )}
         </div>
         <div className="panel p-5">
           <p className="eyebrow mb-3">Host star &amp; system</p>

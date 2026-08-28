@@ -108,6 +108,10 @@ CATALOGUE_FIELDS: dict[str, int | None] = {
     "discoverymethod": None, "disc_year": 0, "disc_facility": None,
     "tran_flag": 0, "rv_flag": 0,
     "n_references": 0, "mc_uncertainty_coverage": 4,
+    "composite_parameter_source_count": 0,
+    "composite_uses_mixed_sources": None,
+    "default_solution_parameter_coverage": 4,
+    "composite_default_median_fractional_difference": 4,
     "n_transmission_points": 0, "n_emission_points": 0,
     "tsm": 3, "rv_semi_amplitude_ms": 4,
     "is_control": None, "rankable": None,
@@ -123,7 +127,10 @@ def export_catalogue_columnar(ranking: pd.DataFrame) -> dict[str, Any]:
 
     columns: dict[str, list[Any]] = {}
     for field, nd in CATALOGUE_FIELDS.items():
-        if field in ("is_control", "rankable", "hz_model_extrapolated"):
+        if field in (
+            "is_control", "rankable", "hz_model_extrapolated",
+            "composite_uses_mixed_sources",
+        ):
             columns[field] = [bool(x) if x is not None and not pd.isna(x) else False
                               for x in df.get(field, pd.Series([False] * len(df)))]
         else:

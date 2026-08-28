@@ -168,6 +168,13 @@ export function materialisePlanets(file: CatalogueFile): Planet[] {
       transits: c.tran_flag[i] === 1,
       rv: c.rv_flag[i] === 1,
       nRefs: c.n_references[i] ?? null,
+      compositeSourceCount: c.composite_parameter_source_count?.[i] ?? null,
+      compositeUsesMixedSources:
+        c.composite_uses_mixed_sources?.[i] ?? null,
+      defaultSolutionCoverage:
+        c.default_solution_parameter_coverage?.[i] ?? null,
+      compositeDefaultDifference:
+        c.composite_default_median_fractional_difference?.[i] ?? null,
       uncCoverage: c.mc_uncertainty_coverage[i] ?? null,
       nTransmission: c.n_transmission_points[i] ?? null,
       nEmission: c.n_emission_points[i] ?? null,

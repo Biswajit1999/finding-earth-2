@@ -71,6 +71,22 @@ MASS_CLASSES: tuple[str, ...] = (
     "missing",
 )
 
+# Linear-valued parameters used to compare the composite ``pscomppars`` row
+# with the archive's coherent default solution in ``ps``. ``st_lum`` is
+# deliberately excluded because it is logarithmic in the archive, so a simple
+# fractional difference would be physically meaningless.
+_SOLUTION_COMPARE_PARAMS: tuple[str, ...] = (
+    "pl_rade", "pl_bmasse", "pl_orbper", "pl_orbsmax", "pl_insol", "pl_eqt",
+    "pl_dens", "pl_orbeccen", "st_teff", "st_rad", "st_mass", "sy_dist",
+)
+
+# Parameters whose per-value reference links are present on ``pscomppars``.
+_COMPOSITE_SOURCE_PARAMS: tuple[str, ...] = (
+    "pl_rade", "pl_bmasse", "pl_orbper", "pl_orbsmax", "pl_insol", "pl_eqt",
+    "pl_dens", "pl_orbeccen", "st_teff", "st_rad", "st_mass", "st_lum",
+    "st_met", "st_age", "sy_dist",
+)
+
 
 def classify_mass_provenance(df: pd.DataFrame) -> pd.Series:
     """Classify what each planet's mass actually is.
@@ -315,12 +331,57 @@ def attach_reference_evidence(
     Also records the fractional spread in published radii, which exposes planets
     where the literature genuinely disagrees. A tight composite value sitting on
     top of two papers that differ by 40% is not a well-measured planet.
+
+    The archive explicitly documents ``pscomppars`` as a best-per-parameter
+    composite that may mix publications and therefore need not represent one
+    internally coherent physical solution. We surface that distinction with:
+
+    * the number of distinct per-parameter sources in the composite row;
+    * whether more than one such source is used;
+    * how much of the composite can be compared with the archive's coherent
+      ``default_flag=1`` row in ``ps``; and
+    * the median symmetric fractional difference over overlapping linear-valued
+      parameters.
+
+    These are diagnostics, not a penalty in the Earth-like ranking. Mixing
+    sources can improve completeness and is not automatically bad science; the
+    reader needs to see it rather than have the pipeline guess its meaning.
     """
     out = catalogue.copy()
+
+    source_columns = [
+        f"{parameter}_reflink"
+        for parameter in _COMPOSITE_SOURCE_PARAMS
+        if f"{parameter}_reflink" in out.columns
+    ]
+
+    def count_composite_sources(row: pd.Series) -> float:
+        sources = {
+            str(value).strip()
+            for value in row[source_columns]
+            if pd.notna(value) and str(value).strip()
+        }
+        return float(len(sources)) if sources else np.nan
+
+    if source_columns:
+        out["composite_parameter_source_count"] = out.apply(
+            count_composite_sources, axis=1,
+        )
+    else:
+        out["composite_parameter_source_count"] = np.nan
+    source_count = pd.to_numeric(
+        out["composite_parameter_source_count"], errors="coerce",
+    )
+    out["composite_uses_mixed_sources"] = source_count.gt(1).where(source_count.notna())
+
     if ps is None or ps.empty or "pl_name" not in ps.columns:
         out["n_param_sets"] = np.nan
         out["n_references"] = np.nan
         out["rade_rel_spread"] = np.nan
+        out["default_solution_present"] = False
+        out["default_solution_parameter_coverage"] = np.nan
+        out["default_solution_overlap_count"] = np.nan
+        out["composite_default_median_fractional_difference"] = np.nan
         return out
 
     g = ps.groupby("pl_name")
@@ -337,13 +398,70 @@ def attach_reference_evidence(
 
     out = out.merge(agg, left_on="pl_name", right_index=True, how="left")
 
+    default_flag = pd.to_numeric(
+        ps.get("default_flag", pd.Series(np.nan, index=ps.index)),
+        errors="coerce",
+    )
+    default_rows = ps.loc[default_flag.eq(1)].copy()
+    if "rowupdate" in default_rows.columns:
+        default_rows = default_rows.sort_values("rowupdate", ascending=False)
+    default_rows = default_rows.drop_duplicates("pl_name").set_index("pl_name")
+
+    solution_metrics: list[tuple[bool, float, float, float]] = []
+    compare_params = [
+        parameter for parameter in _SOLUTION_COMPARE_PARAMS
+        if parameter in out.columns and parameter in default_rows.columns
+    ]
+    for _, composite in out.iterrows():
+        name = composite.get("pl_name")
+        if name not in default_rows.index:
+            solution_metrics.append((False, np.nan, np.nan, np.nan))
+            continue
+
+        default = default_rows.loc[name]
+        composite_values = pd.to_numeric(composite[compare_params], errors="coerce")
+        default_values = pd.to_numeric(default[compare_params], errors="coerce")
+        composite_present = composite_values.notna()
+        overlap = composite_present & default_values.notna()
+        n_composite = int(composite_present.sum())
+        n_overlap = int(overlap.sum())
+        coverage = n_overlap / n_composite if n_composite else np.nan
+
+        differences: list[float] = []
+        for parameter in np.asarray(compare_params)[overlap.to_numpy()]:
+            a = float(composite_values[parameter])
+            b = float(default_values[parameter])
+            scale = abs(a) + abs(b)
+            differences.append(0.0 if scale == 0.0 else 2.0 * abs(a - b) / scale)
+        median_difference = float(np.median(differences)) if differences else np.nan
+        solution_metrics.append((True, coverage, float(n_overlap), median_difference))
+
+    metrics = pd.DataFrame(
+        solution_metrics,
+        index=out.index,
+        columns=[
+            "default_solution_present",
+            "default_solution_parameter_coverage",
+            "default_solution_overlap_count",
+            "composite_default_median_fractional_difference",
+        ],
+    )
+    for column in metrics:
+        out[column] = metrics[column]
+
     if ledger is not None:
         ledger.add(
             "attach_reference_evidence",
-            "Count independent published parameter sets and distinct references per planet "
-            "from the ps table, and measure inter-publication disagreement in radius.",
-            inputs=["ps.pl_name", "ps.pl_refname", "ps.pl_rade"],
-            outputs=["n_param_sets", "n_references", "rade_rel_spread"],
+            "Count independent published parameter sets and distinct references per planet; "
+            "measure radius disagreement; and compare the mixed-source composite row with "
+            "the archive's coherent default published solution.",
+            inputs=["ps.pl_name", "ps.pl_refname", "ps.default_flag", "pscomppars.*_reflink"],
+            outputs=[
+                "n_param_sets", "n_references", "rade_rel_spread",
+                "composite_parameter_source_count", "composite_uses_mixed_sources",
+                "default_solution_parameter_coverage",
+                "composite_default_median_fractional_difference",
+            ],
             n_rows_in=len(catalogue), n_rows_out=len(out),
         )
     return out
@@ -563,7 +681,13 @@ def build_catalogue(
     # Controls have no archive literature; make that explicit rather than 0.
     if include_controls:
         m = cat["is_control"].fillna(False).astype(bool)
-        for c in ("n_param_sets", "n_references", "rade_rel_spread"):
+        for c in (
+            "n_param_sets", "n_references", "rade_rel_spread",
+            "composite_parameter_source_count", "composite_uses_mixed_sources",
+            "default_solution_present", "default_solution_parameter_coverage",
+            "default_solution_overlap_count",
+            "composite_default_median_fractional_difference",
+        ):
             if c in cat.columns:
                 cat.loc[m, c] = np.nan
 

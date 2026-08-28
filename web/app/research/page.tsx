@@ -132,9 +132,14 @@ export default function ResearchPage() {
           The analysis spine is the NASA Exoplanet Archive&rsquo;s{" "}
           <code>pscomppars</code> table (one row per confirmed planet, columns
           drawn from the best available publication per parameter) cross-checked
-          against <code>ps</code> (one row per published parameter set, used to
-          count independent references and measure inter-publication
-          disagreement). Atmospheric measurements come from the archive&rsquo;s{" "}
+          against <code>ps</code> (one coherent row per published parameter set,
+          used to count independent references and measure inter-publication
+          disagreement). Because a <code>pscomppars</code> row may combine
+          values from several papers, it is not assumed to be one internally
+          coherent physical solution: the pipeline counts its per-parameter
+          sources and compares overlapping values with the archive&rsquo;s
+          <code>default_flag=1</code> solution. Mixed-source is disclosed, not
+          automatically penalised. Atmospheric measurements come from the archive&rsquo;s{" "}
           <code>transitspec</code> and <code>emissionspec</code> tables:{" "}
           {compactInt(Number(s.atmosphere["transmission_measurement_rows"]))}{" "}
           genuine transmission-spectroscopy measurements across{" "}

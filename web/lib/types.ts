@@ -56,6 +56,10 @@ export interface CatalogueColumns {
   tran_flag: Maybe[];
   rv_flag: Maybe[];
   n_references: Maybe[];
+  composite_parameter_source_count?: Maybe[];
+  composite_uses_mixed_sources?: boolean[];
+  default_solution_parameter_coverage?: Maybe[];
+  composite_default_median_fractional_difference?: Maybe[];
   mc_uncertainty_coverage: Maybe[];
   n_transmission_points: Maybe[];
   n_emission_points: Maybe[];
@@ -122,6 +126,10 @@ export interface Planet {
   transits: boolean;
   rv: boolean;
   nRefs: Maybe;
+  compositeSourceCount: Maybe;
+  compositeUsesMixedSources: boolean | null;
+  defaultSolutionCoverage: Maybe;
+  compositeDefaultDifference: Maybe;
   uncCoverage: Maybe;
   nTransmission: Maybe;
   nEmission: Maybe;

@@ -390,6 +390,29 @@ def build_deep_dive(
             "n_independent_references": (int(r["n_references"]) if pd.notna(r.get("n_references")) else None),
             "n_published_parameter_sets": (int(r["n_param_sets"]) if pd.notna(r.get("n_param_sets")) else None),
             "radius_literature_spread": _f(r.get("rade_rel_spread"), 4),
+            "composite_parameter_source_count": (
+                int(r["composite_parameter_source_count"])
+                if pd.notna(r.get("composite_parameter_source_count")) else None
+            ),
+            "composite_uses_mixed_sources": (
+                bool(r.get("composite_uses_mixed_sources"))
+                if pd.notna(r.get("composite_uses_mixed_sources")) else None
+            ),
+            "default_solution_present": bool(r.get("default_solution_present", False)),
+            "default_solution_parameter_coverage": _f(
+                r.get("default_solution_parameter_coverage"), 4,
+            ),
+            "default_solution_overlap_count": (
+                int(r["default_solution_overlap_count"])
+                if pd.notna(r.get("default_solution_overlap_count")) else None
+            ),
+            "composite_default_median_fractional_difference": _f(
+                r.get("composite_default_median_fractional_difference"), 4,
+            ),
+            "source_coherence_note": (
+                "NASA's composite row may select different publications for different "
+                "parameters. Mixed-source is a disclosure, not an automatic quality penalty."
+            ),
             "uncertainty_coverage": _f(r.get("mc_uncertainty_coverage"), 4),
             "params_without_uncertainty": (int(r["mc_params_without_uncertainty"])
                                            if pd.notna(r.get("mc_params_without_uncertainty")) else None),

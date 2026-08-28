@@ -76,7 +76,9 @@ export default function DataPage() {
           <p>
             The analysis spine. Twelve tables: <code>pscomppars</code>{" "}
             (confirmed-planet composite parameters), <code>ps</code>{" "}
-            (per-publication parameter sets, used for reference counting),{" "}
+            (coherent per-publication parameter sets, used for reference
+            counting, literature-spread checks, and comparison with the
+            mixed-source composite),{" "}
             <code>toi</code>, <code>k2pandc</code>, and Kepler{" "}
             <code>q1_q17_dr25_koi</code> / <code>_tce</code> (candidates and
             detections, explicitly not counted as confirmed planets),{" "}
