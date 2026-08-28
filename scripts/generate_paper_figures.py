@@ -30,6 +30,8 @@ import pandas as pd  # noqa: E402
 from earth2.config import PROCESSED_DIR, RESULTS_DIR, ROOT  # noqa: E402
 from earth2.reporting.figures import (  # noqa: E402
     apply_style,
+    fig_data_coverage,
+    fig_discovery_timeline,
     fig_distance_distribution,
     fig_equilibrium_temperature,
     fig_evidence_matrix,
@@ -40,7 +42,10 @@ from earth2.reporting.figures import (  # noqa: E402
     fig_mass_radius,
     fig_period_radius,
     fig_posterior_clouds,
+    fig_ranking_distribution,
     fig_spectrum,
+    fig_top_candidates,
+    fig_uncertainty,
 )
 from earth2.spectroscopy import planet_spectrum  # noqa: E402
 
@@ -53,12 +58,21 @@ OUT_DIR = ROOT / "paper" / "figures"
 # only the figures the article actually embeds.
 WEB_FIGURES_DIR = ROOT / "web" / "public" / "figures"
 WEB_FIGURE_NAMES = (
+    "data_coverage.png",
+    "discovery_timeline.png",
     "distance_distribution.png",
+    "equilibrium_temperature.png",
+    "flux_radius_hz.png",
     "hz_diagram.png",
+    "hr_diagram.png",
     "mass_radius.png",
+    "period_radius.png",
     "posterior_clouds.png",
     "gaia_parallax_check.png",
+    "ranking_distribution.png",
+    "top_candidates.png",
     "transmission_spectrum.png",
+    "uncertainty.png",
     "evidence_matrix.png",
 )
 
@@ -73,11 +87,16 @@ def main() -> None:
             "No analysis output found. Run `python -m earth2 analyse` first."
         )
     df = pd.read_parquet(catalogue_path)
+    coverage_path = RESULTS_DIR / "data_coverage.csv"
+    coverage = pd.read_csv(coverage_path) if coverage_path.exists() else None
 
     # Local import so this module has no import-time dependency on the flag.
     from earth2.reporting import figures as figmod
 
     with figmod.no_titles():
+        if coverage is not None:
+            fig_data_coverage(coverage, OUT_DIR / "data_coverage.png")
+        fig_discovery_timeline(df, OUT_DIR / "discovery_timeline.png")
         fig_mass_radius(df, OUT_DIR / "mass_radius.png")
         fig_flux_radius_hz(df, OUT_DIR / "flux_radius_hz.png")
         fig_hr_diagram(df, OUT_DIR / "hr_diagram.png")
@@ -88,6 +107,9 @@ def main() -> None:
         fig_evidence_matrix(df, OUT_DIR / "evidence_matrix.png")
         fig_posterior_clouds(df, OUT_DIR / "posterior_clouds.png")
         fig_gaia_parallax_check(df, OUT_DIR / "gaia_parallax_check.png")
+        fig_ranking_distribution(df, OUT_DIR / "ranking_distribution.png")
+        fig_top_candidates(df, OUT_DIR / "top_candidates.png")
+        fig_uncertainty(df, OUT_DIR / "uncertainty.png")
 
         transitspec_path = PROCESSED_DIR / "nasa_transitspec.parquet"
         if transitspec_path.exists():

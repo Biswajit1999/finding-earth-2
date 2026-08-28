@@ -28,6 +28,7 @@ export function ArticleFigure({
         width={width}
         height={height}
         alt={alt}
+        sizes="(min-width: 1180px) 720px, calc(100vw - 2rem)"
         className="w-full rounded-[var(--radius-md)] border border-[var(--color-line)]"
       />
       <figcaption className="mt-2.5 text-[13px] leading-relaxed text-[var(--color-muted)]">

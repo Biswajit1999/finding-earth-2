@@ -300,6 +300,159 @@ p, li {
   font-style: normal;
 }
 
+/* --- research workspace -------------------------------------------------
+   The article keeps a comfortable reading measure while the desktop canvas
+   earns its width: navigation lives on the left and evidence/shortcuts on the
+   right. Both rails collapse naturally before they can crowd the prose. --- */
+.research-layout {
+  display: grid;
+  grid-template-columns: minmax(0, var(--measure));
+  justify-content: center;
+}
+.research-body { min-width: 0; }
+.research-toc,
+.research-evidence {
+  min-width: 0;
+}
+.research-toc ol {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+.research-toc a {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  min-height: 40px;
+  padding: 0.58rem 0.72rem;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-sm);
+  color: var(--color-dim);
+  font-size: 0.78rem;
+  text-decoration: none;
+  transition: border-color 150ms ease, color 150ms ease, background 150ms ease;
+}
+.research-toc a span:last-child {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+}
+.research-toc a:hover,
+.research-toc a:focus-visible {
+  border-color: var(--color-cyan);
+  background: color-mix(in srgb, var(--color-cyan) 5%, transparent);
+  color: var(--color-ivory);
+}
+.research-rail-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.45rem;
+}
+.research-evidence {
+  display: grid;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+.research-evidence-card {
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius-md);
+  background: color-mix(in srgb, var(--color-raised) 72%, transparent);
+  padding: 1rem;
+}
+.research-evidence-card dl { margin-top: 0.8rem; }
+.research-evidence-card dl > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.48rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-line) 65%, transparent);
+}
+.research-evidence-card dt,
+.research-truth-card p:last-child {
+  color: var(--color-dim);
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+.research-evidence-card dd {
+  color: var(--color-ivory);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+.research-truth-card {
+  border-left: 2px solid var(--color-gold);
+}
+.research-truth-card p:last-child { margin-top: 0.65rem; }
+.research-rail-links {
+  display: grid;
+  margin-top: 0.6rem;
+}
+.research-rail-links a,
+.research-rail-link {
+  min-height: 36px;
+  padding: 0.48rem 0;
+  border-top: 1px solid color-mix(in srgb, var(--color-line) 65%, transparent);
+  color: var(--color-dim);
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+.research-rail-links a:hover,
+.research-rail-links a:focus-visible,
+.research-rail-link:hover,
+.research-rail-link:focus-visible { color: var(--color-cyan); }
+
+@media (min-width: 640px) and (max-width: 1179px) {
+  .research-toc ol { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (min-width: 1180px) {
+  .research-layout {
+    grid-template-columns: minmax(170px, 1fr) minmax(0, var(--measure)) minmax(190px, 1fr);
+    gap: clamp(1.5rem, 2.7vw, 2.75rem);
+    align-items: start;
+  }
+  .research-toc,
+  .research-evidence {
+    position: sticky;
+    top: 5.75rem;
+    max-height: calc(100vh - 7rem);
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+  .research-toc ol {
+    display: grid;
+    gap: 0;
+    overflow: visible;
+    margin-top: 0.7rem;
+    padding: 0;
+  }
+  .research-toc li { border-top: 1px solid var(--color-line); }
+  .research-toc a {
+    justify-content: space-between;
+    border: 0;
+    border-radius: 0;
+    padding: 0.72rem 0.15rem;
+  }
+  .research-toc a:hover,
+  .research-toc a:focus-visible {
+    background: transparent;
+    color: var(--color-cyan);
+  }
+  .research-rail-link { margin-top: 0.7rem; }
+  .research-evidence {
+    display: grid;
+    margin-top: 0;
+  }
+  .research-body .sidenote,
+  .research-body .sidenote.sidenote-left {
+    float: none;
+    clear: none;
+    width: 100%;
+    margin: 1.5em 0;
+  }
+}
+
 /* --- marginalia: a sidenote that escapes the narrow prose column into the
    page's own gutter, the classic Tufte-CSS float technique. Requires an
    ancestor wide enough to hold it (the prose column's own max-w-[1400px]

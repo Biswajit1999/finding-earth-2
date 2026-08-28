@@ -12,6 +12,15 @@ export const metadata: Metadata = {
     "The full long-form research article: methods, results, limitations and conclusions of the Earth-2.0 search.",
 };
 
+const researchSections = [
+  { href: "#abstract", label: "Overview", detail: "01–03" },
+  { href: "#datasets", label: "Evidence base", detail: "04–07" },
+  { href: "#hz-model", label: "Physical models", detail: "08–10" },
+  { href: "#transit", label: "Observations", detail: "11–14" },
+  { href: "#ranking", label: "Ranking", detail: "15–17" },
+  { href: "#biases", label: "Interpretation", detail: "18–22" },
+] as const;
+
 export default function ResearchPage() {
   const s = getSummary();
   const hz = s.habitable_zone;
@@ -26,8 +35,8 @@ export default function ResearchPage() {
   const nPlanets = s.population.n_confirmed_planets;
 
   return (
-    <article className="mx-auto max-w-[1400px] px-4 py-12 sm:px-6">
-      <header className="mx-auto max-w-[var(--measure)] border-b border-[var(--color-line)] pb-10">
+    <article className="research-page mx-auto max-w-[1480px] px-4 py-12 sm:px-6">
+      <header className="research-masthead mx-auto max-w-[var(--measure)] border-b border-[var(--color-line)] pb-10">
         <p className="eyebrow">Research article</p>
         <h1 className="mt-4 text-[length:var(--text-display)] font-light leading-[1.05]">
           Finding Earth 2.0 in Distant Worlds
@@ -43,7 +52,25 @@ export default function ResearchPage() {
         </p>
       </header>
 
-      <div className="prose-sci mx-auto mt-10">
+      <div className="research-layout mt-10">
+        <nav className="research-toc" aria-label="Research article sections">
+          <p className="eyebrow">On this page</p>
+          <ol className="mt-4">
+            {researchSections.map((section) => (
+              <li key={section.href}>
+                <a href={section.href}>
+                  <span>{section.label}</span>
+                  <span aria-hidden="true">{section.detail}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+          <Link className="research-rail-link" href="/methods">
+            Methods &amp; equations <span aria-hidden="true">↗</span>
+          </Link>
+        </nav>
+
+        <div className="prose-sci research-body">
         <h2 id="abstract">1. Abstract</h2>
         <p>
           Among the {compactInt(nPlanets)} planets confirmed by the NASA Exoplanet
@@ -126,6 +153,22 @@ export default function ResearchPage() {
           every host the archive itself links to a Gaia identifier.
         </p>
 
+        <ArticleFigure
+          src="/figures/data_coverage.png"
+          width={1644}
+          height={1018}
+          alt="Horizontal bars comparing the number of catalogue planets with a value against the number with a published uncertainty for each physical quantity"
+          caption={
+            <>
+              Measurement coverage across the confirmed-planet catalogue.
+              Dark bars count planets with a reported value; bright overlays
+              show the subset that also has a published uncertainty. The gap
+              is scientifically consequential: a value without an error bar
+              cannot contribute honest width to a propagated posterior.
+            </>
+          }
+        />
+
         <SideNote eyebrow="Independent distance check" side="right">
           {compactInt(s.gaia_crossmatch.n_hosts_matched)} host stars matched
           to Gaia DR3 by exact source_id. Archive distance vs. Gaia parallax
@@ -180,6 +223,22 @@ export default function ResearchPage() {
           used only to characterise detection sensitivity.
         </p>
 
+        <ArticleFigure
+          src="/figures/discovery_timeline.png"
+          width={1942}
+          height={797}
+          alt="Timeline of confirmed exoplanet discoveries by year and discovery method"
+          caption={
+            <>
+              Confirmed-planet discoveries by year and method. The abrupt
+              changes trace survey launches and observing strategies, not
+              sudden changes in the Galaxy&rsquo;s planet population. This is why
+              the full archive is retained while selection effects are kept
+              visible.
+            </>
+          }
+        />
+
         <SideNote eyebrow="Detection is a distance problem" side="left">
           The top-ranked candidates cluster within a few to a few tens of
           parsecs of the Sun — a temperate Earth-sized planet is currently
@@ -211,6 +270,22 @@ export default function ResearchPage() {
           distance is never treated as evidence of identity. Every crossmatch
           records its method and confidence.
         </p>
+
+        <ArticleFigure
+          src="/figures/hr_diagram.png"
+          width={1355}
+          height={891}
+          alt="Hertzsprung-Russell diagram of exoplanet host stars with conservative habitable-zone hosts highlighted and the model temperature range shaded"
+          caption={
+            <>
+              Hertzsprung–Russell diagram of the host-star sample. Hosts of
+              conservative-zone planets are highlighted; the shaded region
+              marks the 2600–7200 K calibration range of the habitable-zone
+              model. Stellar context is part of the inference, not background
+              decoration.
+            </>
+          }
+        />
 
         <h2 id="hz-model">8. Habitable-zone model</h2>
         <p>
@@ -254,6 +329,22 @@ export default function ResearchPage() {
           }
         />
 
+        <ArticleFigure
+          src="/figures/flux_radius_hz.png"
+          width={1256}
+          height={891}
+          alt="Incident stellar flux against planet radius with conservative habitable-zone candidates coloured by Earth-2.0 index"
+          caption={
+            <>
+              Incident stellar flux against radius. Conservative-zone planets
+              are coloured by computed Earth-2.0 index; the rest of the archive
+              remains visible in grey. The shaded band is the conservative zone
+              for a Sun-like host, a reference slice rather than a universal
+              boundary for every stellar temperature.
+            </>
+          }
+        />
+
         <h2 id="esi-model">9. Earth-similarity model</h2>
         <p>
           We compute the Schulze-Makuch et al. (2011) Earth Similarity Index from
@@ -271,6 +362,22 @@ export default function ResearchPage() {
           this implementation, and Venus is carried through the whole pipeline as
           a control specifically so the degeneracy is visible in the results.
         </p>
+
+        <ArticleFigure
+          src="/figures/equilibrium_temperature.png"
+          width={1315}
+          height={864}
+          alt="Distribution of calculated equilibrium temperatures with a Sun-like conservative habitable-zone reference band"
+          caption={
+            <>
+              Equilibrium-temperature distribution using a uniform Earth-like
+              Bond albedo of 0.306. The shaded reference range translates the
+              Sun-like conservative habitable zone through the same assumption.
+              It is not a surface-temperature estimate and includes no
+              greenhouse model.
+            </>
+          }
+        />
 
         <SideNote eyebrow="Methodological citation" side="left">
           Schulze-Makuch et al. (2011, Astrobiology 11, 1041). Venus scores{" "}
@@ -315,6 +422,21 @@ export default function ResearchPage() {
           that is genuinely well measured.
         </p>
 
+        <ArticleFigure
+          src="/figures/uncertainty.png"
+          width={2015}
+          height={834}
+          alt="Candidate ranking comparison showing nominal values and Monte Carlo uncertainty intervals"
+          caption={
+            <>
+              Ranking uncertainty after propagating the reported asymmetric
+              measurement errors. Point estimates can appear neatly ordered;
+              overlapping posterior intervals show where the data do not
+              support a confident distinction between neighbouring candidates.
+            </>
+          }
+        />
+
         <SideNote eyebrow="Computational scale" side="right">
           {compactInt(s.monte_carlo.n_samples)} draws ×{" "}
           {compactInt(mcPlanets)} planets ≈{" "}
@@ -358,6 +480,22 @@ export default function ResearchPage() {
           </Link>
           .
         </p>
+
+        <ArticleFigure
+          src="/figures/period_radius.png"
+          width={1318}
+          height={954}
+          alt="Orbital period against planet radius for the confirmed catalogue, coloured by discovery method, with top Earth-2.0 candidates outlined"
+          caption={
+            <>
+              Orbital period against planet radius for the full catalogue,
+              coloured by discovery method. Open circles mark the top eight
+              computed candidates and Earth is included only as a labelled
+              reference. The dense short-period structure is the selection
+              function of current surveys made visible.
+            </>
+          }
+        />
 
         <h2 id="rv">12. Radial-velocity evidence</h2>
         <p>
@@ -461,6 +599,21 @@ export default function ResearchPage() {
           such as Proxima Centauri b for a reason unrelated to habitability).
         </p>
 
+        <ArticleFigure
+          src="/figures/top_candidates.png"
+          width={2194}
+          height={1089}
+          alt="Top computed Earth-2.0 candidates with component-score decomposition and Earth Similarity Index posterior intervals"
+          caption={
+            <>
+              The leading computed candidates, with the composite ranking
+              decomposed into its independently interpretable inputs and the
+              Earth Similarity Index shown with propagated uncertainty. No bar
+              is a probability of habitability or life.
+            </>
+          }
+        />
+
         <h2 id="deep-dives">16. Deep-dive systems</h2>
         <p>
           The ten highest-ranked candidates are selected purely from the computed
@@ -510,6 +663,21 @@ export default function ResearchPage() {
           </Link>
           ).
         </p>
+
+        <ArticleFigure
+          src="/figures/ranking_distribution.png"
+          width={1889}
+          height={1159}
+          alt="Distribution of Earth-2.0 component scores and composite ranking across the rankable confirmed-planet population"
+          caption={
+            <>
+              Population-level score distributions. The composite is sparse at
+              the high end because the geometric mean requires candidates to
+              perform across all included dimensions; strength on one axis
+              cannot erase a near-zero score on another.
+            </>
+          }
+        />
 
         <ArticleFigure
           src="/figures/evidence_matrix.png"
@@ -612,6 +780,49 @@ export default function ResearchPage() {
           Astrobiology 11, 1041); Rogers (2015, ApJ 801, 41); Fulton et al.
           (2017, AJ 154, 109); Kempton et al. (2018, PASP 130, 114401).
         </p>
+        </div>
+
+        <aside className="research-evidence" aria-label="Analysis at a glance">
+          <div className="research-evidence-card">
+            <p className="eyebrow">Analysis at a glance</p>
+            <dl>
+              <div>
+                <dt>Confirmed planets</dt>
+                <dd>{compactInt(nPlanets)}</dd>
+              </div>
+              <div>
+                <dt>Source records</dt>
+                <dd>{compactInt(s.scale.total_source_records)}</dd>
+              </div>
+              <div>
+                <dt>Archive datasets</dt>
+                <dd>{s.scale.n_datasets_retrieved}</dd>
+              </div>
+              <div>
+                <dt>MC draws / planet</dt>
+                <dd>{compactInt(s.monte_carlo.n_samples)}</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div className="research-evidence-card research-truth-card">
+            <p className="eyebrow">Claim boundary</p>
+            <p>
+              This is a prioritisation study. It does not identify life,
+              habitability, or a confirmed second Earth.
+            </p>
+          </div>
+
+          <div className="research-evidence-card">
+            <p className="eyebrow">Explore the evidence</p>
+            <div className="research-rail-links">
+              <Link href="/atlas">Candidate atlas</Link>
+              <Link href="/transit-lab">Transit lab</Link>
+              <Link href="/rv-lab">RV lab</Link>
+              <Link href="/spectral-lab">Spectral lab</Link>
+            </div>
+          </div>
+        </aside>
       </div>
     </article>
   );
