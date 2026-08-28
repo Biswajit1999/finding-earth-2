@@ -77,10 +77,15 @@ def _numeric_col(df: pd.DataFrame, name: str) -> pd.Series:
 
 __all__ = [
     "DEFAULT_WEIGHTS",
+    "FOLLOWUP_EPOCH_JD",
     "MASS_CLASS_QUALITY",
     "ScoreWeights",
+    "angular_separation_mas",
     "emission_spectroscopy_metric",
+    "ephemeris_uncertainty_minutes",
+    "orbital_separation_au",
     "rank_catalogue",
+    "reflected_light_contrast",
     "rocky_plausibility",
     "rv_semi_amplitude_ms",
     "score_characterisation_potential",
@@ -138,6 +143,14 @@ class ScoreWeights:
 
 
 DEFAULT_WEIGHTS = ScoreWeights()
+
+# A fixed planning horizon keeps exports reproducible while answering a useful
+# operational question: how uncertain will the predicted transit time be at
+# the start of 2030? JD 2462502.5 is 2030-01-01 00:00 UTC.
+FOLLOWUP_EPOCH_JD = 2462502.5
+
+# IAU nominal terrestrial equatorial radius expressed in astronomical units.
+EARTH_RADIUS_AU = 4.26352124542639e-5
 
 
 # --------------------------------------------------------------------------
@@ -406,6 +419,95 @@ def rv_semi_amplitude_ms(df: pd.DataFrame) -> pd.Series:
     return k.where(np.isfinite(k))
 
 
+def ephemeris_uncertainty_minutes(
+    df: pd.DataFrame,
+    target_jd: float = FOLLOWUP_EPOCH_JD,
+) -> pd.Series:
+    """Forecast 1-sigma transit-time uncertainty at a fixed Julian Date.
+
+    With no published covariance between epoch and period, the transparent
+    first-order propagation is
+
+    ``sigma_T(N) = sqrt(sigma_T0^2 + N^2 sigma_P^2)``.
+
+    The larger absolute side of each asymmetric archive uncertainty is used.
+    A value is returned only for transiting planets with a published midpoint,
+    period, and both corresponding uncertainties. TTV-flagged systems retain
+    the numeric forecast but carry ``ttv_flag`` separately because the linear
+    ephemeris can be incomplete for them.
+    """
+    period = _numeric_col(df, "pl_orbper")
+    midpoint = _numeric_col(df, "pl_tranmid")
+    period_sigma = pd.concat(
+        [_numeric_col(df, "pl_orbpererr1").abs(), _numeric_col(df, "pl_orbpererr2").abs()],
+        axis=1,
+    ).max(axis=1, skipna=False)
+    midpoint_sigma = pd.concat(
+        [_numeric_col(df, "pl_tranmiderr1").abs(), _numeric_col(df, "pl_tranmiderr2").abs()],
+        axis=1,
+    ).max(axis=1, skipna=False)
+
+    with np.errstate(invalid="ignore", divide="ignore"):
+        cycles = np.rint((target_jd - midpoint) / period).abs()
+        sigma_days = np.sqrt(midpoint_sigma**2 + (cycles * period_sigma) ** 2)
+    transiting = _numeric_col(df, "tran_flag").fillna(0).eq(1)
+    valid = (
+        transiting
+        & period.gt(0)
+        & midpoint.notna()
+        & period_sigma.notna()
+        & midpoint_sigma.notna()
+    )
+    return (sigma_days * 1440.0).where(valid & np.isfinite(sigma_days))
+
+
+def orbital_separation_au(df: pd.DataFrame) -> pd.Series:
+    """Nominal orbital separation, preferring measured semi-major axis.
+
+    When the archive does not publish ``a``, derive it from period and stellar
+    mass with Kepler's third law in solar units. This is a geometry diagnostic,
+    not an orbit fit; eccentric orbits still need epoch-specific modelling.
+    """
+    measured = _numeric_col(df, "pl_orbsmax").where(_numeric_col(df, "pl_orbsmax") > 0)
+    period_years = _numeric_col(df, "pl_orbper") / 365.25
+    stellar_mass = _numeric_col(df, "st_mass")
+    with np.errstate(invalid="ignore"):
+        derived = (stellar_mass * period_years**2) ** (1.0 / 3.0)
+    derived = derived.where((period_years > 0) & (stellar_mass > 0))
+    return measured.where(measured.notna(), derived)
+
+
+def angular_separation_mas(df: pd.DataFrame) -> pd.Series:
+    """Nominal maximum star-planet angular separation in milliarcseconds.
+
+    ``theta_mas = 1000 * a_au / d_pc``. This is the maximum circular-orbit
+    scale, not a promise that a planet is outside a particular instrument's
+    inner working angle at a requested observing epoch.
+    """
+    separation = orbital_separation_au(df)
+    distance = _numeric_col(df, "sy_dist")
+    with np.errstate(invalid="ignore", divide="ignore"):
+        theta = 1000.0 * separation / distance
+    return theta.where((distance > 0) & np.isfinite(theta))
+
+
+def reflected_light_contrast(
+    df: pd.DataFrame,
+    geometric_albedo: float = 0.30,
+) -> pd.Series:
+    """Planet/star reflected-light contrast at quadrature.
+
+    Assumes a Lambert sphere, for which the phase function at quadrature is
+    ``1/pi``: ``contrast = A_g * (R_p/a)^2 / pi``. The geometric albedo is an
+    explicit scenario assumption, not a measurement and not a ranking input.
+    """
+    radius_au = _numeric_col(df, "pl_rade") * EARTH_RADIUS_AU
+    separation = orbital_separation_au(df)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        contrast = geometric_albedo * (radius_au / separation) ** 2 / np.pi
+    return contrast.where((separation > 0) & (radius_au > 0) & np.isfinite(contrast))
+
+
 def score_characterisation_potential(df: pd.DataFrame) -> pd.Series:
     """Feasibility of atmospheric follow-up, scaled to [0, 1].
 
@@ -458,6 +560,17 @@ def rank_catalogue(
     out["tsm"] = transmission_spectroscopy_metric(out)
     out["esm"] = emission_spectroscopy_metric(out)
     out["rv_semi_amplitude_ms"] = rv_semi_amplitude_ms(out)
+    out["ephemeris_uncertainty_2030_minutes"] = ephemeris_uncertainty_minutes(out)
+    out["followup_orbital_separation_au"] = orbital_separation_au(out)
+    measured_separation = _numeric_col(out, "pl_orbsmax").gt(0)
+    out["followup_separation_source"] = np.where(
+        out["followup_orbital_separation_au"].notna(),
+        np.where(measured_separation, "catalogue", "derived_from_period_and_stellar_mass"),
+        "missing",
+    )
+    out["max_angular_separation_mas"] = angular_separation_mas(out)
+    out["reflected_light_contrast_ag0p3"] = reflected_light_contrast(out)
+    out["reflected_light_geometric_albedo_assumed"] = 0.30
     out["rocky_plausibility"] = rocky_plausibility(
         pd.to_numeric(out.get("pl_rade_p50", out.get("pl_rade")), errors="coerce")
     )

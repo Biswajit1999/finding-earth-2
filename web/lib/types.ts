@@ -65,6 +65,9 @@ export interface CatalogueColumns {
   n_emission_points: Maybe[];
   tsm: Maybe[];
   rv_semi_amplitude_ms: Maybe[];
+  ephemeris_uncertainty_2030_minutes?: Maybe[];
+  max_angular_separation_mas?: Maybe[];
+  reflected_light_contrast_ag0p3?: Maybe[];
   is_control: boolean[];
   rankable: boolean[];
 }
@@ -135,6 +138,9 @@ export interface Planet {
   nEmission: Maybe;
   tsm: Maybe;
   rvK: Maybe;
+  ephemerisUncertainty2030Minutes: Maybe;
+  maxAngularSeparationMas: Maybe;
+  reflectedLightContrast: Maybe;
   isControl: boolean;
   rankable: boolean;
 }

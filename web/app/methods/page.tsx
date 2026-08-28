@@ -138,6 +138,31 @@ S = 0.190 / 1.26 / 1.28 / 1.15  by radius bin (<1.5 / 1.5–2.75 / 2.75–4.0 / 
 
 ESM = 4.29×10⁶ · (B₇.₅(T_day) / B₇.₅(T_star)) · (R_p/R_star)² · 10^(−m_K/5)`}</Eq>
 
+          <h2 id="follow-up">Follow-up readiness lanes</h2>
+          <p>
+            Observation planning is reported separately from the Earth-2.0
+            index. A target can be physically compelling but difficult to
+            observe, or easy to observe but physically unlike Earth. The
+            transit, radial-velocity, and reflected-light lanes therefore keep
+            their native units and assumptions rather than collapsing into one
+            detectability score.
+          </p>
+          <Eq>{`Transit forecast at 2030-01-01:
+σ_T(N) = √(σ_T0² + N²·σ_P²)
+
+Nominal maximum angular separation:
+θ_mas = 1000 · a_au / d_pc
+
+Reflected-light contrast at quadrature:
+C = A_g · (R_p/a)² · Φ(90°),  A_g = 0.30,  Φ_Lambert(90°) = 1/π`}</Eq>
+          <p>
+            The timing formula assumes no published epoch–period covariance;
+            transit-timing-variable systems carry a separate warning. Angular
+            separation is an orbital scale, not an epoch-specific projected
+            position. Reflected-light contrast is a stated albedo/phase
+            scenario, not a measured contrast or instrument-detectability claim.
+          </p>
+
           <h2 id="composite">Composite Earth-2.0 index</h2>
           <Eq>{`index = exp( Σᵢ wᵢ · log(max(scoreᵢ, ε)) ),  Σwᵢ = 1,  ε = 0.01
 

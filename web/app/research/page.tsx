@@ -749,16 +749,17 @@ export default function ResearchPage() {
 
         <h2 id="future">20. Future observations</h2>
         <p>
-          For transiting candidates, we compute the Kempton et al. (2018)
-          Transmission and Emission Spectroscopy Metrics to indicate relative
-          atmospheric-characterisation feasibility with current infrastructure,
-          rather than promising any specific instrument can observe a specific
-          target. For non-transiting candidates we report the expected
-          radial-velocity semi-amplitude, which for the temperate small planets
-          in this catalogue is frequently below 1 m/s — below the demonstrated
-          floor of even the highest-precision current spectrographs for most
-          targets, which is itself informative about what next-generation
-          instruments would need to achieve.
+          Follow-up is split into independent observing lanes. For transiting
+          candidates, the Kempton et al. (2018) Transmission and Emission
+          Spectroscopy Metrics indicate relative atmospheric-characterisation
+          feasibility, while propagation of the published period and midpoint
+          errors reports the predicted transit-time uncertainty at 2030-01-01
+          (with a separate warning for transit-timing variations). The
+          radial-velocity lane reports expected semi-amplitude, frequently below
+          1 m/s for temperate small planets. The reflected-light lane reports
+          nominal maximum angular separation and a quadrature contrast scenario
+          assuming geometric albedo 0.30 and a Lambert phase function. None is
+          called a detection limit, and none enters the default Earth-2.0 index.
         </p>
 
         <h2 id="conclusions">21. Conclusions</h2>

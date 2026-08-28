@@ -180,6 +180,10 @@ export function materialisePlanets(file: CatalogueFile): Planet[] {
       nEmission: c.n_emission_points[i] ?? null,
       tsm: c.tsm[i] ?? null,
       rvK: c.rv_semi_amplitude_ms[i] ?? null,
+      ephemerisUncertainty2030Minutes:
+        c.ephemeris_uncertainty_2030_minutes?.[i] ?? null,
+      maxAngularSeparationMas: c.max_angular_separation_mas?.[i] ?? null,
+      reflectedLightContrast: c.reflected_light_contrast_ag0p3?.[i] ?? null,
       isControl: Boolean(c.is_control[i]),
       rankable: Boolean(c.rankable[i]),
     };

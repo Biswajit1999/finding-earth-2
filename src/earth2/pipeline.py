@@ -31,7 +31,7 @@ from earth2.config import (
 from earth2.preprocessing import build_catalogue
 from earth2.provenance import ManifestStore, TransformLedger, utc_now_iso
 from earth2.provenance.reflink import measurement_provenance_table, reference_summary
-from earth2.ranking import ScoreWeights, rank_catalogue
+from earth2.ranking import FOLLOWUP_EPOCH_JD, ScoreWeights, rank_catalogue
 from earth2.reporting.summary import build_analysis_summary, coverage_table, write_summary
 from earth2.uncertainty import propagate_catalogue, summarise_samples
 
@@ -159,6 +159,31 @@ def run_analysis(
     w = weights or ScoreWeights()
     ranked = rank_catalogue(catalogue, weights=w)
     ledger.add(
+        "derive_followup_readiness",
+        "Report transit-ephemeris drift, radial-velocity amplitude, angular separation, "
+        "and a stated reflected-light contrast scenario as separate observing lanes; "
+        "do not fold them into the default Earth-like ranking.",
+        inputs=[
+            "pl_tranmid", "pl_orbper", "pl_orbsmax", "pl_rade", "st_mass", "sy_dist",
+        ],
+        outputs=[
+            "ephemeris_uncertainty_2030_minutes", "rv_semi_amplitude_ms",
+            "max_angular_separation_mas", "reflected_light_contrast_ag0p3",
+        ],
+        equation=(
+            "sigma_T=sqrt(sigma_T0^2+N^2*sigma_P^2); theta_mas=1000*a_au/d_pc; "
+            "contrast=A_g*(R_p/a)^2/pi"
+        ),
+        parameters={
+            "forecast_epoch_jd": FOLLOWUP_EPOCH_JD,
+            "forecast_epoch_utc": "2030-01-01",
+            "geometric_albedo": 0.30,
+            "phase_model": "Lambert sphere at quadrature",
+        },
+        citation="kempton2018,martins2015",
+        n_rows_in=len(catalogue), n_rows_out=len(ranked),
+    )
+    ledger.add(
         "rank_candidates",
         "Compute four interpretable component scores and combine the weighted ones with a "
         "weighted GEOMETRIC mean, so a disqualifying component cannot be compensated by "
@@ -195,6 +220,7 @@ def run_analysis(
         "pl_dens_used", "esi_density_source", "pl_vesc_kms",
         "insol_used", "insol_source", "teq_used", "teq_source", "teq_albedo_assumed",
         "pl_orbper", "pl_orbsmax", "pl_orbeccen",
+        "pl_tranmid", "pl_tranmiderr1", "pl_tranmiderr2",
         "st_teff", "st_rad", "st_mass", "st_lum", "st_met", "st_age", "st_spectype",
         "sy_dist", "ra", "dec", "sy_vmag", "sy_jmag", "sy_kmag", "sy_gaiamag", "sy_tmag",
         "gaia_source_id", "gaia_parallax_mas", "gaia_parallax_error_mas",
@@ -212,6 +238,10 @@ def run_analysis(
         "st_nrvc", "st_nphot", "st_nspec",
         "mc_uncertainty_coverage", "mc_params_without_uncertainty",
         "tsm", "esm", "rv_semi_amplitude_ms",
+        "ephemeris_uncertainty_2030_minutes",
+        "followup_orbital_separation_au", "followup_separation_source",
+        "max_angular_separation_mas", "reflected_light_contrast_ag0p3",
+        "reflected_light_geometric_albedo_assumed",
         "tic_id", "hd_name", "hip_name",
     ]
     export_cols = [c for c in export_cols if c in ranked.columns]

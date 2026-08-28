@@ -114,6 +114,9 @@ CATALOGUE_FIELDS: dict[str, int | None] = {
     "composite_default_median_fractional_difference": 4,
     "n_transmission_points": 0, "n_emission_points": 0,
     "tsm": 3, "rv_semi_amplitude_ms": 4,
+    "ephemeris_uncertainty_2030_minutes": 2,
+    "max_angular_separation_mas": 3,
+    "reflected_light_contrast_ag0p3": 14,
     "is_control": None, "rankable": None,
 }
 

@@ -5,7 +5,7 @@ import { HzChip, MassClassChip, StatusChip } from "@/components/Chips";
 import { ScoreMeter, UncertaintyBar } from "@/components/UncertaintyBar";
 import { SystemView } from "@/components/three/SystemView";
 import type { DeepDive, Planet } from "@/lib/types";
-import { distanceLabel, num, pct, slugify, spectralClass } from "@/lib/format";
+import { distanceLabel, num, pct, sig, slugify, spectralClass } from "@/lib/format";
 
 /** Rich view when a full deep-dive JSON exists for this planet. */
 export function DeepDiveProfile({ dd }: { dd: DeepDive }) {
@@ -382,6 +382,46 @@ export function DeepDiveProfile({ dd }: { dd: DeepDive }) {
                   {obs.rv_semi_amplitude_ms !== null ? num(obs.rv_semi_amplitude_ms, 3) + " m/s" : "—"}
                 </dd>
               </div>
+              {obs.ephemeris_uncertainty_2030_minutes !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Transit-time σ at 2030</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {obs.ephemeris_uncertainty_2030_minutes !== null
+                      ? num(obs.ephemeris_uncertainty_2030_minutes, 1) + " min"
+                      : "—"}
+                  </dd>
+                </div>
+              )}
+              {obs.max_angular_separation_mas !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Max angular separation</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {obs.max_angular_separation_mas !== null
+                      ? num(obs.max_angular_separation_mas, 2) + " mas"
+                      : "—"}
+                  </dd>
+                </div>
+              )}
+              {obs.reflected_light_contrast_ag0p3 !== undefined && (
+                <div className="flex justify-between gap-2">
+                  <dt className="text-[var(--color-muted)]">Reflected-light contrast</dt>
+                  <dd className="font-[family-name:var(--font-mono)] tabular-nums">
+                    {sig(obs.reflected_light_contrast_ag0p3, 3)}
+                  </dd>
+                </div>
+              )}
+              {obs.ephemeris_ttv_flag && (
+                <p className="mt-2 text-[11.5px] leading-relaxed text-[var(--color-gold)]">
+                  Transit-timing variations are reported; a linear ephemeris
+                  forecast may understate the true timing uncertainty.
+                </p>
+              )}
+              {obs.max_angular_separation_mas !== undefined && (
+                <p className="mt-2 text-[11.5px] leading-relaxed text-[var(--color-muted)]">
+                  Follow-up lanes are diagnostics, not ranking inputs. Reflected
+                  light assumes A<sub>g</sub> = 0.30 and Lambertian quadrature.
+                </p>
+              )}
             </dl>
           </div>
 
@@ -464,6 +504,22 @@ export function BasicProfile({ p }: { p: Planet }) {
           <Row label="Eccentricity" value={num(p.ecc, 3)} />
           <Row label="Incident flux" value={num(p.insol, 3) + " S⊕"} />
           <Row label="Equilibrium temperature" value={num(p.teq, 1) + " K"} />
+          {p.ephemerisUncertainty2030Minutes !== null && (
+            <Row
+              label="Transit-time σ at 2030"
+              value={num(p.ephemerisUncertainty2030Minutes, 1) + " min"}
+              sub="Linear propagation of published epoch and period errors; not a ranking input."
+            />
+          )}
+          {p.maxAngularSeparationMas !== null && (
+            <Row
+              label="Maximum angular separation"
+              value={num(p.maxAngularSeparationMas, 2) + " mas"}
+              sub={p.reflectedLightContrast !== null
+                ? `Reflected-light contrast ${sig(p.reflectedLightContrast, 3)} at Aᵍ = 0.30 and Lambertian quadrature.`
+                : undefined}
+            />
+          )}
           {p.compositeSourceCount !== null && (
             <Row
               label="Composite parameter sources"

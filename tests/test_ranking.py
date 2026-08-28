@@ -12,7 +12,13 @@ import numpy as np
 import pandas as pd
 import pytest
 
-from earth2.ranking import rank_catalogue, rocky_plausibility
+from earth2.ranking import (
+    angular_separation_mas,
+    ephemeris_uncertainty_minutes,
+    rank_catalogue,
+    reflected_light_contrast,
+    rocky_plausibility,
+)
 from earth2.ranking.scores import MASS_CLASS_QUALITY, score_conservative_habitability
 
 
@@ -79,6 +85,40 @@ def test_mass_class_quality_is_monotonic_measured_best():
     assert MASS_CLASS_QUALITY["measured"] == 1.0
     assert MASS_CLASS_QUALITY["inferred_mass_radius"] < MASS_CLASS_QUALITY["measured"]
     assert MASS_CLASS_QUALITY["missing"] == 0.0
+
+
+def test_ephemeris_uncertainty_grows_with_elapsed_orbits():
+    df = pd.DataFrame([_base_row(
+        tran_flag=1,
+        pl_orbper=10.0,
+        pl_orbpererr1=0.001,
+        pl_orbpererr2=-0.001,
+        pl_tranmid=2460000.0,
+        pl_tranmiderr1=0.01,
+        pl_tranmiderr2=-0.01,
+    )])
+    uncertainty = float(ephemeris_uncertainty_minutes(df, target_jd=2460100.0).iloc[0])
+    assert uncertainty == pytest.approx(np.sqrt(0.01**2 + (10 * 0.001) ** 2) * 1440)
+
+
+def test_ephemeris_uncertainty_is_missing_without_published_errors():
+    df = pd.DataFrame([_base_row(
+        tran_flag=1,
+        pl_orbper=10.0,
+        pl_tranmid=2460000.0,
+    )])
+    assert np.isnan(ephemeris_uncertainty_minutes(df, target_jd=2460100.0).iloc[0])
+
+
+def test_angular_separation_is_100_mas_for_one_au_at_ten_parsecs():
+    df = pd.DataFrame([_base_row(pl_orbsmax=1.0, sy_dist=10.0)])
+    assert angular_separation_mas(df).iloc[0] == pytest.approx(100.0)
+
+
+def test_reflected_light_contrast_uses_explicit_lambert_quadrature_scenario():
+    df = pd.DataFrame([_base_row(pl_orbsmax=1.0, pl_rade=1.0)])
+    expected = 0.30 * (4.26352124542639e-5**2) / np.pi
+    assert reflected_light_contrast(df).iloc[0] == pytest.approx(expected)
 
 
 def test_rocky_plausibility_decreases_with_radius():

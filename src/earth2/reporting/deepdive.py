@@ -428,6 +428,23 @@ def build_deep_dive(
             "tsm": _f(r.get("tsm"), 3),
             "esm": _f(r.get("esm"), 3),
             "rv_semi_amplitude_ms": _f(r.get("rv_semi_amplitude_ms"), 4),
+            "ephemeris_uncertainty_2030_minutes": _f(
+                r.get("ephemeris_uncertainty_2030_minutes"), 2,
+            ),
+            "ephemeris_forecast_epoch": "2030-01-01",
+            "ephemeris_ttv_flag": bool(r.get("ttv_flag", 0) == 1),
+            "followup_orbital_separation_au": _f(
+                r.get("followup_orbital_separation_au"), 6,
+            ),
+            "followup_separation_source": _s(r.get("followup_separation_source")),
+            "max_angular_separation_mas": _f(r.get("max_angular_separation_mas"), 3),
+            "reflected_light_contrast_ag0p3": _f(
+                r.get("reflected_light_contrast_ag0p3"), 14,
+            ),
+            "reflected_light_assumptions": (
+                "Geometric albedo 0.30, Lambert phase function at quadrature (1/pi). "
+                "Scenario estimate only; not a measured contrast or detectability claim."
+            ),
             "n_transmission_points": (int(r["n_transmission_points"])
                                       if pd.notna(r.get("n_transmission_points")) else 0),
             "n_emission_points": (int(r["n_emission_points"])
@@ -435,6 +452,10 @@ def build_deep_dive(
             "n_rv_time_series": (int(r["st_nrvc"]) if pd.notna(r.get("st_nrvc")) else 0),
             "n_photometric_time_series": (int(r["st_nphot"]) if pd.notna(r.get("st_nphot")) else 0),
             "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets.",
+            "followup_note": (
+                "Follow-up diagnostics are separate observing lanes and are not inputs to "
+                "the default Earth-2.0 ranking."
+            ),
         },
 
         "system": {"siblings": _system_siblings(ranking, host, planet)},
