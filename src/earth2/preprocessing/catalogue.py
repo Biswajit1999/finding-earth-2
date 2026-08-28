@@ -689,6 +689,10 @@ def build_catalogue(
             "composite_default_median_fractional_difference",
         ):
             if c in cat.columns:
-                cat.loc[m, c] = np.nan
+                if c in ("composite_uses_mixed_sources", "default_solution_present"):
+                    cat[c] = cat[c].astype("boolean")
+                    cat.loc[m, c] = pd.NA
+                else:
+                    cat.loc[m, c] = np.nan
 
     return cat
