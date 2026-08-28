@@ -1,7 +1,7 @@
 {
  "planet": "Wolf 1069 b",
  "hostname": "Wolf 1069",
- "generated_utc": "2026-08-24T22:50:21Z",
+ "generated_utc": "2026-08-28T20:10:24Z",
  "narrative": {
   "location": "Wolf 1069 lies 31.26 light-years (9.583 pc) from the Sun.",
   "host_star": "Wolf 1069 is a M5.0 V star with 0.167\u00d7 the Sun's mass and 0.181\u00d7 its radius (effective temperature 3158 K, versus the Sun's 5772 K).",
@@ -133,6 +133,13 @@
   "n_independent_references": 1,
   "n_published_parameter_sets": 1,
   "radius_literature_spread": null,
+  "composite_parameter_source_count": 3,
+  "composite_uses_mixed_sources": true,
+  "default_solution_present": true,
+  "default_solution_parameter_coverage": 0.8182,
+  "default_solution_overlap_count": 9,
+  "composite_default_median_fractional_difference": 0.0,
+  "source_coherence_note": "NASA's composite row may select different publications for different parameters. Mixed-source is a disclosure, not an automatic quality penalty.",
   "uncertainty_coverage": 0.8333,
   "params_without_uncertainty": 1,
   "discovery_method": "Radial Velocity",
@@ -146,11 +153,20 @@
   "tsm": null,
   "esm": null,
   "rv_semi_amplitude_ms": 1.0642,
+  "ephemeris_uncertainty_2030_minutes": null,
+  "ephemeris_forecast_epoch": "2030-01-01",
+  "ephemeris_ttv_flag": false,
+  "followup_orbital_separation_au": 0.0672,
+  "followup_separation_source": "catalogue",
+  "max_angular_separation_mas": 7.012,
+  "reflected_light_contrast_ag0p3": 4.4835e-08,
+  "reflected_light_assumptions": "Geometric albedo 0.30, Lambert phase function at quadrature (1/pi). Scenario estimate only; not a measured contrast or detectability claim.",
   "n_transmission_points": 0,
   "n_emission_points": 0,
   "n_rv_time_series": 0,
   "n_photometric_time_series": 0,
-  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets.",
+  "followup_note": "Follow-up diagnostics are separate observing lanes and are not inputs to the default Earth-2.0 ranking."
  },
  "system": {
   "siblings": []
@@ -294,12 +310,7 @@
   "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
  },
  "rv_analysis": {
-  "target": "Wolf 1069",
-  "analysed_utc": "2026-08-24T22:50:21Z",
-  "status": "no_data",
-  "source": "DACE (public)",
-  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
-  "source_url": "https://dace.unige.ch/",
-  "message": "No public radial-velocity time series located at DACE for this target."
+  "attempted": false,
+  "reason": "Not requested for this build."
  }
 }

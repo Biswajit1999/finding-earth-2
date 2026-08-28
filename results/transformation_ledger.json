@@ -1,7 +1,7 @@
 {
   "ledger": "earth2-analysis",
-  "generated_utc": "2026-08-24T21:35:13Z",
-  "n_steps": 11,
+  "generated_utc": "2026-08-28T20:00:42Z",
+  "n_steps": 12,
   "steps": [
     {
       "step": "load_processed_tables",
@@ -25,7 +25,7 @@
       "parameters": {},
       "n_rows_in": 0,
       "n_rows_out": 6354,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": "{\"earth2\": \"1.0.1\", \"python\": \"3.9.19\", \"numpy\": \"1.26.4\", \"pandas\": \"2.2.2\", \"scipy\": \"1.10.1\", \"astropy\": \"6.0.1\", \"platform\": \"Windows-10-10.0.26200-SP0\"}"
     },
     {
@@ -46,7 +46,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": ""
     },
     {
@@ -66,7 +66,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": ""
     },
     {
@@ -87,7 +87,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": ""
     },
     {
@@ -109,7 +109,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": ""
     },
     {
@@ -129,28 +129,33 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:27Z",
       "software": ""
     },
     {
       "step": "attach_reference_evidence",
-      "description": "Count independent published parameter sets and distinct references per planet from the ps table, and measure inter-publication disagreement in radius.",
+      "description": "Count independent published parameter sets and distinct references per planet; measure radius disagreement; and compare the mixed-source composite row with the archive's coherent default published solution.",
       "inputs": [
         "ps.pl_name",
         "ps.pl_refname",
-        "ps.pl_rade"
+        "ps.default_flag",
+        "pscomppars.*_reflink"
       ],
       "outputs": [
         "n_param_sets",
         "n_references",
-        "rade_rel_spread"
+        "rade_rel_spread",
+        "composite_parameter_source_count",
+        "composite_uses_mixed_sources",
+        "default_solution_parameter_coverage",
+        "composite_default_median_fractional_difference"
       ],
       "equation": "",
       "citation": "",
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:38Z",
       "software": ""
     },
     {
@@ -170,7 +175,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:38Z",
       "software": ""
     },
     {
@@ -199,7 +204,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:33:38Z",
+      "timestamp_utc": "2026-08-28T19:59:38Z",
       "software": ""
     },
     {
@@ -227,7 +232,37 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:34:56Z",
+      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "software": ""
+    },
+    {
+      "step": "derive_followup_readiness",
+      "description": "Report transit-ephemeris drift, radial-velocity amplitude, angular separation, and a stated reflected-light contrast scenario as separate observing lanes; do not fold them into the default Earth-like ranking.",
+      "inputs": [
+        "pl_tranmid",
+        "pl_orbper",
+        "pl_orbsmax",
+        "pl_rade",
+        "st_mass",
+        "sy_dist"
+      ],
+      "outputs": [
+        "ephemeris_uncertainty_2030_minutes",
+        "rv_semi_amplitude_ms",
+        "max_angular_separation_mas",
+        "reflected_light_contrast_ag0p3"
+      ],
+      "equation": "sigma_T=sqrt(sigma_T0^2+N^2*sigma_P^2); theta_mas=1000*a_au/d_pc; contrast=A_g*(R_p/a)^2/pi",
+      "citation": "kempton2018,martins2015",
+      "parameters": {
+        "forecast_epoch_jd": 2462502.5,
+        "forecast_epoch_utc": "2030-01-01",
+        "geometric_albedo": 0.3,
+        "phase_model": "Lambert sphere at quadrature"
+      },
+      "n_rows_in": 6359,
+      "n_rows_out": 6359,
+      "timestamp_utc": "2026-08-28T20:00:32Z",
       "software": ""
     },
     {
@@ -257,7 +292,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-24T21:34:57Z",
+      "timestamp_utc": "2026-08-28T20:00:32Z",
       "software": ""
     }
   ]

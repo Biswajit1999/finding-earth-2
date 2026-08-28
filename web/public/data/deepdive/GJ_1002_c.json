@@ -1,7 +1,7 @@
 {
  "planet": "GJ 1002 c",
  "hostname": "GJ 1002",
- "generated_utc": "2026-08-24T22:50:56Z",
+ "generated_utc": "2026-08-28T20:10:24Z",
  "narrative": {
   "location": "GJ 1002 lies 15.81 light-years (4.849 pc) from the Sun.",
   "host_star": "GJ 1002 is a M5.5 V star with 0.12\u00d7 the Sun's mass and 0.137\u00d7 its radius (effective temperature 3024 K, versus the Sun's 5772 K).",
@@ -133,6 +133,13 @@
   "n_independent_references": 1,
   "n_published_parameter_sets": 1,
   "radius_literature_spread": null,
+  "composite_parameter_source_count": 3,
+  "composite_uses_mixed_sources": true,
+  "default_solution_present": true,
+  "default_solution_parameter_coverage": 0.8182,
+  "default_solution_overlap_count": 9,
+  "composite_default_median_fractional_difference": 0.0,
+  "source_coherence_note": "NASA's composite row may select different publications for different parameters. Mixed-source is a disclosure, not an automatic quality penalty.",
   "uncertainty_coverage": 0.8333,
   "params_without_uncertainty": 1,
   "discovery_method": "Radial Velocity",
@@ -146,11 +153,20 @@
   "tsm": null,
   "esm": null,
   "rv_semi_amplitude_ms": 1.2915,
+  "ephemeris_uncertainty_2030_minutes": null,
+  "ephemeris_forecast_epoch": "2030-01-01",
+  "ephemeris_ttv_flag": false,
+  "followup_orbital_separation_au": 0.0738,
+  "followup_separation_source": "catalogue",
+  "max_angular_separation_mas": 15.221,
+  "reflected_light_contrast_ag0p3": 3.856389e-08,
+  "reflected_light_assumptions": "Geometric albedo 0.30, Lambert phase function at quadrature (1/pi). Scenario estimate only; not a measured contrast or detectability claim.",
   "n_transmission_points": 0,
   "n_emission_points": 0,
   "n_rv_time_series": 0,
   "n_photometric_time_series": 0,
-  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets.",
+  "followup_note": "Follow-up diagnostics are separate observing lanes and are not inputs to the default Earth-2.0 ranking."
  },
  "system": {
   "siblings": [
@@ -7043,6 +7059,11 @@
      0.9811
     ]
    }
+  },
+  "archive_status": {
+   "preserved": true,
+   "reason": "Live-source refresh was not requested for this catalogue rebuild.",
+   "from_deep_dive_generated_utc": "2026-08-24T22:50:56Z"
   }
  }
 }

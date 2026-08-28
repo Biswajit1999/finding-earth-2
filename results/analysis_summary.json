@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-08-24T21:35:12Z",
+  "generated_utc": "2026-08-28T20:00:42Z",
   "earth2_version": "1.0.1",
   "monte_carlo": {
     "n_samples": 4000,
@@ -471,9 +471,9 @@
         "source_table": "gaiadr3.gaia_source",
         "n_rows": 4408,
         "n_columns": 17,
-        "retrieved_utc": "2026-08-24T20:22:19Z",
+        "retrieved_utc": "2026-08-28T19:57:46Z",
         "status": "ok",
-        "sha256_short": "d7c5fcfe56f4",
+        "sha256_short": "0b620cefa44c",
         "doi": ""
       },
       {
@@ -482,7 +482,7 @@
         "source_table": "di_stars_exep",
         "n_rows": 164,
         "n_columns": 59,
-        "retrieved_utc": "2026-08-24T02:23:58Z",
+        "retrieved_utc": "2026-08-28T19:57:19Z",
         "status": "ok",
         "sha256_short": "38052f559fc9",
         "doi": ""
@@ -493,7 +493,7 @@
         "source_table": "emissionspec",
         "n_rows": 2361,
         "n_columns": 18,
-        "retrieved_utc": "2026-08-24T02:23:57Z",
+        "retrieved_utc": "2026-08-28T19:57:12Z",
         "status": "ok",
         "sha256_short": "8d78a5057343",
         "doi": "10.26133/NEA9"
@@ -504,7 +504,7 @@
         "source_table": "k2pandc",
         "n_rows": 4068,
         "n_columns": 38,
-        "retrieved_utc": "2026-08-24T02:23:50Z",
+        "retrieved_utc": "2026-08-28T19:56:44Z",
         "status": "ok",
         "sha256_short": "1444b1fa2b15",
         "doi": "10.26133/NEA1"
@@ -515,7 +515,7 @@
         "source_table": "q1_q17_dr25_koi",
         "n_rows": 8054,
         "n_columns": 37,
-        "retrieved_utc": "2026-08-24T02:23:53Z",
+        "retrieved_utc": "2026-08-28T19:56:50Z",
         "status": "ok",
         "sha256_short": "5a62619a39df",
         "doi": "10.26133/NEA4"
@@ -526,7 +526,7 @@
         "source_table": "ml",
         "n_rows": 895,
         "n_columns": 11,
-        "retrieved_utc": "2026-08-24T02:23:58Z",
+        "retrieved_utc": "2026-08-28T19:57:17Z",
         "status": "ok",
         "sha256_short": "7f7d795fca9d",
         "doi": ""
@@ -536,10 +536,10 @@
         "archive": "NASA Exoplanet Archive",
         "source_table": "ps",
         "n_rows": 40106,
-        "n_columns": 124,
-        "retrieved_utc": "2026-08-24T02:23:48Z",
+        "n_columns": 128,
+        "retrieved_utc": "2026-08-28T19:56:34Z",
         "status": "ok",
-        "sha256_short": "5ea9c394849d",
+        "sha256_short": "19761f0cba6c",
         "doi": "10.26133/NEA12"
       },
       {
@@ -548,7 +548,7 @@
         "source_table": "pscomppars",
         "n_rows": 6354,
         "n_columns": 151,
-        "retrieved_utc": "2026-08-24T19:59:44Z",
+        "retrieved_utc": "2026-08-28T19:56:08Z",
         "status": "ok",
         "sha256_short": "73eed33e0d57",
         "doi": "10.26133/NEA13"
@@ -559,7 +559,7 @@
         "source_table": "spectra",
         "n_rows": 1826,
         "n_columns": 13,
-        "retrieved_utc": "2026-08-24T02:23:57Z",
+        "retrieved_utc": "2026-08-28T19:57:14Z",
         "status": "ok",
         "sha256_short": "ffb3a6f2b29d",
         "doi": ""
@@ -570,7 +570,7 @@
         "source_table": "stellarhosts",
         "n_rows": 47857,
         "n_columns": 38,
-        "retrieved_utc": "2026-08-24T02:24:00Z",
+        "retrieved_utc": "2026-08-28T19:57:33Z",
         "status": "ok",
         "sha256_short": "45513b70c576",
         "doi": ""
@@ -581,7 +581,7 @@
         "source_table": "q1_q17_dr25_tce",
         "n_rows": 34032,
         "n_columns": 23,
-        "retrieved_utc": "2026-08-24T02:23:56Z",
+        "retrieved_utc": "2026-08-28T19:57:00Z",
         "status": "ok",
         "sha256_short": "246512d90dc8",
         "doi": ""
@@ -592,7 +592,7 @@
         "source_table": "toi",
         "n_rows": 8136,
         "n_columns": 91,
-        "retrieved_utc": "2026-08-24T02:23:49Z",
+        "retrieved_utc": "2026-08-28T19:56:40Z",
         "status": "ok",
         "sha256_short": "77b693084fe4",
         "doi": "10.26134/ExoFOP5"
@@ -603,7 +603,7 @@
         "source_table": "transitspec",
         "n_rows": 5948,
         "n_columns": 27,
-        "retrieved_utc": "2026-08-24T02:23:56Z",
+        "retrieved_utc": "2026-08-28T19:57:03Z",
         "status": "ok",
         "sha256_short": "ace18f6adaee",
         "doi": "10.26133/NEA10"
@@ -654,5 +654,5 @@
     "astropy": "6.0.1",
     "platform": "Windows-10-10.0.26200-SP0"
   },
-  "runtime_seconds": 95.7
+  "runtime_seconds": 76.1
 }

@@ -1,14 +1,91 @@
 {
-  "last_sync_utc": "2026-08-24T19:59:44Z",
-  "datasets_ok": 1,
+  "last_sync_utc": "2026-08-28T19:57:33Z",
+  "datasets_ok": 12,
   "datasets_failed": 0,
-  "total_source_records": 159801,
+  "total_source_records": 164209,
   "outcomes": [
     {
       "dataset_id": "nasa_pscomppars",
       "status": "ok",
       "n_rows": 6354,
-      "elapsed_s": 12.45,
+      "elapsed_s": 10.86,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_ps",
+      "status": "ok",
+      "n_rows": 40106,
+      "elapsed_s": 25.52,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_toi",
+      "status": "ok",
+      "n_rows": 8136,
+      "elapsed_s": 5.42,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_k2pandc",
+      "status": "ok",
+      "n_rows": 4068,
+      "elapsed_s": 4.83,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_koi_dr25",
+      "status": "ok",
+      "n_rows": 8054,
+      "elapsed_s": 6.06,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_tce_dr25",
+      "status": "ok",
+      "n_rows": 34032,
+      "elapsed_s": 9.09,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_transitspec",
+      "status": "ok",
+      "n_rows": 5948,
+      "elapsed_s": 3.01,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_emissionspec",
+      "status": "ok",
+      "n_rows": 2361,
+      "elapsed_s": 9.37,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_spectra_index",
+      "status": "ok",
+      "n_rows": 1826,
+      "elapsed_s": 1.69,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_microlensing",
+      "status": "ok",
+      "n_rows": 895,
+      "elapsed_s": 3.17,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_di_stars",
+      "status": "ok",
+      "n_rows": 164,
+      "elapsed_s": 2.04,
+      "error": ""
+    },
+    {
+      "dataset_id": "nasa_stellarhosts",
+      "status": "ok",
+      "n_rows": 47857,
+      "elapsed_s": 14.28,
       "error": ""
     }
   ]

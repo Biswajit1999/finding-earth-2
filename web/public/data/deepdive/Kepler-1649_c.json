@@ -1,7 +1,7 @@
 {
  "planet": "Kepler-1649 c",
  "hostname": "Kepler-1649",
- "generated_utc": "2026-08-24T22:50:22Z",
+ "generated_utc": "2026-08-28T20:10:24Z",
  "narrative": {
   "location": "Kepler-1649 lies 300.69 light-years (92.191 pc) from the Sun.",
   "host_star": "Kepler-1649 is the host star with 0.198\u00d7 the Sun's mass and 0.232\u00d7 its radius (effective temperature 3240 K, versus the Sun's 5772 K).",
@@ -133,6 +133,13 @@
   "n_independent_references": 3,
   "n_published_parameter_sets": 3,
   "radius_literature_spread": 0.6667,
+  "composite_parameter_source_count": 4,
+  "composite_uses_mixed_sources": true,
+  "default_solution_present": true,
+  "default_solution_parameter_coverage": 0.6667,
+  "default_solution_overlap_count": 8,
+  "composite_default_median_fractional_difference": 0.0,
+  "source_coherence_note": "NASA's composite row may select different publications for different parameters. Mixed-source is a disclosure, not an automatic quality penalty.",
   "uncertainty_coverage": 0.6667,
   "params_without_uncertainty": 2,
   "discovery_method": "Transit",
@@ -146,11 +153,20 @@
   "tsm": 1.921,
   "esm": 0.022,
   "rv_semi_amplitude_ms": 0.8396,
+  "ephemeris_uncertainty_2030_minutes": 52.49,
+  "ephemeris_forecast_epoch": "2030-01-01",
+  "ephemeris_ttv_flag": false,
+  "followup_orbital_separation_au": 0.0649,
+  "followup_separation_source": "catalogue",
+  "max_angular_separation_mas": 0.704,
+  "reflected_light_contrast_ag0p3": 4.630529e-08,
+  "reflected_light_assumptions": "Geometric albedo 0.30, Lambert phase function at quadrature (1/pi). Scenario estimate only; not a measured contrast or detectability claim.",
   "n_transmission_points": 0,
   "n_emission_points": 0,
   "n_rv_time_series": 0,
   "n_photometric_time_series": 0,
-  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets."
+  "tsm_note": "Kempton et al. (2018) Transmission Spectroscopy Metric. Undefined for non-transiting planets.",
+  "followup_note": "Follow-up diagnostics are separate observing lanes and are not inputs to the default Earth-2.0 ranking."
  },
  "system": {
   "siblings": [
@@ -1173,15 +1189,15 @@
    ],
    "n_bins": 220,
    "n_raw_points": 642
+  },
+  "archive_status": {
+   "preserved": true,
+   "reason": "Live-source refresh was not requested for this catalogue rebuild.",
+   "from_deep_dive_generated_utc": "2026-08-24T22:50:22Z"
   }
  },
  "rv_analysis": {
-  "target": "Kepler-1649",
-  "analysed_utc": "2026-08-24T22:50:56Z",
-  "status": "no_data",
-  "source": "DACE (public)",
-  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
-  "source_url": "https://dace.unige.ch/",
-  "message": "No public radial-velocity time series located at DACE for this target."
+  "attempted": false,
+  "reason": "Not requested for this build."
  }
 }

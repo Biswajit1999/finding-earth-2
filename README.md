@@ -13,7 +13,7 @@
 <p align="center">
   <em>Every number in this README is generated from the analysis output by
   <code>python -m earth2 report</code>. None is typed by hand.</em><br>
-  <sub>Last analysis run: <code>2026-08-24T21:35:12Z</code></sub>
+  <sub>Last analysis run: <code>2026-08-28T20:00:42Z</code></sub>
 </p>
 
 ---
