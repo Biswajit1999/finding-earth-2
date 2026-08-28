@@ -55,6 +55,7 @@ export function SiteFooter({
               ["/spectral-lab", "Spectral Lab"],
               ["/transit-lab", "Transit Lab"],
               ["/rv-lab", "RV Lab"],
+              ["/follow-up", "Follow-up Lab"],
               ["/research", "Research article"],
             ]}
           />

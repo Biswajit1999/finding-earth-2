@@ -26,6 +26,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
       { href: "/spectral-lab", label: "Spectral Lab", hint: "Published atmospheric spectra" },
       { href: "/transit-lab", label: "Transit Lab", hint: "Light curves and fitted transits" },
       { href: "/rv-lab", label: "RV Lab", hint: "Radial velocities and activity cross-checks" },
+      { href: "/follow-up", label: "Follow-up Lab", hint: "Compare observation-readiness pathways" },
     ],
   },
   {

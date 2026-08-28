@@ -406,33 +406,38 @@ export function AtlasTable({ file }: { file: CatalogueFile }) {
               <HeaderCell className="w-[40px]" label="" />
               <HeaderCell className="w-[210px]" label="Planet" />
               {COLUMNS.map((col) => (
-                <button
+                <div
                   key={col.key}
-                  type="button"
-                  onClick={() => toggleSort(col.key)}
+                  role="columnheader"
                   aria-sort={
                     sortKey === col.key ? (sortDesc ? "descending" : "ascending") : "none"
                   }
-                  className={`flex flex-1 cursor-pointer flex-col items-start justify-center px-2.5 py-2 text-left font-[family-name:var(--font-mono)] text-[10.5px] uppercase tracking-[0.07em] transition-colors hover:text-[var(--color-cyan)] ${
-                    sortKey === col.key
-                      ? "text-[var(--color-cyan)]"
-                      : "text-[var(--color-muted)]"
-                  }`}
+                  className="flex flex-1"
                 >
-                  <span>
-                    {col.label}
-                    {sortKey === col.key && (
-                      <span aria-hidden className="ml-1">
-                        {sortDesc ? "↓" : "↑"}
+                  <button
+                    type="button"
+                    onClick={() => toggleSort(col.key)}
+                    className={`flex min-h-11 w-full cursor-pointer flex-col items-start justify-center px-2.5 py-2 text-left font-[family-name:var(--font-mono)] text-[10.5px] uppercase tracking-[0.07em] transition-colors hover:text-[var(--color-cyan)] ${
+                      sortKey === col.key
+                        ? "text-[var(--color-cyan)]"
+                        : "text-[var(--color-muted)]"
+                    }`}
+                  >
+                    <span>
+                      {col.label}
+                      {sortKey === col.key && (
+                        <span aria-hidden className="ml-1">
+                          {sortDesc ? "↓" : "↑"}
+                        </span>
+                      )}
+                    </span>
+                    {col.unit && (
+                      <span className="text-[9.5px] normal-case tracking-normal text-[var(--color-faint)]">
+                        {col.unit}
                       </span>
                     )}
-                  </span>
-                  {col.unit && (
-                    <span className="text-[9.5px] normal-case tracking-normal text-[var(--color-faint)]">
-                      {col.unit}
-                    </span>
-                  )}
-                </button>
+                  </button>
+                </div>
               ))}
               <HeaderCell className="w-[130px]" label="Mass provenance" />
             </div>

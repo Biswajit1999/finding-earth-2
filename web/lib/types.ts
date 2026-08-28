@@ -55,6 +55,7 @@ export interface CatalogueColumns {
   disc_facility: (string | null)[];
   tran_flag: Maybe[];
   rv_flag: Maybe[];
+  ttv_flag?: Maybe[];
   n_references: Maybe[];
   composite_parameter_source_count?: Maybe[];
   composite_uses_mixed_sources?: boolean[];
@@ -64,6 +65,7 @@ export interface CatalogueColumns {
   n_transmission_points: Maybe[];
   n_emission_points: Maybe[];
   tsm: Maybe[];
+  esm?: Maybe[];
   rv_semi_amplitude_ms: Maybe[];
   ephemeris_uncertainty_2030_minutes?: Maybe[];
   max_angular_separation_mas?: Maybe[];
