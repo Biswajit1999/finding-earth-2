@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "next dev -p 3111",
     "build": "next build",
+    "check:export": "node scripts/check-static-export.mjs",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",

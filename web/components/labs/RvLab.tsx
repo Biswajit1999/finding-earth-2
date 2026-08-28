@@ -10,6 +10,8 @@
  */
 
 import { useEffect, useMemo, useState } from "react";
+
+import { assetPath } from "@/lib/assets";
 import type { DeepDiveIndexEntry } from "@/lib/types";
 import { num } from "@/lib/format";
 
@@ -58,7 +60,7 @@ export function RvLab({ entries }: { entries: DeepDiveIndexEntry[] }) {
     // can't render for a moment under the newly-selected planet's name.
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setRv(null);
-    fetch((process.env.NEXT_PUBLIC_BASE_PATH ?? "") + "/data/deepdive/" + e.slug + ".json")
+    fetch(assetPath("/data/deepdive/" + e.slug + ".json"))
       .then((r) => r.json())
       .then((dd) => setRv(dd.rv_analysis))
       .catch(() => setRv(null));

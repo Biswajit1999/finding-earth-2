@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader, Caveat } from "@/components/PageHeader";
 import { SideNote } from "@/components/SideNote";
 import { getSummary } from "@/lib/data";
@@ -129,9 +130,9 @@ export default function LimitationsPage() {
               systems — as an independent distance check, not a full
               astrometric re-reduction. The ESO Science Archive was
               investigated but is not built into this pipeline; see{" "}
-              <a href="/data" className="link">
+              <Link href="/data" className="link">
                 Data sources
-              </a>{" "}
+              </Link>{" "}
               for the reasoning. Transit and RV analyses depend on public data
               existing at MAST and DACE respectively — most catalogue planets
               have neither, and this is reported as an explicit absence rather

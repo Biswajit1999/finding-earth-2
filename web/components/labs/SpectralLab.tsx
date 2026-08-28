@@ -10,6 +10,8 @@
  */
 
 import { useEffect, useMemo, useState } from "react";
+
+import { assetPath } from "@/lib/assets";
 import type { SpectraIndexRow } from "@/lib/types";
 import { num, slugify } from "@/lib/format";
 
@@ -50,7 +52,7 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
     try {
       const slug = slugify(name);
       const res = await fetch(
-        (process.env.NEXT_PUBLIC_BASE_PATH ?? "") + "/data/spectra/" + slug + ".json",
+        assetPath("/data/spectra/" + slug + ".json"),
       );
       if (!res.ok) return;
       const spec = await res.json();

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 
 export const metadata: Metadata = {
@@ -72,9 +73,9 @@ ESI_global   = √(ESI_interior · ESI_surface)`}</Eq>
             temperature (288 K), because equilibrium temperature is the only
             temperature exoplanet catalogues provide. Consequence: Venus scores
             0.92 on this metric. This is documented in{" "}
-            <a href="/limitations" className="link">
+            <Link href="/limitations" className="link">
               Limitations
-            </a>
+            </Link>
             .
           </p>
 

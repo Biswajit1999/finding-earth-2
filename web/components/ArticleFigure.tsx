@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { assetPath } from "@/lib/assets";
+
 /**
  * A generated scientific figure with its caption doing the labelling —
  * matching paper/main.tex, where the same title-less image set is used
@@ -22,7 +24,7 @@ export function ArticleFigure({
   return (
     <figure className="not-prose my-8">
       <Image
-        src={src}
+        src={assetPath(src)}
         width={width}
         height={height}
         alt={alt}

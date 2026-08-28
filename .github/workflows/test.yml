@@ -155,4 +155,11 @@ jobs:
         run: npm run typecheck
 
       - name: Build static export
+        env:
+          BASE_PATH: /finding-earth-2
         run: npm run build
+
+      - name: Validate base-path routes and static assets
+        env:
+          BASE_PATH: /finding-earth-2
+        run: npm run check:export

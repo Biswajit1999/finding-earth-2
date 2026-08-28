@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { PageHeader } from "@/components/PageHeader";
 import { getSummary } from "@/lib/data";
 
@@ -50,9 +51,9 @@ export default function AboutPage() {
             The software in this repository is MIT-licensed. The astronomical
             datasets it retrieves remain governed by their originating
             archives — see{" "}
-            <a href="/data" className="link">
+            <Link href="/data" className="link">
               Data sources
-            </a>{" "}
+            </Link>{" "}
             for full acknowledgement text.
           </p>
 

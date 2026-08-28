@@ -11,6 +11,7 @@
 import { readFileSync, existsSync, readdirSync } from "node:fs";
 import path from "node:path";
 
+import { assetPath, BASE_PATH } from "./assets";
 import { slugify } from "./format";
 import type {
   CatalogueFile,
@@ -206,9 +207,6 @@ export function getPlanetBySlug(slug: string): Planet | null {
   return planets.find((p) => slugify(p.name) === slug) ?? null;
 }
 
-/** Base path prefix so assets resolve under a repository subpath on Pages. */
-export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
-export function asset(p: string): string {
-  return `${BASE_PATH}${p.startsWith("/") ? p : `/${p}`}`;
-}
+/** Backwards-compatible exports for server-side consumers. */
+export { BASE_PATH };
+export const asset = assetPath;

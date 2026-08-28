@@ -126,9 +126,9 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
         </p>
         <p className="mt-2 text-[13px] text-[var(--color-muted)]">
           The 3D universe requires WebGL. Try the{" "}
-          <a href="/atlas" className="link">
+          <Link href="/atlas" className="link">
             Candidate Atlas
-          </a>{" "}
+          </Link>{" "}
           for the same data as a searchable table instead.
         </p>
       </div>

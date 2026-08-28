@@ -505,9 +505,9 @@ export default function ResearchPage() {
           of the Monte Carlo posterior the model could actually evaluate,
           rather than reporting a confident-looking probability computed from
           only that minority of draws (see{" "}
-          <a href="/limitations" className="link">
+          <Link href="/limitations" className="link">
             Limitations
-          </a>
+          </Link>
           ).
         </p>
 
