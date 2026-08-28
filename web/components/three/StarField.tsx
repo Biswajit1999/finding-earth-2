@@ -14,7 +14,7 @@
  */
 
 import { useMemo, useRef } from "react";
-import { useFrame } from "@react-three/fiber";
+import { useFrame, type ThreeEvent } from "@react-three/fiber";
 import * as THREE from "three";
 
 import type { UniverseFile } from "@/lib/types";
@@ -78,7 +78,10 @@ export function StarField({
   pointScale = 1,
   highlightIndices,
   rotate = true,
-  rotationSpeed = 0.012,
+  rotationSpeed = 0.05,
+  twinkle = true,
+  visibleMask,
+  onSelect,
 }: {
   data: UniverseFile;
   colourMode?: ColourMode;
@@ -87,14 +90,27 @@ export function StarField({
   highlightIndices?: Set<number>;
   rotate?: boolean;
   rotationSpeed?: number;
+  /**
+   * Distinct from `rotate`: `rotate` also turns off the moment a viewer
+   * manually drags to orbit (nothing to do with motion preference), so
+   * gating the twinkle off that would kill it for anyone who ever touches
+   * the camera. This should be wired straight to prefers-reduced-motion.
+   */
+  twinkle?: boolean;
+  /** When present, index i is hidden (size forced to 0) unless visibleMask[i] is truthy. */
+  visibleMask?: Uint8Array;
+  /** Fires with the vertex index of the star the viewer clicked. */
+  onSelect?: (index: number) => void;
 }) {
   const group = useRef<THREE.Group>(null);
+  const materialRef = useRef<THREE.ShaderMaterial>(null);
 
-  const { positions, colours, sizes } = useMemo(() => {
+  const { positions, colours, sizes, phases } = useMemo(() => {
     const n = data.n_points;
     const positions = new Float32Array(n * 3);
     const colours = new Float32Array(n * 3);
     const sizes = new Float32Array(n);
+    const phases = new Float32Array(n);
 
     for (let i = 0; i < n; i++) {
       // Log-compress radial distance: real positions span 1 pc to >8 kpc, and a
@@ -132,15 +148,22 @@ export function StarField({
       colours[i * 3 + 2] = hot ? 0.35 : c[2];
 
       // Size encodes the index so good candidates are findable, with a floor so
-      // nothing disappears entirely.
-      sizes[i] = (hot ? 7 : 1.6 + idx * 4.2) * pointScale;
+      // nothing disappears entirely. A point excluded by the active filters is
+      // sized to zero rather than removed from the buffer, so filtering never
+      // triggers a geometry rebuild.
+      const visible = !visibleMask || visibleMask[i];
+      sizes[i] = visible ? (hot ? 7 : 1.6 + idx * 4.2) * pointScale : 0;
+      phases[i] = (i * 12.9898) % (Math.PI * 2);
     }
-    return { positions, colours, sizes };
-  }, [data, colourMode, scale, pointScale, highlightIndices]);
+    return { positions, colours, sizes, phases };
+  }, [data, colourMode, scale, pointScale, highlightIndices, visibleMask]);
 
-  useFrame((_, delta) => {
+  useFrame(({ clock }, delta) => {
     if (rotate && group.current) {
       group.current.rotation.y += delta * rotationSpeed;
+    }
+    if (twinkle && materialRef.current) {
+      materialRef.current.uniforms.uTime.value = clock.elapsedTime;
     }
   });
 
@@ -149,43 +172,78 @@ export function StarField({
     g.setAttribute("position", new THREE.BufferAttribute(positions, 3));
     g.setAttribute("color", new THREE.BufferAttribute(colours, 3));
     g.setAttribute("aSize", new THREE.BufferAttribute(sizes, 1));
+    g.setAttribute("aPhase", new THREE.BufferAttribute(phases, 1));
     return g;
-  }, [positions, colours, sizes]);
+  }, [positions, colours, sizes, phases]);
 
-  const material = useMemo(
-    () =>
-      new THREE.ShaderMaterial({
-        transparent: true,
-        depthWrite: false,
-        blending: THREE.AdditiveBlending,
-        vertexShader: `
-          attribute float aSize;
-          varying vec3 vColor;
-          void main() {
-            vColor = color;
-            vec4 mv = modelViewMatrix * vec4(position, 1.0);
-            gl_PointSize = aSize * (140.0 / -mv.z);
-            gl_Position = projectionMatrix * mv;
-          }
-        `,
-        fragmentShader: `
-          varying vec3 vColor;
-          void main() {
-            vec2 d = gl_PointCoord - vec2(0.5);
-            float r = length(d);
-            if (r > 0.5) discard;
-            float a = smoothstep(0.5, 0.06, r);
-            gl_FragColor = vec4(vColor, a);
-          }
-        `,
-        vertexColors: true,
-      }),
-    [],
-  );
+  const uniforms = useMemo(() => ({ uTime: { value: 0 } }), []);
+
+  // A star is "selected" on pointer up only if the pointer never travelled
+  // far from where it went down -- i.e. our own click-vs-drag test, done on
+  // raw raycasted pointer events rather than R3F's synthesized onClick.
+  // OrbitControls shares this same canvas for orbit-dragging, and R3F's
+  // built-in click/drag heuristic was unreliable in combination with it.
+  const downPos = useRef<{ x: number; y: number } | null>(null);
+  const handlePointerDown = (e: ThreeEvent<PointerEvent>) => {
+    downPos.current = { x: e.clientX, y: e.clientY };
+  };
+  const handlePointerUp = (e: ThreeEvent<PointerEvent>) => {
+    const down = downPos.current;
+    downPos.current = null;
+    if (!down || !onSelect || e.index === undefined) return;
+    if (Math.hypot(e.clientX - down.x, e.clientY - down.y) < 6) {
+      onSelect(e.index);
+    }
+  };
 
   return (
     <group ref={group}>
-      <points geometry={geometry} material={material} />
+      <points
+        geometry={geometry}
+        onPointerDown={onSelect ? handlePointerDown : undefined}
+        onPointerUp={onSelect ? handlePointerUp : undefined}
+      >
+        <shaderMaterial
+          ref={materialRef}
+          transparent
+          depthWrite={false}
+          blending={THREE.AdditiveBlending}
+          uniforms={uniforms}
+          vertexShader={`
+            attribute float aSize;
+            attribute float aPhase;
+            uniform float uTime;
+            varying vec3 vColor;
+            void main() {
+              vColor = color;
+              // A gentle per-star shimmer -- real stars don't hold a fixed
+              // brightness on screen, and a wholly static point cloud reads as
+              // a still image rather than something alive.
+              float twinkle = 0.82 + 0.18 * sin(uTime * 1.6 + aPhase);
+              vec4 mv = modelViewMatrix * vec4(position, 1.0);
+              float px = aSize * twinkle * (52.0 / -mv.z);
+              gl_PointSize = min(px, 26.0);
+              gl_Position = projectionMatrix * mv;
+            }
+          `}
+          fragmentShader={`
+            varying vec3 vColor;
+            void main() {
+              vec2 d = gl_PointCoord - vec2(0.5);
+              float r = length(d);
+              if (r > 0.5) discard;
+              // A small hard core plus a thin anti-aliased edge reads as a
+              // crisp point of light; the old wide falloff (transition
+              // starting at r=0.06) meant almost the entire disc was a soft
+              // gradient, which is what turned dense clusters into an
+              // overexposed blur once additive blending summed them.
+              float a = smoothstep(0.5, 0.38, r);
+              gl_FragColor = vec4(vColor, a);
+            }
+          `}
+          vertexColors
+        />
+      </points>
       {/* The Sun at the origin — our own vantage point. */}
       <mesh>
         <sphereGeometry args={[0.055, 20, 20]} />

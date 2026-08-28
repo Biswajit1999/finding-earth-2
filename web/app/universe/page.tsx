@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { PageHeader } from "@/components/PageHeader";
 import { UniverseExplorer } from "@/components/universe/UniverseExplorer";
-import { getUniverse } from "@/lib/data";
+import { getUniverse, getDeepDiveIndex } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Universe",
@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 
 export default function UniversePage() {
   const data = getUniverse();
+  const deepDiveSlugs = new Set(getDeepDiveIndex().map((e) => e.slug));
   return (
     <>
       <PageHeader
@@ -18,7 +19,7 @@ export default function UniversePage() {
         title="The universe, as measured"
         lede="Every point is a real system with a measured parallax distance, placed at its true right ascension, declination and distance from the Sun. The radial axis is log-compressed so nearby and distant systems are both visible; that compression is stated, not hidden. Systems without a measured distance are excluded and counted, never placed at an invented position."
       />
-      <UniverseExplorer data={data} />
+      <UniverseExplorer data={data} deepDiveSlugs={deepDiveSlugs} />
     </>
   );
 }

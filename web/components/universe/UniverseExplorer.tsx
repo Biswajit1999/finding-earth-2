@@ -18,7 +18,7 @@ import { Suspense, useMemo, useState } from "react";
 
 import { StarField, type ColourMode } from "@/components/three/StarField";
 import type { UniverseFile } from "@/lib/types";
-import { compactInt, num, slugify } from "@/lib/format";
+import { compactInt, EMDASH, int, num, slugify } from "@/lib/format";
 
 const COLOUR_MODES: { key: ColourMode; label: string }[] = [
   { key: "index", label: "Earth-2.0 index" },
@@ -26,6 +26,31 @@ const COLOUR_MODES: { key: ColourMode; label: string }[] = [
   { key: "method", label: "Discovery method" },
   { key: "distance", label: "Distance" },
 ];
+
+// The same five methods StarField.tsx colour-codes explicitly; every other
+// discovery method (disk kinematics, pulsar timing, astrometry, ...) groups
+// into "Other" for filtering, matching how the legend already presents them.
+const NAMED_METHODS = [
+  "Transit",
+  "Radial Velocity",
+  "Microlensing",
+  "Imaging",
+  "Transit Timing Variations",
+] as const;
+const ALL_METHOD_GROUPS = [...NAMED_METHODS, "Other"];
+
+function methodGroup(m: string | null): string {
+  return m && (NAMED_METHODS as readonly string[]).includes(m) ? m : "Other";
+}
+
+const LY_PER_PC = 3.26156;
+
+function toPc(value: number, unit: "pc" | "ly"): number {
+  return unit === "ly" ? value / LY_PER_PC : value;
+}
+function fromPc(pc: number, unit: "pc" | "ly"): number {
+  return unit === "ly" ? pc * LY_PER_PC : pc;
+}
 
 function Legend({ mode }: { mode: ColourMode }) {
   if (mode === "index") {
@@ -91,13 +116,40 @@ function Legend({ mode }: { mode: ColourMode }) {
   );
 }
 
-export function UniverseExplorer({ data }: { data: UniverseFile }) {
+export function UniverseExplorer({
+  data,
+  deepDiveSlugs,
+}: {
+  data: UniverseFile;
+  /** Slugs with a full deep-dive page; most of the 6,300+ systems here don't have one. */
+  deepDiveSlugs?: Set<string>;
+}) {
   const reduced = useReducedMotion();
   const [mode, setMode] = useState<ColourMode>("index");
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<number | null>(null);
   const [webglFailed, setWebglFailed] = useState(false);
   const [rotate, setRotate] = useState(!reduced);
+  const [unit, setUnit] = useState<"pc" | "ly">("pc");
+  const [activeMethods, setActiveMethods] = useState<Set<string>>(
+    () => new Set(ALL_METHOD_GROUPS),
+  );
+
+  const maxDistPc = useMemo(
+    () => data.dist_pc.reduce((m, d) => (Number.isFinite(d) && d > m ? d : m), 1),
+    [data],
+  );
+  const [distRange, setDistRange] = useState<[number, number]>(() => [0, maxDistPc]);
+
+  const methodCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const g of ALL_METHOD_GROUPS) counts[g] = 0;
+    for (let i = 0; i < data.n_points; i++) {
+      const g = methodGroup(data.method[i]);
+      counts[g] = (counts[g] ?? 0) + 1;
+    }
+    return counts;
+  }, [data]);
 
   const matches = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -115,6 +167,25 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
     if (selected === null) return undefined;
     return new Set([selected]);
   }, [selected]);
+
+  const filterMask = useMemo(() => {
+    const mask = new Uint8Array(data.n_points);
+    const [lo, hi] = distRange;
+    const allMethods = activeMethods.size === ALL_METHOD_GROUPS.length;
+    let nVisible = 0;
+    for (let i = 0; i < data.n_points; i++) {
+      const d = data.dist_pc[i];
+      const distOk = d >= lo && d <= hi;
+      const methodOk = allMethods || activeMethods.has(methodGroup(data.method[i]));
+      if (distOk && methodOk) {
+        mask[i] = 1;
+        nVisible++;
+      }
+    }
+    return { mask, nVisible };
+  }, [data, distRange, activeMethods]);
+
+  const filtersActive = distRange[0] > 0 || distRange[1] < maxDistPc || activeMethods.size < ALL_METHOD_GROUPS.length;
 
   const info = selected !== null ? selected : null;
 
@@ -142,11 +213,26 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
           camera={{ position: [0, 1.1, 5.2], fov: 55 }}
           dpr={[1, 1.75]}
           gl={{ antialias: true, powerPreference: "high-performance" }}
-          onCreated={({ gl }) => gl.setClearColor("#07090e", 1)}
+          onCreated={({ gl, raycaster }) => {
+            gl.setClearColor("#07090e", 1);
+            // The default threshold is tuned for typical scene scales, not
+            // this compressed log-distance layout -- too small and clicks on
+            // a visibly-there point miss every time, too large and dense
+            // clusters can't be told apart.
+            raycaster.params.Points.threshold = 0.16;
+          }}
           onError={() => setWebglFailed(true)}
         >
           <Suspense fallback={null}>
-            <StarField data={data} colourMode={mode} rotate={rotate} highlightIndices={highlight} />
+            <StarField
+              data={data}
+              colourMode={mode}
+              rotate={rotate}
+              twinkle={!reduced}
+              highlightIndices={highlight}
+              visibleMask={filterMask.mask}
+              onSelect={setSelected}
+            />
           </Suspense>
           <OrbitControls
             enablePan
@@ -188,7 +274,7 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
                       >
                         {data.name[i]}{" "}
                         <span className="text-[10px] text-[var(--color-muted)]">
-                          {num(data.dist_pc[i], 1)} pc
+                          {num(fromPc(data.dist_pc[i], unit), 1)} {unit}
                         </span>
                       </button>
                     </li>
@@ -220,6 +306,104 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
                 <Legend mode={mode} />
               </div>
             </div>
+
+            <div className="panel-raised w-[230px] p-3">
+              <div className="mb-1.5 flex items-center justify-between">
+                <p className="eyebrow">Filters</p>
+                {filtersActive && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setDistRange([0, maxDistPc]);
+                      setActiveMethods(new Set(ALL_METHOD_GROUPS));
+                    }}
+                    className="cursor-pointer text-[10.5px] text-[var(--color-cyan)] hover:underline"
+                  >
+                    Reset
+                  </button>
+                )}
+              </div>
+
+              <div className="flex items-center justify-between">
+                <label htmlFor="uni-dist-lo" className="text-[10.5px] text-[var(--color-muted)]">
+                  Distance
+                </label>
+                <div className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]">
+                  {(["pc", "ly"] as const).map((u) => (
+                    <button
+                      key={u}
+                      type="button"
+                      onClick={() => setUnit(u)}
+                      aria-pressed={unit === u}
+                      className={`cursor-pointer px-1.5 py-0.5 text-[10px] ${
+                        unit === u
+                          ? "bg-[var(--color-cyan)]/15 text-[var(--color-cyan)]"
+                          : "text-[var(--color-muted)]"
+                      }`}
+                    >
+                      {u}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-1.5 flex items-center gap-1.5">
+                <input
+                  id="uni-dist-lo"
+                  type="number"
+                  min={0}
+                  value={Math.round(fromPc(distRange[0], unit) * 100) / 100}
+                  onChange={(e) => {
+                    const v = toPc(Number(e.target.value) || 0, unit);
+                    setDistRange(([, hi]) => [Math.min(Math.max(v, 0), hi), hi]);
+                  }}
+                  aria-label={"Minimum distance in " + unit}
+                  className="w-full min-w-0 rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] bg-[var(--color-void)] px-1.5 py-1 text-[11px] text-[var(--color-ivory)]"
+                />
+                <span className="text-[10px] text-[var(--color-muted)]">–</span>
+                <input
+                  type="number"
+                  min={0}
+                  value={Math.round(fromPc(distRange[1], unit) * 100) / 100}
+                  onChange={(e) => {
+                    const v = toPc(Number(e.target.value) || 0, unit);
+                    setDistRange(([lo]) => [lo, Math.max(v, lo)]);
+                  }}
+                  aria-label={"Maximum distance in " + unit}
+                  className="w-full min-w-0 rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] bg-[var(--color-void)] px-1.5 py-1 text-[11px] text-[var(--color-ivory)]"
+                />
+              </div>
+
+              <p className="mb-1 mt-2.5 border-t border-[var(--color-line)] pt-2 text-[10.5px] text-[var(--color-muted)]">
+                Discovery method
+              </p>
+              <div className="flex flex-col gap-0.5">
+                {ALL_METHOD_GROUPS.map((g) => (
+                  <label
+                    key={g}
+                    className="flex cursor-pointer items-center justify-between gap-2 rounded px-1 py-0.5 text-[11px] text-[var(--color-dim)] hover:bg-[var(--color-panel)]"
+                  >
+                    <span className="flex items-center gap-1.5">
+                      <input
+                        type="checkbox"
+                        checked={activeMethods.has(g)}
+                        onChange={() =>
+                          setActiveMethods((prev) => {
+                            const next = new Set(prev);
+                            if (next.has(g)) next.delete(g);
+                            else next.add(g);
+                            return next;
+                          })
+                        }
+                      />
+                      {g}
+                    </span>
+                    <span className="font-[family-name:var(--font-mono)] text-[10px] text-[var(--color-muted)]">
+                      {int(methodCounts[g])}
+                    </span>
+                  </label>
+                ))}
+              </div>
+            </div>
           </div>
 
           {/* ---------------- selected system panel ---------------- */}
@@ -243,7 +427,13 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
               </div>
               <dl className="mt-2.5 grid grid-cols-2 gap-x-3 gap-y-1.5 font-[family-name:var(--font-mono)] text-[11px]">
                 <dt className="text-[var(--color-muted)]">Distance</dt>
-                <dd className="text-[var(--color-dim)]">{num(data.dist_pc[info], 2)} pc</dd>
+                <dd className="text-[var(--color-dim)]">
+                  {num(data.dist_pc[info], 2)} pc
+                  <span className="text-[var(--color-muted)]">
+                    {" "}
+                    ({num(data.dist_pc[info] * LY_PER_PC, 1)} ly)
+                  </span>
+                </dd>
                 <dt className="text-[var(--color-muted)]">Radius</dt>
                 <dd className="text-[var(--color-dim)]">{num(data.rade[info], 2)} R⊕</dd>
                 <dt className="text-[var(--color-muted)]">T_eq</dt>
@@ -252,21 +442,32 @@ export function UniverseExplorer({ data }: { data: UniverseFile }) {
                 <dd className="text-[var(--color-dim)]">{num(data.hz_prob[info], 2)}</dd>
                 <dt className="text-[var(--color-muted)]">Method</dt>
                 <dd className="text-[var(--color-dim)]">{data.method[info] ?? "—"}</dd>
+                <dt className="text-[var(--color-muted)]">Discovered</dt>
+                <dd className="text-[var(--color-dim)]">
+                  {Number.isFinite(data.disc_year[info]) ? data.disc_year[info] : EMDASH}
+                </dd>
                 <dt className="text-[var(--color-muted)]">Earth-2.0 index</dt>
                 <dd className="text-[var(--color-gold)]">{num(data.earth2_index[info], 3)}</dd>
               </dl>
-              <Link
-                href={"/candidate/" + slugify(data.name[info])}
-                className="link mt-3 inline-block text-[12px]"
-              >
-                Open deep dive →
-              </Link>
+              {deepDiveSlugs?.has(slugify(data.name[info])) ? (
+                <Link
+                  href={"/candidate/" + slugify(data.name[info])}
+                  className="link mt-3 inline-block text-[12px]"
+                >
+                  Open deep dive →
+                </Link>
+              ) : (
+                <p className="mt-3 text-[11px] text-[var(--color-muted)]">
+                  Not one of the ranked candidates with a full deep-dive page.
+                </p>
+              )}
             </div>
           )}
 
           <div className="pointer-events-none self-end font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)]">
-            {compactInt(data.n_points)} systems · {compactInt(data.n_excluded_no_distance)}{" "}
-            excluded (no measured distance) · drag to orbit, scroll to zoom
+            {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)} systems shown ·{" "}
+            {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
+            orbit, scroll to zoom, click a star
           </div>
         </div>
       </div>
