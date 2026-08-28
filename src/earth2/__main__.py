@@ -147,6 +147,14 @@ def cmd_deepdive(args: argparse.Namespace) -> int:
 
     out_dir = RESULTS_DIR / "deepdive"
     out_dir.mkdir(parents=True, exist_ok=True)
+    previous_by_planet = {}
+    for existing in out_dir.glob("*.json"):
+        try:
+            previous = json.loads(existing.read_text(encoding="utf-8"))
+        except (OSError, json.JSONDecodeError):
+            continue
+        if previous.get("planet"):
+            previous_by_planet[str(previous["planet"])] = previous
     # Clear stale per-planet files before writing the current target set: the
     # ranking can reorder between runs (e.g. after a methodology fix), and a
     # planet that drops out of the top N must not leave its old deep-dive JSON
@@ -163,6 +171,7 @@ def cmd_deepdive(args: argparse.Namespace) -> int:
             identifiers=identifiers,
             run_transit=args.transit,
             run_rv=args.rv,
+            previous=previous_by_planet.get(t),
         )
         dives.append(dd)
         slug = t.replace(" ", "_").replace("/", "-")

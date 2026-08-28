@@ -26,6 +26,7 @@ section and leaving the reader to assume it was never attempted.
 
 from __future__ import annotations
 
+from copy import deepcopy
 from pathlib import Path
 from typing import Any
 
@@ -36,6 +37,41 @@ from earth2.provenance import utc_now_iso
 from earth2.reporting.jsonio import dump_json
 
 __all__ = ["build_deep_dive", "select_deep_dive_targets"]
+
+
+def _preserved_analysis(
+    previous: dict[str, Any] | None,
+    key: str,
+    *,
+    requested: bool,
+) -> dict[str, Any] | None:
+    """Return a successful archived live analysis when no refresh was requested.
+
+    Catalogue-only rebuilds must not silently replace expensive MAST or DACE
+    retrievals with a ``not requested`` placeholder.  The original analysis is
+    retained verbatim and annotated with the deep-dive build it came from.
+    """
+    if requested or not previous:
+        return None
+    prior = previous.get(key)
+    if not isinstance(prior, dict):
+        return None
+    # The transit and RV pipelines pre-date the shared ``attempted`` field.
+    # Their successful historical products use a substantive status instead.
+    status = prior.get("status")
+    has_live_product = prior.get("attempted") is True or status not in {
+        None, "error", "unavailable", "no_data", "not_attempted",
+    }
+    if not has_live_product:
+        return None
+
+    preserved = deepcopy(prior)
+    preserved["archive_status"] = {
+        "preserved": True,
+        "reason": "Live-source refresh was not requested for this catalogue rebuild.",
+        "from_deep_dive_generated_utc": previous.get("generated_utc"),
+    }
+    return preserved
 
 
 def _f(v: Any, nd: int = 4) -> float | None:
@@ -236,6 +272,7 @@ def build_deep_dive(
     run_transit: bool = False,
     run_rv: bool = False,
     identifiers: pd.DataFrame | None = None,
+    previous: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Assemble everything known about one candidate."""
     rows = ranking[ranking["pl_name"].astype(str) == planet]
@@ -503,7 +540,12 @@ def build_deep_dive(
         }
 
     # ---------------- transit photometry ----------------
-    if run_transit and bool(r.get("tran_flag", 0) == 1):
+    preserved_transit = _preserved_analysis(
+        previous, "transit_analysis", requested=run_transit,
+    )
+    if preserved_transit is not None:
+        dd["transit_analysis"] = preserved_transit
+    elif run_transit and bool(r.get("tran_flag", 0) == 1):
         from earth2.transit import analyse_target as transit_analyse
 
         depth_pct = pd.to_numeric(pd.Series([r.get("pl_trandep")]), errors="coerce").iloc[0]
@@ -526,7 +568,10 @@ def build_deep_dive(
         }
 
     # ---------------- radial velocity ----------------
-    if run_rv:
+    preserved_rv = _preserved_analysis(previous, "rv_analysis", requested=run_rv)
+    if preserved_rv is not None:
+        dd["rv_analysis"] = preserved_rv
+    elif run_rv:
         from earth2.radial_velocity import analyse_target as rv_analyse
 
         dd["rv_analysis"] = rv_analyse(
