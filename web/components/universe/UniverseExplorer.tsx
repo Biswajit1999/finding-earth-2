@@ -144,6 +144,9 @@ export function UniverseExplorer({
     () => new Set(ALL_METHOD_GROUPS),
   );
   const [showLines, setShowLines] = useState(false);
+  const [radialScale, setRadialScale] = useState<"log" | "linear">("log");
+  const [flagRuwe, setFlagRuwe] = useState(false);
+  const [countMode, setCountMode] = useState<"planets" | "hosts">("planets");
   const [ready, setReady] = useState(false);
   const controlsRef = useRef<OrbitControlsHandle | null>(null);
 
@@ -223,6 +226,7 @@ export function UniverseExplorer({
     const mask = new Uint8Array(data.n_points);
     const [lo, hi] = distRange;
     const allMethods = activeMethods.size === ALL_METHOD_GROUPS.length;
+    const seenHosts = countMode === "hosts" ? new Set<string>() : null;
     let nVisible = 0;
     for (let i = 0; i < data.n_points; i++) {
       const d = data.dist_pc[i];
@@ -232,15 +236,26 @@ export function UniverseExplorer({
       const yearOk = Number.isFinite(year)
         ? (year as number) <= discoveryYear
         : discoveryYear === maxDiscoveryYear;
-      if (distOk && methodOk && yearOk) {
+      // "Unique hosts" keeps only the first planet encountered per host star,
+      // so a system with several known planets (TRAPPIST-1's seven, say)
+      // shows as one point rather than visually multiplying that system's
+      // apparent weight in the map.
+      const hostOk = !seenHosts || !seenHosts.has(data.host[i]);
+      if (distOk && methodOk && yearOk && hostOk) {
         mask[i] = 1;
         nVisible++;
+        seenHosts?.add(data.host[i]);
       }
     }
     return { mask, nVisible };
-  }, [data, distRange, activeMethods, discoveryYear, maxDiscoveryYear]);
+  }, [data, distRange, activeMethods, discoveryYear, maxDiscoveryYear, countMode]);
 
-  const filtersActive = distRange[0] > 0 || distRange[1] < maxDistPc || activeMethods.size < ALL_METHOD_GROUPS.length || discoveryYear < maxDiscoveryYear;
+  const filtersActive =
+    distRange[0] > 0 ||
+    distRange[1] < maxDistPc ||
+    activeMethods.size < ALL_METHOD_GROUPS.length ||
+    discoveryYear < maxDiscoveryYear ||
+    countMode !== "planets";
 
   const info = selected !== null ? selected : null;
 
@@ -298,6 +313,8 @@ export function UniverseExplorer({
               visibleMask={filterMask.mask}
               onSelect={setSelected}
               showDistanceLines={showLines}
+              radialScale={radialScale}
+              flagLowConfidenceAstrometry={flagRuwe}
             />
           </Suspense>
           <OrbitControls
@@ -413,6 +430,7 @@ export function UniverseExplorer({
                       setActiveMethods(new Set(ALL_METHOD_GROUPS));
                       setDiscoveryYear(maxDiscoveryYear);
                       setPlayingHistory(false);
+                      setCountMode("planets");
                     }}
                     className="cursor-pointer text-[10.5px] text-[var(--color-cyan)] hover:underline"
                   >
@@ -480,6 +498,77 @@ export function UniverseExplorer({
                   Distance lines from Sun
                 </span>
               </label>
+
+              <label className="mt-1.5 flex cursor-pointer items-center justify-between gap-2 text-[11px] text-[var(--color-dim)]">
+                <span className="flex items-center gap-1.5">
+                  <input
+                    type="checkbox"
+                    checked={flagRuwe}
+                    onChange={() => setFlagRuwe((v) => !v)}
+                  />
+                  Dim uncertain astrometry (Gaia RUWE &gt; 1.4)
+                </span>
+              </label>
+
+              <div className="mt-2.5 flex items-center justify-between border-t border-[var(--color-line)] pt-2">
+                <span className="text-[10.5px] text-[var(--color-muted)]">Radial scale</span>
+                <div className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]">
+                  {([
+                    ["log", "Log"],
+                    ["linear", "Linear"],
+                  ] as const).map(([key, label]) => (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => setRadialScale(key)}
+                      aria-pressed={radialScale === key}
+                      className={`cursor-pointer px-1.5 py-0.5 text-[10px] ${
+                        radialScale === key
+                          ? "bg-[var(--color-cyan)]/15 text-[var(--color-cyan)]"
+                          : "text-[var(--color-muted)]"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {radialScale === "linear" && (
+                <p className="mt-1 text-[10px] leading-relaxed text-[var(--color-rose)]">
+                  True parsecs: almost every system collapses near the Sun. This is exactly why
+                  the default view compresses distance logarithmically.
+                </p>
+              )}
+
+              <div className="mt-2.5 flex items-center justify-between border-t border-[var(--color-line)] pt-2">
+                <span className="text-[10.5px] text-[var(--color-muted)]">Count by</span>
+                <div className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]">
+                  {([
+                    ["planets", "Planets"],
+                    ["hosts", "Unique hosts"],
+                  ] as const).map(([key, label]) => (
+                    <button
+                      key={key}
+                      type="button"
+                      onClick={() => setCountMode(key)}
+                      aria-pressed={countMode === key}
+                      className={`cursor-pointer px-1.5 py-0.5 text-[10px] ${
+                        countMode === key
+                          ? "bg-[var(--color-cyan)]/15 text-[var(--color-cyan)]"
+                          : "text-[var(--color-muted)]"
+                      }`}
+                    >
+                      {label}
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {countMode === "hosts" && (
+                <p className="mt-1 text-[10px] text-[var(--color-muted)]">
+                  One point per host star — a system with several known planets no longer counts
+                  once per planet.
+                </p>
+              )}
 
               <p className="mb-1 mt-2.5 border-t border-[var(--color-line)] pt-2 text-[10.5px] text-[var(--color-muted)]">
                 Discovery method
@@ -621,7 +710,9 @@ export function UniverseExplorer({
               />
               <div className="mt-0.5 flex justify-between font-[family-name:var(--font-mono)] text-[10px] text-[var(--color-muted)]">
                 <span>{minDiscoveryYear}</span>
-                <span aria-live="polite">{compactInt(filterMask.nVisible)} systems visible</span>
+                <span aria-live="polite">
+                  {compactInt(filterMask.nVisible)} {countMode === "hosts" ? "host stars" : "systems"} visible
+                </span>
                 <span>{maxDiscoveryYear}</span>
               </div>
               {unknownDiscoveryYears > 0 && discoveryYear === maxDiscoveryYear && (
@@ -631,7 +722,8 @@ export function UniverseExplorer({
               )}
             </div>
             <div className="pointer-events-none hidden max-w-md text-right font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)] xl:block">
-              {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)} systems shown ·{" "}
+              {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)}{" "}
+              {countMode === "hosts" ? "host stars" : "systems"} shown ·{" "}
               {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
               orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click
               a star

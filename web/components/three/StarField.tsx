@@ -84,6 +84,8 @@ export function StarField({
   visibleMask,
   onSelect,
   showDistanceLines = false,
+  radialScale = "log",
+  flagLowConfidenceAstrometry = false,
 }: {
   data: UniverseFile;
   colourMode?: ColourMode;
@@ -105,30 +107,53 @@ export function StarField({
   onSelect?: (index: number) => void;
   /** Faint radial spokes from the Sun to every currently-visible system. */
   showDistanceLines?: boolean;
+  /**
+   * "log" (default) compresses distance so nearby and far systems are both
+   * visible in the same view. "linear" plots true parsecs -- offered so a
+   * reader can see for themselves why compression is used (almost every
+   * point collapses near the origin), not as an equally-informative
+   * alternative projection.
+   */
+  radialScale?: "log" | "linear";
+  /**
+   * Dim points with Gaia RUWE > 1.4 (the archive's own threshold for "the
+   * single-star astrometric fit is poor, often an unresolved binary").
+   * Deliberately just dims the point rather than drawing a 3D uncertainty
+   * sphere: the underlying distance posterior is asymmetric, and a sphere
+   * would misrepresent it as a symmetric, precisely-bounded volume.
+   */
+  flagLowConfidenceAstrometry?: boolean;
 }) {
   const group = useRef<THREE.Group>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
 
-  const { positions, colours, sizes, phases } = useMemo(() => {
+  const { positions, colours, sizes, phases, confidences } = useMemo(() => {
     const n = data.n_points;
     const positions = new Float32Array(n * 3);
     const colours = new Float32Array(n * 3);
     const sizes = new Float32Array(n);
     const phases = new Float32Array(n);
+    const confidences = new Float32Array(n);
 
     for (let i = 0; i < n; i++) {
-      // Log-compress radial distance: real positions span 1 pc to >8 kpc, and a
-      // linear map puts 99% of systems in an invisible speck at the origin. The
-      // compression is monotonic, so relative ordering and direction stay true,
-      // and the interface states that the radial axis is non-linear.
+      // Log-compress radial distance by default: real positions span 1 pc to
+      // >8 kpc, and a linear map puts 99% of systems in an invisible speck at
+      // the origin. The compression is monotonic, so relative ordering and
+      // direction stay true, and the interface states that the radial axis
+      // is non-linear -- radialScale="linear" is the escape hatch that lets a
+      // reader see that collapse for themselves rather than take it on faith.
       const x = data.x[i] ?? 0;
       const y = data.y[i] ?? 0;
       const z = data.z[i] ?? 0;
       const r = Math.sqrt(x * x + y * y + z * z) || 1;
-      const rc = Math.log10(1 + r) * 120;
+      const rc = radialScale === "linear" ? r : Math.log10(1 + r) * 120;
       positions[i * 3] = (x / r) * rc * scale;
       positions[i * 3 + 1] = (y / r) * rc * scale;
       positions[i * 3 + 2] = (z / r) * rc * scale;
+
+      const ruwe = data.gaia_ruwe[i];
+      confidences[i] =
+        flagLowConfidenceAstrometry && ruwe !== null && ruwe > 1.4 ? 0.32 : 1.0;
 
       let c: [number, number, number];
       switch (colourMode) {
@@ -159,8 +184,8 @@ export function StarField({
       sizes[i] = visible ? (hot ? 7 : 1.6 + idx * 4.2) * pointScale : 0;
       phases[i] = (i * 12.9898) % (Math.PI * 2);
     }
-    return { positions, colours, sizes, phases };
-  }, [data, colourMode, scale, pointScale, highlightIndices, visibleMask]);
+    return { positions, colours, sizes, phases, confidences };
+  }, [data, colourMode, scale, pointScale, highlightIndices, visibleMask, radialScale, flagLowConfidenceAstrometry]);
 
   useFrame(({ clock }, delta) => {
     if (rotate && group.current) {
@@ -177,8 +202,9 @@ export function StarField({
     g.setAttribute("color", new THREE.BufferAttribute(colours, 3));
     g.setAttribute("aSize", new THREE.BufferAttribute(sizes, 1));
     g.setAttribute("aPhase", new THREE.BufferAttribute(phases, 1));
+    g.setAttribute("aConf", new THREE.BufferAttribute(confidences, 1));
     return g;
-  }, [positions, colours, sizes, phases]);
+  }, [positions, colours, sizes, phases, confidences]);
 
   const uniforms = useMemo(() => ({ uTime: { value: 0 } }), []);
 
@@ -240,10 +266,13 @@ export function StarField({
           vertexShader={`
             attribute float aSize;
             attribute float aPhase;
+            attribute float aConf;
             uniform float uTime;
             varying vec3 vColor;
+            varying float vConf;
             void main() {
               vColor = color;
+              vConf = aConf;
               // A gentle per-star shimmer -- real stars don't hold a fixed
               // brightness on screen, and a wholly static point cloud reads as
               // a still image rather than something alive.
@@ -256,6 +285,7 @@ export function StarField({
           `}
           fragmentShader={`
             varying vec3 vColor;
+            varying float vConf;
             void main() {
               vec2 d = gl_PointCoord - vec2(0.5);
               float r = length(d);
@@ -266,7 +296,11 @@ export function StarField({
               // gradient, which is what turned dense clusters into an
               // overexposed blur once additive blending summed them.
               float a = smoothstep(0.5, 0.38, r);
-              gl_FragColor = vec4(vColor, a);
+              // Dimmed, not replaced by a fabricated uncertainty volume: a
+              // planet flagged for possibly-unresolved-binary astrometry is
+              // still a real point at its best-estimate position, just a
+              // less certain one -- lower alpha says that plainly.
+              gl_FragColor = vec4(vColor, a * vConf);
             }
           `}
           vertexColors

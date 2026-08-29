@@ -251,6 +251,14 @@ def export_universe(ranking: pd.DataFrame, max_points: int | None = None) -> dic
         "st_teff": _col(sub, "st_teff", 0),
         "method": _col(sub, "discoverymethod", None),
         "disc_year": _col(sub, "disc_year", 0),
+        "gaia_ruwe": _col(sub, "gaia_ruwe", 2),
+        "gaia_ruwe_note": (
+            "Gaia DR3 RUWE (renormalised unit weight error), where cross-matched. RUWE above "
+            "1.4 suggests the single-star astrometric model fits poorly, often an unresolved "
+            "binary -- flagged here as reduced positional confidence, not drawn as a 3D "
+            "uncertainty volume, since the underlying distance posterior is asymmetric, not a "
+            "sphere."
+        ),
     }
 
 

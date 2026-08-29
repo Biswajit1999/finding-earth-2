@@ -168,6 +168,8 @@ export interface UniverseFile {
   st_teff: Maybe[];
   method: (string | null)[];
   disc_year: Maybe[];
+  gaia_ruwe: Maybe[];
+  gaia_ruwe_note: string;
 }
 
 export interface GalaxyFile {

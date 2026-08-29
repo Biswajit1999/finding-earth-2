@@ -93,6 +93,27 @@ def test_export_galaxy_bulge_direction_uses_raw_ra_dec_not_the_xyz_transform():
     assert g["pct_within_10deg_of_galactic_centre_by_method"]["Microlensing"] == pytest.approx(50.0)
 
 
+def test_export_universe_passes_through_real_gaia_ruwe_without_fabricating_missing_values():
+    df = _sample_catalogue()
+    df["gaia_ruwe"] = [1.02, 1.87, np.nan, 1.0]
+    u = export_universe(df)
+    # Test b and Test c survive the distance filter (Control and No Distance d
+    # don't); their real RUWE values must come through untouched, in the same
+    # row order as "name".
+    assert u["name"] == ["Test b", "Test c"]
+    assert u["gaia_ruwe"] == [1.02, 1.87]
+
+
+def test_export_universe_reports_missing_ruwe_as_null_not_a_fabricated_default():
+    """A system this project never cross-matched against Gaia (or that Gaia
+    doesn't have a RUWE for) must read as null, not as 1.0 or any other
+    value that would silently read as 'astrometry looks fine'."""
+    df = _sample_catalogue()
+    df["gaia_ruwe"] = [np.nan, 1.1, np.nan, 1.0]
+    u = export_universe(df)
+    assert u["gaia_ruwe"][0] is None
+
+
 def test_export_universe_still_matches_export_galaxy_distance_filter():
     """Both exports apply the identical ok-mask (ra, dec, dist all present,
     dist > 0, controls dropped); they must agree on how many systems survive."""
