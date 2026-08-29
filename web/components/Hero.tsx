@@ -64,6 +64,21 @@ function useCountUp(target: number, enabled: boolean, duration = 1400) {
   return value;
 }
 
+function useLightTheme() {
+  const [isLight, setIsLight] = useState(false);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    const sync = () => setIsLight(root.getAttribute("data-theme") === "light");
+    sync();
+    const observer = new MutationObserver(sync);
+    observer.observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+    return () => observer.disconnect();
+  }, []);
+
+  return isLight;
+}
+
 function Stat({
   value,
   label,
@@ -105,6 +120,7 @@ export function Hero({
 }) {
   const reduced = useReducedMotion();
   const animate = !reduced;
+  const isLightTheme = useLightTheme();
   const [webglFailed, setWebglFailed] = useState(false);
 
   const hz = summary.habitable_zone;
@@ -121,9 +137,9 @@ export function Hero({
           <Canvas
             camera={{ position: [0, 0.55, 3.4], fov: 52 }}
             dpr={[1, 1.75]}
-            gl={{ antialias: true, powerPreference: "high-performance" }}
+            gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
             onCreated={({ gl }) => {
-              gl.setClearColor("#07090e", 1);
+              gl.setClearColor("#000000", 0);
             }}
             onError={() => setWebglFailed(true)}
             frameloop={reduced ? "demand" : "always"}
@@ -134,8 +150,9 @@ export function Hero({
                 colourMode="index"
                 rotate={!reduced}
                 rotationSpeed={0.014}
-                pointScale={1}
+                pointScale={1.3}
                 brightness={1.65}
+                lightBackground={isLightTheme}
               />
             </Suspense>
           </Canvas>

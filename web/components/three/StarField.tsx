@@ -82,6 +82,7 @@ export function StarField({
   rotationSpeed = 0.05,
   twinkle = true,
   brightness = 1,
+  lightBackground = false,
   visibleMask,
   onSelect,
   showDistanceLines = false,
@@ -104,6 +105,8 @@ export function StarField({
   twinkle?: boolean;
   /** Display-only luminance multiplier; positions, colours and ranking are unchanged. */
   brightness?: number;
+  /** Rebalances point colours for contrast when the canvas sits on the day surface. */
+  lightBackground?: boolean;
   /** When present, index i is hidden (size forced to 0) unless visibleMask[i] is truthy. */
   visibleMask?: Uint8Array;
   /** Fires with the vertex index of the star the viewer clicked. */
@@ -217,8 +220,12 @@ export function StarField({
   }, [positions, colours, sizes, phases, confidences, selections]);
 
   const uniforms = useMemo(
-    () => ({ uTime: { value: 0 }, uBrightness: { value: brightness } }),
-    [brightness],
+    () => ({
+      uTime: { value: 0 },
+      uBrightness: { value: brightness },
+      uLightBackground: { value: lightBackground ? 1 : 0 },
+    }),
+    [brightness, lightBackground],
   );
 
   // One segment (Sun -> system) per currently-visible point, in a single
@@ -345,6 +352,7 @@ export function StarField({
           `}
           fragmentShader={`
             uniform float uBrightness;
+            uniform float uLightBackground;
             varying vec3 vColor;
             varying float vConf;
             varying float vSelected;
@@ -371,10 +379,14 @@ export function StarField({
               // Lift the display luminance while preserving the underlying
               // colour ordering. In particular, low-index viridis purple
               // otherwise becomes almost invisible against the dark field.
-              vec3 displayColor = min(
+              vec3 nightColor = min(
                 (vColor * 1.35 + vec3(0.045)) * uBrightness,
                 vec3(1.0)
               );
+              // On the paper-like day surface, the same encoded hues need
+              // darker luminance rather than the night view's additive lift.
+              vec3 dayColor = mix(vColor * 0.62, vec3(0.02, 0.035, 0.06), 0.16);
+              vec3 displayColor = mix(nightColor, dayColor, uLightBackground);
               gl_FragColor = vec4(displayColor, alpha * vConf);
             }
           `}
