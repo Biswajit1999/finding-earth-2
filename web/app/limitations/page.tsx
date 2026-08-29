@@ -54,10 +54,10 @@ export default function LimitationsPage() {
               the radius rather than adding independent information, which
               would make the ESI appear to combine four independent properties
               while actually being driven by one. This project classifies mass
-              provenance explicitly and discounts inferred masses in the
+              evidence type explicitly and discounts inferred masses in the
               observational-confidence score.
             </p>
-            <SideNote eyebrow="Mass provenance, in full" side="left">
+            <SideNote eyebrow="Mass evidence, in full" side="left">
               Measured: {compactInt(cov.n_with_measured_mass)}. M sin i:{" "}
               {compactInt(cov.n_with_msini_lower_limit)}. Inferred from radius:{" "}
               {compactInt(cov.n_with_mass_inferred_from_radius)}. Upper limit

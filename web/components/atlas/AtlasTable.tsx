@@ -439,7 +439,7 @@ export function AtlasTable({ file }: { file: CatalogueFile }) {
                   </button>
                 </div>
               ))}
-              <HeaderCell className="w-[130px]" label="Mass provenance" />
+              <HeaderCell className="w-[130px]" label="Mass evidence" />
             </div>
 
             {/* windowed body */}

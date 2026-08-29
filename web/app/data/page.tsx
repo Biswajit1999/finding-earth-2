@@ -16,7 +16,7 @@ export default function DataPage() {
   return (
     <>
       <PageHeader
-        eyebrow="Provenance"
+        eyebrow="Source trail"
         title="Data sources"
         lede="Every table retrieved, with the exact query, the retrieval timestamp, and a hash of the payload as received. Nothing here is a static download: re-running python -m earth2 sync reconstructs this list from the live archives."
         meta={`Last synchronised ${utcLabel(prov.sync_state?.last_sync_utc)} · ${compactInt(prov.total_source_records)} total source records`}
@@ -25,7 +25,7 @@ export default function DataPage() {
       <div className="mx-auto max-w-[1400px] px-4 py-10 sm:px-6">
         <div className="panel overflow-x-auto">
           <table className="data-table min-w-[820px]">
-            <caption className="sr-only">Retrieved archive datasets with provenance</caption>
+            <caption className="sr-only">Retrieved archive datasets with source and retrieval details</caption>
             <thead>
               <tr>
                 <th scope="col">Dataset</th>

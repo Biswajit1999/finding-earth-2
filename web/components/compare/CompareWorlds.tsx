@@ -172,7 +172,7 @@ export function CompareWorlds({
               </tr>
               <tr>
                 <th scope="row" className="sticky left-0 z-10 bg-[var(--color-panel)] font-normal text-[var(--color-dim)]">
-                  Mass provenance
+                  Mass evidence
                 </th>
                 {cols.map((i) => (
                   <td key={i}>

@@ -34,7 +34,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
     label: "Method",
     items: [
       { href: "/methods", label: "Methods", hint: "Equations, assumptions, citations" },
-      { href: "/data", label: "Data", hint: "Archives, queries, provenance" },
+      { href: "/data", label: "Data", hint: "Archives, queries, source trail" },
       { href: "/limitations", label: "Limitations", hint: "What this cannot establish" },
       { href: "/references", label: "References", hint: "Full bibliography" },
     ],

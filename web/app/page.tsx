@@ -109,7 +109,7 @@ export default function HomePage() {
             <table className="data-table min-w-[860px]">
               <caption className="sr-only">
                 Top eight Earth-2.0 candidates with component scores, Earth
-                Similarity Index posteriors, mass provenance and distance
+                Similarity Index posteriors, mass evidence and distance
               </caption>
               <thead>
                 <tr>
@@ -260,7 +260,7 @@ export default function HomePage() {
               by the archive rather than measured
             </p>
             <Link href="/data" className="link text-[13px]">
-              Data provenance →
+              Data source trail →
             </Link>
           </div>
         )}

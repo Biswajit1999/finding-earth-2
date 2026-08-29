@@ -254,7 +254,7 @@ export function DeepDiveProfile({ dd }: { dd: DeepDive }) {
           </Section>
 
           {dd.measurement_provenance && dd.measurement_provenance.length > 0 && (
-            <Section title="Measurement provenance">
+            <Section title="Measurement sources">
               <div className="overflow-x-auto">
                 <table className="data-table min-w-[560px]">
                   <thead>
