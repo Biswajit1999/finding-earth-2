@@ -63,6 +63,15 @@ SUN_HEIGHT_PC = 20.8
 #: into "Other".
 NAMED_METHODS = ("Transit", "Radial Velocity", "Microlensing", "Imaging", "Transit Timing Variations")
 
+#: Sagittarius A* (the Galactic Centre), J2000 equatorial. Used only to
+#: quantify a real, well-known selection effect -- microlensing surveys
+#: (OGLE, MOA, KMTNet) deliberately monitor the Galactic bulge to maximise
+#: background source-star density, so this catalogue's microlensing
+#: detections cluster tightly around this sky position by survey design,
+#: not because planets are physically more common there.
+GALACTIC_CENTRE_RA_DEG = 266.41683
+GALACTIC_CENTRE_DEC_DEG = -29.00781
+
 
 def write_json(obj: Any, path: Path, gzip_also: bool = True, indent: int | None = None) -> Path:
     """Write JSON, and a .gz sibling for static hosts that can serve it."""
@@ -307,6 +316,25 @@ def export_galaxy(ranking: pd.DataFrame) -> dict[str, Any]:
         if (method_group == g).any()
     }
 
+    # What fraction of each method's detections sit within 10 degrees of the
+    # real sky position of the Galactic Centre -- computed from the archive's
+    # own ra/dec, independent of the Galactocentric x/y/z transform above, so
+    # this is a genuine cross-check rather than the same computation twice.
+    ra_r_all = np.radians(pd.to_numeric(sub["ra"], errors="coerce").to_numpy(dtype=float))
+    dec_r_all = np.radians(pd.to_numeric(sub["dec"], errors="coerce").to_numpy(dtype=float))
+    gc_ra_r = np.radians(GALACTIC_CENTRE_RA_DEG)
+    gc_dec_r = np.radians(GALACTIC_CENTRE_DEC_DEG)
+    cos_sep = (
+        np.sin(dec_r_all) * np.sin(gc_dec_r)
+        + np.cos(dec_r_all) * np.cos(gc_dec_r) * np.cos(ra_r_all - gc_ra_r)
+    )
+    within_10deg_of_centre = np.degrees(np.arccos(np.clip(cos_sep, -1, 1))) < 10
+    pct_toward_centre_by_method = {
+        str(g): round(float(within_10deg_of_centre[(method_group == g).to_numpy()].mean() * 100), 1)
+        for g in [*NAMED_METHODS, "Other"]
+        if (method_group == g).any()
+    }
+
     def r3(a: np.ndarray) -> list[float]:
         return [round(float(v), 4) for v in a]
 
@@ -339,6 +367,13 @@ def export_galaxy(ranking: pd.DataFrame) -> dict[str, Any]:
             "The furthest distance this catalogue actually contains a confirmed detection at, "
             "per method -- not a theoretical instrument sensitivity limit, which depends heavily "
             "on the target star's brightness and the planet's size."
+        ),
+        "pct_within_10deg_of_galactic_centre_by_method": pct_toward_centre_by_method,
+        "galactic_centre_bulge_note": (
+            "Percentage of each method's detections whose real sky position (not the "
+            "Galactocentric transform) falls within 10 degrees of Sagittarius A*. High for "
+            "microlensing because bulge-monitoring surveys point there by design, not because "
+            "planets are physically more common in that direction."
         ),
     }
 

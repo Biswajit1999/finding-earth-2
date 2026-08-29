@@ -94,6 +94,22 @@ export function SiteFooter({
             >
               Repository
             </a>
+            <a
+              href="https://www.linkedin.com/in/biswajit-jana-27011a151/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="link"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://biswajit1999.github.io/Biswajit_Jana.github.io/"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="link"
+            >
+              Portfolio
+            </a>
             <span className="text-[var(--color-faint)]">
               No claim of life detection is made anywhere on this site.
             </span>

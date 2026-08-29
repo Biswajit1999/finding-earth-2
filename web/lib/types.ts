@@ -194,6 +194,8 @@ export interface GalaxyFile {
   disc_year: Maybe[];
   method_shells_pc: Record<string, number>;
   method_shells_note: string;
+  pct_within_10deg_of_galactic_centre_by_method: Record<string, number>;
+  galactic_centre_bulge_note: string;
 }
 
 export interface SummaryFile {

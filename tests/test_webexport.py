@@ -7,6 +7,8 @@ import pandas as pd
 import pytest
 
 from earth2.reporting.webexport import (
+    GALACTIC_CENTRE_DEC_DEG,
+    GALACTIC_CENTRE_RA_DEG,
     GALCEN_DISTANCE_KPC,
     SUN_HEIGHT_PC,
     export_galaxy,
@@ -68,6 +70,27 @@ def test_export_galaxy_method_shells_are_real_catalogue_maxima():
     # than an absent key.
     assert g["method_shells_pc"] == {"Transit": 12.5, "Radial Velocity": 340.0}
     assert "Imaging" not in g["method_shells_pc"]
+
+
+def test_export_galaxy_bulge_direction_uses_raw_ra_dec_not_the_xyz_transform():
+    """A row placed exactly at the Galactic Centre's own sky position must
+    read as 100% "toward the bulge"; a row on the opposite side of the sky
+    must read as 0% -- this exercises the angular-separation formula itself,
+    not just that the key exists with some plausible-looking value."""
+    df = pd.DataFrame(
+        {
+            "pl_name": ["At GC", "Opposite GC"],
+            "hostname": ["h1", "h2"],
+            "ra": [GALACTIC_CENTRE_RA_DEG, (GALACTIC_CENTRE_RA_DEG + 180) % 360],
+            "dec": [GALACTIC_CENTRE_DEC_DEG, -GALACTIC_CENTRE_DEC_DEG],
+            "sy_dist": [1000.0, 1000.0],
+            "earth2_index": [0.1, 0.1],
+            "discoverymethod": ["Microlensing", "Microlensing"],
+            "disc_year": [2020, 2020],
+        }
+    )
+    g = export_galaxy(df)
+    assert g["pct_within_10deg_of_galactic_centre_by_method"]["Microlensing"] == pytest.approx(50.0)
 
 
 def test_export_universe_still_matches_export_galaxy_distance_filter():

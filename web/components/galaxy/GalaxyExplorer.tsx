@@ -125,6 +125,7 @@ export function GalaxyExplorer({
   deepDiveSlugs?: Set<string>;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
+  const [g1Zoom, setG1Zoom] = useState(1);
 
   const shells = useMemo(
     () =>
@@ -145,6 +146,27 @@ export function GalaxyExplorer({
   const gx = (kpc: number) => round2(G_W / 2 + kpc * gScale);
   const gy = (kpc: number) => round2(G_W / 2 - kpc * gScale);
   const localExtentPc = maxShellPc * 1.15;
+
+  // Every system, plotted at its real linear Galactocentric position -- the
+  // same frame the Sun's own marker uses, not a separate compressed scale.
+  // At full zoom-out this is a small, dense smear right on top of the Sun
+  // (everything we've found so far really is that close to us); zooming in
+  // resolves it into the actual cluster.
+  // Zoom scales distance-from-the-Sun in kpc-space, then reprojects to
+  // pixels -- not a naive SVG group scale(), which would also balloon
+  // stroke widths and label text at high zoom. The Sun's own position
+  // (kpc == sun_x/y_kpc) is the fixed point every zoom level pivots on.
+  const gxZoomed = (kpc: number) =>
+    round2(gx(data.sun_x_kpc) + (kpc - data.sun_x_kpc) * gScale * g1Zoom);
+  const gyZoomed = (kpc: number) =>
+    round2(gy(data.sun_y_kpc) - (kpc - data.sun_y_kpc) * gScale * g1Zoom);
+
+  const galaxyPoints = useMemo(
+    () => data.name.map((_, i) => ({ i, kx: data.x_kpc[i]!, ky: data.y_kpc[i]! })),
+    [data],
+  );
+  const zoomG1 = (factor: number) =>
+    setG1Zoom((z) => Math.min(Math.max(z * factor, 1), 40));
 
   /* ---------------- panel 2: local, log-radial, centred on the Sun ---------------- */
   const L_W = 560;
@@ -176,11 +198,42 @@ export function GalaxyExplorer({
       <div className="grid gap-8 lg:grid-cols-2">
         {/* ---------------- panel 1 ---------------- */}
         <div className="panel p-5">
-          <div className="mb-3 flex items-baseline justify-between">
+          <div className="mb-3 flex flex-wrap items-baseline justify-between gap-2">
             <h2 className="font-[family-name:var(--font-display)] text-lg font-medium">
               Where we are in the Milky Way
             </h2>
-            <span className="eyebrow">illustrative background</span>
+            <div className="flex items-center gap-2">
+              <span className="eyebrow">illustrative background</span>
+              <div className="flex items-center gap-1">
+                <button
+                  type="button"
+                  onClick={() => zoomG1(1.6)}
+                  aria-label="Zoom in on the local cluster"
+                  title="Zoom in on the local cluster"
+                  className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-1.5 py-0.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                >
+                  +
+                </button>
+                <button
+                  type="button"
+                  onClick={() => zoomG1(1 / 1.6)}
+                  aria-label="Zoom out"
+                  title="Zoom out"
+                  className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-1.5 py-0.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                >
+                  −
+                </button>
+                {g1Zoom !== 1 && (
+                  <button
+                    type="button"
+                    onClick={() => setG1Zoom(1)}
+                    className="cursor-pointer text-[10.5px] text-[var(--color-cyan)] hover:underline"
+                  >
+                    Reset
+                  </button>
+                )}
+              </div>
+            </div>
           </div>
           <svg viewBox={`0 0 ${G_W} ${G_W}`} role="img" aria-label="Schematic top-down map of the Milky Way showing the Sun's real position" className="w-full">
             <defs>
@@ -223,9 +276,26 @@ export function GalaxyExplorer({
             {/* The ring showing panel 2's extent, for scale */}
             <circle
               cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)}
-              r={round2((localExtentPc / 1000) * gScale)}
+              r={round2((localExtentPc / 1000) * gScale * g1Zoom)}
               fill="none" stroke="var(--color-cyan)" strokeOpacity={0.4} strokeDasharray="2 3"
             />
+
+            {/* Every system we've actually found, at its real position --
+                clipped to the panel so a high zoom doesn't paint outside it. */}
+            <clipPath id="galaxy-panel-clip">
+              <rect x={0} y={0} width={G_W} height={G_W} rx={4} />
+            </clipPath>
+            <g clipPath="url(#galaxy-panel-clip)">
+              {galaxyPoints.map((p) => (
+                <circle
+                  key={p.i}
+                  cx={gxZoomed(p.kx)} cy={gyZoomed(p.ky)}
+                  r={1.1}
+                  fill="var(--color-cyan)"
+                  fillOpacity={0.55}
+                />
+              ))}
+            </g>
 
             {/* The Sun -- real position, in its real home arm */}
             <circle cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)} r={7} fill="#ffd77a" opacity={0.18} />
@@ -255,7 +325,22 @@ export function GalaxyExplorer({
             real: {num(data.galcen_distance_kpc, 2)} kpc from the Galactic Centre (
             {data.galcen_distance_citation}), {num(data.sun_height_pc, 1)} pc above the midplane (
             {data.sun_height_citation}). The dashed cyan ring marks the extent of the panel on the
-            right — everything we&apos;ve found so far is that small a fraction of the galaxy.
+            right — everything we&apos;ve found so far is that small a fraction of the galaxy. The
+            faint cyan dots are every one of the {compactInt(data.n_points)} systems in this
+            catalogue, plotted at their real position — at this scale they sit almost on top of
+            the Sun, which is itself the finding; use the{" "}
+            <span className="font-[family-name:var(--font-mono)]">+</span> control above to zoom
+            into the cluster and see it resolve. Zoomed in, one thin streak reaches toward the
+            Galactic Centre — that is not planets being more common there. {data.galactic_centre_bulge_note}{" "}
+            In this catalogue,{" "}
+            {num(data.pct_within_10deg_of_galactic_centre_by_method["Microlensing"] ?? null, 1)}%
+            of Microlensing detections fall within 10° of Sagittarius A* on the real sky, against{" "}
+            {num(data.pct_within_10deg_of_galactic_centre_by_method["Transit"] ?? null, 1)}% for
+            Transit and{" "}
+            {num(data.pct_within_10deg_of_galactic_centre_by_method["Radial Velocity"] ?? null, 1)}%
+            for Radial Velocity — computed straight from each system&apos;s archive right
+            ascension and declination, independent of the Galactocentric coordinates plotted
+            above.
           </p>
         </div>
 
