@@ -31,32 +31,89 @@ const NAMED_METHODS = [
   "Transit Timing Variations",
 ] as const;
 
-function SpiralArm({ armIndex, colour }: { armIndex: number; colour: string }) {
-  // A logarithmic spiral, r = a * e^(b*theta) -- the standard idealised model
-  // for a galaxy's spiral arms. This is a schematic shape, not a fit to any
-  // measured arm pitch angle.
+// Deterministic pseudo-random in [0,1) -- NOT Math.random(). The star-dust
+// texture must render identically on the server and the client; a real RNG
+// would reroll on every render and re-trigger the exact float-mismatch
+// hydration bug already fixed once on this page (see gx/gy/lRadius above).
+function hash(i: number): number {
+  const s = Math.sin(i * 12.9898 + 78.233) * 43758.5453;
+  return s - Math.floor(s);
+}
+
+/**
+ * One arm of a logarithmic spiral, r = a * e^(b*theta) -- the standard
+ * idealised model for a spiral galaxy's arms. The Milky Way is currently
+ * modelled as two major stellar arms (Perseus, Scutum-Centaurus) attached to
+ * a central bar, plus two more minor gas-dominated arms (Sagittarius,
+ * Norma/Outer) -- real structure, established from infrared star-count
+ * surveys (Benjamin et al. 2005, ApJ 630, L149), but this drawing is a
+ * schematic shape, not a fit to any measured pitch angle or arm width.
+ */
+function SpiralArm({
+  armIndex,
+  colour,
+  width,
+  opacity,
+  label,
+}: {
+  armIndex: number;
+  colour: string;
+  width: number;
+  opacity: number;
+  label: string;
+}) {
   const a = 6;
   const b = 0.19;
-  const offset = (armIndex * Math.PI * 2) / 2;
-  const points: string[] = [];
+  const offset = (armIndex * Math.PI) / 2;
+  const points: { x: number; y: number }[] = [];
   for (let t = 0; t <= 620; t += 4) {
     const theta = (t / 100) * Math.PI + offset;
     const r = a * Math.exp(b * theta * 0.62);
-    if (r > 175) break;
-    const x = 250 + r * Math.cos(theta);
-    const y = 250 + r * Math.sin(theta);
-    points.push((points.length === 0 ? "M" : "L") + x.toFixed(1) + " " + y.toFixed(1));
+    if (r > 178) break;
+    points.push({ x: 250 + r * Math.cos(theta), y: 250 + r * Math.sin(theta) });
   }
+  const d = points
+    .map((p, i) => (i === 0 ? "M" : "L") + p.x.toFixed(1) + " " + p.y.toFixed(1))
+    .join(" ");
+  const end = points[points.length - 1];
   return (
-    <path
-      d={points.join(" ")}
-      fill="none"
-      stroke={colour}
-      strokeWidth={10}
-      strokeLinecap="round"
-      opacity={0.14}
-    />
+    <>
+      <path d={d} fill="none" stroke={colour} strokeWidth={width} strokeLinecap="round" opacity={opacity} />
+      {end && (
+        <text
+          x={end.x.toFixed(1)} y={end.y.toFixed(1)}
+          fontSize={7.5} fill={colour} opacity={0.75}
+          textAnchor={end.x > 250 ? "start" : "end"}
+          dx={end.x > 250 ? 4 : -4}
+          fontFamily="var(--font-mono)"
+        >
+          {label}
+        </text>
+      )}
+    </>
   );
+}
+
+const ARMS = [
+  { colour: "var(--color-sci)", width: 13, opacity: 0.22, label: "Perseus Arm" },
+  { colour: "var(--color-violet)", width: 9, opacity: 0.16, label: "Norma Arm" },
+  { colour: "var(--color-sci)", width: 13, opacity: 0.22, label: "Scutum–Centaurus Arm" },
+  { colour: "var(--color-violet)", width: 9, opacity: 0.16, label: "Sagittarius Arm" },
+];
+
+/** Fixed, deterministic star-dust scatter -- texture, not data. */
+function StarDust({ count, seedOffset }: { count: number; seedOffset: number }) {
+  const dots = [];
+  for (let i = 0; i < count; i++) {
+    const angle = hash(i + seedOffset) * Math.PI * 2;
+    const r = 22 + Math.sqrt(hash(i + seedOffset + 900)) * 185;
+    const x = (250 + r * Math.cos(angle)).toFixed(1);
+    const y = (250 + r * Math.sin(angle)).toFixed(1);
+    const rad = (0.4 + hash(i + seedOffset + 1800) * 0.7).toFixed(2);
+    const op = (0.15 + hash(i + seedOffset + 2700) * 0.35).toFixed(2);
+    dots.push(<circle key={i} cx={x} cy={y} r={rad} fill="var(--color-ivory)" opacity={op} />);
+  }
+  return <>{dots}</>;
 }
 
 export function GalaxyExplorer({
@@ -126,12 +183,37 @@ export function GalaxyExplorer({
             <span className="eyebrow">illustrative background</span>
           </div>
           <svg viewBox={`0 0 ${G_W} ${G_W}`} role="img" aria-label="Schematic top-down map of the Milky Way showing the Sun's real position" className="w-full">
+            <defs>
+              <radialGradient id="galaxy-disk-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="var(--color-sci)" stopOpacity={0.1} />
+                <stop offset="70%" stopColor="var(--color-sci)" stopOpacity={0.03} />
+                <stop offset="100%" stopColor="var(--color-sci)" stopOpacity={0} />
+              </radialGradient>
+              <radialGradient id="galaxy-bulge-glow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stopColor="#ffe0a3" stopOpacity={0.55} />
+                <stop offset="45%" stopColor="var(--color-gold)" stopOpacity={0.28} />
+                <stop offset="100%" stopColor="var(--color-gold)" stopOpacity={0} />
+              </radialGradient>
+            </defs>
+
+            <circle cx={G_W / 2} cy={G_W / 2} r={G_R} fill="url(#galaxy-disk-glow)" />
             <circle cx={G_W / 2} cy={G_W / 2} r={G_R} fill="none" stroke="var(--color-line)" strokeDasharray="2 4" />
-            <circle cx={G_W / 2} cy={G_W / 2} r={70} fill="var(--color-gold)" opacity={0.1} />
-            <circle cx={G_W / 2} cy={G_W / 2} r={38} fill="var(--color-gold)" opacity={0.14} />
-            {[0, 1].map((i) => (
-              <SpiralArm key={i} armIndex={i} colour="var(--color-sci)" />
+
+            <StarDust count={170} seedOffset={0} />
+
+            {ARMS.map((arm, i) => (
+              <SpiralArm key={i} armIndex={i} colour={arm.colour} width={arm.width} opacity={arm.opacity} label={arm.label} />
             ))}
+
+            {/* The central bar -- the Milky Way is now known to be a barred
+                spiral (Benjamin et al. 2005), not a plain circular bulge. */}
+            <ellipse
+              cx={G_W / 2} cy={G_W / 2} rx={62} ry={20}
+              transform={`rotate(25 ${G_W / 2} ${G_W / 2})`}
+              fill="url(#galaxy-bulge-glow)"
+            />
+            <circle cx={G_W / 2} cy={G_W / 2} r={58} fill="url(#galaxy-bulge-glow)" />
+
             {/* Galactic Centre */}
             <circle cx={G_W / 2} cy={G_W / 2} r={2.5} fill="var(--color-ivory)" />
             <text x={G_W / 2} y={G_W / 2 - 10} fontSize={9} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)">
@@ -145,7 +227,8 @@ export function GalaxyExplorer({
               fill="none" stroke="var(--color-cyan)" strokeOpacity={0.4} strokeDasharray="2 3"
             />
 
-            {/* The Sun -- real position */}
+            {/* The Sun -- real position, in its real home arm */}
+            <circle cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)} r={7} fill="#ffd77a" opacity={0.18} />
             <circle cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)} r={4} fill="#ffd77a" />
             <text
               x={gx(data.sun_x_kpc)} y={gy(data.sun_y_kpc) - 9}
@@ -153,15 +236,23 @@ export function GalaxyExplorer({
             >
               ☉ you are here
             </text>
+            <text
+              x={gx(data.sun_x_kpc)} y={gy(data.sun_y_kpc) + 16}
+              fontSize={8} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)"
+            >
+              Orion Spur (Local Arm)
+            </text>
 
             <text x={G_W / 2} y={G_W - 8} fontSize={9} fill="var(--color-faint)" textAnchor="middle" fontFamily="var(--font-mono)">
               ~{G_KPC * 2} kpc across · linear scale
             </text>
           </svg>
           <p className="mt-3 text-[11.5px] leading-relaxed text-[var(--color-muted)]">
-            The spiral structure is a schematic illustration, not measured data — nobody has
-            photographed the Milky Way from outside it. The Sun&apos;s position is real:{" "}
-            {num(data.galcen_distance_kpc, 2)} kpc from the Galactic Centre (
+            The spiral arms, central bar, and Orion Spur are drawn schematically — nobody has
+            photographed the Milky Way from outside it — but the arm names and the barred
+            structure are real, established from infrared star-count surveys (Benjamin et al.
+            2005, ApJ 630, L149), not invented for this illustration. The Sun&apos;s position is
+            real: {num(data.galcen_distance_kpc, 2)} kpc from the Galactic Centre (
             {data.galcen_distance_citation}), {num(data.sun_height_pc, 1)} pc above the midplane (
             {data.sun_height_citation}). The dashed cyan ring marks the extent of the panel on the
             right — everything we&apos;ve found so far is that small a fraction of the galaxy.
