@@ -14,7 +14,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { Suspense, useMemo, useRef, useState } from "react";
+import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
 import { StarField, type ColourMode } from "@/components/three/StarField";
 import type { UniverseFile } from "@/lib/types";
@@ -168,6 +168,30 @@ export function UniverseExplorer({
   );
   const [distRange, setDistRange] = useState<[number, number]>(() => [0, maxDistPc]);
 
+  const discoveryYears = useMemo(
+    () => data.disc_year.filter((year): year is number => Number.isFinite(year)),
+    [data.disc_year],
+  );
+  const minDiscoveryYear = discoveryYears.length ? Math.min(...discoveryYears) : 1992;
+  const maxDiscoveryYear = discoveryYears.length ? Math.max(...discoveryYears) : minDiscoveryYear;
+  const unknownDiscoveryYears = data.n_points - discoveryYears.length;
+  const [discoveryYear, setDiscoveryYear] = useState(maxDiscoveryYear);
+  const [playingHistory, setPlayingHistory] = useState(false);
+
+  useEffect(() => {
+    if (!playingHistory) return;
+    const timer = window.setInterval(() => {
+      setDiscoveryYear((year) => {
+        if (year >= maxDiscoveryYear) {
+          setPlayingHistory(false);
+          return maxDiscoveryYear;
+        }
+        return year + 1;
+      });
+    }, reduced ? 900 : 420);
+    return () => window.clearInterval(timer);
+  }, [playingHistory, maxDiscoveryYear, reduced]);
+
   const methodCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     for (const g of ALL_METHOD_GROUPS) counts[g] = 0;
@@ -204,15 +228,19 @@ export function UniverseExplorer({
       const d = data.dist_pc[i];
       const distOk = d >= lo && d <= hi;
       const methodOk = allMethods || activeMethods.has(methodGroup(data.method[i]));
-      if (distOk && methodOk) {
+      const year = data.disc_year[i];
+      const yearOk = Number.isFinite(year)
+        ? (year as number) <= discoveryYear
+        : discoveryYear === maxDiscoveryYear;
+      if (distOk && methodOk && yearOk) {
         mask[i] = 1;
         nVisible++;
       }
     }
     return { mask, nVisible };
-  }, [data, distRange, activeMethods]);
+  }, [data, distRange, activeMethods, discoveryYear, maxDiscoveryYear]);
 
-  const filtersActive = distRange[0] > 0 || distRange[1] < maxDistPc || activeMethods.size < ALL_METHOD_GROUPS.length;
+  const filtersActive = distRange[0] > 0 || distRange[1] < maxDistPc || activeMethods.size < ALL_METHOD_GROUPS.length || discoveryYear < maxDiscoveryYear;
 
   const info = selected !== null ? selected : null;
 
@@ -383,6 +411,8 @@ export function UniverseExplorer({
                     onClick={() => {
                       setDistRange([0, maxDistPc]);
                       setActiveMethods(new Set(ALL_METHOD_GROUPS));
+                      setDiscoveryYear(maxDiscoveryYear);
+                      setPlayingHistory(false);
                     }}
                     className="cursor-pointer text-[10.5px] text-[var(--color-cyan)] hover:underline"
                   >
@@ -542,11 +572,70 @@ export function UniverseExplorer({
             </div>
           )}
 
-          <div className="pointer-events-none self-end font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)]">
-            {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)} systems shown ·{" "}
-            {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
-            orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click
-            a star
+          <div className="flex w-full items-end justify-between gap-3">
+            <div className="pointer-events-auto panel-raised w-full max-w-xl p-3" aria-label="Discovery history controls">
+              <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
+                <div>
+                  <p className="eyebrow">Discovery history · through {discoveryYear}</p>
+                  <p className="mt-0.5 text-[10.5px] text-[var(--color-muted)]">
+                    Archive chronology—not stellar motion. The map grows as discoveries enter the record.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => {
+                      if (discoveryYear >= maxDiscoveryYear) setDiscoveryYear(minDiscoveryYear);
+                      setPlayingHistory((value) => !value);
+                    }}
+                    aria-pressed={playingHistory}
+                    className="min-h-9 cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-3 py-1 text-[11px] text-[var(--color-ivory)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                  >
+                    {playingHistory ? "Pause" : "Play"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setPlayingHistory(false);
+                      setDiscoveryYear(maxDiscoveryYear);
+                    }}
+                    className="min-h-9 cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-3 py-1 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                  >
+                    Show all
+                  </button>
+                </div>
+              </div>
+              <input
+                type="range"
+                min={minDiscoveryYear}
+                max={maxDiscoveryYear}
+                step={1}
+                value={discoveryYear}
+                onChange={(event) => {
+                  setPlayingHistory(false);
+                  setDiscoveryYear(Number(event.target.value));
+                }}
+                aria-label="Latest discovery year shown"
+                aria-valuetext={`Discoveries through ${discoveryYear}`}
+                className="w-full accent-[var(--color-cyan)]"
+              />
+              <div className="mt-0.5 flex justify-between font-[family-name:var(--font-mono)] text-[10px] text-[var(--color-muted)]">
+                <span>{minDiscoveryYear}</span>
+                <span aria-live="polite">{compactInt(filterMask.nVisible)} systems visible</span>
+                <span>{maxDiscoveryYear}</span>
+              </div>
+              {unknownDiscoveryYears > 0 && discoveryYear === maxDiscoveryYear && (
+                <p className="mt-1 text-[10px] text-[var(--color-faint)]">
+                  “Show all” also includes {compactInt(unknownDiscoveryYears)} records without a discovery year.
+                </p>
+              )}
+            </div>
+            <div className="pointer-events-none hidden max-w-md text-right font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)] xl:block">
+              {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)} systems shown ·{" "}
+              {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
+              orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click
+              a star
+            </div>
           </div>
         </div>
 
