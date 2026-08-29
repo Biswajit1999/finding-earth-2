@@ -147,19 +147,17 @@ export function GalaxyExplorer({
   const gy = (kpc: number) => round2(G_W / 2 - kpc * gScale);
   const localExtentPc = maxShellPc * 1.15;
 
-  // Every system, plotted at its real linear Galactocentric position -- the
-  // same frame the Sun's own marker uses, not a separate compressed scale.
-  // At full zoom-out this is a small, dense smear right on top of the Sun
-  // (everything we've found so far really is that close to us); zooming in
-  // resolves it into the actual cluster.
-  // Zoom scales distance-from-the-Sun in kpc-space, then reprojects to
-  // pixels -- not a naive SVG group scale(), which would also balloon
-  // stroke widths and label text at high zoom. The Sun's own position
-  // (kpc == sun_x/y_kpc) is the fixed point every zoom level pivots on.
-  const gxZoomed = (kpc: number) =>
-    round2(gx(data.sun_x_kpc) + (kpc - data.sun_x_kpc) * gScale * g1Zoom);
-  const gyZoomed = (kpc: number) =>
-    round2(gy(data.sun_y_kpc) - (kpc - data.sun_y_kpc) * gScale * g1Zoom);
+  // A real SVG camera: shrink the viewBox and move its centre from the
+  // Galactic Centre to the Sun over the first few zoom steps. All geometry
+  // stays in one Galactocentric coordinate frame; only the camera changes.
+  const sunPx = gx(data.sun_x_kpc);
+  const sunPy = gy(data.sun_y_kpc);
+  const focusRaw = Math.min(1, Math.max(0, (g1Zoom - 1) / 2.2));
+  const focus = focusRaw * focusRaw * (3 - 2 * focusRaw);
+  const g1ViewSize = round2(G_W / g1Zoom);
+  const g1ViewCx = round2(G_W / 2 + (sunPx - G_W / 2) * focus);
+  const g1ViewCy = round2(G_W / 2 + (sunPy - G_W / 2) * focus);
+  const g1ViewBox = `${round2(g1ViewCx - g1ViewSize / 2)} ${round2(g1ViewCy - g1ViewSize / 2)} ${g1ViewSize} ${g1ViewSize}`;
 
   const galaxyPoints = useMemo(
     () => data.name.map((_, i) => ({ i, kx: data.x_kpc[i]!, ky: data.y_kpc[i]! })),
@@ -173,6 +171,20 @@ export function GalaxyExplorer({
   const L_R = 250;
   const logMax = Math.log10(1 + localExtentPc);
   const lRadius = (pc: number) => round2((Math.log10(1 + Math.max(pc, 0)) / logMax) * L_R);
+
+  // Direct labels are placed in a deterministic lane instead of at arbitrary
+  // angles around nested circles. This guarantees a minimum vertical gap and
+  // makes each leader line traceable back to its shell.
+  const shellLabels = useMemo(() => {
+    const top = 22;
+    const gap = 16;
+    return shells
+      .map(([method, pc]) => ({ method, pc, radius: lRadius(pc) }))
+      .sort((a, b) => b.radius - a.radius)
+      .map((item, index) => ({ ...item, labelY: top + index * gap }));
+    // lRadius is derived entirely from shells/localExtentPc.
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [shells, localExtentPc]);
 
   const points = useMemo(() => {
     return data.name.map((name, i) => {
@@ -203,7 +215,7 @@ export function GalaxyExplorer({
               Where we are in the Milky Way
             </h2>
             <div className="flex items-center gap-2">
-              <span className="eyebrow">illustrative background</span>
+              <span className="eyebrow">{g1Zoom.toFixed(1)}× camera · illustrative arms</span>
               <div className="flex items-center gap-1">
                 <button
                   type="button"
@@ -235,7 +247,7 @@ export function GalaxyExplorer({
               </div>
             </div>
           </div>
-          <svg viewBox={`0 0 ${G_W} ${G_W}`} role="img" aria-label="Schematic top-down map of the Milky Way showing the Sun's real position" className="w-full">
+          <svg viewBox={g1ViewBox} role="img" aria-label="Schematic top-down map of the Milky Way showing the Sun's real position" className="w-full">
             <defs>
               <radialGradient id="galaxy-disk-glow" cx="50%" cy="50%" r="50%">
                 <stop offset="0%" stopColor="var(--color-sci)" stopOpacity={0.1} />
@@ -255,7 +267,7 @@ export function GalaxyExplorer({
             <StarDust count={170} seedOffset={0} />
 
             {ARMS.map((arm, i) => (
-              <SpiralArm key={i} armIndex={i} colour={arm.colour} width={arm.width} opacity={arm.opacity} label={arm.label} />
+              <SpiralArm key={i} armIndex={i} colour={arm.colour} width={arm.width} opacity={arm.opacity} label={g1Zoom <= 1.25 ? arm.label : ""} />
             ))}
 
             {/* The central bar -- the Milky Way is now known to be a barred
@@ -269,15 +281,18 @@ export function GalaxyExplorer({
 
             {/* Galactic Centre */}
             <circle cx={G_W / 2} cy={G_W / 2} r={2.5} fill="var(--color-ivory)" />
-            <text x={G_W / 2} y={G_W / 2 - 10} fontSize={9} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)">
-              Galactic Centre
-            </text>
+            {g1Zoom <= 1.25 && (
+              <text x={G_W / 2} y={G_W / 2 - 10} fontSize={9} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)">
+                Galactic Centre
+              </text>
+            )}
 
             {/* The ring showing panel 2's extent, for scale */}
             <circle
-              cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)}
-              r={round2((localExtentPc / 1000) * gScale * g1Zoom)}
-              fill="none" stroke="var(--color-cyan)" strokeOpacity={0.4} strokeDasharray="2 3"
+              cx={sunPx} cy={sunPy}
+              r={round2((localExtentPc / 1000) * gScale)}
+              fill="none" stroke="var(--color-cyan)" strokeOpacity={g1Zoom <= 1.25 ? 0.4 : 0} strokeDasharray="2 3"
+              vectorEffect="non-scaling-stroke"
             />
 
             {/* Every system we've actually found, at its real position --
@@ -289,8 +304,8 @@ export function GalaxyExplorer({
               {galaxyPoints.map((p) => (
                 <circle
                   key={p.i}
-                  cx={gxZoomed(p.kx)} cy={gyZoomed(p.ky)}
-                  r={1.1}
+                  cx={gx(p.kx)} cy={gy(p.ky)}
+                  r={1.1 / g1Zoom}
                   fill="var(--color-cyan)"
                   fillOpacity={0.55}
                 />
@@ -298,24 +313,28 @@ export function GalaxyExplorer({
             </g>
 
             {/* The Sun -- real position, in its real home arm */}
-            <circle cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)} r={7} fill="#ffd77a" opacity={0.18} />
-            <circle cx={gx(data.sun_x_kpc)} cy={gy(data.sun_y_kpc)} r={4} fill="#ffd77a" />
+            <circle cx={sunPx} cy={sunPy} r={7 / g1Zoom} fill="#ffd77a" opacity={0.18} />
+            <circle cx={sunPx} cy={sunPy} r={4 / g1Zoom} fill="#ffd77a" />
             <text
-              x={gx(data.sun_x_kpc)} y={gy(data.sun_y_kpc) - 9}
-              fontSize={10} fill="var(--color-ivory)" textAnchor="middle" fontFamily="var(--font-mono)" fontWeight={600}
+              x={sunPx} y={sunPy - 9 / g1Zoom}
+              fontSize={10 / g1Zoom} fill="var(--color-ivory)" textAnchor="middle" fontFamily="var(--font-mono)" fontWeight={600}
             >
               ☉ you are here
             </text>
-            <text
-              x={gx(data.sun_x_kpc)} y={gy(data.sun_y_kpc) + 16}
-              fontSize={8} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)"
-            >
-              Orion Spur (Local Arm)
-            </text>
+            {g1Zoom <= 3 && (
+              <text
+                x={sunPx} y={sunPy + 16 / g1Zoom}
+                fontSize={8 / g1Zoom} fill="var(--color-muted)" textAnchor="middle" fontFamily="var(--font-mono)"
+              >
+                Orion Spur (Local Arm)
+              </text>
+            )}
 
-            <text x={G_W / 2} y={G_W - 8} fontSize={9} fill="var(--color-faint)" textAnchor="middle" fontFamily="var(--font-mono)">
-              ~{G_KPC * 2} kpc across · linear scale
-            </text>
+            {g1Zoom === 1 && (
+              <text x={G_W / 2} y={G_W - 8} fontSize={9} fill="var(--color-faint)" textAnchor="middle" fontFamily="var(--font-mono)">
+                ~{G_KPC * 2} kpc across · linear scale
+              </text>
+            )}
           </svg>
           <p className="mt-3 text-[11.5px] leading-relaxed text-[var(--color-muted)]">
             The spiral arms, central bar, and Orion Spur are drawn schematically — nobody has
@@ -353,27 +372,40 @@ export function GalaxyExplorer({
             <span className="eyebrow">{compactInt(data.n_points)} systems</span>
           </div>
           <svg viewBox={`0 0 ${L_W} ${L_W}`} role="img" aria-label="Systems plotted around the Sun, with detection-distance shells per method" className="w-full">
-            {shells.map(([method, pc]) => (
-              <g key={method}>
+            {shellLabels.map(({ method, pc, radius, labelY }) => {
+              const anchorAngle = -0.72;
+              const anchorX = round2(L_W / 2 + radius * Math.cos(anchorAngle));
+              const anchorY = round2(L_W / 2 + radius * Math.sin(anchorAngle));
+              return (
+              <g key={method} data-shell-label={method}>
                 <circle
-                  cx={L_W / 2} cy={L_W / 2} r={lRadius(pc)}
+                  cx={L_W / 2} cy={L_W / 2} r={radius}
                   fill="none"
                   stroke={methodColour(method)}
                   strokeOpacity={0.35}
                   strokeDasharray="2 3"
                 />
+                <path
+                  d={`M ${anchorX} ${anchorY} L 360 ${labelY} L 368 ${labelY}`}
+                  fill="none"
+                  stroke={methodColour(method)}
+                  strokeOpacity={0.65}
+                  strokeWidth={0.8}
+                />
+                <rect x={366} y={labelY - 8.5} width={186} height={13} rx={2} fill="var(--color-void)" fillOpacity={0.9} />
                 <text
-                  x={round2(L_W / 2 + lRadius(pc) * Math.cos(-0.35 - NAMED_METHODS.indexOf(method as (typeof NAMED_METHODS)[number]) * 0.5))}
-                  y={round2(L_W / 2 + lRadius(pc) * Math.sin(-0.35 - NAMED_METHODS.indexOf(method as (typeof NAMED_METHODS)[number]) * 0.5))}
+                  x={548}
+                  y={labelY}
                   fontSize={9}
                   fill={methodColour(method)}
-                  textAnchor="middle"
+                  textAnchor="end"
                   fontFamily="var(--font-mono)"
                 >
                   {method} · {compactInt(Math.round(pc))} pc
                 </text>
               </g>
-            ))}
+              );
+            })}
 
             {points.map((p) => (
               <circle
