@@ -17,8 +17,8 @@ const researchSections = [
   { href: "#datasets", label: "Evidence base", detail: "04–07" },
   { href: "#hz-model", label: "Physical models", detail: "08–10" },
   { href: "#transit", label: "Observations", detail: "11–14" },
-  { href: "#ranking", label: "Ranking", detail: "15–17" },
-  { href: "#biases", label: "Interpretation", detail: "18–22" },
+  { href: "#ranking", label: "Ranking", detail: "15–18" },
+  { href: "#biases", label: "Interpretation", detail: "19–23" },
 ] as const;
 
 export default function ResearchPage() {
@@ -619,7 +619,62 @@ export default function ResearchPage() {
           }
         />
 
-        <h2 id="deep-dives">16. Deep-dive systems</h2>
+        <h2 id="related-work">16. How this compares to existing habitability catalogues</h2>
+        <p>
+          The weighted geometric mean above is not a new idea. The Statistical-likelihood
+          Exo-Planetary Habitability Index (SEPHI; Rodríguez-Mozos &amp; Moya 2017, MNRAS
+          471, 4628) already combines four physical sub-likelihoods the same multiplicative
+          way, propagating Monte Carlo uncertainty (up to 10,000 realisations) through the
+          calculation — but reports it as a single symmetric error bar around the final
+          score. The Planetary Habitability Laboratory&rsquo;s Habitable Exoplanets Catalog
+          similarly reports several independent metrics side by side (the Earth Similarity
+          Index, Habitable Zone Distance, and Global Primary Habitability) without collapsing
+          them into one number, but none of the three is itself a measurement-confidence term.
+        </p>
+        <p>
+          What we did not find in the published methodology of either tool — nor in a search
+          of the broader 2015–2026 literature on composite habitability indices — is{" "}
+          <strong>measurement confidence combined into the composite as a peer axis</strong>,
+          rather than reported only as an error bar wrapped around a purely physical score.
+          SEPHI&rsquo;s four sub-likelihoods (surface, escape velocity, atmosphere, thermal)
+          all describe the planet&rsquo;s physical state; none of them represents how well
+          that state is actually known. Here, observational confidence — the fraction of
+          Monte Carlo draws for which the habitable-zone model is even valid for the host
+          star&rsquo;s temperature, and whether mass is dynamically measured or inferred from
+          a mass&ndash;radius relation — carries its own weight in the same product that
+          determines the composite index, so a planet that looks Earth-like on paper but is
+          poorly measured cannot simply outrank one that is measured well. This is a
+          difference in what goes into the combination, not a claim to have invented
+          non-compensatory scoring, which SEPHI already uses.
+        </p>
+        <p>
+          Three smaller, more specific things we looked for and could not find precedent for:
+          (1) a public catalogue that explicitly computes and displays <em>both</em> a strict
+          reading (excluded) and a labelled extrapolated reading for a host star below the
+          Kopparapu et al. (2013) model&rsquo;s calibrated 2600 K floor — TRAPPIST-1 at 2566 K
+          being the clearest case — rather than silently extrapolating or silently excluding;
+          (2) an empirical &ldquo;how far has each detection method actually reached&rdquo;
+          statistic, computed as the real maximum confirmed-detection distance per method in a
+          live catalogue, as distinct from a theoretical instrument-sensitivity claim (see the{" "}
+          <Link href="/galaxy" className="link">
+            Galaxy
+          </Link>{" "}
+          page); and (3) the specific combination of archive-manifest provenance (a SHA-256 of
+          every retrieved payload), continuous-integration checks that re-execute every
+          reproducibility notebook on each push, and a click-to-trace interface connecting a
+          displayed number back to its originating archive query, applied together on a
+          public-facing habitability catalogue.
+        </p>
+        <p>
+          Gaia DR3 cross-matching by exact <code>source_id</code> and RUWE-based
+          unresolved-binary flagging (Section 7) is <em>not</em> claimed as original — it is
+          now standard practice in the professional literature for characterising exoplanet
+          host stars (e.g. Gaia DR3 detectability of unresolved binary systems, A&amp;A 2024),
+          and is used here for exactly that reason: it is the established way to catch a false
+          positive from an unresolved companion, not a novel technique of ours.
+        </p>
+
+        <h2 id="deep-dives">17. Deep-dive systems</h2>
         <p>
           The ten highest-ranked candidates are selected purely from the computed
           index, never hand-picked, and receive full deep-dive treatment: every
@@ -631,7 +686,7 @@ export default function ResearchPage() {
           run through the identical pipeline as labelled comparison controls.
         </p>
 
-        <h2 id="results">17. Results</h2>
+        <h2 id="results">18. Results</h2>
         <p>
           Of {compactInt(nPlanets)} confirmed planets, {compactInt(
             cov.n_with_measured_mass,
@@ -705,7 +760,7 @@ export default function ResearchPage() {
           }
         />
 
-        <h2 id="biases">18. Observational biases</h2>
+        <h2 id="biases">19. Observational biases</h2>
         <p>
           The discovery-method distribution in this catalogue is the shape of
           our instruments, not the true underlying planet population. Transit
@@ -731,7 +786,7 @@ export default function ResearchPage() {
           underlying population is shaped that way.
         </SideNote>
 
-        <h2 id="limitations">19. Limitations</h2>
+        <h2 id="limitations">20. Limitations</h2>
         <p>
           The full accounting is in{" "}
           <Link href="/limitations" className="link">
@@ -747,7 +802,7 @@ export default function ResearchPage() {
           generation of instruments.
         </p>
 
-        <h2 id="future">20. Future observations</h2>
+        <h2 id="future">21. Future observations</h2>
         <p>
           Follow-up is split into independent observing lanes. For transiting
           candidates, the Kempton et al. (2018) Transmission and Emission
@@ -762,7 +817,7 @@ export default function ResearchPage() {
           called a detection limit, and none enters the default Earth-2.0 index.
         </p>
 
-        <h2 id="conclusions">21. Conclusions</h2>
+        <h2 id="conclusions">22. Conclusions</h2>
         <p>
           The search for Earth 2.0 is not currently constrained by the number of
           known exoplanets. It is constrained by how few of them are measured
@@ -773,7 +828,7 @@ export default function ResearchPage() {
           explicit at every step.
         </p>
 
-        <h2 id="references">22. References</h2>
+        <h2 id="references">23. References</h2>
         <p>
           The full bibliography, with per-measurement links back to{" "}
           {compactInt(prov?.n_distinct_publications ?? 0)} distinct publications
@@ -784,7 +839,8 @@ export default function ResearchPage() {
           page. Key methodological citations: Kopparapu et al. (2013, ApJ 765,
           131, with the 2013 erratum ApJ 770, 82); Schulze-Makuch et al. (2011,
           Astrobiology 11, 1041); Rogers (2015, ApJ 801, 41); Fulton et al.
-          (2017, AJ 154, 109); Kempton et al. (2018, PASP 130, 114401).
+          (2017, AJ 154, 109); Kempton et al. (2018, PASP 130, 114401);
+          Rodríguez-Mozos &amp; Moya (2017, MNRAS 471, 4628).
         </p>
         </div>
 
