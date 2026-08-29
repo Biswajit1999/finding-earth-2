@@ -81,6 +81,7 @@ export function StarField({
   rotate = true,
   rotationSpeed = 0.05,
   twinkle = true,
+  brightness = 1,
   visibleMask,
   onSelect,
   showDistanceLines = false,
@@ -101,6 +102,8 @@ export function StarField({
    * the camera. This should be wired straight to prefers-reduced-motion.
    */
   twinkle?: boolean;
+  /** Display-only luminance multiplier; positions, colours and ranking are unchanged. */
+  brightness?: number;
   /** When present, index i is hidden (size forced to 0) unless visibleMask[i] is truthy. */
   visibleMask?: Uint8Array;
   /** Fires with the vertex index of the star the viewer clicked. */
@@ -213,7 +216,10 @@ export function StarField({
     return g;
   }, [positions, colours, sizes, phases, confidences, selections]);
 
-  const uniforms = useMemo(() => ({ uTime: { value: 0 } }), []);
+  const uniforms = useMemo(
+    () => ({ uTime: { value: 0 }, uBrightness: { value: brightness } }),
+    [brightness],
+  );
 
   // One segment (Sun -> system) per currently-visible point, in a single
   // LineSegments draw call. Kept very faint: at full n=6,327 this reads as a
@@ -338,6 +344,7 @@ export function StarField({
             }
           `}
           fragmentShader={`
+            uniform float uBrightness;
             varying vec3 vColor;
             varying float vConf;
             varying float vSelected;
@@ -364,7 +371,10 @@ export function StarField({
               // Lift the display luminance while preserving the underlying
               // colour ordering. In particular, low-index viridis purple
               // otherwise becomes almost invisible against the dark field.
-              vec3 displayColor = min(vColor * 1.35 + vec3(0.045), vec3(1.0));
+              vec3 displayColor = min(
+                (vColor * 1.35 + vec3(0.045)) * uBrightness,
+                vec3(1.0)
+              );
               gl_FragColor = vec4(displayColor, alpha * vConf);
             }
           `}

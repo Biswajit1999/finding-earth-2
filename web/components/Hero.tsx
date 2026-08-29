@@ -135,6 +135,7 @@ export function Hero({
                 rotate={!reduced}
                 rotationSpeed={0.014}
                 pointScale={1}
+                brightness={1.65}
               />
             </Suspense>
           </Canvas>

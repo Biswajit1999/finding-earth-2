@@ -61,6 +61,3 @@ results/analysis_catalogue.parquet
 # `python -m earth2 deepdive --transit --rv`. The web export under
 # web/public/data/ IS committed, because the site must build without network.
 results/deepdive/**
-
-# Local AI-assistant tooling config -- never part of the project deliverable
-.claude/
