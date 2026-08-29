@@ -85,7 +85,7 @@ export function SiteFooter({
             for full acknowledgements.
           </p>
           <div className="mt-8 flex flex-col items-center text-center">
-            <p className="eyebrow">Research and engineering by</p>
+            <p className="eyebrow">Created by</p>
             <p className="mt-2 font-[family-name:var(--font-display)] text-2xl text-[var(--color-ivory)]">
               Biswajit Jana
             </p>
