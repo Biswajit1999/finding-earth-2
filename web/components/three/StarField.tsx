@@ -22,7 +22,7 @@ import type { UniverseFile } from "@/lib/types";
 
 export type ColourMode = "index" | "teff" | "method" | "distance";
 
-const METHOD_COLOURS: Record<string, [number, number, number]> = {
+export const METHOD_COLOURS: Record<string, [number, number, number]> = {
   Transit: [0.357, 0.553, 0.937],
   "Radial Velocity": [0.878, 0.639, 0.243],
   Microlensing: [0.31, 0.69, 0.478],
@@ -42,7 +42,7 @@ export function teffColour(t: number | null): [number, number, number] {
 }
 
 /** Viridis-like ramp for the Earth-2.0 index. Perceptually ordered. */
-function indexColour(v: number | null): [number, number, number] {
+export function indexColour(v: number | null): [number, number, number] {
   if (v === null || !Number.isFinite(v)) return [0.26, 0.29, 0.35];
   const stops: [number, [number, number, number]][] = [
     [0.0, [0.267, 0.005, 0.329]],
@@ -67,7 +67,7 @@ function indexColour(v: number | null): [number, number, number] {
   return [0.993, 0.906, 0.144];
 }
 
-function distanceColour(d: number): [number, number, number] {
+export function distanceColour(d: number): [number, number, number] {
   const t = Math.max(0, Math.min(1, Math.log10(Math.max(d, 1)) / 3.5));
   return [0.31 + 0.6 * (1 - t), 0.82 - 0.35 * t, 0.88 - 0.1 * t];
 }
@@ -186,7 +186,7 @@ export function StarField({
       // Keep the catalogue as a field of precise marks rather than bubbles.
       // The selected system gets its emphasis from a shader-drawn reticle,
       // not an oversized point that hides its neighbours.
-      sizes[i] = visible ? (1.15 + idx * 1.65) * pointScale : 0;
+      sizes[i] = visible ? (1.8 + idx * 2.4) * pointScale : 0;
       phases[i] = (i * 12.9898) % (Math.PI * 2);
     }
     return { positions, colours, sizes, phases, confidences, selections };
@@ -292,8 +292,8 @@ export function StarField({
               vec4 mv = modelViewMatrix * vec4(position, 1.0);
               float cameraDistance = max(-mv.z, 0.1);
               float perspective = clamp(5.5 / cameraDistance, 0.72, 1.45);
-              vDepthFade = clamp(7.0 / cameraDistance, 0.42, 1.0);
-              float catalogueSize = clamp(aSize * perspective, 1.15, 4.0);
+              vDepthFade = clamp(8.5 / cameraDistance, 0.68, 1.0);
+              float catalogueSize = clamp(aSize * perspective, 1.75, 5.5);
               gl_PointSize = mix(catalogueSize, 17.0, aSelected);
               gl_Position = projectionMatrix * mv;
             }
@@ -309,7 +309,7 @@ export function StarField({
               float r = length(d);
               if (r > 0.5) discard;
               float edge = max(fwidth(r), 0.018);
-              float point = 1.0 - smoothstep(0.34, 0.5, r);
+              float point = 1.0 - smoothstep(0.38, 0.5, r);
               float ring = 1.0 - smoothstep(
                 0.035 + edge,
                 0.075 + edge,
@@ -317,7 +317,7 @@ export function StarField({
               );
               float selectedCore = 1.0 - smoothstep(0.055, 0.12, r);
               float selectedMark = max(selectedCore, ring * vPulse);
-              float alpha = mix(point * 0.78 * vDepthFade, selectedMark * 0.9, vSelected);
+              float alpha = mix(point * 0.94 * vDepthFade, selectedMark * 0.94, vSelected);
               // Dimmed, not replaced by a fabricated uncertainty volume: a
               // planet flagged for possibly-unresolved-binary astrometry is
               // still a real point at its best-estimate position, just a
