@@ -79,7 +79,7 @@ export default function ResearchPage() {
           associated with an Earth-like, potentially habitable world, how strong
           is the observational evidence behind each, and where does that evidence
           run out? We ingest {compactInt(s.scale.total_source_records)}{" "}
-          provenance-tracked records from {s.scale.n_datasets_retrieved} NASA
+          source-tracked records from {s.scale.n_datasets_retrieved} NASA
           Exoplanet Archive tables, cross-reference public radial-velocity
           holdings from DACE and light curves from MAST, propagate every
           published measurement uncertainty through {compactInt(
@@ -147,7 +147,7 @@ export default function ResearchPage() {
           photometry is retrieved live from MAST via <code>lightkurve</code>.
           Radial velocities are retrieved live from the public holdings of the
           Data &amp; Analysis Center for Exoplanets (DACE), University of Geneva.
-          Full per-dataset provenance — the literal query, retrieval timestamp,
+          Full per-dataset source records — the literal query, retrieval timestamp,
           and a SHA-256 of the payload as received — is in{" "}
           <Link href="/data" className="link">
             Data sources
@@ -205,7 +205,7 @@ export default function ResearchPage() {
         <h2 id="architecture">5. Data architecture</h2>
         <p>
           The pipeline is a five-stage, deterministic Python package: ingestion
-          (with per-retrieval manifests), catalogue construction (mass-provenance
+          (with per-retrieval manifests), catalogue construction (mass-evidence
           classification, self-consistent flux and temperature derivation),
           uncertainty propagation (Monte Carlo), ranking (four interpretable
           scores combined by a non-compensatory geometric mean), and reporting
@@ -397,11 +397,11 @@ export default function ResearchPage() {
           src="/figures/mass_radius.png"
           width={1256}
           height={854}
-          alt="Mass-radius diagram for the analysed catalogue, coloured by mass provenance"
+          alt="Mass-radius diagram for the analysed catalogue, coloured by mass-evidence class"
           caption={
             <>
               Mass–radius diagram for the analysed catalogue, coloured by
-              mass provenance (measured, M sin i lower limit, or inferred
+              mass evidence (measured, M sin i lower limit, or inferred
               from radius via a mass–radius relation). Diagonal lines mark
               constant bulk density; the horizontal line marks 1.6 R⊕, above
               which most planets are not predominantly rocky (Rogers 2015).
@@ -659,7 +659,7 @@ export default function ResearchPage() {
           <Link href="/galaxy" className="link">
             Galaxy
           </Link>{" "}
-          page); and (3) the specific combination of archive-manifest provenance (a SHA-256 of
+           page); and (3) the specific combination of archive-manifest source tracking (a SHA-256 of
           every retrieved payload), continuous-integration checks that re-execute every
           reproducibility notebook on each push, and a click-to-trace interface connecting a
           displayed number back to its originating archive query, applied together on a
@@ -674,11 +674,50 @@ export default function ResearchPage() {
           positive from an unresolved companion, not a novel technique of ours.
         </p>
 
+        <h3 id="discovery-cartography">16.1 A selection-aware map of discovery</h3>
+        <p>
+          A three-dimensional planet browser is useful, but it is not by itself a research
+          contribution: NASA&rsquo;s{" "}
+          <a className="link" href="https://science.nasa.gov/exoplanets/eyes-on-exoplanets-web/">
+            Eyes on Exoplanets
+          </a>{" "}
+          already provides a scientifically accurate 3-D catalogue explorer. The distinct
+          question here is temporal and methodological: <em>how did the observed Galactic
+          sample acquire its present shape?</em> The interactive{" "}
+          <Link className="link" href="/universe">
+            Universe
+          </Link>{" "}
+          view therefore animates discovery year, while retaining filters for distance and
+          detection method. It is an animation of the archive record, not of stellar motion.
+        </p>
+        <p>
+          That distinction is scientifically necessary. Confirmed-planet positions are not an
+          occurrence map. Transit surveys, radial-velocity programmes, microlensing campaigns,
+          and direct-imaging searches observe different targets, sky areas, periods, contrasts,
+          and host-star populations. In Kepler-plus-Gaia work, spatial gradients visible before
+          correction largely disappear after the survey bias is modelled (Maliuk &amp; Budaj 2020,
+          A&amp;A 635, A191). More generally, inference from exoplanet catalogues must account for
+          censoring by non-trivial selection effects and detection efficiencies
+          (Foreman-Mackey, Hogg &amp; Morton 2014, ApJ 795, 64). The{" "}
+          <Link className="link" href="/galaxy">
+            Galaxy
+          </Link>{" "}
+          page therefore reports empirical reach and sky concentration by method, and explicitly
+          warns that a dense region records where a survey looked and what it could detect—not
+          necessarily where planets are intrinsically more common.
+        </p>
+        <SideNote eyebrow="Research claim" side="right">
+          The defensible contribution is selection-aware exoplanet cartography: one reproducible
+          interface connecting candidate quality, discovery history, Galactic position, detection
+          method, and the source record. It is an exploratory and hypothesis-generating tool, not
+          a corrected estimate of Galactic planet occurrence.
+        </SideNote>
+
         <h2 id="deep-dives">17. Deep-dive systems</h2>
         <p>
           The ten highest-ranked candidates are selected purely from the computed
           index, never hand-picked, and receive full deep-dive treatment: every
-          parameter with its uncertainty and per-measurement provenance link,
+          parameter with its uncertainty and per-measurement source link,
           Monte Carlo posteriors, host-star and sibling-planet context, an
           attempted transit fit and an attempted radial-velocity analysis where
           public data exists, and an explicit statement of which analyses were
@@ -743,12 +782,12 @@ export default function ResearchPage() {
           src="/figures/evidence_matrix.png"
           width={1551}
           height={1672}
-          alt="Data-confidence matrix for the 22 highest-ranked candidates across mass provenance, uncertainty coverage, reference depth, habitable-zone validity, and transit, RV and spectroscopy data availability"
+          alt="Data-confidence matrix for the 22 highest-ranked candidates across mass evidence, uncertainty coverage, reference depth, habitable-zone validity, and transit, RV and spectroscopy data availability"
           caption={
             <>
               Data-confidence matrix for the 22 highest-ranked candidates.
               Each column is an independent evidential fact, not a
-              decorative colour scale: mass provenance quality, fraction of
+              decorative colour scale: mass-evidence quality, fraction of
               propagated parameters with a published uncertainty, log-scaled
               independent reference depth, whether the host lies within the
               habitable-zone model&rsquo;s validity range, and whether
