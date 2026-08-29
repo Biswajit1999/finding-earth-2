@@ -33,8 +33,10 @@ import gzip
 from pathlib import Path
 from typing import Any
 
+import astropy.units as u
 import numpy as np
 import pandas as pd
+from astropy.coordinates import Galactocentric, SkyCoord
 
 from earth2 import __version__
 from earth2.provenance import ManifestStore, utc_now_iso
@@ -43,9 +45,23 @@ from earth2.reporting.jsonio import dump_json
 __all__ = [
     "export_all",
     "export_catalogue_columnar",
+    "export_galaxy",
     "export_universe",
     "write_json",
 ]
+
+#: Sun's distance from the Galactic Centre. GRAVITY Collaboration (2019),
+#: A&A 625, L10 -- measured from stellar orbits around Sgr A*, not assumed.
+GALCEN_DISTANCE_KPC = 8.178
+#: Sun's height above the Galactic midplane. Bennett & Bovy (2019),
+#: MNRAS 482, 1417.
+SUN_HEIGHT_PC = 20.8
+
+#: Same grouping the frontend filter UI uses (web/components/universe/
+#: UniverseExplorer.tsx's NAMED_METHODS) -- kept in sync by hand since one
+#: is Python and the other TypeScript; every other discovery method groups
+#: into "Other".
+NAMED_METHODS = ("Transit", "Radial Velocity", "Microlensing", "Imaging", "Transit Timing Variations")
 
 
 def write_json(obj: Any, path: Path, gzip_also: bool = True, indent: int | None = None) -> Path:
@@ -229,6 +245,104 @@ def export_universe(ranking: pd.DataFrame, max_points: int | None = None) -> dic
     }
 
 
+def export_galaxy(ranking: pd.DataFrame) -> dict[str, Any]:
+    """Every system's position in the Milky Way, plus real per-method detection shells.
+
+    Converts equatorial (ra, dec, distance) to Galactocentric Cartesian
+    coordinates via astropy, with the Sun's own position pinned to explicitly
+    cited values (GALCEN_DISTANCE_KPC, SUN_HEIGHT_PC above) rather than
+    whatever astropy's bundled default happens to be in the installed
+    version -- the output must not silently drift if astropy is upgraded.
+
+    The "detection shells" are the furthest distance this catalogue actually
+    contains a confirmed detection at, per discovery method. That is a real,
+    reproducible statistic about this dataset. It is deliberately NOT framed
+    as an instrument sensitivity limit: how far a method can detect a planet
+    depends on the target star's brightness and the planet's size, and
+    stating a single number for "how far can Transit see" would need
+    fabricated caveats to defend. "How far this method has found something,
+    here" needs none.
+    """
+    df = ranking.copy()
+    if "is_control" in df.columns:
+        df = df[~df["is_control"].fillna(False).astype(bool)]
+
+    ra = pd.to_numeric(df.get("ra"), errors="coerce")
+    dec = pd.to_numeric(df.get("dec"), errors="coerce")
+    dist = pd.to_numeric(df.get("sy_dist"), errors="coerce")
+
+    ok = ra.notna() & dec.notna() & dist.notna() & (dist > 0)
+    n_excluded = int((~ok).sum())
+    sub = df[ok].copy()
+
+    frame = Galactocentric(
+        galcen_distance=GALCEN_DISTANCE_KPC * u.kpc,
+        z_sun=SUN_HEIGHT_PC * u.pc,
+    )
+    coords = SkyCoord(
+        ra=pd.to_numeric(sub["ra"], errors="coerce").to_numpy(dtype=float) * u.deg,
+        dec=pd.to_numeric(sub["dec"], errors="coerce").to_numpy(dtype=float) * u.deg,
+        distance=pd.to_numeric(sub["sy_dist"], errors="coerce").to_numpy(dtype=float) * u.pc,
+        frame="icrs",
+    )
+    galcen = coords.transform_to(frame)
+    x_kpc = galcen.x.to(u.kpc).value
+    y_kpc = galcen.y.to(u.kpc).value
+    z_kpc = galcen.z.to(u.kpc).value
+
+    # The Sun's own position in this frame, by the same explicit convention
+    # (astropy places it at (-galcen_distance, 0, z_sun); verified directly
+    # against a test point at galactic l=0,b=0 during development rather than
+    # assumed from documentation alone).
+    sun_x_kpc = -GALCEN_DISTANCE_KPC
+    sun_y_kpc = 0.0
+    sun_z_kpc = SUN_HEIGHT_PC / 1000.0
+
+    method_raw = sub.get("discoverymethod", pd.Series([None] * len(sub), index=sub.index))
+    method_group = method_raw.where(method_raw.isin(NAMED_METHODS), "Other")
+    dist_pc = pd.to_numeric(sub["sy_dist"], errors="coerce")
+    method_shells_pc = {
+        str(g): round(float(dist_pc[method_group == g].max()), 1)
+        for g in [*NAMED_METHODS, "Other"]
+        if (method_group == g).any()
+    }
+
+    def r3(a: np.ndarray) -> list[float]:
+        return [round(float(v), 4) for v in a]
+
+    return {
+        "generated_utc": utc_now_iso(),
+        "n_points": int(len(sub)),
+        "n_excluded_no_distance": n_excluded,
+        "coordinate_system": "Galactocentric Cartesian, kpc, Galactic Centre at origin",
+        "note": (
+            "Positions are computed from each system's real right ascension, declination "
+            "and measured distance via the standard equatorial-to-Galactocentric transform "
+            "(astropy). The Milky Way's own spiral structure shown behind these points is an "
+            "illustrative schematic, not measured data -- we are inside the galaxy and cannot "
+            "photograph its overall shape from outside it."
+        ),
+        "galcen_distance_kpc": GALCEN_DISTANCE_KPC,
+        "galcen_distance_citation": "GRAVITY Collaboration (2019), A&A 625, L10",
+        "sun_height_pc": SUN_HEIGHT_PC,
+        "sun_height_citation": "Bennett & Bovy (2019), MNRAS 482, 1417",
+        "sun_x_kpc": sun_x_kpc, "sun_y_kpc": sun_y_kpc, "sun_z_kpc": sun_z_kpc,
+        "x_kpc": r3(x_kpc), "y_kpc": r3(y_kpc), "z_kpc": r3(z_kpc),
+        "name": [str(v) for v in sub["pl_name"]],
+        "host": [str(v) for v in sub.get("hostname", pd.Series([""] * len(sub)))],
+        "dist_pc": [round(float(v), 3) for v in dist_pc],
+        "earth2_index": _col(sub, "earth2_index", 4),
+        "method": _col(sub, "discoverymethod", None),
+        "disc_year": _col(sub, "disc_year", 0),
+        "method_shells_pc": method_shells_pc,
+        "method_shells_note": (
+            "The furthest distance this catalogue actually contains a confirmed detection at, "
+            "per method -- not a theoretical instrument sensitivity limit, which depends heavily "
+            "on the target star's brightness and the planet's size."
+        ),
+    }
+
+
 def export_all(
     ranking: pd.DataFrame,
     summary: dict[str, Any],
@@ -249,6 +363,7 @@ def export_all(
     written["summary"] = write_json(summary, out_dir / "summary.json", indent=1)
     written["catalogue"] = write_json(export_catalogue_columnar(ranking), out_dir / "catalogue.json")
     written["universe"] = write_json(export_universe(ranking), out_dir / "universe.json")
+    written["galaxy"] = write_json(export_galaxy(ranking), out_dir / "galaxy.json")
 
     written["coverage"] = write_json(
         {"generated_utc": utc_now_iso(), "rows": coverage.to_dict("records")},

@@ -170,6 +170,32 @@ export interface UniverseFile {
   disc_year: Maybe[];
 }
 
+export interface GalaxyFile {
+  generated_utc: string;
+  n_points: number;
+  n_excluded_no_distance: number;
+  coordinate_system: string;
+  note: string;
+  galcen_distance_kpc: number;
+  galcen_distance_citation: string;
+  sun_height_pc: number;
+  sun_height_citation: string;
+  sun_x_kpc: number;
+  sun_y_kpc: number;
+  sun_z_kpc: number;
+  x_kpc: number[];
+  y_kpc: number[];
+  z_kpc: number[];
+  name: string[];
+  host: string[];
+  dist_pc: number[];
+  earth2_index: Maybe[];
+  method: (string | null)[];
+  disc_year: Maybe[];
+  method_shells_pc: Record<string, number>;
+  method_shells_note: string;
+}
+
 export interface SummaryFile {
   generated_utc: string;
   earth2_version: string;

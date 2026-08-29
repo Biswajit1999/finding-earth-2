@@ -15,6 +15,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
     label: "Explore",
     items: [
       { href: "/universe", label: "Universe", hint: "3D map of every system with a measured distance" },
+      { href: "/galaxy", label: "Galaxy", hint: "Where the Sun sits in the Milky Way, and how far we've reached" },
       { href: "/atlas", label: "Candidate Atlas", hint: "Filter and sort the full analysed catalogue" },
       { href: "/ranking", label: "Ranking", hint: "Re-weight the composite index yourself" },
       { href: "/compare", label: "Compare Worlds", hint: "Put candidates side by side" },

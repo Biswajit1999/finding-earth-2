@@ -18,6 +18,7 @@ import type {
   CoverageRow,
   DeepDive,
   DeepDiveIndexEntry,
+  GalaxyFile,
   Planet,
   ReferenceRow,
   SpectraIndexRow,
@@ -57,6 +58,10 @@ export function getCatalogueFile(): CatalogueFile {
 
 export function getUniverse(): UniverseFile {
   return readJson<UniverseFile>("universe.json");
+}
+
+export function getGalaxy(): GalaxyFile {
+  return readJson<GalaxyFile>("galaxy.json");
 }
 
 export function getCoverage(): CoverageRow[] {
