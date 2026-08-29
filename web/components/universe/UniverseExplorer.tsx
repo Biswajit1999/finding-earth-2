@@ -55,12 +55,21 @@ function methodGroup(m: string | null): string {
 }
 
 const LY_PER_PC = 3.26156;
+const AU_PER_PC = 648000 / Math.PI;
+type DistanceUnit = "pc" | "ly" | "au";
 
-function toPc(value: number, unit: "pc" | "ly"): number {
-  return unit === "ly" ? value / LY_PER_PC : value;
+function toPc(value: number, unit: DistanceUnit): number {
+  if (unit === "ly") return value / LY_PER_PC;
+  if (unit === "au") return value / AU_PER_PC;
+  return value;
 }
-function fromPc(pc: number, unit: "pc" | "ly"): number {
-  return unit === "ly" ? pc * LY_PER_PC : pc;
+function fromPc(pc: number, unit: DistanceUnit): number {
+  if (unit === "ly") return pc * LY_PER_PC;
+  if (unit === "au") return pc * AU_PER_PC;
+  return pc;
+}
+function unitLabel(unit: DistanceUnit): string {
+  return unit === "au" ? "AU" : unit;
 }
 
 function Legend({ mode }: { mode: ColourMode }) {
@@ -141,7 +150,7 @@ export function UniverseExplorer({
   const [selected, setSelected] = useState<number | null>(null);
   const [webglFailed, setWebglFailed] = useState(false);
   const [rotate, setRotate] = useState(false);
-  const [unit, setUnit] = useState<"pc" | "ly">("pc");
+  const [unit, setUnit] = useState<DistanceUnit>("pc");
   const [activeMethods, setActiveMethods] = useState<Set<string>>(
     () => new Set(ALL_METHOD_GROUPS),
   );
@@ -397,8 +406,8 @@ export function UniverseExplorer({
 
         {/* ---------------- controls overlay ---------------- */}
         <div className="pointer-events-none absolute inset-0 flex flex-col justify-between p-4 sm:p-5">
-          <div className="pointer-events-auto flex flex-wrap items-start justify-between gap-3">
-            <div className="panel-raised max-w-xs p-3">
+          <div className="flex flex-wrap items-start justify-between gap-3">
+            <div className="pointer-events-auto panel-raised max-w-xs p-3">
               <label htmlFor="uni-search" className="eyebrow mb-1.5 block">
                 Find a system
               </label>
@@ -424,7 +433,7 @@ export function UniverseExplorer({
                       >
                         {data.name[i]}{" "}
                         <span className="text-[10px] text-[var(--color-muted)]">
-                          {num(fromPc(data.dist_pc[i], unit), 1)} {unit}
+                          {num(fromPc(data.dist_pc[i], unit), 1)} {unitLabel(unit)}
                         </span>
                       </button>
                     </li>
@@ -433,7 +442,7 @@ export function UniverseExplorer({
               )}
             </div>
 
-            <div className="panel-raised p-3">
+            <div className="pointer-events-auto panel-raised p-3">
               <p className="eyebrow mb-1.5">Colour by</p>
               <div className="flex flex-wrap gap-1.5">
                 {COLOUR_MODES.map((m) => (
@@ -457,7 +466,7 @@ export function UniverseExplorer({
               </div>
             </div>
 
-            <div className="panel-raised p-3">
+            <div className="pointer-events-auto panel-raised p-3">
               <p className="eyebrow mb-1.5">View</p>
               <div
                 className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]"
@@ -501,7 +510,7 @@ export function UniverseExplorer({
               </button>
             </div>
 
-            <div className="panel-raised w-[230px] p-3">
+            <div className="pointer-events-auto panel-raised w-[230px] p-3">
               <div className="mb-1.5 flex items-center justify-between">
                 <p className="eyebrow">Filters</p>
                 {filtersActive && (
@@ -526,7 +535,7 @@ export function UniverseExplorer({
                   Distance
                 </label>
                 <div className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]">
-                  {(["pc", "ly"] as const).map((u) => (
+                  {(["pc", "ly", "au"] as const).map((u) => (
                     <button
                       key={u}
                       type="button"
@@ -538,7 +547,7 @@ export function UniverseExplorer({
                           : "text-[var(--color-muted)]"
                       }`}
                     >
-                      {u}
+                      {unitLabel(u)}
                     </button>
                   ))}
                 </div>
@@ -553,7 +562,7 @@ export function UniverseExplorer({
                     const v = toPc(Number(e.target.value) || 0, unit);
                     setDistRange(([, hi]) => [Math.min(Math.max(v, 0), hi), hi]);
                   }}
-                  aria-label={"Minimum distance in " + unit}
+                  aria-label={"Minimum distance in " + unitLabel(unit)}
                   className="w-full min-w-0 rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] bg-[var(--color-void)] px-1.5 py-1 text-[11px] text-[var(--color-ivory)]"
                 />
                 <span className="text-[10px] text-[var(--color-muted)]">–</span>
@@ -565,7 +574,7 @@ export function UniverseExplorer({
                     const v = toPc(Number(e.target.value) || 0, unit);
                     setDistRange(([lo]) => [lo, Math.max(v, lo)]);
                   }}
-                  aria-label={"Maximum distance in " + unit}
+                  aria-label={"Maximum distance in " + unitLabel(unit)}
                   className="w-full min-w-0 rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] bg-[var(--color-void)] px-1.5 py-1 text-[11px] text-[var(--color-ivory)]"
                 />
               </div>
@@ -735,7 +744,8 @@ export function UniverseExplorer({
                   {num(data.dist_pc[info], 2)} pc
                   <span className="text-[var(--color-muted)]">
                     {" "}
-                    ({num(data.dist_pc[info] * LY_PER_PC, 1)} ly)
+                    ({num(data.dist_pc[info] * LY_PER_PC, 1)} ly ·{" "}
+                    {int(data.dist_pc[info] * AU_PER_PC)} AU)
                   </span>
                 </dd>
                 <dt className="text-[var(--color-muted)]">Radius</dt>

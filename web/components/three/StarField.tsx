@@ -13,8 +13,8 @@
  * thousands of systems cost one draw call.
  */
 
-import { useMemo, useRef } from "react";
-import { useFrame, type ThreeEvent } from "@react-three/fiber";
+import { useEffect, useMemo, useRef } from "react";
+import { useFrame, useThree } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 import * as THREE from "three";
 
@@ -126,6 +126,7 @@ export function StarField({
 }) {
   const group = useRef<THREE.Group>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
+  const { camera, gl } = useThree();
 
   const { positions, colours, sizes, phases, confidences, selections } = useMemo(() => {
     const n = data.n_points;
@@ -238,34 +239,69 @@ export function StarField({
     return arr;
   }, [showDistanceLines, data.n_points, positions, sizes]);
 
-  // A star is "selected" on pointer up only if the pointer never travelled
-  // far from where it went down -- i.e. our own click-vs-drag test, done on
-  // raw raycasted pointer events rather than R3F's synthesized onClick.
-  // OrbitControls shares this same canvas for orbit-dragging, and R3F's
-  // built-in click/drag heuristic was unreliable in combination with it.
-  const downPos = useRef<{ x: number; y: number } | null>(null);
-  const handlePointerDown = (e: ThreeEvent<PointerEvent>) => {
-    downPos.current = { x: e.clientX, y: e.clientY };
-  };
-  const handlePointerUp = (e: ThreeEvent<PointerEvent>) => {
-    const down = downPos.current;
-    downPos.current = null;
-    if (!down || !onSelect || e.index === undefined) return;
-    // Allow a little natural hand movement without confusing an intentional
-    // click with an orbit drag. The raycaster still decides which real point
-    // was targeted; this does not fabricate or snap to a different system.
-    if (Math.hypot(e.clientX - down.x, e.clientY - down.y) < 10) {
-      onSelect(e.index);
-    }
-  };
+  // Pick in screen space rather than relying on THREE.Points' world-space
+  // raycast threshold. The marks are intentionally tiny and perspective
+  // changes their apparent size, so a fixed world radius made visible points
+  // frustratingly difficult to select. Projection runs only after a click,
+  // not per frame, and chooses the nearest real visible system within 14 px.
+  useEffect(() => {
+    if (!onSelect) return;
+    const canvas = gl.domElement;
+    let pointerDown: { x: number; y: number } | null = null;
+
+    const handleDown = (event: PointerEvent) => {
+      if (event.button !== 0) return;
+      pointerDown = { x: event.clientX, y: event.clientY };
+    };
+    const handleUp = (event: PointerEvent) => {
+      const down = pointerDown;
+      pointerDown = null;
+      if (!down || Math.hypot(event.clientX - down.x, event.clientY - down.y) >= 10) return;
+
+      const activeGroup = group.current;
+      if (!activeGroup) return;
+      activeGroup.updateMatrixWorld(true);
+      const rect = canvas.getBoundingClientRect();
+      const projected = new THREE.Vector3();
+      let nearest = -1;
+      let nearestDistanceSq = 14 * 14;
+
+      for (let i = 0; i < data.n_points; i++) {
+        if (sizes[i]! <= 0) continue;
+        projected
+          .fromArray(positions, i * 3)
+          .applyMatrix4(activeGroup.matrixWorld)
+          .project(camera);
+        if (projected.z < -1 || projected.z > 1) continue;
+        const screenX = rect.left + (projected.x * 0.5 + 0.5) * rect.width;
+        const screenY = rect.top + (-projected.y * 0.5 + 0.5) * rect.height;
+        const dx = event.clientX - screenX;
+        const dy = event.clientY - screenY;
+        const distanceSq = dx * dx + dy * dy;
+        if (distanceSq < nearestDistanceSq) {
+          nearest = i;
+          nearestDistanceSq = distanceSq;
+        }
+      }
+      if (nearest >= 0) onSelect(nearest);
+    };
+    const handleCancel = () => {
+      pointerDown = null;
+    };
+
+    canvas.addEventListener("pointerdown", handleDown);
+    canvas.addEventListener("pointerup", handleUp);
+    canvas.addEventListener("pointercancel", handleCancel);
+    return () => {
+      canvas.removeEventListener("pointerdown", handleDown);
+      canvas.removeEventListener("pointerup", handleUp);
+      canvas.removeEventListener("pointercancel", handleCancel);
+    };
+  }, [camera, data.n_points, gl, onSelect, positions, sizes]);
 
   return (
     <group ref={group}>
-      <points
-        geometry={geometry}
-        onPointerDown={onSelect ? handlePointerDown : undefined}
-        onPointerUp={onSelect ? handlePointerUp : undefined}
-      >
+      <points geometry={geometry}>
         <shaderMaterial
           ref={materialRef}
           transparent
@@ -325,7 +361,11 @@ export function StarField({
               // planet flagged for possibly-unresolved-binary astrometry is
               // still a real point at its best-estimate position, just a
               // less certain one -- lower alpha says that plainly.
-              gl_FragColor = vec4(vColor, alpha * vConf);
+              // Lift the display luminance while preserving the underlying
+              // colour ordering. In particular, low-index viridis purple
+              // otherwise becomes almost invisible against the dark field.
+              vec3 displayColor = min(vColor * 1.35 + vec3(0.045), vec3(1.0));
+              gl_FragColor = vec4(displayColor, alpha * vConf);
             }
           `}
           vertexColors

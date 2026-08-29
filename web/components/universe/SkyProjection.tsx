@@ -41,7 +41,8 @@ function by(bDeg: number): number {
 }
 
 function rgbToCss([r, g, b]: [number, number, number]): string {
-  return `rgb(${Math.round(r * 255)}, ${Math.round(g * 255)}, ${Math.round(b * 255)})`;
+  const lift = (channel: number) => Math.min(1, channel * 1.25 + 0.035);
+  return `rgb(${Math.round(lift(r) * 255)}, ${Math.round(lift(g) * 255)}, ${Math.round(lift(b) * 255)})`;
 }
 
 const L_TICKS = [-180, -90, 0, 90, 180];
