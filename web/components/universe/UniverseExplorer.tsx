@@ -14,11 +14,20 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useReducedMotion } from "motion/react";
 import Link from "next/link";
-import { Suspense, useMemo, useState } from "react";
+import { Suspense, useMemo, useRef, useState } from "react";
 
 import { StarField, type ColourMode } from "@/components/three/StarField";
 import type { UniverseFile } from "@/lib/types";
-import { compactInt, EMDASH, int, num, slugify } from "@/lib/format";
+import { compactInt, EMDASH, int, num, slugify, utcLabel } from "@/lib/format";
+
+/** The subset of three-stdlib's OrbitControls this component actually drives. */
+interface OrbitControlsHandle {
+  object: { position: { x: number; y: number; z: number; set: (x: number, y: number, z: number) => void } };
+  target: { x: number; y: number; z: number };
+  update: () => void;
+  minDistance: number;
+  maxDistance: number;
+}
 
 const COLOUR_MODES: { key: ColourMode; label: string }[] = [
   { key: "index", label: "Earth-2.0 index" },
@@ -134,6 +143,24 @@ export function UniverseExplorer({
   const [activeMethods, setActiveMethods] = useState<Set<string>>(
     () => new Set(ALL_METHOD_GROUPS),
   );
+  const [showLines, setShowLines] = useState(false);
+  const [ready, setReady] = useState(false);
+  const controlsRef = useRef<OrbitControlsHandle | null>(null);
+
+  const zoomBy = (factor: number) => {
+    const controls = controlsRef.current;
+    if (!controls) return;
+    const cam = controls.object;
+    const t = controls.target;
+    const dx = cam.position.x - t.x;
+    const dy = cam.position.y - t.y;
+    const dz = cam.position.z - t.z;
+    const dist = Math.sqrt(dx * dx + dy * dy + dz * dz) || 1;
+    const newDist = Math.min(Math.max(dist * factor, controls.minDistance), controls.maxDistance);
+    const s = newDist / dist;
+    cam.position.set(t.x + dx * s, t.y + dy * s, t.z + dz * s);
+    controls.update();
+  };
 
   const maxDistPc = useMemo(
     () => data.dist_pc.reduce((m, d) => (Number.isFinite(d) && d > m ? d : m), 1),
@@ -208,18 +235,28 @@ export function UniverseExplorer({
 
   return (
     <div className="relative">
-      <div className="relative h-[74vh] min-h-[520px] w-full overflow-hidden border-y border-[var(--color-line)] bg-[var(--color-void)]">
+      <div
+        className="relative h-[74vh] min-h-[520px] w-full overflow-hidden border-y border-[var(--color-line)]"
+        style={{
+          background:
+            "radial-gradient(ellipse at 50% 45%, #10152a 0%, #090b16 45%, #05060b 100%)",
+        }}
+      >
         <Canvas
           camera={{ position: [0, 1.1, 5.2], fov: 55 }}
           dpr={[1, 1.75]}
-          gl={{ antialias: true, powerPreference: "high-performance" }}
+          gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
           onCreated={({ gl, raycaster }) => {
-            gl.setClearColor("#07090e", 1);
+            // Transparent so the container's own radial gradient (a soft
+            // haze, not flat black) shows behind the points instead of being
+            // painted over every frame.
+            gl.setClearColor("#000000", 0);
             // The default threshold is tuned for typical scene scales, not
             // this compressed log-distance layout -- too small and clicks on
             // a visibly-there point miss every time, too large and dense
             // clusters can't be told apart.
             raycaster.params.Points.threshold = 0.16;
+            setReady(true);
           }}
           onError={() => setWebglFailed(true)}
         >
@@ -232,9 +269,11 @@ export function UniverseExplorer({
               highlightIndices={highlight}
               visibleMask={filterMask.mask}
               onSelect={setSelected}
+              showDistanceLines={showLines}
             />
           </Suspense>
           <OrbitControls
+            ref={controlsRef as never}
             enablePan
             enableZoom
             enableRotate
@@ -244,6 +283,34 @@ export function UniverseExplorer({
             onStart={() => setRotate(false)}
           />
         </Canvas>
+
+        {/* ---------------- branded loading veil ---------------- */}
+        <div
+          aria-hidden={ready}
+          className={`absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-[var(--color-void)] transition-opacity duration-700 ${
+            ready ? "pointer-events-none opacity-0" : "opacity-100"
+          }`}
+        >
+          <p className="font-[family-name:var(--font-display)] text-lg font-medium text-[var(--color-ivory)]">
+            Finding Earth 2.0
+          </p>
+          <p className="eyebrow">Biswajit Jana</p>
+          <div className="flex gap-1.5" aria-hidden>
+            {[0, 1, 2].map((i) => (
+              <span
+                key={i}
+                className="size-1.5 animate-pulse rounded-full bg-[var(--color-gold)]"
+                style={{ animationDelay: i * 0.15 + "s" }}
+              />
+            ))}
+          </div>
+          <p className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--color-muted)]">
+            {compactInt(data.n_points)} real systems · NASA Exoplanet Archive + Gaia DR3
+          </p>
+          <p className="font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)]">
+            Static snapshot, last synced {utcLabel(data.generated_utc)} — not fetched live
+          </p>
+        </div>
 
         {/* ---------------- controls overlay ---------------- */}
         <div className="pointer-events-none absolute inset-0 flex flex-col justify-between p-4 sm:p-5">
@@ -373,6 +440,17 @@ export function UniverseExplorer({
                 />
               </div>
 
+              <label className="mt-2 flex cursor-pointer items-center justify-between gap-2 text-[11px] text-[var(--color-dim)]">
+                <span className="flex items-center gap-1.5">
+                  <input
+                    type="checkbox"
+                    checked={showLines}
+                    onChange={() => setShowLines((v) => !v)}
+                  />
+                  Distance lines from Sun
+                </span>
+              </label>
+
               <p className="mb-1 mt-2.5 border-t border-[var(--color-line)] pt-2 text-[10.5px] text-[var(--color-muted)]">
                 Discovery method
               </p>
@@ -467,8 +545,31 @@ export function UniverseExplorer({
           <div className="pointer-events-none self-end font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)]">
             {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)} systems shown ·{" "}
             {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
-            orbit, scroll to zoom, click a star
+            orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click
+            a star
           </div>
+        </div>
+
+        {/* ---------------- zoom controls ---------------- */}
+        <div className="pointer-events-auto absolute bottom-4 right-4 z-10 flex flex-col gap-1">
+          <button
+            type="button"
+            onClick={() => zoomBy(1 / 1.35)}
+            aria-label="Zoom in"
+            title="Zoom in"
+            className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
+          >
+            +
+          </button>
+          <button
+            type="button"
+            onClick={() => zoomBy(1.35)}
+            aria-label="Zoom out"
+            title="Zoom out"
+            className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
+          >
+            −
+          </button>
         </div>
       </div>
     </div>

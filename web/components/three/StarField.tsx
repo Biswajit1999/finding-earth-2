@@ -15,6 +15,7 @@
 
 import { useMemo, useRef } from "react";
 import { useFrame, type ThreeEvent } from "@react-three/fiber";
+import { Html } from "@react-three/drei";
 import * as THREE from "three";
 
 import type { UniverseFile } from "@/lib/types";
@@ -82,6 +83,7 @@ export function StarField({
   twinkle = true,
   visibleMask,
   onSelect,
+  showDistanceLines = false,
 }: {
   data: UniverseFile;
   colourMode?: ColourMode;
@@ -101,6 +103,8 @@ export function StarField({
   visibleMask?: Uint8Array;
   /** Fires with the vertex index of the star the viewer clicked. */
   onSelect?: (index: number) => void;
+  /** Faint radial spokes from the Sun to every currently-visible system. */
+  showDistanceLines?: boolean;
 }) {
   const group = useRef<THREE.Group>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
@@ -178,6 +182,30 @@ export function StarField({
 
   const uniforms = useMemo(() => ({ uTime: { value: 0 } }), []);
 
+  // One segment (Sun -> system) per currently-visible point, in a single
+  // LineSegments draw call. Kept very faint: at full n=6,327 this reads as a
+  // soft radial texture around the origin, not a legible line to any one
+  // star, which is the point -- it communicates "everything we have a
+  // distance for radiates from here" without competing with the points.
+  const linePositions = useMemo(() => {
+    if (!showDistanceLines) return null;
+    const n = data.n_points;
+    let nVisible = 0;
+    for (let i = 0; i < n; i++) if (sizes[i]! > 0) nVisible++;
+    const arr = new Float32Array(nVisible * 6);
+    let o = 0;
+    for (let i = 0; i < n; i++) {
+      if (sizes[i]! <= 0) continue;
+      arr[o++] = 0;
+      arr[o++] = 0;
+      arr[o++] = 0;
+      arr[o++] = positions[i * 3]!;
+      arr[o++] = positions[i * 3 + 1]!;
+      arr[o++] = positions[i * 3 + 2]!;
+    }
+    return arr;
+  }, [showDistanceLines, data.n_points, positions, sizes]);
+
   // A star is "selected" on pointer up only if the pointer never travelled
   // far from where it went down -- i.e. our own click-vs-drag test, done on
   // raw raycasted pointer events rather than R3F's synthesized onClick.
@@ -244,11 +272,28 @@ export function StarField({
           vertexColors
         />
       </points>
+      {showDistanceLines && linePositions && (
+        <lineSegments>
+          <bufferGeometry>
+            <bufferAttribute attach="attributes-position" args={[linePositions, 3]} />
+          </bufferGeometry>
+          <lineBasicMaterial
+            color="#7fa8d9"
+            transparent
+            opacity={0.05}
+            depthWrite={false}
+          />
+        </lineSegments>
+      )}
+
       {/* The Sun at the origin — our own vantage point. */}
       <mesh>
         <sphereGeometry args={[0.055, 20, 20]} />
         <meshBasicMaterial color="#ffd77a" />
       </mesh>
+      {/* A circular glow, not the stock square point sprite -- THREE.PointsMaterial
+          with no sprite texture renders a literal square, which read as a stray
+          box sitting behind the Sun. */}
       <points>
         <bufferGeometry>
           <bufferAttribute
@@ -256,8 +301,46 @@ export function StarField({
             args={[new Float32Array([0, 0, 0]), 3]}
           />
         </bufferGeometry>
-        <pointsMaterial size={0.3} color="#ffd77a" transparent opacity={0.35} sizeAttenuation />
+        <shaderMaterial
+          transparent
+          depthWrite={false}
+          blending={THREE.AdditiveBlending}
+          vertexShader={`
+            void main() {
+              vec4 mv = modelViewMatrix * vec4(position, 1.0);
+              gl_PointSize = 46.0;
+              gl_Position = projectionMatrix * mv;
+            }
+          `}
+          fragmentShader={`
+            void main() {
+              vec2 d = gl_PointCoord - vec2(0.5);
+              float r = length(d) * 2.0;
+              float a = (1.0 - smoothstep(0.0, 1.0, r)) * 0.4;
+              gl_FragColor = vec4(1.0, 0.85, 0.55, a);
+            }
+          `}
+        />
       </points>
+      <Html position={[0, 0.09, 0]} center distanceFactor={2.2} occlude={false}>
+        <div
+          style={{
+            fontFamily: "var(--font-mono)",
+            fontSize: "10px",
+            letterSpacing: "0.06em",
+            color: "#e9e7e2",
+            background: "rgba(7,9,14,0.72)",
+            border: "1px solid rgba(255,215,122,0.4)",
+            borderRadius: "3px",
+            padding: "3px 6px",
+            whiteSpace: "nowrap",
+            pointerEvents: "none",
+            userSelect: "none",
+          }}
+        >
+          ☉ Sol — you are here
+        </div>
+      </Html>
     </group>
   );
 }
