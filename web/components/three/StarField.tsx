@@ -127,13 +127,14 @@ export function StarField({
   const group = useRef<THREE.Group>(null);
   const materialRef = useRef<THREE.ShaderMaterial>(null);
 
-  const { positions, colours, sizes, phases, confidences } = useMemo(() => {
+  const { positions, colours, sizes, phases, confidences, selections } = useMemo(() => {
     const n = data.n_points;
     const positions = new Float32Array(n * 3);
     const colours = new Float32Array(n * 3);
     const sizes = new Float32Array(n);
     const phases = new Float32Array(n);
     const confidences = new Float32Array(n);
+    const selections = new Float32Array(n);
 
     for (let i = 0; i < n; i++) {
       // Log-compress radial distance by default: real positions span 1 pc to
@@ -171,6 +172,7 @@ export function StarField({
       }
 
       const hot = highlightIndices?.has(i) ?? false;
+      selections[i] = hot ? 1 : 0;
       const idx = data.earth2_index[i] ?? 0;
       colours[i * 3] = hot ? 1 : c[0];
       colours[i * 3 + 1] = hot ? 0.85 : c[1];
@@ -181,10 +183,13 @@ export function StarField({
       // sized to zero rather than removed from the buffer, so filtering never
       // triggers a geometry rebuild.
       const visible = !visibleMask || visibleMask[i];
-      sizes[i] = visible ? (hot ? 7 : 1.6 + idx * 4.2) * pointScale : 0;
+      // Keep the catalogue as a field of precise marks rather than bubbles.
+      // The selected system gets its emphasis from a shader-drawn reticle,
+      // not an oversized point that hides its neighbours.
+      sizes[i] = visible ? (1.15 + idx * 1.65) * pointScale : 0;
       phases[i] = (i * 12.9898) % (Math.PI * 2);
     }
-    return { positions, colours, sizes, phases, confidences };
+    return { positions, colours, sizes, phases, confidences, selections };
   }, [data, colourMode, scale, pointScale, highlightIndices, visibleMask, radialScale, flagLowConfidenceAstrometry]);
 
   useFrame(({ clock }, delta) => {
@@ -203,8 +208,9 @@ export function StarField({
     g.setAttribute("aSize", new THREE.BufferAttribute(sizes, 1));
     g.setAttribute("aPhase", new THREE.BufferAttribute(phases, 1));
     g.setAttribute("aConf", new THREE.BufferAttribute(confidences, 1));
+    g.setAttribute("aSelected", new THREE.BufferAttribute(selections, 1));
     return g;
-  }, [positions, colours, sizes, phases, confidences]);
+  }, [positions, colours, sizes, phases, confidences, selections]);
 
   const uniforms = useMemo(() => ({ uTime: { value: 0 } }), []);
 
@@ -261,46 +267,62 @@ export function StarField({
           ref={materialRef}
           transparent
           depthWrite={false}
-          blending={THREE.AdditiveBlending}
+          depthTest
+          blending={THREE.NormalBlending}
           uniforms={uniforms}
           vertexShader={`
             attribute float aSize;
             attribute float aPhase;
             attribute float aConf;
+            attribute float aSelected;
             uniform float uTime;
             varying vec3 vColor;
             varying float vConf;
+            varying float vSelected;
+            varying float vDepthFade;
+            varying float vPulse;
             void main() {
               vColor = color;
               vConf = aConf;
-              // A gentle per-star shimmer -- real stars don't hold a fixed
-              // brightness on screen, and a wholly static point cloud reads as
-              // a still image rather than something alive.
-              float twinkle = 0.82 + 0.18 * sin(uTime * 1.6 + aPhase);
+              vSelected = aSelected;
+              // Ordinary catalogue points remain stable. Motion is reserved
+              // for the selected-system reticle, where it communicates state
+              // instead of making thousands of marks shimmer at once.
+              vPulse = 0.88 + 0.12 * sin(uTime * 2.2 + aPhase);
               vec4 mv = modelViewMatrix * vec4(position, 1.0);
-              float px = aSize * twinkle * (52.0 / -mv.z);
-              gl_PointSize = min(px, 26.0);
+              float cameraDistance = max(-mv.z, 0.1);
+              float perspective = clamp(5.5 / cameraDistance, 0.72, 1.45);
+              vDepthFade = clamp(7.0 / cameraDistance, 0.42, 1.0);
+              float catalogueSize = clamp(aSize * perspective, 1.15, 4.0);
+              gl_PointSize = mix(catalogueSize, 17.0, aSelected);
               gl_Position = projectionMatrix * mv;
             }
           `}
           fragmentShader={`
             varying vec3 vColor;
             varying float vConf;
+            varying float vSelected;
+            varying float vDepthFade;
+            varying float vPulse;
             void main() {
               vec2 d = gl_PointCoord - vec2(0.5);
               float r = length(d);
               if (r > 0.5) discard;
-              // A small hard core plus a thin anti-aliased edge reads as a
-              // crisp point of light; the old wide falloff (transition
-              // starting at r=0.06) meant almost the entire disc was a soft
-              // gradient, which is what turned dense clusters into an
-              // overexposed blur once additive blending summed them.
-              float a = smoothstep(0.5, 0.38, r);
+              float edge = max(fwidth(r), 0.018);
+              float point = 1.0 - smoothstep(0.34, 0.5, r);
+              float ring = 1.0 - smoothstep(
+                0.035 + edge,
+                0.075 + edge,
+                abs(r - 0.38)
+              );
+              float selectedCore = 1.0 - smoothstep(0.055, 0.12, r);
+              float selectedMark = max(selectedCore, ring * vPulse);
+              float alpha = mix(point * 0.78 * vDepthFade, selectedMark * 0.9, vSelected);
               // Dimmed, not replaced by a fabricated uncertainty volume: a
               // planet flagged for possibly-unresolved-binary astrometry is
               // still a real point at its best-estimate position, just a
               // less certain one -- lower alpha says that plainly.
-              gl_FragColor = vec4(vColor, a * vConf);
+              gl_FragColor = vec4(vColor, alpha * vConf);
             }
           `}
           vertexColors
