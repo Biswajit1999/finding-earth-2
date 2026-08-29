@@ -45,6 +45,7 @@ from earth2.reporting.jsonio import dump_json
 __all__ = [
     "export_all",
     "export_catalogue_columnar",
+    "export_discovery_timeline",
     "export_galaxy",
     "export_universe",
     "write_json",
@@ -399,6 +400,90 @@ def export_galaxy(ranking: pd.DataFrame) -> dict[str, Any]:
     }
 
 
+def export_discovery_timeline(ranking: pd.DataFrame) -> dict[str, Any]:
+    """Cumulative discovery-method mix and reach, year by year.
+
+    Uses the identical row filter as export_universe/export_galaxy (measured
+    ra, dec, distance; Solar System controls excluded) so every number here
+    describes the same cumulative sample the 3D/2D discovery-history
+    playback actually shows at that year -- a numeric readout of that
+    playback, not a separately-computed statistic that could silently drift
+    from what the reader sees plotted.
+
+    "Yearly" means cumulative through that year, matching the playback's own
+    "through {year}" framing, not that year's new discoveries in isolation.
+    A method with zero cumulative detections by a given year is reported as
+    an absent distance quantile (null), never a fabricated zero.
+    """
+    df = ranking.copy()
+    if "is_control" in df.columns:
+        df = df[~df["is_control"].fillna(False).astype(bool)]
+
+    ra = pd.to_numeric(df.get("ra"), errors="coerce")
+    dec = pd.to_numeric(df.get("dec"), errors="coerce")
+    dist = pd.to_numeric(df.get("sy_dist"), errors="coerce")
+    year = pd.to_numeric(df.get("disc_year"), errors="coerce")
+
+    ok = ra.notna() & dec.notna() & dist.notna() & (dist > 0) & year.notna()
+    sub = df[ok].copy()
+
+    groups = [*NAMED_METHODS, "Other"]
+
+    if sub.empty:
+        return {
+            "generated_utc": utc_now_iso(),
+            "years": [],
+            "note": "No systems with both a measured distance and a discovery year.",
+            "method_share_counts_by_year": {g: [] for g in groups},
+            "total_count_by_year": [],
+            "distance_quantiles_pc_by_year": {g: {"median_pc": [], "p90_pc": []} for g in groups},
+        }
+
+    sub["_dist_pc"] = pd.to_numeric(sub["sy_dist"], errors="coerce")
+    sub["_year"] = pd.to_numeric(sub["disc_year"], errors="coerce").astype(int)
+    method_raw = sub.get("discoverymethod", pd.Series([None] * len(sub), index=sub.index))
+    sub["_method_group"] = method_raw.where(method_raw.isin(NAMED_METHODS), "Other")
+
+    y0, y1 = int(sub["_year"].min()), int(sub["_year"].max())
+    years = list(range(y0, y1 + 1))
+
+    method_counts: dict[str, list[int]] = {g: [] for g in groups}
+    total_counts: list[int] = []
+    quantiles: dict[str, dict[str, list[float | None]]] = {
+        g: {"median_pc": [], "p90_pc": []} for g in groups
+    }
+
+    for y in years:
+        cum = sub[sub["_year"] <= y]
+        total_counts.append(int(len(cum)))
+        for g in groups:
+            gsub = cum[cum["_method_group"] == g]
+            method_counts[g].append(int(len(gsub)))
+            if len(gsub) > 0:
+                d = gsub["_dist_pc"].to_numpy(dtype=float)
+                quantiles[g]["median_pc"].append(round(float(np.median(d)), 1))
+                quantiles[g]["p90_pc"].append(round(float(np.percentile(d, 90)), 1))
+            else:
+                quantiles[g]["median_pc"].append(None)
+                quantiles[g]["p90_pc"].append(None)
+
+    return {
+        "generated_utc": utc_now_iso(),
+        "years": years,
+        "note": (
+            "Cumulative through each year, using the identical row filter as the 3D/2D "
+            "discovery-history views (measured distance required, Solar System controls "
+            "excluded). This describes how this archive snapshot's discovery record grew and "
+            "which methods contributed it -- not a corrected model of underlying Galactic "
+            "planet occurrence, since survey coverage and target selection changed over the "
+            "same period."
+        ),
+        "method_share_counts_by_year": method_counts,
+        "total_count_by_year": total_counts,
+        "distance_quantiles_pc_by_year": quantiles,
+    }
+
+
 def export_all(
     ranking: pd.DataFrame,
     summary: dict[str, Any],
@@ -420,6 +505,9 @@ def export_all(
     written["catalogue"] = write_json(export_catalogue_columnar(ranking), out_dir / "catalogue.json")
     written["universe"] = write_json(export_universe(ranking), out_dir / "universe.json")
     written["galaxy"] = write_json(export_galaxy(ranking), out_dir / "galaxy.json")
+    written["discovery_timeline"] = write_json(
+        export_discovery_timeline(ranking), out_dir / "discovery_timeline.json"
+    )
 
     written["coverage"] = write_json(
         {"generated_utc": utc_now_iso(), "rows": coverage.to_dict("records")},

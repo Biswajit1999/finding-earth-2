@@ -18,7 +18,8 @@ import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
 import { StarField, type ColourMode } from "@/components/three/StarField";
 import { SkyProjection } from "@/components/universe/SkyProjection";
-import type { UniverseFile } from "@/lib/types";
+import { DiscoveryTimelineCharts } from "@/components/universe/DiscoveryTimelineCharts";
+import type { DiscoveryTimelineFile, UniverseFile } from "@/lib/types";
 import { compactInt, EMDASH, int, num, slugify, utcLabel } from "@/lib/format";
 import { downloadCsv } from "@/lib/csv";
 
@@ -139,10 +140,13 @@ function Legend({ mode }: { mode: ColourMode }) {
 export function UniverseExplorer({
   data,
   deepDiveSlugs,
+  timeline,
 }: {
   data: UniverseFile;
   /** Slugs with a full deep-dive page; most of the 6,300+ systems here don't have one. */
   deepDiveSlugs?: Set<string>;
+  /** Cumulative yearly method-share/distance-reach stats, absent only if the export predates it. */
+  timeline?: DiscoveryTimelineFile | null;
 }) {
   const reduced = useReducedMotion();
   const [mode, setMode] = useState<ColourMode>("index");
@@ -721,7 +725,7 @@ export function UniverseExplorer({
 
           {/* ---------------- selected system panel ---------------- */}
           {info !== null && (
-            <div className="pointer-events-auto panel-raised max-w-sm self-start p-4">
+            <div className="pointer-events-auto panel-raised max-w-sm self-start min-h-0 overflow-y-auto p-4">
               <div className="flex items-start justify-between gap-2">
                 <div>
                   <p className="text-[14px] font-medium text-[var(--color-ivory)]">
@@ -873,6 +877,12 @@ export function UniverseExplorer({
           </div>
         )}
       </div>
+
+      {timeline && (
+        <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6">
+          <DiscoveryTimelineCharts data={timeline} currentYear={discoveryYear} />
+        </div>
+      )}
     </div>
   );
 }

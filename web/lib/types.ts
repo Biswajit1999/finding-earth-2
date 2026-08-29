@@ -202,6 +202,18 @@ export interface GalaxyFile {
   galactic_centre_bulge_note: string;
 }
 
+export interface DiscoveryTimelineFile {
+  generated_utc: string;
+  years: number[];
+  note: string;
+  /** Cumulative planet count through each year, per method group (plus "Other"). */
+  method_share_counts_by_year: Record<string, number[]>;
+  /** Cumulative planet count through each year, across every method. */
+  total_count_by_year: number[];
+  /** Cumulative median/90th-percentile distance (pc) through each year, per method. Null before that method's first surviving detection. */
+  distance_quantiles_pc_by_year: Record<string, { median_pc: Maybe[]; p90_pc: Maybe[] }>;
+}
+
 export interface SummaryFile {
   generated_utc: string;
   earth2_version: string;
@@ -294,9 +306,16 @@ export interface SpectrumPoint {
   bandwidth_um: number | null;
   depth_ppm: number;
   depth_ppm_err: number | null;
+  brightness_temperature_k?: number | null;
+  brightness_temperature_k_err?: number | null;
   source: string;
   facility: string | null;
   instrument: string | null;
+}
+
+export interface SpectrumReference {
+  label: string;
+  url: string;
 }
 
 export interface ExpectedBand {
@@ -317,6 +336,7 @@ export interface TransmissionSpectrum {
   wavelength_range_um?: [number, number];
   facilities?: string[];
   instruments?: string[];
+  references?: SpectrumReference[];
   depth_sources?: Record<string, number>;
   expected_bands?: ExpectedBand[];
   points?: SpectrumPoint[];

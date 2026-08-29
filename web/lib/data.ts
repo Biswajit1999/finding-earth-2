@@ -18,6 +18,7 @@ import type {
   CoverageRow,
   DeepDive,
   DeepDiveIndexEntry,
+  DiscoveryTimelineFile,
   GalaxyFile,
   Planet,
   ReferenceRow,
@@ -62,6 +63,10 @@ export function getUniverse(): UniverseFile {
 
 export function getGalaxy(): GalaxyFile {
   return readJson<GalaxyFile>("galaxy.json");
+}
+
+export function getDiscoveryTimeline(): DiscoveryTimelineFile | null {
+  return readJsonOptional<DiscoveryTimelineFile>("discovery_timeline.json");
 }
 
 export function getCoverage(): CoverageRow[] {

@@ -13,6 +13,7 @@ from earth2.reporting.webexport import (
     GALACTIC_CENTRE_RA_DEG,
     GALCEN_DISTANCE_KPC,
     SUN_HEIGHT_PC,
+    export_discovery_timeline,
     export_galaxy,
     export_universe,
 )
@@ -162,3 +163,45 @@ def test_export_universe_galactic_centre_reads_as_zero_zero():
     l_wrapped = (result["gal_l_deg"][0] + 180) % 360 - 180
     assert l_wrapped == pytest.approx(0.0, abs=0.1)
     assert result["gal_b_deg"][0] == pytest.approx(0.0, abs=0.1)
+
+
+def test_export_discovery_timeline_years_span_min_to_max_surviving_discovery_year():
+    """Test b (Transit, 2020) and Test c (Radial Velocity, 2015) survive the
+    shared distance filter; the timeline must span exactly 2015-2020, not the
+    excluded rows' years (1995 control, 2019 no-distance)."""
+    t = export_discovery_timeline(_sample_catalogue())
+    assert t["years"] == list(range(2015, 2021))
+
+
+def test_export_discovery_timeline_counts_are_cumulative_not_per_year():
+    """Radial Velocity's one surviving system (Test c) was discovered in
+    2015, so its cumulative count must already be 1 at 2015 and stay 1 at
+    2020 -- a per-year-only (non-cumulative) implementation would instead
+    show 1 at 2015 and 0 at 2020."""
+    t = export_discovery_timeline(_sample_catalogue())
+    rv_counts = t["method_share_counts_by_year"]["Radial Velocity"]
+    assert rv_counts[t["years"].index(2015)] == 1
+    assert rv_counts[t["years"].index(2020)] == 1
+    transit_counts = t["method_share_counts_by_year"]["Transit"]
+    assert transit_counts[t["years"].index(2019)] == 0
+    assert transit_counts[t["years"].index(2020)] == 1
+    assert t["total_count_by_year"] == [1, 1, 1, 1, 1, 2]
+
+
+def test_export_discovery_timeline_method_with_no_detections_yet_is_null_not_zero():
+    """Transit's only surviving system is discovered in 2020, so its distance
+    quantiles at 2015-2019 must be null (nothing detected yet by that method),
+    never a fabricated 0 pc."""
+    t = export_discovery_timeline(_sample_catalogue())
+    transit_median = t["distance_quantiles_pc_by_year"]["Transit"]["median_pc"]
+    assert transit_median[t["years"].index(2019)] is None
+    assert transit_median[t["years"].index(2020)] == pytest.approx(12.5)
+
+
+def test_export_discovery_timeline_final_year_matches_export_universe_total():
+    """At the last year, the cumulative total must equal export_universe's
+    full n_points -- both derive from the identical row filter."""
+    df = _sample_catalogue()
+    t = export_discovery_timeline(df)
+    u = export_universe(df)
+    assert t["total_count_by_year"][-1] == u["n_points"]
