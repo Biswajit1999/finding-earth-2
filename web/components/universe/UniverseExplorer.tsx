@@ -17,8 +17,10 @@ import Link from "next/link";
 import { Suspense, useEffect, useMemo, useRef, useState } from "react";
 
 import { StarField, type ColourMode } from "@/components/three/StarField";
+import { SkyProjection } from "@/components/universe/SkyProjection";
 import type { UniverseFile } from "@/lib/types";
 import { compactInt, EMDASH, int, num, slugify, utcLabel } from "@/lib/format";
+import { downloadCsv } from "@/lib/csv";
 
 /** The subset of three-stdlib's OrbitControls this component actually drives. */
 interface OrbitControlsHandle {
@@ -138,7 +140,7 @@ export function UniverseExplorer({
   const [query, setQuery] = useState("");
   const [selected, setSelected] = useState<number | null>(null);
   const [webglFailed, setWebglFailed] = useState(false);
-  const [rotate, setRotate] = useState(!reduced);
+  const [rotate, setRotate] = useState(false);
   const [unit, setUnit] = useState<"pc" | "ly">("pc");
   const [activeMethods, setActiveMethods] = useState<Set<string>>(
     () => new Set(ALL_METHOD_GROUPS),
@@ -148,7 +150,16 @@ export function UniverseExplorer({
   const [flagRuwe, setFlagRuwe] = useState(false);
   const [countMode, setCountMode] = useState<"planets" | "hosts">("planets");
   const [ready, setReady] = useState(false);
+  const [viewMode, setViewMode] = useState<"3d" | "2d">("3d");
   const controlsRef = useRef<OrbitControlsHandle | null>(null);
+
+  // WebGL failure forces the 2D projection rather than a dead end: same real
+  // data, a projection that needs no WebGL at all. The 2D view never shows a
+  // loading veil -- it's plain SVG, ready the instant it's chosen -- so the
+  // veil's visibility is derived straight from this, not synchronised via an
+  // effect.
+  const effectiveViewMode = webglFailed ? "2d" : viewMode;
+  const showLoadingVeil = effectiveViewMode === "3d" && !ready;
 
   const zoomBy = (factor: number) => {
     const controls = controlsRef.current;
@@ -250,6 +261,30 @@ export function UniverseExplorer({
     return { mask, nVisible };
   }, [data, distRange, activeMethods, discoveryYear, maxDiscoveryYear, countMode]);
 
+  const handleDownloadCsv = () => {
+    const headers = [
+      "name", "host", "method", "dist_pc", "disc_year",
+      "earth2_index", "esi", "gaia_ruwe", "gal_l_deg", "gal_b_deg",
+    ];
+    const rows: (string | number | null)[][] = [];
+    for (let i = 0; i < data.n_points; i++) {
+      if (!filterMask.mask[i]) continue;
+      rows.push([
+        data.name[i],
+        data.host[i],
+        data.method[i],
+        data.dist_pc[i],
+        data.disc_year[i],
+        data.earth2_index[i],
+        data.esi[i],
+        data.gaia_ruwe[i],
+        data.gal_l_deg[i],
+        data.gal_b_deg[i],
+      ]);
+    }
+    downloadCsv("finding-earth-2-universe-filtered.csv", headers, rows);
+  };
+
   const filtersActive =
     distRange[0] > 0 ||
     distRange[1] < maxDistPc ||
@@ -258,23 +293,6 @@ export function UniverseExplorer({
     countMode !== "planets";
 
   const info = selected !== null ? selected : null;
-
-  if (webglFailed) {
-    return (
-      <div className="panel mx-auto max-w-2xl p-8 text-center">
-        <p className="text-[14px] text-[var(--color-ivory)]">
-          WebGL is unavailable in this browser.
-        </p>
-        <p className="mt-2 text-[13px] text-[var(--color-muted)]">
-          The 3D universe requires WebGL. Try the{" "}
-          <Link href="/atlas" className="link">
-            Candidate Atlas
-          </Link>{" "}
-          for the same data as a searchable table instead.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <div className="relative">
@@ -285,55 +303,75 @@ export function UniverseExplorer({
             "radial-gradient(ellipse at 50% 45%, #10152a 0%, #090b16 45%, #05060b 100%)",
         }}
       >
-        <Canvas
-          camera={{ position: [0, 1.1, 5.2], fov: 55 }}
-          dpr={[1, 1.75]}
-          gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
-          onCreated={({ gl, raycaster }) => {
-            // Transparent so the container's own radial gradient (a soft
-            // haze, not flat black) shows behind the points instead of being
-            // painted over every frame.
-            gl.setClearColor("#000000", 0);
-            // The default threshold is tuned for typical scene scales, not
-            // this compressed log-distance layout -- too small and clicks on
-            // a visibly-there point miss every time, too large and dense
-            // clusters can't be told apart.
-            raycaster.params.Points.threshold = 0.16;
-            setReady(true);
-          }}
-          onError={() => setWebglFailed(true)}
-        >
-          <Suspense fallback={null}>
-            <StarField
-              data={data}
-              colourMode={mode}
-              rotate={rotate}
-              twinkle={!reduced}
-              highlightIndices={highlight}
-              visibleMask={filterMask.mask}
-              onSelect={setSelected}
-              showDistanceLines={showLines}
-              radialScale={radialScale}
-              flagLowConfidenceAstrometry={flagRuwe}
+        {effectiveViewMode === "3d" && (
+          <Canvas
+            camera={{ position: [0, 1.1, 5.2], fov: 55 }}
+            dpr={[1, 1.75]}
+            gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+            onCreated={({ gl, raycaster }) => {
+              // Transparent so the container's own radial gradient (a soft
+              // haze, not flat black) shows behind the points instead of being
+              // painted over every frame.
+              gl.setClearColor("#000000", 0);
+              // The default threshold is tuned for typical scene scales, not
+              // this compressed log-distance layout -- too small and clicks on
+              // a visibly-there point miss every time, too large and dense
+              // clusters can't be told apart.
+              // The visual marks stay scientifically restrained, but their
+              // invisible picking radius is deliberately larger so selecting
+              // a system does not demand pixel-perfect pointer placement.
+              raycaster.params.Points.threshold = 0.24;
+              setReady(true);
+            }}
+            onError={() => setWebglFailed(true)}
+          >
+            <Suspense fallback={null}>
+              <StarField
+                data={data}
+                colourMode={mode}
+                rotate={rotate}
+                twinkle={!reduced}
+                highlightIndices={highlight}
+                visibleMask={filterMask.mask}
+                onSelect={setSelected}
+                showDistanceLines={showLines}
+                radialScale={radialScale}
+                flagLowConfidenceAstrometry={flagRuwe}
+              />
+            </Suspense>
+            <OrbitControls
+              ref={controlsRef as never}
+              enablePan
+              enableZoom
+              enableRotate
+              enableDamping
+              dampingFactor={0.08}
+              rotateSpeed={0.7}
+              panSpeed={0.7}
+              minDistance={0.6}
+              maxDistance={14}
+              autoRotate={false}
+              onStart={() => setRotate(false)}
             />
-          </Suspense>
-          <OrbitControls
-            ref={controlsRef as never}
-            enablePan
-            enableZoom
-            enableRotate
-            minDistance={0.6}
-            maxDistance={14}
-            autoRotate={false}
-            onStart={() => setRotate(false)}
+          </Canvas>
+        )}
+
+        {effectiveViewMode === "2d" && (
+          <SkyProjection
+            data={data}
+            colourMode={mode}
+            visibleMask={filterMask.mask}
+            highlightIndices={highlight}
+            onSelect={setSelected}
+            flagLowConfidenceAstrometry={flagRuwe}
           />
-        </Canvas>
+        )}
 
         {/* ---------------- branded loading veil ---------------- */}
         <div
-          aria-hidden={ready}
+          aria-hidden={!showLoadingVeil}
           className={`absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-[var(--color-void)] transition-opacity duration-700 ${
-            ready ? "pointer-events-none opacity-0" : "opacity-100"
+            showLoadingVeil ? "opacity-100" : "pointer-events-none opacity-0"
           }`}
         >
           <p className="font-[family-name:var(--font-display)] text-lg font-medium text-[var(--color-ivory)]">
@@ -419,6 +457,50 @@ export function UniverseExplorer({
               </div>
             </div>
 
+            <div className="panel-raised p-3">
+              <p className="eyebrow mb-1.5">View</p>
+              <div
+                className="flex overflow-hidden rounded-[var(--radius-sm)] border border-[var(--color-line-strong)]"
+                title={webglFailed ? "WebGL is unavailable in this browser" : undefined}
+              >
+                {([
+                  ["3d", "3D"],
+                  ["2d", "2D sky"],
+                ] as const).map(([key, label]) => (
+                  <button
+                    key={key}
+                    type="button"
+                    disabled={key === "3d" && webglFailed}
+                    onClick={() => {
+                      if (key === "3d") setReady(false);
+                      setViewMode(key);
+                    }}
+                    aria-pressed={effectiveViewMode === key}
+                    className={`cursor-pointer px-2 py-1 text-[11px] disabled:cursor-not-allowed disabled:opacity-40 ${
+                      effectiveViewMode === key
+                        ? "bg-[var(--color-cyan)]/15 text-[var(--color-cyan)]"
+                        : "text-[var(--color-dim)]"
+                    }`}
+                  >
+                    {label}
+                  </button>
+                ))}
+              </div>
+              {webglFailed && (
+                <p className="mt-1.5 text-[10px] leading-relaxed text-[var(--color-rose)]">
+                  WebGL is unavailable — showing the 2D sky projection instead. Same real data, a
+                  different projection.
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={handleDownloadCsv}
+                className="mt-2.5 w-full cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2 py-1.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+              >
+                Download CSV ({compactInt(filterMask.nVisible)})
+              </button>
+            </div>
+
             <div className="panel-raised w-[230px] p-3">
               <div className="mb-1.5 flex items-center justify-between">
                 <p className="eyebrow">Filters</p>
@@ -498,6 +580,31 @@ export function UniverseExplorer({
                   Distance lines from Sun
                 </span>
               </label>
+
+              <div className="mt-2 flex items-center justify-between gap-3 text-[11px] text-[var(--color-dim)]">
+                <span>Auto-rotate 3D</span>
+                <button
+                  type="button"
+                  role="switch"
+                  aria-checked={rotate}
+                  aria-label="Auto-rotate 3D view"
+                  onClick={() => setRotate((value) => !value)}
+                  className={`relative h-5 w-9 shrink-0 cursor-pointer rounded-full border transition-colors ${
+                    rotate
+                      ? "border-[var(--color-cyan)] bg-[var(--color-cyan)]/25"
+                      : "border-[var(--color-line-strong)] bg-[var(--color-void)]"
+                  }`}
+                >
+                  <span
+                    aria-hidden="true"
+                    className={`absolute top-1/2 size-3.5 -translate-y-1/2 rounded-full transition-[left,background-color] ${
+                      rotate
+                        ? "left-[17px] bg-[var(--color-cyan)]"
+                        : "left-[3px] bg-[var(--color-muted)]"
+                    }`}
+                  />
+                </button>
+              </div>
 
               <label className="mt-1.5 flex cursor-pointer items-center justify-between gap-2 text-[11px] text-[var(--color-dim)]">
                 <span className="flex items-center gap-1.5">
@@ -724,34 +831,37 @@ export function UniverseExplorer({
             <div className="pointer-events-none hidden max-w-md text-right font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)] xl:block">
               {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)}{" "}
               {countMode === "hosts" ? "host stars" : "systems"} shown ·{" "}
-              {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) · drag to
-              orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click
-              a star
+              {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) ·{" "}
+              {effectiveViewMode === "3d"
+                ? "drag to orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click a star"
+                : "Galactic longitude/latitude, as seen from the Sun — longitude increases to the left, click a point"}
             </div>
           </div>
         </div>
 
         {/* ---------------- zoom controls ---------------- */}
-        <div className="pointer-events-auto absolute bottom-4 right-4 z-10 flex flex-col gap-1">
-          <button
-            type="button"
-            onClick={() => zoomBy(1 / 1.35)}
-            aria-label="Zoom in"
-            title="Zoom in"
-            className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
-          >
-            +
-          </button>
-          <button
-            type="button"
-            onClick={() => zoomBy(1.35)}
-            aria-label="Zoom out"
-            title="Zoom out"
-            className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
-          >
-            −
-          </button>
-        </div>
+        {effectiveViewMode === "3d" && (
+          <div className="pointer-events-auto absolute bottom-4 right-4 z-10 flex flex-col gap-1">
+            <button
+              type="button"
+              onClick={() => zoomBy(1 / 1.35)}
+              aria-label="Zoom in"
+              title="Zoom in"
+              className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
+            >
+              +
+            </button>
+            <button
+              type="button"
+              onClick={() => zoomBy(1.35)}
+              aria-label="Zoom out"
+              title="Zoom out"
+              className="panel-raised cursor-pointer px-2.5 py-1.5 text-[13px] text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
+            >
+              −
+            </button>
+          </div>
+        )}
       </div>
     </div>
   );

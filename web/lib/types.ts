@@ -157,6 +157,8 @@ export interface UniverseFile {
   x: number[];
   y: number[];
   z: number[];
+  gal_l_deg: number[];
+  gal_b_deg: number[];
   name: string[];
   host: string[];
   dist_pc: number[];

@@ -2,9 +2,11 @@ from __future__ import annotations
 
 import math
 
+import astropy.units as u_
 import numpy as np
 import pandas as pd
 import pytest
+from astropy.coordinates import SkyCoord
 
 from earth2.reporting.webexport import (
     GALACTIC_CENTRE_DEC_DEG,
@@ -120,3 +122,43 @@ def test_export_universe_still_matches_export_galaxy_distance_filter():
     df = _sample_catalogue()
     assert export_universe(df)["n_points"] == export_galaxy(df)["n_points"]
     assert export_universe(df)["n_excluded_no_distance"] == export_galaxy(df)["n_excluded_no_distance"]
+
+
+def test_export_universe_galactic_lb_matches_direct_astropy_transform():
+    """gal_l_deg/gal_b_deg must match a from-scratch astropy transform of the
+    same raw ra/dec -- this is an independent recomputation, not a re-check of
+    webexport's own internal call, so it would catch a wrong frame or a
+    swapped l/b."""
+    df = _sample_catalogue()
+    result = export_universe(df)
+    expected = SkyCoord(
+        ra=[10.0, 200.0] * u_.deg, dec=[20.0, -30.0] * u_.deg, frame="icrs"
+    ).galactic
+    assert result["name"] == ["Test b", "Test c"]
+    for got_l, got_b, exp_l, exp_b in zip(
+        result["gal_l_deg"], result["gal_b_deg"], expected.l.deg, expected.b.deg
+    ):
+        assert got_l == pytest.approx(exp_l, abs=1e-2)
+        assert got_b == pytest.approx(exp_b, abs=1e-2)
+
+
+def test_export_universe_galactic_centre_reads_as_zero_zero():
+    """A row placed exactly at Sagittarius A*'s own sky position must read as
+    (l, b) approx (0, 0) by definition of the Galactic coordinate system --
+    a real sanity check on the transform, not just "some number came out"."""
+    df = pd.DataFrame(
+        {
+            "pl_name": ["At GC"],
+            "hostname": ["h1"],
+            "ra": [GALACTIC_CENTRE_RA_DEG],
+            "dec": [GALACTIC_CENTRE_DEC_DEG],
+            "sy_dist": [1000.0],
+            "earth2_index": [0.1],
+            "discoverymethod": ["Microlensing"],
+            "disc_year": [2020],
+        }
+    )
+    result = export_universe(df)
+    l_wrapped = (result["gal_l_deg"][0] + 180) % 360 - 180
+    assert l_wrapped == pytest.approx(0.0, abs=0.1)
+    assert result["gal_b_deg"][0] == pytest.approx(0.0, abs=0.1)

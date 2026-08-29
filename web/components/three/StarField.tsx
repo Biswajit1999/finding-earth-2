@@ -251,7 +251,10 @@ export function StarField({
     const down = downPos.current;
     downPos.current = null;
     if (!down || !onSelect || e.index === undefined) return;
-    if (Math.hypot(e.clientX - down.x, e.clientY - down.y) < 6) {
+    // Allow a little natural hand movement without confusing an intentional
+    // click with an orbit drag. The raycaster still decides which real point
+    // was targeted; this does not fabricate or snap to a different system.
+    if (Math.hypot(e.clientX - down.x, e.clientY - down.y) < 10) {
       onSelect(e.index);
     }
   };

@@ -193,6 +193,11 @@ def export_universe(ranking: pd.DataFrame, max_points: int | None = None) -> dic
     inventing one -- placing it at a default radius, or at the population median
     -- would put a fabricated point in a view the reader will read as
     observational. Those planets are counted and reported as excluded instead.
+
+    Also includes each point's Galactic longitude/latitude (``gal_l_deg``,
+    ``gal_b_deg``), computed via astropy the same way as in ``export_galaxy``,
+    so a 2D sky-projection fallback view can reuse this file directly instead
+    of re-deriving the transform in JavaScript.
     """
     df = ranking.copy()
     if "is_control" in df.columns:
@@ -226,6 +231,12 @@ def export_universe(ranking: pd.DataFrame, max_points: int | None = None) -> dic
     y = d * np.cos(dec_r) * np.sin(ra_r)
     z = d * np.sin(dec_r)
 
+    gal = SkyCoord(
+        ra=np.degrees(ra_r) * u.deg, dec=np.degrees(dec_r) * u.deg, frame="icrs"
+    ).galactic
+    gal_l = gal.l.deg
+    gal_b = gal.b.deg
+
     def r3(a: np.ndarray) -> list[float]:
         return [round(float(v), 3) for v in a]
 
@@ -240,6 +251,8 @@ def export_universe(ranking: pd.DataFrame, max_points: int | None = None) -> dic
             "excluded and counted, never placed at an invented distance."
         ),
         "x": r3(x), "y": r3(y), "z": r3(z),
+        "gal_l_deg": r3(gal_l),
+        "gal_b_deg": r3(gal_b),
         "name": [str(v) for v in sub["pl_name"]],
         "host": [str(v) for v in sub.get("hostname", pd.Series([""] * len(sub)))],
         "dist_pc": [round(float(v), 3) for v in d],
