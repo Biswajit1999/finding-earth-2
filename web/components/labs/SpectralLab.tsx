@@ -12,7 +12,11 @@
 import { useEffect, useMemo, useState } from "react";
 
 import { assetPath } from "@/lib/assets";
-import type { SpectraIndexRow } from "@/lib/types";
+import { downloadCsv } from "@/lib/csv";
+import type {
+  SpectraIndexRow,
+  SpectrumReference,
+} from "@/lib/types";
 import { num, slugify } from "@/lib/format";
 
 const BAND_COLOURS: Record<string, string> = {
@@ -23,16 +27,29 @@ const BAND_COLOURS: Record<string, string> = {
 
 interface SpecPoint {
   wavelength_um: number;
+  bandwidth_um: number | null;
   depth_ppm: number;
   depth_ppm_err: number | null;
+  brightness_temperature_k?: number | null;
+  brightness_temperature_k_err?: number | null;
+  source: string;
+  facility: string | null;
+  instrument: string | null;
 }
+
+type SpectrumKind = "transmission" | "emission";
 
 export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
   const transmission = useMemo(
     () => index.filter((r) => r.kind === "transmission").sort((a, b) => b.n_points - a.n_points),
     [index],
   );
+  const emission = useMemo(
+    () => index.filter((r) => r.kind === "emission").sort((a, b) => b.n_points - a.n_points),
+    [index],
+  );
 
+  const [kind, setKind] = useState<SpectrumKind>("transmission");
   const [planet, setPlanet] = useState<string>(transmission[0]?.pl_name ?? "");
   const [points, setPoints] = useState<SpecPoint[] | null>(null);
   const [bands, setBands] = useState<
@@ -40,27 +57,42 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
   >([]);
   const [loading, setLoading] = useState(false);
   const [caveat, setCaveat] = useState<string>("");
+  const [facilities, setFacilities] = useState<string[]>([]);
+  const [instruments, setInstruments] = useState<string[]>([]);
+  const [references, setReferences] = useState<SpectrumReference[]>([]);
+  const [loadError, setLoadError] = useState("");
   // null = fully zoomed out (shows the whole spectrum). Reset on every planet
   // switch so the zoom from one spectrum never carries over to the next.
   const [zoom, setZoom] = useState<[number, number] | null>(null);
 
-  const load = async (name: string) => {
+  const spectrumPath = (name: string, spectrumKind: SpectrumKind) => {
+    const slug = slugify(name);
+    return spectrumKind === "emission"
+      ? `/data/spectra/emission/${slug}.json`
+      : `/data/spectra/${slug}.json`;
+  };
+
+  const load = async (name: string, spectrumKind: SpectrumKind) => {
+    setKind(spectrumKind);
     setPlanet(name);
     setLoading(true);
     setPoints(null);
     setZoom(null);
+    setLoadError("");
     try {
-      const slug = slugify(name);
-      const res = await fetch(
-        assetPath("/data/spectra/" + slug + ".json"),
-      );
-      if (!res.ok) return;
+      const res = await fetch(assetPath(spectrumPath(name, spectrumKind)));
+      if (!res.ok) throw new Error(`Spectrum request failed (${res.status})`);
       const spec = await res.json();
       if (spec?.points) {
         setPoints(spec.points);
         setBands(spec.expected_bands ?? []);
         setCaveat(spec.caveat ?? "");
+        setFacilities(spec.facilities ?? []);
+        setInstruments(spec.instruments ?? []);
+        setReferences(spec.references ?? []);
       }
+    } catch {
+      setLoadError("This spectrum could not be loaded. Try another planet or reload the page.");
     } finally {
       setLoading(false);
     }
@@ -72,7 +104,7 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
   // running the load during that pass throws on every build.
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    if (planet) void load(planet);
+    if (planet) void load(planet, "transmission");
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -157,23 +189,96 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
     setZoom(newHi - newLo >= fullSpan * 0.999 ? null : [newLo, newHi]);
   };
   const isZoomed = zoom !== null;
+  const visibleIndex = kind === "transmission" ? transmission : emission;
+  const kindLabel = kind === "transmission" ? "Transmission" : "Eclipse";
+  const depthLabel = kind === "transmission" ? "Transit depth (ppm)" : "Eclipse depth (ppm)";
+
+  const downloadSpectrumCsv = () => {
+    if (!points) return;
+    downloadCsv(
+      `finding-earth-2-${slugify(planet)}-${kind}-spectrum.csv`,
+      [
+        "planet",
+        "spectrum_type",
+        "wavelength_um",
+        "bandwidth_um",
+        "depth_ppm",
+        "depth_ppm_err",
+        "brightness_temperature_k",
+        "brightness_temperature_k_err",
+        "facility",
+        "instrument",
+        "source_field",
+      ],
+      points.map((p) => [
+        planet,
+        kindLabel,
+        p.wavelength_um,
+        p.bandwidth_um,
+        p.depth_ppm,
+        p.depth_ppm_err,
+        p.brightness_temperature_k ?? null,
+        p.brightness_temperature_k_err ?? null,
+        p.facility,
+        p.instrument,
+        p.source,
+      ]),
+    );
+  };
+
+  const downloadInventoryCsv = () => {
+    downloadCsv(
+      "finding-earth-2-atmospheric-spectra-index.csv",
+      ["planet", "spectrum_type", "n_points", "wl_min_um", "wl_max_um", "n_facilities", "facilities"],
+      index.map((r) => [
+        r.pl_name,
+        r.kind === "emission" ? "Eclipse" : "Transmission",
+        r.n_points,
+        r.wl_min_um,
+        r.wl_max_um,
+        r.n_facilities,
+        r.facilities,
+      ]),
+    );
+  };
 
   return (
     <div className="mx-auto max-w-[1400px] px-4 py-8 sm:px-6">
       <div className="grid gap-8 lg:grid-cols-[300px_1fr]">
         <div className="panel h-fit p-4 lg:sticky lg:top-20">
-          <p className="eyebrow mb-3">
-            Planets with published spectra ({transmission.length})
-          </p>
+          <p className="eyebrow mb-3">Published atmospheric spectra</p>
+          <div className="mb-3 grid grid-cols-2 border border-[var(--color-line-strong)]">
+            {([
+              ["transmission", `Transmission · ${transmission.length}`],
+              ["emission", `Eclipse · ${emission.length}`],
+            ] as const).map(([nextKind, label]) => (
+              <button
+                key={nextKind}
+                type="button"
+                aria-pressed={kind === nextKind}
+                onClick={() => {
+                  const first = (nextKind === "transmission" ? transmission : emission)[0];
+                  if (first) void load(first.pl_name, nextKind);
+                }}
+                className={`cursor-pointer px-2 py-2 text-[11px] transition-colors ${
+                  kind === nextKind
+                    ? "bg-[var(--color-raised)] text-[var(--color-cyan)]"
+                    : "text-[var(--color-dim)] hover:text-[var(--color-cyan)]"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
           <ul className="max-h-[70vh] space-y-0.5 overflow-y-auto">
-            {transmission.map((r) => (
+            {visibleIndex.map((r) => (
               <li key={r.pl_name}>
                 <button
                   type="button"
-                  onClick={() => load(r.pl_name)}
-                  aria-current={planet === r.pl_name}
+                  onClick={() => load(r.pl_name, kind)}
+                  aria-current={planet === r.pl_name && kind === r.kind}
                   className={`flex w-full cursor-pointer items-center justify-between rounded-[var(--radius-sm)] px-2.5 py-1.5 text-left text-[12.5px] transition-colors ${
-                    planet === r.pl_name
+                    planet === r.pl_name && kind === r.kind
                       ? "bg-[var(--color-panel)] text-[var(--color-cyan)]"
                       : "text-[var(--color-dim)] hover:bg-[var(--color-panel)]"
                   }`}
@@ -186,17 +291,32 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
               </li>
             ))}
           </ul>
+          <button
+            type="button"
+            onClick={downloadInventoryCsv}
+            className="mt-3 w-full cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-3 py-2 text-[11px] text-[var(--color-dim)] transition-colors hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+          >
+            Download spectra index CSV
+          </button>
         </div>
 
         <div>
           {loading && <p className="text-[13px] text-[var(--color-muted)]">Loading spectrum…</p>}
+          {!loading && loadError && (
+            <p role="alert" className="panel border-l-2 border-[var(--color-rose)] p-4 text-[13px] text-[var(--color-rose)]">
+              {loadError}
+            </p>
+          )}
           {!loading && points && (
             <div className="panel p-5">
-              <div className="mb-4 flex flex-wrap items-baseline justify-between gap-2">
-                <h2 className="font-[family-name:var(--font-display)] text-xl font-medium">
-                  {planet}
-                </h2>
-                <div className="flex items-center gap-3">
+              <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
+                <div>
+                  <p className="eyebrow mb-1">{kindLabel} spectrum</p>
+                  <h2 className="font-[family-name:var(--font-display)] text-xl font-medium">
+                    {planet}
+                  </h2>
+                </div>
+                <div className="flex flex-wrap items-center justify-end gap-3">
                   <p className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--color-muted)]">
                     {visiblePoints.length} points · {num(wlRange[0], 2)}–{num(wlRange[1], 2)} μm
                   </p>
@@ -229,10 +349,35 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
                       </button>
                     )}
                   </div>
+                  <button
+                    type="button"
+                    onClick={downloadSpectrumCsv}
+                    className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2.5 py-1 text-[11px] text-[var(--color-dim)] transition-colors hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                  >
+                    Download CSV
+                  </button>
+                  <a
+                    href={assetPath(spectrumPath(planet, kind))}
+                    download
+                    className="rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2.5 py-1 text-[11px] text-[var(--color-dim)] transition-colors hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                  >
+                    Download JSON
+                  </a>
                 </div>
               </div>
 
-              <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={"Transmission spectrum of " + planet} className="w-full">
+              <div className="mb-4 grid gap-2 border-y border-[var(--color-line)] py-3 text-[11px] text-[var(--color-muted)] sm:grid-cols-2">
+                <p>
+                  <span className="text-[var(--color-dim)]">Facilities:</span>{" "}
+                  {facilities.join(", ") || "Not reported"}
+                </p>
+                <p>
+                  <span className="text-[var(--color-dim)]">Instruments:</span>{" "}
+                  {instruments.join(", ") || "Not reported"}
+                </p>
+              </div>
+
+              <svg viewBox={`0 0 ${W} ${H}`} role="img" aria-label={`${kindLabel} spectrum of ${planet}`} className="w-full">
                 {/* axes */}
                 <line x1={padL} y1={H - padB} x2={W - padR} y2={H - padB} stroke="var(--color-line-strong)" />
                 <line x1={padL} y1={padT} x2={padL} y2={H - padB} stroke="var(--color-line-strong)" />
@@ -285,7 +430,7 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
                   Wavelength (μm)
                 </text>
                 <text x={14} y={H / 2} fontSize={11} fill="var(--color-muted)" textAnchor="middle" transform={`rotate(-90 14 ${H / 2})`}>
-                  Transit depth (ppm)
+                  {depthLabel}
                 </text>
               </svg>
 
@@ -296,6 +441,24 @@ export function SpectralLab({ index }: { index: SpectraIndexRow[] }) {
               <p className="mt-2 border-t border-[var(--color-line)] pt-3 text-[12px] leading-relaxed text-[var(--color-rose)]">
                 {caveat || "Dashed lines mark where a species absorbs. They are expected band positions, not detections."}
               </p>
+              {references.length > 0 && (
+                <div className="mt-3 border-t border-[var(--color-line)] pt-3">
+                  <p className="eyebrow mb-2">Source papers</p>
+                  <div className="flex flex-wrap gap-x-4 gap-y-1">
+                    {references.map((reference) => (
+                      <a
+                        key={reference.url}
+                        href={reference.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-[11px] text-[var(--color-cyan)] underline decoration-[var(--color-line-strong)] underline-offset-4"
+                      >
+                        {reference.label}
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
         </div>

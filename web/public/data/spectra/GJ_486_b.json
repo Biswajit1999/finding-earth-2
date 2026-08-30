@@ -14,6 +14,12 @@
   "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline",
   "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
  ],
+ "references": [
+  {
+   "label": "Moran et al. 2023",
+   "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230500868M/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 203
  },

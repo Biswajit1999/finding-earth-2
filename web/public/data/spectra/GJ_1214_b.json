@@ -42,6 +42,64 @@
   "WIRCam",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "de Mooij et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...771..109D/abstract"
+  },
+  {
+   "label": "de Mooij et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012A&A...538A..46D/abstract"
+  },
+  {
+   "label": "Nascimbeni et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015A&A...579A.113N/abstract"
+  },
+  {
+   "label": "Rackham et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...834..151R/abstract"
+  },
+  {
+   "label": "Bean et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011ApJ...743...92B/abstract"
+  },
+  {
+   "label": "Murgas et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012A&A...544A..41M/abstract"
+  },
+  {
+   "label": "Wilson et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.438.2395W/abstract"
+  },
+  {
+   "label": "Gillon et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..21G/abstract"
+  },
+  {
+   "label": "C\u00e1ceres et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A&A...565A...7C/abstract"
+  },
+  {
+   "label": "Berta et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...747...35B/abstract"
+  },
+  {
+   "label": "Kreidberg et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014Natur.505...69K/abstract"
+  },
+  {
+   "label": "Narita et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013PASJ...65...27N/abstract"
+  },
+  {
+   "label": "Croll et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011ApJ...736...78C/abstract"
+  },
+  {
+   "label": "D\u00e9sert et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011ApJ...731L..40D/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 110,
   "plntransdep_percent": 30

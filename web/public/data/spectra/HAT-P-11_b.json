@@ -16,6 +16,12 @@
   "Kepler CCD camera",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Fraine et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014Natur.513..526F/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 36
  },

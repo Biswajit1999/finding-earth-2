@@ -12,6 +12,12 @@
  "instruments": [
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Wakeford et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...835L..12W/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 15
  },

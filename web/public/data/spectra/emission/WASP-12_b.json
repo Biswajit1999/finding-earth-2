@@ -1,0 +1,602 @@
+{
+ "planet": "WASP-12 b",
+ "kind": "emission",
+ "n_points": 42,
+ "wavelength_range_um": [
+  0.9,
+  8.0
+ ],
+ "facilities": [
+  "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+  "Astrophysical Research Consortium (ARC) 3.5m Telescope At Apache Point Observatory (APO)",
+  "Hubble Space Telescope satellite",
+  "Infrared Telescope Facility",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)",
+  "Seaver Prototype Imaging camera (SPICam)",
+  "SpeX",
+  "WIRCam",
+  "Wide Field Camera 3",
+  "Wide-field Infrared Camera (WIRCam)"
+ ],
+ "references": [
+  {
+   "label": "L\u00f3pez-Morales et al. 2010",
+   "url": "https://ui.adsabs.harvard.edu/abs/2010ApJ...716L..36L/abstract"
+  },
+  {
+   "label": "Croll et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...802...28C/abstract"
+  },
+  {
+   "label": "Stevenson et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...791...36S/abstract"
+  },
+  {
+   "label": "Croll et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011AJ....141...30C/abstract"
+  },
+  {
+   "label": "Crossfield et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...746...46C/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 42
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9,
+    2.7,
+    6.2
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7,
+    2.3,
+    3.3,
+    7.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3,
+    4.6
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0,
+    7.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.9,
+   "bandwidth_um": null,
+   "depth_ppm": 820.0,
+   "depth_ppm_err": 150.0,
+   "brightness_temperature_k": 3028.0,
+   "brightness_temperature_k_err": 104.5,
+   "source": "especlipdep_percent",
+   "facility": "Astrophysical Research Consortium (ARC) 3.5m Telescope At Apache Point Observatory (APO)",
+   "instrument": "Seaver Prototype Imaging camera (SPICam)"
+  },
+  {
+   "wavelength_um": 1.04,
+   "bandwidth_um": null,
+   "depth_ppm": 1090.0,
+   "depth_ppm_err": 140.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 1.125,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1190.0,
+   "depth_ppm_err": 170.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.175,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1280.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.225,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1010.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.253,
+   "bandwidth_um": null,
+   "depth_ppm": 1310.0,
+   "depth_ppm_err": 280.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "Wide-field Infrared Camera (WIRCam)"
+  },
+  {
+   "wavelength_um": 1.275,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1420.0,
+   "depth_ppm_err": 110.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.325,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1540.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.375,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1560.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.425,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1840.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.475,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1980.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.525,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1960.0,
+   "depth_ppm_err": 130.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 340.0,
+   "depth_ppm_err": 1550.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.5625,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2060.0,
+   "depth_ppm_err": 1100.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.575,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1790.0,
+   "depth_ppm_err": 140.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2040.0,
+   "depth_ppm_err": 860.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.6125,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1330.0,
+   "depth_ppm_err": 1350.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.625,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 1920.0,
+   "depth_ppm_err": 170.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.631,
+   "bandwidth_um": null,
+   "depth_ppm": 1760.0,
+   "depth_ppm_err": 185.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "Wide-field Infrared Camera (WIRCam)"
+  },
+  {
+   "wavelength_um": 1.6375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2130.0,
+   "depth_ppm_err": 1100.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.6625,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1530.0,
+   "depth_ppm_err": 1130.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.6875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1950.0,
+   "depth_ppm_err": 1170.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.7125,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1430.0,
+   "depth_ppm_err": 1160.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 1.7375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1650.0,
+   "depth_ppm_err": 1070.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.0875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 1350.0,
+   "depth_ppm_err": 900.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.1125,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3080.0,
+   "depth_ppm_err": 460.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.1375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2020.0,
+   "depth_ppm_err": 1210.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.146,
+   "bandwidth_um": null,
+   "depth_ppm": 3090.0,
+   "depth_ppm_err": 125.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "Wide-field Infrared Camera (WIRCam)"
+  },
+  {
+   "wavelength_um": 2.15,
+   "bandwidth_um": null,
+   "depth_ppm": 2960.0,
+   "depth_ppm_err": 140.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 2.1625,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3990.0,
+   "depth_ppm_err": 1030.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.1875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2710.0,
+   "depth_ppm_err": 620.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.2125,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2860.0,
+   "depth_ppm_err": 730.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.22,
+   "bandwidth_um": null,
+   "depth_ppm": 3010.0,
+   "depth_ppm_err": 460.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 2.2375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3140.0,
+   "depth_ppm_err": 650.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.2625,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3790.0,
+   "depth_ppm_err": 560.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.2875,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3680.0,
+   "depth_ppm_err": 670.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.3125,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 3480.0,
+   "depth_ppm_err": 770.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 2.3375,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 2480.0,
+   "depth_ppm_err": 870.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Infrared Telescope Facility",
+   "instrument": "SpeX"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 4210.0,
+   "depth_ppm_err": 110.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 4280.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 6960.0,
+   "depth_ppm_err": 600.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 6960.0,
+   "depth_ppm_err": 960.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

@@ -21,6 +21,28 @@
   "ULTRACAM",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Sing et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016Natur.529...59S/abstract"
+  },
+  {
+   "label": "Bento et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.437.1511B/abstract"
+  },
+  {
+   "label": "Sedaghati et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016A&A...596A..47S/abstract"
+  },
+  {
+   "label": "Wood et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011MNRAS.412.2376W/abstract"
+  },
+  {
+   "label": "Mandell et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...779..128M/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 83,
   "plntransdep_percent": 21

@@ -12,6 +12,12 @@
  "instruments": [
   "OSIRIS"
  ],
+ "references": [
+  {
+   "label": "von Essen et al. 2019",
+   "url": "https://ui.adsabs.harvard.edu/abs/2019A&A...622A..71V/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 32
  },

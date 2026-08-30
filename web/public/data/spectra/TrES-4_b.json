@@ -12,6 +12,12 @@
  "instruments": [
   "WFC3"
  ],
+ "references": [
+  {
+   "label": "Ranjan et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...785..148R/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 10
  },

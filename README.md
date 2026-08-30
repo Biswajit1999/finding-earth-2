@@ -67,6 +67,8 @@ routinely conflated.
 | Conservative HZ **and** below 1.6 R⊕ | **15** |
 | …of which have a **measured mass** | **1** |
 | Planets with published transmission spectra | 104 |
+| Planets with published eclipse spectra | 54 |
+| Plot-ready atmospheric spectra (≥4 usable points) | 66 transmission + 31 eclipse |
 | Measurement-level provenance links | 89,131 across 1,814 publications |
 
 > **The headline finding is a scarcity result.** Of 6,354 confirmed
@@ -190,7 +192,7 @@ since revised. See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 |---|---|--:|---|
 | `gaia_dr3_crossmatch` | `gaiadr3.gaia_source` | 4,408 | — |
 | `nasa_di_stars` | `di_stars_exep` | 164 | — |
-| `nasa_emissionspec` | `emissionspec` | 2,361 | `10.26133/NEA9` |
+| `nasa_emissionspec` | `emissionspec` | 2,361 | `10.26133/NEA11` |
 | `nasa_k2pandc` | `k2pandc` | 4,068 | `10.26133/NEA1` |
 | `nasa_koi_dr25` | `q1_q17_dr25_koi` | 8,054 | `10.26133/NEA4` |
 | `nasa_microlensing` | `ml` | 895 | — |

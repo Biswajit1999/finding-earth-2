@@ -1,0 +1,375 @@
+{
+ "planet": "WASP-43 b",
+ "kind": "emission",
+ "n_points": 23,
+ "wavelength_range_um": [
+  0.763,
+  2.19
+ ],
+ "facilities": [
+  "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+  "Australian National University (ANU) 3.9m Anglo-Australian Telescope (AAT) at Siding Spring Observatory (SSO)",
+  "European Southern Observatory (ESO) 0.6m TRAnsiting Planets and PlanetesImals Small Telescope (TRAPPIST) at La Silla Observatory",
+  "European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Yepun at Paranal Observatory",
+  "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+  "Hubble Space Telescope"
+ ],
+ "instruments": [
+  "GROND",
+  "HAWK-I",
+  "IRIS2",
+  "TRAPPISTCam",
+  "WIRCam",
+  "Wide Field Camera 3"
+ ],
+ "references": [
+  {
+   "label": "Chen et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..40C/abstract"
+  },
+  {
+   "label": "Gillon et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012A&A...542A...4G/abstract"
+  },
+  {
+   "label": "Kreidberg et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...793L..27K/abstract"
+  },
+  {
+   "label": "Wang et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...770...70W/abstract"
+  },
+  {
+   "label": "Zhou et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.445.2746Z/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 23
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    0.94,
+    1.13,
+    1.4,
+    1.9
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4,
+    1.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "K",
+   "label": "Potassium",
+   "bands_um": [
+    0.767
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Alkali resonance line; a classic hot-Jupiter atmospheric probe.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 0.763,
+   "bandwidth_um": null,
+   "depth_ppm": 370.0,
+   "depth_ppm_err": 220.0,
+   "brightness_temperature_k": 2225.0,
+   "brightness_temperature_k_err": 182.0,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.9159,
+   "bandwidth_um": 0.0005,
+   "depth_ppm": 210.0,
+   "depth_ppm_err": 160.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO) 0.6m TRAnsiting Planets and PlanetesImals Small Telescope (TRAPPIST) at La Silla Observatory",
+   "instrument": "TRAPPISTCam"
+  },
+  {
+   "wavelength_um": 1.1425,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 367.0,
+   "depth_ppm_err": 45.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.1775,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 431.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.186,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 790.0,
+   "depth_ppm_err": 315.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Yepun at Paranal Observatory",
+   "instrument": "HAWK-I"
+  },
+  {
+   "wavelength_um": 1.2125,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 414.0,
+   "depth_ppm_err": 38.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.2475,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 482.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.2825,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 460.0,
+   "depth_ppm_err": 37.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3175,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 473.0,
+   "depth_ppm_err": 33.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3525,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 353.0,
+   "depth_ppm_err": 34.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3875,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 313.0,
+   "depth_ppm_err": 30.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4225,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 320.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4575,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 394.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4925,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 439.0,
+   "depth_ppm_err": 33.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5275,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 458.0,
+   "depth_ppm_err": 35.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5625,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 595.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5975,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 614.0,
+   "depth_ppm_err": 37.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.631,
+   "bandwidth_um": 0.289,
+   "depth_ppm": 1030.0,
+   "depth_ppm_err": 170.0,
+   "brightness_temperature_k": 1850.0,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 1.6325,
+   "bandwidth_um": 0.035,
+   "depth_ppm": 732.0,
+   "depth_ppm_err": 42.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 2.095,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 1560.0,
+   "depth_ppm_err": 140.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Yepun at Paranal Observatory",
+   "instrument": "HAWK-I"
+  },
+  {
+   "wavelength_um": 2.144,
+   "bandwidth_um": 0.324,
+   "depth_ppm": 1810.0,
+   "depth_ppm_err": 270.0,
+   "brightness_temperature_k": 1743.0,
+   "brightness_temperature_k_err": 67.0,
+   "source": "especlipdep_percent",
+   "facility": "Australian National University (ANU) 3.9m Anglo-Australian Telescope (AAT) at Siding Spring Observatory (SSO)",
+   "instrument": "IRIS2"
+  },
+  {
+   "wavelength_um": 2.146,
+   "bandwidth_um": 0.325,
+   "depth_ppm": 1940.0,
+   "depth_ppm_err": 290.0,
+   "brightness_temperature_k": 1850.0,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 2.19,
+   "bandwidth_um": 0.39,
+   "depth_ppm": 1970.0,
+   "depth_ppm_err": 420.0,
+   "brightness_temperature_k": 1878.0,
+   "brightness_temperature_k_err": 112.0,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+   "instrument": "GROND"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

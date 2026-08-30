@@ -14,6 +14,12 @@
   "Infrared Array Camera (IRAC)",
   "Kepler CCD Array"
  ],
+ "references": [
+  {
+   "label": "D\u00e9sert et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...804...59D/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 4
  },

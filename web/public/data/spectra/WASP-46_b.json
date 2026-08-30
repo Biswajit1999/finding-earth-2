@@ -18,6 +18,12 @@
   "EulerCam",
   "GROND"
  ],
+ "references": [
+  {
+   "label": "Ciceri et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.456..990C/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 7
  },

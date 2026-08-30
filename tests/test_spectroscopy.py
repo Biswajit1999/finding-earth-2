@@ -17,6 +17,8 @@ import pytest
 from earth2.spectroscopy.spectra import (
     atmospheric_scale_height_km,
     bands_in_range,
+    emission_spectrum,
+    harmonise_emission_depths,
     harmonise_transit_depths,
     planet_spectrum,
     spectrum_inventory,
@@ -63,6 +65,24 @@ def test_harmonise_transit_depths_marks_missing_when_neither_column_present():
     out = harmonise_transit_depths(df)
     assert out["depth_source"].iloc[0] == "missing"
     assert np.isnan(out["depth_ppm"].iloc[0])
+
+
+def test_harmonise_emission_depths_converts_percent_to_ppm_and_temperature():
+    df = pd.DataFrame([
+        {
+            "plntname": "WASP-33 b",
+            "especlipdep": 0.12,
+            "especlipdeperr1": 0.01,
+            "especlipdeperr2": -0.02,
+            "espbritemp": 3100.0,
+            "centralwavelng": 4.5,
+        }
+    ])
+    out = harmonise_emission_depths(df)
+    assert out["depth_ppm"].iloc[0] == pytest.approx(1200.0)
+    assert out["depth_ppm_err"].iloc[0] == pytest.approx(150.0)
+    assert out["brightness_temperature_k"].iloc[0] == pytest.approx(3100.0)
+    assert out["depth_source"].iloc[0] == "especlipdep_percent"
 
 
 def test_atmospheric_scale_height_earth_like_is_kilometre_scale():
@@ -127,6 +147,38 @@ def test_planet_spectrum_returns_none_when_planet_not_found():
 
 def test_planet_spectrum_returns_none_below_min_points():
     assert planet_spectrum(_spectrum_df(), "Other b", min_points=5) is None
+
+
+def test_emission_spectrum_keeps_eclipse_geometry_and_source_metadata():
+    es = pd.DataFrame([
+        {
+            "plntname": "WASP-33 b",
+            "especlipdep": 0.11,
+            "centralwavelng": 1.1,
+            "facility": "HST",
+            "instrument": "WFC3",
+            "plntreflink": (
+                "<a href=https://ui.adsabs.harvard.edu/abs/2015ApJ...806..146H/abstract>"
+                "Haynes et al. 2015</a>"
+            ),
+        },
+        {
+            "plntname": "WASP-33 b",
+            "especlipdep": 0.13,
+            "centralwavelng": 4.5,
+            "facility": "Spitzer",
+            "instrument": "IRAC",
+        },
+    ])
+    spec = emission_spectrum(es, "WASP-33 b", min_points=2)
+    assert spec is not None
+    assert spec["kind"] == "emission"
+    assert spec["n_points"] == 2
+    assert spec["points"][0]["depth_ppm"] == pytest.approx(1100.0)
+    assert spec["references"] == [{
+        "label": "Haynes et al. 2015",
+        "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...806..146H/abstract",
+    }]
 
 
 def test_spectrum_inventory_separates_transmission_and_emission_and_filters_by_min_points():

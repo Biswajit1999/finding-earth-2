@@ -14,6 +14,16 @@
   "ACAM",
   "OSIRIS"
  ],
+ "references": [
+  {
+   "label": "Alderson et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.5182A/abstract"
+  },
+  {
+   "label": "Chen et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020A&A...642A..54C/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 62
  },

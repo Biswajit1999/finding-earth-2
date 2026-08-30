@@ -57,7 +57,7 @@ DOI_TOI = "10.26134/ExoFOP5"        # TESS Project Candidates / ExoFOP
 DOI_KOI = "10.26133/NEA4"           # Kepler Objects of Interest (DR25 cumulative)
 DOI_K2 = "10.26133/NEA1"            # K2 Planets and Candidates
 DOI_TRANSITSPEC = "10.26133/NEA10"  # Transmission Spectroscopy
-DOI_EMISSIONSPEC = "10.26133/NEA9"  # Emission Spectroscopy
+DOI_EMISSIONSPEC = "10.26133/NEA11"  # Emission Spectroscopy (retired table)
 
 # --------------------------------------------------------------------------
 # Column groups

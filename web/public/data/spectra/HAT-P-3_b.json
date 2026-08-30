@@ -18,6 +18,12 @@
   "MEXMAN",
   "SBIG STL-1301E"
  ],
+ "references": [
+  {
+   "label": "Ricci et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017PASP..129f4401R/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 7
  },

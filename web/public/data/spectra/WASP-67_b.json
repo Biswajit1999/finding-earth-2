@@ -18,6 +18,12 @@
   "GROND",
   "TRAPPISTCam"
  ],
+ "references": [
+  {
+   "label": "Mancini et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A&A...568A.127M/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 7
  },

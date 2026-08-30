@@ -12,6 +12,16 @@
  "instruments": [
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Spake et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018Natur.557...68S/abstract"
+  },
+  {
+   "label": "Kreidberg et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018ApJ...858L...6K/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 69
  },

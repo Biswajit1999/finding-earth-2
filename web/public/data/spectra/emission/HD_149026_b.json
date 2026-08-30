@@ -1,0 +1,1721 @@
+{
+ "planet": "HD 149026 b",
+ "kind": "emission",
+ "n_points": 146,
+ "wavelength_range_um": [
+  2.36,
+  16.0
+ ],
+ "facilities": [
+  "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)",
+  "Near Infrared Camera (NIRCam)"
+ ],
+ "references": [
+  {
+   "label": "Bean et al. 2023",
+   "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230314206B/abstract"
+  },
+  {
+   "label": "Stevenson et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...754..136S/abstract"
+  },
+  {
+   "label": "Harrington et al. 2007",
+   "url": "https://ui.adsabs.harvard.edu/abs/2007Natur.447..691H/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 146
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    2.7,
+    6.2
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    2.7,
+    4.3,
+    15.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    3.3,
+    7.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    4.6
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    9.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    10.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0,
+    7.3,
+    8.7
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 2.36,
+   "bandwidth_um": null,
+   "depth_ppm": 178.0,
+   "depth_ppm_err": 85.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.38,
+   "bandwidth_um": null,
+   "depth_ppm": 135.0,
+   "depth_ppm_err": 50.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.4,
+   "bandwidth_um": null,
+   "depth_ppm": 174.0,
+   "depth_ppm_err": 50.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.42,
+   "bandwidth_um": null,
+   "depth_ppm": 184.0,
+   "depth_ppm_err": 39.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.44,
+   "bandwidth_um": null,
+   "depth_ppm": 210.0,
+   "depth_ppm_err": 35.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.46,
+   "bandwidth_um": null,
+   "depth_ppm": 221.0,
+   "depth_ppm_err": 36.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.48,
+   "bandwidth_um": null,
+   "depth_ppm": 180.0,
+   "depth_ppm_err": 35.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.5,
+   "bandwidth_um": null,
+   "depth_ppm": 152.0,
+   "depth_ppm_err": 34.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.52,
+   "bandwidth_um": null,
+   "depth_ppm": 198.0,
+   "depth_ppm_err": 39.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.54,
+   "bandwidth_um": null,
+   "depth_ppm": 118.0,
+   "depth_ppm_err": 40.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.56,
+   "bandwidth_um": null,
+   "depth_ppm": 238.0,
+   "depth_ppm_err": 42.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.58,
+   "bandwidth_um": null,
+   "depth_ppm": 208.0,
+   "depth_ppm_err": 40.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.6,
+   "bandwidth_um": null,
+   "depth_ppm": 184.0,
+   "depth_ppm_err": 36.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.62,
+   "bandwidth_um": null,
+   "depth_ppm": 169.0,
+   "depth_ppm_err": 46.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.64,
+   "bandwidth_um": null,
+   "depth_ppm": 125.0,
+   "depth_ppm_err": 37.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.66,
+   "bandwidth_um": null,
+   "depth_ppm": 146.0,
+   "depth_ppm_err": 38.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.68,
+   "bandwidth_um": null,
+   "depth_ppm": 247.0,
+   "depth_ppm_err": 55.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.7,
+   "bandwidth_um": null,
+   "depth_ppm": 168.0,
+   "depth_ppm_err": 33.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.72,
+   "bandwidth_um": null,
+   "depth_ppm": 89.4,
+   "depth_ppm_err": 38.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.74,
+   "bandwidth_um": null,
+   "depth_ppm": 222.0,
+   "depth_ppm_err": 32.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.76,
+   "bandwidth_um": null,
+   "depth_ppm": 221.0,
+   "depth_ppm_err": 35.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.78,
+   "bandwidth_um": null,
+   "depth_ppm": 175.0,
+   "depth_ppm_err": 38.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.8,
+   "bandwidth_um": null,
+   "depth_ppm": 189.0,
+   "depth_ppm_err": 39.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.82,
+   "bandwidth_um": null,
+   "depth_ppm": 178.0,
+   "depth_ppm_err": 60.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.84,
+   "bandwidth_um": null,
+   "depth_ppm": 203.0,
+   "depth_ppm_err": 39.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.86,
+   "bandwidth_um": null,
+   "depth_ppm": 152.0,
+   "depth_ppm_err": 61.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.88,
+   "bandwidth_um": null,
+   "depth_ppm": 185.0,
+   "depth_ppm_err": 33.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.9,
+   "bandwidth_um": null,
+   "depth_ppm": 188.0,
+   "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.92,
+   "bandwidth_um": null,
+   "depth_ppm": 220.0,
+   "depth_ppm_err": 40.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.94,
+   "bandwidth_um": null,
+   "depth_ppm": 148.0,
+   "depth_ppm_err": 42.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.96,
+   "bandwidth_um": null,
+   "depth_ppm": 229.0,
+   "depth_ppm_err": 38.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.98,
+   "bandwidth_um": null,
+   "depth_ppm": 215.0,
+   "depth_ppm_err": 41.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.0,
+   "bandwidth_um": null,
+   "depth_ppm": 170.0,
+   "depth_ppm_err": 38.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.02,
+   "bandwidth_um": null,
+   "depth_ppm": 220.0,
+   "depth_ppm_err": 44.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.04,
+   "bandwidth_um": null,
+   "depth_ppm": 166.0,
+   "depth_ppm_err": 43.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.06,
+   "bandwidth_um": null,
+   "depth_ppm": 231.0,
+   "depth_ppm_err": 39.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.08,
+   "bandwidth_um": null,
+   "depth_ppm": 239.0,
+   "depth_ppm_err": 40.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.1,
+   "bandwidth_um": null,
+   "depth_ppm": 293.0,
+   "depth_ppm_err": 56.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.12,
+   "bandwidth_um": null,
+   "depth_ppm": 256.0,
+   "depth_ppm_err": 40.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.14,
+   "bandwidth_um": null,
+   "depth_ppm": 258.0,
+   "depth_ppm_err": 38.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.16,
+   "bandwidth_um": null,
+   "depth_ppm": 302.0,
+   "depth_ppm_err": 37.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.18,
+   "bandwidth_um": null,
+   "depth_ppm": 334.0,
+   "depth_ppm_err": 35.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.2,
+   "bandwidth_um": null,
+   "depth_ppm": 228.0,
+   "depth_ppm_err": 40.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.22,
+   "bandwidth_um": null,
+   "depth_ppm": 275.0,
+   "depth_ppm_err": 39.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.24,
+   "bandwidth_um": null,
+   "depth_ppm": 313.0,
+   "depth_ppm_err": 33.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.26,
+   "bandwidth_um": null,
+   "depth_ppm": 210.0,
+   "depth_ppm_err": 32.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.28,
+   "bandwidth_um": null,
+   "depth_ppm": 315.0,
+   "depth_ppm_err": 35.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.3,
+   "bandwidth_um": null,
+   "depth_ppm": 284.0,
+   "depth_ppm_err": 36.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.32,
+   "bandwidth_um": null,
+   "depth_ppm": 307.0,
+   "depth_ppm_err": 37.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.34,
+   "bandwidth_um": null,
+   "depth_ppm": 323.0,
+   "depth_ppm_err": 38.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.36,
+   "bandwidth_um": null,
+   "depth_ppm": 338.0,
+   "depth_ppm_err": 40.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.38,
+   "bandwidth_um": null,
+   "depth_ppm": 350.0,
+   "depth_ppm_err": 41.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.4,
+   "bandwidth_um": null,
+   "depth_ppm": 348.0,
+   "depth_ppm_err": 40.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.42,
+   "bandwidth_um": null,
+   "depth_ppm": 291.0,
+   "depth_ppm_err": 39.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.44,
+   "bandwidth_um": null,
+   "depth_ppm": 334.0,
+   "depth_ppm_err": 30.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.46,
+   "bandwidth_um": null,
+   "depth_ppm": 360.0,
+   "depth_ppm_err": 32.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.48,
+   "bandwidth_um": null,
+   "depth_ppm": 348.0,
+   "depth_ppm_err": 41.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.5,
+   "bandwidth_um": null,
+   "depth_ppm": 303.0,
+   "depth_ppm_err": 40.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.52,
+   "bandwidth_um": null,
+   "depth_ppm": 331.0,
+   "depth_ppm_err": 42.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.54,
+   "bandwidth_um": null,
+   "depth_ppm": 340.0,
+   "depth_ppm_err": 38.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.56,
+   "bandwidth_um": null,
+   "depth_ppm": 375.0,
+   "depth_ppm_err": 36.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.58,
+   "bandwidth_um": null,
+   "depth_ppm": 315.0,
+   "depth_ppm_err": 41.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 333.0,
+   "depth_ppm_err": 36.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 400.0,
+   "depth_ppm_err": 30.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.62,
+   "bandwidth_um": null,
+   "depth_ppm": 372.0,
+   "depth_ppm_err": 42.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.64,
+   "bandwidth_um": null,
+   "depth_ppm": 317.0,
+   "depth_ppm_err": 41.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.66,
+   "bandwidth_um": null,
+   "depth_ppm": 407.0,
+   "depth_ppm_err": 31.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.68,
+   "bandwidth_um": null,
+   "depth_ppm": 327.0,
+   "depth_ppm_err": 52.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.7,
+   "bandwidth_um": null,
+   "depth_ppm": 338.0,
+   "depth_ppm_err": 37.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.72,
+   "bandwidth_um": null,
+   "depth_ppm": 367.0,
+   "depth_ppm_err": 41.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.74,
+   "bandwidth_um": null,
+   "depth_ppm": 454.0,
+   "depth_ppm_err": 37.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.76,
+   "bandwidth_um": null,
+   "depth_ppm": 329.0,
+   "depth_ppm_err": 42.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.78,
+   "bandwidth_um": null,
+   "depth_ppm": 380.0,
+   "depth_ppm_err": 41.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.8,
+   "bandwidth_um": null,
+   "depth_ppm": 431.0,
+   "depth_ppm_err": 42.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.82,
+   "bandwidth_um": null,
+   "depth_ppm": 351.0,
+   "depth_ppm_err": 47.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.84,
+   "bandwidth_um": null,
+   "depth_ppm": 384.0,
+   "depth_ppm_err": 44.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.86,
+   "bandwidth_um": null,
+   "depth_ppm": 434.0,
+   "depth_ppm_err": 39.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.88,
+   "bandwidth_um": null,
+   "depth_ppm": 329.0,
+   "depth_ppm_err": 52.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.9,
+   "bandwidth_um": null,
+   "depth_ppm": 448.0,
+   "depth_ppm_err": 43.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.9,
+   "bandwidth_um": null,
+   "depth_ppm": 415.0,
+   "depth_ppm_err": 42.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.92,
+   "bandwidth_um": null,
+   "depth_ppm": 412.0,
+   "depth_ppm_err": 42.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.92,
+   "bandwidth_um": null,
+   "depth_ppm": 454.0,
+   "depth_ppm_err": 37.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.94,
+   "bandwidth_um": null,
+   "depth_ppm": 339.0,
+   "depth_ppm_err": 38.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.94,
+   "bandwidth_um": null,
+   "depth_ppm": 374.0,
+   "depth_ppm_err": 42.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.96,
+   "bandwidth_um": null,
+   "depth_ppm": 443.0,
+   "depth_ppm_err": 35.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.96,
+   "bandwidth_um": null,
+   "depth_ppm": 436.0,
+   "depth_ppm_err": 33.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.98,
+   "bandwidth_um": null,
+   "depth_ppm": 495.0,
+   "depth_ppm_err": 52.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.98,
+   "bandwidth_um": null,
+   "depth_ppm": 410.0,
+   "depth_ppm_err": 39.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.0,
+   "bandwidth_um": null,
+   "depth_ppm": 411.0,
+   "depth_ppm_err": 37.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.0,
+   "bandwidth_um": null,
+   "depth_ppm": 333.0,
+   "depth_ppm_err": 57.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.02,
+   "bandwidth_um": null,
+   "depth_ppm": 472.0,
+   "depth_ppm_err": 32.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.04,
+   "bandwidth_um": null,
+   "depth_ppm": 446.0,
+   "depth_ppm_err": 34.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.06,
+   "bandwidth_um": null,
+   "depth_ppm": 596.0,
+   "depth_ppm_err": 49.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.08,
+   "bandwidth_um": null,
+   "depth_ppm": 361.0,
+   "depth_ppm_err": 35.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.1,
+   "bandwidth_um": null,
+   "depth_ppm": 383.0,
+   "depth_ppm_err": 35.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.12,
+   "bandwidth_um": null,
+   "depth_ppm": 399.0,
+   "depth_ppm_err": 35.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.14,
+   "bandwidth_um": null,
+   "depth_ppm": 460.0,
+   "depth_ppm_err": 34.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.16,
+   "bandwidth_um": null,
+   "depth_ppm": 434.0,
+   "depth_ppm_err": 34.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.18,
+   "bandwidth_um": null,
+   "depth_ppm": 422.0,
+   "depth_ppm_err": 37.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.2,
+   "bandwidth_um": null,
+   "depth_ppm": 442.0,
+   "depth_ppm_err": 46.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.22,
+   "bandwidth_um": null,
+   "depth_ppm": 384.0,
+   "depth_ppm_err": 37.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.24,
+   "bandwidth_um": null,
+   "depth_ppm": 297.0,
+   "depth_ppm_err": 40.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.26,
+   "bandwidth_um": null,
+   "depth_ppm": 331.0,
+   "depth_ppm_err": 47.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.28,
+   "bandwidth_um": null,
+   "depth_ppm": 322.0,
+   "depth_ppm_err": 42.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.3,
+   "bandwidth_um": null,
+   "depth_ppm": 296.0,
+   "depth_ppm_err": 39.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.32,
+   "bandwidth_um": null,
+   "depth_ppm": 293.0,
+   "depth_ppm_err": 47.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.34,
+   "bandwidth_um": null,
+   "depth_ppm": 299.0,
+   "depth_ppm_err": 40.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.36,
+   "bandwidth_um": null,
+   "depth_ppm": 268.0,
+   "depth_ppm_err": 44.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.38,
+   "bandwidth_um": null,
+   "depth_ppm": 296.0,
+   "depth_ppm_err": 43.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.4,
+   "bandwidth_um": null,
+   "depth_ppm": 255.0,
+   "depth_ppm_err": 43.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.42,
+   "bandwidth_um": null,
+   "depth_ppm": 265.0,
+   "depth_ppm_err": 46.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.44,
+   "bandwidth_um": null,
+   "depth_ppm": 327.0,
+   "depth_ppm_err": 48.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.46,
+   "bandwidth_um": null,
+   "depth_ppm": 296.0,
+   "depth_ppm_err": 51.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.48,
+   "bandwidth_um": null,
+   "depth_ppm": 318.0,
+   "depth_ppm_err": 44.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 272.0,
+   "depth_ppm_err": 50.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 340.0,
+   "depth_ppm_err": 60.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.52,
+   "bandwidth_um": null,
+   "depth_ppm": 375.0,
+   "depth_ppm_err": 45.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.54,
+   "bandwidth_um": null,
+   "depth_ppm": 293.0,
+   "depth_ppm_err": 46.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.56,
+   "bandwidth_um": null,
+   "depth_ppm": 309.0,
+   "depth_ppm_err": 48.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.58,
+   "bandwidth_um": null,
+   "depth_ppm": 373.0,
+   "depth_ppm_err": 48.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.6,
+   "bandwidth_um": null,
+   "depth_ppm": 436.0,
+   "depth_ppm_err": 59.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.62,
+   "bandwidth_um": null,
+   "depth_ppm": 388.0,
+   "depth_ppm_err": 51.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.64,
+   "bandwidth_um": null,
+   "depth_ppm": 430.0,
+   "depth_ppm_err": 49.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.66,
+   "bandwidth_um": null,
+   "depth_ppm": 391.0,
+   "depth_ppm_err": 50.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.68,
+   "bandwidth_um": null,
+   "depth_ppm": 322.0,
+   "depth_ppm_err": 51.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.7,
+   "bandwidth_um": null,
+   "depth_ppm": 444.0,
+   "depth_ppm_err": 47.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.72,
+   "bandwidth_um": null,
+   "depth_ppm": 341.0,
+   "depth_ppm_err": 54.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.74,
+   "bandwidth_um": null,
+   "depth_ppm": 406.0,
+   "depth_ppm_err": 50.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.76,
+   "bandwidth_um": null,
+   "depth_ppm": 386.0,
+   "depth_ppm_err": 50.3,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.78,
+   "bandwidth_um": null,
+   "depth_ppm": 417.0,
+   "depth_ppm_err": 49.6,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.8,
+   "bandwidth_um": null,
+   "depth_ppm": 458.0,
+   "depth_ppm_err": 49.9,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.82,
+   "bandwidth_um": null,
+   "depth_ppm": 432.0,
+   "depth_ppm_err": 49.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.84,
+   "bandwidth_um": null,
+   "depth_ppm": 488.0,
+   "depth_ppm_err": 51.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.86,
+   "bandwidth_um": null,
+   "depth_ppm": 478.0,
+   "depth_ppm_err": 55.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.88,
+   "bandwidth_um": null,
+   "depth_ppm": 446.0,
+   "depth_ppm_err": 53.2,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.9,
+   "bandwidth_um": null,
+   "depth_ppm": 401.0,
+   "depth_ppm_err": 60.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.92,
+   "bandwidth_um": null,
+   "depth_ppm": 437.0,
+   "depth_ppm_err": 58.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.94,
+   "bandwidth_um": null,
+   "depth_ppm": 405.0,
+   "depth_ppm_err": 58.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.96,
+   "bandwidth_um": null,
+   "depth_ppm": 433.0,
+   "depth_ppm_err": 57.1,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 4.98,
+   "bandwidth_um": null,
+   "depth_ppm": 495.0,
+   "depth_ppm_err": 70.7,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 5.0,
+   "bandwidth_um": null,
+   "depth_ppm": 491.0,
+   "depth_ppm_err": 69.4,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 5.02,
+   "bandwidth_um": null,
+   "depth_ppm": 413.0,
+   "depth_ppm_err": 80.8,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 440.0,
+   "depth_ppm_err": 100.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 520.0,
+   "depth_ppm_err": 60.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 840.0,
+   "depth_ppm_err": 105.0,
+   "brightness_temperature_k": 2300.0,
+   "brightness_temperature_k_err": 200.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 16.0,
+   "bandwidth_um": null,
+   "depth_ppm": 850.0,
+   "depth_ppm_err": 320.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

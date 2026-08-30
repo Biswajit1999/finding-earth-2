@@ -12,6 +12,12 @@
  "instruments": [
   "FORS2"
  ],
+ "references": [
+  {
+   "label": "Nikolov et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018Natur.557..526N/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 49
  },

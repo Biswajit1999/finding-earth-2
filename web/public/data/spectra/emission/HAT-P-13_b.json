@@ -1,0 +1,97 @@
+{
+ "planet": "HAT-P-13 b",
+ "kind": "emission",
+ "n_points": 4,
+ "wavelength_range_um": [
+  3.6,
+  4.5
+ ],
+ "facilities": [
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)"
+ ],
+ "references": [
+  {
+   "label": "Buhler et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...821...26B/abstract"
+  },
+  {
+   "label": "Hardy et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017ApJ...836..143H/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 4
+ },
+ "expected_bands": [
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 662.0,
+   "depth_ppm_err": 113.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 801.0,
+   "depth_ppm_err": 81.0,
+   "brightness_temperature_k": 1732.0,
+   "brightness_temperature_k_err": 75.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 1426.0,
+   "depth_ppm_err": 130.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 880.0,
+   "depth_ppm_err": 280.0,
+   "brightness_temperature_k": 1573.0,
+   "brightness_temperature_k_err": 93.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

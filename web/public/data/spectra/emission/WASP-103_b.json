@@ -1,0 +1,323 @@
+{
+ "planet": "WASP-103 b",
+ "kind": "emission",
+ "n_points": 22,
+ "wavelength_range_um": [
+  1.0806,
+  1.6848
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite"
+ ],
+ "instruments": [
+  "Wide Field Camera 3"
+ ],
+ "references": [
+  {
+   "label": "Cartier et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017AJ....153...34C/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 22
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    1.13,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.15,
+    1.4
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 1.0806,
+   "bandwidth_um": null,
+   "depth_ppm": 1303.4,
+   "depth_ppm_err": 233.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.1131,
+   "bandwidth_um": null,
+   "depth_ppm": 1322.5,
+   "depth_ppm_err": 174.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.141,
+   "bandwidth_um": null,
+   "depth_ppm": 1261.8,
+   "depth_ppm_err": 162.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.1689,
+   "bandwidth_um": null,
+   "depth_ppm": 1262.3,
+   "depth_ppm_err": 158.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.1968,
+   "bandwidth_um": null,
+   "depth_ppm": 1202.2,
+   "depth_ppm_err": 155.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.2247,
+   "bandwidth_um": null,
+   "depth_ppm": 1238.5,
+   "depth_ppm_err": 154.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.2526,
+   "bandwidth_um": null,
+   "depth_ppm": 1256.5,
+   "depth_ppm_err": 154.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.2804,
+   "bandwidth_um": null,
+   "depth_ppm": 1272.6,
+   "depth_ppm_err": 154.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3083,
+   "bandwidth_um": null,
+   "depth_ppm": 1313.6,
+   "depth_ppm_err": 154.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3362,
+   "bandwidth_um": null,
+   "depth_ppm": 1433.4,
+   "depth_ppm_err": 153.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.3641,
+   "bandwidth_um": null,
+   "depth_ppm": 1389.1,
+   "depth_ppm_err": 160.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.392,
+   "bandwidth_um": null,
+   "depth_ppm": 1490.8,
+   "depth_ppm_err": 160.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4199,
+   "bandwidth_um": null,
+   "depth_ppm": 1472.6,
+   "depth_ppm_err": 163.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4477,
+   "bandwidth_um": null,
+   "depth_ppm": 1531.1,
+   "depth_ppm_err": 170.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.4756,
+   "bandwidth_um": null,
+   "depth_ppm": 1426.6,
+   "depth_ppm_err": 170.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5035,
+   "bandwidth_um": null,
+   "depth_ppm": 1498.6,
+   "depth_ppm_err": 174.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5314,
+   "bandwidth_um": null,
+   "depth_ppm": 1461.3,
+   "depth_ppm_err": 172.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5593,
+   "bandwidth_um": null,
+   "depth_ppm": 1656.7,
+   "depth_ppm_err": 179.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.5872,
+   "bandwidth_um": null,
+   "depth_ppm": 1684.1,
+   "depth_ppm_err": 188.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.6151,
+   "bandwidth_um": null,
+   "depth_ppm": 1656.8,
+   "depth_ppm_err": 189.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.6429,
+   "bandwidth_um": null,
+   "depth_ppm": 1497.0,
+   "depth_ppm_err": 201.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.6848,
+   "bandwidth_um": null,
+   "depth_ppm": 752.6,
+   "depth_ppm_err": 258.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

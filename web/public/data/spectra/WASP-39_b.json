@@ -30,6 +30,48 @@
   "Space Telescope Imaging Spectrograph",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Fischer et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...827...19F/abstract"
+  },
+  {
+   "label": "Sing et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016Natur.529...59S/abstract"
+  },
+  {
+   "label": "Ricci et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015PASP..127..143R/abstract"
+  },
+  {
+   "label": "Nikolov et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...832..191N/abstract"
+  },
+  {
+   "label": "Rustamkulov et al. 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv221110487R/abstract"
+  },
+  {
+   "label": "Feinstein et al. 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv221110493F/abstract"
+  },
+  {
+   "label": "Wakeford et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018AJ....155...29W/abstract"
+  },
+  {
+   "label": "Ahrer et al. 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv221110489A/abstract"
+  },
+  {
+   "label": "Alderson et al. 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv221110488A/abstract"
+  },
+  {
+   "label": "JWST Transiting Exoplanet Community ERS Team 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv220811692T/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 1488,
   "plnratror_squared": 137

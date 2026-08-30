@@ -1,0 +1,175 @@
+{
+ "planet": "WASP-5 b",
+ "kind": "emission",
+ "n_points": 5,
+ "wavelength_range_um": [
+  1.22,
+  4.5
+ ],
+ "facilities": [
+  "Anglo Australian Telescope",
+  "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "GROND",
+  "IRIS2",
+  "Infrared Array Camera (IRAC)"
+ ],
+ "references": [
+  {
+   "label": "Chen et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..40C/abstract"
+  },
+  {
+   "label": "Zhou et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.454.3002Z/abstract"
+  },
+  {
+   "label": "Baskin et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...773..124B/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 5
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    1.4,
+    1.9,
+    2.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.4,
+    1.7,
+    2.3,
+    3.3
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 1.22,
+   "bandwidth_um": 0.213,
+   "depth_ppm": 1680.0,
+   "depth_ppm_err": 510.0,
+   "brightness_temperature_k": 2996.0,
+   "brightness_temperature_k_err": 236.5,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 2.159,
+   "bandwidth_um": 0.262,
+   "depth_ppm": 2000.0,
+   "depth_ppm_err": 200.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Anglo Australian Telescope",
+   "instrument": "IRIS2"
+  },
+  {
+   "wavelength_um": 2.19,
+   "bandwidth_um": 0.39,
+   "depth_ppm": 2690.0,
+   "depth_ppm_err": 620.0,
+   "brightness_temperature_k": 2890.0,
+   "brightness_temperature_k_err": 257.5,
+   "source": "especlipdep_percent",
+   "facility": "European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 1970.0,
+   "depth_ppm_err": 280.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 2370.0,
+   "depth_ppm_err": 240.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

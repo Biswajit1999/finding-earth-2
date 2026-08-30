@@ -12,6 +12,12 @@
  "instruments": [
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Wakeford et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020AJ....159..204W/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 59
  },

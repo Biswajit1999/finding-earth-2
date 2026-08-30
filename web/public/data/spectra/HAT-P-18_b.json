@@ -14,6 +14,16 @@
   "ACAM",
   "Near Infrared Imager and Slitless Spectrograph (NIRISS)"
  ],
+ "references": [
+  {
+   "label": "Kirk et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.468.3907K/abstract"
+  },
+  {
+   "label": "Fu et al. 2022",
+   "url": "https://ui.adsabs.harvard.edu/abs/2022arXiv221113761F/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 1021,
   "plnratror_squared": 17

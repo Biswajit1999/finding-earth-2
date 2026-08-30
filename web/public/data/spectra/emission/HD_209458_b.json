@@ -1,0 +1,413 @@
+{
+ "planet": "HD 209458 b",
+ "kind": "emission",
+ "n_points": 24,
+ "wavelength_range_um": [
+  1.151,
+  24.0
+ ],
+ "facilities": [
+  "Hubble Space Telescope satellite",
+  "Spitzer Space Telescope",
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)",
+  "Multiband Imaging Photometer (MIPS)",
+  "Wide Field Camera 3"
+ ],
+ "references": [
+  {
+   "label": "Line et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....152..203L/abstract"
+  },
+  {
+   "label": "Evans et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.451..680E/abstract"
+  },
+  {
+   "label": "Knutson et al. 2008",
+   "url": "https://ui.adsabs.harvard.edu/abs/2008ApJ...673..526K/abstract"
+  },
+  {
+   "label": "Diamond-Lowe et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...796...66D/abstract"
+  },
+  {
+   "label": "Zellem et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...790...53Z/abstract"
+  },
+  {
+   "label": "Crossfield et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...752...81C/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 24
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    1.4,
+    1.9,
+    2.7,
+    6.2
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    1.6,
+    2.0,
+    2.7,
+    4.3,
+    15.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    1.4,
+    1.7,
+    2.3,
+    3.3,
+    7.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    2.3,
+    4.6
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O2",
+   "label": "Molecular oxygen",
+   "bands_um": [
+    1.27
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "Earth's dominant biosignature gas, but with well-documented abiotic production routes -- photolysis of water with hydrogen escape, and CO2 photolysis around M dwarfs. Not diagnostic in isolation.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    9.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    1.5,
+    2.0,
+    10.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0,
+    7.3,
+    8.7
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 1.151,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 43.0,
+   "depth_ppm_err": 16.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.204,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 97.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.256,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 115.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.308,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 109.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.361,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 80.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.414,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 43.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.466,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 86.0,
+   "depth_ppm_err": 15.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.518,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 107.0,
+   "depth_ppm_err": 17.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.571,
+   "bandwidth_um": 0.053,
+   "depth_ppm": 167.0,
+   "depth_ppm_err": 17.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 1.624,
+   "bandwidth_um": 0.052,
+   "depth_ppm": 170.0,
+   "depth_ppm_err": 18.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 1060.0,
+   "depth_ppm_err": 75.0,
+   "brightness_temperature_k": 1515.0,
+   "brightness_temperature_k_err": 35.5,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 940.0,
+   "depth_ppm_err": 90.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 1190.0,
+   "depth_ppm_err": 70.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 1391.0,
+   "depth_ppm_err": 70.5,
+   "brightness_temperature_k": 1499.0,
+   "brightness_temperature_k_err": 15.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 2130.0,
+   "depth_ppm_err": 150.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 1330.0,
+   "depth_ppm_err": 110.0,
+   "brightness_temperature_k": 1426.0,
+   "brightness_temperature_k_err": 47.5,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 1230.0,
+   "depth_ppm_err": 60.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 1340.0,
+   "depth_ppm_err": 350.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 3010.0,
+   "depth_ppm_err": 430.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 1420.0,
+   "depth_ppm_err": 585.0,
+   "brightness_temperature_k": 1297.0,
+   "brightness_temperature_k_err": 222.5,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 2150.0,
+   "depth_ppm_err": 80.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 2400.0,
+   "depth_ppm_err": 260.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 2150.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": 1397.0,
+   "brightness_temperature_k_err": 42.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 24.0,
+   "bandwidth_um": null,
+   "depth_ppm": 3380.0,
+   "depth_ppm_err": 260.0,
+   "brightness_temperature_k": 1320.0,
+   "brightness_temperature_k_err": 80.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Multiband Imaging Photometer (MIPS)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

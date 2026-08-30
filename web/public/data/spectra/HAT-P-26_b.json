@@ -17,6 +17,16 @@
   "Space Telescope Imaging Spectrograph",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Wakeford et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017Sci...356..628W/abstract"
+  },
+  {
+   "label": "Stevenson et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...817..141S/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 27,
   "plntransdep_percent": 25

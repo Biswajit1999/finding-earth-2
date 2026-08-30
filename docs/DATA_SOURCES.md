@@ -49,7 +49,16 @@ every page footer of the website):
 Composite Parameters, `10.26133/NEA13`; TESS Project Candidates,
 `10.26134/ExoFOP5`; Kepler Objects of Interest, `10.26133/NEA4`; K2 Planets
 and Candidates, `10.26133/NEA1`; Transmission Spectroscopy, `10.26133/NEA10`;
-Emission Spectroscopy, `10.26133/NEA9`.
+Emission Spectroscopy, `10.26133/NEA11`.
+
+The row-level `transitspec` and `emissionspec` tables were retired by the
+archive in July 2023. They remain available as a stable, harmonisable legacy
+snapshot and supply the plot-ready measurements used in the Spectral Lab. New
+spectra are ingested only into the replacement Atmospheric Spectroscopy table,
+whose `spectra` metadata index is also retrieved here. At the current sync that
+index contains 940 transmission, 801 eclipse and 85 direct-imaging spectrum
+files; the complete 1,826-row metadata index is offered as a site download
+without merging distinct papers or reductions into a synthetic spectrum.
 
 ## Gaia Archive (ESA)
 

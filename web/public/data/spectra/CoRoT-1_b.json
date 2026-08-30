@@ -14,6 +14,16 @@
   "SpeX and MORIS",
   "WFC3"
  ],
+ "references": [
+  {
+   "label": "Schlawin et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...783....5S/abstract"
+  },
+  {
+   "label": "Ranjan et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...785..148R/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 20
  },

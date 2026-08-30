@@ -20,6 +20,24 @@
   "Near Infrared Camera and Multi-Object Spectrometer",
   "OSIRIS"
  ],
+ "references": [
+  {
+   "label": "Zellem et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...810...11Z/abstract"
+  },
+  {
+   "label": "Pearson et al. 2019",
+   "url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...21P/abstract"
+  },
+  {
+   "label": "Sing et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011A&A...527A..73S/abstract"
+  },
+  {
+   "label": "Crouzet et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...761....7C/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 163,
   "plntransdep_percent": 15

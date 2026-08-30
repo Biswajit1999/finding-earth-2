@@ -12,6 +12,12 @@
  "instruments": [
   "GMOS"
  ],
+ "references": [
+  {
+   "label": "von Essen et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017A&A...603A..20V/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 12
  },

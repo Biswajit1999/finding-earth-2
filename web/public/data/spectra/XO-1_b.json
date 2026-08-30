@@ -13,6 +13,16 @@
   "Near Infrared Camera and Multi-Object Spectrometer",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Deming et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...774...95D/abstract"
+  },
+  {
+   "label": "Crouzet et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...761....7C/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 44
  },

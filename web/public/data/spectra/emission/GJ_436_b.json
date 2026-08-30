@@ -1,0 +1,172 @@
+{
+ "planet": "GJ 436 b",
+ "kind": "emission",
+ "n_points": 6,
+ "wavelength_range_um": [
+  3.6,
+  24.0
+ ],
+ "facilities": [
+  "Spitzer Space Telescope satellite"
+ ],
+ "instruments": [
+  "Infrared Array Camera (IRAC)"
+ ],
+ "references": [
+  {
+   "label": "Stevenson et al. 2010",
+   "url": "https://ui.adsabs.harvard.edu/abs/2010Natur.464.1161S/abstract"
+  },
+  {
+   "label": "Deming et al. 2007",
+   "url": "https://ui.adsabs.harvard.edu/abs/2007ApJ...667L.199D/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 6
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    6.2
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO2",
+   "label": "Carbon dioxide",
+   "bands_um": [
+    4.3,
+    15.0
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Confirms an atmosphere exists and constrains its mean molecular weight. Abiotic and abundant on Venus and Mars.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    7.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CO",
+   "label": "Carbon monoxide",
+   "bands_um": [
+    4.6
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Generally an anti-biosignature: abundant CO alongside O2 suggests photochemical rather than biological oxygen production.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    9.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    10.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    4.0,
+    7.3,
+    8.7
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 410.0,
+   "depth_ppm_err": 30.0,
+   "brightness_temperature_k": 1120.0,
+   "brightness_temperature_k_err": 20.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
+   "depth_ppm": 330.0,
+   "depth_ppm_err": 140.0,
+   "brightness_temperature_k": 720.0,
+   "brightness_temperature_k_err": 110.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 570.0,
+   "depth_ppm_err": 80.0,
+   "brightness_temperature_k": 712.0,
+   "brightness_temperature_k_err": 36.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 540.0,
+   "depth_ppm_err": 80.0,
+   "brightness_temperature_k": 740.0,
+   "brightness_temperature_k_err": 40.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 16.0,
+   "bandwidth_um": null,
+   "depth_ppm": 1400.0,
+   "depth_ppm_err": 270.0,
+   "brightness_temperature_k": 980.0,
+   "brightness_temperature_k_err": 130.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 24.0,
+   "bandwidth_um": null,
+   "depth_ppm": 1750.0,
+   "depth_ppm_err": 410.0,
+   "brightness_temperature_k": 960.0,
+   "brightness_temperature_k_err": 170.0,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

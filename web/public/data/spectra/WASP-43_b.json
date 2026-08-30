@@ -24,6 +24,28 @@
   "Sinistro",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Hoyer et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016AJ....151..137H/abstract"
+  },
+  {
+   "label": "Murgas et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..41M/abstract"
+  },
+  {
+   "label": "Chen et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..40C/abstract"
+  },
+  {
+   "label": "Ricci et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015PASP..127..143R/abstract"
+  },
+  {
+   "label": "Kreidberg et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...793L..27K/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 50,
   "plntransdep_percent": 22

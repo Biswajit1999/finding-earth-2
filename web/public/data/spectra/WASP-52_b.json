@@ -14,6 +14,16 @@
   "ACAM",
   "OSIRIS"
  ],
+ "references": [
+  {
+   "label": "Louden et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.470..742L/abstract"
+  },
+  {
+   "label": "Chen et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017A&A...600L..11C/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 45
  },

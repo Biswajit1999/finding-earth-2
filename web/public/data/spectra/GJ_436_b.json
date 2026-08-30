@@ -14,6 +14,16 @@
   "Infrared Array Camera (IRAC)",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Knutson et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014Natur.505...66K/abstract"
+  },
+  {
+   "label": "Knutson et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011ApJ...735...27K/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 36
  },

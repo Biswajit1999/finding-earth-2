@@ -12,6 +12,12 @@
  "instruments": [
   "GROND"
  ],
+ "references": [
+  {
+   "label": "Mancini et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.461.1053M/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 8
  },

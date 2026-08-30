@@ -19,6 +19,28 @@
   "Space Telescope Imaging Spectrograph",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Nikolov et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.437...46N/abstract"
+  },
+  {
+   "label": "Sing et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016Natur.529...59S/abstract"
+  },
+  {
+   "label": "Montalto et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...811...55M/abstract"
+  },
+  {
+   "label": "Wilson et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.450..192W/abstract"
+  },
+  {
+   "label": "Wakeford et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.435.3481W/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 95
  },

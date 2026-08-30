@@ -15,6 +15,7 @@ from earth2.reporting.webexport import (
     SUN_HEIGHT_PC,
     export_discovery_timeline,
     export_galaxy,
+    export_spectra_archive_index,
     export_universe,
 )
 
@@ -33,6 +34,26 @@ def _sample_catalogue() -> pd.DataFrame:
             "is_control": [False, False, False, True],
         }
     )
+
+
+def test_export_spectra_archive_index_cleans_reference_links(tmp_path):
+    frame = pd.DataFrame([
+        {
+            "pl_name": "WASP-39 b",
+            "spec_type": "Transmission",
+            "authors": (
+                "<a href=https://ui.adsabs.harvard.edu/abs/2023Natur.614..649A/abstract>"
+                "Alderson et al. 2023</a>"
+            ),
+            "num_datapoints": 120,
+            "spec_path": "example.tbl",
+        }
+    ])
+    path = export_spectra_archive_index(frame, tmp_path / "spectra.csv")
+    exported = pd.read_csv(path)
+    assert exported.loc[0, "authors"] == "Alderson et al. 2023"
+    assert exported.loc[0, "reference_url"].endswith("/2023Natur.614..649A/abstract")
+    assert exported.loc[0, "num_datapoints"] == 120
 
 
 def test_export_galaxy_excludes_rows_without_distance_and_controls():

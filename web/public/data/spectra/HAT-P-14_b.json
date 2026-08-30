@@ -20,6 +20,12 @@
   "RISE",
   "Spectral camera"
  ],
+ "references": [
+  {
+   "label": "Fukui et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...819...27F/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 7
  },

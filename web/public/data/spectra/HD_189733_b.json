@@ -23,6 +23,56 @@
   "Space Telescope Imaging Spectrograph",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Pont et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.432.2917P/abstract"
+  },
+  {
+   "label": "Sing et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011MNRAS.416.1443S/abstract"
+  },
+  {
+   "label": "Sing et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016Natur.529...59S/abstract"
+  },
+  {
+   "label": "Barnes et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.462.1012B/abstract"
+  },
+  {
+   "label": "Di Gloria et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015A&A...580A..84D/abstract"
+  },
+  {
+   "label": "Borsa et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016A&A...590A..84B/abstract"
+  },
+  {
+   "label": "Angerhausen et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015JATIS...1c4002A/abstract"
+  },
+  {
+   "label": "Wyttenbach et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015A&A...577A..62W/abstract"
+  },
+  {
+   "label": "Gibson et al. 2012",
+   "url": "https://ui.adsabs.harvard.edu/abs/2012MNRAS.422..753G/abstract"
+  },
+  {
+   "label": "McCullough et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...791...55M/abstract"
+  },
+  {
+   "label": "Swain et al. 2008",
+   "url": "https://ui.adsabs.harvard.edu/abs/2008NATUR.452..329S/abstract"
+  },
+  {
+   "label": "Desert et al. 2011",
+   "url": "https://ui.adsabs.harvard.edu/abs/2011A%26A...526A..12D/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 139,
   "plntransdep_percent": 62

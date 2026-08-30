@@ -1,0 +1,234 @@
+{
+ "planet": "GJ 1214 b",
+ "kind": "emission",
+ "n_points": 14,
+ "wavelength_range_um": [
+  5.25,
+  11.75
+ ],
+ "facilities": [
+  "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission"
+ ],
+ "instruments": [
+  "Mid-Infrared Instrument (MIRI) - LRS"
+ ],
+ "references": [
+  {
+   "label": "Kempton et al. 2023",
+   "url": "https://ui.adsabs.harvard.edu/abs/2023arXiv230506240K/abstract"
+  }
+ ],
+ "depth_sources": {
+  "especlipdep_percent": 14
+ },
+ "expected_bands": [
+  {
+   "species": "H2O",
+   "label": "Water",
+   "bands_um": [
+    6.2
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Indicates volatiles and is required for surface liquid water, but water vapour is abundant in hot gas giants and is not itself a biosignature.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "CH4",
+   "label": "Methane",
+   "bands_um": [
+    7.7
+   ],
+   "colour_role": "primary",
+   "biosignature_relevance": "Biologically produced on Earth, but also outgassed abiotically by serpentinisation and volcanism. Interesting mainly in DISEQUILIBRIUM with O2, not on its own.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "O3",
+   "label": "Ozone",
+   "bands_um": [
+    9.6
+   ],
+   "colour_role": "biosignature_context",
+   "biosignature_relevance": "A photochemical proxy for O2 detectable at lower abundance, inheriting every abiotic-oxygen ambiguity that O2 has.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "NH3",
+   "label": "Ammonia",
+   "bands_um": [
+    10.5
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Disequilibrium species in some atmospheric contexts.",
+   "status": "expected_band_position"
+  },
+  {
+   "species": "SO2",
+   "label": "Sulphur dioxide",
+   "bands_um": [
+    7.3,
+    8.7
+   ],
+   "colour_role": "secondary",
+   "biosignature_relevance": "Volcanic and photochemical. Its JWST detection in WASP-39 b is evidence of photochemistry, not of biology.",
+   "status": "expected_band_position"
+  }
+ ],
+ "points": [
+  {
+   "wavelength_um": 5.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 134.0,
+   "depth_ppm_err": 29.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 5.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 184.0,
+   "depth_ppm_err": 30.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 6.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 228.0,
+   "depth_ppm_err": 29.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 6.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 241.0,
+   "depth_ppm_err": 33.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 7.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 324.0,
+   "depth_ppm_err": 39.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 7.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 426.0,
+   "depth_ppm_err": 43.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 8.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 474.0,
+   "depth_ppm_err": 39.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 8.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 631.0,
+   "depth_ppm_err": 46.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 9.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 604.0,
+   "depth_ppm_err": 49.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 9.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 758.0,
+   "depth_ppm_err": 57.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 10.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 881.0,
+   "depth_ppm_err": 69.5,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 10.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 962.0,
+   "depth_ppm_err": 83.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 11.25,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 1174.0,
+   "depth_ppm_err": 112.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  },
+  {
+   "wavelength_um": 11.75,
+   "bandwidth_um": 0.5,
+   "depth_ppm": 1180.0,
+   "depth_ppm_err": 149.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Mid-Infrared Instrument (MIRI) - LRS"
+  }
+ ],
+ "caveat": "Eclipse depth is the wavelength-dependent planet/star flux ratio. Expected band positions are context, not molecular detections; interpretation belongs to the cited analyses."
+}

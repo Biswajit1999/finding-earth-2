@@ -32,6 +32,44 @@
   "TRAPPISTCam",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Mancini et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.436....2M/abstract"
+  },
+  {
+   "label": "Sedaghati et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015A&A...576L..11S/abstract"
+  },
+  {
+   "label": "Huitson et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.434.3252H/abstract"
+  },
+  {
+   "label": "Lendl et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...552A...2L/abstract"
+  },
+  {
+   "label": "Tregloan-Reed et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.428.3671T/abstract"
+  },
+  {
+   "label": "Zhou et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...774..118Z/abstract"
+  },
+  {
+   "label": "Mandell et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...779..128M/abstract"
+  },
+  {
+   "label": "Bean et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...771..108B/abstract"
+  },
+  {
+   "label": "Wong et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...823..122W/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 52,
   "plntransdep_percent": 29

@@ -12,6 +12,12 @@
  "instruments": [
   "GMOS"
  ],
+ "references": [
+  {
+   "label": "Gibson et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.428.3680G/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 15
  },

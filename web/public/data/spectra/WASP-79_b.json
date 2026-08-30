@@ -18,6 +18,12 @@
   "TESS CCD Array",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Sotzen et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020AJ....159....5S/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 26
  },

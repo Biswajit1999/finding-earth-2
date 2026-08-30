@@ -12,6 +12,12 @@
  "instruments": [
   "OSIRIS"
  ],
+ "references": [
+  {
+   "label": "Murgas et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020A&A...641A.158M/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 30
  },

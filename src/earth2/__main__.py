@@ -239,6 +239,8 @@ def cmd_export(args: argparse.Namespace) -> int:
         deep_dives=dives, spectra_inventory=inv, provenance=provenance,
         sync_state=read_sync_state(), transit_validation=transit_validation,
         transitspec=load("nasa_transitspec"),
+        emissionspec=load("nasa_emissionspec"),
+        spectra_archive_index=load("nasa_spectra_index"),
     )
     total = 0
     for k, p in written.items():

@@ -47,9 +47,37 @@ __all__ = [
     "export_catalogue_columnar",
     "export_discovery_timeline",
     "export_galaxy",
+    "export_spectra_archive_index",
     "export_universe",
     "write_json",
 ]
+
+
+def export_spectra_archive_index(frame: pd.DataFrame, path: Path) -> Path:
+    """Write a clean, downloadable copy of the current archive file index."""
+    archive_columns = [
+        "pl_name", "spec_type", "authors", "num_datapoints", "instrument",
+        "facility", "minwavelng", "maxwavelng", "mintranmid", "maxtranmid",
+        "note", "bibcode", "spec_path",
+    ]
+    archive = frame[[c for c in archive_columns if c in frame.columns]].copy()
+    if "authors" in archive:
+        archive.insert(
+            archive.columns.get_loc("authors") + 1,
+            "reference_url",
+            archive["authors"].astype("string").str.extract(
+                r'href=(?:"([^"]+)"|([^\s>]+))', expand=True
+            ).bfill(axis=1).iloc[:, 0],
+        )
+        archive["authors"] = (
+            archive["authors"].astype("string").str.replace(
+                r"<[^>]+>", "", regex=True
+            ).str.strip()
+        )
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    archive.to_csv(path, index=False)
+    return path
 
 #: Sun's distance from the Galactic Centre. GRAVITY Collaboration (2019),
 #: A&A 625, L10 -- measured from stellar orbits around Sgr A*, not assumed.
@@ -495,6 +523,8 @@ def export_all(
     sync_state: dict[str, Any] | None = None,
     transit_validation: dict[str, Any] | None = None,
     transitspec: pd.DataFrame | None = None,
+    emissionspec: pd.DataFrame | None = None,
+    spectra_archive_index: pd.DataFrame | None = None,
 ) -> dict[str, Path]:
     """Write every JSON product the website consumes."""
     out_dir = Path(out_dir)
@@ -537,10 +567,15 @@ def export_all(
             out_dir / "spectra_index.json", indent=1,
         )
 
-    # Every planet's full assembled spectrum (transmission, >=4 usable points),
-    # not just the top-ranked deep-dive systems. The Spectral Lab needs to show
-    # all ~97 planets with real published spectra, most of which are hot
-    # Jupiters with no habitability interest but genuine atmospheric data.
+    if spectra_archive_index is not None and not spectra_archive_index.empty:
+        archive_path = out_dir / "atmospheric_spectra_archive_index.csv"
+        written["spectra_archive_index_csv"] = export_spectra_archive_index(
+            spectra_archive_index, archive_path
+        )
+
+    # Every planet's full assembled spectrum (>=4 usable points), not just the
+    # top-ranked deep-dive systems. Transmission and eclipse measurements stay
+    # in separate payloads because they measure different observing geometries.
     if transitspec is not None and not transitspec.empty:
         from earth2.spectroscopy import planet_spectrum
 
@@ -557,6 +592,30 @@ def export_all(
                 slug = str(name).replace(" ", "_").replace("/", "-")
                 write_json(spec, spec_dir / (slug + ".json"), gzip_also=False, indent=1)
         written["spectra_dir"] = spec_dir
+
+    if emissionspec is not None and not emissionspec.empty:
+        from earth2.spectroscopy import emission_spectrum
+
+        emission_dir = out_dir / "spectra" / "emission"
+        emission_dir.mkdir(parents=True, exist_ok=True)
+        for stale in emission_dir.glob("*.json"):
+            stale.unlink()
+        names = (
+            spectra_inventory[spectra_inventory["kind"] == "emission"]["pl_name"].tolist()
+            if spectra_inventory is not None and not spectra_inventory.empty
+            else []
+        )
+        for name in names:
+            spec = emission_spectrum(emissionspec, name)
+            if spec:
+                slug = str(name).replace(" ", "_").replace("/", "-")
+                write_json(
+                    spec,
+                    emission_dir / (slug + ".json"),
+                    gzip_also=False,
+                    indent=1,
+                )
+        written["emission_spectra_dir"] = emission_dir
 
     if deep_dives:
         dd_dir = out_dir / "deepdive"

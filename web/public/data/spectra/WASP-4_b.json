@@ -16,6 +16,16 @@
   "SOI",
   "Y4KCam"
  ],
+ "references": [
+  {
+   "label": "Huitson et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154...95H/abstract"
+  },
+  {
+   "label": "Hoyer et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.434...46H/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 16
  },

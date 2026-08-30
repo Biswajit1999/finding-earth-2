@@ -18,6 +18,8 @@ from earth2.spectroscopy.spectra import (
     MOLECULAR_BANDS,
     atmospheric_scale_height_km,
     bands_in_range,
+    emission_spectrum,
+    harmonise_emission_depths,
     harmonise_transit_depths,
     planet_spectrum,
     spectrum_inventory,
@@ -28,6 +30,7 @@ __all__ = [
     "BIOSIGNATURE_CONTEXT", "EVIDENCE_STATES", "FALSE_POSITIVE_MECHANISMS",
     "INTERPRETATION_REQUIREMENTS", "biosignature_context_for",
     "MOLECULAR_BANDS", "atmospheric_scale_height_km", "bands_in_range",
+    "emission_spectrum", "harmonise_emission_depths",
     "harmonise_transit_depths", "planet_spectrum", "spectrum_inventory",
     "transmission_signal_ppm",
 ]

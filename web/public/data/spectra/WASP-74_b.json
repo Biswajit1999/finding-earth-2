@@ -18,6 +18,12 @@
   "GROND",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Mancini et al. 2019",
+   "url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.5168M/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 27
  },

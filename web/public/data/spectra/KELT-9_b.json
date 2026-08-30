@@ -14,6 +14,16 @@
   "CARMENES",
   "Potsdam Echelle Polarimetric & Spectroscopic Instrument (PEPSI)"
  ],
+ "references": [
+  {
+   "label": "Cauley et al. 2019",
+   "url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...69C/abstract"
+  },
+  {
+   "label": "Turner et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020ApJ...888L..13T/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 23
  },

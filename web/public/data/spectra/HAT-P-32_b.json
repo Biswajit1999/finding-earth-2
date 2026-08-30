@@ -24,6 +24,24 @@
   "OSIRIS",
   "ULTRACAM"
  ],
+ "references": [
+  {
+   "label": "Mallonn et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463..604M/abstract"
+  },
+  {
+   "label": "Mallonn & Strassmeier 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016A&A...590A.100M/abstract"
+  },
+  {
+   "label": "Gibson et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.436.2974G/abstract"
+  },
+  {
+   "label": "Nortmann et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016A&A...594A..65N/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 60
  },

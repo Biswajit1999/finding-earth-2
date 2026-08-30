@@ -25,6 +25,20 @@
   "Multiple Instruments",
   "SIRIUS"
  ],
+ "references": [
+  {
+   "label": "Triaud et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015MNRAS.450.2279T/abstract"
+  },
+  {
+   "label": "Kirk et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.474..876K/abstract"
+  },
+  {
+   "label": "Fukui et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...790..108F/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 58
  },

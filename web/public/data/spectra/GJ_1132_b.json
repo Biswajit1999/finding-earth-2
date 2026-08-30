@@ -18,6 +18,20 @@
   "PISCO",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Southworth et al. 2017",
+   "url": "https://ui.adsabs.harvard.edu/abs/2017AJ....153..191S/abstract"
+  },
+  {
+   "label": "Diamond-Lowe et al. 2018",
+   "url": "https://ui.adsabs.harvard.edu/abs/2018AJ....156...42D/abstract"
+  },
+  {
+   "label": "Swain et al. 2021",
+   "url": "https://ui.adsabs.harvard.edu/abs/2021arXiv210305657S/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 111,
   "plnratror_squared": 6

@@ -12,6 +12,12 @@
  "instruments": [
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Knutson et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...794..155K/abstract"
+  }
+ ],
  "depth_sources": {
   "plntransdep_percent": 28
  },

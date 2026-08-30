@@ -12,6 +12,12 @@
  "instruments": [
   "IMACS spectrograph"
  ],
+ "references": [
+  {
+   "label": "Jordan et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...778..184J/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 21
  },

@@ -16,6 +16,16 @@
   "FORS2",
   "GROND"
  ],
+ "references": [
+  {
+   "label": "Wilson et al. 2020",
+   "url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.497.5155W/abstract"
+  },
+  {
+   "label": "Southworth & Evans 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463...37S/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 22
  },

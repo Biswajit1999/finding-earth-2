@@ -42,6 +42,8 @@ not to a band overlay drawn by this code.
 
 from __future__ import annotations
 
+import html
+import re
 from typing import Any
 
 import numpy as np
@@ -51,11 +53,35 @@ __all__ = [
     "MOLECULAR_BANDS",
     "atmospheric_scale_height_km",
     "bands_in_range",
+    "emission_spectrum",
+    "harmonise_emission_depths",
     "harmonise_transit_depths",
     "planet_spectrum",
     "spectrum_inventory",
     "transmission_signal_ppm",
 ]
+
+
+_REFERENCE_RE = re.compile(
+    r"href=(?:\"(?P<quoted>[^\"]+)\"|(?P<plain>[^\s>]+))[^>]*>(?P<label>.*?)</a>",
+    flags=re.IGNORECASE,
+)
+
+
+def _reference_links(values: pd.Series) -> list[dict[str, str]]:
+    """Extract and deduplicate the Archive's ADS anchors."""
+    links: list[dict[str, str]] = []
+    seen: set[str] = set()
+    for raw in values.dropna().astype(str):
+        match = _REFERENCE_RE.search(raw)
+        if not match:
+            continue
+        url = html.unescape(match.group("quoted") or match.group("plain") or "")
+        label = html.unescape(re.sub(r"<[^>]+>", "", match.group("label"))).strip()
+        if url and url not in seen:
+            seen.add(url)
+            links.append({"label": label or "Source paper", "url": url})
+    return links
 
 #: Approximate central wavelengths (microns) of absorption bands relevant to
 #: exoplanet atmospheres, with the width over which the band is usually
@@ -237,6 +263,42 @@ def harmonise_transit_depths(ts: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def harmonise_emission_depths(es: pd.DataFrame) -> pd.DataFrame:
+    """Convert eclipse depth from percent to ppm and retain temperatures.
+
+    The NASA Exoplanet Archive defines ``especlipdep`` as the wavelength-
+    dependent planet/star flux ratio in percent.  The web lab uses ppm so its
+    transmission and eclipse views share a readable numerical unit, while the
+    spectrum type remains explicit and the two quantities are never combined.
+    """
+    df = es.copy()
+
+    def col(name: str) -> pd.Series:
+        if name in df.columns:
+            return pd.to_numeric(df[name], errors="coerce")
+        return pd.Series(np.nan, index=df.index, dtype=float)
+
+    depth_pct = col("especlipdep")
+    depth_e1 = col("especlipdeperr1").abs()
+    depth_e2 = col("especlipdeperr2").abs()
+    temp = col("espbritemp")
+    temp_e1 = col("espbritemperr1").abs()
+    temp_e2 = col("espbritemperr2").abs()
+
+    df["depth_ppm"] = depth_pct * 1e4
+    df["depth_ppm_err"] = pd.concat([depth_e1, depth_e2], axis=1).mean(axis=1) * 1e4
+    df["brightness_temperature_k"] = temp
+    df["brightness_temperature_k_err"] = pd.concat(
+        [temp_e1, temp_e2], axis=1
+    ).mean(axis=1)
+    df["depth_source"] = np.where(
+        depth_pct.notna(), "especlipdep_percent", "missing"
+    )
+    df["wavelength_um"] = col("centralwavelng")
+    df["bandwidth_um"] = col("bandwidth")
+    return df
+
+
 def atmospheric_scale_height_km(
     teq_k: float,
     mass_earth: float,
@@ -324,6 +386,9 @@ def planet_spectrum(
         "wavelength_range_um": [wl_min, wl_max],
         "facilities": facilities,
         "instruments": instruments,
+        "references": _reference_links(
+            sub.get("plntranreflink", pd.Series(dtype=object))
+        ),
         "depth_sources": {
             str(k): int(v) for k, v in sub["depth_source"].value_counts().items()
         },
@@ -345,6 +410,78 @@ def planet_spectrum(
         "caveat": (
             "Annotated band positions mark where a species would absorb. They are not "
             "detections. Detection claims belong to the cited analyses."
+        ),
+    }
+
+
+def emission_spectrum(
+    es: pd.DataFrame,
+    planet: str,
+    min_points: int = 1,
+) -> dict[str, Any] | None:
+    """Assemble one published secondary-eclipse spectrum.
+
+    Eclipse depth measures the planet/star flux ratio while the planet passes
+    behind the star.  It is kept separate from transmission depth throughout
+    the payload and interface.
+    """
+    df = harmonise_emission_depths(es)
+    sub = df[df["plntname"].astype(str) == planet].copy()
+    sub = sub[sub["wavelength_um"].notna() & sub["depth_ppm"].notna()]
+    if len(sub) < max(1, min_points):
+        return None
+    sub = sub.sort_values("wavelength_um")
+
+    wl_min = float(sub["wavelength_um"].min())
+    wl_max = float(sub["wavelength_um"].max())
+    facilities = sorted(
+        {str(x) for x in sub.get("facility", pd.Series(dtype=object)).dropna()}
+    )
+    instruments = sorted(
+        {str(x) for x in sub.get("instrument", pd.Series(dtype=object)).dropna()}
+    )
+
+    def optional_number(value: Any, digits: int = 2) -> float | None:
+        return None if not np.isfinite(value) else round(float(value), digits)
+
+    return {
+        "planet": planet,
+        "kind": "emission",
+        "n_points": int(len(sub)),
+        "wavelength_range_um": [wl_min, wl_max],
+        "facilities": facilities,
+        "instruments": instruments,
+        "references": _reference_links(
+            sub.get("plntreflink", pd.Series(dtype=object))
+        ),
+        "depth_sources": {"especlipdep_percent": int(len(sub))},
+        "expected_bands": bands_in_range(wl_min, wl_max),
+        "points": [
+            {
+                "wavelength_um": round(float(r["wavelength_um"]), 5),
+                "bandwidth_um": optional_number(r["bandwidth_um"], 5),
+                "depth_ppm": round(float(r["depth_ppm"]), 2),
+                "depth_ppm_err": optional_number(r["depth_ppm_err"]),
+                "brightness_temperature_k": optional_number(
+                    r["brightness_temperature_k"]
+                ),
+                "brightness_temperature_k_err": optional_number(
+                    r["brightness_temperature_k_err"]
+                ),
+                "source": str(r["depth_source"]),
+                "facility": (
+                    None if pd.isna(r.get("facility")) else str(r.get("facility"))
+                ),
+                "instrument": (
+                    None if pd.isna(r.get("instrument")) else str(r.get("instrument"))
+                ),
+            }
+            for _, r in sub.iterrows()
+        ],
+        "caveat": (
+            "Eclipse depth is the wavelength-dependent planet/star flux ratio. "
+            "Expected band positions are context, not molecular detections; "
+            "interpretation belongs to the cited analyses."
         ),
     }
 
@@ -377,9 +514,7 @@ def spectrum_inventory(
             })
 
     if es is not None and not es.empty and "plntname" in es.columns:
-        e = es.copy()
-        e["depth_ppm"] = pd.to_numeric(e.get("especlipdep"), errors="coerce")
-        e["wavelength_um"] = pd.to_numeric(e.get("centralwavelng"), errors="coerce")
+        e = harmonise_emission_depths(es)
         e = e[e["wavelength_um"].notna() & e["depth_ppm"].notna()]
         for name, sub in e.groupby("plntname"):
             rows.append({

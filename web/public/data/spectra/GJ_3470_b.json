@@ -45,6 +45,40 @@
   "ULTRASPEC",
   "Wide Field Camera 3"
  ],
+ "references": [
+  {
+   "label": "Nascimbeni et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...559A..32N/abstract"
+  },
+  {
+   "label": "Biddle et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.1810B/abstract"
+  },
+  {
+   "label": "Dragomir et al. 2015",
+   "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...814..102D/abstract"
+  },
+  {
+   "label": "Awiphan et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.2574A/abstract"
+  },
+  {
+   "label": "Fukui et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...770...95F/abstract"
+  },
+  {
+   "label": "Benneke et al. 2019",
+   "url": "https://ui.adsabs.harvard.edu/abs/2019NatAs...3..813B/abstract"
+  },
+  {
+   "label": "Ehrenreich et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A&A...570A..89E/abstract"
+  },
+  {
+   "label": "Crossfield et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...559A..33C/abstract"
+  }
+ ],
  "depth_sources": {
   "plnratror_squared": 157,
   "plntransdep_percent": 28
