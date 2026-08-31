@@ -36,7 +36,7 @@
   "notes": "Kepler Threshold Crossing Events, DR25. These are detections, the large majority of which are NOT planets. Ingested to characterise detection sensitivity and selection effects, never counted as planets. [columns absent from live schema, dropped: tce_srad, tce_smass]",
   "query": "select kepid, tce_plnt_num, tce_period, tce_period_err, tce_time0bk, tce_duration, tce_depth, tce_depth_err, tce_prad, tce_prad_err, tce_eqt, tce_insol, tce_ror, tce_dor, tce_impact, tce_model_snr, tce_num_transits, tce_max_mult_ev, tce_steff, tce_slogg, tce_smet, ra, dec from q1_q17_dr25_tce",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+kepid%2C+tce_plnt_num%2C+tce_period%2C+tce_period_err%2C+tce_time0bk%2C+tce_duration%2C+tce_depth%2C+tce_depth_err%2C+tce_prad%2C+tce_prad_err%2C+tce_eqt%2C+tce_insol%2C+tce_ror%2C+tce_dor%2C+tce_impact%2C+tce_model_snr%2C+tce_num_transits%2C+tce_max_mult_ev%2C+tce_steff%2C+tce_slogg%2C+tce_smet%2C+ra%2C+dec+from+q1_q17_dr25_tce&format=csv",
-  "retrieved_utc": "2026-08-28T19:57:00Z",
+  "retrieved_utc": "2026-08-31T10:56:42Z",
   "sha256": "246512d90dc8cce2842f1fb96a70086d01206fca9792e7b50b45f72d6ad446a2",
   "source_table": "q1_q17_dr25_tce",
   "status": "ok"

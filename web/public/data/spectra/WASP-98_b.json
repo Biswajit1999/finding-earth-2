@@ -86,15 +86,6 @@
   {
    "wavelength_um": 0.622,
    "bandwidth_um": 0.1382,
-   "depth_ppm": 25281.0,
-   "depth_ppm_err": 1176.6,
-   "source": "plnratror_squared",
-   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
-   "instrument": "GROND"
-  },
-  {
-   "wavelength_um": 0.622,
-   "bandwidth_um": 0.1382,
    "depth_ppm": 24649.0,
    "depth_ppm_err": 533.8,
    "source": "plnratror_squared",
@@ -102,10 +93,10 @@
    "instrument": "GROND"
   },
   {
-   "wavelength_um": 0.764,
-   "bandwidth_um": 0.1535,
-   "depth_ppm": 25568.01,
-   "depth_ppm_err": 1055.34,
+   "wavelength_um": 0.622,
+   "bandwidth_um": 0.1382,
+   "depth_ppm": 25281.0,
+   "depth_ppm_err": 1176.6,
    "source": "plnratror_squared",
    "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
    "instrument": "GROND"
@@ -115,6 +106,15 @@
    "bandwidth_um": 0.1535,
    "depth_ppm": 25664.04,
    "depth_ppm_err": 576.72,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
+  },
+  {
+   "wavelength_um": 0.764,
+   "bandwidth_um": 0.1535,
+   "depth_ppm": 25568.01,
+   "depth_ppm_err": 1055.34,
    "source": "plnratror_squared",
    "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
    "instrument": "GROND"

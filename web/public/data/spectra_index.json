@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-29T14:41:50Z",
+ "generated_utc": "2026-08-31T11:08:34Z",
  "rows": [
   {
    "pl_name": "WASP-18 b",
@@ -317,15 +317,6 @@
    "facilities": "Hubble Space Telescope satellite, Spitzer Space Telescope satellite, The Kepler Mission"
   },
   {
-   "pl_name": "WASP-121 b",
-   "kind": "transmission",
-   "n_points": 36,
-   "wl_min_um": 0.2387,
-   "wl_max_um": 1.6315,
-   "n_facilities": 2,
-   "facilities": "Hubble Space Telescope, Hubble Space Telescope satellite"
-  },
-  {
    "pl_name": "GJ 436 b",
    "kind": "transmission",
    "n_points": 36,
@@ -333,6 +324,15 @@
    "wl_max_um": 8.0,
    "n_facilities": 2,
    "facilities": "Hubble Space Telescope satellite, Spitzer Space Telescope satellite"
+  },
+  {
+   "pl_name": "WASP-121 b",
+   "kind": "transmission",
+   "n_points": 36,
+   "wl_min_um": 0.2387,
+   "wl_max_um": 1.6315,
+   "n_facilities": 2,
+   "facilities": "Hubble Space Telescope, Hubble Space Telescope satellite"
   },
   {
    "pl_name": "HAT-P-11 b",
@@ -362,15 +362,6 @@
    "facilities": "Gran Telescopio CANARIAS 10.4m telescope"
   },
   {
-   "pl_name": "HD 97658 b",
-   "kind": "transmission",
-   "n_points": 28,
-   "wl_min_um": 1.132,
-   "wl_max_um": 1.622,
-   "n_facilities": 1,
-   "facilities": "Hubble Space Telescope satellite"
-  },
-  {
    "pl_name": "HD 189733 b",
    "kind": "emission",
    "n_points": 28,
@@ -378,6 +369,15 @@
    "wl_max_um": 24.0,
    "n_facilities": 2,
    "facilities": "Hubble Space Telescope satellite, Spitzer Space Telescope satellite"
+  },
+  {
+   "pl_name": "HD 97658 b",
+   "kind": "transmission",
+   "n_points": 28,
+   "wl_min_um": 1.132,
+   "wl_max_um": 1.622,
+   "n_facilities": 1,
+   "facilities": "Hubble Space Telescope satellite"
   },
   {
    "pl_name": "WASP-74 b",
@@ -425,15 +425,6 @@
    "facilities": "Hubble Space Telescope satellite, Spitzer Space Telescope, Spitzer Space Telescope satellite"
   },
   {
-   "pl_name": "KELT-9 b",
-   "kind": "transmission",
-   "n_points": 23,
-   "wl_min_um": 0.4805,
-   "wl_max_um": 0.8665,
-   "n_facilities": 2,
-   "facilities": "Calar Alto Observatorys 3.5 meter Telescope, LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory"
-  },
-  {
    "pl_name": "WASP-43 b",
    "kind": "emission",
    "n_points": 23,
@@ -443,13 +434,13 @@
    "facilities": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory, Australian National University (ANU) 3.9m Anglo-Australian Telescope (AAT) at Siding Spring Observatory (SSO), European Southern Observatory (ESO) 0.6m TRAnsiting Planets and PlanetesImals Small Telescope (TRAPPIST) at La Silla Observatory, European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Yepun at Paranal Observatory"
   },
   {
-   "pl_name": "WASP-103 b",
-   "kind": "emission",
-   "n_points": 22,
-   "wl_min_um": 1.0806,
-   "wl_max_um": 1.6848,
-   "n_facilities": 1,
-   "facilities": "Hubble Space Telescope satellite"
+   "pl_name": "KELT-9 b",
+   "kind": "transmission",
+   "n_points": 23,
+   "wl_min_um": 0.4805,
+   "wl_max_um": 0.8665,
+   "n_facilities": 2,
+   "facilities": "Calar Alto Observatorys 3.5 meter Telescope, LBT Consortium Large Binocular Telescope (LBT) at Mount Graham International Observatory"
   },
   {
    "pl_name": "WASP-103 b",
@@ -459,6 +450,15 @@
    "wl_max_um": 0.9134,
    "n_facilities": 3,
    "facilities": "Danish 1.54m telescope at European Southern Observatory, Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory, Very Large Telescope (Antu)"
+  },
+  {
+   "pl_name": "WASP-103 b",
+   "kind": "emission",
+   "n_points": 22,
+   "wl_min_um": 1.0806,
+   "wl_max_um": 1.6848,
+   "n_facilities": 1,
+   "facilities": "Hubble Space Telescope satellite"
   },
   {
    "pl_name": "WASP-6 b",
@@ -479,15 +479,6 @@
    "facilities": "Hubble Space Telescope satellite, Infrared Telescope Facility"
   },
   {
-   "pl_name": "HAT-P-32 b",
-   "kind": "emission",
-   "n_points": 18,
-   "wl_min_um": 1.142,
-   "wl_max_um": 4.5,
-   "n_facilities": 3,
-   "facilities": "California Institute of Technology 5.1m (200inch) Hale Telescope at Palomar Observatory, Hubble Space Telescope satellite, Spitzer Space Telescope satellite"
-  },
-  {
    "pl_name": "WASP-117 b",
    "kind": "transmission",
    "n_points": 18,
@@ -497,6 +488,15 @@
    "facilities": "Hubble Space Telescope satellite"
   },
   {
+   "pl_name": "HAT-P-32 b",
+   "kind": "emission",
+   "n_points": 18,
+   "wl_min_um": 1.142,
+   "wl_max_um": 4.5,
+   "n_facilities": 3,
+   "facilities": "California Institute of Technology 5.1m (200inch) Hale Telescope at Palomar Observatory, Hubble Space Telescope satellite, Spitzer Space Telescope satellite"
+  },
+  {
    "pl_name": "WASP-4 b",
    "kind": "transmission",
    "n_points": 16,
@@ -504,6 +504,15 @@
    "wl_max_um": 0.8665,
    "n_facilities": 3,
    "facilities": "4.1m Southern Astrophysical Research (SOAR) Telescope at Cerro Pachon, Association of Universities for Research in Astronomy (AURA) 8.1m Gemini South Telescope at Cerro Pachon, The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)"
+  },
+  {
+   "pl_name": "WASP-101 b",
+   "kind": "transmission",
+   "n_points": 15,
+   "wl_min_um": 1.1425,
+   "wl_max_um": 1.6325,
+   "n_facilities": 1,
+   "facilities": "Hubble Space Telescope satellite"
   },
   {
    "pl_name": "KOI-13 b",
@@ -522,15 +531,6 @@
    "wl_max_um": 0.7175,
    "n_facilities": 1,
    "facilities": "Gemini South Telescope"
-  },
-  {
-   "pl_name": "WASP-101 b",
-   "kind": "transmission",
-   "n_points": 15,
-   "wl_min_um": 1.1425,
-   "wl_max_um": 1.6325,
-   "n_facilities": 1,
-   "facilities": "Hubble Space Telescope satellite"
   },
   {
    "pl_name": "GJ 1214 b",
@@ -569,20 +569,20 @@
    "facilities": "Calar Alto Observatory's 1.2 meter Telescope, Calar Alto Observatory's 2.2 meter Telescope"
   },
   {
-   "pl_name": "TrES-4 b",
-   "kind": "transmission",
-   "n_points": 10,
-   "wl_min_um": 1.1225,
-   "wl_max_um": 1.638,
-   "n_facilities": 1,
-   "facilities": "Hubble Space Telescope satellite"
-  },
-  {
    "pl_name": "TrES-2 b",
    "kind": "transmission",
    "n_points": 10,
    "wl_min_um": 1.0965,
    "wl_max_um": 1.6535,
+   "n_facilities": 1,
+   "facilities": "Hubble Space Telescope satellite"
+  },
+  {
+   "pl_name": "TrES-4 b",
+   "kind": "transmission",
+   "n_points": 10,
+   "wl_min_um": 1.1225,
+   "wl_max_um": 1.638,
    "n_facilities": 1,
    "facilities": "Hubble Space Telescope satellite"
   },
@@ -623,6 +623,15 @@
    "facilities": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory"
   },
   {
+   "pl_name": "TrES-1 b",
+   "kind": "emission",
+   "n_points": 7,
+   "wl_min_um": 3.6,
+   "wl_max_um": 16.0,
+   "n_facilities": 1,
+   "facilities": "Spitzer Space Telescope satellite"
+  },
+  {
    "pl_name": "WASP-67 b",
    "kind": "transmission",
    "n_points": 7,
@@ -639,15 +648,6 @@
    "wl_max_um": 0.87,
    "n_facilities": 5,
    "facilities": "Asiago Observatory's Copernico Telescope, Faulkes Telescope North, Fred Lawrence Whipple Observatory's 1.2 meter Telescope, Liverpool 2 meter telesope at Observatorio del Roque de los Muchachos"
-  },
-  {
-   "pl_name": "TrES-1 b",
-   "kind": "emission",
-   "n_points": 7,
-   "wl_min_um": 3.6,
-   "wl_max_um": 16.0,
-   "n_facilities": 1,
-   "facilities": "Spitzer Space Telescope satellite"
   },
   {
    "pl_name": "HAT-P-3 b",
@@ -668,6 +668,15 @@
    "facilities": "Danish 1.54m telescope at European Southern Observatory, Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory, New Techology Telescope, The Swiss Euler 1.2m Telescope"
   },
   {
+   "pl_name": "TrES-3 b",
+   "kind": "emission",
+   "n_points": 6,
+   "wl_min_um": 0.65,
+   "wl_max_um": 8.0,
+   "n_facilities": 3,
+   "facilities": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory, Deep Impact spacecraft, Spitzer Space Telescope satellite"
+  },
+  {
    "pl_name": "WASP-45 b",
    "kind": "transmission",
    "n_points": 6,
@@ -675,15 +684,6 @@
    "wl_max_um": 0.9134,
    "n_facilities": 3,
    "facilities": "Danish 1.54m telescope at European Southern Observatory, Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory, The Swiss Euler 1.2m Telescope"
-  },
-  {
-   "pl_name": "TrES-3 b",
-   "kind": "transmission",
-   "n_points": 6,
-   "wl_min_um": 0.5537,
-   "wl_max_um": 0.9222,
-   "n_facilities": 3,
-   "facilities": "Multiple Observatories, National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM), University of Monterrey (UDEM) 0.36m telescope at Observatorio de la Universidad de Monterrey"
   },
   {
    "pl_name": "WASP-3 b",
@@ -695,13 +695,13 @@
    "facilities": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory, Deep Impact spacecraft, Palomar Observatory 200-inch Hale Telescope, Spitzer Space Telescope satellite"
   },
   {
-   "pl_name": "TrES-3 b",
+   "pl_name": "GJ 436 b",
    "kind": "emission",
    "n_points": 6,
-   "wl_min_um": 0.65,
-   "wl_max_um": 8.0,
-   "n_facilities": 3,
-   "facilities": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory, Deep Impact spacecraft, Spitzer Space Telescope satellite"
+   "wl_min_um": 3.6,
+   "wl_max_um": 24.0,
+   "n_facilities": 1,
+   "facilities": "Spitzer Space Telescope satellite"
   },
   {
    "pl_name": "TrES-2 b",
@@ -713,15 +713,6 @@
    "facilities": "3.58m Canada-France-Hawaii Telescope (CFHT) at Mauna Kea Observatory, Deep Impact spacecraft, Spitzer Space Telescope satellite"
   },
   {
-   "pl_name": "GJ 436 b",
-   "kind": "emission",
-   "n_points": 6,
-   "wl_min_um": 3.6,
-   "wl_max_um": 24.0,
-   "n_facilities": 1,
-   "facilities": "Spitzer Space Telescope satellite"
-  },
-  {
    "pl_name": "CoRoT-2 b",
    "kind": "emission",
    "n_points": 6,
@@ -729,6 +720,33 @@
    "wl_max_um": 8.0,
    "n_facilities": 2,
    "facilities": "Isaac Newton Group (ING) 4.2m William Herschel Telescope (WHT) at Observatorio del Roque de los Muchachos, Spitzer Space Telescope satellite"
+  },
+  {
+   "pl_name": "TrES-3 b",
+   "kind": "transmission",
+   "n_points": 6,
+   "wl_min_um": 0.5537,
+   "wl_max_um": 0.9222,
+   "n_facilities": 3,
+   "facilities": "Multiple Observatories, National Autonomous University of Mexico (UNAM) 0.84m Telescope at El Observatorio Astronomico Nacional/Sierra San Pedro Martir (OAN/SPM), University of Monterrey (UDEM) 0.36m telescope at Observatorio de la Universidad de Monterrey"
+  },
+  {
+   "pl_name": "XO-3 b",
+   "kind": "emission",
+   "n_points": 5,
+   "wl_min_um": 3.6,
+   "wl_max_um": 8.0,
+   "n_facilities": 1,
+   "facilities": "Spitzer Space Telescope satellite"
+  },
+  {
+   "pl_name": "WASP-5 b",
+   "kind": "emission",
+   "n_points": 5,
+   "wl_min_um": 1.22,
+   "wl_max_um": 4.5,
+   "n_facilities": 3,
+   "facilities": "Anglo Australian Telescope, European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory, Spitzer Space Telescope satellite"
   },
   {
    "pl_name": "HAT-P-1 b",
@@ -749,43 +767,7 @@
    "facilities": "Astrophysical Research Consortium (ARC) 3.5m Telescope At Apache Point Observatory (APO), European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Yepun at Paranal Observatory, Palomar Observatory 200-inch Hale Telescope, Spitzer Space Telescope satellite"
   },
   {
-   "pl_name": "WASP-5 b",
-   "kind": "emission",
-   "n_points": 5,
-   "wl_min_um": 1.22,
-   "wl_max_um": 4.5,
-   "n_facilities": 3,
-   "facilities": "Anglo Australian Telescope, European Southern Observatory (ESO)/Max Planck Gesellschaft (MPG) 2.2m Telescope at La Silla Observatory, Spitzer Space Telescope satellite"
-  },
-  {
-   "pl_name": "XO-3 b",
-   "kind": "emission",
-   "n_points": 5,
-   "wl_min_um": 3.6,
-   "wl_max_um": 8.0,
-   "n_facilities": 1,
-   "facilities": "Spitzer Space Telescope satellite"
-  },
-  {
-   "pl_name": "HAT-P-13 b",
-   "kind": "emission",
-   "n_points": 4,
-   "wl_min_um": 3.6,
-   "wl_max_um": 4.5,
-   "n_facilities": 1,
-   "facilities": "Spitzer Space Telescope satellite"
-  },
-  {
-   "pl_name": "Kepler-26 c",
-   "kind": "transmission",
-   "n_points": 4,
-   "wl_min_um": 0.6,
-   "wl_max_um": 4.5,
-   "n_facilities": 2,
-   "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
-  },
-  {
-   "pl_name": "Kepler-25 b",
+   "pl_name": "Kepler-19 b",
    "kind": "transmission",
    "n_points": 4,
    "wl_min_um": 0.6,
@@ -803,7 +785,7 @@
    "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
   },
   {
-   "pl_name": "Kepler-49 c",
+   "pl_name": "Kepler-25 b",
    "kind": "transmission",
    "n_points": 4,
    "wl_min_um": 0.6,
@@ -812,13 +794,22 @@
    "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
   },
   {
-   "pl_name": "WASP-4 b",
-   "kind": "emission",
+   "pl_name": "Kepler-26 c",
+   "kind": "transmission",
    "n_points": 4,
-   "wl_min_um": 2.159,
+   "wl_min_um": 0.6,
    "wl_max_um": 4.5,
-   "n_facilities": 3,
-   "facilities": "Anglo Australian Telescope, European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Melipal (UT3) at Paranal Observatory, Spitzer Space Telescope satellite"
+   "n_facilities": 2,
+   "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
+  },
+  {
+   "pl_name": "Kepler-49 c",
+   "kind": "transmission",
+   "n_points": 4,
+   "wl_min_um": 0.6,
+   "wl_max_um": 4.5,
+   "n_facilities": 2,
+   "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
   },
   {
    "pl_name": "Kepler-249 d",
@@ -830,6 +821,24 @@
    "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
   },
   {
+   "pl_name": "HAT-P-7 b",
+   "kind": "emission",
+   "n_points": 4,
+   "wl_min_um": 3.6,
+   "wl_max_um": 8.0,
+   "n_facilities": 1,
+   "facilities": "Spitzer Space Telescope satellite"
+  },
+  {
+   "pl_name": "HAT-P-13 b",
+   "kind": "emission",
+   "n_points": 4,
+   "wl_min_um": 3.6,
+   "wl_max_um": 4.5,
+   "n_facilities": 1,
+   "facilities": "Spitzer Space Telescope satellite"
+  },
+  {
    "pl_name": "TrES-4 b",
    "kind": "emission",
    "n_points": 4,
@@ -839,13 +848,13 @@
    "facilities": "Spitzer Space Telescope satellite"
   },
   {
-   "pl_name": "Kepler-19 b",
-   "kind": "transmission",
+   "pl_name": "WASP-4 b",
+   "kind": "emission",
    "n_points": 4,
-   "wl_min_um": 0.6,
+   "wl_min_um": 2.159,
    "wl_max_um": 4.5,
-   "n_facilities": 2,
-   "facilities": "Spitzer Space Telescope satellite, The Kepler Mission"
+   "n_facilities": 3,
+   "facilities": "Anglo Australian Telescope, European Southern Observatory (ESO) 8.2m Very Large Telescope (VLT) Melipal (UT3) at Paranal Observatory, Spitzer Space Telescope satellite"
   },
   {
    "pl_name": "XO-1 b",
@@ -858,15 +867,6 @@
   },
   {
    "pl_name": "XO-2 N b",
-   "kind": "emission",
-   "n_points": 4,
-   "wl_min_um": 3.6,
-   "wl_max_um": 8.0,
-   "n_facilities": 1,
-   "facilities": "Spitzer Space Telescope satellite"
-  },
-  {
-   "pl_name": "HAT-P-7 b",
    "kind": "emission",
    "n_points": 4,
    "wl_min_um": 3.6,

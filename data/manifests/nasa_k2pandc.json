@@ -51,7 +51,7 @@
   "notes": "K2 planets and candidates.",
   "query": "select pl_name, hostname, epic_hostname, epic_candname, k2_name, disposition, discoverymethod, disc_year, disc_facility, pl_orbper, pl_orbpererr1, pl_orbpererr2, pl_rade, pl_radeerr1, pl_radeerr2, pl_bmasse, pl_bmasseerr1, pl_bmasseerr2, pl_orbsmax, pl_insol, pl_eqt, pl_trandep, pl_trandur, st_teff, st_rad, st_mass, st_logg, st_met, sy_dist, ra, dec, sy_vmag, sy_kmag, sy_gaiamag, tic_id, default_flag, soltype, rowupdate from k2pandc",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+pl_name%2C+hostname%2C+epic_hostname%2C+epic_candname%2C+k2_name%2C+disposition%2C+discoverymethod%2C+disc_year%2C+disc_facility%2C+pl_orbper%2C+pl_orbpererr1%2C+pl_orbpererr2%2C+pl_rade%2C+pl_radeerr1%2C+pl_radeerr2%2C+pl_bmasse%2C+pl_bmasseerr1%2C+pl_bmasseerr2%2C+pl_orbsmax%2C+pl_insol%2C+pl_eqt%2C+pl_trandep%2C+pl_trandur%2C+st_teff%2C+st_rad%2C+st_mass%2C+st_logg%2C+st_met%2C+sy_dist%2C+ra%2C+dec%2C+sy_vmag%2C+sy_kmag%2C+sy_gaiamag%2C+tic_id%2C+default_flag%2C+soltype%2C+rowupdate+from+k2pandc&format=csv",
-  "retrieved_utc": "2026-08-28T19:56:44Z",
+  "retrieved_utc": "2026-08-31T10:56:30Z",
   "sha256": "1444b1fa2b1526a152f9b57e09c6eba1a7d84b508bb4c6e6e8d0fe56e151bcf8",
   "source_table": "k2pandc",
   "status": "ok"

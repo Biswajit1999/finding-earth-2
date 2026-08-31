@@ -1,7 +1,7 @@
 {
  "planet": "Kepler-1229 b",
  "hostname": "Kepler-1229",
- "generated_utc": "2026-08-28T20:10:24Z",
+ "generated_utc": "2026-08-31T10:59:15Z",
  "narrative": {
   "location": "Kepler-1229 lies 865.89 light-years (265.482 pc) from the Sun.",
   "host_star": "Kepler-1229 is the host star with 0.54\u00d7 the Sun's mass and 0.51\u00d7 its radius (effective temperature 3784 K, versus the Sun's 5772 K).",
@@ -81,20 +81,7 @@
   "n_stars_in_system": 1,
   "n_planets_in_system": 1
  },
- "gaia_crossmatch": {
-  "source_id": "2086316205543022336",
-  "parallax_mas": 3.7282,
-  "parallax_error_mas": 0.0376,
-  "distance_pc": 268.229,
-  "distance_disagreement_vs_archive_pct": 1.03,
-  "ruwe": 1.675,
-  "ruwe_note": "RUWE > 1.4 is the conventional flag for a poorly-fit or unresolved-binary single-star astrometric solution.",
-  "non_single_star_flag": false,
-  "proper_motion_mas_yr": {
-   "ra": 21.58,
-   "dec": -3.987
-  }
- },
+ "gaia_crossmatch": null,
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
@@ -330,76 +317,10 @@
  "transit_analysis": {
   "target": "Kepler-1229",
   "requested_mission": "TESS",
-  "analysed_utc": "2026-08-24T22:50:58Z",
+  "analysed_utc": "2026-08-31T10:59:15Z",
   "status": "fit_not_validated",
   "n_products_found": 28,
   "products": [
-   {
-    "mission": "TESS Sector 14",
-    "author": "CDIPS",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0014-cam2-ccd4_tess_v01_llc.fits",
-    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0014-cam2-ccd4_tess_v01_llc",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 14",
-    "author": "TASOC",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06_ens-lc.fits",
-    "obs_id": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 14",
-    "author": "TARS",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_tars_tess_ffi_s0014-0000000273373582_tess_v01_lc.fits",
-    "obs_id": "hlsp_tars_tess_ffi_s0014-0000000273373582_tess",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 14",
-    "author": "TASOC",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06_cbv-lc.fits",
-    "obs_id": "hlsp_tasoc_tess_ffi_tic00273373582-s0014-cam2-ccd4-c1800_tess_v06",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 15",
-    "author": "CDIPS",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0015-cam2-ccd3_tess_v01_llc.fits",
-    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0015-cam2-ccd3_tess_v01_llc",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 15",
-    "author": "TARS",
-    "exptime": 1800.0,
-    "year": 2019,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_tars_tess_ffi_s0015-0000000273373582_tess_v01_lc.fits",
-    "obs_id": "hlsp_tars_tess_ffi_s0015-0000000273373582_tess",
-    "searched_target": "Kepler-1229"
-   },
    {
     "mission": "TESS Sector 41",
     "author": "SPOC",
@@ -409,6 +330,39 @@
     "target_name": "273373582",
     "productFilename": "tess2021204101404-s0041-0000000273373582-0212-s_lc.fits",
     "obs_id": "tess2021204101404-s0041-0000000273373582-0212-s",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 54",
+    "author": "SPOC",
+    "exptime": 120.0,
+    "year": 2022,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "tess2022190063128-s0054-0000000273373582-0227-s_lc.fits",
+    "obs_id": "tess2022190063128-s0054-0000000273373582-0227-s",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 81",
+    "author": "SPOC",
+    "exptime": 120.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "tess2024196212429-s0081-0000000273373582-0276-s_lc.fits",
+    "obs_id": "tess2024196212429-s0081-0000000273373582-0276-s",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 82",
+    "author": "SPOC",
+    "exptime": 120.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "tess2024223182411-s0082-0000000273373582-0278-s_lc.fits",
+    "obs_id": "tess2024223182411-s0082-0000000273373582-0278-s",
     "searched_target": "Kepler-1229"
    },
    {
@@ -423,6 +377,39 @@
     "searched_target": "Kepler-1229"
    },
    {
+    "mission": "TESS Sector 54",
+    "author": "TESS-SPOC",
+    "exptime": 600.0,
+    "year": 2022,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tess-spoc_tess_phot_0000000273373582-s0054_tess_v1_lc.fits",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000273373582-s0054_tess_v1_tp",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 81",
+    "author": "TESS-SPOC",
+    "exptime": 200.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tess-spoc_tess_phot_0000000273373582-s0081_tess_v1_lc.fits",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000273373582-s0081_tess_v1_tp",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 82",
+    "author": "TESS-SPOC",
+    "exptime": 200.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_tess-spoc_tess_phot_0000000273373582-s0082_tess_v1_lc.fits",
+    "obs_id": "hlsp_tess-spoc_tess_phot_0000000273373582-s0082_tess_v1_tp",
+    "searched_target": "Kepler-1229"
+   },
+   {
     "mission": "TESS Sector 41",
     "author": "QLP",
     "exptime": 600.0,
@@ -434,36 +421,36 @@
     "searched_target": "Kepler-1229"
    },
    {
-    "mission": "TESS Sector 41",
-    "author": "TARS",
-    "exptime": 600.0,
-    "year": 2021,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_tars_tess_ffi_s0041-0000000273373582_tess_v01_lc.fits",
-    "obs_id": "hlsp_tars_tess_ffi_s0041-0000000273373582_tess",
-    "searched_target": "Kepler-1229"
-   },
-   {
-    "mission": "TESS Sector 41",
-    "author": "CDIPS",
-    "exptime": 1800.0,
-    "year": 2021,
-    "distance": 0.0,
-    "target_name": "273373582",
-    "productFilename": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0041-cam2-ccd4_tess_v01_llc.fits",
-    "obs_id": "hlsp_cdips_tess_ffi_gaiatwo0002086316205543022336-s0041-cam2-ccd4_tess_v01_llc",
-    "searched_target": "Kepler-1229"
-   },
-   {
     "mission": "TESS Sector 54",
-    "author": "SPOC",
-    "exptime": 120.0,
+    "author": "QLP",
+    "exptime": 600.0,
     "year": 2022,
     "distance": 0.0,
     "target_name": "273373582",
-    "productFilename": "tess2022190063128-s0054-0000000273373582-0227-s_lc.fits",
-    "obs_id": "tess2022190063128-s0054-0000000273373582-0227-s",
+    "productFilename": "hlsp_qlp_tess_ffi_s0054-0000000273373582_tess_v01_llc.fits",
+    "obs_id": "hlsp_qlp_tess_ffi_s0054-0000000273373582_tess_v01_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 74",
+    "author": "QLP",
+    "exptime": 200.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_qlp_tess_ffi_s0074-0000000273373582_tess_v02_llc.fits",
+    "obs_id": "hlsp_qlp_tess_ffi_s0074-0000000273373582_tess_v02_llc",
+    "searched_target": "Kepler-1229"
+   },
+   {
+    "mission": "TESS Sector 75",
+    "author": "QLP",
+    "exptime": 200.0,
+    "year": 2024,
+    "distance": 0.0,
+    "target_name": "273373582",
+    "productFilename": "hlsp_qlp_tess_ffi_s0075-0000000273373582_tess_v02_llc.fits",
+    "obs_id": "hlsp_qlp_tess_ffi_s0075-0000000273373582_tess_v02_llc",
     "searched_target": "Kepler-1229"
    }
   ],
@@ -472,11 +459,11 @@
    "mission": "TESS Sector 41",
    "author": "SPOC",
    "exptime_s": 120.0,
-   "n_raw_cadences": 18322,
-   "n_used_cadences": 18322,
+   "n_raw_cadences": 18319,
+   "n_used_cadences": 18319,
    "baseline_days": 26.58897386477429,
-   "median_flux_precision_ppm": 39731.097154882635,
-   "retrieved_utc": "2026-08-24T22:51:25Z",
+   "median_flux_precision_ppm": 39731.56958818436,
+   "retrieved_utc": "2026-08-31T11:00:28Z",
    "note": "stitched 1 product(s), mission default quality mask applied"
   },
   "t0_time_system": {
@@ -492,13 +479,13 @@
    "duration_hours": 6.001
   },
   "fit": {
-   "depth_ppm": 143184.87679509496,
+   "depth_ppm": 143240.3719519726,
    "depth_ppm_err": 0.0,
    "duration_hours": 6.0009999999999994,
    "ingress_hours": 0.90015,
    "t0_offset_days": 0.0,
-   "radius_ratio_approx": 0.37839777588550244,
-   "rms_residual_ppm": 37110.223339795346,
+   "radius_ratio_approx": 0.3784710979083774,
+   "rms_residual_ppm": 37111.846712194376,
    "n_points": 18316,
    "n_in_transit": 0,
    "converged": true,
@@ -509,20 +496,20 @@
   },
   "catalogue_check": {
    "expected_depth_ppm": 857.0,
-   "fitted_depth_ppm": 143184.87679509496,
-   "ratio_fitted_to_published": 167.077,
+   "fitted_depth_ppm": 143240.3719519726,
+   "ratio_fitted_to_published": 167.142,
    "consistent_with_published": false,
    "tolerance": "factor of 1.6",
    "interpretation": "Fitted depth disagrees with the published value. In a multi-planet system this usually means the fold is contaminated by other planets' transits rather than isolating the target. This fit is NOT reported as a measurement."
-  },
-  "archive_status": {
-   "preserved": true,
-   "reason": "Live-source refresh was not requested for this catalogue rebuild.",
-   "from_deep_dive_generated_utc": "2026-08-24T22:50:58Z"
   }
  },
  "rv_analysis": {
-  "attempted": false,
-  "reason": "Not requested for this build."
+  "target": "Kepler-1229",
+  "analysed_utc": "2026-08-31T11:00:28Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
  }
 }

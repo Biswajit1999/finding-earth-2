@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-29T14:41:53Z",
+ "generated_utc": "2026-08-31T11:08:35Z",
  "systems": [
   {
    "planet": "GJ 1002 b",
@@ -79,17 +79,6 @@
    "transit_status": null
   },
   {
-   "planet": "Teegarden's Star c",
-   "slug": "Teegarden's_Star_c",
-   "hostname": "Teegarden's Star",
-   "earth2_index": 0.8234,
-   "earth2_rank": 5,
-   "distance_pc": 3.831,
-   "has_transmission_spectrum": false,
-   "has_rv_analysis": false,
-   "transit_status": null
-  },
-  {
    "planet": "TOI-700 d",
    "slug": "TOI-700_d",
    "hostname": "TOI-700",
@@ -99,6 +88,17 @@
    "has_transmission_spectrum": false,
    "has_rv_analysis": true,
    "transit_status": "fit_not_validated"
+  },
+  {
+   "planet": "Teegarden's Star c",
+   "slug": "Teegarden's_Star_c",
+   "hostname": "Teegarden's Star",
+   "earth2_index": 0.8234,
+   "earth2_rank": 5,
+   "distance_pc": 3.831,
+   "has_transmission_spectrum": false,
+   "has_rv_analysis": false,
+   "transit_status": null
   },
   {
    "planet": "Wolf 1069 b",

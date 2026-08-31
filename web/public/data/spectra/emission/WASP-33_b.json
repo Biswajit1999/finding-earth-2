@@ -30,12 +30,12 @@
    "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...806..146H/abstract"
   },
   {
-   "label": "de Mooij et al. 2013",
-   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...550A..54D/abstract"
-  },
-  {
    "label": "Deming et al. 2012",
    "url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...754..106D/abstract"
+  },
+  {
+   "label": "de Mooij et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...550A..54D/abstract"
   }
  ],
  "depth_sources": {
@@ -1305,17 +1305,6 @@
   {
    "wavelength_um": 2.15,
    "bandwidth_um": null,
-   "depth_ppm": 2440.0,
-   "depth_ppm_err": 235.0,
-   "brightness_temperature_k": null,
-   "brightness_temperature_k_err": null,
-   "source": "especlipdep_percent",
-   "facility": "Isaac Newton Group (ING) 4.2m William Herschel Telescope (WHT) at Observatorio del Roque de los Muchachos",
-   "instrument": "LIRIS"
-  },
-  {
-   "wavelength_um": 2.15,
-   "bandwidth_um": null,
    "depth_ppm": 2700.0,
    "depth_ppm_err": 400.0,
    "brightness_temperature_k": null,
@@ -1323,6 +1312,17 @@
    "source": "especlipdep_percent",
    "facility": "National Optical Astronomy Observatory (NOAO) 2.1 meter Telescope at Kitt Peak National Observatory (KPNO)",
    "instrument": "FLAMINGOS imager"
+  },
+  {
+   "wavelength_um": 2.15,
+   "bandwidth_um": null,
+   "depth_ppm": 2440.0,
+   "depth_ppm_err": 235.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Isaac Newton Group (ING) 4.2m William Herschel Telescope (WHT) at Observatorio del Roque de los Muchachos",
+   "instrument": "LIRIS"
   },
   {
    "wavelength_um": 3.6,

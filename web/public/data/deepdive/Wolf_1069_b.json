@@ -1,7 +1,7 @@
 {
  "planet": "Wolf 1069 b",
  "hostname": "Wolf 1069",
- "generated_utc": "2026-08-28T20:10:24Z",
+ "generated_utc": "2026-08-31T10:58:00Z",
  "narrative": {
   "location": "Wolf 1069 lies 31.26 light-years (9.583 pc) from the Sun.",
   "host_star": "Wolf 1069 is a M5.0 V star with 0.167\u00d7 the Sun's mass and 0.181\u00d7 its radius (effective temperature 3158 K, versus the Sun's 5772 K).",
@@ -81,20 +81,7 @@
   "n_stars_in_system": 1,
   "n_planets_in_system": 1
  },
- "gaia_crossmatch": {
-  "source_id": "2188318517720321664",
-  "parallax_mas": 104.4415,
-  "parallax_error_mas": 0.0261,
-  "distance_pc": 9.575,
-  "distance_disagreement_vs_archive_pct": 0.09,
-  "ruwe": 1.419,
-  "ruwe_note": "RUWE > 1.4 is the conventional flag for a poorly-fit or unresolved-binary single-star astrometric solution.",
-  "non_single_star_flag": false,
-  "proper_motion_mas_yr": {
-   "ra": 261.038,
-   "dec": 542.906
-  }
- },
+ "gaia_crossmatch": null,
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
@@ -310,7 +297,12 @@
   "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
  },
  "rv_analysis": {
-  "attempted": false,
-  "reason": "Not requested for this build."
+  "target": "Wolf 1069",
+  "analysed_utc": "2026-08-31T10:58:00Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
  }
 }

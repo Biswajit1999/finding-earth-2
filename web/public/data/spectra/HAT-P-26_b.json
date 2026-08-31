@@ -402,21 +402,21 @@
   },
   {
    "wavelength_um": 0.957,
-   "bandwidth_um": 0.048,
-   "depth_ppm": 5133.72,
-   "depth_ppm_err": 55.89,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Wide Field Camera 3"
-  },
-  {
-   "wavelength_um": 0.957,
    "bandwidth_um": 0.144,
    "depth_ppm": 4942.09,
    "depth_ppm_err": 142.01,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.957,
+   "bandwidth_um": 0.048,
+   "depth_ppm": 5133.72,
+   "depth_ppm_err": 55.89,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
   },
   {
    "wavelength_um": 0.9688,

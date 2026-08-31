@@ -13,7 +13,7 @@
 <p align="center">
   <em>Every number in this README is generated from the analysis output by
   <code>python -m earth2 report</code>. None is typed by hand.</em><br>
-  <sub>Last analysis run: <code>2026-08-28T20:00:42Z</code></sub>
+  <sub>Last analysis run: <code>2026-08-31T10:57:41Z</code></sub>
 </p>
 
 ---
@@ -67,8 +67,6 @@ routinely conflated.
 | Conservative HZ **and** below 1.6 R⊕ | **15** |
 | …of which have a **measured mass** | **1** |
 | Planets with published transmission spectra | 104 |
-| Planets with published eclipse spectra | 54 |
-| Plot-ready atmospheric spectra (≥4 usable points) | 66 transmission + 31 eclipse |
 | Measurement-level provenance links | 89,131 across 1,814 publications |
 
 > **The headline finding is a scarcity result.** Of 6,354 confirmed

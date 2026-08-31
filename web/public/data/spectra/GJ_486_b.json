@@ -842,21 +842,21 @@
   },
   {
    "wavelength_um": 3.687,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 1318.0,
-   "depth_ppm_err": 18.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
-  },
-  {
-   "wavelength_um": 3.687,
    "bandwidth_um": 0.058,
    "depth_ppm": 1408.0,
    "depth_ppm_err": 15.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.687,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 1318.0,
+   "depth_ppm_err": 18.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
   },
   {
    "wavelength_um": 3.707,

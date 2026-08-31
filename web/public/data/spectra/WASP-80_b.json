@@ -315,8 +315,8 @@
   {
    "wavelength_um": 0.65,
    "bandwidth_um": null,
-   "depth_ppm": 30136.96,
-   "depth_ppm_err": 590.24,
+   "depth_ppm": 29275.21,
+   "depth_ppm_err": 1317.47,
    "source": "plnratror_squared",
    "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
    "instrument": null
@@ -324,8 +324,8 @@
   {
    "wavelength_um": 0.65,
    "bandwidth_um": null,
-   "depth_ppm": 29275.21,
-   "depth_ppm_err": 1317.47,
+   "depth_ppm": 30136.96,
+   "depth_ppm_err": 590.24,
    "source": "plnratror_squared",
    "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
    "instrument": null
@@ -468,20 +468,20 @@
   {
    "wavelength_um": 0.8,
    "bandwidth_um": null,
-   "depth_ppm": 31612.84,
-   "depth_ppm_err": 1386.84,
-   "source": "plnratror_squared",
-   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
-   "instrument": null
-  },
-  {
-   "wavelength_um": 0.8,
-   "bandwidth_um": null,
    "depth_ppm": 29491.19,
    "depth_ppm_err": 192.34,
    "source": "plnratror_squared",
    "facility": "Danish 1.54m telescope at European Southern Observatory",
    "instrument": "DFOSC"
+  },
+  {
+   "wavelength_um": 0.8,
+   "bandwidth_um": null,
+   "depth_ppm": 31612.84,
+   "depth_ppm_err": 1386.84,
+   "source": "plnratror_squared",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "instrument": null
   },
   {
    "wavelength_um": 0.809,
@@ -594,8 +594,8 @@
   {
    "wavelength_um": 1.25,
    "bandwidth_um": null,
-   "depth_ppm": 28561.0,
-   "depth_ppm_err": 473.2,
+   "depth_ppm": 28798.09,
+   "depth_ppm_err": 509.1,
    "source": "plnratror_squared",
    "facility": "Infrared Survey Facility",
    "instrument": "SIRIUS"
@@ -603,8 +603,8 @@
   {
    "wavelength_um": 1.25,
    "bandwidth_um": null,
-   "depth_ppm": 28798.09,
-   "depth_ppm_err": 509.1,
+   "depth_ppm": 28561.0,
+   "depth_ppm_err": 473.2,
    "source": "plnratror_squared",
    "facility": "Infrared Survey Facility",
    "instrument": "SIRIUS"
@@ -621,15 +621,6 @@
   {
    "wavelength_um": 1.63,
    "bandwidth_um": null,
-   "depth_ppm": 29206.81,
-   "depth_ppm_err": 410.16,
-   "source": "plnratror_squared",
-   "facility": "Infrared Survey Facility",
-   "instrument": "SIRIUS"
-  },
-  {
-   "wavelength_um": 1.63,
-   "bandwidth_um": null,
    "depth_ppm": 28493.44,
    "depth_ppm_err": 472.64,
    "source": "plnratror_squared",
@@ -637,10 +628,19 @@
    "instrument": "SIRIUS"
   },
   {
+   "wavelength_um": 1.63,
+   "bandwidth_um": null,
+   "depth_ppm": 29206.81,
+   "depth_ppm_err": 410.16,
+   "source": "plnratror_squared",
+   "facility": "Infrared Survey Facility",
+   "instrument": "SIRIUS"
+  },
+  {
    "wavelength_um": 2.14,
    "bandwidth_um": null,
-   "depth_ppm": 28190.41,
-   "depth_ppm_err": 772.34,
+   "depth_ppm": 29172.64,
+   "depth_ppm_err": 546.56,
    "source": "plnratror_squared",
    "facility": "Infrared Survey Facility",
    "instrument": "SIRIUS"
@@ -657,8 +657,8 @@
   {
    "wavelength_um": 2.14,
    "bandwidth_um": null,
-   "depth_ppm": 29172.64,
-   "depth_ppm_err": 546.56,
+   "depth_ppm": 28190.41,
+   "depth_ppm_err": 772.34,
    "source": "plnratror_squared",
    "facility": "Infrared Survey Facility",
    "instrument": "SIRIUS"

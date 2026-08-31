@@ -72,7 +72,7 @@
   "notes": "Direct-imaging target stars (NASA Exoplanet Exploration Program list).",
   "query": "select * from di_stars_exep",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+di_stars_exep&format=csv",
-  "retrieved_utc": "2026-08-28T19:57:19Z",
+  "retrieved_utc": "2026-08-31T10:56:52Z",
   "sha256": "38052f559fc9e060cbd6564013ce60a36984ea289c50b13c1d43890f23c1fc2b",
   "source_table": "di_stars_exep",
   "status": "ok"

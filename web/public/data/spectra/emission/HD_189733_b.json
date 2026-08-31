@@ -26,12 +26,12 @@
    "url": "https://ui.adsabs.harvard.edu/abs/2008ApJ...686.1341C/abstract"
   },
   {
-   "label": "Knutson et al. 2009",
-   "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...690..822K/abstract"
-  },
-  {
    "label": "Agol et al. 2010",
    "url": "https://ui.adsabs.harvard.edu/abs/2010ApJ...721.1861A/abstract"
+  },
+  {
+   "label": "Knutson et al. 2009",
+   "url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...690..822K/abstract"
   },
   {
    "label": "Deming et al. 2006",
@@ -362,17 +362,6 @@
   {
    "wavelength_um": 8.0,
    "bandwidth_um": null,
-   "depth_ppm": 3380.0,
-   "depth_ppm_err": 60.0,
-   "brightness_temperature_k": null,
-   "brightness_temperature_k_err": null,
-   "source": "especlipdep_percent",
-   "facility": "Spitzer Space Telescope satellite",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 8.0,
-   "bandwidth_um": null,
    "depth_ppm": 3910.0,
    "depth_ppm_err": 220.0,
    "brightness_temperature_k": null,
@@ -386,6 +375,17 @@
    "bandwidth_um": null,
    "depth_ppm": 3440.0,
    "depth_ppm_err": 36.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 3380.0,
+   "depth_ppm_err": 60.0,
    "brightness_temperature_k": null,
    "brightness_temperature_k_err": null,
    "source": "especlipdep_percent",

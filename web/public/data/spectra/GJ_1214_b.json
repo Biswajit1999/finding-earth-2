@@ -430,21 +430,21 @@
   },
   {
    "wavelength_um": 0.76,
-   "bandwidth_um": null,
-   "depth_ppm": 13502.44,
-   "depth_ppm_err": 302.12,
-   "source": "plnratror_squared",
-   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
-   "instrument": "GROND"
-  },
-  {
-   "wavelength_um": 0.76,
    "bandwidth_um": 0.02,
    "depth_ppm": 14089.69,
    "depth_ppm_err": 189.92,
    "source": "plnratror_squared",
    "facility": "Magellan II Landon Clay Telescope",
    "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 0.76,
+   "bandwidth_um": null,
+   "depth_ppm": 13502.44,
+   "depth_ppm_err": 302.12,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
   },
   {
    "wavelength_um": 0.7606,
@@ -628,21 +628,21 @@
   },
   {
    "wavelength_um": 0.855,
-   "bandwidth_um": null,
-   "depth_ppm": 12192.58,
-   "depth_ppm_err": 309.18,
-   "source": "plnratror_squared",
-   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
-   "instrument": "OSIRIS"
-  },
-  {
-   "wavelength_um": 0.855,
    "bandwidth_um": 0.01,
    "depth_ppm": 13248.01,
    "depth_ppm_err": 184.16,
    "source": "plnratror_squared",
    "facility": "Magellan II Landon Clay Telescope",
    "instrument": "MMIRS"
+  },
+  {
+   "wavelength_um": 0.855,
+   "bandwidth_um": null,
+   "depth_ppm": 12192.58,
+   "depth_ppm_err": 309.18,
+   "source": "plnratror_squared",
+   "facility": "Gran Telescopio CANARIAS 10.4m telescope",
+   "instrument": "OSIRIS"
   },
   {
    "wavelength_um": 0.8597,
@@ -683,8 +683,8 @@
   {
    "wavelength_um": 0.877,
    "bandwidth_um": null,
-   "depth_ppm": 13815.65,
-   "depth_ppm_err": 376.13,
+   "depth_ppm": 14025.66,
+   "depth_ppm_err": 592.15,
    "source": "plnratror_squared",
    "facility": "Gran Telescopio CANARIAS 10.4m telescope",
    "instrument": "OSIRIS"
@@ -692,8 +692,8 @@
   {
    "wavelength_um": 0.877,
    "bandwidth_um": null,
-   "depth_ppm": 14025.66,
-   "depth_ppm_err": 592.15,
+   "depth_ppm": 13815.65,
+   "depth_ppm_err": 376.13,
    "source": "plnratror_squared",
    "facility": "Gran Telescopio CANARIAS 10.4m telescope",
    "instrument": "OSIRIS"
@@ -998,24 +998,6 @@
   {
    "wavelength_um": 1.25,
    "bandwidth_um": null,
-   "depth_ppm": 13020.0,
-   "depth_ppm_err": 420.0,
-   "source": "plntransdep_percent",
-   "facility": "Canada-France-Hawaii Telescope",
-   "instrument": "WIRCam"
-  },
-  {
-   "wavelength_um": 1.25,
-   "bandwidth_um": null,
-   "depth_ppm": 13340.0,
-   "depth_ppm_err": 205.0,
-   "source": "plntransdep_percent",
-   "facility": "Canada-France-Hawaii Telescope",
-   "instrument": "WIRCam"
-  },
-  {
-   "wavelength_um": 1.25,
-   "bandwidth_um": null,
    "depth_ppm": 13070.0,
    "depth_ppm_err": 325.0,
    "source": "plntransdep_percent",
@@ -1027,6 +1009,24 @@
    "bandwidth_um": null,
    "depth_ppm": 13680.0,
    "depth_ppm_err": 235.0,
+   "source": "plntransdep_percent",
+   "facility": "Canada-France-Hawaii Telescope",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 1.25,
+   "bandwidth_um": null,
+   "depth_ppm": 13020.0,
+   "depth_ppm_err": 420.0,
+   "source": "plntransdep_percent",
+   "facility": "Canada-France-Hawaii Telescope",
+   "instrument": "WIRCam"
+  },
+  {
+   "wavelength_um": 1.25,
+   "bandwidth_um": null,
+   "depth_ppm": 13340.0,
+   "depth_ppm_err": 205.0,
    "source": "plntransdep_percent",
    "facility": "Canada-France-Hawaii Telescope",
    "instrument": "WIRCam"
@@ -1385,8 +1385,8 @@
   {
    "wavelength_um": 2.15,
    "bandwidth_um": null,
-   "depth_ppm": 14240.0,
-   "depth_ppm_err": 375.0,
+   "depth_ppm": 14590.0,
+   "depth_ppm_err": 295.0,
    "source": "plntransdep_percent",
    "facility": "Canada-France-Hawaii Telescope",
    "instrument": "WIRCam"
@@ -1394,8 +1394,8 @@
   {
    "wavelength_um": 2.15,
    "bandwidth_um": null,
-   "depth_ppm": 14590.0,
-   "depth_ppm_err": 295.0,
+   "depth_ppm": 14240.0,
+   "depth_ppm_err": 375.0,
    "source": "plntransdep_percent",
    "facility": "Canada-France-Hawaii Telescope",
    "instrument": "WIRCam"
@@ -1430,35 +1430,26 @@
   {
    "wavelength_um": 3.6,
    "bandwidth_um": null,
+   "depth_ppm": 13544.3,
+   "depth_ppm_err": 86.12,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
+   "depth_ppm": 13544.3,
+   "depth_ppm_err": 86.12,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 3.6,
+   "bandwidth_um": null,
    "depth_ppm": 13829.76,
    "depth_ppm_err": 199.92,
-   "source": "plnratror_squared",
-   "facility": "Spitzer Space Telescope satellite",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 3.6,
-   "bandwidth_um": null,
-   "depth_ppm": 13544.3,
-   "depth_ppm_err": 86.12,
-   "source": "plnratror_squared",
-   "facility": "Spitzer Space Telescope satellite",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 3.6,
-   "bandwidth_um": null,
-   "depth_ppm": 13544.3,
-   "depth_ppm_err": 86.12,
-   "source": "plnratror_squared",
-   "facility": "Spitzer Space Telescope satellite",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 4.5,
-   "bandwidth_um": null,
-   "depth_ppm": 13674.96,
-   "depth_ppm_err": 39.76,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
@@ -1468,6 +1459,15 @@
    "bandwidth_um": null,
    "depth_ppm": 13525.69,
    "depth_ppm_err": 209.34,
+   "source": "plnratror_squared",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 4.5,
+   "bandwidth_um": null,
+   "depth_ppm": 13674.96,
+   "depth_ppm_err": 39.76,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"

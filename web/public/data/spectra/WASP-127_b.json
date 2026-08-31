@@ -129,8 +129,8 @@
   {
    "wavelength_um": 0.465,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10444.84,
-   "depth_ppm_err": 511.0,
+   "depth_ppm": 11750.56,
+   "depth_ppm_err": 433.6,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -138,8 +138,8 @@
   {
    "wavelength_um": 0.465,
    "bandwidth_um": 0.02,
-   "depth_ppm": 11750.56,
-   "depth_ppm_err": 433.6,
+   "depth_ppm": 10444.84,
+   "depth_ppm_err": 511.0,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -192,8 +192,8 @@
   {
    "wavelength_um": 0.525,
    "bandwidth_um": 0.02,
-   "depth_ppm": 11004.01,
-   "depth_ppm_err": 398.62,
+   "depth_ppm": 9920.16,
+   "depth_ppm_err": 378.48,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -201,8 +201,8 @@
   {
    "wavelength_um": 0.525,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9920.16,
-   "depth_ppm_err": 378.48,
+   "depth_ppm": 11004.01,
+   "depth_ppm_err": 398.62,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -246,8 +246,8 @@
   {
    "wavelength_um": 0.545,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10836.81,
-   "depth_ppm_err": 791.16,
+   "depth_ppm": 9525.76,
+   "depth_ppm_err": 429.44,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -255,8 +255,8 @@
   {
    "wavelength_um": 0.545,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9525.76,
-   "depth_ppm_err": 429.44,
+   "depth_ppm": 10836.81,
+   "depth_ppm_err": 791.16,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -300,8 +300,8 @@
   {
    "wavelength_um": 0.565,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9025.0,
-   "depth_ppm_err": 551.0,
+   "depth_ppm": 10424.41,
+   "depth_ppm_err": 837.22,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -309,8 +309,8 @@
   {
    "wavelength_um": 0.565,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10424.41,
-   "depth_ppm_err": 837.22,
+   "depth_ppm": 9025.0,
+   "depth_ppm_err": 551.0,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -354,8 +354,8 @@
   {
    "wavelength_um": 0.585,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9801.0,
-   "depth_ppm_err": 336.6,
+   "depth_ppm": 10465.29,
+   "depth_ppm_err": 388.74,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -363,8 +363,8 @@
   {
    "wavelength_um": 0.585,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10465.29,
-   "depth_ppm_err": 388.74,
+   "depth_ppm": 9801.0,
+   "depth_ppm_err": 336.6,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -462,8 +462,8 @@
   {
    "wavelength_um": 0.625,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10878.49,
-   "depth_ppm_err": 813.54,
+   "depth_ppm": 9120.25,
+   "depth_ppm_err": 515.7,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -471,8 +471,8 @@
   {
    "wavelength_um": 0.625,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9120.25,
-   "depth_ppm_err": 515.7,
+   "depth_ppm": 10878.49,
+   "depth_ppm_err": 813.54,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -517,7 +517,7 @@
    "wavelength_um": 0.645,
    "bandwidth_um": 0.02,
    "depth_ppm": 9409.0,
-   "depth_ppm_err": 407.4,
+   "depth_ppm_err": 543.2,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -526,7 +526,7 @@
    "wavelength_um": 0.645,
    "bandwidth_um": 0.02,
    "depth_ppm": 9409.0,
-   "depth_ppm_err": 543.2,
+   "depth_ppm_err": 407.4,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -786,8 +786,8 @@
   {
    "wavelength_um": 0.745,
    "bandwidth_um": 0.02,
-   "depth_ppm": 11728.89,
-   "depth_ppm_err": 411.54,
+   "depth_ppm": 10120.36,
+   "depth_ppm_err": 603.6,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -795,8 +795,8 @@
   {
    "wavelength_um": 0.745,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10120.36,
-   "depth_ppm_err": 603.6,
+   "depth_ppm": 11728.89,
+   "depth_ppm_err": 411.54,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -831,8 +831,8 @@
   {
    "wavelength_um": 0.775,
    "bandwidth_um": 0.02,
-   "depth_ppm": 11556.25,
-   "depth_ppm_err": 666.5,
+   "depth_ppm": 9467.29,
+   "depth_ppm_err": 836.78,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -840,8 +840,8 @@
   {
    "wavelength_um": 0.775,
    "bandwidth_um": 0.02,
-   "depth_ppm": 9467.29,
-   "depth_ppm_err": 836.78,
+   "depth_ppm": 11556.25,
+   "depth_ppm_err": 666.5,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -993,8 +993,8 @@
   {
    "wavelength_um": 0.835,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10080.16,
-   "depth_ppm_err": 562.24,
+   "depth_ppm": 8949.16,
+   "depth_ppm_err": 510.84,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -1002,8 +1002,8 @@
   {
    "wavelength_um": 0.835,
    "bandwidth_um": 0.02,
-   "depth_ppm": 8949.16,
-   "depth_ppm_err": 510.84,
+   "depth_ppm": 10080.16,
+   "depth_ppm_err": 562.24,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -1047,8 +1047,8 @@
   {
    "wavelength_um": 0.855,
    "bandwidth_um": 0.02,
-   "depth_ppm": 10465.29,
-   "depth_ppm_err": 777.48,
+   "depth_ppm": 8987.04,
+   "depth_ppm_err": 568.8,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"
@@ -1056,8 +1056,8 @@
   {
    "wavelength_um": 0.855,
    "bandwidth_um": 0.02,
-   "depth_ppm": 8987.04,
-   "depth_ppm_err": 568.8,
+   "depth_ppm": 10465.29,
+   "depth_ppm_err": 777.48,
    "source": "plnratror_squared",
    "facility": "Nordic Optical Telescope",
    "instrument": "ALFOSC"

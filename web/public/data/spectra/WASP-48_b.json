@@ -90,20 +90,20 @@
   {
    "wavelength_um": 0.629,
    "bandwidth_um": null,
-   "depth_ppm": 7921.0,
-   "depth_ppm_err": 653.26,
-   "source": "plnratror_squared",
-   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
-   "instrument": "BUSCA"
-  },
-  {
-   "wavelength_um": 0.629,
-   "bandwidth_um": null,
    "depth_ppm": 6970.58,
    "depth_ppm_err": 389.06,
    "source": "plnratror_squared",
    "facility": "Cassini 1.52m Telescope",
    "instrument": "BFOSC"
+  },
+  {
+   "wavelength_um": 0.629,
+   "bandwidth_um": null,
+   "depth_ppm": 7921.0,
+   "depth_ppm_err": 653.26,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 2.2 meter Telescope",
+   "instrument": "BUSCA"
   },
   {
    "wavelength_um": 0.629,
@@ -135,15 +135,6 @@
   {
    "wavelength_um": 0.7886,
    "bandwidth_um": null,
-   "depth_ppm": 8884.95,
-   "depth_ppm_err": 378.93,
-   "source": "plnratror_squared",
-   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
-   "instrument": "DLR-MKIII camera"
-  },
-  {
-   "wavelength_um": 0.7886,
-   "bandwidth_um": null,
    "depth_ppm": 9308.39,
    "depth_ppm_err": 88.76,
    "source": "plnratror_squared",
@@ -158,6 +149,15 @@
    "source": "plnratror_squared",
    "facility": "Calar Alto Observatory's 2.2 meter Telescope",
    "instrument": "BUSCA"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
+   "depth_ppm": 8884.95,
+   "depth_ppm_err": 378.93,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
   }
  ],
  "caveat": "Annotated band positions mark where a species would absorb. They are not detections. Detection claims belong to the cited analyses."

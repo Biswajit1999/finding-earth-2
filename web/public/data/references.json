@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-08-29T14:41:53Z",
+ "generated_utc": "2026-08-31T11:08:35Z",
  "n_distinct_publications": 2001,
  "n_measurement_links": 77395,
  "note": "Compiled from the per-measurement reference links the NASA Exoplanet Archive attaches to each composite parameter. Counts are the number of measurements in this analysis traceable to each source.",
@@ -131,15 +131,15 @@
    "n_measurements": 305
   },
   {
-   "reference_label": "Thygesen et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..155T/abstract",
-   "bibcode": "2023AJ....165..155T",
-   "n_measurements": 294
-  },
-  {
    "reference_label": "de Leon et al. 2021",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.508..195D/abstract",
    "bibcode": "2021MNRAS.508..195D",
+   "n_measurements": 294
+  },
+  {
+   "reference_label": "Thygesen et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..155T/abstract",
+   "bibcode": "2023AJ....165..155T",
    "n_measurements": 294
   },
   {
@@ -245,9 +245,9 @@
    "n_measurements": 148
   },
   {
-   "reference_label": "Astudillo-Defru et al. 2017",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...602A..88A/abstract",
-   "bibcode": "2017A&A...602A..88A",
+   "reference_label": "Adams et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021PSJ.....2..152A/abstract",
+   "bibcode": "2021PSJ.....2..152A",
    "n_measurements": 140
   },
   {
@@ -257,33 +257,33 @@
    "n_measurements": 140
   },
   {
-   "reference_label": "Yee et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...70Y/abstract",
-   "bibcode": "2022AJ....164...70Y",
-   "n_measurements": 140
-  },
-  {
-   "reference_label": "Adams et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021PSJ.....2..152A/abstract",
-   "bibcode": "2021PSJ.....2..152A",
-   "n_measurements": 140
-  },
-  {
    "reference_label": "Udry et al. 2019",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...622A..37U/abstract",
    "bibcode": "2019A&A...622A..37U",
    "n_measurements": 140
   },
   {
-   "reference_label": "Castro-Gonz\u00e1lez et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.1075C/abstract",
-   "bibcode": "2022MNRAS.509.1075C",
-   "n_measurements": 136
+   "reference_label": "Yee et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...70Y/abstract",
+   "bibcode": "2022AJ....164...70Y",
+   "n_measurements": 140
+  },
+  {
+   "reference_label": "Astudillo-Defru et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...602A..88A/abstract",
+   "bibcode": "2017A&A...602A..88A",
+   "n_measurements": 140
   },
   {
    "reference_label": "Leleu et al. 2023",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...669A.117L/abstract",
    "bibcode": "2023A&A...669A.117L",
+   "n_measurements": 136
+  },
+  {
+   "reference_label": "Castro-Gonz\u00e1lez et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.509.1075C/abstract",
+   "bibcode": "2022MNRAS.509.1075C",
    "n_measurements": 136
   },
   {
@@ -317,15 +317,15 @@
    "n_measurements": 112
   },
   {
-   "reference_label": "Torres et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...800...99T/abstract",
-   "bibcode": "2015ApJ...800...99T",
-   "n_measurements": 105
-  },
-  {
    "reference_label": "Xiao et al. 2023",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2023RAA....23e5022X/abstract",
    "bibcode": "2023RAA....23e5022X",
+   "n_measurements": 105
+  },
+  {
+   "reference_label": "Torres et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...800...99T/abstract",
+   "bibcode": "2015ApJ...800...99T",
    "n_measurements": 105
   },
   {
@@ -341,12 +341,6 @@
    "n_measurements": 98
   },
   {
-   "reference_label": "Standing et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag370S/abstract",
-   "bibcode": "2026MNRAS.547ag370S",
-   "n_measurements": 96
-  },
-  {
    "reference_label": "Hellier et al. 2019",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482.1379H/abstract",
    "bibcode": "2019MNRAS.482.1379H",
@@ -356,6 +350,12 @@
    "reference_label": "Hadden et al. 2014",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...787...80H/abstract",
    "bibcode": "2014ApJ...787...80H",
+   "n_measurements": 96
+  },
+  {
+   "reference_label": "Standing et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547ag370S/abstract",
+   "bibcode": "2026MNRAS.547ag370S",
    "n_measurements": 96
   },
   {
@@ -371,15 +371,15 @@
    "n_measurements": 87
   },
   {
-   "reference_label": "H\u00e9brard et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...588A.145H/abstract",
-   "bibcode": "2016A&A...588A.145H",
-   "n_measurements": 84
-  },
-  {
    "reference_label": "Torres et al. 2017",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....154..264T/abstract",
    "bibcode": "2017AJ....154..264T",
+   "n_measurements": 84
+  },
+  {
+   "reference_label": "H\u00e9brard et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...588A.145H/abstract",
+   "bibcode": "2016A&A...588A.145H",
    "n_measurements": 84
   },
   {
@@ -413,15 +413,15 @@
    "n_measurements": 77
   },
   {
-   "reference_label": "Q1-Q17 DR24 KOI Table",
-   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html",
-   "bibcode": null,
-   "n_measurements": 73
-  },
-  {
    "reference_label": "Jenkins et al. 2017",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.466..443J/abstract",
    "bibcode": "2017MNRAS.466..443J",
+   "n_measurements": 73
+  },
+  {
+   "reference_label": "Q1-Q17 DR24 KOI Table",
+   "reference_url": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_KOI_docs.html",
+   "bibcode": null,
    "n_measurements": 73
   },
   {
@@ -429,12 +429,6 @@
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2022PASJ...74...92T/abstract",
    "bibcode": "2022PASJ...74...92T",
    "n_measurements": 72
-  },
-  {
-   "reference_label": "Guenther et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172...54G/abstract",
-   "bibcode": "2026AJ....172...54G",
-   "n_measurements": 70
   },
   {
    "reference_label": "Agol et al. 2021",
@@ -449,10 +443,10 @@
    "n_measurements": 70
   },
   {
-   "reference_label": "Mann et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...779..188M/abstract",
-   "bibcode": "2013ApJ...779..188M",
-   "n_measurements": 69
+   "reference_label": "Guenther et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172...54G/abstract",
+   "bibcode": "2026AJ....172...54G",
+   "n_measurements": 70
   },
   {
    "reference_label": "Barros et al. 2016",
@@ -461,15 +455,21 @@
    "n_measurements": 69
   },
   {
-   "reference_label": "Dalba et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024ApJS..271...16D/abstract",
-   "bibcode": "2024ApJS..271...16D",
-   "n_measurements": 68
+   "reference_label": "Mann et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...779..188M/abstract",
+   "bibcode": "2013ApJ...779..188M",
+   "n_measurements": 69
   },
   {
    "reference_label": "Steffen et al. 2013",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2013MNRAS.428.1077S/abstract",
    "bibcode": "2013MNRAS.428.1077S",
+   "n_measurements": 68
+  },
+  {
+   "reference_label": "Dalba et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024ApJS..271...16D/abstract",
+   "bibcode": "2024ApJS..271...16D",
    "n_measurements": 68
   },
   {
@@ -515,9 +515,9 @@
    "n_measurements": 65
   },
   {
-   "reference_label": "de Val-Borro et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016AJ....152..161D/abstract",
-   "bibcode": "2016AJ....152..161D",
+   "reference_label": "Leleu et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...688A.211L/abstract",
+   "bibcode": "2024A&A...688A.211L",
    "n_measurements": 65
   },
   {
@@ -527,9 +527,9 @@
    "n_measurements": 65
   },
   {
-   "reference_label": "Leleu et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...688A.211L/abstract",
-   "bibcode": "2024A&A...688A.211L",
+   "reference_label": "de Val-Borro et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016AJ....152..161D/abstract",
+   "bibcode": "2016AJ....152..161D",
    "n_measurements": 65
   },
   {
@@ -545,15 +545,15 @@
    "n_measurements": 63
   },
   {
-   "reference_label": "Bonfanti et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.265B/abstract",
-   "bibcode": "2026A&A...709A.265B",
-   "n_measurements": 63
-  },
-  {
    "reference_label": "Jontof-Hutter et al. 2016",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...820...39J/abstract",
    "bibcode": "2016ApJ...820...39J",
+   "n_measurements": 63
+  },
+  {
+   "reference_label": "Bonfanti et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.265B/abstract",
+   "bibcode": "2026A&A...709A.265B",
    "n_measurements": 63
   },
   {
@@ -569,22 +569,16 @@
    "n_measurements": 61
   },
   {
-   "reference_label": "Bonomo et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...575A..85B/abstract",
-   "bibcode": "2015A&A...575A..85B",
-   "n_measurements": 61
-  },
-  {
    "reference_label": "Lillo-Box et al. 2026",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260719756L/abstract",
    "bibcode": "2026arXiv260719756L",
    "n_measurements": 61
   },
   {
-   "reference_label": "Luque et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023Natur.623..932L/abstract",
-   "bibcode": "2023Natur.623..932L",
-   "n_measurements": 60
+   "reference_label": "Bonomo et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...575A..85B/abstract",
+   "bibcode": "2015A&A...575A..85B",
+   "n_measurements": 61
   },
   {
    "reference_label": "Lissauer et al. 2013",
@@ -593,10 +587,22 @@
    "n_measurements": 60
   },
   {
+   "reference_label": "Luque et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023Natur.623..932L/abstract",
+   "bibcode": "2023Natur.623..932L",
+   "n_measurements": 60
+  },
+  {
    "reference_label": "Fabrycky et al. 2012",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...750..114F/abstract",
    "bibcode": "2012ApJ...750..114F",
    "n_measurements": 60
+  },
+  {
+   "reference_label": "Johnson et al. 2011",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2011ApJS..197...26J/abstract",
+   "bibcode": "2011ApJS..197...26J",
+   "n_measurements": 58
   },
   {
    "reference_label": "Livingston et al. 2019",
@@ -611,33 +617,27 @@
    "n_measurements": 58
   },
   {
-   "reference_label": "Johnson et al. 2011",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2011ApJS..197...26J/abstract",
-   "bibcode": "2011ApJS..197...26J",
-   "n_measurements": 58
-  },
-  {
-   "reference_label": "Pe\u00f1a et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.213P/abstract",
-   "bibcode": "2026A&A...709A.213P",
-   "n_measurements": 56
-  },
-  {
-   "reference_label": "Ehrhardt et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.220E/abstract",
-   "bibcode": "2024A&A...692A.220E",
-   "n_measurements": 56
-  },
-  {
    "reference_label": "Li et al. 2021",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....162..266L/abstract",
    "bibcode": "2021AJ....162..266L",
    "n_measurements": 56
   },
   {
+   "reference_label": "Jord\u00e1n et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..125J/abstract",
+   "bibcode": "2022AJ....163..125J",
+   "n_measurements": 56
+  },
+  {
    "reference_label": "Hartman et al. 2020",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....159..173H/abstract",
    "bibcode": "2020AJ....159..173H",
+   "n_measurements": 56
+  },
+  {
+   "reference_label": "Pe\u00f1a et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.213P/abstract",
+   "bibcode": "2026A&A...709A.213P",
    "n_measurements": 56
   },
   {
@@ -653,9 +653,9 @@
    "n_measurements": 56
   },
   {
-   "reference_label": "Jord\u00e1n et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..125J/abstract",
-   "bibcode": "2022AJ....163..125J",
+   "reference_label": "Ehrhardt et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.220E/abstract",
+   "bibcode": "2024A&A...692A.220E",
    "n_measurements": 56
   },
   {
@@ -665,21 +665,21 @@
    "n_measurements": 55
   },
   {
-   "reference_label": "Torres et al. 2008",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2008ApJ...677.1324T/abstract",
-   "bibcode": "2008ApJ...677.1324T",
-   "n_measurements": 55
-  },
-  {
    "reference_label": "Borucki et al. 2013",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2013Sci...340..587B/abstract",
    "bibcode": "2013Sci...340..587B",
    "n_measurements": 55
   },
   {
-   "reference_label": "Palethorpe et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.548ag520P/abstract",
-   "bibcode": "2026MNRAS.548ag520P",
+   "reference_label": "Torres et al. 2008",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2008ApJ...677.1324T/abstract",
+   "bibcode": "2008ApJ...677.1324T",
+   "n_measurements": 55
+  },
+  {
+   "reference_label": "Morales et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...700A.242M/abstract",
+   "bibcode": "2025A&A...700A.242M",
    "n_measurements": 54
   },
   {
@@ -689,10 +689,22 @@
    "n_measurements": 54
   },
   {
-   "reference_label": "Morales et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...700A.242M/abstract",
-   "bibcode": "2025A&A...700A.242M",
+   "reference_label": "Palethorpe et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.548ag520P/abstract",
+   "bibcode": "2026MNRAS.548ag520P",
    "n_measurements": 54
+  },
+  {
+   "reference_label": "Moutou et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...576A..48M/abstract",
+   "bibcode": "2015A&A...576A..48M",
+   "n_measurements": 53
+  },
+  {
+   "reference_label": "Mistry et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166....9M/abstract",
+   "bibcode": "2023AJ....166....9M",
+   "n_measurements": 53
   },
   {
    "reference_label": "MacDonald et al. 2016",
@@ -707,54 +719,6 @@
    "n_measurements": 53
   },
   {
-   "reference_label": "Mistry et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166....9M/abstract",
-   "bibcode": "2023AJ....166....9M",
-   "n_measurements": 53
-  },
-  {
-   "reference_label": "Moutou et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...576A..48M/abstract",
-   "bibcode": "2015A&A...576A..48M",
-   "n_measurements": 53
-  },
-  {
-   "reference_label": "Kang et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.1930K/abstract",
-   "bibcode": "2024MNRAS.528.1930K",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "Premnath et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172...92P/abstract",
-   "bibcode": "2026AJ....172...92P",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "Brahm et al. 2018",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018AJ....155..112B/abstract",
-   "bibcode": "2018AJ....155..112B",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "H\u00e9brard et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...572A..93H/abstract",
-   "bibcode": "2014A&A...572A..93H",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "Parc et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...708A..81P/abstract",
-   "bibcode": "2026A&A...708A..81P",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "Wilson et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026Sci...392l2348W/abstract",
-   "bibcode": "2026Sci...392l2348W",
-   "n_measurements": 52
-  },
-  {
    "reference_label": "Tilbrook et al. 2021",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.504.6018T/abstract",
    "bibcode": "2021MNRAS.504.6018T",
@@ -767,9 +731,27 @@
    "n_measurements": 52
   },
   {
+   "reference_label": "Maxted et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...591A..55M/abstract",
+   "bibcode": "2016A&A...591A..55M",
+   "n_measurements": 52
+  },
+  {
    "reference_label": "Bento et al. 2018",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.477.3406B/abstract",
    "bibcode": "2018MNRAS.477.3406B",
+   "n_measurements": 52
+  },
+  {
+   "reference_label": "Kang et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.528.1930K/abstract",
+   "bibcode": "2024MNRAS.528.1930K",
+   "n_measurements": 52
+  },
+  {
+   "reference_label": "Wilson et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026Sci...392l2348W/abstract",
+   "bibcode": "2026Sci...392l2348W",
    "n_measurements": 52
   },
   {
@@ -779,15 +761,15 @@
    "n_measurements": 52
   },
   {
-   "reference_label": "Weiss et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...768...14W/abstract",
-   "bibcode": "2013ApJ...768...14W",
+   "reference_label": "Brahm et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018AJ....155..112B/abstract",
+   "bibcode": "2018AJ....155..112B",
    "n_measurements": 52
   },
   {
-   "reference_label": "Hellier et al. 2017",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.465.3693H/abstract",
-   "bibcode": "2017MNRAS.465.3693H",
+   "reference_label": "Weiss et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...768...14W/abstract",
+   "bibcode": "2013ApJ...768...14W",
    "n_measurements": 52
   },
   {
@@ -797,21 +779,39 @@
    "n_measurements": 52
   },
   {
+   "reference_label": "H\u00e9brard et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...572A..93H/abstract",
+   "bibcode": "2014A&A...572A..93H",
+   "n_measurements": 52
+  },
+  {
+   "reference_label": "Hellier et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.465.3693H/abstract",
+   "bibcode": "2017MNRAS.465.3693H",
+   "n_measurements": 52
+  },
+  {
+   "reference_label": "Parc et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...708A..81P/abstract",
+   "bibcode": "2026A&A...708A..81P",
+   "n_measurements": 52
+  },
+  {
+   "reference_label": "Premnath et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172...92P/abstract",
+   "bibcode": "2026AJ....172...92P",
+   "n_measurements": 52
+  },
+  {
    "reference_label": "Jenkins et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...704A.283J/abstract",
    "bibcode": "2025A&A...704A.283J",
    "n_measurements": 52
   },
   {
-   "reference_label": "Maxted et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...591A..55M/abstract",
-   "bibcode": "2016A&A...591A..55M",
-   "n_measurements": 52
-  },
-  {
-   "reference_label": "Bonfanti et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...646A.157B/abstract",
-   "bibcode": "2021A&A...646A.157B",
+   "reference_label": "Li et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....167..155L/abstract",
+   "bibcode": "2024AJ....167..155L",
    "n_measurements": 50
   },
   {
@@ -821,9 +821,9 @@
    "n_measurements": 50
   },
   {
-   "reference_label": "Lissauer et al. 2012",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...750..112L/abstract",
-   "bibcode": "2012ApJ...750..112L",
+   "reference_label": "Moutou et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.190M/abstract",
+   "bibcode": "2026A&A...705A.190M",
    "n_measurements": 50
   },
   {
@@ -833,15 +833,15 @@
    "n_measurements": 50
   },
   {
-   "reference_label": "Moutou et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.190M/abstract",
-   "bibcode": "2026A&A...705A.190M",
+   "reference_label": "Bonfanti et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...646A.157B/abstract",
+   "bibcode": "2021A&A...646A.157B",
    "n_measurements": 50
   },
   {
-   "reference_label": "Li et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....167..155L/abstract",
-   "bibcode": "2024AJ....167..155L",
+   "reference_label": "Lissauer et al. 2012",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...750..112L/abstract",
+   "bibcode": "2012ApJ...750..112L",
    "n_measurements": 50
   },
   {
@@ -863,21 +863,9 @@
    "n_measurements": 49
   },
   {
-   "reference_label": "Coy et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1005L..77C/abstract",
-   "bibcode": "2026ApJ..1005L..77C",
-   "n_measurements": 48
-  },
-  {
-   "reference_label": "Lendl et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482..301L/abstract",
-   "bibcode": "2019MNRAS.482..301L",
-   "n_measurements": 48
-  },
-  {
-   "reference_label": "Hori et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....167..289H/abstract",
-   "bibcode": "2024AJ....167..289H",
+   "reference_label": "Hobson et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...688A.216H/abstract",
+   "bibcode": "2024A&A...688A.216H",
    "n_measurements": 48
   },
   {
@@ -887,15 +875,21 @@
    "n_measurements": 48
   },
   {
-   "reference_label": "Hobson et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...688A.216H/abstract",
-   "bibcode": "2024A&A...688A.216H",
+   "reference_label": "Coy et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026ApJ..1005L..77C/abstract",
+   "bibcode": "2026ApJ..1005L..77C",
    "n_measurements": 48
   },
   {
-   "reference_label": "Tuomi et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.441.1545T/abstract",
-   "bibcode": "2014MNRAS.441.1545T",
+   "reference_label": "Hori et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....167..289H/abstract",
+   "bibcode": "2024AJ....167..289H",
+   "n_measurements": 48
+  },
+  {
+   "reference_label": "Nielsen et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2478N/abstract",
+   "bibcode": "2019MNRAS.489.2478N",
    "n_measurements": 48
   },
   {
@@ -905,9 +899,15 @@
    "n_measurements": 48
   },
   {
-   "reference_label": "Nielsen et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.489.2478N/abstract",
-   "bibcode": "2019MNRAS.489.2478N",
+   "reference_label": "Tuomi et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.441.1545T/abstract",
+   "bibcode": "2014MNRAS.441.1545T",
+   "n_measurements": 48
+  },
+  {
+   "reference_label": "Lendl et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.482..301L/abstract",
+   "bibcode": "2019MNRAS.482..301L",
    "n_measurements": 48
   },
   {
@@ -929,6 +929,12 @@
    "n_measurements": 47
   },
   {
+   "reference_label": "Hartogh et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...707A..93H/abstract",
+   "bibcode": "2026A&A...707A..93H",
+   "n_measurements": 46
+  },
+  {
    "reference_label": "Palle et al. 2019",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...623A..41P/abstract",
    "bibcode": "2019A&A...623A..41P",
@@ -941,27 +947,21 @@
    "n_measurements": 46
   },
   {
-   "reference_label": "Hartogh et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...707A..93H/abstract",
-   "bibcode": "2026A&A...707A..93H",
-   "n_measurements": 46
-  },
-  {
    "reference_label": "Bonomo et al. 2026",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...707A.197B/abstract",
    "bibcode": "2026A&A...707A.197B",
    "n_measurements": 46
   },
   {
-   "reference_label": "Campante et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...799..170C/abstract",
-   "bibcode": "2015ApJ...799..170C",
+   "reference_label": "D\u00edez Alonso et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.480L...1D/abstract",
+   "bibcode": "2018MNRAS.480L...1D",
    "n_measurements": 45
   },
   {
-   "reference_label": "Van Eylen & Albrecht 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...808..126V/abstract",
-   "bibcode": "2015ApJ...808..126V",
+   "reference_label": "Demangeon et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...653A..78D/abstract",
+   "bibcode": "2021A&A...653A..78D",
    "n_measurements": 45
   },
   {
@@ -971,9 +971,15 @@
    "n_measurements": 45
   },
   {
-   "reference_label": "D\u00edez Alonso et al. 2018",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018MNRAS.480L...1D/abstract",
-   "bibcode": "2018MNRAS.480L...1D",
+   "reference_label": "Van Eylen & Albrecht 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...808..126V/abstract",
+   "bibcode": "2015ApJ...808..126V",
+   "n_measurements": 45
+  },
+  {
+   "reference_label": "Campante et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...799..170C/abstract",
+   "bibcode": "2015ApJ...799..170C",
    "n_measurements": 45
   },
   {
@@ -983,10 +989,16 @@
    "n_measurements": 45
   },
   {
-   "reference_label": "Demangeon et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...653A..78D/abstract",
-   "bibcode": "2021A&A...653A..78D",
-   "n_measurements": 45
+   "reference_label": "Pinamonti et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...677A.122P/abstract",
+   "bibcode": "2023A&A...677A.122P",
+   "n_measurements": 44
+  },
+  {
+   "reference_label": "Lillo-Box et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...640A..48L/abstract",
+   "bibcode": "2020A&A...640A..48L",
+   "n_measurements": 44
   },
   {
    "reference_label": "Livingston et al. 2026",
@@ -1001,27 +1013,69 @@
    "n_measurements": 44
   },
   {
-   "reference_label": "Lillo-Box et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...640A..48L/abstract",
-   "bibcode": "2020A&A...640A..48L",
-   "n_measurements": 44
-  },
-  {
-   "reference_label": "Pinamonti et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...677A.122P/abstract",
-   "bibcode": "2023A&A...677A.122P",
-   "n_measurements": 44
-  },
-  {
    "reference_label": "Mistry et al. 2024",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2024PASA...41...30M/abstract",
    "bibcode": "2024PASA...41...30M",
    "n_measurements": 43
   },
   {
+   "reference_label": "Gandolfi et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250910136G/abstract",
+   "bibcode": "2025arXiv250910136G",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Kane & Gelino 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...792..111K/abstract",
+   "bibcode": "2014ApJ...792..111K",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Hedges et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019ApJ...880L...5H/abstract",
+   "bibcode": "2019ApJ...880L...5H",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Lam et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.1437L/abstract",
+   "bibcode": "2023MNRAS.519.1437L",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Delrez et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021NatAs...5..775D/abstract",
+   "bibcode": "2021NatAs...5..775D",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Burt et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161...10B/abstract",
+   "bibcode": "2021AJ....161...10B",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Alsubai et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....153..200A/abstract",
+   "bibcode": "2017AJ....153..200A",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Psaridi et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...675A..39P/abstract",
+   "bibcode": "2023A&A...675A..39P",
+   "n_measurements": 42
+  },
+  {
    "reference_label": "Tuomi et al. 2013",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...549A..48T/abstract",
    "bibcode": null,
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Barrag\u00e1n et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546ag087B/abstract",
+   "bibcode": "2026MNRAS.546ag087B",
    "n_measurements": 42
   },
   {
@@ -1031,9 +1085,21 @@
    "n_measurements": 42
   },
   {
-   "reference_label": "Delrez et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021NatAs...5..775D/abstract",
-   "bibcode": "2021NatAs...5..775D",
+   "reference_label": "Nielsen et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5399N/abstract",
+   "bibcode": "2020MNRAS.492.5399N",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Nielsen et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...639A..76N/abstract",
+   "bibcode": "2020A&A...639A..76N",
+   "n_measurements": 42
+  },
+  {
+   "reference_label": "Mayo et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..235M/abstract",
+   "bibcode": "2023AJ....165..235M",
    "n_measurements": 42
   },
   {
@@ -1046,72 +1112,6 @@
    "reference_label": "Muirhead et al. 2015",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...801...18M/abstract",
    "bibcode": "2015ApJ...801...18M",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Alsubai et al. 2017",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017AJ....153..200A/abstract",
-   "bibcode": "2017AJ....153..200A",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Burt et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161...10B/abstract",
-   "bibcode": "2021AJ....161...10B",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Hedges et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019ApJ...880L...5H/abstract",
-   "bibcode": "2019ApJ...880L...5H",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Psaridi et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...675A..39P/abstract",
-   "bibcode": "2023A&A...675A..39P",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Nielsen et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...639A..76N/abstract",
-   "bibcode": "2020A&A...639A..76N",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Nielsen et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.492.5399N/abstract",
-   "bibcode": "2020MNRAS.492.5399N",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Kane & Gelino 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...792..111K/abstract",
-   "bibcode": "2014ApJ...792..111K",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Mayo et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..235M/abstract",
-   "bibcode": "2023AJ....165..235M",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Lam et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.519.1437L/abstract",
-   "bibcode": "2023MNRAS.519.1437L",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Gandolfi et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025arXiv250910136G/abstract",
-   "bibcode": "2025arXiv250910136G",
-   "n_measurements": 42
-  },
-  {
-   "reference_label": "Barrag\u00e1n et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546ag087B/abstract",
-   "bibcode": "2026MNRAS.546ag087B",
    "n_measurements": 42
   },
   {
@@ -1133,21 +1133,15 @@
    "n_measurements": 41
   },
   {
-   "reference_label": "Feng et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020ApJS..250...29F/abstract",
-   "bibcode": "2020ApJS..250...29F",
-   "n_measurements": 40
-  },
-  {
-   "reference_label": "Everett et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015AJ....149...55E/abstract",
-   "bibcode": "2015AJ....149...55E",
-   "n_measurements": 40
-  },
-  {
    "reference_label": "Gilbert et al. 2023",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...944L..35G/abstract",
    "bibcode": "2023ApJ...944L..35G",
+   "n_measurements": 40
+  },
+  {
+   "reference_label": "Wang et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026NatAs..10..818W/abstract",
+   "bibcode": "2026NatAs..10..818W",
    "n_measurements": 40
   },
   {
@@ -1157,22 +1151,34 @@
    "n_measurements": 40
   },
   {
-   "reference_label": "Chaplin et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...766..101C/abstract",
-   "bibcode": "2013ApJ...766..101C",
-   "n_measurements": 40
-  },
-  {
    "reference_label": "Grieves et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A.144G/abstract",
    "bibcode": "2025A&A...693A.144G",
    "n_measurements": 40
   },
   {
-   "reference_label": "Wang et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026NatAs..10..818W/abstract",
-   "bibcode": "2026NatAs..10..818W",
+   "reference_label": "Chaplin et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...766..101C/abstract",
+   "bibcode": "2013ApJ...766..101C",
    "n_measurements": 40
+  },
+  {
+   "reference_label": "Everett et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015AJ....149...55E/abstract",
+   "bibcode": "2015AJ....149...55E",
+   "n_measurements": 40
+  },
+  {
+   "reference_label": "Feng et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020ApJS..250...29F/abstract",
+   "bibcode": "2020ApJS..250...29F",
+   "n_measurements": 40
+  },
+  {
+   "reference_label": "Gajdo\u0161 et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...708A.189G/abstract",
+   "bibcode": "2026A&A...708A.189G",
+   "n_measurements": 39
   },
   {
    "reference_label": "Frensch et al. 2025",
@@ -1187,15 +1193,9 @@
    "n_measurements": 39
   },
   {
-   "reference_label": "Damasso et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A.118D/abstract",
-   "bibcode": "2025A&A...702A.118D",
-   "n_measurements": 39
-  },
-  {
-   "reference_label": "Hidalgo et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...636A..89H/abstract",
-   "bibcode": "2020A&A...636A..89H",
+   "reference_label": "Bonfanti et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A..90B/abstract",
+   "bibcode": "2025A&A...693A..90B",
    "n_measurements": 39
   },
   {
@@ -1205,27 +1205,21 @@
    "n_measurements": 39
   },
   {
+   "reference_label": "Damasso et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A.118D/abstract",
+   "bibcode": "2025A&A...702A.118D",
+   "n_measurements": 39
+  },
+  {
    "reference_label": "Ruggieri et al. 2024",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...689A.235R/abstract",
    "bibcode": "2024A&A...689A.235R",
    "n_measurements": 39
   },
   {
-   "reference_label": "Almenara et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...575A..71A/abstract",
-   "bibcode": "2015A&A...575A..71A",
-   "n_measurements": 39
-  },
-  {
-   "reference_label": "Eberhardt et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166..271E/abstract",
-   "bibcode": "2023AJ....166..271E",
-   "n_measurements": 39
-  },
-  {
-   "reference_label": "Gajdo\u0161 et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...708A.189G/abstract",
-   "bibcode": "2026A&A...708A.189G",
+   "reference_label": "Hidalgo et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...636A..89H/abstract",
+   "bibcode": "2020A&A...636A..89H",
    "n_measurements": 39
   },
   {
@@ -1235,9 +1229,9 @@
    "n_measurements": 39
   },
   {
-   "reference_label": "Bonfanti et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A..90B/abstract",
-   "bibcode": "2025A&A...693A..90B",
+   "reference_label": "Almenara et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...575A..71A/abstract",
+   "bibcode": "2015A&A...575A..71A",
    "n_measurements": 39
   },
   {
@@ -1245,6 +1239,18 @@
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2015AJ....150..168H/abstract",
    "bibcode": "2015AJ....150..168H",
    "n_measurements": 39
+  },
+  {
+   "reference_label": "Eberhardt et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166..271E/abstract",
+   "bibcode": "2023AJ....166..271E",
+   "n_measurements": 39
+  },
+  {
+   "reference_label": "Lockley et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..919L/abstract",
+   "bibcode": "2025MNRAS.541..919L",
+   "n_measurements": 38
   },
   {
    "reference_label": "Sun et al. 2019",
@@ -1259,27 +1265,9 @@
    "n_measurements": 38
   },
   {
-   "reference_label": "Lockley et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.541..919L/abstract",
-   "bibcode": "2025MNRAS.541..919L",
-   "n_measurements": 38
-  },
-  {
-   "reference_label": "Greklek-McKeon et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....169..292G/abstract",
-   "bibcode": "2025AJ....169..292G",
-   "n_measurements": 37
-  },
-  {
    "reference_label": "Orell-Miquel et al. 2023",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...669A..40O/abstract",
    "bibcode": "2023A&A...669A..40O",
-   "n_measurements": 37
-  },
-  {
-   "reference_label": "Heller et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...627A..66H/abstract",
-   "bibcode": "2019A&A...627A..66H",
    "n_measurements": 37
   },
   {
@@ -1289,9 +1277,21 @@
    "n_measurements": 37
   },
   {
-   "reference_label": "Serrano et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022NatAs...6..736S/abstract",
-   "bibcode": "2022NatAs...6..736S",
+   "reference_label": "Delisle et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...703A..78D/abstract",
+   "bibcode": "2025A&A...703A..78D",
+   "n_measurements": 37
+  },
+  {
+   "reference_label": "Greklek-McKeon et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....169..292G/abstract",
+   "bibcode": "2025AJ....169..292G",
+   "n_measurements": 37
+  },
+  {
+   "reference_label": "Heller et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...627A..66H/abstract",
+   "bibcode": "2019A&A...627A..66H",
    "n_measurements": 37
   },
   {
@@ -1301,15 +1301,15 @@
    "n_measurements": 37
   },
   {
-   "reference_label": "Delisle et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...703A..78D/abstract",
-   "bibcode": "2025A&A...703A..78D",
+   "reference_label": "Serrano et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022NatAs...6..736S/abstract",
+   "bibcode": "2022NatAs...6..736S",
    "n_measurements": 37
   },
   {
-   "reference_label": "Carleo et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549f1958C/abstract",
-   "bibcode": "2026MNRAS.549f1958C",
+   "reference_label": "Quintana et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014Sci...344..277Q/abstract",
+   "bibcode": "2014Sci...344..277Q",
    "n_measurements": 36
   },
   {
@@ -1319,15 +1319,33 @@
    "n_measurements": 36
   },
   {
-   "reference_label": "Vach et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...71V/abstract",
-   "bibcode": "2022AJ....164...71V",
+   "reference_label": "Carleo et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549f1958C/abstract",
+   "bibcode": "2026MNRAS.549f1958C",
    "n_measurements": 36
   },
   {
-   "reference_label": "Chakrabarty & Sengupta 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158...39C/abstract",
-   "bibcode": "2019AJ....158...39C",
+   "reference_label": "Barkaoui et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...43B/abstract",
+   "bibcode": "2019AJ....157...43B",
+   "n_measurements": 36
+  },
+  {
+   "reference_label": "Hay et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.3276H/abstract",
+   "bibcode": "2016MNRAS.463.3276H",
+   "n_measurements": 36
+  },
+  {
+   "reference_label": "Garai et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...674A..44G/abstract",
+   "bibcode": "2023A&A...674A..44G",
+   "n_measurements": 36
+  },
+  {
+   "reference_label": "Barone et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...704A..41B/abstract",
+   "bibcode": "2025A&A...704A..41B",
    "n_measurements": 36
   },
   {
@@ -1337,9 +1355,15 @@
    "n_measurements": 36
   },
   {
-   "reference_label": "Brahm et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..227B/abstract",
-   "bibcode": "2023AJ....165..227B",
+   "reference_label": "Battley et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549g1053B/abstract",
+   "bibcode": "2026MNRAS.549g1053B",
+   "n_measurements": 36
+  },
+  {
+   "reference_label": "Vach et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...71V/abstract",
+   "bibcode": "2022AJ....164...71V",
    "n_measurements": 36
   },
   {
@@ -1355,27 +1379,9 @@
    "n_measurements": 36
   },
   {
-   "reference_label": "Barone et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...704A..41B/abstract",
-   "bibcode": "2025A&A...704A..41B",
-   "n_measurements": 36
-  },
-  {
-   "reference_label": "Quintana et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014Sci...344..277Q/abstract",
-   "bibcode": "2014Sci...344..277Q",
-   "n_measurements": 36
-  },
-  {
-   "reference_label": "Garai et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...674A..44G/abstract",
-   "bibcode": "2023A&A...674A..44G",
-   "n_measurements": 36
-  },
-  {
-   "reference_label": "Hay et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.3276H/abstract",
-   "bibcode": "2016MNRAS.463.3276H",
+   "reference_label": "Chakrabarty & Sengupta 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158...39C/abstract",
+   "bibcode": "2019AJ....158...39C",
    "n_measurements": 36
   },
   {
@@ -1385,21 +1391,15 @@
    "n_measurements": 36
   },
   {
-   "reference_label": "Barkaoui et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...43B/abstract",
-   "bibcode": "2019AJ....157...43B",
-   "n_measurements": 36
-  },
-  {
-   "reference_label": "Battley et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549g1053B/abstract",
-   "bibcode": "2026MNRAS.549g1053B",
-   "n_measurements": 36
-  },
-  {
    "reference_label": "Wang et al. 2015",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...815..127W/abstract",
    "bibcode": "2015ApJ...815..127W",
+   "n_measurements": 36
+  },
+  {
+   "reference_label": "Brahm et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..227B/abstract",
+   "bibcode": "2023AJ....165..227B",
    "n_measurements": 36
   },
   {
@@ -1409,21 +1409,15 @@
    "n_measurements": 35
   },
   {
-   "reference_label": "Barkaoui et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...687A.264B/abstract",
-   "bibcode": "2024A&A...687A.264B",
-   "n_measurements": 35
-  },
-  {
-   "reference_label": "Oddo et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..134O/abstract",
-   "bibcode": "2023AJ....165..134O",
-   "n_measurements": 35
-  },
-  {
    "reference_label": "Cort\u00e9s-Zuleta et al. 2020",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...636A..98C/abstract",
    "bibcode": "2020A&A...636A..98C",
+   "n_measurements": 35
+  },
+  {
+   "reference_label": "Barkaoui et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...687A.264B/abstract",
+   "bibcode": "2024A&A...687A.264B",
    "n_measurements": 35
   },
   {
@@ -1433,15 +1427,21 @@
    "n_measurements": 35
   },
   {
+   "reference_label": "Oddo et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..134O/abstract",
+   "bibcode": "2023AJ....165..134O",
+   "n_measurements": 35
+  },
+  {
    "reference_label": "Feng et al. 2020",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2020ApJS..246...11F/abstract",
    "bibcode": "2020ApJS..246...11F",
    "n_measurements": 35
   },
   {
-   "reference_label": "Wittenmyer et al. 2009",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJS..182...97W/abstract",
-   "bibcode": "2009ApJS..182...97W",
+   "reference_label": "Kendall et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547f2189K/abstract",
+   "bibcode": "2026MNRAS.547f2189K",
    "n_measurements": 34
   },
   {
@@ -1451,69 +1451,21 @@
    "n_measurements": 34
   },
   {
-   "reference_label": "Kendall et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.547f2189K/abstract",
-   "bibcode": "2026MNRAS.547f2189K",
-   "n_measurements": 34
-  },
-  {
    "reference_label": "Gomez Barrientos et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170..148G/abstract",
    "bibcode": "2025AJ....170..148G",
    "n_measurements": 34
   },
   {
-   "reference_label": "Triaud et al. 2017",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.467.1714T/abstract",
-   "bibcode": "2017MNRAS.467.1714T",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Lund et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..248L/abstract",
-   "bibcode": "2019AJ....158..248L",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Cointepas et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...685A..19C/abstract",
-   "bibcode": "2024A&A...685A..19C",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Masuda 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...783...53M/abstract",
-   "bibcode": "2014ApJ...783...53M",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Mireles et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026SciA...12f2618M/abstract",
-   "bibcode": "2026SciA...12f2618M",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Fukui et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....162..167F/abstract",
-   "bibcode": "2021AJ....162..167F",
-   "n_measurements": 33
+   "reference_label": "Wittenmyer et al. 2009",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJS..182...97W/abstract",
+   "bibcode": "2009ApJS..182...97W",
+   "n_measurements": 34
   },
   {
    "reference_label": "del Ser & Fors 2020",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.498.2778D/abstract",
    "bibcode": "2020MNRAS.498.2778D",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Stefanov et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A..62S/abstract",
-   "bibcode": "2025A&A...695A..62S",
-   "n_measurements": 33
-  },
-  {
-   "reference_label": "Dai et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165...33D/abstract",
-   "bibcode": "2023AJ....165...33D",
    "n_measurements": 33
   },
   {
@@ -1523,15 +1475,27 @@
    "n_measurements": 33
   },
   {
-   "reference_label": "Dreizler et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
-   "bibcode": "2024A&A...684A.117D",
+   "reference_label": "Lund et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..248L/abstract",
+   "bibcode": "2019AJ....158..248L",
    "n_measurements": 33
   },
   {
-   "reference_label": "Dalal et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4464D/abstract",
-   "bibcode": "2024MNRAS.531.4464D",
+   "reference_label": "Fukui et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....162..167F/abstract",
+   "bibcode": "2021AJ....162..167F",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Triaud et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.467.1714T/abstract",
+   "bibcode": "2017MNRAS.467.1714T",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Stefanov et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A..62S/abstract",
+   "bibcode": "2025A&A...695A..62S",
    "n_measurements": 33
   },
   {
@@ -1547,16 +1511,46 @@
    "n_measurements": 33
   },
   {
+   "reference_label": "Masuda 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...783...53M/abstract",
+   "bibcode": "2014ApJ...783...53M",
+   "n_measurements": 33
+  },
+  {
    "reference_label": "Turner et al. 2019",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.5790T/abstract",
    "bibcode": "2019MNRAS.485.5790T",
    "n_measurements": 33
   },
   {
-   "reference_label": "Luque et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...704A.174L/abstract",
-   "bibcode": "2025A&A...704A.174L",
-   "n_measurements": 32
+   "reference_label": "Dreizler et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.117D/abstract",
+   "bibcode": "2024A&A...684A.117D",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Dai et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165...33D/abstract",
+   "bibcode": "2023AJ....165...33D",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Cointepas et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...685A..19C/abstract",
+   "bibcode": "2024A&A...685A..19C",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Dalal et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.531.4464D/abstract",
+   "bibcode": "2024MNRAS.531.4464D",
+   "n_measurements": 33
+  },
+  {
+   "reference_label": "Mireles et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026SciA...12f2618M/abstract",
+   "bibcode": "2026SciA...12f2618M",
+   "n_measurements": 33
   },
   {
    "reference_label": "Jontof-Hutter et al. 2021",
@@ -1565,9 +1559,9 @@
    "n_measurements": 32
   },
   {
-   "reference_label": "Rivera et al. 2010",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010ApJ...719..890R/abstract",
-   "bibcode": "2010ApJ...719..890R",
+   "reference_label": "Luque et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...704A.174L/abstract",
+   "bibcode": "2025A&A...704A.174L",
    "n_measurements": 32
   },
   {
@@ -1577,39 +1571,15 @@
    "n_measurements": 32
   },
   {
-   "reference_label": "Ruggieri et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.116R/abstract",
-   "bibcode": "2024A&A...684A.116R",
-   "n_measurements": 31
+   "reference_label": "Rivera et al. 2010",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010ApJ...719..890R/abstract",
+   "bibcode": "2010ApJ...719..890R",
+   "n_measurements": 32
   },
   {
    "reference_label": "Osborn et al. 2021",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.507.2782O/abstract",
    "bibcode": "2021MNRAS.507.2782O",
-   "n_measurements": 31
-  },
-  {
-   "reference_label": "Nari et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.252N/abstract",
-   "bibcode": "2026A&A...705A.252N",
-   "n_measurements": 31
-  },
-  {
-   "reference_label": "Rickman et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...625A..71R/abstract",
-   "bibcode": "2019A&A...625A..71R",
-   "n_measurements": 31
-  },
-  {
-   "reference_label": "Benatti et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...639A..50B/abstract",
-   "bibcode": "2020A&A...639A..50B",
-   "n_measurements": 31
-  },
-  {
-   "reference_label": "Endl et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...795..151E/abstract",
-   "bibcode": "2014ApJ...795..151E",
    "n_measurements": 31
   },
   {
@@ -1619,27 +1589,45 @@
    "n_measurements": 31
   },
   {
+   "reference_label": "Benatti et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...639A..50B/abstract",
+   "bibcode": "2020A&A...639A..50B",
+   "n_measurements": 31
+  },
+  {
+   "reference_label": "Rickman et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019A&A...625A..71R/abstract",
+   "bibcode": "2019A&A...625A..71R",
+   "n_measurements": 31
+  },
+  {
+   "reference_label": "Nari et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.252N/abstract",
+   "bibcode": "2026A&A...705A.252N",
+   "n_measurements": 31
+  },
+  {
+   "reference_label": "Ruggieri et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A.116R/abstract",
+   "bibcode": "2024A&A...684A.116R",
+   "n_measurements": 31
+  },
+  {
+   "reference_label": "Endl et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014ApJ...795..151E/abstract",
+   "bibcode": "2014ApJ...795..151E",
+   "n_measurements": 31
+  },
+  {
    "reference_label": "Lee et al. 2014",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...566A..67L/abstract",
    "bibcode": "2014A&A...566A..67L",
    "n_measurements": 30
   },
   {
-   "reference_label": "Pepe et al. 2011",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2011A%26A...534A..58P/abstract",
-   "bibcode": null,
-   "n_measurements": 30
-  },
-  {
-   "reference_label": "Poultourtzidis et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...707A.106P/abstract",
-   "bibcode": "2026A&A...707A.106P",
-   "n_measurements": 30
-  },
-  {
-   "reference_label": "Harakawa et al. 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...806....5H/abstract",
-   "bibcode": "2015ApJ...806....5H",
+   "reference_label": "Wu et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....171..189W/abstract",
+   "bibcode": "2026AJ....171..189W",
    "n_measurements": 30
   },
   {
@@ -1649,33 +1637,21 @@
    "n_measurements": 30
   },
   {
-   "reference_label": "Trifonov et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164..156T/abstract",
-   "bibcode": "2022AJ....164..156T",
-   "n_measurements": 30
-  },
-  {
-   "reference_label": "Jeong et al. 2018",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...610A...3J/abstract",
-   "bibcode": "2018A&A...610A...3J",
-   "n_measurements": 30
-  },
-  {
-   "reference_label": "Dreizler et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...698A.114D/abstract",
-   "bibcode": "2025A&A...698A.114D",
-   "n_measurements": 30
-  },
-  {
    "reference_label": "Stevenson et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.543...28S/abstract",
    "bibcode": "2025MNRAS.543...28S",
    "n_measurements": 30
   },
   {
-   "reference_label": "Teng et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022PASJ...74.1309T/abstract",
-   "bibcode": "2022PASJ...74.1309T",
+   "reference_label": "Mayor et al. 2004",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2004A&A...415..391M/abstract",
+   "bibcode": "2004A&A...415..391M",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Poultourtzidis et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...707A.106P/abstract",
+   "bibcode": "2026A&A...707A.106P",
    "n_measurements": 30
   },
   {
@@ -1685,15 +1661,9 @@
    "n_measurements": 30
   },
   {
-   "reference_label": "Wells et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.1865W/abstract",
-   "bibcode": "2019MNRAS.487.1865W",
-   "n_measurements": 30
-  },
-  {
-   "reference_label": "Wu et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....171..189W/abstract",
-   "bibcode": "2026AJ....171..189W",
+   "reference_label": "Pepe et al. 2011",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2011A%26A...534A..58P/abstract",
+   "bibcode": null,
    "n_measurements": 30
   },
   {
@@ -1709,16 +1679,64 @@
    "n_measurements": 30
   },
   {
+   "reference_label": "Jeong et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...610A...3J/abstract",
+   "bibcode": "2018A&A...610A...3J",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Harakawa et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...806....5H/abstract",
+   "bibcode": "2015ApJ...806....5H",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Wells et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.487.1865W/abstract",
+   "bibcode": "2019MNRAS.487.1865W",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Dreizler et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...698A.114D/abstract",
+   "bibcode": "2025A&A...698A.114D",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Trifonov et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164..156T/abstract",
+   "bibcode": "2022AJ....164..156T",
+   "n_measurements": 30
+  },
+  {
+   "reference_label": "Teng et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022PASJ...74.1309T/abstract",
+   "bibcode": "2022PASJ...74.1309T",
+   "n_measurements": 30
+  },
+  {
    "reference_label": "Muirhead et al. 2012",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2012arXiv1201.2189M/abstract",
    "bibcode": "2012arXiv1201.2189M",
    "n_measurements": 30
   },
   {
-   "reference_label": "Mayor et al. 2004",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2004A&A...415..391M/abstract",
-   "bibcode": "2004A&A...415..391M",
-   "n_measurements": 30
+   "reference_label": "Zhang et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....162...89Z/abstract",
+   "bibcode": "2021AJ....162...89Z",
+   "n_measurements": 29
+  },
+  {
+   "reference_label": "Rodriguez et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161..194R/abstract",
+   "bibcode": "2021AJ....161..194R",
+   "n_measurements": 29
+  },
+  {
+   "reference_label": "Brinkman et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170..109B/abstract",
+   "bibcode": "2025AJ....170..109B",
+   "n_measurements": 29
   },
   {
    "reference_label": "Akana Murphy et al. 2021",
@@ -1733,75 +1751,27 @@
    "n_measurements": 29
   },
   {
-   "reference_label": "Brinkman et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170..109B/abstract",
-   "bibcode": "2025AJ....170..109B",
-   "n_measurements": 29
-  },
-  {
-   "reference_label": "Rodriguez et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161..194R/abstract",
-   "bibcode": "2021AJ....161..194R",
-   "n_measurements": 29
-  },
-  {
-   "reference_label": "Zhang et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....162...89Z/abstract",
-   "bibcode": "2021AJ....162...89Z",
-   "n_measurements": 29
-  },
-  {
-   "reference_label": "Kaminski et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...696A.101K/abstract",
-   "bibcode": "2025A&A...696A.101K",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Gonz\u00e1lez-\u00c1lvarez et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...675A.177G/abstract",
-   "bibcode": "2023A&A...675A.177G",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Turnbull 2015",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015arXiv151001731T/abstract",
-   "bibcode": "2015arXiv151001731T",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Davis et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....160..229D/abstract",
-   "bibcode": "2020AJ....160..229D",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Wang et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...82W/abstract",
-   "bibcode": "2019AJ....157...82W",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Jord\u00e1n et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....160..222J/abstract",
-   "bibcode": "2020AJ....160..222J",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Wilson et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.1043W/abstract",
-   "bibcode": "2022MNRAS.511.1043W",
-   "n_measurements": 28
-  },
-  {
    "reference_label": "Toledo-Padr\u00f3n et al. 2020",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...641A..92T/abstract",
    "bibcode": "2020A&A...641A..92T",
    "n_measurements": 28
   },
   {
-   "reference_label": "Hotnisky et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170....1H/abstract",
-   "bibcode": "2025AJ....170....1H",
+   "reference_label": "Wright et al. 2009",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...693.1084W/abstract",
+   "bibcode": "2009ApJ...693.1084W",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Lacedelli et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.260L/abstract",
+   "bibcode": "2026A&A...705A.260L",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Lakeland et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546ag158L/abstract",
+   "bibcode": "2026MNRAS.546ag158L",
    "n_measurements": 28
   },
   {
@@ -1817,9 +1787,21 @@
    "n_measurements": 28
   },
   {
-   "reference_label": "Wright et al. 2009",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...693.1084W/abstract",
-   "bibcode": "2009ApJ...693.1084W",
+   "reference_label": "Gonz\u00e1lez-\u00c1lvarez et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...675A.177G/abstract",
+   "bibcode": "2023A&A...675A.177G",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Turnbull 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015arXiv151001731T/abstract",
+   "bibcode": "2015arXiv151001731T",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Luque et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...664A.199L/abstract",
+   "bibcode": "2022A&A...664A.199L",
    "n_measurements": 28
   },
   {
@@ -1829,15 +1811,51 @@
    "n_measurements": 28
   },
   {
+   "reference_label": "Jord\u00e1n et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....160..222J/abstract",
+   "bibcode": "2020AJ....160..222J",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Kaminski et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...696A.101K/abstract",
+   "bibcode": "2025A&A...696A.101K",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Bonfanti et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...682A..66B/abstract",
+   "bibcode": "2024A&A...682A..66B",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Delisle et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...614A.133D/abstract",
+   "bibcode": "2018A&A...614A.133D",
+   "n_measurements": 28
+  },
+  {
    "reference_label": "Hobson et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A..32H/abstract",
    "bibcode": "2025A&A...702A..32H",
    "n_measurements": 28
   },
   {
-   "reference_label": "Lacedelli et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...705A.260L/abstract",
-   "bibcode": "2026A&A...705A.260L",
+   "reference_label": "Hotnisky et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170....1H/abstract",
+   "bibcode": "2025AJ....170....1H",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Wilson et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.511.1043W/abstract",
+   "bibcode": "2022MNRAS.511.1043W",
+   "n_measurements": 28
+  },
+  {
+   "reference_label": "Mills et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016Natur.533..509M/abstract",
+   "bibcode": "2016Natur.533..509M",
    "n_measurements": 28
   },
   {
@@ -1853,33 +1871,21 @@
    "n_measurements": 28
   },
   {
-   "reference_label": "Cadieux et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...960L...3C/abstract",
-   "bibcode": "2024ApJ...960L...3C",
-   "n_measurements": 28
-  },
-  {
    "reference_label": "Sha et al. 2021",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161...82S/abstract",
    "bibcode": "2021AJ....161...82S",
    "n_measurements": 28
   },
   {
-   "reference_label": "Luque et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...664A.199L/abstract",
-   "bibcode": "2022A&A...664A.199L",
+   "reference_label": "Cadieux et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...960L...3C/abstract",
+   "bibcode": "2024ApJ...960L...3C",
    "n_measurements": 28
   },
   {
-   "reference_label": "Delisle et al. 2018",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...614A.133D/abstract",
-   "bibcode": "2018A&A...614A.133D",
-   "n_measurements": 28
-  },
-  {
-   "reference_label": "Zang et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..103Z/abstract",
-   "bibcode": "2023AJ....165..103Z",
+   "reference_label": "Davis et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....160..229D/abstract",
+   "bibcode": "2020AJ....160..229D",
    "n_measurements": 28
   },
   {
@@ -1889,27 +1895,87 @@
    "n_measurements": 28
   },
   {
-   "reference_label": "Lakeland et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.546ag158L/abstract",
-   "bibcode": "2026MNRAS.546ag158L",
+   "reference_label": "Wang et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157...82W/abstract",
+   "bibcode": "2019AJ....157...82W",
    "n_measurements": 28
   },
   {
-   "reference_label": "Mills et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016Natur.533..509M/abstract",
-   "bibcode": "2016Natur.533..509M",
+   "reference_label": "Zang et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..103Z/abstract",
+   "bibcode": "2023AJ....165..103Z",
    "n_measurements": 28
   },
   {
-   "reference_label": "Bonfanti et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...682A..66B/abstract",
-   "bibcode": "2024A&A...682A..66B",
-   "n_measurements": 28
+   "reference_label": "Almenara et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...711A..45A/abstract",
+   "bibcode": "2026A&A...711A..45A",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Grunblatt et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..120G/abstract",
+   "bibcode": "2022AJ....163..120G",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Grouffal et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260623103G/abstract",
+   "bibcode": "2026arXiv260623103G",
+   "n_measurements": 27
   },
   {
    "reference_label": "Adam\u00f3w et al. 2018",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2018A&A...613A..47A/abstract",
    "bibcode": "2018A&A...613A..47A",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Peterson et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023Natur.617..701P/abstract",
+   "bibcode": "2023Natur.617..701P",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Niedzielski et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...648A..58N/abstract",
+   "bibcode": "2021A&A...648A..58N",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Benedict et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..295B/abstract",
+   "bibcode": "2022AJ....163..295B",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Figueira et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260609072F/abstract",
+   "bibcode": "2026arXiv260609072F",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Eschen et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549ag952E/abstract",
+   "bibcode": "2026MNRAS.549ag952E",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Nari et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A.297N/abstract",
+   "bibcode": "2025A&A...693A.297N",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Niedzielski et al. 2009",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...707..768N/abstract",
+   "bibcode": "2009ApJ...707..768N",
+   "n_measurements": 27
+  },
+  {
+   "reference_label": "Lovis et al. 2006",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2006Natur.441..305L/abstract",
+   "bibcode": "2006Natur.441..305L",
    "n_measurements": 27
   },
   {
@@ -1925,135 +1991,9 @@
    "n_measurements": 27
   },
   {
-   "reference_label": "Figueira et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260609072F/abstract",
-   "bibcode": "2026arXiv260609072F",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Niedzielski et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...648A..58N/abstract",
-   "bibcode": "2021A&A...648A..58N",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Grouffal et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260623103G/abstract",
-   "bibcode": "2026arXiv260623103G",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Grunblatt et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..120G/abstract",
-   "bibcode": "2022AJ....163..120G",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Benedict et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..295B/abstract",
-   "bibcode": "2022AJ....163..295B",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Eschen et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549ag952E/abstract",
-   "bibcode": "2026MNRAS.549ag952E",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Almenara et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...711A..45A/abstract",
-   "bibcode": "2026A&A...711A..45A",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Nari et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...693A.297N/abstract",
-   "bibcode": "2025A&A...693A.297N",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Lovis et al. 2006",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2006Natur.441..305L/abstract",
-   "bibcode": "2006Natur.441..305L",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Niedzielski et al. 2009",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2009ApJ...707..768N/abstract",
-   "bibcode": "2009ApJ...707..768N",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Peterson et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023Natur.617..701P/abstract",
-   "bibcode": "2023Natur.617..701P",
-   "n_measurements": 27
-  },
-  {
-   "reference_label": "Ottoni et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...657A..87O/abstract",
-   "bibcode": "2022A&A...657A..87O",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Costes et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.2834C/abstract",
-   "bibcode": "2020MNRAS.491.2834C",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Parc et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A.138P/abstract",
-   "bibcode": "2025A&A...702A.138P",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Livingston et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024NatSR..1427219L/abstract",
-   "bibcode": "2024NatSR..1427219L",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "O'Brien et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172..117O/abstract",
-   "bibcode": "2026AJ....172..117O",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Fulton et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...830...46F/abstract",
-   "bibcode": "2016ApJ...830...46F",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Hartman et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....168..202H/abstract",
-   "bibcode": "2024AJ....168..202H",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Hawthorn et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.520.3649H/abstract",
-   "bibcode": "2023MNRAS.520.3649H",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Hebrard et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...549A.134H/abstract",
-   "bibcode": null,
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Ikwut-Ukwa et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163....9I/abstract",
-   "bibcode": "2022AJ....163....9I",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Johnson et al. 2010",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010arXiv1007.4552J/abstract",
-   "bibcode": "2010arXiv1007.4552J",
+   "reference_label": "Ciceri et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016PASP..128g4401C/abstract",
+   "bibcode": "2016PASP..128g4401C",
    "n_measurements": 26
   },
   {
@@ -2063,15 +2003,51 @@
    "n_measurements": 26
   },
   {
-   "reference_label": "Lacedelli et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.238L/abstract",
-   "bibcode": "2024A&A...692A.238L",
+   "reference_label": "Psaridi et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...685A...5P/abstract",
+   "bibcode": "2024A&A...685A...5P",
    "n_measurements": 26
   },
   {
-   "reference_label": "Liu et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014RAA....14.1447L/abstract",
-   "bibcode": "2014RAA....14.1447L",
+   "reference_label": "Ikwut-Ukwa et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163....9I/abstract",
+   "bibcode": "2022AJ....163....9I",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Vines et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.2011V/abstract",
+   "bibcode": "2025MNRAS.536.2011V",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "\u0160ubjak et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.130S/abstract",
+   "bibcode": "2026A&A...709A.130S",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Ca\u00f1as et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166...30C/abstract",
+   "bibcode": "2023AJ....166...30C",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Ottoni et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...657A..87O/abstract",
+   "bibcode": "2022A&A...657A..87O",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Persson et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A..69P/abstract",
+   "bibcode": "2025A&A...702A..69P",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Costes et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020MNRAS.491.2834C/abstract",
+   "bibcode": "2020MNRAS.491.2834C",
    "n_measurements": 26
   },
   {
@@ -2081,9 +2057,147 @@
    "n_measurements": 26
   },
   {
+   "reference_label": "O'Brien et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....172..117O/abstract",
+   "bibcode": "2026AJ....172..117O",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Liu et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014RAA....14.1447L/abstract",
+   "bibcode": "2014RAA....14.1447L",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Sarkis et al. 2018",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018AJ....156..216S/abstract",
+   "bibcode": "2018AJ....156..216S",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Murgas et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...677A.182M/abstract",
+   "bibcode": "2023A&A...677A.182M",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Ca\u00f1as et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...50C/abstract",
+   "bibcode": "2022AJ....164...50C",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Parc et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A.138P/abstract",
+   "bibcode": "2025A&A...702A.138P",
+   "n_measurements": 26
+  },
+  {
    "reference_label": "Peluso et al. 2024",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....167..170P/abstract",
    "bibcode": "2024AJ....167..170P",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Lacedelli et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...692A.238L/abstract",
+   "bibcode": "2024A&A...692A.238L",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Barkaoui et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.281B/abstract",
+   "bibcode": "2025A&A...695A.281B",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Hartman et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024AJ....168..202H/abstract",
+   "bibcode": "2024AJ....168..202H",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Beard et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022ApJ...936...55B/abstract",
+   "bibcode": "2022ApJ...936...55B",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Naponiello et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...701A..79N/abstract",
+   "bibcode": "2025A&A...701A..79N",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Livingston et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024NatSR..1427219L/abstract",
+   "bibcode": "2024NatSR..1427219L",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Bryant et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.533.3893B/abstract",
+   "bibcode": "2024MNRAS.533.3893B",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Serrano Bell et al. 2026",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260713333S/abstract",
+   "bibcode": "2026arXiv260713333S",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Barrag\u00e1n et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.1606B/abstract",
+   "bibcode": "2022MNRAS.514.1606B",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Bakos et al. 2010",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010arXiv1008.3388B/abstract",
+   "bibcode": "2010arXiv1008.3388B",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Hawthorn et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.520.3649H/abstract",
+   "bibcode": "2023MNRAS.520.3649H",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Fulton et al. 2016",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...830...46F/abstract",
+   "bibcode": "2016ApJ...830...46F",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Hebrard et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...549A.134H/abstract",
+   "bibcode": null,
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Zhou et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..141Z/abstract",
+   "bibcode": "2019AJ....158..141Z",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Serrano Bell et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A...6S/abstract",
+   "bibcode": "2024A&A...684A...6S",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Johnson et al. 2010",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010arXiv1007.4552J/abstract",
+   "bibcode": "2010arXiv1007.4552J",
+   "n_measurements": 26
+  },
+  {
+   "reference_label": "Marmier et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...551A..90M/abstract",
+   "bibcode": null,
    "n_measurements": 26
   },
   {
@@ -2099,147 +2213,15 @@
    "n_measurements": 26
   },
   {
-   "reference_label": "Marmier et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...551A..90M/abstract",
-   "bibcode": null,
-   "n_measurements": 26
-  },
-  {
    "reference_label": "Meier Vald\u00e9s et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...698A..68M/abstract",
    "bibcode": "2025A&A...698A..68M",
    "n_measurements": 26
   },
   {
-   "reference_label": "Murgas et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...677A.182M/abstract",
-   "bibcode": "2023A&A...677A.182M",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Naponiello et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...701A..79N/abstract",
-   "bibcode": "2025A&A...701A..79N",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Ciceri et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016PASP..128g4401C/abstract",
-   "bibcode": "2016PASP..128g4401C",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "\u0160ubjak et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026A&A...709A.130S/abstract",
-   "bibcode": "2026A&A...709A.130S",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Zhou et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....158..141Z/abstract",
-   "bibcode": "2019AJ....158..141Z",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Serrano Bell et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260713333S/abstract",
-   "bibcode": "2026arXiv260713333S",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Ca\u00f1as et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....166...30C/abstract",
-   "bibcode": "2023AJ....166...30C",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Sarkis et al. 2018",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2018AJ....156..216S/abstract",
-   "bibcode": "2018AJ....156..216S",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Beard et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022ApJ...936...55B/abstract",
-   "bibcode": "2022ApJ...936...55B",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Persson et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A..69P/abstract",
-   "bibcode": "2025A&A...702A..69P",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Serrano Bell et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A...6S/abstract",
-   "bibcode": "2024A&A...684A...6S",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Psaridi et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...685A...5P/abstract",
-   "bibcode": "2024A&A...685A...5P",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Barrag\u00e1n et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.514.1606B/abstract",
-   "bibcode": "2022MNRAS.514.1606B",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Barkaoui et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...695A.281B/abstract",
-   "bibcode": "2025A&A...695A.281B",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Ca\u00f1as et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164...50C/abstract",
-   "bibcode": "2022AJ....164...50C",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Bryant et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.533.3893B/abstract",
-   "bibcode": "2024MNRAS.533.3893B",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Bakos et al. 2010",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2010arXiv1008.3388B/abstract",
-   "bibcode": "2010arXiv1008.3388B",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Vines et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025MNRAS.536.2011V/abstract",
-   "bibcode": "2025MNRAS.536.2011V",
-   "n_measurements": 26
-  },
-  {
-   "reference_label": "Nesvorn\u00fd et al. 2012",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012Sci...336.1133N/abstract",
-   "bibcode": "2012Sci...336.1133N",
-   "n_measurements": 25
-  },
-  {
-   "reference_label": "Kiefer et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...645A...7K/abstract",
-   "bibcode": "2021A&A...645A...7K",
-   "n_measurements": 25
-  },
-  {
-   "reference_label": "Dragomir et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019ApJ...875L...7D/abstract",
-   "bibcode": "2019ApJ...875L...7D",
-   "n_measurements": 25
-  },
-  {
-   "reference_label": "Borsato et al. 2019",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.484.3233B/abstract",
-   "bibcode": "2019MNRAS.484.3233B",
+   "reference_label": "Robertson et al. 2012",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...749...39R/abstract",
+   "bibcode": "2012ApJ...749...39R",
    "n_measurements": 25
   },
   {
@@ -2249,33 +2231,39 @@
    "n_measurements": 25
   },
   {
+   "reference_label": "Borsato et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.484.3233B/abstract",
+   "bibcode": "2019MNRAS.484.3233B",
+   "n_measurements": 25
+  },
+  {
+   "reference_label": "Kiefer et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021A&A...645A...7K/abstract",
+   "bibcode": "2021A&A...645A...7K",
+   "n_measurements": 25
+  },
+  {
    "reference_label": "Bento et al. 2017",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2017MNRAS.468..835B/abstract",
    "bibcode": "2017MNRAS.468..835B",
    "n_measurements": 25
   },
   {
-   "reference_label": "Robertson et al. 2012",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012ApJ...749...39R/abstract",
-   "bibcode": "2012ApJ...749...39R",
+   "reference_label": "Nesvorn\u00fd et al. 2012",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2012Sci...336.1133N/abstract",
+   "bibcode": "2012Sci...336.1133N",
    "n_measurements": 25
   },
   {
-   "reference_label": "Gomez et al. 2013",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...559A..36G/abstract",
-   "bibcode": null,
-   "n_measurements": 24
+   "reference_label": "Dragomir et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019ApJ...875L...7D/abstract",
+   "bibcode": "2019ApJ...875L...7D",
+   "n_measurements": 25
   },
   {
-   "reference_label": "Bonomo et al. 2014",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014A&A...572A...2B/abstract",
-   "bibcode": "2014A&A...572A...2B",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Dransfield et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549ag864D/abstract",
-   "bibcode": "2026MNRAS.549ag864D",
+   "reference_label": "Ghachoui et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A.263G/abstract",
+   "bibcode": "2024A&A...690A.263G",
    "n_measurements": 24
   },
   {
@@ -2285,81 +2273,117 @@
    "n_measurements": 24
   },
   {
+   "reference_label": "Armstrong et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023MNRAS.524.5804A/abstract",
+   "bibcode": "2023MNRAS.524.5804A",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Fridlund et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...684A..12F/abstract",
+   "bibcode": "2024A&A...684A..12F",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Fairnington et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.8768F/abstract",
+   "bibcode": "2024MNRAS.527.8768F",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Jung et al. 2022",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....164..262J/abstract",
+   "bibcode": "2022AJ....164..262J",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Mancini et al. 2015",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2015A&A...580A..63M/abstract",
+   "bibcode": "2015A&A...580A..63M",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Jones et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...683A.192J/abstract",
+   "bibcode": "2024A&A...683A.192J",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Anderson et al. 2017",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...604A.110A/abstract",
+   "bibcode": "2017A&A...604A.110A",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Hjorth et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019MNRAS.484.3522H/abstract",
+   "bibcode": "2019MNRAS.484.3522H",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Mireles et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023ApJ...954L..15M/abstract",
+   "bibcode": "2023ApJ...954L..15M",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Su\u00e1rez Mascare\u00f1o et al. 2025",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...702A.121S/abstract",
+   "bibcode": "2025A&A...702A.121S",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Osborn et al. 2021",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021MNRAS.502.4842O/abstract",
+   "bibcode": "2021MNRAS.502.4842O",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Carleo et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A..18C/abstract",
+   "bibcode": "2024A&A...690A..18C",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Pereira et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.527.6332P/abstract",
+   "bibcode": "2024MNRAS.527.6332P",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Ofir et al. 2014",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...561A.103O/abstract",
+   "bibcode": null,
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Cooke et al. 2020",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020AJ....159..255C/abstract",
+   "bibcode": "2020AJ....159..255C",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Orosz et al. 2019",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2019AJ....157..174O/abstract",
+   "bibcode": "2019AJ....157..174O",
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Gomez et al. 2013",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2013A%26A...559A..36G/abstract",
+   "bibcode": null,
+   "n_measurements": 24
+  },
+  {
+   "reference_label": "Pel\u00e1ez-Torres et al. 2024",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A..62P/abstract",
+   "bibcode": "2024A&A...690A..62P",
+   "n_measurements": 24
+  },
+  {
    "reference_label": "Beard et al. 2025",
    "reference_url": "https://ui.adsabs.harvard.edu/abs/2025AJ....170..279B/abstract",
    "bibcode": "2025AJ....170..279B",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Naponiello et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026arXiv260719325N/abstract",
-   "bibcode": "2026arXiv260719325N",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Wang et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026AJ....171..135W/abstract",
-   "bibcode": "2026AJ....171..135W",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Tran et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022AJ....163..225T/abstract",
-   "bibcode": "2022AJ....163..225T",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Nicholson et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024MNRAS.532.4632N/abstract",
-   "bibcode": "2024MNRAS.532.4632N",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Sebastian et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022MNRAS.516..636S/abstract",
-   "bibcode": "2022MNRAS.516..636S",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Trifonov et al. 2023",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023AJ....165..179T/abstract",
-   "bibcode": "2023AJ....165..179T",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Kemmer et al. 2020",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2020A&A...642A.236K/abstract",
-   "bibcode": "2020A&A...642A.236K",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Ghachoui et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...690A.263G/abstract",
-   "bibcode": "2024A&A...690A.263G",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Sanz-Forcada et al. 2025",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2025A&A...703A..93S/abstract",
-   "bibcode": "2025A&A...703A..93S",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Delrez et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...667A..59D/abstract",
-   "bibcode": "2022A&A...667A..59D",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Krenn et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024A&A...686A.301K/abstract",
-   "bibcode": "2024A&A...686A.301K",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Barros et al. 2016",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2016A&A...593A.113B/abstract",
-   "bibcode": "2016A&A...593A.113B",
    "n_measurements": 24
   },
   {
@@ -2369,33 +2393,9 @@
    "n_measurements": 24
   },
   {
-   "reference_label": "Korth et al. 2024",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2024ApJ...971L..28K/abstract",
-   "bibcode": "2024ApJ...971L..28K",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Morello et al. 2026",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2026MNRAS.549ag183M/abstract",
-   "bibcode": "2026MNRAS.549ag183M",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Barros et al. 2017",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2017A&A...608A..25B/abstract",
-   "bibcode": "2017A&A...608A..25B",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Knudstrup et al. 2022",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2022A&A...667A..22K/abstract",
-   "bibcode": "2022A&A...667A..22K",
-   "n_measurements": 24
-  },
-  {
-   "reference_label": "Dedrick et al. 2021",
-   "reference_url": "https://ui.adsabs.harvard.edu/abs/2021AJ....161...86D/abstract",
-   "bibcode": "2021AJ....161...86D",
+   "reference_label": "Pozuelos et al. 2023",
+   "reference_url": "https://ui.adsabs.harvard.edu/abs/2023A&A...672A..70P/abstract",
+   "bibcode": "2023A&A...672A..70P",
    "n_measurements": 24
   },
   {

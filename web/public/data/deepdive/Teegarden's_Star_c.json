@@ -1,7 +1,7 @@
 {
  "planet": "Teegarden's Star c",
  "hostname": "Teegarden's Star",
- "generated_utc": "2026-08-28T20:10:24Z",
+ "generated_utc": "2026-08-31T10:58:01Z",
  "narrative": {
   "location": "Teegarden's Star lies 12.49 light-years (3.831 pc) from the Sun.",
   "host_star": "Teegarden's Star is a M7.0 V star with 0.097\u00d7 the Sun's mass and 0.12\u00d7 its radius (effective temperature 3034 K, versus the Sun's 5772 K).",
@@ -81,20 +81,7 @@
   "n_stars_in_system": 1,
   "n_planets_in_system": 3
  },
- "gaia_crossmatch": {
-  "source_id": "35227046884571776",
-  "parallax_mas": 260.9884,
-  "parallax_error_mas": 0.0934,
-  "distance_pc": 3.832,
-  "distance_disagreement_vs_archive_pct": 0.02,
-  "ruwe": 1.304,
-  "ruwe_note": null,
-  "non_single_star_flag": false,
-  "proper_motion_mas_yr": {
-   "ra": 3429.083,
-   "dec": -3805.541
-  }
- },
+ "gaia_crossmatch": null,
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
@@ -353,7 +340,12 @@
   "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
  },
  "rv_analysis": {
-  "attempted": false,
-  "reason": "Not requested for this build."
+  "target": "Teegarden's Star",
+  "analysed_utc": "2026-08-31T10:58:01Z",
+  "status": "no_data",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "message": "No public radial-velocity time series located at DACE for this target."
  }
 }

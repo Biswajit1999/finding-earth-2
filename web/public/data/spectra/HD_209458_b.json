@@ -1535,8 +1535,8 @@
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 14638.58,
-   "depth_ppm_err": 70.17,
+   "depth_ppm": 14881.56,
+   "depth_ppm_err": 225.68,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "IRAC"
@@ -1544,8 +1544,8 @@
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 14881.56,
-   "depth_ppm_err": 225.68,
+   "depth_ppm": 14638.58,
+   "depth_ppm_err": 70.17,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "IRAC"
@@ -1580,8 +1580,8 @@
   {
    "wavelength_um": 8.0,
    "bandwidth_um": null,
-   "depth_ppm": 14416.8,
-   "depth_ppm_err": 273.76,
+   "depth_ppm": 14378.41,
+   "depth_ppm_err": 175.07,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "IRAC"
@@ -1589,8 +1589,8 @@
   {
    "wavelength_um": 8.0,
    "bandwidth_um": null,
-   "depth_ppm": 14378.41,
-   "depth_ppm_err": 175.07,
+   "depth_ppm": 14416.8,
+   "depth_ppm_err": 273.76,
    "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "IRAC"

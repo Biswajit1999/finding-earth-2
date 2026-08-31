@@ -40,7 +40,7 @@
   "notes": "Transmission spectroscopy: per-bandpass transit depths for planets with published atmospheric observations. This is genuine PLANETARY ATMOSPHERE data -- distinct from the stellar spectra indexed in the `spectra` table.",
   "query": "select * from transitspec",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+transitspec&format=csv",
-  "retrieved_utc": "2026-08-28T19:57:03Z",
+  "retrieved_utc": "2026-08-31T10:56:44Z",
   "sha256": "ace18f6adaee7d2a529151ed4ca111d2502c764386f0e6b594df5645ef20bd8a",
   "source_table": "transitspec",
   "status": "ok"

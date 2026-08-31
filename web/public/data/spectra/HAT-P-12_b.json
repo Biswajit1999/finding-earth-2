@@ -195,15 +195,6 @@
   },
   {
    "wavelength_um": 0.425,
-   "bandwidth_um": 0.015,
-   "depth_ppm": 19883.82,
-   "depth_ppm_err": 256.64,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.425,
    "bandwidth_um": 0.03,
    "depth_ppm": 18878.76,
    "depth_ppm_err": 233.58,
@@ -221,6 +212,15 @@
    "instrument": "MODS2"
   },
   {
+   "wavelength_um": 0.425,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 19883.82,
+   "depth_ppm_err": 256.64,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
    "wavelength_um": 0.429,
    "bandwidth_um": null,
    "depth_ppm": 19365.51,
@@ -231,21 +231,21 @@
   },
   {
    "wavelength_um": 0.455,
-   "bandwidth_um": 0.03,
-   "depth_ppm": 18906.25,
-   "depth_ppm_err": 220.0,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
-  },
-  {
-   "wavelength_um": 0.455,
    "bandwidth_um": 0.015,
    "depth_ppm": 20266.37,
    "depth_ppm_err": 173.68,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.455,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 18906.25,
+   "depth_ppm_err": 220.0,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
   },
   {
    "wavelength_um": 0.455,
@@ -267,21 +267,21 @@
   },
   {
    "wavelength_um": 0.4825,
-   "bandwidth_um": 0.025,
-   "depth_ppm": 18714.24,
-   "depth_ppm_err": 342.0,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
-  },
-  {
-   "wavelength_um": 0.4825,
    "bandwidth_um": 0.0125,
    "depth_ppm": 20047.73,
    "depth_ppm_err": 235.04,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.4825,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 18714.24,
+   "depth_ppm_err": 342.0,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
   },
   {
    "wavelength_um": 0.4825,
@@ -321,21 +321,21 @@
   },
   {
    "wavelength_um": 0.53,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 20112.91,
-   "depth_ppm_err": 184.37,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.53,
    "bandwidth_um": 0.02,
    "depth_ppm": 18659.56,
    "depth_ppm_err": 409.8,
    "source": "plnratror_squared",
    "facility": "Large Binocular Telescope Observatory",
    "instrument": "MODS1"
+  },
+  {
+   "wavelength_um": 0.53,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 20112.91,
+   "depth_ppm_err": 184.37,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.53,
@@ -412,15 +412,6 @@
   {
    "wavelength_um": 0.5893,
    "bandwidth_um": 0.005,
-   "depth_ppm": 19824.64,
-   "depth_ppm_err": 633.6,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
-  },
-  {
-   "wavelength_um": 0.5893,
-   "bandwidth_um": 0.005,
    "depth_ppm": 18961.29,
    "depth_ppm_err": 275.4,
    "source": "plnratror_squared",
@@ -437,6 +428,15 @@
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
+   "wavelength_um": 0.5893,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 19824.64,
+   "depth_ppm_err": 633.6,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
+  },
+  {
    "wavelength_um": 0.6059,
    "bandwidth_um": 0.0282,
    "depth_ppm": 19656.04,
@@ -447,21 +447,21 @@
   },
   {
    "wavelength_um": 0.6059,
-   "bandwidth_um": 0.0282,
-   "depth_ppm": 19182.25,
-   "depth_ppm_err": 304.7,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS2"
-  },
-  {
-   "wavelength_um": 0.6059,
    "bandwidth_um": 0.0141,
    "depth_ppm": 19424.0,
    "depth_ppm_err": 292.68,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.6059,
+   "bandwidth_um": 0.0282,
+   "depth_ppm": 19182.25,
+   "depth_ppm_err": 304.7,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS2"
   },
   {
    "wavelength_um": 0.6204,
@@ -483,21 +483,21 @@
   },
   {
    "wavelength_um": 0.64,
-   "bandwidth_um": 0.04,
-   "depth_ppm": 19321.0,
-   "depth_ppm_err": 236.3,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
-  },
-  {
-   "wavelength_um": 0.64,
    "bandwidth_um": 0.02,
    "depth_ppm": 19790.86,
    "depth_ppm_err": 270.11,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.64,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 19321.0,
+   "depth_ppm_err": 236.3,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
   },
   {
    "wavelength_um": 0.6476,
@@ -507,15 +507,6 @@
    "source": "plnratror_squared",
    "facility": "Asiago Observatory's Copernico Telescope",
    "instrument": "AFOSC"
-  },
-  {
-   "wavelength_um": 0.685,
-   "bandwidth_um": 0.05,
-   "depth_ppm": 19432.36,
-   "depth_ppm_err": 306.68,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
   },
   {
    "wavelength_um": 0.685,
@@ -536,6 +527,15 @@
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
+   "wavelength_um": 0.685,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 306.68,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
+  },
+  {
    "wavelength_um": 0.7367,
    "bandwidth_um": 0.0267,
    "depth_ppm": 19838.72,
@@ -547,6 +547,15 @@
   {
    "wavelength_um": 0.7367,
    "bandwidth_um": 0.0534,
+   "depth_ppm": 19099.24,
+   "depth_ppm_err": 304.04,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
+  },
+  {
+   "wavelength_um": 0.7367,
+   "bandwidth_um": 0.0534,
    "depth_ppm": 21403.69,
    "depth_ppm_err": 746.13,
    "source": "plnratror_squared",
@@ -554,10 +563,10 @@
    "instrument": "MODS2"
   },
   {
-   "wavelength_um": 0.7367,
-   "bandwidth_um": 0.0534,
-   "depth_ppm": 19099.24,
-   "depth_ppm_err": 304.04,
+   "wavelength_um": 0.7684,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 19265.44,
+   "depth_ppm_err": 582.96,
    "source": "plnratror_squared",
    "facility": "Large Binocular Telescope Observatory",
    "instrument": "MODS1"
@@ -572,15 +581,6 @@
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
-   "wavelength_um": 0.7684,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 19265.44,
-   "depth_ppm_err": 582.96,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
-  },
-  {
    "wavelength_um": 0.7698,
    "bandwidth_um": null,
    "depth_ppm": 18265.52,
@@ -588,15 +588,6 @@
    "source": "plnratror_squared",
    "facility": "STELLA Robotic Observatory",
    "instrument": "WiFSIP"
-  },
-  {
-   "wavelength_um": 0.8067,
-   "bandwidth_um": 0.0333,
-   "depth_ppm": 19074.37,
-   "depth_ppm_err": 314.89,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.8067,
@@ -608,13 +599,13 @@
    "instrument": "MODS1"
   },
   {
-   "wavelength_um": 0.875,
-   "bandwidth_um": 0.07,
-   "depth_ppm": 19544.04,
-   "depth_ppm_err": 307.56,
+   "wavelength_um": 0.8067,
+   "bandwidth_um": 0.0333,
+   "depth_ppm": 19074.37,
+   "depth_ppm_err": 314.89,
    "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "MODS1"
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.875,
@@ -624,6 +615,15 @@
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.875,
+   "bandwidth_um": 0.07,
+   "depth_ppm": 19544.04,
+   "depth_ppm_err": 307.56,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "MODS1"
   },
   {
    "wavelength_um": 0.9222,

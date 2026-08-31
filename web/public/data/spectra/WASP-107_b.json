@@ -345,7 +345,7 @@
   {
    "wavelength_um": 1.133,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20641.0,
+   "depth_ppm": 20723.0,
    "depth_ppm_err": 59.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -354,7 +354,7 @@
   {
    "wavelength_um": 1.133,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20723.0,
+   "depth_ppm": 20641.0,
    "depth_ppm_err": 59.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -489,7 +489,7 @@
   {
    "wavelength_um": 1.336,
    "bandwidth_um": 0.026,
-   "depth_ppm": 20742.0,
+   "depth_ppm": 20660.0,
    "depth_ppm_err": 57.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -498,7 +498,7 @@
   {
    "wavelength_um": 1.336,
    "bandwidth_um": 0.026,
-   "depth_ppm": 20660.0,
+   "depth_ppm": 20742.0,
    "depth_ppm_err": 57.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -543,7 +543,7 @@
   {
    "wavelength_um": 1.413,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20888.0,
+   "depth_ppm": 20974.0,
    "depth_ppm_err": 52.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -552,7 +552,7 @@
   {
    "wavelength_um": 1.413,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20974.0,
+   "depth_ppm": 20888.0,
    "depth_ppm_err": 52.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -579,7 +579,7 @@
   {
    "wavelength_um": 1.464,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20777.0,
+   "depth_ppm": 20691.0,
    "depth_ppm_err": 51.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -588,7 +588,7 @@
   {
    "wavelength_um": 1.464,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20691.0,
+   "depth_ppm": 20777.0,
    "depth_ppm_err": 51.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -615,7 +615,7 @@
   {
    "wavelength_um": 1.515,
    "bandwidth_um": 0.026,
-   "depth_ppm": 20679.0,
+   "depth_ppm": 20762.0,
    "depth_ppm_err": 67.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -624,7 +624,7 @@
   {
    "wavelength_um": 1.515,
    "bandwidth_um": 0.026,
-   "depth_ppm": 20762.0,
+   "depth_ppm": 20679.0,
    "depth_ppm_err": 67.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -633,7 +633,7 @@
   {
    "wavelength_um": 1.54,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20509.0,
+   "depth_ppm": 20593.0,
    "depth_ppm_err": 60.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -642,7 +642,7 @@
   {
    "wavelength_um": 1.54,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20593.0,
+   "depth_ppm": 20509.0,
    "depth_ppm_err": 60.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -669,7 +669,7 @@
   {
    "wavelength_um": 1.591,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20500.0,
+   "depth_ppm": 20581.0,
    "depth_ppm_err": 56.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
@@ -678,7 +678,7 @@
   {
    "wavelength_um": 1.591,
    "bandwidth_um": 0.024,
-   "depth_ppm": 20581.0,
+   "depth_ppm": 20500.0,
    "depth_ppm_err": 56.0,
    "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",

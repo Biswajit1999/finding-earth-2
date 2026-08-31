@@ -1,6 +1,6 @@
 {
   "ledger": "earth2-analysis",
-  "generated_utc": "2026-08-28T20:00:42Z",
+  "generated_utc": "2026-08-31T10:57:41Z",
   "n_steps": 12,
   "steps": [
     {
@@ -14,8 +14,7 @@
         "nasa_toi",
         "nasa_koi_dr25",
         "nasa_k2pandc",
-        "nasa_tce_dr25",
-        "gaia_dr3_crossmatch"
+        "nasa_tce_dr25"
       ],
       "outputs": [
         "dataframes"
@@ -25,8 +24,8 @@
       "parameters": {},
       "n_rows_in": 0,
       "n_rows_out": 6354,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
-      "software": "{\"earth2\": \"1.0.1\", \"python\": \"3.9.19\", \"numpy\": \"1.26.4\", \"pandas\": \"2.2.2\", \"scipy\": \"1.10.1\", \"astropy\": \"6.0.1\", \"platform\": \"Windows-10-10.0.26200-SP0\"}"
+      "timestamp_utc": "2026-08-31T10:57:01Z",
+      "software": "{\"earth2\": \"1.0.1\", \"python\": \"3.12.14\", \"numpy\": \"2.5.2\", \"pandas\": \"2.3.3\", \"scipy\": \"1.18.1\", \"astropy\": \"8.0.1\", \"platform\": \"Linux-6.17.0-1022-azure-x86_64-with-glibc2.39\"}"
     },
     {
       "step": "classify_mass_provenance",
@@ -46,7 +45,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "timestamp_utc": "2026-08-31T10:57:01Z",
       "software": ""
     },
     {
@@ -66,7 +65,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "timestamp_utc": "2026-08-31T10:57:01Z",
       "software": ""
     },
     {
@@ -87,7 +86,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "timestamp_utc": "2026-08-31T10:57:01Z",
       "software": ""
     },
     {
@@ -109,7 +108,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "timestamp_utc": "2026-08-31T10:57:01Z",
       "software": ""
     },
     {
@@ -129,7 +128,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "timestamp_utc": "2026-08-31T10:57:01Z",
       "software": ""
     },
     {
@@ -155,7 +154,7 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "timestamp_utc": "2026-08-31T10:57:07Z",
       "software": ""
     },
     {
@@ -175,16 +174,13 @@
       "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "timestamp_utc": "2026-08-31T10:57:07Z",
       "software": ""
     },
     {
       "step": "attach_gaia_crossmatch",
-      "description": "Attach Gaia DR3 astrometry (parallax, proper motion, RUWE, non-single-star flag) by exact source_id, extracted from the NASA Exoplanet Archive's gaia_dr3_id column and joined on hostname.",
-      "inputs": [
-        "hostname",
-        "gaia_dr3_crossmatch.source_id"
-      ],
+      "description": "Attach Gaia DR3 astrometry by exact source_id. No crossmatch table was available for this run; every Gaia column is NaN.",
+      "inputs": [],
       "outputs": [
         "gaia_source_id",
         "gaia_parallax_mas",
@@ -193,18 +189,14 @@
         "gaia_non_single_star",
         "gaia_pmra_masyr",
         "gaia_pmdec_masyr",
-        "gaia_phot_g_mean_mag",
-        "gaia_distance_pc",
-        "gaia_distance_disagreement_frac"
+        "gaia_phot_g_mean_mag"
       ],
       "equation": "",
-      "citation": "GaiaDR3",
-      "parameters": {
-        "n_planets_matched": 5970
-      },
+      "citation": "",
+      "parameters": {},
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "timestamp_utc": "2026-08-31T10:57:07Z",
       "software": ""
     },
     {
@@ -232,7 +224,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "timestamp_utc": "2026-08-31T10:57:36Z",
       "software": ""
     },
     {
@@ -262,7 +254,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "timestamp_utc": "2026-08-31T10:57:36Z",
       "software": ""
     },
     {
@@ -292,7 +284,7 @@
       },
       "n_rows_in": 6359,
       "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "timestamp_utc": "2026-08-31T10:57:36Z",
       "software": ""
     }
   ]

@@ -26,7 +26,7 @@
   "notes": "Index of archived spectrum files. spec_type distinguishes transmission / emission / stellar. Carries file paths, wavelength coverage and bibcodes.",
   "query": "select * from spectra",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+spectra&format=csv",
-  "retrieved_utc": "2026-08-28T19:57:14Z",
+  "retrieved_utc": "2026-08-31T10:56:47Z",
   "sha256": "ffb3a6f2b29d6b956d47f5e91ef95d1de1a28680b416eb36ea36309a13dd8284",
   "source_table": "spectra",
   "status": "ok"

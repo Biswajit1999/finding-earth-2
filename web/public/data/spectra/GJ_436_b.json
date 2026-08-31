@@ -387,8 +387,8 @@
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 6865.0,
-   "depth_ppm_err": 78.0,
+   "depth_ppm": 7227.0,
+   "depth_ppm_err": 97.0,
    "source": "plntransdep_percent",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
@@ -396,8 +396,8 @@
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 7227.0,
-   "depth_ppm_err": 97.0,
+   "depth_ppm": 6865.0,
+   "depth_ppm_err": 78.0,
    "source": "plntransdep_percent",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
