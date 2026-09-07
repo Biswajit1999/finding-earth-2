@@ -148,6 +148,15 @@
   {
    "wavelength_um": 0.7886,
    "bandwidth_um": null,
+   "depth_ppm": 24398.44,
+   "depth_ppm_err": 749.76,
+   "source": "plnratror_squared",
+   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
+   "instrument": "Y4KCam"
+  },
+  {
+   "wavelength_um": 0.7886,
+   "bandwidth_um": null,
    "depth_ppm": 22410.09,
    "depth_ppm_err": 389.22,
    "source": "plnratror_squared",
@@ -168,15 +177,6 @@
    "bandwidth_um": null,
    "depth_ppm": 23870.25,
    "depth_ppm_err": 540.75,
-   "source": "plnratror_squared",
-   "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
-   "instrument": "Y4KCam"
-  },
-  {
-   "wavelength_um": 0.7886,
-   "bandwidth_um": null,
-   "depth_ppm": 24398.44,
-   "depth_ppm_err": 749.76,
    "source": "plnratror_squared",
    "facility": "The Small and Medium Research Telescope System (SMARTS) Yale 1.0m Telescope at Cerro Tololo Inter-American Observatory (CTIO)",
    "instrument": "Y4KCam"

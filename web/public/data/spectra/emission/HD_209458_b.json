@@ -334,17 +334,6 @@
   {
    "wavelength_um": 5.8,
    "bandwidth_um": null,
-   "depth_ppm": 1340.0,
-   "depth_ppm_err": 350.0,
-   "brightness_temperature_k": null,
-   "brightness_temperature_k_err": null,
-   "source": "especlipdep_percent",
-   "facility": "Spitzer Space Telescope",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 5.8,
-   "bandwidth_um": null,
    "depth_ppm": 3010.0,
    "depth_ppm_err": 430.0,
    "brightness_temperature_k": null,
@@ -356,10 +345,32 @@
   {
    "wavelength_um": 5.8,
    "bandwidth_um": null,
+   "depth_ppm": 1340.0,
+   "depth_ppm_err": 350.0,
+   "brightness_temperature_k": null,
+   "brightness_temperature_k_err": null,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 5.8,
+   "bandwidth_um": null,
    "depth_ppm": 1420.0,
    "depth_ppm_err": 585.0,
    "brightness_temperature_k": 1297.0,
    "brightness_temperature_k_err": 222.5,
+   "source": "especlipdep_percent",
+   "facility": "Spitzer Space Telescope satellite",
+   "instrument": "Infrared Array Camera (IRAC)"
+  },
+  {
+   "wavelength_um": 8.0,
+   "bandwidth_um": null,
+   "depth_ppm": 2150.0,
+   "depth_ppm_err": 120.0,
+   "brightness_temperature_k": 1397.0,
+   "brightness_temperature_k_err": 42.0,
    "source": "especlipdep_percent",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
@@ -382,17 +393,6 @@
    "depth_ppm_err": 260.0,
    "brightness_temperature_k": null,
    "brightness_temperature_k_err": null,
-   "source": "especlipdep_percent",
-   "facility": "Spitzer Space Telescope satellite",
-   "instrument": "Infrared Array Camera (IRAC)"
-  },
-  {
-   "wavelength_um": 8.0,
-   "bandwidth_um": null,
-   "depth_ppm": 2150.0,
-   "depth_ppm_err": 120.0,
-   "brightness_temperature_k": 1397.0,
-   "brightness_temperature_k_err": 42.0,
    "source": "especlipdep_percent",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"

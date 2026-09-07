@@ -463,21 +463,21 @@
   },
   {
    "wavelength_um": 0.76,
-   "bandwidth_um": 0.02,
-   "depth_ppm": 19432.36,
-   "depth_ppm_err": 390.32,
-   "source": "plnratror_squared",
-   "facility": "Very Large Telescope (Antu)",
-   "instrument": "FORS2"
-  },
-  {
-   "wavelength_um": 0.76,
    "bandwidth_um": 0.091,
    "depth_ppm": 17848.96,
    "depth_ppm_err": 694.72,
    "source": "plnratror_squared",
    "facility": "The Swiss Euler 1.2m Telescope",
    "instrument": "EulerCam"
+  },
+  {
+   "wavelength_um": 0.76,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 19432.36,
+   "depth_ppm_err": 390.32,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
   },
   {
    "wavelength_um": 0.768,

@@ -106,24 +106,6 @@
   {
    "wavelength_um": 0.6469,
    "bandwidth_um": null,
-   "depth_ppm": 14932.84,
-   "depth_ppm_err": 251.73,
-   "source": "plnratror_squared",
-   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
-   "instrument": "DLR-MKIII camera"
-  },
-  {
-   "wavelength_um": 0.6469,
-   "bandwidth_um": null,
-   "depth_ppm": 12866.36,
-   "depth_ppm_err": 292.65,
-   "source": "plnratror_squared",
-   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
-   "instrument": "DLR-MKIII camera"
-  },
-  {
-   "wavelength_um": 0.6469,
-   "bandwidth_um": null,
    "depth_ppm": 12535.04,
    "depth_ppm_err": 403.06,
    "source": "plnratror_squared",
@@ -142,8 +124,17 @@
   {
    "wavelength_um": 0.6469,
    "bandwidth_um": null,
-   "depth_ppm": 12488.06,
-   "depth_ppm_err": 1113.03,
+   "depth_ppm": 12866.36,
+   "depth_ppm_err": 292.65,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 14932.84,
+   "depth_ppm_err": 251.73,
    "source": "plnratror_squared",
    "facility": "Calar Alto Observatory's 1.2 meter Telescope",
    "instrument": "DLR-MKIII camera"
@@ -153,6 +144,15 @@
    "bandwidth_um": null,
    "depth_ppm": 14467.28,
    "depth_ppm_err": 483.53,
+   "source": "plnratror_squared",
+   "facility": "Calar Alto Observatory's 1.2 meter Telescope",
+   "instrument": "DLR-MKIII camera"
+  },
+  {
+   "wavelength_um": 0.6469,
+   "bandwidth_um": null,
+   "depth_ppm": 12488.06,
+   "depth_ppm_err": 1113.03,
    "source": "plnratror_squared",
    "facility": "Calar Alto Observatory's 1.2 meter Telescope",
    "instrument": "DLR-MKIII camera"

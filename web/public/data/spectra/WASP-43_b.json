@@ -34,12 +34,12 @@
    "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..41M/abstract"
   },
   {
-   "label": "Chen et al. 2014",
-   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..40C/abstract"
-  },
-  {
    "label": "Ricci et al. 2015",
    "url": "https://ui.adsabs.harvard.edu/abs/2015PASP..127..143R/abstract"
+  },
+  {
+   "label": "Chen et al. 2014",
+   "url": "https://ui.adsabs.harvard.edu/abs/2014A%26A...563A..40C/abstract"
   },
   {
    "label": "Kreidberg et al. 2014",
@@ -198,21 +198,21 @@
   },
   {
    "wavelength_um": 0.575,
-   "bandwidth_um": 0.06,
-   "depth_ppm": 24806.25,
-   "depth_ppm_err": 341.77,
-   "source": "plnratror_squared",
-   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
-   "instrument": "GROND"
-  },
-  {
-   "wavelength_um": 0.575,
    "bandwidth_um": null,
    "depth_ppm": 26082.25,
    "depth_ppm_err": 1324.3,
    "source": "plnratror_squared",
    "facility": "Observatorio Astronomico Nacional's 0.84m Telescope",
    "instrument": "Mexman"
+  },
+  {
+   "wavelength_um": 0.575,
+   "bandwidth_um": 0.06,
+   "depth_ppm": 24806.25,
+   "depth_ppm_err": 341.77,
+   "source": "plnratror_squared",
+   "facility": "Max Planck Gesellschaft 2.2 meter Telescope at European Southern Observatory",
+   "instrument": "GROND"
   },
   {
    "wavelength_um": 0.5795,

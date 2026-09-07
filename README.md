@@ -13,7 +13,7 @@
 <p align="center">
   <em>Every number in this README is generated from the analysis output by
   <code>python -m earth2 report</code>. None is typed by hand.</em><br>
-  <sub>Last analysis run: <code>2026-08-28T20:00:42Z</code></sub>
+  <sub>Last analysis run: <code>2026-09-07T09:27:46Z</code></sub>
 </p>
 
 ---
@@ -39,7 +39,7 @@ closely satisfy physically motivated conditions associated with an Earth-like
 potentially habitable world, how strong is the evidence behind each, and where
 are the major uncertainties?**
 
-It ingests **164,209 provenance-tracked source records** from
+It ingests **164,305 provenance-tracked source records** from
 13 archive tables, derives habitable-zone membership from the
 Kopparapu et al. (2013) climate model, computes an Earth Similarity Index,
 propagates every published uncertainty through **4,000 Monte Carlo draws per
@@ -58,20 +58,18 @@ routinely conflated.
 
 | | |
 |---|---|
-| Source records ingested | **164,209** |
-| Confirmed planets analysed | **6,354** across 4,764 host systems |
-| Planets with a **measured** mass | **2,240** (35.3%) |
-| Planets whose mass is **inferred from radius** | 2,975 (46.8%) |
+| Source records ingested | **164,305** |
+| Confirmed planets analysed | **6,360** across 4,769 host systems |
+| Planets with a **measured** mass | **2,243** (35.3%) |
+| Planets whose mass is **inferred from radius** | 2,974 (46.8%) |
 | In the **conservative** habitable zone | **174** |
 | In the **optimistic** habitable zone | 279 |
 | Conservative HZ **and** below 1.6 R⊕ | **15** |
 | …of which have a **measured mass** | **1** |
 | Planets with published transmission spectra | 104 |
-| Planets with published eclipse spectra | 54 |
-| Plot-ready atmospheric spectra (≥4 usable points) | 66 transmission + 31 eclipse |
-| Measurement-level provenance links | 89,131 across 1,814 publications |
+| Measurement-level provenance links | 89,206 across 1,823 publications |
 
-> **The headline finding is a scarcity result.** Of 6,354 confirmed
+> **The headline finding is a scarcity result.** Of 6,360 confirmed
 > planets, only **15** are both inside the
 > conservative habitable zone and small enough to be plausibly rocky — and only
 > **1** of those has a mass that was
@@ -88,18 +86,18 @@ archive update re-derives this table.
 
 | # | Planet | Earth-2.0 index | Similarity | Habitability | Confidence | R⊕ | Mass | pc |
 |--:|---|--:|--:|--:|--:|--:|---|--:|
-| 1 | **Proxima Cen b** | 0.876 | 0.915 | 0.946 | 0.730 | 1.02 | M sin i | 1.3 |
-| 2 | **GJ 1061 d** | 0.875 | 0.874 | 0.896 | 0.846 | 1.16 | measured | 3.7 |
-| 3 | **GJ 1002 b** | 0.849 | 0.914 | 0.945 | 0.644 | 1.03 | M sin i | 4.8 |
+| 1 | **Proxima Cen b** | 0.877 | 0.915 | 0.947 | 0.730 | 1.02 | M sin i | 1.3 |
+| 2 | **GJ 1061 d** | 0.876 | 0.875 | 0.897 | 0.846 | 1.16 | measured | 3.7 |
+| 3 | **GJ 1002 b** | 0.849 | 0.913 | 0.945 | 0.644 | 1.03 | M sin i | 4.8 |
 | 4 | **Wolf 1069 b** | 0.839 | 0.900 | 0.931 | 0.644 | 1.08 | M sin i | 9.6 |
 | 5 | **Teegarden's Star c** | 0.823 | 0.807 | 0.948 | 0.676 | 1.02 | M sin i | 3.8 |
-| 6 | **Kepler-1649 c** | 0.774 | 0.887 | 0.898 | 0.502 | 1.06 | *inferred* | 92.2 |
-| 7 | **GJ 1002 c** | 0.771 | 0.751 | 0.883 | 0.644 | 1.10 | M sin i | 4.8 |
+| 6 | **Kepler-1649 c** | 0.773 | 0.887 | 0.898 | 0.502 | 1.06 | *inferred* | 92.2 |
+| 7 | **GJ 1002 c** | 0.770 | 0.751 | 0.880 | 0.644 | 1.10 | M sin i | 4.8 |
 | 8 | **Kepler-1229 b** | 0.716 | 0.819 | 0.733 | 0.571 | 1.40 | *inferred* | 265.5 |
-| 9 | **GJ 667 C f** | 0.702 | 0.805 | 0.676 | 0.618 | 1.45 | M sin i | 7.2 |
-| 10 | **TOI-700 d** | 0.684 | 0.943 | 0.552 | 0.613 | 1.07 | *inferred* | 31.1 |
-| 11 | **Kepler-442 b** | 0.671 | 0.848 | 0.569 | 0.632 | 1.34 | *inferred* | 366.0 |
-| 12 | **Kepler-186 f** | 0.644 | 0.756 | 0.578 | 0.609 | 1.17 | *inferred* | 177.6 |
+| 9 | **GJ 667 C f** | 0.701 | 0.803 | 0.674 | 0.618 | 1.45 | M sin i | 7.2 |
+| 10 | **TOI-700 d** | 0.687 | 0.943 | 0.560 | 0.613 | 1.07 | *inferred* | 31.1 |
+| 11 | **Kepler-442 b** | 0.671 | 0.850 | 0.567 | 0.632 | 1.34 | *inferred* | 366.0 |
+| 12 | **Kepler-186 f** | 0.637 | 0.755 | 0.564 | 0.609 | 1.17 | *inferred* | 177.6 |
 
 `Mass` reports how the mass was obtained. *inferred* means it was predicted from
 the radius by a mass–radius relation and is not an independent measurement — a
@@ -193,15 +191,15 @@ since revised. See [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
 | `gaia_dr3_crossmatch` | `gaiadr3.gaia_source` | 4,408 | — |
 | `nasa_di_stars` | `di_stars_exep` | 164 | — |
 | `nasa_emissionspec` | `emissionspec` | 2,361 | `10.26133/NEA11` |
-| `nasa_k2pandc` | `k2pandc` | 4,068 | `10.26133/NEA1` |
+| `nasa_k2pandc` | `k2pandc` | 4,070 | `10.26133/NEA1` |
 | `nasa_koi_dr25` | `q1_q17_dr25_koi` | 8,054 | `10.26133/NEA4` |
-| `nasa_microlensing` | `ml` | 895 | — |
-| `nasa_ps` | `ps` | 40,106 | `10.26133/NEA12` |
-| `nasa_pscomppars` | `pscomppars` | 6,354 | `10.26133/NEA13` |
+| `nasa_microlensing` | `ml` | 898 | — |
+| `nasa_ps` | `ps` | 40,144 | `10.26133/NEA12` |
+| `nasa_pscomppars` | `pscomppars` | 6,360 | `10.26133/NEA13` |
 | `nasa_spectra_index` | `spectra` | 1,826 | — |
-| `nasa_stellarhosts` | `stellarhosts` | 47,857 | — |
+| `nasa_stellarhosts` | `stellarhosts` | 47,892 | — |
 | `nasa_tce_dr25` | `q1_q17_dr25_tce` | 34,032 | — |
-| `nasa_toi` | `toi` | 8,136 | `10.26134/ExoFOP5` |
+| `nasa_toi` | `toi` | 8,148 | `10.26134/ExoFOP5` |
 | `nasa_transitspec` | `transitspec` | 5,948 | `10.26133/NEA10` |
 
 Plus, for deep-dive systems:
@@ -233,11 +231,11 @@ investigated but is not yet part of this release. See
 
 | Method | Planets | Share |
 |---|--:|--:|
-| Transit | 4,688 | 73.8% |
+| Transit | 4,706 | 74.0% |
 | Radial Velocity | 1,200 | 18.9% |
-| Microlensing | 283 | 4.5% |
-| Imaging | 98 | 1.5% |
-| Transit Timing Variations | 42 | 0.7% |
+| Microlensing | 285 | 4.5% |
+| Imaging | 97 | 1.5% |
+| Transit Timing Variations | 29 | 0.5% |
 | Eclipse Timing Variations | 17 | 0.3% |
 | Orbital Brightness Modulation | 9 | 0.1% |
 | Pulsar Timing | 8 | 0.1% |

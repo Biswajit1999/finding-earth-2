@@ -772,21 +772,21 @@
   },
   {
    "wavelength_um": 1.475,
-   "bandwidth_um": 0.05,
-   "depth_ppm": 13950.0,
-   "depth_ppm_err": 120.0,
-   "source": "plntransdep_percent",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Wide Field Camera 3"
-  },
-  {
-   "wavelength_um": 1.475,
    "bandwidth_um": 0.052,
    "depth_ppm": 14222.95,
    "depth_ppm_err": 124.03,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 1.475,
+   "bandwidth_um": 0.05,
+   "depth_ppm": 13950.0,
+   "depth_ppm_err": 120.0,
+   "source": "plntransdep_percent",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Wide Field Camera 3"
   },
   {
    "wavelength_um": 1.4925,
@@ -944,18 +944,18 @@
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 13860.35,
-   "depth_ppm_err": 430.89,
-   "source": "plnratror_squared",
+   "depth_ppm": 13060.0,
+   "depth_ppm_err": 310.0,
+   "source": "plntransdep_percent",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
   },
   {
    "wavelength_um": 4.5,
    "bandwidth_um": null,
-   "depth_ppm": 13060.0,
-   "depth_ppm_err": 310.0,
-   "source": "plntransdep_percent",
+   "depth_ppm": 13860.35,
+   "depth_ppm_err": 430.89,
+   "source": "plnratror_squared",
    "facility": "Spitzer Space Telescope satellite",
    "instrument": "Infrared Array Camera (IRAC)"
   }
