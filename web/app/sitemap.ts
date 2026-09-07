@@ -2,6 +2,8 @@ import type { MetadataRoute } from "next";
 
 import { getAllPlanetSlugs, getSummary } from "@/lib/data";
 
+export const dynamic = "force-static";
+
 const SITE_ROOT = "https://biswajit1999.github.io/finding-earth-2";
 
 const coreRoutes = [
