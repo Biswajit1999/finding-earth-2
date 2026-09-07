@@ -4,40 +4,88 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import { getSummary } from "@/lib/data";
 
-const DESCRIPTION =
-  "A reproducible computational search for potentially Earth-like exoplanets, ranked from NASA Exoplanet Archive catalogues cross-matched against Gaia DR3, with selected MAST transit and DACE radial-velocity deep dives.";
+const SITE_URL = "https://biswajit1999.github.io/finding-earth-2/";
+const REPOSITORY_URL = "https://github.com/Biswajit1999/finding-earth-2";
 
-export const metadata: Metadata = {
-  metadataBase: new URL("https://biswajit1999.github.io/finding-earth-2/"),
-  title: {
-    default: "Finding Earth 2.0 in Distant Worlds",
-    template: "%s — Finding Earth 2.0",
-  },
-  description: DESCRIPTION,
-  keywords: [
-    "exoplanets",
-    "habitable zone",
-    "astrobiology",
-    "Earth similarity index",
-    "NASA Exoplanet Archive",
-    "reproducible research",
-    "computational astrophysics",
-  ],
-  authors: [{ name: "Biswajit Jana", url: "https://github.com/Biswajit1999" }],
-  creator: "Biswajit Jana",
-  openGraph: {
-    type: "website",
-    title: "Finding Earth 2.0 in Distant Worlds",
-    description: DESCRIPTION,
-    siteName: "Finding Earth 2.0",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Finding Earth 2.0 in Distant Worlds",
-    description: DESCRIPTION,
-  },
-  robots: { index: true, follow: true },
-};
+function buildDescription(): string {
+  const summary = getSummary();
+  const records = summary.scale.total_source_records.toLocaleString("en-GB");
+  const planets = summary.population.n_confirmed_planets.toLocaleString("en-GB");
+
+  return `Finding Earth 2.0 in Distant Worlds is an open-source exoplanet research project by Biswajit Jana analysing ${records} public astronomical archive records and ${planets} confirmed planets using habitable-zone models, Earth Similarity Index, Monte Carlo uncertainty, transit, radial-velocity and atmospheric spectroscopy data.`;
+}
+
+export function generateMetadata(): Metadata {
+  const description = buildDescription();
+
+  return {
+    metadataBase: new URL(SITE_URL),
+    applicationName: "Finding Earth 2.0",
+    title: {
+      default: "Finding Earth 2.0 in Distant Worlds",
+      template: "%s — Finding Earth 2.0",
+    },
+    description,
+    keywords: [
+      "Finding Earth 2.0",
+      "Earth 2.0",
+      "Earth-like exoplanets",
+      "potentially habitable exoplanets",
+      "habitable zone",
+      "Earth Similarity Index",
+      "exoplanet habitability",
+      "NASA Exoplanet Archive",
+      "Gaia DR3",
+      "TESS exoplanets",
+      "Kepler exoplanets",
+      "exoplanet spectroscopy",
+      "radial velocity exoplanets",
+      "transit photometry",
+      "computational astrophysics",
+      "reproducible astronomy",
+    ],
+    authors: [
+      {
+        name: "Biswajit Jana",
+        url: "https://github.com/Biswajit1999",
+      },
+    ],
+    creator: "Biswajit Jana",
+    publisher: "Biswajit Jana",
+    category: "Astronomy and Astrophysics",
+    openGraph: {
+      type: "website",
+      url: SITE_URL,
+      locale: "en_GB",
+      title: "Finding Earth 2.0 in Distant Worlds",
+      description,
+      siteName: "Finding Earth 2.0",
+      images: [
+        {
+          url: `${SITE_URL}figures/hz_diagram.png`,
+          alt: "Finding Earth 2.0 habitable-zone analysis of confirmed exoplanets",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: "Finding Earth 2.0 in Distant Worlds",
+      description,
+      images: [`${SITE_URL}figures/hz_diagram.png`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+        "max-video-preview": -1,
+      },
+    },
+  };
+}
 
 export const viewport: Viewport = {
   themeColor: "#07090e",
@@ -49,38 +97,78 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const summary = getSummary();
+  const description = buildDescription();
 
-  // Structured metadata describing the dataset this site publishes.
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Dataset",
-    name: "Finding Earth 2.0 candidate ranking",
-    description: DESCRIPTION,
-    creator: { "@type": "Person", name: "Biswajit Jana" },
-    // No `license` field: the MIT licence in this repository's LICENSE file
-    // covers the analysis code only (see docs/DATA_SOURCES.md, "Software
-    // licence vs. data licence"). The dataset described here is derived from
-    // NASA Exoplanet Archive, MAST and DACE records, which remain governed by
-    // their originating archives' own terms -- claiming MIT for the dataset
-    // itself would misrepresent that.
-    dateModified: summary.generated_utc,
-    isBasedOn: summary.scale.archives,
-    variableMeasured: [
-      "Earth Similarity Index",
-      "Habitable-zone membership probability",
-      "Observational confidence",
-      "Earth-2.0 candidate index",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${SITE_URL}#website`,
+        url: SITE_URL,
+        name: "Finding Earth 2.0 in Distant Worlds",
+        alternateName: [
+          "Finding Earth 2.0",
+          "Earth 2.0 exoplanet search",
+        ],
+        description,
+        inLanguage: "en",
+        author: { "@id": `${SITE_URL}#author` },
+        sameAs: REPOSITORY_URL,
+      },
+      {
+        "@type": "Person",
+        "@id": `${SITE_URL}#author`,
+        name: "Biswajit Jana",
+        url: "https://github.com/Biswajit1999",
+        sameAs: ["https://github.com/Biswajit1999"],
+      },
+      {
+        "@type": "Dataset",
+        "@id": `${SITE_URL}#dataset`,
+        name: "Finding Earth 2.0 candidate ranking",
+        url: SITE_URL,
+        description,
+        creator: { "@id": `${SITE_URL}#author` },
+        dateModified: summary.generated_utc,
+        isPartOf: { "@id": `${SITE_URL}#website` },
+        keywords: [
+          "exoplanets",
+          "Earth-like planets",
+          "habitable zone",
+          "Earth Similarity Index",
+          "NASA Exoplanet Archive",
+          "Gaia DR3",
+          "Monte Carlo uncertainty propagation",
+          "transit photometry",
+          "radial velocity",
+          "atmospheric spectroscopy",
+        ],
+        variableMeasured: [
+          "Earth Similarity Index",
+          "Habitable-zone membership probability",
+          "Observational confidence",
+          "Earth-2.0 candidate index",
+          "Planet radius",
+          "Planet mass",
+          "Incident stellar flux",
+          "Equilibrium temperature",
+        ],
+        measurementTechnique: [
+          "Public astronomical archive crossmatch",
+          "Monte Carlo uncertainty propagation",
+          "Habitable-zone climate-model evaluation",
+          "Transit analysis",
+          "Radial-velocity analysis",
+          "Atmospheric spectroscopy metadata analysis",
+        ],
+      },
     ],
   };
 
   return (
     <html
       lang="en"
-      // The anti-FOUC script below sets data-theme on this element before
-      // React hydrates, so the server-rendered markup (no attribute) and the
-      // first client read (possibly "light") legitimately differ. That's the
-      // point of the script, not a bug -- suppress only this element's
-      // hydration warning rather than the mismatch check globally.
       suppressHydrationWarning
     >
       <head>
@@ -90,22 +178,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
           rel="stylesheet"
         />
+        <link rel="sitemap" type="application/xml" href={`${SITE_URL}sitemap.xml`} />
         <script
           type="application/ld+json"
-          // JSON-LD must be injected as raw text; React has no other way to emit
-          // it. The payload is built here from our own build-time analysis
-          // output, never from user input, and `<` is escaped so no value can
-          // close the script element early.
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
           }}
         />
         <script
-          // Sets the theme attribute before first paint so a returning
-          // visitor who chose light mode never sees a flash of the dark
-          // default. Must run synchronously in <head>, before React
-          // hydrates -- a useEffect in the toggle component would run one
-          // frame too late.
           dangerouslySetInnerHTML={{
             __html:
               "try{if(localStorage.getItem('theme')==='light'){document.documentElement.setAttribute('data-theme','light')}}catch(e){}",
