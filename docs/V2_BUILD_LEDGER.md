@@ -43,3 +43,9 @@
   follows the tested, pushed adapter checkpoint.
 - Phase 2 is not complete: per-target calibration, searched denominator and
   reliability must pass before any intrinsic population inference is released.
+
+- Source adapter checkpoint 7287f65f1af530440bbdd40c062971830c223074 pushed
+  and remotely verified. Stellar retrieval validated 200,038 original DR25 rows.
+- First injection validation stopped on 586 undocumented-in-header code-2
+  recoveries. Inspected the payload and primary ephemeris-match definition;
+  now preserve and separately count code 2, requiring a matching official TCE.

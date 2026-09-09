@@ -44,9 +44,12 @@ def main() -> None:
         "injections_all": len(joined),
         "injections_without_stellar_match": int(joined["kepid"].isna().sum()),
         "recovered_all": int(joined["pipeline_recovered"].sum()),
+        "recovery_code_2_all": int(joined["recovery_code_2"].sum()),
+        "recovery_definition": "Codes 1 and 2 with a matching official INJ1 TCE; code 2 audited separately, not asserted to have a correct recovered period",
         "vetted_pc_all": int(joined["vetted_pc"].sum()),
         "injections_selected": len(selected),
         "recovered_selected": int(selected["pipeline_recovered"].sum()),
+        "recovery_code_2_selected": int(selected["recovery_code_2"].sum()),
         "vetted_pc_selected": int(selected["vetted_pc"].sum()),
         "selected_stars_without_injection": int(
             (~selected_stars["kepid"].isin(selected["KIC_ID"])).sum()

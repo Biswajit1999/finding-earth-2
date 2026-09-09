@@ -168,6 +168,20 @@ def test_grid_counts_and_unsupported_cells():
     assert set(grid["label"]) == {"SIMULATED"}
 
 
+def test_archive_code_two_requires_matching_official_tce_and_remains_visible():
+    injections = injection_fixture()
+    injections.loc[0, "Recovered"] = 2
+    parsed = parse_ipac(ipac_bytes(injections), kind="injections")
+    joined = join_injections(parsed, vetting_fixture(), star_fixture())
+    assert joined["recovery_code_2"].tolist() == [True, False, False]
+    assert joined["pipeline_recovered"].sum() == 2
+    with pytest.raises(ValueError, match="no matching"):
+        join_injections(parsed, vetting_fixture().iloc[1:], star_fixture())
+    injections.loc[0, "Recovered"] = 3
+    with pytest.raises(ValueError, match="flag"):
+        parse_ipac(ipac_bytes(injections), kind="injections")
+
+
 def test_stellar_selection_rejects_nonfinite_and_records_missing_hosts():
     stars = star_fixture()
     stars.loc[1, "mass"] = np.inf

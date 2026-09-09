@@ -76,3 +76,17 @@ be silently substituted with all rows in an archive stellar table.
 Tests cover Earth/Sun geometry, eccentric orientation, window double-counting,
 survey mismatch, finite binomial intervals, schema drift, TCE/KIC joins, missing
 hosts, original-radius convention, cache corruption and timestamp preservation.
+
+## Delivered recovery-code discrepancy
+
+The live INJ1 table has 100,917 code-0, 44,791 code-1 and 586 code-2 records.
+Its header and KSCI-19110-001 §3 describe only 0 and 1. The initial strict parser
+correctly stopped on this mismatch. Code-2 recovered periods are predominantly
+multiples/fractions of the injected period; §2 of the technical report permits
+ephemeris matches at period aliases. The diagnostic counts both positive codes
+only when they join a target-consistent TCE in the official INJ1 Robovetter
+product, preserving the raw code and reporting code-2 counts separately. This
+is an explicit inference from the delivered products, not a claim that the
+header documents code 2 or that those periods are correct. Population inference
+must model period misidentification or demonstrate insensitivity to excluding
+these records. The additional regression test covers this real archive case.

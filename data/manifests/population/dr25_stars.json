@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "product": "stars",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": null,
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=q1_q17_dr25_stellar&format=csv&select=kepid%2Cteff%2Cteff_err1%2Cteff_err2%2Clogg%2Cmass%2Cradius%2Cradius_err1%2Cradius_err2%2Cfeh%2Cdutycycle%2Cdataspan%2Crrmscdpp06p0%2Cmesthres06p0%2Ccdppslplong%2Ccdppslpshrt%2Cst_delivname",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/cgi-bin/nstedAPI/nph-nstedAPI?table=q1_q17_dr25_stellar&format=csv&select=kepid%2Cteff%2Cteff_err1%2Cteff_err2%2Clogg%2Cmass%2Cradius%2Cradius_err1%2Cradius_err2%2Cfeh%2Cdutycycle%2Cdataspan%2Crrmscdpp06p0%2Cmesthres06p0%2Ccdppslplong%2Ccdppslpshrt%2Cst_delivname",
+  "query": "SELECT kepid,teff,teff_err1,teff_err2,logg,mass,radius,radius_err1,radius_err2,feh,dutycycle,dataspan,rrmscdpp06p0,mesthres06p0,cdppslplong,cdppslpshrt,st_delivname FROM q1_q17_dr25_stellar",
+  "retrieved_at_utc": "2026-09-09T22:41:39.010299+00:00",
+  "row_count": 200038,
+  "sha256": "b8883287f9daee42ea02d09bb420229f7d40ee30f08a397955d87fff28f4aea0",
+  "bytes": 25692087,
+  "software_commit": "7287f65f1af530440bbdd40c062971830c223074",
+  "adapter_sha256": "bfe2a33039e0357fdbfc8eb59311974b4ff9dae9b37465afd4c296dee1509d4c",
+  "raw_path": "data/raw/kepler_dr25/stars.csv",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

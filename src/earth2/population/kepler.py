@@ -74,11 +74,14 @@ def parse_ipac(payload: bytes, *, kind: str) -> pd.DataFrame:
     if frame[key].isna().any() or frame[key].duplicated().any():
         raise ValueError(f"Missing or duplicate {key}")
     if kind == "injections":
-        if not frame["Recovered"].isin([0, 1]).all():
+        # The delivered table also contains code 2. These signals have matched
+        # TCEs in the official recovery/vetting set; preserve the raw flag and
+        # audit them separately rather than claiming correct-period recovery.
+        if not frame["Recovered"].isin([0, 1, 2]).all():
             raise ValueError("Invalid recovered flag")
         if not (frame["EB_injection"].eq(0) & frame["Offset_from_source"].eq(0)).all():
             raise ValueError("INJ1 cannot contain off-target or binary injections")
-        if frame.loc[frame["Recovered"].eq(1), "TCE_ID"].isna().any():
+        if frame.loc[frame["Recovered"].gt(0), "TCE_ID"].isna().any():
             raise ValueError("Recovered injection missing its TCE identifier")
     elif not frame["Disp"].isin(["PC", "FP"]).all():
         raise ValueError("Unknown Robovetter disposition")
@@ -166,7 +169,7 @@ def join_injections(
         validate="many_to_one",
         indicator="vetting_join",
     )
-    recovered = out["Recovered"].eq(1)
+    recovered = out["Recovered"].gt(0)
     if out.loc[recovered, "tce_key"].duplicated().any():
         raise ValueError("Multiple injections cannot map to the same recovered TCE")
     if out.loc[recovered, "Disp"].isna().any():
@@ -183,7 +186,8 @@ def join_injections(
     )
     # Original DR25 stellar radius gives the injection's physical radius.
     out["injected_radius_earth"] = out["i_ror"] * out["radius"] * (c.R_sun.value / c.R_earth.value)
-    out["pipeline_recovered"] = out["Recovered"].eq(1)
+    out["pipeline_recovered"] = out["Recovered"].gt(0)
+    out["recovery_code_2"] = out["Recovered"].eq(2)
     out["vetted_pc"] = out["pipeline_recovered"] & out["Disp"].eq("PC")
     return out
 
