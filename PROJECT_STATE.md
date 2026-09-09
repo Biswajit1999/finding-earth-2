@@ -18,7 +18,7 @@
 - Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence graph, 89,073 indexed records and deterministic examples; primary selection-method audit. Broader literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
 - Last successful and remotely verified commit before this checkpoint: `57a5fbfdb7e8c83dcecfa780332acac2473996ce` (recovery-code audit). Resolve this document's containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
-- Exact next action: preserve the validated input/diagnostic checkpoint, then reproduce the pinned NASA KeplerPORTs per-target reference calculation, audit its domains, and implement the population calibration. No real intrinsic inference yet.
+- Exact next action: acquire only the bounded KeplerPORTs coefficient/reference products, reproduce its documented Sun-like contour and edge cases, then implement the population calibration. No real intrinsic inference yet.
 
 ## Execution contract
 

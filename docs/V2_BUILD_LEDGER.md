@@ -66,3 +66,11 @@
   their original retrieval dates and hash checks.
 - Next: reproduce the pinned KeplerPORTs per-target model reference, validate
   domain restrictions and then build survey-wide selection. No eta-Earth claim.
+
+## Phase 2 calibration boundary — 2026-09-09
+
+- Added a KeplerPORTs audit documenting the target-specific inputs, release
+  dependencies, 670 GB archive boundary, and checks required before any
+  per-target selection function is used.
+- The empirical INJ1 output remains explicitly SIMULATED. No inverse-detection
+  weights or intrinsic occurrence estimate were added.
