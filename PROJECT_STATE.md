@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **2 — official DR25 experiment and pinned KeplerPORTs reference integrated; survey calibration next**; v2 is not complete.
+- Current phase: **3 complete — synthetic selection recovery passed; population inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,17 +9,32 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 210 passed; Ruff lint, mypy, and six v1 release invariants pass. DR25 contracts cover the delivered recovery-code discrepancy and KeplerPORTs input integrity.
+- Tests: 215 passed; Ruff lint and formatting checks for the new Phase 3 files,
+  mypy across 53 source files, and six v1 release invariants pass. DR25 contracts
+  cover the delivered recovery-code discrepancy and KeplerPORTs input integrity.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). No intrinsic-population result or
   calibrated habitability probability exists.
-- Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence graph, 89,073 indexed records and deterministic examples; primary selection-method audit. Broader literature and complete per-publication evidence enrichment remain open.
+- Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence
+  graph, 89,073 indexed records and deterministic examples; primary
+  selection-method audit; official DR25 diagnostic integration; pinned
+  KeplerPORTs reference; deterministic synthetic selection recovery. Broader
+  literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
-- Last successful and remotely verified commit before this checkpoint: `165ddba3ca7b38b72204019a0ffd003ec9633628` (calibration boundary audit). Resolve this document's containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
+- Last successful and remotely verified commit before this checkpoint:
+  `9f87c20e670f9adecb17166057c81ed22bcf9383` (frontend story and universe
+  overlay hotfix). Resolve this document's containing checkpoint with
+  `git log -1 -- PROJECT_STATE.md`.
 - KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
-- Exact next action: validate edge cases and develop a survey-wide calibration that does not require the 670 GB per-target archive, with synthetic recovery before population inference. No real intrinsic inference yet.
+- Synthetic recovery: 300 replicates of 10,000 artificial stars recover a known
+  0.7 planets-per-star rate with +0.69% relative bias and 94.67% coverage for
+  nominal 95% intervals. The artifact is labelled SIMULATED and reproducible at
+  SHA-256 `a61b68c726efda84b9ca306c9f635e20abe2f563ad5b5324cf9bb20178fc92db`.
+- Exact next action: define a real Kepler analysis population and hierarchical
+  period-radius likelihood, include reliability and selection uncertainty, and
+  compare against published occurrence studies. No real intrinsic inference yet.
 
 ## Execution contract
 

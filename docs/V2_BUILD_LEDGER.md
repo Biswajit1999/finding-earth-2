@@ -104,3 +104,21 @@
   pre-existing Next.js custom-font warning. Visual QA checked the reported
   system and the complete perspective accessibility tree in the local
   production-equivalent interface.
+
+## Phase 3 synthetic selection recovery — 2026-09-10
+
+- Added a deterministic artificial survey with separately testable transit
+  geometry, observing-window, pipeline-recovery and vetting terms.
+- Across 300 replicates of 10,000 artificial stars, a selection-aware Poisson
+  likelihood recovered the injected 0.7 planets-per-star rate at 0.704830 on
+  average: +0.6901% bias, 0.074053 RMSE and 94.67% coverage for nominal 95%
+  intervals.
+- Negative controls show why the selection definition matters. The raw detected
+  fraction is 0.00869767 per star, the geometry-omitted estimate is 0.0128705,
+  and two alternative period-radius proposals change mean selection by 72.33%.
+- Every output is labelled SIMULATED. No Kepler occurrence or habitability claim
+  is made. Assumptions, omissions and the Phase 4 boundary are documented in
+  `docs/SYNTHETIC_SELECTION_VALIDATION.md`.
+- All 215 Python tests pass. Ruff lint/format checks pass for the new files and
+  mypy passes across 53 source files. Two consecutive artifacts have identical
+  SHA-256 `a61b68c726efda84b9ca306c9f635e20abe2f563ad5b5324cf9bb20178fc92db`.

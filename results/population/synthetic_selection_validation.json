@@ -1,0 +1,22 @@
+{
+  "label": "SIMULATED",
+  "seed": 726381,
+  "replicates": 300,
+  "truth_occurrence_per_star": 0.7,
+  "stars_per_replicate": 10000,
+  "known_mean_selection": 0.012411023621269985,
+  "known_exposure_per_replicate": 124.11023621269986,
+  "mean_detected_count": 86.97666666666667,
+  "selection_aware_posterior_mean_average": 0.7048303938181968,
+  "selection_aware_relative_bias": 0.006900562597424109,
+  "selection_aware_rmse": 0.07405266757093659,
+  "nominal_interval_mass": 0.95,
+  "empirical_interval_coverage": 0.9466666666666667,
+  "raw_detected_per_star_average": 0.008697666666666668,
+  "geometry_omitted_posterior_mean_average": 0.012870514541099979,
+  "flat_log_proposal_mean_selection": 0.016802745639287575,
+  "skewed_proposal_mean_selection": 0.00464980477431508,
+  "proposal_mean_relative_difference": -0.7232711323414267,
+  "interpretation": "Controlled falsification test; no astronomical occurrence measurement",
+  "passed": true
+}
