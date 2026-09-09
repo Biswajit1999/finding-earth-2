@@ -409,9 +409,10 @@ export function UniverseExplorer({
         </div>
 
         {/* ---------------- controls overlay ---------------- */}
-        <div className="pointer-events-none absolute inset-0 flex flex-col justify-between p-4 sm:p-5">
+        <div className="pointer-events-none absolute inset-0 flex flex-col justify-between gap-3 p-4 sm:p-5">
           <div className="flex flex-wrap items-start justify-between gap-3">
-            <div className="pointer-events-auto panel-raised max-w-xs p-3">
+            <div className="pointer-events-auto flex w-full max-w-sm flex-col gap-3">
+            <div className="panel-raised p-3">
               <label htmlFor="uni-search" className="eyebrow mb-1.5 block">
                 Find a system
               </label>
@@ -444,6 +445,62 @@ export function UniverseExplorer({
                   ))}
                 </ul>
               )}
+            </div>
+
+            {info !== null && (
+              <div className="panel-raised max-h-[220px] overflow-y-auto p-4 shadow-2xl shadow-black/35">
+                <div className="flex items-start justify-between gap-2">
+                  <div>
+                    <p className="text-[14px] font-medium text-[var(--color-ivory)]">
+                      {data.name[info]}
+                    </p>
+                    <p className="text-[11.5px] text-[var(--color-muted)]">{data.host[info]}</p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => setSelected(null)}
+                    className="grid size-10 shrink-0 cursor-pointer place-items-center rounded text-[var(--color-muted)] transition-colors hover:bg-[var(--color-panel)] hover:text-[var(--color-ivory)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-cyan)]"
+                    aria-label="Close selected system"
+                  >
+                    <svg aria-hidden="true" viewBox="0 0 20 20" className="size-4" fill="none">
+                      <path d="M5 5l10 10M15 5L5 15" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    </svg>
+                  </button>
+                </div>
+                <dl className="mt-2.5 grid grid-cols-2 gap-x-3 gap-y-1.5 font-[family-name:var(--font-mono)] text-[11px]">
+                  <dt className="text-[var(--color-muted)]">Distance</dt>
+                  <dd className="text-[var(--color-dim)]">
+                    {num(data.dist_pc[info], 2)} pc
+                    <span className="text-[var(--color-muted)]">
+                      {" "}({num(data.dist_pc[info] * LY_PER_PC, 1)} ly · {int(data.dist_pc[info] * AU_PER_PC)} AU)
+                    </span>
+                  </dd>
+                  <dt className="text-[var(--color-muted)]">Radius</dt>
+                  <dd className="text-[var(--color-dim)]">{num(data.rade[info], 2)} R⊕</dd>
+                  <dt className="text-[var(--color-muted)]">T_eq</dt>
+                  <dd className="text-[var(--color-dim)]">{num(data.teq[info], 0)} K</dd>
+                  <dt className="text-[var(--color-muted)]">HZ probability</dt>
+                  <dd className="text-[var(--color-dim)]">{num(data.hz_prob[info], 2)}</dd>
+                  <dt className="text-[var(--color-muted)]">Method</dt>
+                  <dd className="text-[var(--color-dim)]">{data.method[info] ?? "—"}</dd>
+                  <dt className="text-[var(--color-muted)]">Discovered</dt>
+                  <dd className="text-[var(--color-dim)]">
+                    {Number.isFinite(data.disc_year[info]) ? data.disc_year[info] : EMDASH}
+                  </dd>
+                  <dt className="text-[var(--color-muted)]">Earth-2.0 index</dt>
+                  <dd className="text-[var(--color-gold)]">{num(data.earth2_index[info], 3)}</dd>
+                </dl>
+                {deepDiveSlugs?.has(slugify(data.name[info])) ? (
+                  <Link href={"/candidate/" + slugify(data.name[info])} className="link mt-3 inline-block text-[12px]">
+                    Open deep dive →
+                  </Link>
+                ) : (
+                  <p className="mt-3 text-[11px] text-[var(--color-muted)]">
+                    Not one of the ranked candidates with a full deep-dive page.
+                  </p>
+                )}
+              </div>
+            )}
             </div>
 
             <div className="pointer-events-auto panel-raised p-3">
@@ -722,65 +779,6 @@ export function UniverseExplorer({
               </div>
             </div>
           </div>
-
-          {/* ---------------- selected system panel ---------------- */}
-          {info !== null && (
-            <div className="pointer-events-auto panel-raised max-w-sm self-start min-h-0 overflow-y-auto p-4">
-              <div className="flex items-start justify-between gap-2">
-                <div>
-                  <p className="text-[14px] font-medium text-[var(--color-ivory)]">
-                    {data.name[info]}
-                  </p>
-                  <p className="text-[11.5px] text-[var(--color-muted)]">{data.host[info]}</p>
-                </div>
-                <button
-                  type="button"
-                  onClick={() => setSelected(null)}
-                  className="cursor-pointer text-[11px] text-[var(--color-muted)] hover:text-[var(--color-ivory)]"
-                  aria-label="Close"
-                >
-                  ✕
-                </button>
-              </div>
-              <dl className="mt-2.5 grid grid-cols-2 gap-x-3 gap-y-1.5 font-[family-name:var(--font-mono)] text-[11px]">
-                <dt className="text-[var(--color-muted)]">Distance</dt>
-                <dd className="text-[var(--color-dim)]">
-                  {num(data.dist_pc[info], 2)} pc
-                  <span className="text-[var(--color-muted)]">
-                    {" "}
-                    ({num(data.dist_pc[info] * LY_PER_PC, 1)} ly ·{" "}
-                    {int(data.dist_pc[info] * AU_PER_PC)} AU)
-                  </span>
-                </dd>
-                <dt className="text-[var(--color-muted)]">Radius</dt>
-                <dd className="text-[var(--color-dim)]">{num(data.rade[info], 2)} R⊕</dd>
-                <dt className="text-[var(--color-muted)]">T_eq</dt>
-                <dd className="text-[var(--color-dim)]">{num(data.teq[info], 0)} K</dd>
-                <dt className="text-[var(--color-muted)]">HZ probability</dt>
-                <dd className="text-[var(--color-dim)]">{num(data.hz_prob[info], 2)}</dd>
-                <dt className="text-[var(--color-muted)]">Method</dt>
-                <dd className="text-[var(--color-dim)]">{data.method[info] ?? "—"}</dd>
-                <dt className="text-[var(--color-muted)]">Discovered</dt>
-                <dd className="text-[var(--color-dim)]">
-                  {Number.isFinite(data.disc_year[info]) ? data.disc_year[info] : EMDASH}
-                </dd>
-                <dt className="text-[var(--color-muted)]">Earth-2.0 index</dt>
-                <dd className="text-[var(--color-gold)]">{num(data.earth2_index[info], 3)}</dd>
-              </dl>
-              {deepDiveSlugs?.has(slugify(data.name[info])) ? (
-                <Link
-                  href={"/candidate/" + slugify(data.name[info])}
-                  className="link mt-3 inline-block text-[12px]"
-                >
-                  Open deep dive →
-                </Link>
-              ) : (
-                <p className="mt-3 text-[11px] text-[var(--color-muted)]">
-                  Not one of the ranked candidates with a full deep-dive page.
-                </p>
-              )}
-            </div>
-          )}
 
           <div className="flex w-full items-end justify-between gap-3">
             <div className="pointer-events-auto panel-raised w-full max-w-xl p-3" aria-label="Discovery history controls">

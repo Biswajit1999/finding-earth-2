@@ -153,6 +153,16 @@ export function SiteHeader() {
           >
             Research article
           </Link>
+          <Link
+            href="/perspective"
+            className={`cursor-pointer rounded px-3 py-1.5 text-[13px] transition-colors ${
+              isActive("/perspective")
+                ? "text-[var(--color-ivory)]"
+                : "text-[var(--color-dim)] hover:text-[var(--color-ivory)]"
+            }`}
+          >
+            What I learned
+          </Link>
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
@@ -215,6 +225,9 @@ export function SiteHeader() {
             className="block py-2 text-[14px] text-[var(--color-ivory)]"
           >
             Research article
+          </Link>
+          <Link href="/perspective" className="block py-2 text-[14px] text-[var(--color-ivory)]">
+            What I learned
           </Link>
           <Link href="/about" className="block py-2 text-[14px] text-[var(--color-ivory)]">
             About

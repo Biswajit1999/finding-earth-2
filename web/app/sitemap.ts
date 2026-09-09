@@ -16,6 +16,7 @@ const coreRoutes = [
   "galaxy",
   "limitations",
   "methods",
+  "perspective",
   "ranking",
   "references",
   "research",

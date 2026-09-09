@@ -66,6 +66,7 @@ export function SiteFooter({
               ["/data", "Data sources"],
               ["/limitations", "Limitations"],
               ["/references", "References"],
+              ["/perspective", "What I learned"],
               ["/about", "About"],
             ]}
           />

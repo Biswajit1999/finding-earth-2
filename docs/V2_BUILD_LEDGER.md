@@ -87,3 +87,20 @@
   4ccfa7ffbaa630ffa48b5213dc7b394b1b6bad11802217d291f76f53b3b98b74.
 - Export is labelled MODEL-INFERRED and explicitly limited to a reference-code
   regression grid, not a survey population estimate.
+
+## Frontend story and universe-console hotfix — 2026-09-10
+
+- Reproduced the reported selected-system/discovery-history overlap using HD
+  194490 b. The selected system now expands inside the search stack with a
+  bounded scroll area; the history controls retain a separate bottom region.
+- Added `/perspective`: Biswajit Jana's first-person learning log, evidence-label
+  dictionary and author conclusion. Motion uses transform/opacity, remains
+  content-complete without JavaScript and respects reduced-motion preference.
+- Added an on-open data pulse that checks the newest processed `main` snapshot
+  and falls back to the bundled verified artifact. Archive ingestion remains
+  validation- and review-gated; the browser does not claim raw rows as results.
+- TypeScript and the GitHub Pages production build pass. Export integrity checks
+  22 route templates across 6,374 generated HTML files; ESLint has only the
+  pre-existing Next.js custom-font warning. Visual QA checked the reported
+  system and the complete perspective accessibility tree in the local
+  production-equivalent interface.
