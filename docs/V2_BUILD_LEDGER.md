@@ -29,3 +29,17 @@
   literature decision register and explicitly listed unfinished method audits.
 - Website unaffected; successful Phase 0 build remains applicable.
 - Next: commit and verify this foundation before DR25 source retrieval.
+
+## Phase 2 source-adapter checkpoint — 2026-09-09
+
+- Evidence checkpoint 8a07cbfe822f767de7e0ac9c59adef2ed0c8ece6 pushed and remotely verified.
+- Added transit geometry, explicit conditional detection factors and survey
+  calibration contracts; reliability is separate from detection.
+- Added strict official DR25 parsers, injection/Robovetter/stellar joins,
+  injection-conditioned count grids with finite-sample intervals, and a bounded
+  retrieval CLI with hash-verified caches and preserved retrieval timestamps.
+- Added ten offline scientific and integrity tests; full suite: 208 passed.
+- Website and v1 analysis products unaffected. Full source retrieval intentionally
+  follows the tested, pushed adapter checkpoint.
+- Phase 2 is not complete: per-target calibration, searched denominator and
+  reliability must pass before any intrinsic population inference is released.
