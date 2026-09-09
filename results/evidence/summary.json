@@ -1,0 +1,20 @@
+{
+  "baseline_commit": "82d5b127418e32d2cacc95c6ed12dc8dad140bac",
+  "edges": 261837,
+  "independent_measurement_count": null,
+  "nodes_by_kind": {
+    "measurement": 89073,
+    "planet": 6354,
+    "source": 2000,
+    "star": 4764
+  },
+  "quantity_labels": {
+    "DERIVED": 8761,
+    "MODEL-INFERRED": 2975,
+    "OBSERVED": 75097,
+    "UNCLASSIFIED": 2240
+  },
+  "records_with_provenance_gaps": 89073,
+  "schema_version": "1.0",
+  "scope": "v1 composite reference index; not all published measurement solutions"
+}

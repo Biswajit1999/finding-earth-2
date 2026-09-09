@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **0 — baseline audit and checkpoint**; v2 is not complete.
+- Current phase: **1 — evidence index and selection-method literature checkpoint**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,18 +9,16 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 186 passed, 49.45% coverage; Ruff lint, mypy and release invariants pass.
+- Tests: 198 passed (baseline plus 12 evidence tests); Ruff lint, mypy and release invariants pass.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). No intrinsic-population result or
   calibrated habitability probability exists.
-- Completed v2 milestones: Phase 0 audit, complete baseline Python and website checks.
-- Last successful commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac` (pre-existing).
-- Last verified remote: same SHA, `origin/main`, verified 2026-09-09 by ls-remote.
-- Exact next action: finish website checks, commit the baseline audit, tag v1,
-  push both and verify remote SHAs; then complete the primary-source methods
-  audit and begin DR25 selection-function implementation.
+- Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence graph, 89,073 indexed records and deterministic examples; primary selection-method audit. Broader literature and complete per-publication evidence enrichment remain open.
+- Last successful commit: `e1da67ac933f522562d9abaf8a85a817ce7349d1` (baseline checkpoint).
+- Last verified remote: `e1da67ac933f522562d9abaf8a85a817ce7349d1`, `origin/main`, and the baseline tag verified 2026-09-09 by ls-remote.
+- Exact next action: checkpoint this evidence/literature foundation, verify the push, then implement and fetch official DR25 INJ1 recovery and target-star products.
 
 ## Execution contract
 
