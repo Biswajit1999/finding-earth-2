@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **2 — official DR25 experiment integrated; per-target calibration next**; v2 is not complete.
+- Current phase: **2 — official DR25 experiment and pinned KeplerPORTs reference integrated; survey calibration next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,7 +9,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 209 passed; Ruff lint, mypy (51 source files), and six v1 release invariants pass. Eleven DR25 contract tests cover the delivered recovery-code discrepancy.
+- Tests: 210 passed; Ruff lint, mypy, and six v1 release invariants pass. DR25 contracts cover the delivered recovery-code discrepancy and KeplerPORTs input integrity.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
@@ -17,8 +17,9 @@
   calibrated habitability probability exists.
 - Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence graph, 89,073 indexed records and deterministic examples; primary selection-method audit. Broader literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
-- Last successful and remotely verified commit before this checkpoint: `57a5fbfdb7e8c83dcecfa780332acac2473996ce` (recovery-code audit). Resolve this document's containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
-- Exact next action: acquire only the bounded KeplerPORTs coefficient/reference products, reproduce its documented Sun-like contour and edge cases, then implement the population calibration. No real intrinsic inference yet.
+- Last successful and remotely verified commit before this checkpoint: `165ddba3ca7b38b72204019a0ffd003ec9633628` (calibration boundary audit). Resolve this document's containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
+- KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
+- Exact next action: validate edge cases and develop a survey-wide calibration that does not require the 670 GB per-target archive, with synthetic recovery before population inference. No real intrinsic inference yet.
 
 ## Execution contract
 

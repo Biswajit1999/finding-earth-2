@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "repository": "https://github.com/nasa/KeplerPORTs",
+  "commit": "6770bc14516592f4e502a20d5c67e61d361c050f",
+  "retrieved_at_utc": "2026-09-09T23:59:00+00:00",
+  "purpose": "Reproduce the official DR25 per-target reference example for KIC 3429335",
+  "files": {
+    "KeplerPORTs.py": "bed4265c7633b9be90b3f606b73c26f9463efb013ef2cd1ee879742d307983c8",
+    "detectEffData_alpha_base_02272017.txt": "1246a3fa3db6937cec1affa5190d6646715a751bbcc2900bf91f3771f4e09e37",
+    "detectEffData_alpha12_02272017.h5": "dc700316ff2088f0b1d0b6c93c60b4f7247c275529bc15c222d9f2470ab7ce37",
+    "detectEffData_alpha12_SlopeLongShort_02272017.txt": "b0e8d39d967b80cead6f0bfc6d3381bd212c0c64736354913f1dde2e8c8951fd",
+    "kplr003429335_dr25_onesigdepth.fits": "89bc38abb2160afcac56606df0088847dd4fd48e9e442745cb645ae2f89a6261",
+    "kplr003429335_dr25_window.fits": "7e12165a5eccd7ef803c11392dc2f78581e072c646dce0b8a4d0efe5fcaeea15"
+  },
+  "acknowledgement": "NASA and the SETI Institute Kepler Planet Occurrence Rate Tools team",
+  "licence": "NASA Open Source Agreement supplied in the upstream repository; upstream files are not redistributed here",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

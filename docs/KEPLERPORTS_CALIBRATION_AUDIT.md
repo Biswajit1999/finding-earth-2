@@ -15,6 +15,12 @@ mass and an eccentricity argument. The reference's defaults and tabulated
 coefficients are release-specific; they must not be replaced by a generic MES
 logistic curve.
 
+The upstream code draws 10,000 beta variates to smear MES and does not set a
+random seed. The reproduction wrapper pins NumPy's legacy RNG to 21037 before
+the call and records both the seed and draw count. This makes the regression
+grid repeatable while preserving the upstream calculation; it does not remove
+Monte Carlo error from the underlying reference method.
+
 The implementation requires five auxiliary products that are not part of the
 small INJ1 tables: the per-target DR25 one-sigma depth and window FITS files,
 the MES-smearing/detection-efficiency HDF5 table, and the long/short slope

@@ -74,3 +74,16 @@
   per-target selection function is used.
 - The empirical INJ1 output remains explicitly SIMULATED. No inverse-detection
   weights or intrinsic occurrence estimate were added.
+
+## Phase 2 pinned KeplerPORTs reference — 2026-09-09
+
+- Pinned the official NASA KeplerPORTs repository at commit
+  6770bc14516592f4e502a20d5c67e61d361c050f and hash-gated the six code,
+  coefficient and KIC 3429335 example products required by the reference run.
+- Added a wrapper that executes external upstream code only after integrity
+  checks. Upstream files are not redistributed by this project.
+- Found that upstream MES smearing draws 10,000 beta variates without a seed;
+  pinned and recorded seed 21037. Two consecutive artifacts matched SHA-256
+  4ccfa7ffbaa630ffa48b5213dc7b394b1b6bad11802217d291f76f53b3b98b74.
+- Export is labelled MODEL-INFERRED and explicitly limited to a reference-code
+  regression grid, not a survey population estimate.
