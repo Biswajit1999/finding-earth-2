@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "product": "vetting",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "INJ1",
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_tces.txt",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_tces.txt",
+  "query": "Official DR25 INJ1 recovered-injection Robovetter table; all rows",
+  "retrieved_at_utc": "2026-09-09T22:45:31.855781+00:00",
+  "row_count": 45377,
+  "sha256": "e0d6d05b36a4180c7bc1b69d6d1a1feab95b02f26ed66d6fe89b8aa631e63e3f",
+  "bytes": 10077066,
+  "software_commit": "57a5fbfdb7e8c83dcecfa780332acac2473996ce",
+  "adapter_sha256": "bfe2a33039e0357fdbfc8eb59311974b4ff9dae9b37465afd4c296dee1509d4c",
+  "raw_path": "data/raw/kepler_dr25/vetting.txt",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

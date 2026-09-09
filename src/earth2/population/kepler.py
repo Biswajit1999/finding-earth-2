@@ -211,6 +211,8 @@ def empirical_grid(joined: pd.DataFrame, radius_edges, period_edges) -> pd.DataF
     vetted = joined["vetted_pc"].to_numpy(bool) & valid
     k = np.histogram2d(xy[recovered, 0], xy[recovered, 1], bins=[re_, pe])[0]
     v = np.histogram2d(xy[vetted, 0], xy[vetted, 1], bins=[re_, pe])[0]
+    code2 = joined["recovery_code_2"].to_numpy(bool) & valid
+    aliases = np.histogram2d(xy[code2, 0], xy[code2, 1], bins=[re_, pe])[0]
     pipeline = binomial_efficiency(k, n)
     overall = binomial_efficiency(v, n)
     conditional = binomial_efficiency(v, k)
@@ -225,6 +227,7 @@ def empirical_grid(joined: pd.DataFrame, radius_edges, period_edges) -> pd.DataF
                 "n_injected": int(n[i, j]),
                 "n_recovered": int(k[i, j]),
                 "n_vetted_pc": int(v[i, j]),
+                "n_recovery_code_2": int(aliases[i, j]),
                 "label": "SIMULATED",
             }
             for name, result in (

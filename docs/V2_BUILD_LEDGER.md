@@ -49,3 +49,20 @@
 - First injection validation stopped on 586 undocumented-in-header code-2
   recoveries. Inspected the payload and primary ephemeris-match definition;
   now preserve and separately count code 2, requiring a matching official TCE.
+
+## Phase 2 official data and diagnostics checkpoint — 2026-09-09
+
+- Recovery audit checkpoint 57a5fbfdb7e8c83dcecfa780332acac2473996ce pushed and verified.
+- Validated 200,038 stellar rows, 146,294 INJ1 injections and 45,377 INJ1
+  recovered TCEs. Every injection joins a star; every positive recovery joins
+  a target-consistent official vetting row. 38,668 pass vetting overall.
+- Diagnostic cut selects 114,105 stars, 84,556 injections, 30,012 recoveries
+  (359 code-2), and 26,219 vetted PCs. 29,549 selected archive stars lack an
+  INJ1 trial; they must not be silently removed from an occurrence denominator.
+- Generated count/interval CSV, source-linked JSON and inspected PNG/SVG plots.
+  Eleven of 90 grid cells have no trials; these remain undefined, shown grey.
+- All 209 tests pass; lint, mypy and original release invariants pass.
+  Website inputs unchanged. Raw bytes remain ignored; three manifests retain
+  their original retrieval dates and hash checks.
+- Next: reproduce the pinned KeplerPORTs per-target model reference, validate
+  domain restrictions and then build survey-wide selection. No eta-Earth claim.

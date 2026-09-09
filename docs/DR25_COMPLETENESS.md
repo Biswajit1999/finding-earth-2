@@ -90,3 +90,16 @@ is an explicit inference from the delivered products, not a claim that the
 header documents code 2 or that those periods are correct. Population inference
 must model period misidentification or demonstrate insensitivity to excluding
 these records. The additional regression test covers this real archive case.
+
+## Retrieved experiment snapshot
+
+The committed [summary](../results/population/dr25_summary.json) and
+[cell data](../results/population/dr25_injection_grid.csv) are generated from
+the three hash-verified source manifests. All 146,294 injections have a stellar
+match. The diagnostic sample has 114,105 archive stars and 84,556 injection
+trials, of which 30,012 are recovered and 26,219 pass vetting. The displayed
+radius/period domain contains 84,445 trials; 111 selected trials fall outside
+it. Eleven of 90 cells have no trials. These are sample-design facts, not
+astronomical planet counts or an intrinsic rarity statement.
+
+![DR25 injection response, counts and uncertainty](../results/population/dr25_injection_diagnostics.png)

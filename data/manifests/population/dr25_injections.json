@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "product": "injections",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "INJ1",
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_plti.txt",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inj1_plti.txt",
+  "query": "Official DR25 INJ1 on-target planet injection table; all rows",
+  "retrieved_at_utc": "2026-09-09T22:45:25.006774+00:00",
+  "row_count": 146294,
+  "sha256": "6b9f2d8b597902aa4037b4a05d4dfd255f281f8f25f6b970e5a88fc8f0652979",
+  "bytes": 47257124,
+  "software_commit": "57a5fbfdb7e8c83dcecfa780332acac2473996ce",
+  "adapter_sha256": "bfe2a33039e0357fdbfc8eb59311974b4ff9dae9b37465afd4c296dee1509d4c",
+  "raw_path": "data/raw/kepler_dr25/injections.txt",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

@@ -10,6 +10,7 @@ from pathlib import Path
 import numpy as np
 
 from earth2.population.archive import fetch_product
+from earth2.population.diagnostics import plot_injection_grid
 from earth2.population.kepler import StellarSelection, empirical_grid, join_injections
 
 
@@ -33,6 +34,7 @@ def main() -> None:
     output = root / "results" / "population"
     output.mkdir(parents=True, exist_ok=True)
     grid.to_csv(output / "dr25_injection_grid.csv", index=False, float_format="%.10g")
+    plot_injection_grid(grid, output / "dr25_injection_diagnostics")
     summary = {
         "label": "SIMULATED",
         "scope": "Official DR25 artificial-signal experiment; selected stellar subset",

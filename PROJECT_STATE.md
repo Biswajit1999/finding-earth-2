@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **2 — DR25 source adapter and completeness contracts**; v2 is not complete.
+- Current phase: **2 — official DR25 experiment integrated; per-target calibration next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,16 +9,16 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 208 passed (baseline plus evidence and DR25 contract tests); Ruff lint and mypy checked at each checkpoint.
+- Tests: 209 passed; Ruff lint, mypy (51 source files), and six v1 release invariants pass. Eleven DR25 contract tests cover the delivered recovery-code discrepancy.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). No intrinsic-population result or
   calibrated habitability probability exists.
 - Completed v2 milestones: Phase 0 audit/tag/remote checkpoint; additive evidence graph, 89,073 indexed records and deterministic examples; primary selection-method audit. Broader literature and complete per-publication evidence enrichment remain open.
-- Last successful commit before this checkpoint: `8a07cbfe822f767de7e0ac9c59adef2ed0c8ece6` (evidence and literature).
-- Last verified remote before this checkpoint: `8a07cbfe822f767de7e0ac9c59adef2ed0c8ece6`, `origin/main`; baseline tag also verified. Resolve this document's containing commit with `git log -1 -- PROJECT_STATE.md`.
-- Exact next action: push and verify the DR25 adapter checkpoint, then retrieve the three bounded official products, inspect experiment joins and export diagnostics. Per-target calibration and occurrence inference remain open.
+- DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
+- Last successful and remotely verified commit before this checkpoint: `57a5fbfdb7e8c83dcecfa780332acac2473996ce` (recovery-code audit). Resolve this document's containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
+- Exact next action: preserve the validated input/diagnostic checkpoint, then reproduce the pinned NASA KeplerPORTs per-target reference calculation, audit its domains, and implement the population calibration. No real intrinsic inference yet.
 
 ## Execution contract
 
