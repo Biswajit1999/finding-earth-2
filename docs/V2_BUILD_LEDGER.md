@@ -155,3 +155,31 @@
 - Candidate reliability is assigned to 87 of 89 eligible KOIs. Two above MES
   30 are withheld; all 11 published-box candidates are covered. Total
   reliability is explicitly conditional on the fixed delivered FPP value.
+
+## Phase 4 survey-wide selection surface — 2026-09-10
+
+- Built a target-specific signal model from circular transit duration, delivered
+  DR25 duty cycle and dataspan, duration-scaled six-hour CDPP, original stellar
+  parameters and an INJ1 calibration to official expected MES.
+- Constrained both response models to be nondecreasing with MES and the pipeline
+  response to be nondecreasing with observing-window probability. The pipeline
+  term already includes its window, while conditional vetting and transit
+  geometry remain separately inspectable. Reliability is never a detection
+  multiplier.
+- All five SHA-256 target folds pass. Held-out MES log-RMSE is 0.1526–0.1562;
+  pipeline Brier score is 0.0820–0.0838 versus 0.1916–0.1988 for fold-matched
+  constant baselines. Every conditional-vetting and combined-probability fold
+  also improves both Brier score and log loss.
+- Evaluated 357 period-radius cells after integrating five impact-parameter
+  nodes for all 114,105 selected stars. This includes 29,549 selected targets
+  with no INJ1 trial. Every probability is finite and bounded, total selection
+  never exceeds geometry, effective-star exposure factorizes exactly and the
+  result is nondecreasing with planet radius.
+- The shared 25-cell comparison for pinned KeplerPORTs target KIC 3429335 has
+  mean absolute pipeline difference 0.02261 and maximum difference 0.1818,
+  within declared regression tolerances. Four alternative regularization fits
+  change combined injection probabilities by at most 0.00251.
+- Released model, validation, surface, reference-cell comparison, PNG/SVG and a
+  SHA-256 product manifest. This completes the selection gate; no occurrence
+  rate is claimed before the hierarchical likelihood and joint uncertainty
+  propagation pass.

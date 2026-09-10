@@ -1,7 +1,8 @@
 # Kepler DR25 completeness integration
 
-Status: source adapter and experiment diagnostics, not a released occurrence
-model. The additive `earth2.population` package leaves v1 products untouched.
+Status: source adapter, experiment diagnostics and a validated survey-wide
+selection surface; no occurrence rate is released. The additive
+`earth2.population` package leaves v1 products untouched.
 
 False-alarm experiments, astrophysical false-positive probabilities and the
 fixed candidate denominator are documented separately in
@@ -65,22 +66,28 @@ is a purity problem and is deliberately absent from the detection multiplier.
 Calibration contracts prevent silent transfers between survey releases, stellar
 samples or impact-parameter conventions.
 
-## Gates still open
+## Survey-wide model and remaining gate
 
-An empirical grid averages over the injection proposal, which depends on the
-target properties and expected signal strength. It is not automatically the
-selection averaged over a proposed intrinsic population. Before a real
-occurrence result can be reported, implement and validate the per-target model
-or an appropriate injection-proposal correction; establish the searched-target
-denominator; incorporate false alarms separately from astrophysical false
-positives; propagate stellar and planet measurement uncertainty; validate
-synthetic recovery and compare identical population domains with published work.
-The 198,640 searched light curves cited by the experiment documentation must not
-be silently substituted with all rows in an archive stellar table.
+The empirical count grid averages over the injection proposal and remains a
+diagnostic. The released [survey-wide selection surface](DR25_SELECTION_SURFACE.md)
+instead calibrates expected MES and recovery on held-out targets, integrates
+impact parameter and evaluates every one of the fixed 114,105 selected stellar
+rows. It passes all five target-level cross-validation folds, physical
+factorization checks and the pinned KIC 3429335 KeplerPORTs regression.
+
+This completes the selection-function gate, not the occurrence analysis. A real
+intrinsic population result must combine this exposure with the separately
+validated candidate reliability model, propagate measurement and model
+uncertainty, test period-alias treatment and compare identical estimands with
+published work. The 198,640 searched light curves cited by the experiment
+documentation are not silently substituted for this project's explicitly
+selected archive-star denominator.
 
 Tests cover Earth/Sun geometry, eccentric orientation, window double-counting,
 survey mismatch, finite binomial intervals, schema drift, TCE/KIC joins, missing
-hosts, original-radius convention, cache corruption and timestamp preservation.
+hosts, original-radius convention, cache corruption, timestamp preservation,
+phase-averaged windows, MES scaling, target-isolated folds and survey-surface
+factorization.
 
 ## Delivered recovery-code discrepancy
 
@@ -106,5 +113,9 @@ trials, of which 30,012 are recovered and 26,219 pass vetting. The displayed
 radius/period domain contains 84,445 trials; 111 selected trials fall outside
 it. Eleven of 90 cells have no trials. These are sample-design facts, not
 astronomical planet counts or an intrinsic rarity statement.
+
+The narrower inference domain contains 43,350 injections. Its fitted surface
+uses all 114,105 selected stars, including the 29,549 with no INJ1 trial, and is
+stored with complete validation and source hashes under `results/population/`.
 
 ![DR25 injection response, counts and uncertainty](../results/population/dr25_injection_diagnostics.png)

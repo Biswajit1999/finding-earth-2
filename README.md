@@ -33,10 +33,13 @@
 > 114,105-star search denominator, 89-candidate inference population, all four
 > false-alarm experiments, observed TCEs, known-signal exclusions and
 > astrophysical FPP data. It deliberately publishes no intrinsic occurrence
-> value until the per-target selection model and hierarchical likelihood pass
-> their gates. The constrained reliability model now passes real holdouts and
-> synthetic recovery, assigning 87 candidates and withholding two outside its
-> MES domain. See [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md).
+> value until the hierarchical likelihood passes its gate. The constrained
+> reliability model assigns 87 candidates and withholds two outside its MES
+> domain. The survey-wide selection model evaluates all 114,105 stars and passes
+> five target-isolated injection folds, physical invariants and a pinned
+> KeplerPORTs regression. See
+> [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) and
+> [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md).
 
 ---
 
@@ -359,6 +362,8 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/METHODS.md`](docs/METHODS.md) | Every equation, with citations and assumptions |
 | [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) | Archives, tables, licensing, acknowledgements |
 | [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) | What this analysis cannot establish |
+| [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md) | Survey-wide detection model, validation and products |
+| [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) | False-alarm and astrophysical reliability contract |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |

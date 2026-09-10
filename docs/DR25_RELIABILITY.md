@@ -207,11 +207,14 @@ Run:
 ```powershell
 python.exe scripts/build_population_foundation.py --root .
 python.exe scripts/fit_reliability_model.py --root .
+python.exe scripts/build_selection_surface.py --root .
 ```
 
 The commands verify all eleven raw products against their manifests and emit
 the analysis population, cell table, smooth model, validation, candidate
 reliabilities, figures, comparison registry and summaries under
-`results/population/`. The next gate is the survey-wide per-target selection
-function. Only after that joins this reliability model may the hierarchical
-period–radius likelihood produce a real occurrence posterior.
+`results/population/`. The separately validated
+[survey-wide selection surface](DR25_SELECTION_SURFACE.md) is now complete.
+The remaining gate is the hierarchical period–radius likelihood, which must
+join selection and reliability without treating either as the other and must
+propagate their uncertainty before releasing an intrinsic posterior.

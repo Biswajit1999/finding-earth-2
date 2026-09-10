@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0",
+  "target_level_cross_validation": {
+    "method": "Five mutually exclusive SHA-256(KIC_ID) folds; every injection around one target stays in one fold",
+    "folds": [
+      {
+        "split": "SHA-256(KIC_ID) modulo 5 equals 0; target-level holdout",
+        "fold": 0,
+        "folds": 5,
+        "domain_rows": 43350,
+        "training_rows": 34630,
+        "holdout_rows": 8720,
+        "metrics": {
+          "mes": {
+            "rows": 8716,
+            "log_rmse": 0.15256143012181023,
+            "log_bias": 0.0013534301056542305,
+            "fraction_within_25_percent": 0.911312528682882
+          },
+          "pipeline_including_window": {
+            "rows": 8720,
+            "observed_fraction": 0.25814220183486236,
+            "predicted_fraction": 0.2669712108808771,
+            "brier": 0.08235236166408925,
+            "log_loss": 0.265337712384941
+          },
+          "vetting_given_recovered": {
+            "rows": 2251,
+            "observed_fraction": 0.8849400266548201,
+            "predicted_fraction": 0.8863622078069561,
+            "brier": 0.09413001161461061,
+            "log_loss": 0.3223876215932315
+          },
+          "pipeline_and_vetting": {
+            "rows": 8720,
+            "observed_fraction": 0.22844036697247708,
+            "predicted_fraction": 0.2360089253238189,
+            "brier": 0.08007884181279383,
+            "log_loss": 0.25404434970163114
+          }
+        },
+        "constant_training_fraction_baselines": {
+          "pipeline_including_window": {
+            "rows": 8720,
+            "observed_fraction": 0.25814220183486236,
+            "predicted_fraction": 0.2700837424198671,
+            "brier": 0.19164740585825488,
+            "log_loss": 0.5714698617328359
+          },
+          "vetting_given_recovered": {
+            "rows": 2251,
+            "observed_fraction": 0.8849400266548201,
+            "predicted_fraction": 0.88452902811932,
+            "brier": 0.10182134479878259,
+            "log_loss": 0.35696621343700535
+          },
+          "pipeline_and_vetting": {
+            "rows": 8720,
+            "observed_fraction": 0.22844036697247708,
+            "predicted_fraction": 0.2388969101934739,
+            "brier": 0.17636470500608967,
+            "log_loss": 0.5376886996936716
+          }
+        },
+        "thresholds": {
+          "mes_log_rmse_below": 0.2,
+          "absolute_mes_log_bias_below": 0.02,
+          "all_probability_brier_and_log_losses_improve_over_constant_baseline": true
+        },
+        "passed": true
+      },
+      {
+        "split": "SHA-256(KIC_ID) modulo 5 equals 1; target-level holdout",
+        "fold": 1,
+        "folds": 5,
+        "domain_rows": 43350,
+        "training_rows": 34650,
+        "holdout_rows": 8700,
+        "metrics": {
+          "mes": {
+            "rows": 8697,
+            "log_rmse": 0.15619190626078108,
+            "log_bias": 0.0008458653150753573,
+            "fraction_within_25_percent": 0.9158330458778889
+          },
+          "pipeline_including_window": {
+            "rows": 8700,
+            "observed_fraction": 0.2736781609195402,
+            "predicted_fraction": 0.2697474105164263,
+            "brier": 0.08227715347845486,
+            "log_loss": 0.2659338150618061
+          },
+          "vetting_given_recovered": {
+            "rows": 2381,
+            "observed_fraction": 0.8853422931541369,
+            "predicted_fraction": 0.8838335606326041,
+            "brier": 0.09525465458351973,
+            "log_loss": 0.3318348731161933
+          },
+          "pipeline_and_vetting": {
+            "rows": 8700,
+            "observed_fraction": 0.24229885057471265,
+            "predicted_fraction": 0.2385605922214893,
+            "brier": 0.08303612172765396,
+            "log_loss": 0.2623071820535962
+          }
+        },
+        "constant_training_fraction_baselines": {
+          "pipeline_including_window": {
+            "rows": 8700,
+            "observed_fraction": 0.2736781609195402,
+            "predicted_fraction": 0.26617604617604623,
+            "brier": 0.19883470688086305,
+            "log_loss": 0.5870262224593109
+          },
+          "vetting_given_recovered": {
+            "rows": 2381,
+            "observed_fraction": 0.8853422931541369,
+            "predicted_fraction": 0.8844193863168165,
+            "brier": 0.10151216886374158,
+            "log_loss": 0.35614811577340716
+          },
+          "pipeline_and_vetting": {
+            "rows": 8700,
+            "observed_fraction": 0.24229885057471265,
+            "predicted_fraction": 0.23541125541125532,
+            "brier": 0.18363755655202144,
+            "log_loss": 0.5538462161476877
+          }
+        },
+        "thresholds": {
+          "mes_log_rmse_below": 0.2,
+          "absolute_mes_log_bias_below": 0.02,
+          "all_probability_brier_and_log_losses_improve_over_constant_baseline": true
+        },
+        "passed": true
+      },
+      {
+        "split": "SHA-256(KIC_ID) modulo 5 equals 2; target-level holdout",
+        "fold": 2,
+        "folds": 5,
+        "domain_rows": 43350,
+        "training_rows": 34665,
+        "holdout_rows": 8685,
+        "metrics": {
+          "mes": {
+            "rows": 8685,
+            "log_rmse": 0.1557455783084256,
+            "log_bias": 0.0003288187274357457,
+            "fraction_within_25_percent": 0.9070811744386874
+          },
+          "pipeline_including_window": {
+            "rows": 8685,
+            "observed_fraction": 0.2641335636154289,
+            "predicted_fraction": 0.26760665262159716,
+            "brier": 0.08211628175026515,
+            "log_loss": 0.2639931859842557
+          },
+          "vetting_given_recovered": {
+            "rows": 2294,
+            "observed_fraction": 0.8801220575414124,
+            "predicted_fraction": 0.8857525790496364,
+            "brier": 0.09833566590660645,
+            "log_loss": 0.33510013170131725
+          },
+          "pipeline_and_vetting": {
+            "rows": 8685,
+            "observed_fraction": 0.2324697754749568,
+            "predicted_fraction": 0.23721975248984892,
+            "brier": 0.07961066254174828,
+            "log_loss": 0.25348637332335333
+          }
+        },
+        "constant_training_fraction_baselines": {
+          "pipeline_including_window": {
+            "rows": 8685,
+            "observed_fraction": 0.2641335636154289,
+            "predicted_fraction": 0.2685706043559786,
+            "brier": 0.19438671151777642,
+            "log_loss": 0.5773865292793847
+          },
+          "vetting_given_recovered": {
+            "rows": 2294,
+            "observed_fraction": 0.8801220575414124,
+            "predicted_fraction": 0.885714285714286,
+            "brier": 0.10553849438642067,
+            "log_loss": 0.3668340618540693
+          },
+          "pipeline_and_vetting": {
+            "rows": 8685,
+            "observed_fraction": 0.2324697754749568,
+            "predicted_fraction": 0.23787682100100968,
+            "brier": 0.1784568151069008,
+            "log_loss": 0.5423244792970884
+          }
+        },
+        "thresholds": {
+          "mes_log_rmse_below": 0.2,
+          "absolute_mes_log_bias_below": 0.02,
+          "all_probability_brier_and_log_losses_improve_over_constant_baseline": true
+        },
+        "passed": true
+      },
+      {
+        "split": "SHA-256(KIC_ID) modulo 5 equals 3; target-level holdout",
+        "fold": 3,
+        "folds": 5,
+        "domain_rows": 43350,
+        "training_rows": 34699,
+        "holdout_rows": 8651,
+        "metrics": {
+          "mes": {
+            "rows": 8650,
+            "log_rmse": 0.15324112281593516,
+            "log_bias": -0.0014434565089135128,
+            "fraction_within_25_percent": 0.9160693641618497
+          },
+          "pipeline_including_window": {
+            "rows": 8651,
+            "observed_fraction": 0.2697953993757947,
+            "predicted_fraction": 0.2653680653084766,
+            "brier": 0.08376436619413564,
+            "log_loss": 0.2701233638897483
+          },
+          "vetting_given_recovered": {
+            "rows": 2334,
+            "observed_fraction": 0.8830334190231363,
+            "predicted_fraction": 0.8831972530029041,
+            "brier": 0.0955685850020124,
+            "log_loss": 0.3268096245074383
+          },
+          "pipeline_and_vetting": {
+            "rows": 8651,
+            "observed_fraction": 0.23823835394752052,
+            "predicted_fraction": 0.23485470434817932,
+            "brier": 0.08108360679035469,
+            "log_loss": 0.25899296409128897
+          }
+        },
+        "constant_training_fraction_baselines": {
+          "pipeline_including_window": {
+            "rows": 8651,
+            "observed_fraction": 0.2697953993757947,
+            "predicted_fraction": 0.2671546730453328,
+            "brier": 0.19701281528700249,
+            "log_loss": 0.583073005541196
+          },
+          "vetting_given_recovered": {
+            "rows": 2334,
+            "observed_fraction": 0.8830334190231363,
+            "predicted_fraction": 0.8850053937432579,
+            "brier": 0.10328928859574332,
+            "log_loss": 0.3608562370751486
+          },
+          "pipeline_and_vetting": {
+            "rows": 8651,
+            "observed_fraction": 0.23823835394752052,
+            "predicted_fraction": 0.2364333266088359,
+            "brier": 0.1814840987795898,
+            "log_loss": 0.549049801217224
+          }
+        },
+        "thresholds": {
+          "mes_log_rmse_below": 0.2,
+          "absolute_mes_log_bias_below": 0.02,
+          "all_probability_brier_and_log_losses_improve_over_constant_baseline": true
+        },
+        "passed": true
+      },
+      {
+        "split": "SHA-256(KIC_ID) modulo 5 equals 4; target-level holdout",
+        "fold": 4,
+        "folds": 5,
+        "domain_rows": 43350,
+        "training_rows": 34756,
+        "holdout_rows": 8594,
+        "metrics": {
+          "mes": {
+            "rows": 8592,
+            "log_rmse": 0.15435262564521357,
+            "log_bias": -0.0011241163100549653,
+            "fraction_within_25_percent": 0.9106145251396648
+          },
+          "pipeline_including_window": {
+            "rows": 8594,
+            "observed_fraction": 0.27274842913660696,
+            "predicted_fraction": 0.26863798001964556,
+            "brier": 0.08202970313354659,
+            "log_loss": 0.26477349039915227
+          },
+          "vetting_given_recovered": {
+            "rows": 2344,
+            "observed_fraction": 0.889505119453925,
+            "predicted_fraction": 0.8838040295717332,
+            "brier": 0.0921420654473207,
+            "log_loss": 0.319238966608875
+          },
+          "pipeline_and_vetting": {
+            "rows": 8594,
+            "observed_fraction": 0.24261112404002794,
+            "predicted_fraction": 0.23777619830404492,
+            "brier": 0.08145732935598811,
+            "log_loss": 0.2594210903020164
+          }
+        },
+        "constant_training_fraction_baselines": {
+          "pipeline_including_window": {
+            "rows": 8594,
+            "observed_fraction": 0.27274842913660696,
+            "predicted_fraction": 0.2664288180458051,
+            "brier": 0.19839666102445924,
+            "log_loss": 0.5860750317505773
+          },
+          "vetting_given_recovered": {
+            "rows": 2344,
+            "observed_fraction": 0.889505119453925,
+            "predicted_fraction": 0.8833693304535636,
+            "brier": 0.0983234098258406,
+            "log_loss": 0.3477343201231843
+          },
+          "pipeline_and_vetting": {
+            "rows": 8594,
+            "observed_fraction": 0.24261112404002794,
+            "predicted_fraction": 0.23535504661065718,
+            "brier": 0.18380361719172314,
+            "log_loss": 0.5542163329322191
+          }
+        },
+        "thresholds": {
+          "mes_log_rmse_below": 0.2,
+          "absolute_mes_log_bias_below": 0.02,
+          "all_probability_brier_and_log_losses_improve_over_constant_baseline": true
+        },
+        "passed": true
+      }
+    ],
+    "passed": true
+  },
+  "physical_invariants": {
+    "all_probabilities_finite_and_bounded": true,
+    "total_selection_does_not_exceed_geometry_and_exposure_factorizes": true,
+    "every_surface_cell_uses_all_selected_targets": true,
+    "total_selection_nondecreasing_with_planet_radius": true,
+    "minimum_adjacent_radius_step": 1.2772339694952631e-08,
+    "passed": true
+  },
+  "pinned_keplerports_comparison": {
+    "target_kic": 3429335,
+    "upstream_commit": "6770bc14516592f4e502a20d5c67e61d361c050f",
+    "grid_cells_in_shared_domain": 25,
+    "mean_absolute_error": 0.022605452278782936,
+    "root_mean_squared_error": 0.048631523335647395,
+    "maximum_absolute_error": 0.181781470569656,
+    "thresholds": {
+      "mean_absolute_error_at_most": 0.05,
+      "maximum_absolute_error_at_most": 0.2
+    },
+    "role": "Independent implementation regression for one target; the held-out INJ1 experiment remains the primary validation",
+    "passed": true
+  },
+  "regularization_sensitivity": [
+    {
+      "scenario": "weaker_mes_ridge",
+      "mes_ridge_penalty": 0.0001,
+      "detection_l2_penalty": 0.1,
+      "absolute_probability_difference": {
+        "pipeline_including_window": {
+          "mean": 7.557319823634476e-08,
+          "median": 2.5384679630882645e-08,
+          "p95": 3.0977761072692433e-07,
+          "maximum": 1.353225287603621e-06
+        },
+        "vetting_given_recovered": {
+          "mean": 5.2919949117466754e-08,
+          "median": 3.7489529924883414e-08,
+          "p95": 1.5569663012748852e-07,
+          "maximum": 5.09739128684572e-07
+        },
+        "pipeline_and_vetting": {
+          "mean": 7.013986130704407e-08,
+          "median": 2.1898632598243983e-08,
+          "p95": 2.9135428569332363e-07,
+          "maximum": 1.304876306562619e-06
+        }
+      }
+    },
+    {
+      "scenario": "stronger_mes_ridge",
+      "mes_ridge_penalty": 0.01,
+      "detection_l2_penalty": 0.1,
+      "absolute_probability_difference": {
+        "pipeline_including_window": {
+          "mean": 7.555286119497387e-07,
+          "median": 2.537728709586101e-07,
+          "p95": 3.097183634222232e-06,
+          "maximum": 1.3528591163214365e-05
+        },
+        "vetting_given_recovered": {
+          "mean": 5.290578382254594e-07,
+          "median": 3.747975278467486e-07,
+          "p95": 1.5565861032684744e-06,
+          "maximum": 5.096158371631354e-06
+        },
+        "pipeline_and_vetting": {
+          "mean": 7.012101067772699e-07,
+          "median": 2.1893008160522864e-07,
+          "p95": 2.9126151222705325e-06,
+          "maximum": 1.30452533049219e-05
+        }
+      }
+    },
+    {
+      "scenario": "weaker_detection_l2",
+      "mes_ridge_penalty": 0.001,
+      "detection_l2_penalty": 0.03,
+      "absolute_probability_difference": {
+        "pipeline_including_window": {
+          "mean": 4.304504592497227e-05,
+          "median": 3.8020579150553624e-05,
+          "p95": 0.00011354787627884109,
+          "maximum": 0.00012927396470718833
+        },
+        "vetting_given_recovered": {
+          "mean": 0.00027008132957836696,
+          "median": 0.00021725263922733884,
+          "p95": 0.0006427200935524928,
+          "maximum": 0.0009435251520514831
+        },
+        "pipeline_and_vetting": {
+          "mean": 4.9437218634058585e-05,
+          "median": 4.065463330128749e-05,
+          "p95": 0.00014581891608692052,
+          "maximum": 0.0001986502228672471
+        }
+      }
+    },
+    {
+      "scenario": "stronger_detection_l2",
+      "mes_ridge_penalty": 0.001,
+      "detection_l2_penalty": 1.0,
+      "absolute_probability_difference": {
+        "pipeline_including_window": {
+          "mean": 0.0005492398125800074,
+          "median": 0.00048582340213126907,
+          "p95": 0.0014481261851976954,
+          "maximum": 0.001647797065496337
+        },
+        "vetting_given_recovered": {
+          "mean": 0.0034213541451999186,
+          "median": 0.002738445349210139,
+          "p95": 0.008154965427871664,
+          "maximum": 0.011945155672588526
+        },
+        "pipeline_and_vetting": {
+          "mean": 0.0006292579651390297,
+          "median": 0.0005179312651207267,
+          "p95": 0.0018524736168862956,
+          "maximum": 0.002505674041300532
+        }
+      }
+    }
+  ],
+  "release_gate": "Every target-level fold must pass MES calibration and beat constant-rate probability baselines; all surface invariants must hold; the independent KIC 3429335 reference comparison must remain within declared tolerances.",
+  "passed": true
+}

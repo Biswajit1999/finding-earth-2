@@ -90,11 +90,14 @@ The DR25 upgrade has a fixed 114,105-star denominator, a pinned 89-candidate
 analysis population, injection diagnostics, synthetic recovery and a
 finite-cell false-alarm diagnostic. Its constrained smooth false-alarm model
 passes held-out and generating-family checks for 87 candidates; two high-MES
-candidates remain outside the calibration domain. It does not yet have a
-survey-wide per-target detection surface. Therefore it does not report eta
-Earth, an intrinsic period–radius rate or a corrected rarity. Raw catalogue
-fractions and the 11 objects in the published-comparison box must not be
-interpreted as planets per star.
+candidates remain outside the calibration domain. A survey-wide selection
+surface now evaluates every selected star and passes five target-isolated
+injection folds, physical invariants and a pinned KeplerPORTs regression. The
+hierarchical period–radius likelihood and its joint uncertainty propagation are
+still open. Therefore the project does not yet report eta Earth, an intrinsic
+period–radius rate or a corrected rarity. Raw catalogue fractions and the 11
+objects in the published-comparison box must not be interpreted as planets per
+star.
 
 The finite reliability grid exposes sparse cells and raw equation results
 outside `[0,1]` instead of clipping them into plausible-looking probabilities.
@@ -103,6 +106,15 @@ Laplace coefficient intervals conditional on a declared experiment weighting.
 Those intervals omit model-family uncertainty and the external FPP model's own
 parameter uncertainty. The Robovetter score remains visible but is explicitly
 not used as candidate reliability.
+
+The released selection CSV is likewise a point surface. Its fitted coefficient
+covariances and regularization sensitivity are exported, but neither is yet a
+complete uncertainty budget. The empirical model approximates the full
+target-specific KeplerPORTs contours to avoid an unreviewable roughly 670 GB
+download; its independent one-target regression is a guardrail, not proof of
+identity. Stellar-parameter uncertainty, injection-model family uncertainty and
+the 138 in-domain period-alias recoveries must be carried into the occurrence
+analysis rather than silently absorbed into a point correction.
 
 ## Coverage gaps not integrated in this release
 

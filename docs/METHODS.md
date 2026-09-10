@@ -243,3 +243,25 @@ generating-family recovery gates. Reliability is assigned to 87 candidates;
 two above the MES calibration ceiling are withheld. Full definitions, source
 quirks, sensitivity checks and diagnostics are in
 [DR25_RELIABILITY.md](DR25_RELIABILITY.md).
+
+## 10. DR25 survey-wide selection surface
+
+The population branch evaluates a fixed 50–500 day, 0.5–2 Earth-radius domain
+around every one of 114,105 selected DR25 targets. It computes circular transit
+duration and centre-crossing geometry per star, constructs a duration-adjusted
+six-hour-CDPP MES approximation, calibrates that approximation to the official
+INJ1 `Expected_MES`, and fits separate logistic responses for pipeline recovery
+and Robovetter acceptance conditional on recovery.
+
+The logistic response is quadratic in scaled log-period and linear in log-MES
+and observing-window log-odds. Coefficient bounds make detection and vetting
+nondecreasing with MES and make pipeline recovery nondecreasing with window
+probability. Five-node Gauss–Legendre quadrature marginalizes impact parameter.
+The pipeline response is trained on the delivered recovery flag and already
+includes the observing window, so the window diagnostic is not multiplied a
+second time. Reliability is excluded from selection.
+
+Five target-isolated cross-validation folds, physical surface invariants and a
+pinned KeplerPORTs comparison gate the release. Equations, counts, tolerances,
+results and remaining uncertainty requirements are in
+[DR25_SELECTION_SURFACE.md](DR25_SELECTION_SURFACE.md).

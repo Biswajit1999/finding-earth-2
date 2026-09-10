@@ -18,6 +18,7 @@ Exits non-zero on the first failed invariant.
 
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -69,13 +70,52 @@ def main() -> int:
     else:
         check("is_control column is present", False)
 
-    if "hz_teff_valid_fraction" in ranking.columns and "score_conservative_habitability" in ranking.columns:
+    if (
+        "hz_teff_valid_fraction" in ranking.columns
+        and "score_conservative_habitability" in ranking.columns
+    ):
         low_valid = pd.to_numeric(ranking["hz_teff_valid_fraction"], errors="coerce") < 0.2
-        high_habitability = pd.to_numeric(ranking["score_conservative_habitability"], errors="coerce") > 0.7
+        high_habitability = (
+            pd.to_numeric(ranking["score_conservative_habitability"], errors="coerce") > 0.7
+        )
         check(
             "no candidate with <20% HZ-model-valid draws scores >0.7 conservative habitability",
             not (low_valid & high_habitability).any(),
         )
+
+    population = RESULTS_DIR / "population"
+    selection_validation = json.loads((population / "dr25_selection_validation.json").read_text())
+    selection_surface = pd.read_csv(population / "dr25_selection_surface.csv")
+    check("DR25 selection release gate passed", selection_validation["passed"] is True)
+    check(
+        "every DR25 selection cell uses the fixed 114,105-star denominator",
+        selection_surface["target_stars"].eq(114105).all(),
+    )
+    selection_probabilities = selection_surface[
+        [
+            "mean_transit_geometry",
+            "mean_phase_window",
+            "mean_pipeline_including_window",
+            "mean_vetting_given_recovered",
+            "mean_pipeline_and_vetting",
+            "mean_total_selection",
+        ]
+    ]
+    check(
+        "DR25 selection probabilities are finite and within [0, 1]",
+        selection_probabilities.notna().all().all()
+        and selection_probabilities.ge(0).all().all()
+        and selection_probabilities.le(1).all().all(),
+    )
+    product_manifest = json.loads((population / "dr25_selection_products.json").read_text())
+    product_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in product_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("DR25 selection product hashes match the release manifest", product_hashes_match)
 
     print()
     if FAILURES:

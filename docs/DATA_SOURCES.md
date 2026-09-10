@@ -82,8 +82,11 @@ the upstream Git blob SHA-1. The FPP table contains 178 explicit missing values.
 No missing probability is imputed.
 
 These sources do not enter the v1 confirmed-planet ranking. Their current role
-is the separately labelled and unreleased intrinsic-population analysis in
-[DR25_RELIABILITY.md](DR25_RELIABILITY.md).
+is the separately labelled population analysis. Candidate-purity calibration is
+documented in [DR25_RELIABILITY.md](DR25_RELIABILITY.md); the injection-calibrated
+survey exposure is documented in
+[DR25_SELECTION_SURFACE.md](DR25_SELECTION_SURFACE.md). No intrinsic occurrence
+rate is released at this stage.
 
 ## Gaia Archive (ESA)
 

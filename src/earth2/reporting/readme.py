@@ -82,16 +82,19 @@ def build_readme(summary: dict[str, Any]) -> str:
     for d in summary.get("provenance", {}).get("datasets", []):
         if d.get("status") not in ("ok", "partial"):
             continue
-        ds_rows.append("| `{id}` | {table} | {rows} | {doi} |".format(
-            id=d.get("dataset_id", ""), table="`" + str(d.get("source_table", "")) + "`",
-            rows=_n(d.get("n_rows")), doi=("`" + d["doi"] + "`") if d.get("doi") else "—",
-        ))
+        ds_rows.append(
+            "| `{id}` | {table} | {rows} | {doi} |".format(
+                id=d.get("dataset_id", ""),
+                table="`" + str(d.get("source_table", "")) + "`",
+                rows=_n(d.get("n_rows")),
+                doi=("`" + d["doi"] + "`") if d.get("doi") else "—",
+            )
+        )
     dataset_table = "\n".join(ds_rows)
 
     methods = pop.get("discovery_methods", {})
     method_rows = "\n".join(
-        f"| {m} | {_n(v)} | {_pct(v, n_planets)} |"
-        for m, v in list(methods.items())[:8]
+        f"| {m} | {_n(v)} | {_pct(v, n_planets)} |" for m, v in list(methods.items())[:8]
     )
 
     sync_utc = summary.get("generated_utc", "")
@@ -127,6 +130,18 @@ def build_readme(summary: dict[str, Any]) -> str:
 > flagged and down-weighted rather than silently ranked as confident members
 > — see [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md).
 
+> **Population upgrade in progress.** A separate DR25 analysis now pins the
+> 114,105-star search denominator, 89-candidate inference population, all four
+> false-alarm experiments, observed TCEs, known-signal exclusions and
+> astrophysical FPP data. It deliberately publishes no intrinsic occurrence
+> value until the hierarchical likelihood passes its gate. The constrained
+> reliability model assigns 87 candidates and withholds two outside its MES
+> domain. The survey-wide selection model evaluates all 114,105 stars and passes
+> five target-isolated injection folds, physical invariants and a pinned
+> KeplerPORTs regression. See
+> [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) and
+> [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md).
+
 ---
 
 ## Abstract
@@ -137,10 +152,10 @@ closely satisfy physically motivated conditions associated with an Earth-like
 potentially habitable world, how strong is the evidence behind each, and where
 are the major uncertainties?**
 
-It ingests **{_n(scale.get('total_source_records'))} provenance-tracked source records** from
-{scale.get('n_datasets_retrieved', 0)} archive tables, derives habitable-zone membership from the
+It ingests **{_n(scale.get("total_source_records"))} provenance-tracked source records** from
+{scale.get("n_datasets_retrieved", 0)} archive tables, derives habitable-zone membership from the
 Kopparapu et al. (2013) climate model, computes an Earth Similarity Index,
-propagates every published uncertainty through **{_n(mc.get('n_samples'))} Monte Carlo draws per
+propagates every published uncertainty through **{_n(mc.get("n_samples"))} Monte Carlo draws per
 planet**, and ranks candidates on four interpretable axes that are reported
 separately because they genuinely disagree.
 
@@ -156,21 +171,21 @@ routinely conflated.
 
 | | |
 |---|---|
-| Source records ingested | **{_n(scale.get('total_source_records'))}** |
-| Confirmed planets analysed | **{_n(n_planets)}** across {_n(pop.get('n_unique_host_systems'))} host systems |
-| Planets with a **measured** mass | **{_n(cov.get('n_with_measured_mass'))}** ({_pct(cov.get('n_with_measured_mass'), n_planets)}) |
-| Planets whose mass is **inferred from radius** | {_n(cov.get('n_with_mass_inferred_from_radius'))} ({_pct(cov.get('n_with_mass_inferred_from_radius'), n_planets)}) |
-| In the **conservative** habitable zone | **{_n(hz.get('n_in_conservative_hz_nominal'))}** |
-| In the **optimistic** habitable zone | {_n(hz.get('n_in_optimistic_hz_nominal'))} |
-| Conservative HZ **and** below 1.6 R⊕ | **{_n(hz.get('n_conservative_hz_and_below_1p6_re'))}** |
-| …of which have a **measured mass** | **{_n(hz.get('n_conservative_hz_and_below_1p6_re_with_measured_mass'))}** |
-| Planets with published transmission spectra | {_n(atmo.get('planets_with_transmission_spectra'))} |
-| Measurement-level provenance links | {_n(prov.get('n_links'))} across {_n(prov.get('n_distinct_publications'))} publications |
+| Source records ingested | **{_n(scale.get("total_source_records"))}** |
+| Confirmed planets analysed | **{_n(n_planets)}** across {_n(pop.get("n_unique_host_systems"))} host systems |
+| Planets with a **measured** mass | **{_n(cov.get("n_with_measured_mass"))}** ({_pct(cov.get("n_with_measured_mass"), n_planets)}) |
+| Planets whose mass is **inferred from radius** | {_n(cov.get("n_with_mass_inferred_from_radius"))} ({_pct(cov.get("n_with_mass_inferred_from_radius"), n_planets)}) |
+| In the **conservative** habitable zone | **{_n(hz.get("n_in_conservative_hz_nominal"))}** |
+| In the **optimistic** habitable zone | {_n(hz.get("n_in_optimistic_hz_nominal"))} |
+| Conservative HZ **and** below 1.6 R⊕ | **{_n(hz.get("n_conservative_hz_and_below_1p6_re"))}** |
+| …of which have a **measured mass** | **{_n(hz.get("n_conservative_hz_and_below_1p6_re_with_measured_mass"))}** |
+| Planets with published transmission spectra | {_n(atmo.get("planets_with_transmission_spectra"))} |
+| Measurement-level provenance links | {_n(prov.get("n_links"))} across {_n(prov.get("n_distinct_publications"))} publications |
 
 > **The headline finding is a scarcity result.** Of {_n(n_planets)} confirmed
-> planets, only **{_n(hz.get('n_conservative_hz_and_below_1p6_re'))}** are both inside the
+> planets, only **{_n(hz.get("n_conservative_hz_and_below_1p6_re"))}** are both inside the
 > conservative habitable zone and small enough to be plausibly rocky — and only
-> **{_n(hz.get('n_conservative_hz_and_below_1p6_re_with_measured_mass'))}** of those has a mass that was
+> **{_n(hz.get("n_conservative_hz_and_below_1p6_re_with_measured_mass"))}** of those has a mass that was
 > actually measured rather than predicted from its radius. The search for Earth 2.0
 > is not currently limited by how many planets we know about. It is limited by how
 > few of them we have measured well.
@@ -225,7 +240,7 @@ public archives  ──▶  ingest + manifest  ──▶  crossmatch  ──▶ 
                         ┌─────────────────────────────────────────┤
                         ▼                                         ▼
               Monte Carlo uncertainty                    habitable zone + ESI
-                 ({_n(mc.get('n_samples'))} draws/planet)              (Kopparapu 2013 erratum)
+                 ({_n(mc.get("n_samples"))} draws/planet)              (Kopparapu 2013 erratum)
                         │                                         │
                         └────────────────┬────────────────────────┘
                                          ▼
@@ -381,7 +396,7 @@ cd web && npm install && npm run dev
 ```
 
 Determinism: the Monte Carlo seed is fixed
-(`{mc.get('seed', 'n/a')}`), every retrieval carries a UTC timestamp and a
+(`{mc.get("seed", "n/a")}`), every retrieval carries a UTC timestamp and a
 SHA-256 of the payload as received, and every transformation is recorded in
 `results/transformation_ledger.json`.
 
@@ -416,6 +431,8 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/METHODS.md`](docs/METHODS.md) | Every equation, with citations and assumptions |
 | [`docs/DATA_SOURCES.md`](docs/DATA_SOURCES.md) | Archives, tables, licensing, acknowledgements |
 | [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) | What this analysis cannot establish |
+| [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md) | Survey-wide detection model, validation and products |
+| [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) | False-alarm and astrophysical reliability contract |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |
@@ -434,7 +451,7 @@ most constrain the results:
    whole pipeline as a control so this is visible in the results rather than
    asserted in a footnote.
 
-2. **{_pct(cov.get('n_with_mass_inferred_from_radius'), n_planets)} of catalogue masses were never measured.** They are
+2. **{_pct(cov.get("n_with_mass_inferred_from_radius"), n_planets)} of catalogue masses were never measured.** They are
    predictions from the radius. Density and escape velocity computed from them
    re-encode the radius rather than adding information.
 

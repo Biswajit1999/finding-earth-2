@@ -21,6 +21,11 @@ make validate-transit  # python -m earth2 validate-transit
 make export              # python -m earth2 export       -- browser-ready JSON
 make report                # python -m earth2 report       -- regenerate README
 
+# Additive DR25 population products (raw inputs are hash-verified on cache read)
+python scripts/build_population_foundation.py --root .
+python scripts/fit_reliability_model.py --root .
+python scripts/build_selection_surface.py --root .
+
 cd web && npm install && npm run dev    # or: make web-build for a static export
 ```
 
@@ -35,6 +40,8 @@ Or the whole analysis pipeline in one step: `make all`.
 | Software versions | `results/analysis_summary.json["software"]` records Python, numpy, pandas, scipy and astropy versions for the run that produced it |
 | Ranking weights | Explicit defaults in `earth2.ranking.ScoreWeights`; any non-default run records its weights in the ledger |
 | Random subsampling (3D universe export) | Seeded (`random_state=20260824`) when the point count is capped |
+| DR25 target holdouts | SHA-256 of KIC identifier modulo five; every injection around one target remains in one fold |
+| DR25 selection products | No random fit initialization; fixed grids and quadrature nodes; product manifest records bytes and SHA-256 |
 
 Given the same archive state and the same seed, `python -m earth2 analyse`
 reproduces byte-identical `results/*.csv` and `*.parquet` output. Archive

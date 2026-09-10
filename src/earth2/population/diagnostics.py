@@ -200,3 +200,84 @@ def plot_smooth_reliability(fit, candidates: pd.DataFrame, output: Path) -> None
     with plt.rc_context({"svg.hashsalt": "earth2-dr25-smooth-reliability-v1"}):
         fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
+
+
+def plot_selection_surface(surface: pd.DataFrame, output: Path) -> None:
+    """Plot the separately identified factors in the survey-wide selection surface."""
+    periods = np.sort(surface["period_days"].unique())
+    radii = np.sort(surface["planet_radius_earth"].unique())
+    expected_rows = len(periods) * len(radii)
+    if (
+        len(surface) != expected_rows
+        or surface.duplicated(["planet_radius_earth", "period_days"]).any()
+    ):
+        raise ValueError("Selection surface must contain one complete rectangular grid")
+    target_counts = surface["target_stars"].unique()
+    if len(target_counts) != 1:
+        raise ValueError("Selection surface has an inconsistent stellar denominator")
+
+    panels = [
+        ("mean_transit_geometry", "Centre-crossing transit geometry", "log"),
+        ("mean_phase_window", "At least three observed transits", "probability"),
+        ("mean_pipeline_including_window", "Pipeline recovery including window", "probability"),
+        ("mean_vetting_given_recovered", "Robovetter PC given recovery", "probability"),
+        ("mean_total_selection", "Total selection probability", "log"),
+        ("effective_stars", "Effective searched stars", "log"),
+    ]
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8.5), constrained_layout=True)
+    fig.suptitle(
+        "Kepler DR25 survey-wide selection surface\n"
+        f"{int(target_counts[0]):,} selected stars; impact parameter marginalized",
+        fontsize=15,
+    )
+    for ax, (column, title, scale) in zip(axes.flat, panels):
+        grid = (
+            surface.pivot(index="planet_radius_earth", columns="period_days", values=column)
+            .loc[radii, periods]
+            .to_numpy(float)
+        )
+        if scale == "log":
+            positive = grid[grid > 0]
+            if not positive.size:
+                raise ValueError(f"Selection surface column {column} has no positive support")
+            norm = LogNorm(vmin=float(positive.min()), vmax=float(positive.max()))
+            mesh = ax.pcolormesh(
+                periods,
+                radii,
+                grid,
+                cmap="magma",
+                norm=norm,
+                shading="nearest",
+                rasterized=True,
+            )
+        else:
+            mesh = ax.pcolormesh(
+                periods,
+                radii,
+                grid,
+                cmap="viridis",
+                vmin=0,
+                vmax=1,
+                shading="nearest",
+                rasterized=True,
+            )
+        fig.colorbar(mesh, ax=ax, shrink=0.82)
+        ax.set(
+            xscale="log",
+            yscale="log",
+            title=title,
+            xlabel="Orbital period [days]",
+            ylabel="Planet radius [Earth radii]",
+        )
+        ax.set_xticks([50, 100, 200, 500], labels=["50", "100", "200", "500"])
+        ax.set_yticks([0.5, 1, 1.5, 2], labels=["0.5", "1", "1.5", "2"])
+    fig.supxlabel(
+        "MODEL-INFERRED from DR25 INJ1 on-target injections. Pipeline already includes the "
+        "observing window; candidate reliability is not multiplied into selection.",
+        fontsize=10,
+    )
+    output.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output.with_suffix(".png"), dpi=170)
+    with plt.rc_context({"svg.hashsalt": "earth2-dr25-selection-surface-v1"}):
+        fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
+    plt.close(fig)
