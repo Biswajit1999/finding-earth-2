@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **4 in progress — constrained reliability validated; per-target selection and hierarchical population inference next**; v2 is not complete.
+- Current phase: **4 in progress — reliability and survey-wide selection validated; hierarchical population inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,10 +9,10 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 222 passed; Ruff checks pass for the affected population files, mypy
-  passes across 55 source files, and six v1 release invariants pass. DR25
+- Tests: 226 passed; Ruff checks pass across source, tests and scripts, mypy
+  passes across 56 source files, and the extended release invariants pass. DR25
   contracts cover delivered row discrepancies, support-file integrity,
-  selection decisions and the KeplerPORTs reference.
+  target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
@@ -24,10 +24,10 @@
   KeplerPORTs reference; deterministic synthetic selection recovery. Broader
   literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
-- Last successful and remotely verified commit before this checkpoint:
-  `9f87c20e670f9adecb17166057c81ed22bcf9383` (frontend story and universe
-  overlay hotfix). Resolve this document's containing checkpoint with
-  `git log -1 -- PROJECT_STATE.md`.
+- Last successful and remotely verified commit:
+  `4f1be05263875b0b82998572301c0fdd64e17695` (validated survey-wide DR25
+  selection), authored as Biswajit Jana. Resolve this document's containing
+  checkpoint with `git log -1 -- PROJECT_STATE.md`.
 - KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
 - Synthetic recovery: 300 replicates of 10,000 artificial stars recover a known
   0.7 planets-per-star rate with +0.69% relative bias and 94.67% coverage for
@@ -42,9 +42,15 @@
   holdouts, a 931-row observed-TCE holdout and 60/60 synthetic recovery fits.
   It assigns 87 candidates; two above MES 30 remain withheld. Total reliability
   is conditional on fixed external FPP values.
-- Exact next action: complete the survey-wide per-target selection surface, then
-  combine it with reliability in the hierarchical period-radius likelihood. No
-  real intrinsic inference yet.
+- Survey-wide selection: 43,350 domain injections calibrate a constrained model
+  evaluated over 357 period-radius cells for all 114,105 selected stars,
+  including 29,549 without an INJ1 trial. All five target-level folds, physical
+  invariants and the pinned KIC 3429335 reference check pass. The committed Git
+  blobs match the product SHA-256 manifest.
+- Exact next action: combine the selection surface and candidate reliability in
+  a transparent hierarchical period-radius Poisson likelihood, pass expanded
+  synthetic recovery and propagate the declared uncertainty before any real
+  intrinsic occurrence result.
 
 ## Execution contract
 
