@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **4 in progress — real population contract and reliability-data foundation complete; smooth inference next**; v2 is not complete.
+- Current phase: **4 in progress — constrained reliability validated; per-target selection and hierarchical population inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,8 +9,8 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 219 passed; Ruff checks pass for the affected population files, mypy
-  passes across 54 source files, and six v1 release invariants pass. DR25
+- Tests: 222 passed; Ruff checks pass for the affected population files, mypy
+  passes across 55 source files, and six v1 release invariants pass. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   selection decisions and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
@@ -38,9 +38,13 @@
   114,105 stars and 89 candidates; 11 occupy the Hsu period-radius comparison
   box. The 42-cell diagnostic assigns no candidate reliability and makes no
   intrinsic claim.
-- Exact next action: fit and validate a smooth, experiment-aware false-alarm
-  model, then combine it with per-target selection in the hierarchical
-  period-radius likelihood. No real intrinsic inference yet.
+- Smooth reliability: a joint physical parameterisation passes four experiment
+  holdouts, a 931-row observed-TCE holdout and 60/60 synthetic recovery fits.
+  It assigns 87 candidates; two above MES 30 remain withheld. Total reliability
+  is conditional on fixed external FPP values.
+- Exact next action: complete the survey-wide per-target selection surface, then
+  combine it with reliability in the hierarchical period-radius likelihood. No
+  real intrinsic inference yet.
 
 ## Execution contract
 

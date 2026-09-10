@@ -1,7 +1,7 @@
 # Kepler DR25 reliability foundation
 
-Status: validated input and finite-cell diagnostic. This is not a released
-candidate-reliability surface and not an intrinsic occurrence result.
+Status: validated inputs, finite-cell diagnostic and constrained smooth
+candidate-reliability model. This is not an intrinsic occurrence result.
 
 ## Why reliability is separate
 
@@ -16,8 +16,8 @@ keeps the terms separate:
 - the false-alarm rate in the real TCE population is labelled **OBSERVED**;
 - false-alarm reliability and astrophysical planet probability are labelled
   **MODEL-INFERRED**;
-- no candidate receives a total reliability until the smooth model and its
-  uncertainty pass validation.
+- candidate reliability is released only inside the declared calibration
+  domain after the smooth model passes the checks documented below.
 
 The operational product definitions are maintained by the [NASA Exoplanet
 Archive](https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html).
@@ -101,8 +101,8 @@ The pinned research notebook repeats the one INV sample three times before
 pooling it with three SCR samples. That balances manipulation families for its
 smooth fit, but repeated rows are not independent binomial observations. This
 project's cell table pools the uniquely delivered rows and records the method
-difference. A later smooth model must represent experiment effects explicitly
-and pass posterior predictive validation.
+difference. The released smooth model represents experiment effects explicitly
+and must pass held-out and synthetic checks.
 
 ![DR25 reliability evidence layers](../results/population/dr25_reliability_diagnostics.png)
 
@@ -128,8 +128,58 @@ period as an audit field.
 `koi_score` is a Robovetter disposition score, not a calibrated candidate
 reliability. The exported population table keeps it visible while setting
 `robovetter_score_is_candidate_reliability=false`. Astrophysical planet
-probability is `1 - fpp_prob`; false-alarm reliability and total reliability
-remain missing by design.
+probability is `1 - fpp_prob`.
+
+## Constrained smooth reliability model
+
+Two unrelated logistic surfaces can cross and make the equation return a
+negative probability. The released joint model prevents that algebraically:
+
+```text
+F_FA = logistic(X β_F)
+q    = logistic(Z β_q)
+E_FA = F_FA + (1 - F_FA)q
+R_FA = (E_FA - F_FA) / [E_FA(1 - F_FA)]
+```
+
+`X` is quadratic in normalized log-period and MES. `Z` uses the same surface
+plus separate SCR1, SCR2 and SCR3 intercepts relative to INV. This guarantees
+`0 < F_FA < E_FA < 1` and therefore `0 < R_FA <= 1` without clipping. The
+default design gives half the effectiveness weight to the inverted family and
+divides the other half equally among the three scrambled experiments. The
+model never treats repeated INV rows as new observations.
+
+Every release check passed:
+
+- leave-one-experiment-out predictions improved both Brier score and log loss
+  over a constant training-fraction baseline for INV, SCR1, SCR2 and SCR3;
+- a deterministic 931-row observed-TCE holdout improved Brier score from
+  0.0530 to 0.0383 and log loss from 0.2177 to 0.1468;
+- all 60 generating-family recovery replicates converged; mean surface RMSE was
+  0.00582 for effectiveness, 0.02016 for observed false-alarm fraction and
+  0.04167 for reliability. The 95th-percentile reliability RMSE was 0.07183.
+
+The coefficient covariance is a penalized observed-Hessian Laplace
+approximation. Candidate intervals are 2.5th, 50th and 97.5th percentiles from
+20,000 deterministic multivariate-normal coefficient draws. The model assigns
+87 of 89 eligible candidates. K01535.01 (MES 31.9327) and K00701.03 (MES
+35.9406) are above the MES 30 calibration ceiling and remain withheld. All 11
+candidates in the published comparison box are inside the domain.
+
+Total candidate reliability multiplies the false-alarm reliability by
+`1 - FPP`. Its interval is conditional on the delivered FPP value because the
+external FPP release does not provide its model-parameter uncertainty. The
+artifact says this explicitly; it is not a full uncertainty budget.
+
+Sensitivity fits vary the L2 penalty and experiment weights. Penalties from
+0.03 to 0.3 change the median candidate point prediction by 0.0064–0.0093 and
+the maximum by 0.0307–0.0517. A stronger penalty of 1.0 moves some candidates
+by as much as 0.1314. Equal-experiment and delivered-row weighting change the
+median by 0.0108 and 0.0130 respectively, with maxima below 0.047. These
+differences remain a model-systematic limitation and are not folded into the
+Laplace intervals.
+
+![DR25 constrained smooth reliability](../results/population/dr25_smooth_reliability.png)
 
 ## Published estimands
 
@@ -156,11 +206,12 @@ Run:
 
 ```powershell
 python.exe scripts/build_population_foundation.py --root .
+python.exe scripts/fit_reliability_model.py --root .
 ```
 
-The command verifies all eleven raw products against their manifests and emits
-the analysis population, cell table, figure, comparison registry and summary
-under `results/population/`. The next gate is a smooth false-alarm model with
-experiment-aware uncertainty, held-out checks and synthetic recovery. Only
-after that model joins the per-target selection function may the hierarchical
+The commands verify all eleven raw products against their manifests and emit
+the analysis population, cell table, smooth model, validation, candidate
+reliabilities, figures, comparison registry and summaries under
+`results/population/`. The next gate is the survey-wide per-target selection
+function. Only after that joins this reliability model may the hierarchical
 period–radius likelihood produce a real occurrence posterior.

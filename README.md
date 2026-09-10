@@ -33,8 +33,10 @@
 > 114,105-star search denominator, 89-candidate inference population, all four
 > false-alarm experiments, observed TCEs, known-signal exclusions and
 > astrophysical FPP data. It deliberately publishes no intrinsic occurrence
-> value until the smooth reliability and per-target selection models pass their
-> gates. See [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md).
+> value until the per-target selection model and hierarchical likelihood pass
+> their gates. The constrained reliability model now passes real holdouts and
+> synthetic recovery, assigning 87 candidates and withholding two outside its
+> MES domain. See [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md).
 
 ---
 

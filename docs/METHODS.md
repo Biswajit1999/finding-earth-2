@@ -236,6 +236,10 @@ experiments (**SIMULATED**); the false-alarm fraction comes from observed TCEs
 (**OBSERVED**). Their equation-derived reliability is **MODEL-INFERRED**.
 Astrophysical false-positive probability is handled with the pinned DR25 FPP
 table. `koi_score` is never substituted for either probability. Candidate-level
-false-alarm and total reliability are currently left undefined pending a
-validated smooth model. Full definitions, source quirks and the cell diagnostic
-are in [DR25_RELIABILITY.md](DR25_RELIABILITY.md).
+false-alarm reliability uses a constrained joint logistic model that guarantees
+the false-alarm rejection effectiveness exceeds the observed false-alarm
+fraction. It passes leave-one-experiment-out, observed-TCE holdout and
+generating-family recovery gates. Reliability is assigned to 87 candidates;
+two above the MES calibration ceiling are withheld. Full definitions, source
+quirks, sensitivity checks and diagnostics are in
+[DR25_RELIABILITY.md](DR25_RELIABILITY.md).

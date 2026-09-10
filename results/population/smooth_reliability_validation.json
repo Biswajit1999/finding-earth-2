@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "real_data_holdouts": {
+    "experiment_holdouts": [
+      {
+        "held_out_experiment": "INV",
+        "model": {
+          "rows": 2081,
+          "observed_fraction": 0.9855838539163864,
+          "predicted_fraction": 0.9901495764838599,
+          "brier": 0.014037776060783378,
+          "log_loss": 0.0712924367197592
+        },
+        "constant_training_fraction_baseline": {
+          "rows": 2081,
+          "observed_fraction": 0.9855838539163864,
+          "predicted_fraction": 0.9932394990579634,
+          "brier": 0.014266929718243301,
+          "log_loss": 0.07871822115354607
+        },
+        "passed": true
+      },
+      {
+        "held_out_experiment": "SCR1",
+        "model": {
+          "rows": 2919,
+          "observed_fraction": 0.9955464200068517,
+          "predicted_fraction": 0.9915549644468955,
+          "brier": 0.0044197888054684316,
+          "log_loss": 0.027291785756603345
+        },
+        "constant_training_fraction_baseline": {
+          "rows": 2919,
+          "observed_fraction": 0.9955464200068517,
+          "predicted_fraction": 0.990470372632865,
+          "brier": 0.004459511875335925,
+          "log_loss": 0.0302567453032683
+        },
+        "passed": true
+      },
+      {
+        "held_out_experiment": "SCR2",
+        "model": {
+          "rows": 3062,
+          "observed_fraction": 0.9924885695623775,
+          "predicted_fraction": 0.9928519020522343,
+          "brier": 0.007336489165849063,
+          "log_loss": 0.039224745533610036
+        },
+        "constant_training_fraction_baseline": {
+          "rows": 3062,
+          "observed_fraction": 0.9924885695623775,
+          "predicted_fraction": 0.9915443919423029,
+          "brier": 0.007455900321781476,
+          "log_loss": 0.04427927275027545
+        },
+        "passed": true
+      },
+      {
+        "held_out_experiment": "SCR3",
+        "model": {
+          "rows": 3042,
+          "observed_fraction": 0.9917817225509533,
+          "predicted_fraction": 0.9934037357468363,
+          "brier": 0.008076871132676008,
+          "log_loss": 0.04333212598146172
+        },
+        "constant_training_fraction_baseline": {
+          "rows": 3042,
+          "observed_fraction": 0.9917817225509533,
+          "predicted_fraction": 0.9918134457950882,
+          "brier": 0.00815073837118139,
+          "log_loss": 0.0476436697661717
+        },
+        "passed": true
+      }
+    ],
+    "observed_tce_holdout": {
+      "split": "SHA-256(TCE_ID) modulo 5 equals zero",
+      "model": {
+        "rows": 931,
+        "observed_fraction": 0.9441460794844253,
+        "predicted_fraction": 0.9316349110023824,
+        "brier": 0.03832802776313036,
+        "log_loss": 0.14683145483514895
+      },
+      "constant_training_fraction_baseline": {
+        "rows": 931,
+        "observed_fraction": 0.9441460794844253,
+        "predicted_fraction": 0.9272875816993463,
+        "brier": 0.05301846902618402,
+        "log_loss": 0.21768173845165006
+      },
+      "passed": true
+    },
+    "passed": true
+  },
+  "synthetic_recovery": {
+    "label": "SIMULATED",
+    "seed": 314159,
+    "replicates": 60,
+    "converged_replicates": 60,
+    "synthetic_rows_per_replicate": 4000,
+    "observed_rows_per_replicate": 2000,
+    "evaluation_points": 63,
+    "generating_family": "same constrained quadratic-logistic family used for fitting",
+    "mean_rmse": {
+      "false_alarm_effectiveness": 0.00582369713860359,
+      "observed_false_alarm_fraction": 0.02015892447490161,
+      "false_alarm_reliability": 0.04166815422731636
+    },
+    "p95_rmse": {
+      "false_alarm_effectiveness": 0.009749820344971651,
+      "observed_false_alarm_fraction": 0.0356204535124204,
+      "false_alarm_reliability": 0.07183487574981912
+    },
+    "thresholds": {
+      "all_replicates_converge": true,
+      "mean_effectiveness_rmse_below": 0.03,
+      "mean_false_alarm_fraction_rmse_below": 0.04,
+      "mean_reliability_rmse_below": 0.08,
+      "p95_reliability_rmse_below": 0.15
+    },
+    "passed": true
+  },
+  "release_gate": "Every experiment-transfer fold must improve Brier score and log loss over its training-fraction baseline; the deterministic generating-family recovery must pass all declared RMSE and convergence thresholds.",
+  "passed": true
+}

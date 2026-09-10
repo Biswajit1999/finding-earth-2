@@ -143,3 +143,15 @@
   remains missing pending a validated smooth model.
 - Added a machine-readable published-estimand registry so Hsu 2019, Bryson 2020
   and Bryson 2021 values cannot be compared outside their stated domains.
+- Added a joint constrained smooth model with experiment intercepts. The
+  parameterisation guarantees `0 < F_FA < E_FA < 1` and physical reliability
+  without clipping. All four leave-one-experiment-out checks and the
+  deterministic observed-TCE holdout improve Brier score and log loss over
+  constant-rate baselines.
+- All 60 generating-family recovery replicates converge; mean reliability RMSE
+  is 0.04167 and the 95th-percentile RMSE is 0.07183. Regularization and
+  experiment-weight sensitivity are exported separately from coefficient
+  intervals.
+- Candidate reliability is assigned to 87 of 89 eligible KOIs. Two above MES
+  30 are withheld; all 11 published-box candidates are covered. Total
+  reliability is explicitly conditional on the fixed delivered FPP value.

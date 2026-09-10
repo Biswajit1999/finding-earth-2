@@ -129,3 +129,74 @@ def plot_reliability_grid(grid: pd.DataFrame, output: Path) -> None:
     with plt.rc_context({"svg.hashsalt": "earth2-dr25-reliability-foundation-v1"}):
         fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
+
+
+def plot_smooth_reliability(fit, candidates: pd.DataFrame, output: Path) -> None:
+    """Plot the constrained smooth evidence surfaces and calibrated candidates."""
+    from earth2.population.smooth_reliability import predict_components
+
+    periods = np.geomspace(fit.domain.period_min_days, fit.domain.period_max_days, 140)
+    mes = np.linspace(fit.domain.mes_min, fit.domain.mes_max, 120)
+    period_grid, mes_grid = np.meshgrid(periods, mes)
+    evaluation = pd.DataFrame(
+        {
+            "period": period_grid.ravel(),
+            "MES": mes_grid.ravel(),
+            "Rp": np.ones(period_grid.size),
+        }
+    )
+    prediction = predict_components(fit, evaluation)
+    panels = [
+        prediction["observed_false_alarm_fraction"],
+        prediction["false_alarm_effectiveness"],
+        prediction["false_alarm_reliability"],
+    ]
+    titles = [
+        "Observed false-alarm fraction · OBSERVED model",
+        "False-alarm rejection effectiveness · SIMULATED model",
+        "Constrained false-alarm reliability · MODEL-INFERRED",
+    ]
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8), constrained_layout=True)
+    fig.suptitle(
+        "Kepler DR25 constrained reliability surface\n"
+        "Quadratic in log-period and MES; experiment-aware rejection model",
+        fontsize=15,
+    )
+    for ax, values, title in zip(axes.flat[:3], panels, titles):
+        data = values.reshape(period_grid.shape)
+        mesh = ax.pcolormesh(periods, mes, data, cmap="viridis", vmin=0, vmax=1, rasterized=True)
+        fig.colorbar(mesh, ax=ax, shrink=0.85)
+        ax.set(xscale="log", title=title, xlabel="Orbital period [days]", ylabel="MES")
+    ax = axes.flat[3]
+    calibrated = candidates["false_alarm_reliability_p50"].notna()
+    points = candidates.loc[calibrated]
+    scatter = ax.scatter(
+        points["koi_period"],
+        points["observed_tce_mes"],
+        c=points["total_candidate_reliability_p50"],
+        cmap="viridis",
+        vmin=0,
+        vmax=1,
+        s=np.where(points["published_comparison_box"], 54, 24),
+        edgecolors=np.where(points["published_comparison_box"], "white", "none"),
+        linewidths=0.8,
+    )
+    fig.colorbar(scatter, ax=ax, shrink=0.85, label="Total reliability (FPP fixed)")
+    ax.set(
+        xscale="log",
+        xlim=(fit.domain.period_min_days, fit.domain.period_max_days),
+        ylim=(fit.domain.mes_min, fit.domain.mes_max),
+        title="Eligible candidates · white rim = published box",
+        xlabel="KOI orbital period [days]",
+        ylabel="Observed TCE MES",
+    )
+    fig.supxlabel(
+        "Reliability is constrained algebraically, never clipped. Candidate intervals use a Laplace coefficient approximation.\n"
+        "Two high-MES candidates outside the calibrated domain are withheld; no occurrence rate is shown.",
+        fontsize=10,
+    )
+    output.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output.with_suffix(".png"), dpi=170)
+    with plt.rc_context({"svg.hashsalt": "earth2-dr25-smooth-reliability-v1"}):
+        fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
+    plt.close(fig)
