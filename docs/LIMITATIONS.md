@@ -93,8 +93,9 @@ passes held-out and generating-family checks for 87 candidates; two high-MES
 candidates remain outside the calibration domain. A survey-wide selection
 surface now evaluates every selected star and passes five target-isolated
 injection folds, physical invariants and a pinned KeplerPORTs regression. The
-hierarchical period–radius likelihood and its joint uncertainty propagation are
-still open. Therefore the project does not yet report eta Earth, an intrinsic
+hierarchical period–radius likelihood and its joint uncertainty machinery now
+pass an expanded nine-scenario artificial-data gate, but the expensive
+all-target real-data evaluation is still open. Therefore the project does not yet report eta Earth, an intrinsic
 period–radius rate or a corrected rarity. Raw catalogue fractions and the 11
 objects in the published-comparison box must not be interpreted as planets per
 star.
@@ -114,7 +115,11 @@ target-specific KeplerPORTs contours to avoid an unreviewable roughly 670 GB
 download; its independent one-target regression is a guardrail, not proof of
 identity. Stellar-parameter uncertainty, injection-model family uncertainty and
 the 138 in-domain period-alias recoveries must be carried into the occurrence
-analysis rather than silently absorbed into a point correction.
+analysis rather than silently absorbed into a point correction. The expanded
+recovery suite also shows that fitting a single power law to a broken radius
+distribution produces +21.6% rate bias and only 50% coverage in its declared
+stress case. The initial real-data power law must therefore ship with an
+alternative-family sensitivity, not as a uniquely justified population law.
 
 ## Coverage gaps not integrated in this release
 

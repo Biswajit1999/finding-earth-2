@@ -117,6 +117,35 @@ def main() -> int:
     )
     check("DR25 selection product hashes match the release manifest", product_hashes_match)
 
+    hierarchical_validation = json.loads(
+        (population / "validation/hierarchical_recovery.json").read_text()
+    )
+    check(
+        "hierarchical occurrence synthetic release gate passed",
+        hierarchical_validation["passed"] is True,
+    )
+    check(
+        "hierarchical occurrence validation contains only simulated scenarios",
+        hierarchical_validation["label"] == "SIMULATED"
+        and all(row["label"] == "SIMULATED" for row in hierarchical_validation["scenarios"]),
+    )
+    required_scenarios = {
+        "flat_population",
+        "power_law_population",
+        "broken_radius_population",
+        "earth_box_population",
+        "low_completeness",
+        "finite_injection_uncertainty",
+        "reliability_perturbation",
+        "stellar_radius_uncertainty",
+        "wrong_completeness_negative_control",
+    }
+    check(
+        "hierarchical occurrence validation includes every required stress case",
+        {row["scenario"] for row in hierarchical_validation["scenarios"]}
+        == required_scenarios,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

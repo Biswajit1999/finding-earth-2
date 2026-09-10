@@ -183,3 +183,23 @@
   SHA-256 product manifest. This completes the selection gate; no occurrence
   rate is claimed before the hierarchical likelihood and joint uncertainty
   propagation pass.
+
+## Phase 4 hierarchical synthetic recovery — 2026-09-11
+
+- Added a normalized separable power law per `d ln P d ln R` and the exact
+  inhomogeneous-Poisson likelihood. The integrated rate has a fixed box meaning;
+  the analytic power-law normalization is checked against log-space quadrature.
+- Added multiple imputation for shared selection coefficients, correlated
+  candidate reliability, asymmetric period/radius measurement errors and
+  boundary migration. No fractional candidate count is substituted into a
+  Poisson likelihood.
+- Analytic selection derivatives match finite differences. The three sequential
+  covariance blocks remain explicitly independent, and the pipeline window
+  coefficient at its non-negative fit boundary is held fixed.
+- All 60-replicate scenarios pass their declared gates: flat and power-law
+  recovery, an Earth +/-20% box, low completeness, finite-injection uncertainty,
+  reliability perturbation and stellar-radius uncertainty. The broken-law
+  stress exposes 21.6% bias/50% coverage; a deliberately halved completeness
+  surface exposes 99.3% bias/0% coverage.
+- Every artifact remains labelled SIMULATED. The real Kepler rate remains
+  withheld until the all-target quadrature and sensitivity suite complete.

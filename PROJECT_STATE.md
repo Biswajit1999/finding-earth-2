@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **4 in progress — reliability and survey-wide selection validated; hierarchical population inference next**; v2 is not complete.
+- Current phase: **4 in progress — reliability, selection and hierarchical synthetic recovery validated; all-target occurrence inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,8 +9,8 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 226 passed; Ruff checks pass across source, tests and scripts, mypy
-  passes across 56 source files, and the extended release invariants pass. DR25
+- Tests: 236 passed; Ruff passes across source, tests and scripts, and mypy
+  passes across 59 source files. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
@@ -47,10 +47,15 @@
   including 29,549 without an INJ1 trial. All five target-level folds, physical
   invariants and the pinned KIC 3429335 reference check pass. The committed Git
   blobs match the product SHA-256 manifest.
-- Exact next action: combine the selection surface and candidate reliability in
-  a transparent hierarchical period-radius Poisson likelihood, pass expanded
-  synthetic recovery and propagate the declared uncertainty before any real
-  intrinsic occurrence result.
+- Hierarchical synthetic recovery: a normalized period-radius Poisson model and
+  multiple-imputation uncertainty bridge pass flat, power-law, Earth-box,
+  low-completeness, finite-injection, reliability and stellar-radius scenarios.
+  A broken-radius-law stress and a deliberately halved completeness surface
+  correctly expose misspecification. Every validation output is SIMULATED.
+- Exact next action: evaluate the likelihood quadrature for all 114,105 targets,
+  propagate the declared selection/reliability/measurement uncertainty, run
+  prior and model-family sensitivity, and only then release a real intrinsic
+  occurrence result.
 
 ## Execution contract
 

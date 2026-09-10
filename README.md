@@ -37,9 +37,12 @@
 > reliability model assigns 87 candidates and withholds two outside its MES
 > domain. The survey-wide selection model evaluates all 114,105 stars and passes
 > five target-isolated injection folds, physical invariants and a pinned
-> KeplerPORTs regression. See
+> KeplerPORTs regression. The hierarchical Poisson likelihood now passes nine
+> artificial-data recovery and misspecification scenarios; its all-target
+> real-data uncertainty run remains the next release gate. See
 > [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) and
-> [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md).
+> [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md), plus the
+> [`hierarchical occurrence contract`](docs/HIERARCHICAL_OCCURRENCE.md).
 
 ---
 
