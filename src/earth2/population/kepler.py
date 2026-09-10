@@ -32,6 +32,20 @@ INJECTION_COLUMNS = {
     "N_Transit",
 }
 VETTING_COLUMNS = {"TCE_ID", "KIC", "Disp", "Score"}
+ROBOVETTER_COLUMNS = {
+    "TCE_ID",
+    "KIC",
+    "Disp",
+    "Score",
+    "NTL",
+    "SS",
+    "CO",
+    "EM",
+    "period",
+    "MES",
+    "NTran",
+    "Rp",
+}
 STELLAR_COLUMNS = (
     "kepid",
     "teff",
@@ -96,6 +110,49 @@ def parse_stars(payload: bytes) -> pd.DataFrame:
     if not stars["st_delivname"].eq("q1_q17_dr25_stellar").all():
         raise ValueError("Unexpected stellar release: do not mix injection radius conventions")
     return stars
+
+
+def parse_robovetter_ipac(payload: bytes, *, experiment: str) -> pd.DataFrame:
+    """Parse one official DR25 observed/inverted/scrambled result table."""
+    if experiment not in {"OBS", "INV", "SCR1", "SCR2", "SCR3"}:
+        raise ValueError("Unsupported DR25 Robovetter experiment")
+    text = payload.decode("utf-8")
+    if not re.search(rf"\\runtype\s*=\s*{experiment}\b", text):
+        raise ValueError(f"Expected the DR25 {experiment} experiment")
+    frame = ascii.read(text, format="ipac", guess=False).to_pandas()
+    require_columns(frame, ROBOVETTER_COLUMNS)
+    declared = re.search(r"\\nrows\s*=\s*(\d+)", text)
+    if not declared:
+        raise ValueError("Robovetter product has no declared row count")
+    # Four official files have a small, stable header/data discrepancy. The
+    # archive adapter pins both counts independently instead of rewriting the
+    # source header or treating its declaration as the parsed row count.
+    frame.attrs["declared_nrows"] = int(declared.group(1))
+    if frame["TCE_ID"].isna().any() or frame["TCE_ID"].duplicated().any():
+        raise ValueError("Missing or duplicate Robovetter TCE identifier")
+    if not frame["Disp"].isin(["PC", "FP"]).all():
+        raise ValueError("Unknown Robovetter disposition")
+    flags = frame[["NTL", "SS", "CO", "EM"]]
+    if flags.isna().any().any() or not flags.isin([0, 1]).all().all():
+        raise ValueError("Robovetter flags must be binary")
+    tce_kic = frame["TCE_ID"].map(normalise_tce).str.split("-").str[0].astype(int)
+    if not tce_kic.eq(frame["KIC"].astype(int)).all():
+        raise ValueError("Robovetter TCE identifier and KIC disagree")
+    period_mes_radius = frame[["period", "MES", "Rp"]].to_numpy(float)
+    n_transits = frame["NTran"].to_numpy(float)
+    if (
+        not np.isfinite(period_mes_radius).all()
+        or np.any(period_mes_radius[:, :2] <= 0)
+        or np.any(period_mes_radius[:, 2] < 0)
+        or not np.isfinite(n_transits).all()
+        or np.any(n_transits < 0)
+        or np.any(n_transits != np.floor(n_transits))
+    ):
+        raise ValueError("Robovetter period/MES/radius or transit-count metric is invalid")
+    # SCR2 contains 12 official NTL false alarms with NTran=0. Retain this
+    # sentinel-like state; the period-MES reliability model does not use it.
+    frame.attrs["zero_ntran_rows"] = int(np.count_nonzero(n_transits == 0))
+    return frame
 
 
 def normalise_tce(value) -> str | None:

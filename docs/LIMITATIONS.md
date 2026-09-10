@@ -84,6 +84,22 @@ separation too small for imaging). The preponderance of small-star candidates
 at the top of this ranking is partly a statement about M dwarfs being easier
 to search, not solely a statement about where temperate rocky planets exist.
 
+## Intrinsic population result is not released yet
+
+The DR25 upgrade has a fixed 114,105-star denominator, a pinned 89-candidate
+analysis population, injection diagnostics, synthetic recovery and a
+finite-cell false-alarm diagnostic. It does not yet have a validated smooth
+false-alarm model or a survey-wide per-target detection surface. Therefore it
+does not report eta Earth, an intrinsic period–radius rate or a corrected
+rarity. Raw catalogue fractions and the 11 objects in the published-comparison
+box must not be interpreted as planets per star.
+
+The finite reliability grid exposes sparse cells and raw equation results
+outside `[0,1]` instead of clipping them into plausible-looking probabilities.
+Candidate-level false-alarm and total reliability stay missing until a smooth,
+experiment-aware model passes held-out and synthetic checks. The Robovetter
+score remains visible but is explicitly not used as candidate reliability.
+
 ## Coverage gaps not integrated in this release
 
 Gaia DR3 is cross-matched by exact `source_id` for every host the archive

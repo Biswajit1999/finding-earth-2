@@ -72,3 +72,60 @@ def plot_injection_grid(grid: pd.DataFrame, output: Path) -> None:
     with plt.rc_context({"svg.hashsalt": "earth2-dr25-injection-diagnostics-v1"}):
         fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
     plt.close(fig)
+
+
+def plot_reliability_grid(grid: pd.DataFrame, output: Path) -> None:
+    """Plot the three evidence layers and observed support of the cell diagnostic."""
+    periods = np.unique(np.r_[grid.period_lower_days, grid.period_upper_days])
+    mes = np.unique(np.r_[grid.mes_lower, grid.mes_upper])
+    shape = len(periods) - 1, len(mes) - 1
+    ordered = grid.sort_values(["period_lower_days", "mes_lower"])
+    reliability = ordered.false_alarm_reliability_point.to_numpy(float).copy()
+    reliability[(reliability < 0) | (reliability > 1)] = np.nan
+    values = [
+        ordered.false_alarm_effectiveness,
+        ordered.observed_false_alarm_fraction,
+        reliability,
+        ordered.observed_tces,
+    ]
+    titles = [
+        "False-alarm rejection effectiveness · SIMULATED",
+        "Instrumental false-alarm fraction · OBSERVED",
+        "Equation 8 cell diagnostic · MODEL-INFERRED",
+        "Observed TCE support",
+    ]
+    fig, axes = plt.subplots(2, 2, figsize=(12, 8), constrained_layout=True)
+    fig.suptitle(
+        "Kepler DR25 false-alarm reliability foundation\n"
+        "4800–6300 K stellar selection; unique INV + SCR1–3 trials",
+        fontsize=15,
+    )
+    for index, (ax, column, title) in enumerate(zip(axes.flat, values, titles)):
+        data = np.asarray(column, float).reshape(shape).T
+        cmap = plt.get_cmap("magma" if index == 3 else "viridis").copy()
+        cmap.set_bad("#d9dde3")
+        if index == 3:
+            positive = data[data > 0]
+            vmax = max(2, float(positive.max())) if positive.size else 2
+            shown = np.ma.masked_where(data <= 0, data)
+            mesh = ax.pcolormesh(periods, mes, shown, cmap=cmap, norm=LogNorm(vmin=1, vmax=vmax))
+        else:
+            mesh = ax.pcolormesh(
+                periods, mes, np.ma.masked_invalid(data), cmap=cmap, vmin=0, vmax=1
+            )
+        fig.colorbar(mesh, ax=ax, shrink=0.85)
+        ax.set(
+            title=title,
+            xlabel="Orbital period [days]",
+            ylabel="Multiple Event Statistic (MES)",
+        )
+    fig.supxlabel(
+        "Descriptive cells only. Grey reliability cells are empty or outside [0,1]; values are never clipped.\n"
+        "Candidate-level reliability requires a separately validated smooth model.",
+        fontsize=10,
+    )
+    output.parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(output.with_suffix(".png"), dpi=170)
+    with plt.rc_context({"svg.hashsalt": "earth2-dr25-reliability-foundation-v1"}):
+        fig.savefig(output.with_suffix(".svg"), metadata={"Date": None})
+    plt.close(fig)

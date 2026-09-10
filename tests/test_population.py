@@ -23,7 +23,18 @@ from earth2.population.kepler import (
     empirical_grid,
     join_injections,
     parse_ipac,
+    parse_robovetter_ipac,
     parse_stars,
+)
+from earth2.population.reliability import (
+    AnalysisPopulation,
+    ReliabilityDomain,
+    build_analysis_population,
+    classify_observed_false_alarms,
+    clean_false_alarm_experiments,
+    parse_droplist,
+    parse_fpp,
+    reliability_grid,
 )
 
 
@@ -65,13 +76,51 @@ def vetting_fixture():
     )
 
 
-def ipac_bytes(frame):
+def ipac_bytes(frame, runtype="INJ1"):
     table = Table.from_pandas(frame)
-    table.meta["keywords"] = {"runtype": {"value": "INJ1"}, "nrows": {"value": len(frame)}}
+    table.meta["keywords"] = {"runtype": {"value": runtype}, "nrows": {"value": len(frame)}}
     output = io.StringIO()
     ascii.write(table, output, format="ipac")
     # The archive's metadata uses unquoted runtype, unlike the astropy writer.
-    return output.getvalue().replace("'INJ1'", "INJ1").encode()
+    return output.getvalue().replace(f"'{runtype}'", runtype).encode()
+
+
+def false_alarm_fixture():
+    return pd.DataFrame(
+        {
+            "TCE_ID": ["000000001-01", "000000002-01"],
+            "KIC": [1, 2],
+            "Disp": ["FP", "PC"],
+            "Score": [0.0, 0.8],
+            "NTL": [1, 0],
+            "SS": [0, 0],
+            "CO": [0, 0],
+            "EM": [0, 0],
+            "period": [370.0, 250.0],
+            "MES": [8.0, 12.0],
+            "NTran": [0, 5],
+            "Rp": [1.0, 2.0],
+        }
+    )
+
+
+def koi_fixture():
+    return pd.DataFrame(
+        {
+            "kepid": [1, 2],
+            "kepoi_name": ["K00001.01", "K00002.01"],
+            "koi_pdisposition": ["CANDIDATE", "FALSE POSITIVE"],
+            "koi_score": [0.9, 0.1],
+            "koi_period": [300.0, 100.0],
+            "koi_prad": [1.0, 1.0],
+            "koi_model_snr": [12.0, 10.0],
+            "koi_tce_plnt_num": [1, 1],
+            "koi_fpflag_nt": [0, 1],
+            "koi_fpflag_ss": [0, 0],
+            "koi_fpflag_co": [0, 0],
+            "koi_fpflag_ec": [0, 0],
+        }
+    )
 
 
 def test_earth_geometry_and_eccentric_orientation():
@@ -142,6 +191,117 @@ def test_ipac_and_original_stellar_contracts():
     stars.loc[0, "st_delivname"] = "supplemental"
     with pytest.raises(ValueError, match="release"):
         parse_stars(stars.to_csv(index=False).encode())
+
+
+def test_false_alarm_parser_requires_exact_experiment_and_consistent_ids():
+    payload = ipac_bytes(false_alarm_fixture(), runtype="INV")
+    parsed = parse_robovetter_ipac(payload, experiment="INV")
+    assert len(parsed) == 2
+    assert parsed.attrs["declared_nrows"] == 2
+    assert parsed.attrs["zero_ntran_rows"] == 1
+    with pytest.raises(ValueError, match="SCR1"):
+        parse_robovetter_ipac(payload, experiment="SCR1")
+    bad_flag = false_alarm_fixture()
+    bad_flag.loc[0, "NTL"] = 2
+    with pytest.raises(ValueError, match="binary"):
+        parse_robovetter_ipac(ipac_bytes(bad_flag, runtype="INV"), experiment="INV")
+    bad_id = false_alarm_fixture()
+    bad_id.loc[0, "KIC"] = 999
+    with pytest.raises(ValueError, match="disagree"):
+        parse_robovetter_ipac(ipac_bytes(bad_id, runtype="INV"), experiment="INV")
+
+
+def test_pinned_reliability_support_parsers_preserve_missing_fpp():
+    drop = parse_droplist(b"# known signals\nTCE_ID\n1-1\n000000002-01\n", experiment="INV")
+    assert drop["TCE_ID"].tolist() == ["000000001-01", "000000002-01"]
+    with pytest.raises(ValueError, match="duplicate"):
+        parse_droplist(b"TCE_ID\n1-1\n1-1\n", experiment="INV")
+
+    payload = (
+        b"# provenance\nrowid,kepid,kepoi_name,fpp_koi_period,fpp_prob\n"
+        b"1,1,K00001.01,300,0.25\n2,2,K00002.01,100,\n"
+    )
+    fpp = parse_fpp(payload)
+    assert fpp["fpp_prob"].isna().sum() == 1
+    assert fpp.loc[0, "fpp_prob"] == pytest.approx(0.25)
+    with pytest.raises(ValueError, match=r"\[0, 1\]"):
+        parse_fpp(payload.replace(b"0.25", b"1.25"))
+
+
+def test_reliability_cleaning_classification_and_unclipped_equation():
+    experiments = {
+        experiment: false_alarm_fixture().copy() for experiment in ("INV", "SCR1", "SCR2", "SCR3")
+    }
+    drop_lists = {
+        experiment: pd.DataFrame({"TCE_ID": ["000000002-01"]}) for experiment in experiments
+    }
+    clean, audit = clean_false_alarm_experiments(experiments, drop_lists, [1, 2])
+    assert len(clean) == 4
+    assert clean["Disp"].eq("FP").all()
+    assert sum(row["drop_list_matches"] for row in audit) == 4
+
+    observed, observed_audit = classify_observed_false_alarms(
+        false_alarm_fixture(), [1, 2], manual_false_alarm_tces=[]
+    )
+    assert observed["observed_false_alarm"].tolist() == [True, False]
+    assert observed_audit["observed_false_alarms"] == 1
+
+    uncleaned = pd.concat(
+        [frame.assign(experiment=name) for name, frame in experiments.items()],
+        ignore_index=True,
+    )
+    grid = reliability_grid(
+        uncleaned,
+        observed,
+        [50, 600],
+        [7, 30],
+        domain=ReliabilityDomain(),
+        posterior_draws=1000,
+        minimum_synthetic_trials=1,
+        minimum_observed_trials=1,
+    )
+    assert grid.loc[0, "synthetic_trials_unique"] == 8
+    assert grid.loc[0, "false_alarm_effectiveness"] == pytest.approx(0.5)
+    assert grid.loc[0, "observed_false_alarm_fraction"] == pytest.approx(0.5)
+    assert grid.loc[0, "false_alarm_reliability_point"] == pytest.approx(0)
+    assert grid.loc[0, "status"] == "diagnostic_supported"
+    assert set(
+        grid.loc[
+            0,
+            [
+                "false_alarm_effectiveness_label",
+                "observed_false_alarm_fraction_label",
+                "false_alarm_reliability_label",
+            ],
+        ]
+    ) == {"SIMULATED", "OBSERVED", "MODEL-INFERRED"}
+
+
+def test_analysis_population_contract_keeps_score_separate_from_reliability():
+    fpp = pd.DataFrame(
+        {
+            "rowid": [1, 2],
+            "kepid": [1, 2],
+            "kepoi_name": ["K00001.01", "K00002.01"],
+            "fpp_koi_period": [300.0, 100.0],
+            "fpp_prob": [0.25, np.nan],
+        }
+    )
+    population, audit = build_analysis_population(
+        star_fixture(),
+        koi_fixture(),
+        fpp,
+        false_alarm_fixture(),
+        population=AnalysisPopulation(),
+    )
+    eligible = population.loc[population["eligible"]].iloc[0]
+    assert eligible["kepoi_name"] == "K00001.01"
+    assert eligible["published_comparison_box"]
+    assert eligible["astrophysical_planet_probability"] == pytest.approx(0.75)
+    assert not eligible["robovetter_score_is_candidate_reliability"]
+    assert pd.isna(eligible["false_alarm_reliability"])
+    assert audit["eligible_candidates"] == 1
+    assert audit["koi_score_used_as_reliability"] is False
 
 
 def test_join_normalises_ids_preserves_failure_and_uses_injected_radius():

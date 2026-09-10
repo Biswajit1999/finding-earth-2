@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "product": "koifpp",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": null,
+  "source_url": "https://raw.githubusercontent.com/stevepur/DR25-occurrence-public/d200f54b6f0df49e0dae530e69983cdce5397bfb/data/q1_q17_dr25_koifpp.txt",
+  "resolved_url": "https://raw.githubusercontent.com/stevepur/DR25-occurrence-public/d200f54b6f0df49e0dae530e69983cdce5397bfb/data/q1_q17_dr25_koifpp.txt",
+  "repository": "https://github.com/stevepur/DR25-occurrence-public",
+  "repository_commit": "d200f54b6f0df49e0dae530e69983cdce5397bfb",
+  "upstream_git_blob_sha1": "dc584a93d7d45a703cede85fa802d9b390a45dfa",
+  "retrieved_at_utc": "2026-09-10T06:39:36.095565+00:00",
+  "row_count": 8054,
+  "missing_fpp_probabilities": 178,
+  "sha256": "ffeeb339d67d032bf7b9617d3f6efa597af58f0b8abfd808471beaac992c15da",
+  "bytes": 333618,
+  "software_commit": "69f313f2caa3a55b2094bff1345d638bb7c009ba",
+  "adapter_sha256": "0030dcd23f7ea914f6a02f7cb77e3be8db15aa7356c3f4cedb68ac2a00d85ff3",
+  "raw_path": "data/raw/kepler_dr25/koifpp.txt",
+  "evidence_role": "Astrophysical false-positive probability",
+  "licence": "Not asserted; retain upstream attribution and consult source terms."
+}

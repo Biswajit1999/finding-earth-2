@@ -122,3 +122,24 @@
 - All 215 Python tests pass. Ruff lint/format checks pass for the new files and
   mypy passes across 53 source files. Two consecutive artifacts have identical
   SHA-256 `a61b68c726efda84b9ca306c9f635e20abe2f563ad5b5324cf9bb20178fc92db`.
+
+## Phase 4 reliability-data and population-contract foundation — 2026-09-10
+
+- Added strict adapters for all four official false-alarm experiments and the
+  observed DR25 TCE table. Parsed/header row disagreements are pinned instead
+  of rewritten; the twelve SCR2 zero-transit NTL rows remain visible.
+- Pinned four known-signal drop lists and the 8,054-row FPP table to immutable
+  `DR25-occurrence-public` commit
+  `d200f54b6f0df49e0dae530e69983cdce5397bfb`, gated by SHA-256 and Git blob
+  SHA-1. The FPP table's 178 missing probabilities and two large period
+  mismatches are audited without imputation.
+- Applied one explicit stellar and candidate contract: 114,105 selected stars,
+  89 eligible candidates in 0.5–2.0 Earth radii and 50–500 days, and 11 in the
+  0.75–1.5 Earth radii and 237–500 day Hsu comparison box. All 89 match an
+  observed TCE and a finite FPP value.
+- Added a 42-cell reliability diagnostic from 11,104 unique cleaned
+  inverted/scrambled trials and 4,603 observed TCEs. Evidence labels are
+  separate; raw equation posteriors are never clipped. Candidate reliability
+  remains missing pending a validated smooth model.
+- Added a machine-readable published-estimand registry so Hsu 2019, Bryson 2020
+  and Bryson 2021 values cannot be compared outside their stated domains.

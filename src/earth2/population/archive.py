@@ -19,7 +19,12 @@ import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 
-from earth2.population.kepler import STELLAR_COLUMNS, parse_ipac, parse_stars
+from earth2.population.kepler import (
+    STELLAR_COLUMNS,
+    parse_ipac,
+    parse_robovetter_ipac,
+    parse_stars,
+)
 
 BASE = "https://exoplanetarchive.ipac.caltech.edu"
 SPECS: dict[str, dict] = {
@@ -28,12 +33,14 @@ SPECS: dict[str, dict] = {
         "query": "Official DR25 INJ1 on-target planet injection table; all rows",
         "expected_rows": 146294,
         "extension": "txt",
+        "experiment": "INJ1",
     },
     "vetting": {
         "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_inj1_tces.txt",
         "query": "Official DR25 INJ1 recovered-injection Robovetter table; all rows",
         "expected_rows": 45377,
         "extension": "txt",
+        "experiment": "INJ1",
     },
     "stars": {
         "url": BASE
@@ -48,6 +55,47 @@ SPECS: dict[str, dict] = {
         "query": "SELECT " + ",".join(STELLAR_COLUMNS) + " FROM q1_q17_dr25_stellar",
         "expected_rows": None,
         "extension": "csv",
+        "experiment": None,
+    },
+    "false_alarm_inv": {
+        "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_inv_tces.txt",
+        "query": "Official DR25 INV Robovetter false-alarm experiment; all rows",
+        "expected_rows": 19531,
+        "expected_declared_rows": 19536,
+        "extension": "txt",
+        "experiment": "INV",
+    },
+    "observed_tces": {
+        "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_obs_tces.txt",
+        "query": "Official DR25 observed Robovetter TCE results; all legitimate TCEs",
+        "expected_rows": 32530,
+        "expected_declared_rows": 32534,
+        "extension": "txt",
+        "experiment": "OBS",
+    },
+    "false_alarm_scr1": {
+        "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_scr1_tces.txt",
+        "query": "Official DR25 SCR1 Robovetter false-alarm experiment; all rows",
+        "expected_rows": 24209,
+        "expected_declared_rows": 24213,
+        "extension": "txt",
+        "experiment": "SCR1",
+    },
+    "false_alarm_scr2": {
+        "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_scr2_tces.txt",
+        "query": "Official DR25 SCR2 Robovetter false-alarm experiment; all rows",
+        "expected_rows": 24217,
+        "expected_declared_rows": 24222,
+        "extension": "txt",
+        "experiment": "SCR2",
+    },
+    "false_alarm_scr3": {
+        "url": BASE + "/data/KeplerData/Simulated/kplr_dr25_scr3_tces.txt",
+        "query": "Official DR25 SCR3 Robovetter false-alarm experiment; all rows",
+        "expected_rows": 19811,
+        "expected_declared_rows": 19811,
+        "extension": "txt",
+        "experiment": "SCR3",
     },
 }
 
@@ -57,10 +105,23 @@ def sha256(payload: bytes) -> str:
 
 
 def validate_payload(payload: bytes, kind: str) -> pd.DataFrame:
-    frame = parse_stars(payload) if kind == "stars" else parse_ipac(payload, kind=kind)
+    if kind == "stars":
+        frame = parse_stars(payload)
+    elif kind in {"injections", "vetting"}:
+        frame = parse_ipac(payload, kind=kind)
+    elif kind == "observed_tces" or kind.startswith("false_alarm_"):
+        frame = parse_robovetter_ipac(payload, experiment=SPECS[kind]["experiment"])
+    else:
+        raise ValueError(f"Unsupported DR25 product: {kind}")
     expected = SPECS[kind]["expected_rows"]
     if not len(frame) or (expected is not None and len(frame) != expected):
         raise ValueError(f"Unexpected {kind} row count: {len(frame)}; expected {expected}")
+    expected_declared = SPECS[kind].get("expected_declared_rows")
+    if expected_declared is not None and frame.attrs.get("declared_nrows") != expected_declared:
+        raise ValueError(
+            f"Unexpected {kind} declared row count: "
+            f"{frame.attrs.get('declared_nrows')}; expected {expected_declared}"
+        )
     return frame
 
 
@@ -131,12 +192,17 @@ def fetch_product(
         "product": kind,
         "survey": "Kepler",
         "release": "DR25",
-        "experiment": "INJ1" if kind != "stars" else None,
+        "experiment": spec["experiment"],
         "source_url": spec["url"],
         "resolved_url": final_url,
         "query": spec["query"],
         "retrieved_at_utc": datetime.now(timezone.utc).isoformat(),
         "row_count": len(frame),
+        **(
+            {"declared_row_count": frame.attrs["declared_nrows"]}
+            if "declared_nrows" in frame.attrs
+            else {}
+        ),
         "sha256": sha256(payload),
         "bytes": len(payload),
         "software_commit": commit,

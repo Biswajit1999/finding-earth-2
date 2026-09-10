@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "product": "false_alarm_scr2",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "SCR2",
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_scr2_tces.txt",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_scr2_tces.txt",
+  "query": "Official DR25 SCR2 Robovetter false-alarm experiment; all rows",
+  "retrieved_at_utc": "2026-09-09T23:46:53.264371+00:00",
+  "row_count": 24217,
+  "declared_row_count": 24222,
+  "sha256": "014f5e062cb5fd2a015c49208859eb8cf564dce3a75703d4e85a5b63337be986",
+  "bytes": 5476430,
+  "software_commit": "69f313f2caa3a55b2094bff1345d638bb7c009ba",
+  "adapter_sha256": "7a24f5581a4c90bd8eb9a79a8a82b9073b18117de367149d810bc2b24f7a1f60",
+  "raw_path": "data/raw/kepler_dr25/false_alarm_scr2.txt",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

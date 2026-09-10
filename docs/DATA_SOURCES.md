@@ -60,6 +60,31 @@ index contains 940 transmission, 801 eclipse and 85 direct-imaging spectrum
 files; the complete 1,826-row metadata index is offered as a site download
 without merging distinct papers or reductions into a synthetic spectrum.
 
+## Kepler DR25 completeness and reliability products
+
+**Role:** survey selection and catalogue-purity calibration. **Access:** public
+NASA Exoplanet Archive files, no authentication.
+
+The population-upgrade namespace separately retrieves original DR25 stellar
+search fields, INJ1 artificial planet injections and Robovetter outcomes, the
+observed TCE table, and the inverted plus three scrambled false-alarm
+experiments. Raw bytes remain ignored while the committed manifests record the
+source URL, parsed and header-declared row counts, retrieval time, SHA-256,
+adapter hash and release. Four Robovetter files have a small upstream
+header/data count mismatch; both counts are preserved.
+
+Known-signal drop lists and the 8,054-row astrophysical false-positive
+probability table come from the public
+[`DR25-occurrence-public`](https://github.com/stevepur/DR25-occurrence-public)
+research repository. URLs use immutable commit
+`d200f54b6f0df49e0dae530e69983cdce5397bfb`; manifests verify both SHA-256 and
+the upstream Git blob SHA-1. The FPP table contains 178 explicit missing values.
+No missing probability is imputed.
+
+These sources do not enter the v1 confirmed-planet ranking. Their current role
+is the separately labelled and unreleased intrinsic-population analysis in
+[DR25_RELIABILITY.md](DR25_RELIABILITY.md).
+
 ## Gaia Archive (ESA)
 
 **Role:** independent astrometry crossmatch for confirmed-planet host stars.

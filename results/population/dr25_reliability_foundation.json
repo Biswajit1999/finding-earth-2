@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "scope": "Kepler DR25 reliability inputs and fixed analysis-population contract",
+  "release_status": "foundation_only_no_intrinsic_occurrence_result",
+  "labels": {
+    "false_alarm_experiments": "SIMULATED",
+    "observed_tces": "OBSERVED",
+    "false_alarm_reliability_equation": "MODEL-INFERRED",
+    "astrophysical_false_positive_probability": "MODEL-INFERRED"
+  },
+  "stellar_selection": {
+    "teff_min": 4800.0,
+    "teff_max": 6300.0,
+    "logg_min": 4.0,
+    "radius_max_solar": 1.5
+  },
+  "reliability_domain": {
+    "period_min_days": 50.0,
+    "period_max_days": 600.0,
+    "radius_min_earth": 0.5,
+    "radius_max_earth": 15.0,
+    "mes_min": 7.0,
+    "mes_max": 30.0
+  },
+  "analysis_population": {
+    "stellar_selection": {
+      "teff_min": 4800.0,
+      "teff_max": 6300.0,
+      "logg_min": 4.0,
+      "radius_max_solar": 1.5
+    },
+    "population_contract": {
+      "period_min_days": 50.0,
+      "period_max_days": 500.0,
+      "radius_min_earth": 0.5,
+      "radius_max_earth": 2.0,
+      "comparison_period_min_days": 237.0,
+      "comparison_period_max_days": 500.0,
+      "comparison_radius_min_earth": 0.75,
+      "comparison_radius_max_earth": 1.5
+    },
+    "archive_stellar_rows": 200038,
+    "selected_stars": 114105,
+    "koi_rows": 8054,
+    "catalog_candidates_after_flag_contract": 3992,
+    "eligible_candidates": 89,
+    "published_comparison_box_candidates": 11,
+    "eligible_missing_fpp": 0,
+    "eligible_missing_observed_tce": 0,
+    "fpp_rows_with_missing_probability": 178,
+    "fpp_period_mismatch_over_one_day": 2,
+    "koi_score_used_as_reliability": false,
+    "candidate_reliability_assignment": "pending_validated_smooth_false_alarm_model",
+    "labels": {
+      "catalog_and_tce_fields": "OBSERVED",
+      "astrophysical_planet_probability": "MODEL-INFERRED",
+      "future_false_alarm_reliability": "MODEL-INFERRED"
+    }
+  },
+  "false_alarm_experiment_cleaning": [
+    {
+      "experiment": "INV",
+      "input_rows": 19531,
+      "drop_list_rows": 4583,
+      "drop_list_matches": 4579,
+      "drop_list_ids_absent_from_delivered_table": 4,
+      "rows_after_drop_list": 14952,
+      "rows_after_stellar_selection": 3238
+    },
+    {
+      "experiment": "SCR1",
+      "input_rows": 24209,
+      "drop_list_rows": 10973,
+      "drop_list_matches": 10431,
+      "drop_list_ids_absent_from_delivered_table": 542,
+      "rows_after_drop_list": 13778,
+      "rows_after_stellar_selection": 3800
+    },
+    {
+      "experiment": "SCR2",
+      "input_rows": 24217,
+      "drop_list_rows": 10901,
+      "drop_list_matches": 10400,
+      "drop_list_ids_absent_from_delivered_table": 501,
+      "rows_after_drop_list": 13817,
+      "rows_after_stellar_selection": 3848
+    },
+    {
+      "experiment": "SCR3",
+      "input_rows": 19811,
+      "drop_list_rows": 11399,
+      "drop_list_matches": 10571,
+      "drop_list_ids_absent_from_delivered_table": 828,
+      "rows_after_drop_list": 9240,
+      "rows_after_stellar_selection": 3547
+    }
+  ],
+  "observed_classification": {
+    "input_rows": 32530,
+    "banned_tce_ids": 4583,
+    "banned_tce_matches": 3400,
+    "manual_false_alarm_ids": 5,
+    "manual_false_alarm_ids_present": 5,
+    "rows_after_stellar_selection_and_ban": 10760,
+    "observed_false_alarms": 7262,
+    "astrophysical_false_positives": 1196
+  },
+  "reliability_grid": {
+    "pooling": "Unique delivered rows from INV, SCR1, SCR2 and SCR3; no duplicated trials",
+    "published_code_difference": "The pinned occurrence notebook repeats INV three times to balance one inverted experiment against three scrambled experiments. This descriptive grid does not turn those repeated rows into independent binomial trials.",
+    "equation": "R_FA = 1 - [F_FA/(1-F_FA)] * [(1-E_FA)/E_FA]",
+    "domain_synthetic_trials": 11104,
+    "domain_synthetic_rejected_as_fp": 11013,
+    "domain_observed_tces": 4603,
+    "domain_observed_instrumental_false_alarms": 4284,
+    "cells": 42,
+    "status_counts": {
+      "diagnostic_supported": 17,
+      "low_finite_sample_support": 16,
+      "point_outside_probability_space": 9
+    },
+    "intervals": "Jeffreys Beta(0.5,0.5) component posteriors; 20,000 deterministic draws per non-empty cell. Equation outputs are raw and never clipped to [0,1].",
+    "candidate_assignment": "none_pending_validated_smooth_model"
+  },
+  "fpp_release_audit": {
+    "rows": 8054,
+    "missing_probabilities": 178,
+    "period_mismatch_over_one_day": [
+      {
+        "kepid": 12401132,
+        "kepoi_name": "K04829.01",
+        "koi_period": 7.630545,
+        "fpp_koi_period": 22.889,
+        "fpp_prob": 0.014
+      },
+      {
+        "kepid": 9394762,
+        "kepoi_name": "K05664.01",
+        "koi_period": 77.138911,
+        "fpp_koi_period": 308.57,
+        "fpp_prob": 0.68
+      }
+    ]
+  },
+  "source_repository_commit": "d200f54b6f0df49e0dae530e69983cdce5397bfb",
+  "source_hashes": {
+    "archive_stars": "b8883287f9daee42ea02d09bb420229f7d40ee30f08a397955d87fff28f4aea0",
+    "archive_false_alarm_inv": "2d13caa8cda93cb331285efc9933227adae50ce48b822965af390f4b6e021b2d",
+    "archive_false_alarm_scr1": "83315efb8d2c33ac5057ac67422db1035313fb684a408aab6f11b34defdac230",
+    "archive_false_alarm_scr2": "014f5e062cb5fd2a015c49208859eb8cf564dce3a75703d4e85a5b63337be986",
+    "archive_false_alarm_scr3": "1e419f261a859bd0967ab6e74932ca47330207de1563fe522e1aa84c753cc4fb",
+    "archive_observed_tces": "d83b4e72d26601145d076b25b00b7de99a63b8fa716920c8fe0759bf47590acd",
+    "support_droplist_inv": "e9ba1d8b530fd7954793044d461792301cfed7eed4255a530495ba6c37abd500",
+    "support_droplist_scr1": "d434f3eaed4aa4b84d938b36a874a2a1edb706e9f21ad940de470019b22b6036",
+    "support_droplist_scr2": "2532b7389072ab0e41ed89933fc103ff6a7168680e14d9bf138f37468d95379e",
+    "support_droplist_scr3": "4c1c313df6e6574c1b54cf6410601dab23009b3e2209cea924a2b219cb5b11a7",
+    "support_koifpp": "ffeeb339d67d032bf7b9617d3f6efa597af58f0b8abfd808471beaac992c15da"
+  },
+  "artifact_hashes": {
+    "dr25_reliability_grid.csv": "0a82470a5d651d34bdd9db1b0ed38d0def34130f8758a660fc2d81df88e7bcfe",
+    "dr25_analysis_population.csv": "804ff094d33b3a9adcc21853dbf13c857d4121b6e1a45e1253551e19fa485eba",
+    "published_occurrence_comparisons.json": "6254e52cd7767496f6a77718747fe75568b2515fbcf17ab7c759a2bf76d7147b"
+  },
+  "open_gates": [
+    "Fit and validate a smooth false-alarm effectiveness and observed false-alarm model",
+    "Propagate false-alarm and astrophysical-FPP uncertainty into candidate weights",
+    "Complete per-target detection calibration across the full selected denominator",
+    "Fit a measurement-error-aware hierarchical period-radius population likelihood",
+    "Pass end-to-end real-data posterior predictive and literature-domain comparisons"
+  ]
+}

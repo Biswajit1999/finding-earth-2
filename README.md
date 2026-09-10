@@ -29,6 +29,13 @@
 > flagged and down-weighted rather than silently ranked as confident members
 > — see [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md).
 
+> **Population upgrade in progress.** A separate DR25 analysis now pins the
+> 114,105-star search denominator, 89-candidate inference population, all four
+> false-alarm experiments, observed TCEs, known-signal exclusions and
+> astrophysical FPP data. It deliberately publishes no intrinsic occurrence
+> value until the smooth reliability and per-target selection models pass their
+> gates. See [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md).
+
 ---
 
 ## Abstract

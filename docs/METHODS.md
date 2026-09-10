@@ -213,3 +213,29 @@ CODATA 2018 fundamental constants; Kopp & Lean (2011),
 doi:[10.1029/2010GL045777](https://doi.org/10.1029/2010GL045777) for the
 total solar irradiance value. Full table, each entry with its source, in
 `src/earth2/constants.py`.
+
+## 9. DR25 population-analysis contract
+
+The v2 population work is additive and does not reinterpret the v1 ranked
+confirmed-planet catalogue as an unbiased planet sample. It defines a searched
+stellar denominator first, then keeps transit geometry, observing window,
+pipeline recovery, conditional vetting completeness, instrumental false-alarm
+reliability and astrophysical false-positive probability as distinct terms.
+
+The current stellar contract selects original DR25 rows with 4800–6300 K,
+`log(g) >= 4`, radius at most 1.5 solar radii and finite positive mass,
+dataspan, duty cycle, six-hour CDPP and MES threshold. The fixed inference box
+contains DR25 pipeline candidates with all four false-positive flags clear,
+0.5–2.0 Earth radii and 50–500 day periods. It has 114,105 selected stars and
+89 catalogue candidates; 11 candidates fall in the separate 0.75–1.5 Earth
+radii, 237–500 day published-comparison box. These are denominator and input
+counts, not an occurrence result.
+
+Instrumental false-alarm effectiveness comes from the inverted and scrambled
+experiments (**SIMULATED**); the false-alarm fraction comes from observed TCEs
+(**OBSERVED**). Their equation-derived reliability is **MODEL-INFERRED**.
+Astrophysical false-positive probability is handled with the pinned DR25 FPP
+table. `koi_score` is never substituted for either probability. Candidate-level
+false-alarm and total reliability are currently left undefined pending a
+validated smooth model. Full definitions, source quirks and the cell diagnostic
+are in [DR25_RELIABILITY.md](DR25_RELIABILITY.md).

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "product": "false_alarm_inv",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "INV",
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inv_tces.txt",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_inv_tces.txt",
+  "query": "Official DR25 INV Robovetter false-alarm experiment; all rows",
+  "retrieved_at_utc": "2026-09-09T23:45:27.248609+00:00",
+  "row_count": 19531,
+  "declared_row_count": 19536,
+  "sha256": "2d13caa8cda93cb331285efc9933227adae50ce48b822965af390f4b6e021b2d",
+  "bytes": 4417393,
+  "software_commit": "69f313f2caa3a55b2094bff1345d638bb7c009ba",
+  "adapter_sha256": "7a24f5581a4c90bd8eb9a79a8a82b9073b18117de367149d810bc2b24f7a1f60",
+  "raw_path": "data/raw/kepler_dr25/false_alarm_inv.txt",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

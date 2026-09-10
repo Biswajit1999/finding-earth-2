@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "product": "droplist_scr3",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "SCR3",
+  "source_url": "https://raw.githubusercontent.com/stevepur/DR25-occurrence-public/d200f54b6f0df49e0dae530e69983cdce5397bfb/data/kplr_droplist_scr3.txt",
+  "resolved_url": "https://raw.githubusercontent.com/stevepur/DR25-occurrence-public/d200f54b6f0df49e0dae530e69983cdce5397bfb/data/kplr_droplist_scr3.txt",
+  "repository": "https://github.com/stevepur/DR25-occurrence-public",
+  "repository_commit": "d200f54b6f0df49e0dae530e69983cdce5397bfb",
+  "upstream_git_blob_sha1": "29dce339b322eadd3e3f2259f7a2bcfd1cdb827a",
+  "retrieved_at_utc": "2026-09-10T06:39:35.760421+00:00",
+  "row_count": 11399,
+  "sha256": "4c1c313df6e6574c1b54cf6410601dab23009b3e2209cea924a2b219cb5b11a7",
+  "bytes": 148316,
+  "software_commit": "69f313f2caa3a55b2094bff1345d638bb7c009ba",
+  "adapter_sha256": "0030dcd23f7ea914f6a02f7cb77e3be8db15aa7356c3f4cedb68ac2a00d85ff3",
+  "raw_path": "data/raw/kepler_dr25/droplist_scr3.txt",
+  "evidence_role": "Known-signal exclusions",
+  "licence": "Not asserted; retain upstream attribution and consult source terms."
+}

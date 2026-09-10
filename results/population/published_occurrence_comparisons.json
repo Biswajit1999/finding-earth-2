@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "interpretation": "A registry of estimands and domains, not a pooled meta-analysis. Finding Earth 2 has no real intrinsic occurrence result at this checkpoint.",
+  "studies": [
+    {
+      "study": "Hsu et al. 2019",
+      "reference": "https://arxiv.org/abs/1902.01417",
+      "survey": "Kepler DR25 with Gaia DR2 stellar radii",
+      "stellar_population": "FGK stars",
+      "estimand": "integrated planets per star f_R,P",
+      "planet_radius_earth": [
+        0.75,
+        1.5
+      ],
+      "orbital_period_days": [
+        237.0,
+        500.0
+      ],
+      "reported_upper_limit_percentile_84_13": 0.27,
+      "recommended_planning_range": [
+        0.03,
+        0.4
+      ],
+      "reported_differential_gamma_range": [
+        0.06,
+        0.76
+      ],
+      "comparison_status": "domain_matched_target; pending_project_intrinsic_inference"
+    },
+    {
+      "study": "Bryson et al. 2020",
+      "reference": "https://arxiv.org/abs/1906.03575",
+      "survey": "Kepler DR25",
+      "stellar_population": "GK dwarf stars",
+      "estimand": "planets per star within 20 percent of Earth period and radius",
+      "planet_radius_earth": [
+        0.8,
+        1.2
+      ],
+      "orbital_period_days": [
+        292.2,
+        438.3
+      ],
+      "reported_reliability_corrected": {
+        "median": 0.015,
+        "lower_error": 0.007,
+        "upper_error": 0.011
+      },
+      "reported_without_reliability": {
+        "median": 0.034,
+        "lower_error": 0.012,
+        "upper_error": 0.018
+      },
+      "comparison_status": "different_domain_and_stellar_contract"
+    },
+    {
+      "study": "Bryson et al. 2021",
+      "reference": "https://arxiv.org/abs/2010.14812",
+      "survey": "Kepler DR25 with Gaia-based stellar properties",
+      "stellar_population": "main-sequence dwarfs, 4800\u20136300 K",
+      "estimand": "eta Earth in the star-dependent conservative habitable zone",
+      "planet_radius_earth": [
+        0.5,
+        1.5
+      ],
+      "orbital_period_days": null,
+      "reported_conservative_hz_bounds": [
+        {
+          "median": 0.37,
+          "lower_error_68": 0.21,
+          "upper_error_68": 0.48
+        },
+        {
+          "median": 0.6,
+          "lower_error_68": 0.36,
+          "upper_error_68": 0.9
+        }
+      ],
+      "bound_meaning": "Two completeness extrapolation assumptions",
+      "comparison_status": "different_estimand; no direct numerical comparison"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "product": "observed_tces",
+  "survey": "Kepler",
+  "release": "DR25",
+  "experiment": "OBS",
+  "source_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_obs_tces.txt",
+  "resolved_url": "https://exoplanetarchive.ipac.caltech.edu/data/KeplerData/Simulated/kplr_dr25_obs_tces.txt",
+  "query": "Official DR25 observed Robovetter TCE results; all legitimate TCEs",
+  "retrieved_at_utc": "2026-09-09T23:48:59.456779+00:00",
+  "row_count": 32530,
+  "declared_row_count": 32534,
+  "sha256": "d83b4e72d26601145d076b25b00b7de99a63b8fa716920c8fe0759bf47590acd",
+  "bytes": 7355167,
+  "software_commit": "69f313f2caa3a55b2094bff1345d638bb7c009ba",
+  "adapter_sha256": "d17cf9441b82fcc2a25901cbcee32b71f1ab4a002e5a26ab3d2fc9170f46b5ea",
+  "raw_path": "data/raw/kepler_dr25/observed_tces.txt",
+  "acknowledgement": "NASA Exoplanet Archive, operated by Caltech under contract with NASA; Kepler mission and DR25 pipeline/Robovetter teams.",
+  "licence": "Not asserted; retain archive acknowledgement and consult source terms.",
+  "documentation": "https://exoplanetarchive.ipac.caltech.edu/docs/Kepler_completeness_reliability.html"
+}

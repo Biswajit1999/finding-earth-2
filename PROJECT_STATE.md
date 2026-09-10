@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **3 complete — synthetic selection recovery passed; population inference next**; v2 is not complete.
+- Current phase: **4 in progress — real population contract and reliability-data foundation complete; smooth inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,9 +9,10 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 215 passed; Ruff lint and formatting checks for the new Phase 3 files,
-  mypy across 53 source files, and six v1 release invariants pass. DR25 contracts
-  cover the delivered recovery-code discrepancy and KeplerPORTs input integrity.
+- Tests: 219 passed; Ruff checks pass for the affected population files, mypy
+  passes across 54 source files, and six v1 release invariants pass. DR25
+  contracts cover delivered row discrepancies, support-file integrity,
+  selection decisions and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
 - Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
 - Known limitations and scientific assumptions: see
@@ -32,9 +33,14 @@
   0.7 planets-per-star rate with +0.69% relative bias and 94.67% coverage for
   nominal 95% intervals. The artifact is labelled SIMULATED and reproducible at
   SHA-256 `a61b68c726efda84b9ca306c9f635e20abe2f563ad5b5324cf9bb20178fc92db`.
-- Exact next action: define a real Kepler analysis population and hierarchical
-  period-radius likelihood, include reliability and selection uncertainty, and
-  compare against published occurrence studies. No real intrinsic inference yet.
+- Reliability foundation: all observed/INV/SCR products, known-signal drop lists
+  and astrophysical FPP inputs are hash-gated. The fixed contract selects
+  114,105 stars and 89 candidates; 11 occupy the Hsu period-radius comparison
+  box. The 42-cell diagnostic assigns no candidate reliability and makes no
+  intrinsic claim.
+- Exact next action: fit and validate a smooth, experiment-aware false-alarm
+  model, then combine it with per-target selection in the hierarchical
+  period-radius likelihood. No real intrinsic inference yet.
 
 ## Execution contract
 

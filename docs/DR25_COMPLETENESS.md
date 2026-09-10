@@ -3,6 +3,11 @@
 Status: source adapter and experiment diagnostics, not a released occurrence
 model. The additive `earth2.population` package leaves v1 products untouched.
 
+False-alarm experiments, astrophysical false-positive probabilities and the
+fixed candidate denominator are documented separately in
+[DR25_RELIABILITY.md](DR25_RELIABILITY.md). Completeness and reliability remain
+separate conditional probabilities throughout the implementation.
+
 ## Data and reproduction
 
 Run `python -m earth2.population --root .` (`python.exe` on this Windows
