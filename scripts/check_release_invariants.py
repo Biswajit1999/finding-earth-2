@@ -249,6 +249,52 @@ def main() -> int:
         observed_hashes_match,
     )
 
+    composition_dir = RESULTS_DIR / "composition"
+    composition = json.loads(
+        (composition_dir / "bulk_composition_ensemble.json").read_text()
+    )
+    composition_records = composition["records"]
+    probabilities = [
+        value
+        for row in composition_records
+        for key, value in row.items()
+        if key.startswith("p_") and value is not None
+    ]
+    check(
+        "composition ensemble is model-inferred and every probability is bounded",
+        composition["label"] == "MODEL-INFERRED"
+        and all(0 <= value <= 1 for value in probabilities),
+    )
+    check(
+        "radius-predicted and minimum masses never enter two-dimensional composition models",
+        all(
+            row["p_rocky_zeng_fe_si_envelope"] is None
+            and row["p_rocky_otegi_equal_prior"] is None
+            for row in composition_records
+            if not row["catalogue_mass_accepted_as_independent"]
+        ),
+    )
+    earth_composition = next(row for row in composition_records if row["pl_name"] == "Earth")
+    check(
+        "Earth control is recovered inside the published Zeng terrestrial envelope",
+        earth_composition["p_consistent_with_terrestrial_composition_zeng"] >= 0.99
+        and earth_composition["p_requires_volatiles_zeng"] <= 0.01,
+    )
+    composition_manifest = json.loads(
+        (composition_dir / "composition_products.json").read_text()
+    )
+    composition_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in composition_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check(
+        "composition product hashes match the release manifest",
+        composition_hashes_match,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

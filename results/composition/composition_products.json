@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "product": "Phase 6 probabilistic composition evidence ensemble",
+  "files": {
+    "results/composition/bulk_composition_ensemble.csv": {
+      "bytes": 1172345,
+      "sha256": "72bd56e8ffe62afdd9271f1689daec4f3dc570d4693d0014b12dea0ecfd64d5d"
+    },
+    "results/composition/bulk_composition_ensemble.json": {
+      "bytes": 5965261,
+      "sha256": "04268663640dee5719352a8fed409699373289d17e49004ebe703e10b6ff322a"
+    },
+    "results/composition/composition_model_disagreement.png": {
+      "bytes": 489139,
+      "sha256": "8583988b74483a598bc5aac752920d8b122b3ac50f2e910cc1cae3ce4f19ffde"
+    },
+    "results/composition/composition_model_disagreement.svg": {
+      "bytes": 216179,
+      "sha256": "762662ba0dfbbd1cc35219ccf87af4ce9b765036fc4b7e797ab699baf89a43f7"
+    }
+  }
+}

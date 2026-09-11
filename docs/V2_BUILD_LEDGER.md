@@ -251,3 +251,29 @@
 - The page states the scientific boundary in the main reading path: this is a
   fixed period-radius occurrence result, not habitability, biology or a
   star-dependent habitable-zone eta-Earth estimate.
+
+## Phase 6 probabilistic composition — 2026-09-12
+
+- Retained the v1 Rogers radius logistic as a named radius-only population
+  baseline and added two-dimensional inference from independently measured mass
+  and radius. Predicted mass, minimum mass and upper-limit classes are rejected
+  by the composition evidence gate.
+- Implemented the Zeng, Sasselov & Jacobsen two-layer iron-silicate envelope in
+  its published 1–8 Earth-mass, CMF=0–0.4 domain. Outputs separate probability
+  of requiring volatiles, consistency with the terrestrial family and draws too
+  dense for that restricted family; no precise core fraction is inferred.
+- Implemented an equal-prior Otegi rocky/volatile-rich relation comparison with
+  a declared 0.20-dex model-scatter floor and 0.10/0.30-dex sensitivities. The
+  Wolfgang relation remains a radius-to-mass prediction reference explicitly
+  marked as non-dynamical.
+- Propagated asymmetric errors through 4,000 deterministic draws per planet and
+  added a correlation input contract. Current catalogue covariances are absent,
+  so every affected record explicitly reports the zero-correlation assumption.
+- Evaluated 3,852 planets in the 0.5–4 Earth-radius domain. There are 679
+  independent measured masses, 352 Zeng-supported records and 609
+  Otegi-supported records. Among three-model records, the median rocky-
+  probability span is 0.251 and the 90th percentile is 0.485.
+- The Earth control lies inside the restricted Zeng terrestrial envelope. Six
+  focused tests and release invariants protect model equations, domains,
+  covariance propagation, probability bounds, source-class separation and
+  product hashes. Consecutive CSV/JSON/PNG/SVG builds are byte-identical.

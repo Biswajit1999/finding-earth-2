@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **5 complete — observed-versus-intrinsic interpretation released; Phase 6 composition evidence ensemble next**; v2 is not complete.
+- Current phase: **6 complete — probabilistic composition ensemble released; Phase 7 stellar evolution and climate sensitivity next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,8 +9,8 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 237 passed; Ruff passes across source, tests and scripts, and mypy
-  passes across 59 source files plus the occurrence builder. DR25
+- Tests: 243 passed; Ruff passes across source, tests and scripts, and mypy
+  passes across 63 checked source and product-builder files. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
@@ -66,8 +66,15 @@
   roughly one selected signal per 50,535 searched stars. A new `/occurrence`
   chapter loads the bundled verified payload and checks GitHub `main` for a
   newer committed posterior on open.
-- Exact next action: build the Phase 6 composition evidence ensemble without
-  turning radius-only mass estimates into independent composition evidence.
+- Probabilistic bulk composition: 3,852 planets have radii inside the declared
+  0.5–4 Earth-radius domain; 679 have an accepted independent measured mass.
+  Rogers radius-only, Zeng iron-silicate and Otegi rocky/volatile views remain
+  separate. Of these, 352 meet the Zeng support gate and 609 the Otegi gate.
+  The median three-model rocky-probability span is 0.251 and its 90th percentile
+  is 0.485. Mass-radius predictions, M sin i and upper limits never enter the
+  two-dimensional composition inference.
+- Exact next action: build Phase 7 time-dependent habitable-zone exposure and
+  climate-model sensitivity with explicit age/track support gates.
 
 ## Execution contract
 
