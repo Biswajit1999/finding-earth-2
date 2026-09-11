@@ -19,6 +19,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
       { href: "/atlas", label: "Candidate Atlas", hint: "Filter and sort the full analysed catalogue" },
       { href: "/ranking", label: "Ranking", hint: "Re-weight the composite index yourself" },
       { href: "/compare", label: "Compare Worlds", hint: "Put candidates side by side" },
+      { href: "/occurrence", label: "Observed → Intrinsic", hint: "How a selected catalogue becomes a population estimate" },
     ],
   },
   {

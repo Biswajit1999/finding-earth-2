@@ -3,7 +3,13 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { MassClassChip, HzChip } from "@/components/Chips";
 import { ScoreMeter, UncertaintyBar } from "@/components/UncertaintyBar";
-import { getSummary, getTopCandidates, getUniverse, getCoverage } from "@/lib/data";
+import {
+  getCoverage,
+  getOccurrenceStory,
+  getSummary,
+  getTopCandidates,
+  getUniverse,
+} from "@/lib/data";
 import { compactInt, distanceLabel, num, pct, slugify } from "@/lib/format";
 
 export default function HomePage() {
@@ -11,6 +17,7 @@ export default function HomePage() {
   const universe = getUniverse();
   const top = getTopCandidates(8);
   const coverage = getCoverage();
+  const occurrence = getOccurrenceStory();
 
   const cov = summary.measurement_coverage as Record<string, number>;
   const nPlanets = summary.population.n_confirmed_planets;
@@ -84,6 +91,54 @@ export default function HomePage() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* ================= observed to intrinsic ================= */}
+      <section className="border-y border-[var(--color-line)] bg-[var(--color-deep)]">
+        <div className="mx-auto grid max-w-[1400px] gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+          <div>
+            <p className="eyebrow text-[var(--color-cyan)]">New population chapter</p>
+            <h2 className="mt-3 max-w-[14ch] text-[length:var(--text-display)] font-light leading-[1.06]">
+              The catalogue is only what Kepler could see
+            </h2>
+            <p className="mt-5 max-w-[52ch] text-[15px] leading-relaxed text-[var(--color-dim)]">
+              I followed {occurrence.funnel[1].value.toLocaleString("en-GB")} DR25
+              candidates backwards through reliability, transit geometry, pipeline
+              recovery and vetting. The result is a conditional population
+              posterior with its uncertainty and claim boundary kept visible.
+            </p>
+            <Link href="/occurrence" className="link mt-6 inline-block text-sm">
+              See observed become intrinsic →
+            </Link>
+          </div>
+          <div className="grid gap-px overflow-hidden rounded-[var(--radius-lg)] border border-[var(--color-line)] bg-[var(--color-line)] sm:grid-cols-3">
+            {[
+              [
+                occurrence.funnel[0].value.toLocaleString("en-GB"),
+                "searched stars",
+                "OBSERVED",
+              ],
+              [
+                occurrence.funnel[3].value.toFixed(1),
+                "effective stars",
+                "MODEL-INFERRED",
+              ],
+              [
+                occurrence.intrinsic_posterior.full_fixed_box.p50.toFixed(3),
+                "planets per star",
+                "MODEL-INFERRED",
+              ],
+            ].map(([value, label, evidence]) => (
+              <article key={label} className="min-h-48 bg-[var(--color-panel)] p-6">
+                <p className="eyebrow text-[var(--color-muted)]">{evidence}</p>
+                <p className="mt-10 font-[family-name:var(--font-mono)] text-3xl font-light tabular-nums text-[var(--color-ivory)]">
+                  {value}
+                </p>
+                <p className="mt-2 text-xs text-[var(--color-muted)]">{label}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 

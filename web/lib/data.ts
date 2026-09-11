@@ -20,6 +20,7 @@ import type {
   DeepDiveIndexEntry,
   DiscoveryTimelineFile,
   GalaxyFile,
+  OccurrenceStory,
   Planet,
   ReferenceRow,
   SpectraIndexRow,
@@ -96,6 +97,10 @@ export function getSpectraIndex(): SpectraIndexRow[] {
 
 export function getTransitValidation(): TransitValidationFile | null {
   return readJsonOptional<TransitValidationFile>("transit_validation.json");
+}
+
+export function getOccurrenceStory(): OccurrenceStory {
+  return readJson<OccurrenceStory>("occurrence.json");
 }
 
 export function getDeepDiveIndex(): DeepDiveIndexEntry[] {

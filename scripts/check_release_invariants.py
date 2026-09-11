@@ -214,6 +214,41 @@ def main() -> int:
     )
     check("DR25 occurrence product hashes match the release manifest", occurrence_hashes_match)
 
+    observed_intrinsic = json.loads(
+        (population / "dr25_observed_vs_intrinsic.json").read_text()
+    )
+    check(
+        "observed-versus-intrinsic narrative keeps mixed evidence labels explicit",
+        observed_intrinsic["label"] == "OBSERVED + MODEL-INFERRED"
+        and {row["label"] for row in observed_intrinsic["funnel"]}
+        == {"OBSERVED", "MODEL-INFERRED"},
+    )
+    check(
+        "observed-versus-intrinsic web payload is byte-identical to the research product",
+        (RESULTS_DIR.parent / "web/public/data/occurrence.json").read_bytes()
+        == (population / "dr25_observed_vs_intrinsic.json").read_bytes(),
+    )
+    check(
+        "Earth-pivot selection is finite, non-zero and below one percent",
+        0
+        < observed_intrinsic["earth_pivot_visibility"]["mean_total_selection"]
+        < 0.01,
+    )
+    observed_manifest = json.loads(
+        (population / "dr25_observed_intrinsic_products.json").read_text()
+    )
+    observed_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in observed_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check(
+        "observed-versus-intrinsic product hashes match the release manifest",
+        observed_hashes_match,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

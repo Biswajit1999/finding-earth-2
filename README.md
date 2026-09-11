@@ -44,6 +44,16 @@
 > [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md), plus the
 > [`DR25 occurrence result`](docs/DR25_OCCURRENCE.md).
 
+<p align="center">
+  <img src="results/population/dr25_observed_vs_intrinsic.png" alt="Three-panel Kepler DR25 story showing observed catalogue candidates, the total survey selection surface and the inferred intrinsic period-radius density" width="100%">
+</p>
+
+The observed catalogue and the inferred population are now connected in one
+evidence-labelled product. At the Earth pivot, the released selection model has
+a mean total selection probability of about **0.00198%**—roughly one selected
+signal per 50,535 searched stars. The website turns this into an interactive
+four-step reading while retaining the generated JSON as its source of truth.
+
 ---
 
 ## Abstract
@@ -315,6 +325,7 @@ python -m earth2 figures     # publication figures
 python -m earth2 deepdive    # top-system deep dives (--transit --rv for live fetch)
 python -m earth2 export      # browser-ready JSON
 python -m earth2 report      # regenerate this README
+python scripts/build_observed_intrinsic_story.py  # population story + web payload
 ```
 
 Or the whole pipeline:
@@ -368,6 +379,7 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md) | Survey-wide detection model, validation and products |
 | [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) | False-alarm and astrophysical reliability contract |
 | [`docs/DR25_OCCURRENCE.md`](docs/DR25_OCCURRENCE.md) | Fixed-box occurrence posterior, diagnostics and published comparisons |
+| [`docs/OBSERVED_VS_INTRINSIC.md`](docs/OBSERVED_VS_INTRINSIC.md) | Evidence-labelled bridge from catalogue counts to population inference |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |

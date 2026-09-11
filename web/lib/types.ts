@@ -460,3 +460,62 @@ export interface SpectraIndexRow {
   n_facilities: number;
   facilities: string;
 }
+
+export interface PosteriorSummary {
+  p025: number;
+  p16: number;
+  p50: number;
+  p84: number;
+  p975: number;
+  mean: number;
+}
+
+export interface OccurrenceStory {
+  schema_version: string;
+  label: string;
+  title: string;
+  domain: {
+    period_min_days: number;
+    period_max_days: number;
+    radius_min_earth: number;
+    radius_max_earth: number;
+  };
+  funnel: Array<{
+    stage: string;
+    value: number;
+    interval?: [number, number];
+    unit: string;
+    label: string;
+  }>;
+  observed_rates_for_explanation_only: {
+    raw_candidate_entries_per_selected_star: number;
+    mean_imputed_valid_candidates_per_selected_star: number;
+    intrinsic_to_raw_catalogue_ratio: number;
+    intrinsic_to_reliability_adjusted_observed_ratio: number;
+    warning: string;
+  };
+  earth_pivot_visibility: {
+    period_days: number;
+    radius_earth: number;
+    mean_transit_geometry: number;
+    mean_phase_window: number;
+    mean_pipeline_including_window: number;
+    mean_vetting_given_recovered: number;
+    mean_pipeline_and_vetting: number;
+    mean_total_selection: number;
+    effective_stars: number;
+    one_selected_signal_per_stars: number;
+    warning: string;
+  };
+  intrinsic_posterior: {
+    full_fixed_box: PosteriorSummary;
+    period_slope_alpha: PosteriorSummary;
+    radius_slope_beta: PosteriorSummary;
+    gamma_earth_per_dlnp_dlnr: PosteriorSummary;
+    hsu_box_projection: PosteriorSummary;
+    earth_20_percent_box_projection: PosteriorSummary;
+  };
+  story_steps: Array<{ number: string; title: string; body: string }>;
+  claim_boundary: string;
+  source_hashes: Record<string, string>;
+}

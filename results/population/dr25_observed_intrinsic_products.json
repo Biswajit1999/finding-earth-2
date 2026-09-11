@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "product": "DR25 observed-versus-intrinsic narrative",
+  "files": {
+    "results/population/dr25_observed_vs_intrinsic.json": {
+      "bytes": 5449,
+      "sha256": "0ae21f47b29bba7a28e9495566bab629f981bf122faed34cf1395c1b7b14f425"
+    },
+    "results/population/dr25_observed_vs_intrinsic.png": {
+      "bytes": 247965,
+      "sha256": "01541bceda32dcf420cc9e03bbd756c271cc27a810659941fcb4d833ed953843"
+    },
+    "results/population/dr25_observed_vs_intrinsic.svg": {
+      "bytes": 4398813,
+      "sha256": "7430d60b46f5579ef03ef1ebc4ed6ee1bd0e54597c6cffc97d274ed98d88e1fd"
+    },
+    "web/public/data/occurrence.json": {
+      "bytes": 5449,
+      "sha256": "0ae21f47b29bba7a28e9495566bab629f981bf122faed34cf1395c1b7b14f425"
+    },
+    "web/public/figures/observed_vs_intrinsic.png": {
+      "bytes": 247965,
+      "sha256": "01541bceda32dcf420cc9e03bbd756c271cc27a810659941fcb4d833ed953843"
+    }
+  }
+}

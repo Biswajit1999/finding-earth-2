@@ -31,7 +31,7 @@ export default function PerspectivePage() {
           <div className="space-y-5 text-[15px] leading-relaxed text-[var(--color-dim)]">
             <p>I wanted to know which known world comes closest to Earth. At first that sounded like a ranking problem. Building the pipeline showed me that it is really an evidence problem: the catalogue mixes observations, derived quantities, model estimates and missing uncertainty.</p>
             <p>So I built more than a score. I built a source trail, uncertainty propagation, Solar-System controls, observable-specific laboratories and a growing dictionary that forces me to name what kind of claim I am making.</p>
-            <p>The project now asks a better question: given how our surveys select what we see, what does the evidence imply about the population beyond the visible catalogue—and which observation would teach us the most next?</p>
+            <p>The project now asks a better question: given how our surveys select what we see, what does the evidence imply about the population beyond the visible catalogue—and which observation would teach us the most next? Reconstructing the Kepler DR25 selection function made that lesson quantitative.</p>
           </div>
         </section>
 
@@ -51,6 +51,7 @@ export default function PerspectivePage() {
             <div className="mt-8 flex flex-wrap gap-5 text-sm">
               <Link href="/research" className="link">Read the research article →</Link>
               <Link href="/methods" className="link">Inspect the methods →</Link>
+              <Link href="/occurrence" className="link">See observed become intrinsic →</Link>
               <Link href="/universe" className="link">Explore the discovery universe →</Link>
             </div>
           </div>

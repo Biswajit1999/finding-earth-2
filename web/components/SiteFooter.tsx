@@ -47,6 +47,7 @@ export function SiteFooter({
               ["/atlas", "Candidate Atlas"],
               ["/ranking", "Ranking"],
               ["/compare", "Compare Worlds"],
+              ["/occurrence", "Observed → Intrinsic"],
             ]}
           />
           <FooterCol

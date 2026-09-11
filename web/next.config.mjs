@@ -21,6 +21,12 @@ const nextConfig = {
     NEXT_PUBLIC_BASE_PATH: basePath,
   },
   reactStrictMode: true,
+  // Thousands of candidate pages each materialise the catalogue. Limiting the
+  // static-generation pool avoids worker timeouts from memory contention on
+  // ordinary laptops while retaining parallel export.
+  experimental: {
+    cpus: 4,
+  },
   // Pin the workspace root: without it Turbopack walks up past the repository
   // and picks a lockfile from the user's home directory.
   turbopack: {

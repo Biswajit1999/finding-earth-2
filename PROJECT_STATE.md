@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **4 complete — conditional fixed-box occurrence released; Phase 5 observed-versus-intrinsic interpretation next**; v2 is not complete.
+- Current phase: **5 complete — observed-versus-intrinsic interpretation released; Phase 6 composition evidence ensemble next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -14,7 +14,8 @@
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
-- Website: production build (6,374 pages), lint and type check passed; static export integrity passed.
+- Website: production build (6,375 HTML files), lint and type check passed;
+  static export integrity passed across 23 route templates.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). A conditional fixed-box
   intrinsic-population result now exists; no calibrated habitability
@@ -26,8 +27,8 @@
   literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
 - Last successful and remotely verified commit:
-  `f0e8161c7b0eb40aa60a465c19cfc030594c3e54` (validated hierarchical
-  occurrence inference), authored as Biswajit Jana. Resolve this document's containing
+  `08ba60cd34d7168edc89e9f819e28c69748f50ef` (conditional DR25
+  occurrence posterior), authored as Biswajit Jana. Resolve this document's containing
   checkpoint with `git log -1 -- PROJECT_STATE.md`.
 - KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
 - Synthetic recovery: 300 replicates of 10,000 artificial stars recover a known
@@ -58,9 +59,15 @@
   conservative high-MES reliability endpoint. Its Hsu-box projection is 0.122
   (84th percentile 0.227), while the Earth +/-20% projection is 0.041. These are
   MODEL-INFERRED population rates, not habitability or life probabilities.
-- Exact next action: build the observed-versus-intrinsic narrative and
-  selection-aware visual products, explicitly showing why raw catalogue counts,
-  corrected fixed-box occurrence and star-dependent eta Earth differ.
+- Observed-versus-intrinsic interpretation: a deterministic research product and
+  three-panel figure connect 89 catalogue candidates to about 54 latent valid
+  candidates, 78.3 shape-weighted effective stars and the broad 0.692 posterior.
+  The Earth pivot exposes a mean total selection probability of 0.00198%, or
+  roughly one selected signal per 50,535 searched stars. A new `/occurrence`
+  chapter loads the bundled verified payload and checks GitHub `main` for a
+  newer committed posterior on open.
+- Exact next action: build the Phase 6 composition evidence ensemble without
+  turning radius-only mass estimates into independent composition evidence.
 
 ## Execution contract
 

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "label": "OBSERVED + MODEL-INFERRED",
+  "title": "The catalogue is the visible tip of a selected population",
+  "domain": {
+    "period_min_days": 50.0,
+    "period_max_days": 500.0,
+    "radius_min_earth": 0.5,
+    "radius_max_earth": 2.0,
+    "period_pivot_days": 365.25,
+    "radius_pivot_earth": 1.0
+  },
+  "funnel": [
+    {
+      "stage": "searched stars",
+      "value": 114105,
+      "unit": "selected GK dwarfs",
+      "label": "OBSERVED"
+    },
+    {
+      "stage": "catalogue candidates",
+      "value": 89,
+      "unit": "KOIs in the fixed box",
+      "label": "OBSERVED"
+    },
+    {
+      "stage": "latent valid candidates",
+      "value": 53.974666666666664,
+      "interval": [
+        46.0,
+        62.0
+      ],
+      "unit": "mean imputed candidates",
+      "label": "MODEL-INFERRED"
+    },
+    {
+      "stage": "shape-weighted exposure",
+      "value": 78.27805927355668,
+      "interval": [
+        29.121597092266477,
+        184.76721148876794
+      ],
+      "unit": "effective stars",
+      "label": "MODEL-INFERRED"
+    },
+    {
+      "stage": "intrinsic occurrence",
+      "value": 0.6920518850791744,
+      "interval": [
+        0.26686720405935277,
+        1.9180787595929396
+      ],
+      "unit": "planets per selected star",
+      "label": "MODEL-INFERRED"
+    }
+  ],
+  "observed_rates_for_explanation_only": {
+    "raw_candidate_entries_per_selected_star": 0.0007799833486700846,
+    "mean_imputed_valid_candidates_per_selected_star": 0.0004730263061799804,
+    "intrinsic_to_raw_catalogue_ratio": 887.2649477186426,
+    "intrinsic_to_reliability_adjusted_observed_ratio": 1463.0304404589658,
+    "warning": "These ratios explain scale; neither is the estimator. The posterior integrates target-specific selection over period-radius shape."
+  },
+  "earth_pivot_visibility": {
+    "period_days": 365.25,
+    "radius_earth": 1.0,
+    "mean_transit_geometry": 0.0044026140070358806,
+    "mean_phase_window": 0.7551411997923204,
+    "mean_pipeline_including_window": 0.006237187678963083,
+    "mean_vetting_given_recovered": 0.1107462450081451,
+    "mean_pipeline_and_vetting": 0.004794913383119585,
+    "mean_total_selection": 1.9788122111963862e-05,
+    "effective_stars": 2.257923673584192,
+    "one_selected_signal_per_stars": 50535.36633450437,
+    "warning": "Pipeline already includes the observing window. Averaged factors are diagnostics and must not be multiplied as independent means."
+  },
+  "intrinsic_posterior": {
+    "full_fixed_box": {
+      "p025": 0.26686720405935277,
+      "p16": 0.4115480794499519,
+      "p50": 0.6920518850791744,
+      "p84": 1.209186425283435,
+      "p975": 1.9180787595929396,
+      "mean": 0.8037841969295549
+    },
+    "period_slope_alpha": {
+      "p025": -0.4500000000000002,
+      "p16": -0.15000000000000036,
+      "p50": 0.2999999999999998,
+      "p84": 0.5999999999999996,
+      "p975": 0.8999999999999995,
+      "mean": 0.23864999999999983
+    },
+    "radius_slope_beta": {
+      "p025": -2.1,
+      "p16": -1.5,
+      "p50": -0.75,
+      "p84": 0.0,
+      "p975": 0.75,
+      "mean": -0.7015000000000003
+    },
+    "gamma_earth_per_dlnp_dlnr": {
+      "p025": 0.05715898011317433,
+      "p16": 0.12077466643156774,
+      "p50": 0.24624151516593246,
+      "p84": 0.4668561845650882,
+      "p975": 0.7813583391842013,
+      "mean": 0.2933146846444406
+    },
+    "hsu_box_projection": {
+      "p025": 0.031142115417199186,
+      "p16": 0.06223796154682903,
+      "p50": 0.12213536243195641,
+      "p84": 0.22737470190066703,
+      "p975": 0.3755984216579555,
+      "mean": 0.14470728852970086
+    },
+    "earth_20_percent_box_projection": {
+      "p025": 0.009594908780309651,
+      "p16": 0.020077580589593587,
+      "p50": 0.04107453752824561,
+      "p84": 0.07932116609139406,
+      "p975": 0.13218017038247298,
+      "mean": 0.04939850738061836
+    }
+  },
+  "story_steps": [
+    {
+      "number": "01",
+      "title": "Count what the survey recorded",
+      "body": "Eighty-nine KOIs pass the fixed stellar and planet-domain contract. That count describes the selected catalogue, not the intrinsic population."
+    },
+    {
+      "number": "02",
+      "title": "Ask which candidates are likely real",
+      "body": "Shared reliability draws and astrophysical FPP reduce the mean latent valid count to about 54, while keeping every uncertainty correlated."
+    },
+    {
+      "number": "03",
+      "title": "Model what the telescope could have selected",
+      "body": "Geometry, window, pipeline recovery and vetting turn 114,105 targets into about 78 shape-weighted effective stars for the fitted population."
+    },
+    {
+      "number": "04",
+      "title": "Infer the population that could produce the visible sample",
+      "body": "The Poisson posterior gives 0.692 planets per selected star over the whole fixed box, with a broad 0.267-1.918 95% interval."
+    }
+  ],
+  "claim_boundary": "This is a fixed period-radius occurrence result. It is not a probability of habitability, biology or a star-dependent habitable-zone eta Earth.",
+  "source_hashes": {
+    "occurrence_posterior": "4b0c6c94b796a7f1fe4f17324e2e5d61c3493ac4d1fede69ccb14c2307789be9",
+    "selection_surface": "b8b31a47356da0c77ee7eea8e10e1b0f0e5330464637cb389f0a692c7e2b9228",
+    "candidate_reliability": "5e8562a20c593889577cf6550ed1312b6febc2a9c66012c1a03dbf9633c16fb6",
+    "builder": "798737f5367c8ddee1aa9f400ddf37aeb93eca50e9bb0701f692b0e4d9f0611d"
+  }
+}

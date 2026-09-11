@@ -228,3 +228,26 @@
   and the all-target quadrature agrees with an independent released-surface
   integration to 0.64% across the slope grid. Radius uncertainty, reliability
   and the 3x3 piecewise population remain material sensitivities.
+
+## Phase 5 observed versus intrinsic interpretation — 2026-09-11
+
+- Added a deterministic narrative product joining the released candidate
+  reliability, all-target selection surface and conditional occurrence
+  posterior without recomputing or relabelling any science result.
+- The evidence funnel keeps 114,105 searched stars and 89 catalogue candidates
+  OBSERVED, while the 53.97 mean latent valid candidates, 78.28 median
+  shape-weighted effective stars and 0.692 fixed-box rate remain MODEL-INFERRED.
+- Evaluated the released selection surface at 365.25 days and one Earth radius.
+  Mean total selection is 0.001979%, equivalent to about one selected signal per
+  50,535 searched stars; component averages are diagnostics and are not
+  multiplied as independent factors.
+- Released JSON, PNG and deterministic SVG artifacts under a SHA-256 product
+  manifest. The web JSON and figure are pipeline-copied release products, and
+  the invariant checker verifies their hashes and byte identity.
+- Added the story-first `/occurrence` chapter, homepage entry point, navigation,
+  sitemap and author-perspective link. The client checks the newest committed
+  GitHub `main` payload on each open, validates its schema and evidence label,
+  and falls back to the bundled verified artifact when offline.
+- The page states the scientific boundary in the main reading path: this is a
+  fixed period-radius occurrence result, not habitability, biology or a
+  star-dependent habitable-zone eta-Earth estimate.

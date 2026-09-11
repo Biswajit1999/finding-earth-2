@@ -33,6 +33,7 @@ population:
 	python scripts/build_selection_surface.py --root .
 	python scripts/run_hierarchical_validation.py --root .
 	python scripts/fit_occurrence_model.py --root . --draws 3000
+	python scripts/build_observed_intrinsic_story.py
 
 population-validate:
 	python scripts/run_hierarchical_validation.py --root .
