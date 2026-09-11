@@ -146,6 +146,74 @@ def main() -> int:
         == required_scenarios,
     )
 
+    occurrence = json.loads((population / "dr25_occurrence_posterior.json").read_text())
+    occurrence_samples = pd.read_csv(population / "dr25_occurrence_posterior_samples.csv")
+    check(
+        "DR25 occurrence result is explicitly model-inferred and uses 3,000 imputations",
+        occurrence["label"] == "MODEL-INFERRED"
+        and occurrence["likelihood"]["posterior_imputations"] == 3000,
+    )
+    check(
+        "DR25 occurrence samples are finite, positive and consistently labelled",
+        len(occurrence_samples) == 12000
+        and occurrence_samples["label"].eq("MODEL-INFERRED").all()
+        and occurrence_samples[
+            ["integrated_rate", "alpha", "beta", "shape_weighted_effective_stars"]
+        ]
+        .notna()
+        .all()
+        .all()
+        and occurrence_samples["integrated_rate"].gt(0).all()
+        and occurrence_samples["shape_weighted_effective_stars"].gt(0).all(),
+    )
+    check(
+        "DR25 occurrence slope posteriors do not pile up on numerical grid boundaries",
+        all(
+            value <= 0.01
+            for posterior in occurrence["baseline_posteriors"].values()
+            for value in posterior["slope_grid_boundary_fraction"].values()
+        ),
+    )
+    check(
+        "DR25 occurrence posterior-predictive tail diagnostics avoid extreme values",
+        all(
+            0.05 <= diagnostic[key] <= 0.95
+            for diagnostic in occurrence["posterior_predictive_checks"].values()
+            for key in (
+                "count_upper_tail_probability",
+                "period_mean_upper_tail_probability",
+                "radius_mean_upper_tail_probability",
+            )
+        ),
+    )
+    check(
+        "DR25 occurrence exposure quadrature is stable to released-surface resolution",
+        occurrence["quadrature_and_surface_resolution_sensitivity"][
+            "shape_weighted_exposure_relative_difference_over_slope_grid"
+        ]["maximum_absolute"]
+        <= 0.01,
+    )
+    check(
+        "instrumental reliability correction lowers the full-box occurrence median",
+        occurrence["sensitivity_by_estimand"]["full_fixed_box"][
+            "without_instrumental_false_alarm_correction"
+        ]["integrated_planets_per_star"]["p50"]
+        > occurrence["baseline_posteriors"][
+            "full_fixed_box__unsupported_lower"
+        ]["integrated_planets_per_star"]["p50"],
+    )
+    occurrence_manifest = json.loads(
+        (population / "dr25_occurrence_products.json").read_text()
+    )
+    occurrence_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in occurrence_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("DR25 occurrence product hashes match the release manifest", occurrence_hashes_match)
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

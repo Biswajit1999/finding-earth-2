@@ -197,8 +197,11 @@ side as if they measured the same quantity:
   assumptions for 0.5–1.5 Earth radii and 4800–6300 K stars. This is a
   star-dependent instellation estimand, not the fixed period box used here.
 
-No project value is compared numerically yet because no project intrinsic
-posterior has been released.
+The conditional fixed-box posterior is now available in
+[`DR25_OCCURRENCE.md`](DR25_OCCURRENCE.md). Its broad-domain projection into
+the Hsu box has median 0.122 and 84th percentile 0.227. The Earth +/-20% box
+projection has median 0.041. These are model-projected fixed-period quantities,
+not a star-dependent habitable-zone rate.
 
 ## Reproduction and remaining gate
 
@@ -208,6 +211,8 @@ Run:
 python.exe scripts/build_population_foundation.py --root .
 python.exe scripts/fit_reliability_model.py --root .
 python.exe scripts/build_selection_surface.py --root .
+python.exe scripts/run_hierarchical_validation.py --root .
+python.exe scripts/fit_occurrence_model.py --root . --draws 3000
 ```
 
 The commands verify all eleven raw products against their manifests and emit

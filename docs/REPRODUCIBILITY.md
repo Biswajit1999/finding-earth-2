@@ -25,6 +25,8 @@ make report                # python -m earth2 report       -- regenerate README
 python scripts/build_population_foundation.py --root .
 python scripts/fit_reliability_model.py --root .
 python scripts/build_selection_surface.py --root .
+python scripts/run_hierarchical_validation.py --root .
+python scripts/fit_occurrence_model.py --root . --draws 3000
 
 cd web && npm install && npm run dev    # or: make web-build for a static export
 ```
@@ -42,6 +44,7 @@ Or the whole analysis pipeline in one step: `make all`.
 | Random subsampling (3D universe export) | Seeded (`random_state=20260824`) when the point count is capped |
 | DR25 target holdouts | SHA-256 of KIC identifier modulo five; every injection around one target remains in one fold |
 | DR25 selection products | No random fit initialization; fixed grids and quadrature nodes; product manifest records bytes and SHA-256 |
+| DR25 hierarchical validation and occurrence | Fixed seed `20260911`; exact log-space quadrature; 3,000 deterministic multiple imputations; exposure cache and release products are SHA-256 gated |
 
 Given the same archive state and the same seed, `python -m earth2 analyse`
 reproduces byte-identical `results/*.csv` and `*.parquet` output. Archive

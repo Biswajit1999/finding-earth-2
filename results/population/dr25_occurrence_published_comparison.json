@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0",
+  "label": "MODEL-INFERRED",
+  "comparison_rule": "Direct numerical comparison only for fixed boxes and compatible stellar contracts; no pooled estimate and no comparison to star-dependent HZ eta Earth.",
+  "project": {
+    "full_model_projected_subdomains": {
+      "gamma_earth_per_dlnp_dlnr": {
+        "p025": 0.05715898011317433,
+        "p16": 0.12077466643156774,
+        "p50": 0.24624151516593246,
+        "p84": 0.4668561845650882,
+        "p975": 0.7813583391842013,
+        "mean": 0.2933146846444406
+      },
+      "full_model_projected_hsu_box_rate": {
+        "p025": 0.031142115417199186,
+        "p16": 0.06223796154682903,
+        "p50": 0.12213536243195641,
+        "p84": 0.22737470190066703,
+        "p975": 0.3755984216579555,
+        "mean": 0.14470728852970086
+      },
+      "full_model_projected_bryson_earth_box_rate": {
+        "p025": 0.009594908780309651,
+        "p16": 0.020077580589593587,
+        "p50": 0.04107453752824561,
+        "p84": 0.07932116609139406,
+        "p975": 0.13218017038247298,
+        "mean": 0.04939850738061836
+      }
+    },
+    "direct_box_diagnostics": {
+      "hsu_2019_fixed_box": {
+        "p025": 0.04753382943330332,
+        "p16": 0.20342220526759333,
+        "p50": 0.5785343598275001,
+        "p84": 1.203551335081683,
+        "p975": 2.276414306724814,
+        "mean": 0.7183180908066731
+      },
+      "bryson_2020_earth_20_percent_box": {
+        "p025": 0.003268395806559577,
+        "p16": 0.10184465900141557,
+        "p50": 0.4643257334619294,
+        "p84": 1.099565122797921,
+        "p975": 2.0916297527940513,
+        "mean": 0.6084263106058235
+      }
+    },
+    "interpretation": "The full-model projections borrow shape information from the complete 50-500 day, 0.5-2 Earth-radius domain. Direct box fits use only about four and one-and-a-half imputed valid candidates and are strongly prior and population-family sensitive; both views are retained."
+  },
+  "published_registry": {
+    "schema_version": "1.0",
+    "interpretation": "A registry of estimands and domains, not a pooled meta-analysis. Finding Earth 2 has no real intrinsic occurrence result at this checkpoint.",
+    "studies": [
+      {
+        "study": "Hsu et al. 2019",
+        "reference": "https://arxiv.org/abs/1902.01417",
+        "survey": "Kepler DR25 with Gaia DR2 stellar radii",
+        "stellar_population": "FGK stars",
+        "estimand": "integrated planets per star f_R,P",
+        "planet_radius_earth": [
+          0.75,
+          1.5
+        ],
+        "orbital_period_days": [
+          237.0,
+          500.0
+        ],
+        "reported_upper_limit_percentile_84_13": 0.27,
+        "recommended_planning_range": [
+          0.03,
+          0.4
+        ],
+        "reported_differential_gamma_range": [
+          0.06,
+          0.76
+        ],
+        "comparison_status": "domain_matched_target; pending_project_intrinsic_inference"
+      },
+      {
+        "study": "Bryson et al. 2020",
+        "reference": "https://arxiv.org/abs/1906.03575",
+        "survey": "Kepler DR25",
+        "stellar_population": "GK dwarf stars",
+        "estimand": "planets per star within 20 percent of Earth period and radius",
+        "planet_radius_earth": [
+          0.8,
+          1.2
+        ],
+        "orbital_period_days": [
+          292.2,
+          438.3
+        ],
+        "reported_reliability_corrected": {
+          "median": 0.015,
+          "lower_error": 0.007,
+          "upper_error": 0.011
+        },
+        "reported_without_reliability": {
+          "median": 0.034,
+          "lower_error": 0.012,
+          "upper_error": 0.018
+        },
+        "comparison_status": "different_domain_and_stellar_contract"
+      },
+      {
+        "study": "Bryson et al. 2021",
+        "reference": "https://arxiv.org/abs/2010.14812",
+        "survey": "Kepler DR25 with Gaia-based stellar properties",
+        "stellar_population": "main-sequence dwarfs, 4800\u20136300 K",
+        "estimand": "eta Earth in the star-dependent conservative habitable zone",
+        "planet_radius_earth": [
+          0.5,
+          1.5
+        ],
+        "orbital_period_days": null,
+        "reported_conservative_hz_bounds": [
+          {
+            "median": 0.37,
+            "lower_error_68": 0.21,
+            "upper_error_68": 0.48
+          },
+          {
+            "median": 0.6,
+            "lower_error_68": 0.36,
+            "upper_error_68": 0.9
+          }
+        ],
+        "bound_meaning": "Two completeness extrapolation assumptions",
+        "comparison_status": "different_estimand; no direct numerical comparison"
+      }
+    ]
+  }
+}

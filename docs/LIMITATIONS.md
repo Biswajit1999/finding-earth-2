@@ -84,7 +84,7 @@ separation too small for imaging). The preponderance of small-star candidates
 at the top of this ranking is partly a statement about M dwarfs being easier
 to search, not solely a statement about where temperate rocky planets exist.
 
-## Intrinsic population result is not released yet
+## The intrinsic population result is conditional on its model family
 
 The DR25 upgrade has a fixed 114,105-star denominator, a pinned 89-candidate
 analysis population, injection diagnostics, synthetic recovery and a
@@ -93,12 +93,12 @@ passes held-out and generating-family checks for 87 candidates; two high-MES
 candidates remain outside the calibration domain. A survey-wide selection
 surface now evaluates every selected star and passes five target-isolated
 injection folds, physical invariants and a pinned KeplerPORTs regression. The
-hierarchical period–radius likelihood and its joint uncertainty machinery now
-pass an expanded nine-scenario artificial-data gate, but the expensive
-all-target real-data evaluation is still open. Therefore the project does not yet report eta Earth, an intrinsic
-period–radius rate or a corrected rarity. Raw catalogue fractions and the 11
-objects in the published-comparison box must not be interpreted as planets per
-star.
+hierarchical period–radius likelihood and its joint uncertainty machinery pass
+an expanded nine-scenario artificial-data gate and now produce a real
+fixed-box occurrence posterior. The result is not eta Earth: it uses fixed
+period bounds rather than a habitable zone computed for each star, and it is
+not a probability of habitability or life. Raw catalogue fractions and the 11
+objects in the published-comparison box remain distinct from planets per star.
 
 The finite reliability grid exposes sparse cells and raw equation results
 outside `[0,1]` instead of clipping them into plausible-looking probabilities.
@@ -108,14 +108,13 @@ Those intervals omit model-family uncertainty and the external FPP model's own
 parameter uncertainty. The Robovetter score remains visible but is explicitly
 not used as candidate reliability.
 
-The released selection CSV is likewise a point surface. Its fitted coefficient
-covariances and regularization sensitivity are exported, but neither is yet a
-complete uncertainty budget. The empirical model approximates the full
+The released selection CSV is a point surface; the occurrence posterior now
+propagates its local fitted-coefficient covariances, but this remains an
+incomplete uncertainty budget. The empirical model approximates the full
 target-specific KeplerPORTs contours to avoid an unreviewable roughly 670 GB
 download; its independent one-target regression is a guardrail, not proof of
 identity. Stellar-parameter uncertainty, injection-model family uncertainty and
-the 138 in-domain period-alias recoveries must be carried into the occurrence
-analysis rather than silently absorbed into a point correction. The expanded
+the 138 in-domain period-alias recoveries remain model-family limitations. The expanded
 recovery suite also shows that fitting a single power law to a broken radius
 distribution produces +21.6% rate bias and only 50% coverage in its declared
 stress case. The initial real-data power law must therefore ship with an

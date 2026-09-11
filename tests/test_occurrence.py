@@ -8,6 +8,7 @@ import pytest
 from earth2.population.occurrence import (
     OccurrenceDomain,
     build_powerlaw_grid,
+    draw_binned_posterior,
     draw_imputed_posterior,
     infer_posterior_grid,
     log_gauss_legendre_quadrature,
@@ -119,3 +120,24 @@ def test_vectorized_imputations_preserve_counts_and_broadcast_exposure():
     assert result["imputed_valid_candidate_count"].tolist() == [2, 1, 0]
     assert np.all(result["integrated_rate"] > 0)
     assert result["grid_index"].shape == (3,)
+
+
+def test_piecewise_constant_alternative_preserves_total_gamma_contract():
+    domain = OccurrenceDomain()
+    quadrature = log_gauss_legendre_quadrature(domain, period_nodes=12, radius_nodes=10)
+    draws = 5000
+    periods = np.broadcast_to([60, 90, 180, 300, 450], (draws, 5))
+    radii = np.broadcast_to([0.6, 0.9, 1.1, 1.4, 1.8], (draws, 5))
+    result = draw_binned_posterior(
+        quadrature,
+        np.full(len(quadrature.weights), 100.0),
+        periods,
+        radii,
+        np.ones_like(periods, dtype=bool),
+        np.geomspace(50, 500, 4),
+        np.geomspace(0.5, 2, 4),
+        seed=8,
+    )
+    assert result["bin_rate"].shape == (draws, 9)
+    assert np.all(result["bin_count"].sum(axis=1) == 5)
+    assert np.mean(result["integrated_rate"]) == pytest.approx(5.5 / 100.5, rel=0.03)

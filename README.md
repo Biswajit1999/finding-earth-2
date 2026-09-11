@@ -29,20 +29,20 @@
 > flagged and down-weighted rather than silently ranked as confident members
 > — see [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md).
 
-> **Population upgrade in progress.** A separate DR25 analysis now pins the
+> **Conditional DR25 population result.** A separate DR25 analysis pins the
 > 114,105-star search denominator, 89-candidate inference population, all four
 > false-alarm experiments, observed TCEs, known-signal exclusions and
-> astrophysical FPP data. It deliberately publishes no intrinsic occurrence
-> value until the hierarchical likelihood passes its gate. The constrained
+> astrophysical FPP data. The constrained
 > reliability model assigns 87 candidates and withholds two outside its MES
 > domain. The survey-wide selection model evaluates all 114,105 stars and passes
 > five target-isolated injection folds, physical invariants and a pinned
-> KeplerPORTs regression. The hierarchical Poisson likelihood now passes nine
-> artificial-data recovery and misspecification scenarios; its all-target
-> real-data uncertainty run remains the next release gate. See
+> KeplerPORTs regression. The hierarchical model estimates 0.692 planets per
+> selected star across 50–500 days and 0.5–2 Earth radii, with a 0.267–1.918
+> 95% interval under the conservative high-MES reliability endpoint. This is a
+> fixed-box occurrence result, not a probability of habitability or life. See
 > [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) and
 > [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md), plus the
-> [`hierarchical occurrence contract`](docs/HIERARCHICAL_OCCURRENCE.md).
+> [`DR25 occurrence result`](docs/DR25_OCCURRENCE.md).
 
 ---
 
@@ -367,6 +367,7 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) | What this analysis cannot establish |
 | [`docs/DR25_SELECTION_SURFACE.md`](docs/DR25_SELECTION_SURFACE.md) | Survey-wide detection model, validation and products |
 | [`docs/DR25_RELIABILITY.md`](docs/DR25_RELIABILITY.md) | False-alarm and astrophysical reliability contract |
+| [`docs/DR25_OCCURRENCE.md`](docs/DR25_OCCURRENCE.md) | Fixed-box occurrence posterior, diagnostics and published comparisons |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |

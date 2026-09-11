@@ -164,7 +164,7 @@ def load_reliability_model(path: str | Path) -> JointReliabilityFit:
     )
 
 
-def _selection_parameter_contract(
+def selection_parameter_contract(
     model: SelectionModel,
 ) -> tuple[tuple[str, ...], np.ndarray, np.ndarray]:
     names = (
@@ -249,7 +249,7 @@ def evaluate_selection_exposure(
     ):
         raise ValueError("Occurrence quadrature exceeds the selection calibration domain")
 
-    names, covariance, fixed = _selection_parameter_contract(model)
+    names, covariance, fixed = selection_parameter_contract(model)
     shape = (len(radii), len(periods))
     exposure = np.zeros(shape)
     gradient = np.zeros((*shape, len(names)))
@@ -367,7 +367,7 @@ def draw_selection_deltas(
     """Draw local coefficient perturbations with released monotonic bounds."""
     if draws <= 0:
         raise ValueError("Selection draw count must be positive")
-    _, covariance, fixed = _selection_parameter_contract(model)
+    _, covariance, fixed = selection_parameter_contract(model)
     mean = np.r_[
         model.mes_calibration.coefficients,
         model.pipeline_including_window.coefficients,

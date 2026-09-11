@@ -2,10 +2,10 @@
 
 ## Status
 
-The likelihood and its expanded artificial-data validation are implemented.
-No Kepler occurrence value is released at this checkpoint. The next operation
-evaluates the likelihood's quadrature nodes against every selected DR25 target,
-then applies the validated candidate-reliability and measurement models.
+The likelihood and its expanded artificial-data validation are implemented and
+the all-target real-data calculation has completed. See
+[`DR25_OCCURRENCE.md`](DR25_OCCURRENCE.md) for the conditional fixed-box result,
+its posterior-predictive checks and its model-family limitations.
 
 All results in `results/population/validation/hierarchical_recovery.json` are
 labelled **SIMULATED**. They are tests of the inference machinery, not

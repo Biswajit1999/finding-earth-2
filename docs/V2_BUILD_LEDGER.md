@@ -203,3 +203,28 @@
   surface exposes 99.3% bias/0% coverage.
 - Every artifact remains labelled SIMULATED. The real Kepler rate remains
   withheld until the all-target quadrature and sensitivity suite complete.
+
+## Phase 4 conditional fixed-box occurrence — 2026-09-11
+
+- Evaluated 408 log-space quadrature nodes across three estimands for all
+  114,105 selected targets and five impact-parameter nodes. The cache is gated
+  by selection-model, stellar-source, quadrature-contract and derivative-code
+  hashes.
+- Propagated shared selection coefficients, correlated candidate reliability,
+  external astrophysical FPP, asymmetric period/radius errors and boundary
+  migration through 3,000 multiple imputations. Two candidates above MES 30
+  are retained through explicit false-alarm-reliability endpoints.
+- The broad 50–500 day, 0.5–2 Earth-radius rate is 0.692 planets per selected
+  star with a 0.267–1.918 95% interval under the conservative endpoint. The
+  alternative high-MES endpoint is 0.677 with a 0.260–1.911 interval.
+- Broad-model projections give Gamma_Earth 0.246 per dlnP dlnR, 0.122 in the
+  Hsu fixed box and 0.041 in the Earth +/-20% box. These are not star-dependent
+  habitable-zone eta Earth values.
+- The Hsu projection's 84th percentile is 0.227, within the published planning
+  range and below its 0.27 benchmark. The Bryson-box interval overlaps the
+  published result, while the median differs; no pooled or identity claim is
+  made.
+- Posterior-predictive checks pass, slope posteriors avoid numerical boundaries,
+  and the all-target quadrature agrees with an independent released-surface
+  integration to 0.64% across the slope grid. Radius uncertainty, reliability
+  and the 3x3 piecewise population remain material sensitivities.

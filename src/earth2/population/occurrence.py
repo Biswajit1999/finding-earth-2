@@ -426,6 +426,104 @@ def draw_imputed_posterior(
     }
 
 
+def draw_binned_posterior(
+    quadrature: LogQuadrature,
+    effective_star_draws,
+    candidate_period_draws,
+    candidate_radius_draws,
+    included_draws,
+    period_edges,
+    radius_edges,
+    *,
+    total_rate_prior_shape: float = 0.5,
+    rate_prior_rate: float = 0.5,
+    seed: int = 141421,
+) -> dict[str, np.ndarray]:
+    """Fit an alternative piecewise-constant density on fixed log-space bins.
+
+    Each bin has a proper Gamma prior with shape ``total_rate_prior_shape / n``.
+    Because all bins share ``rate_prior_rate``, their prior sum matches the
+    baseline total-rate Gamma prior before selection is applied.
+    """
+    period = np.asarray(candidate_period_draws, float)
+    radius = np.asarray(candidate_radius_draws, float)
+    included = np.asarray(included_draws, bool)
+    exposure = np.asarray(effective_star_draws, float)
+    period_bounds = np.asarray(period_edges, float)
+    radius_bounds = np.asarray(radius_edges, float)
+    if exposure.ndim == 1:
+        exposure = exposure[None, :]
+    if (
+        period.ndim != 2
+        or radius.shape != period.shape
+        or included.shape != period.shape
+        or exposure.ndim != 2
+        or exposure.shape[1] != len(quadrature.weights)
+        or exposure.shape[0] not in (1, len(period))
+        or period_bounds.ndim != 1
+        or radius_bounds.ndim != 1
+        or len(period_bounds) < 2
+        or len(radius_bounds) < 2
+        or np.any(np.diff(period_bounds) <= 0)
+        or np.any(np.diff(radius_bounds) <= 0)
+        or not np.isfinite(exposure).all()
+        or np.any(exposure < 0)
+        or total_rate_prior_shape <= 0
+        or rate_prior_rate <= 0
+    ):
+        raise ValueError("Binned occurrence inputs are malformed")
+    domain = OccurrenceDomain(
+        period_min_days=float(period_bounds[0]),
+        period_max_days=float(period_bounds[-1]),
+        radius_min_earth=float(radius_bounds[0]),
+        radius_max_earth=float(radius_bounds[-1]),
+    )
+    quadrature.validate(domain)
+    if np.any(included & ~domain.mask(period, radius)):
+        raise ValueError("An included candidate lies outside the binned occurrence domain")
+    draws = len(period)
+    if exposure.shape[0] == 1:
+        exposure = np.broadcast_to(exposure, (draws, exposure.shape[1]))
+    period_bin = np.searchsorted(period_bounds, period, side="right") - 1
+    radius_bin = np.searchsorted(radius_bounds, radius, side="right") - 1
+    period_bin = np.minimum(period_bin, len(period_bounds) - 2)
+    radius_bin = np.minimum(radius_bin, len(radius_bounds) - 2)
+    node_period_bin = np.searchsorted(period_bounds, quadrature.periods_days, side="right") - 1
+    node_radius_bin = np.searchsorted(radius_bounds, quadrature.radii_earth, side="right") - 1
+    n_period = len(period_bounds) - 1
+    n_radius = len(radius_bounds) - 1
+    bins = n_period * n_radius
+    bin_rate = np.empty((draws, bins))
+    bin_count = np.empty((draws, bins), dtype=int)
+    rng = np.random.default_rng(seed)
+    prior_shape = total_rate_prior_shape / bins
+    for radius_index in range(n_radius):
+        for period_index in range(n_period):
+            flat_index = radius_index * n_period + period_index
+            candidate_mask = included & (period_bin == period_index) & (radius_bin == radius_index)
+            count = candidate_mask.sum(axis=1)
+            node_mask = (node_period_bin == period_index) & (node_radius_bin == radius_index)
+            represented_log_area = quadrature.weights[node_mask].sum()
+            if not np.isfinite(represented_log_area) or represented_log_area <= 0:
+                raise ValueError("Every occurrence bin must contain quadrature support")
+            bin_exposure = (
+                exposure[:, node_mask] @ quadrature.weights[node_mask]
+            ) / represented_log_area
+            bin_count[:, flat_index] = count
+            bin_rate[:, flat_index] = rng.gamma(
+                prior_shape + count,
+                1 / (rate_prior_rate + bin_exposure),
+            )
+    return {
+        "integrated_rate": bin_rate.sum(axis=1),
+        "bin_rate": bin_rate,
+        "bin_count": bin_count,
+        "imputed_valid_candidate_count": included.sum(axis=1),
+        "period_edges": period_bounds,
+        "radius_edges": radius_bounds,
+    }
+
+
 def summarize_draws(values) -> dict[str, float]:
     """Return finite posterior quantiles using one consistent schema."""
     array = np.asarray(values, float)

@@ -32,6 +32,7 @@ population:
 	python scripts/fit_reliability_model.py --root .
 	python scripts/build_selection_surface.py --root .
 	python scripts/run_hierarchical_validation.py --root .
+	python scripts/fit_occurrence_model.py --root . --draws 3000
 
 population-validate:
 	python scripts/run_hierarchical_validation.py --root .
