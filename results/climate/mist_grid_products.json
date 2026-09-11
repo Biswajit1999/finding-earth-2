@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "product": "Compact MIST v1.2 main-sequence interpolation grid",
+  "files": {
+    "results/climate/mist_v1p2_main_sequence_grid.csv": {
+      "bytes": 1387250,
+      "sha256": "d69b5c8cc9770d242e133c06a50e87cd9f4843ea1339f81da896488dd37cadfa"
+    },
+    "results/climate/mist_v1p2_main_sequence_grid.json": {
+      "bytes": 1151,
+      "sha256": "d5e88adfab88d612ef004b4ed28c1dbcd5201a954a5773fb19c02633bb3d0800"
+    }
+  }
+}

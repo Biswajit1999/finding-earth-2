@@ -3,7 +3,7 @@
 # Each target is idempotent and reads what the previous stage wrote, so any
 # target can be re-run alone. `make all` runs the full pipeline end to end.
 
-.PHONY: install data sync-gaia analyse figures deepdive validate-transit population population-validate composition export report web web-build all test test-py test-web clean
+.PHONY: install data sync-gaia analyse figures deepdive validate-transit population population-validate composition mist-grid export report web web-build all test test-py test-web clean
 
 install:
 	python -m pip install -e ".[dev,products]"
@@ -40,6 +40,9 @@ population-validate:
 
 composition:
 	python scripts/build_composition_ensemble.py
+
+mist-grid:
+	python scripts/prepare_mist_grid.py
 
 export:
 	python -m earth2 export

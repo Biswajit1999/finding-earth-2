@@ -1,0 +1,11 @@
+{
+  "dataset_id": "mist_v1p2_vvcrit0p4_basic_isochrones",
+  "archive": "MESA Isochrones and Stellar Tracks (MIST)",
+  "source_url": "https://mist.science/data/tarballs_v1.2/MIST_v1.2_vvcrit0.4_basic_isos.txz",
+  "retrieved_utc": "2026-09-11T23:44:05Z",
+  "version": "MIST v1.2; v/vcrit=0.4; basic theoretical isochrones",
+  "bytes": 221507784,
+  "sha256": "bb3f42743f75676fa8bf6ca63c4cb2723a0839b77204efebcae39fa4610a92c8",
+  "licence_and_attribution": "MIST project terms and Choi et al. (2016); Dotter (2016)",
+  "raw_payload_committed": false
+}

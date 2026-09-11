@@ -277,3 +277,21 @@
   focused tests and release invariants protect model equations, domains,
   covariance propagation, probability bounds, source-class separation and
   product hashes. Consecutive CSV/JSON/PNG/SVG builds are byte-identical.
+
+## Phase 7 MIST grid foundation — 2026-09-12
+
+- Downloaded the official 210 MB MIST v1.2 basic theoretical isochrone archive
+  for v/vcrit=0.4 from `mist.science`; the exact 221,507,784-byte payload is
+  pinned by SHA-256 and remains under the raw-data ignore policy.
+- Streamed all 15 metallicity files and retained phase-0 main-sequence cells
+  only. Interpolation onto a fixed mass/age grid produces 22,266 compact rows
+  with log luminosity and log effective temperature. Missing old/high-mass
+  cells remain absent rather than extending a main-sequence track beyond its
+  modeled lifetime.
+- Added a source manifest with URL, retrieval UTC, model version, size, hash and
+  attribution plus a generated-product manifest. Release invariants check
+  source linkage, uniqueness, finiteness, evidence labels, product hashes and
+  the expected luminosity evolution of the solar-mass, solar-metallicity track.
+- Audited the analysis catalogue: 1,947 systems carry age, mass, metallicity,
+  luminosity, orbit and every corresponding asymmetric uncertainty needed for
+  the strict initial time-dependent-HZ support contract.

@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **6 complete — probabilistic composition ensemble released; Phase 7 stellar evolution and climate sensitivity next**; v2 is not complete.
+- Current phase: **7 in progress — official MIST v1.2 main-sequence grid prepared; time-dependent HZ inference next**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -73,8 +73,16 @@
   The median three-model rocky-probability span is 0.251 and its 90th percentile
   is 0.485. Mass-radius predictions, M sin i and upper limits never enter the
   two-dimensional composition inference.
-- Exact next action: build Phase 7 time-dependent habitable-zone exposure and
-  climate-model sensitivity with explicit age/track support gates.
+- Phase 7 foundation: the official 221,507,784-byte MIST v1.2 basic-isochrone
+  archive is pinned at SHA-256 `bb3f4274...0a92c8`, remains uncommitted raw
+  input, and produces 22,266 committed phase-0 grid cells spanning 15
+  metallicities, 0.5–1.5 solar masses and log-age 8.0–10.15 where main-sequence
+  support exists. The catalogue contains 1,947 systems with age, mass,
+  metallicity, luminosity, orbit and all corresponding uncertainty fields.
+- Exact next action: interpolate the compact MIST grid through those stellar
+  posteriors, anchor tracks to current luminosity, integrate tau_HZ, and build
+  the climate-model sensitivity matrix with unsupported systems marked
+  undetermined.
 
 ## Execution contract
 

@@ -295,6 +295,60 @@ def main() -> int:
         composition_hashes_match,
     )
 
+    climate_dir = RESULTS_DIR / "climate"
+    mist_metadata = json.loads(
+        (climate_dir / "mist_v1p2_main_sequence_grid.json").read_text()
+    )
+    mist_grid = pd.read_csv(climate_dir / "mist_v1p2_main_sequence_grid.csv")
+    check(
+        "compact MIST grid is explicitly model-inferred and hash-linked to its source",
+        mist_metadata["label"] == "MODEL-INFERRED"
+        and len(mist_metadata["source_sha256"]) == 64
+        and hashlib.sha256(
+            (climate_dir / "mist_v1p2_main_sequence_grid.csv").read_bytes()
+        ).hexdigest()
+        == mist_metadata["grid_sha256"],
+    )
+    check(
+        "MIST grid contains finite, unique phase-0 interpolation cells",
+        mist_grid[
+            [
+                "feh",
+                "log10_age_years",
+                "initial_mass_solar",
+                "log10_luminosity_solar",
+                "log10_teff_kelvin",
+            ]
+        ]
+        .notna()
+        .all()
+        .all()
+        and not mist_grid.duplicated(
+            ["feh", "log10_age_years", "initial_mass_solar"]
+        ).any()
+        and mist_grid["label"].eq("MODEL-INFERRED").all(),
+    )
+    solar_track = mist_grid[
+        mist_grid["feh"].eq(0)
+        & mist_grid["initial_mass_solar"].eq(1)
+        & mist_grid["log10_age_years"].between(9.0, 9.7)
+    ].sort_values("log10_age_years")
+    check(
+        "solar-metallicity one-solar-mass MIST luminosity rises across the sampled main sequence",
+        len(solar_track) >= 10
+        and solar_track["log10_luminosity_solar"].iloc[-1]
+        > solar_track["log10_luminosity_solar"].iloc[0],
+    )
+    mist_manifest = json.loads((climate_dir / "mist_grid_products.json").read_text())
+    mist_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in mist_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("compact MIST product hashes match the release manifest", mist_hashes_match)
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")
