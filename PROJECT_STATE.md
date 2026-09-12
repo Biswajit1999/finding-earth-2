@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **14 next — Phase 13 falsification and robustness complete**; v2 is not complete.
+- Current phase: **15 next — Phase 14 research website complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,13 +9,14 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 275 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 278 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
-- Website: production build (6,375 HTML files), lint and type check passed;
-  static export integrity passed across 23 route templates.
+- Website: production build (6,386 HTML files), lint and type check passed;
+  static export integrity passed across 34 route templates. Browser QA reports
+  zero console overlap and zero horizontal overflow at 1365x773 and 390x844.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). A conditional fixed-box
   intrinsic-population result now exists; no calibrated habitability
@@ -124,9 +125,16 @@
   falsifying any habitability reading of similarity; Mars shows that HZ membership
   is not climate. Twenty-five candidate rows expose HZ, composition, HWO and
   atmosphere model ranges plus rank spans across five legacy-weight menus.
-- Exact next action: rebuild the research website around the full evidence story,
-  fix overlapping consoles, add mission/information/sensitivity/falsification
-  routes and implement a safe current-data refresh path.
+- Phase 14 website: the Exoearth Evidence Observatory adds eleven requested
+  routes for population, selection, climate, stellar environment, atmospheres,
+  HWO, missions, information gain, model sensitivity, falsification and the
+  evidence graph. The home page, research dictionary and author conclusion form
+  one evidence-led story. A deterministic 1.1 MB browser payload hashes 18
+  scientific inputs; a daily GitHub workflow rebuilds data while the browser
+  checks the latest committed release on open. The Universe HUD now reserves
+  separate control/history rows and passes automated overlap regression checks.
+- Exact next action: generate the v2 manuscript and frozen, hash-verified data
+  release with citation, licensing and public research infrastructure.
 
 ## Execution contract
 

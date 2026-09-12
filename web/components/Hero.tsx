@@ -169,7 +169,7 @@ export function Hero({
           transition={{ duration: 0.7 }}
           className="eyebrow"
         >
-          A reproducible search across the public astronomical archives
+          Exoearth Evidence Observatory · by Biswajit Jana
         </motion.p>
 
         <motion.h1
@@ -190,9 +190,10 @@ export function Hero({
           transition={{ duration: 0.7, delay: 0.2 }}
           className="mt-6 max-w-[54ch] text-[15px] leading-relaxed text-[var(--color-dim)] sm:text-base"
         >
-          Searching distant worlds with real astronomical data. Every planet
-          behind this text is a system with a measured distance, drawn at its
-          true position on the sky. Nothing here is an illustration.
+          What did we detect? What could our surveys detect? What underlying
+          population is consistent with those observations? Which measurement
+          should we make next? Every point behind this text is a real system with
+          a measured distance, drawn at its catalogue sky position.
         </motion.p>
 
         {/* ---------- derived statistics ---------- */}

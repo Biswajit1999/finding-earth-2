@@ -13,7 +13,7 @@ export function SiteFooter({
   return (
     <footer className="mt-24 border-t border-[var(--color-line)] bg-[var(--color-deep)]">
       <div className="mx-auto max-w-[1400px] px-4 py-14 sm:px-6 sm:py-16">
-        <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+        <div className="grid gap-12 md:grid-cols-2 xl:grid-cols-[1.4fr_1fr_1fr_1fr_1fr]">
           <div>
             <p className="font-[family-name:var(--font-display)] text-xl">
               Finding Earth 2.0 in Distant Worlds
@@ -40,6 +40,18 @@ export function SiteFooter({
             </p>
           </div>
 
+          <FooterCol
+            title="Observatory"
+            links={[
+              ["/population", "Population"],
+              ["/selection", "Selection"],
+              ["/climate", "Climate"],
+              ["/missions", "Missions"],
+              ["/information-gain", "Information Gain"],
+              ["/falsification", "Falsification"],
+              ["/evidence", "Evidence Graph"],
+            ]}
+          />
           <FooterCol
             title="Explore"
             links={[

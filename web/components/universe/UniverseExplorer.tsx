@@ -409,8 +409,9 @@ export function UniverseExplorer({
         </div>
 
         {/* ---------------- controls overlay ---------------- */}
-        <div className="pointer-events-none absolute inset-0 flex flex-col justify-between gap-3 p-4 sm:p-5">
-          <div className="flex flex-wrap items-start justify-between gap-3">
+        <div className="pointer-events-none absolute inset-0 grid grid-rows-[minmax(0,1fr)_auto] gap-3 p-4 sm:p-5">
+          <div className="min-h-0 overflow-y-auto overscroll-contain pr-1">
+            <div className="flex flex-wrap items-start justify-between gap-3 pb-3">
             <div className="pointer-events-auto flex w-full max-w-sm flex-col gap-3">
             <div className="panel-raised p-3">
               <label htmlFor="uni-search" className="eyebrow mb-1.5 block">
@@ -446,9 +447,10 @@ export function UniverseExplorer({
                 </ul>
               )}
             </div>
+          </div>
 
             {info !== null && (
-              <div className="panel-raised max-h-[220px] overflow-y-auto p-4 shadow-2xl shadow-black/35">
+              <div data-testid="selected-system-panel" className="panel-raised max-h-[220px] overflow-y-auto p-4 shadow-2xl shadow-black/35">
                 <div className="flex items-start justify-between gap-2">
                   <div>
                     <p className="text-[14px] font-medium text-[var(--color-ivory)]">
@@ -781,7 +783,7 @@ export function UniverseExplorer({
           </div>
 
           <div className="flex w-full items-end justify-between gap-3">
-            <div className="pointer-events-auto panel-raised w-full max-w-xl p-3" aria-label="Discovery history controls">
+            <div data-testid="discovery-history-controls" className="pointer-events-auto panel-raised w-full max-w-xl p-3" aria-label="Discovery history controls">
               <div className="mb-2 flex flex-wrap items-center justify-between gap-2">
                 <div>
                   <p className="eyebrow">Discovery history · through {discoveryYear}</p>
@@ -853,7 +855,7 @@ export function UniverseExplorer({
 
         {/* ---------------- zoom controls ---------------- */}
         {effectiveViewMode === "3d" && (
-          <div className="pointer-events-auto absolute bottom-4 right-4 z-10 flex flex-col gap-1">
+          <div className="pointer-events-auto absolute bottom-36 right-4 z-10 flex flex-col gap-1 sm:bottom-32">
             <button
               type="button"
               onClick={() => zoomBy(1 / 1.35)}

@@ -28,6 +28,7 @@ import type {
   TransitValidationFile,
   UniverseFile,
 } from "./types";
+import type { ObservatoryData, ObservatoryRelease } from "./observatory-types";
 
 const DATA_DIR = path.join(process.cwd(), "public", "data");
 
@@ -52,6 +53,14 @@ function readJsonOptional<T>(name: string): T | null {
    ------------------------------------------------------------------------- */
 export function getSummary(): SummaryFile {
   return readJson<SummaryFile>("summary.json");
+}
+
+export function getObservatory(): ObservatoryData {
+  return readJson<ObservatoryData>("observatory.json");
+}
+
+export function getObservatoryRelease(): ObservatoryRelease {
+  return readJson<ObservatoryRelease>("release.json");
 }
 
 export function getCatalogueFile(): CatalogueFile {

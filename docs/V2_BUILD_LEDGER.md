@@ -451,3 +451,29 @@
   models, generic HWO trade cases and atmospheric molecular-weight scenarios.
   Missing support remains visible. Released two tables, JSON, PNG/SVG, documentation
   and hash gates.
+
+## Phase 14 Exoearth Evidence Observatory — 2026-09-12
+
+- Added a deterministic web exporter that compacts 18 hash-verified scientific
+  inputs into one browser payload while retaining evidence labels and claim
+  boundaries. Rebuilding twice produces the same SHA-256.
+- Added the requested `/population`, `/selection`, `/climate`,
+  `/stellar-environment`, `/atmospheres`, `/hwo`, `/missions`,
+  `/information-gain`, `/model-sensitivity`, `/falsification` and `/evidence`
+  chapters without removing the existing atlas, laboratories or article.
+- Added interactive observed/intrinsic, selection-surface, mission,
+  information-gain, sensitivity and evidence-graph views. All state transitions
+  respect reduced-motion preferences and evidence meaning is never colour-only.
+- Evolved the home page into an eleven-room Exoearth Evidence Observatory and
+  retained Biswajit Jana's learning log, research dictionary and explicitly
+  authored conclusion under `/perspective`.
+- Reworked the Universe overlay into reserved control and history rows. Browser
+  measurements at 1365x773 and 390x844 find zero overlap and zero horizontal
+  overflow; eight representative routes return 200 with no page errors.
+- Changed archive refresh to run daily on GitHub-hosted infrastructure, rebuild
+  all v2 layers, test them and open a review pull request. Every page opening
+  checks the compact GitHub `main` release record and retains the verified
+  bundled snapshot if the network is unavailable.
+- Passed 278 Python tests, full Ruff and mypy gates, every scientific release
+  invariant, frontend type check and lint, a 6,386-page production build and
+  static-export integrity across 34 route templates.

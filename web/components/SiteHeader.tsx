@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { FreshnessPulse } from "@/components/observatory/FreshnessPulse";
 
 /**
  * Navigation grouped by what a reader is trying to do, not by page count.
@@ -11,6 +12,22 @@ import { ThemeToggle } from "@/components/ThemeToggle";
  * article is navigable.
  */
 const GROUPS: { label: string; items: { href: string; label: string; hint: string }[] }[] = [
+  {
+    label: "Observatory",
+    items: [
+      { href: "/population", label: "Population", hint: "Observed counts and intrinsic inference" },
+      { href: "/selection", label: "Selection", hint: "Kepler detection and vetting surface" },
+      { href: "/climate", label: "Climate", hint: "Time-dependent habitable-zone sensitivity" },
+      { href: "/stellar-environment", label: "Stellar Environment", hint: "UV, XUV and escape scenarios" },
+      { href: "/atmospheres", label: "Atmospheres", hint: "Published spectra and scale-height scenarios" },
+      { href: "/hwo", label: "HWO Atlas", hint: "Direct-imaging precursor forecasts" },
+      { href: "/missions", label: "Missions", hint: "JWST, HWO, ANDES, PLATO, Gaia and Roman" },
+      { href: "/information-gain", label: "Information Gain", hint: "Which measurement teaches us most next" },
+      { href: "/model-sensitivity", label: "Model Sensitivity", hint: "How assumptions move the answer" },
+      { href: "/falsification", label: "Falsification", hint: "Solar-System failure tests" },
+      { href: "/evidence", label: "Evidence Graph", hint: "Trace claims back to sources" },
+    ],
+  },
   {
     label: "Explore",
     items: [
@@ -42,7 +59,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
   },
 ];
 
-export function SiteHeader() {
+export function SiteHeader({ bundledHash }: { bundledHash: string }) {
   const pathname = usePathname();
   const [open, setOpen] = useState<string | null>(null);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -114,7 +131,7 @@ export function SiteHeader() {
 
               {open === g.label && (
                 <div className="absolute left-0 top-full w-[300px] pt-1">
-                  <ul className="panel-raised overflow-hidden py-1 shadow-2xl shadow-black/60">
+                  <ul className="panel-raised max-h-[calc(100dvh-5rem)] overflow-y-auto py-1 shadow-2xl shadow-black/60">
                     {g.items.map((i) => (
                       <li key={i.href}>
                         <Link
@@ -167,6 +184,7 @@ export function SiteHeader() {
         </nav>
 
         <div className="ml-auto flex items-center gap-2">
+          <FreshnessPulse bundledHash={bundledHash} />
           <ThemeToggle />
 
           <a

@@ -11,6 +11,7 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test:e2e": "playwright test",
+    "audit:visual": "node scripts/visual-audit.cjs",
     "test:e2e:install": "playwright install --with-deps chromium"
   },
   "dependencies": {

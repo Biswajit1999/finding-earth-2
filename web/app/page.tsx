@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Hero } from "@/components/Hero";
 import { MassClassChip, HzChip } from "@/components/Chips";
 import { ScoreMeter, UncertaintyBar } from "@/components/UncertaintyBar";
+import { ObservatoryIndex } from "@/components/observatory/ObservatoryIndex";
 import {
   getCoverage,
   getOccurrenceStory,
@@ -26,6 +27,8 @@ export default function HomePage() {
   return (
     <>
       <Hero summary={summary} universe={universe} />
+
+      <ObservatoryIndex />
 
       {/* ================= what this asks ================= */}
       <section className="mx-auto max-w-[1400px] px-4 py-20 sm:px-6">

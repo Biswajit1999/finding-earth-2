@@ -2,7 +2,7 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
-import { getSummary } from "@/lib/data";
+import { getObservatoryRelease, getSummary } from "@/lib/data";
 
 const SITE_URL = "https://biswajit1999.github.io/finding-earth-2/";
 const REPOSITORY_URL = "https://github.com/Biswajit1999/finding-earth-2";
@@ -97,6 +97,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   const summary = getSummary();
+  const observatoryRelease = getObservatoryRelease();
   const description = buildDescription();
 
   const jsonLd = {
@@ -196,7 +197,7 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
-        <SiteHeader />
+        <SiteHeader bundledHash={observatoryRelease.observatory_sha256} />
         <main id="main">{children}</main>
         <SiteFooter
           generatedUtc={summary.generated_utc}

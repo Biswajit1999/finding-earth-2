@@ -336,6 +336,7 @@ python -m earth2 export      # browser-ready JSON
 python -m earth2 report      # regenerate this README
 python scripts/build_observed_intrinsic_story.py  # population story + web payload
 python scripts/build_composition_ensemble.py      # named bulk-composition models
+python scripts/build_web_observatory.py           # compact evidence-labelled web release
 ```
 
 Or the whole pipeline:
@@ -394,6 +395,7 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/MISSION_OBSERVATORY.md`](docs/MISSION_OBSERVATORY.md) | Separate JWST, HWO, ANDES, PLATO, Gaia and Roman evidence views |
 | [`docs/INFORMATION_GAIN.md`](docs/INFORMATION_GAIN.md) | Action-specific uncertainty reduction under explicit synthetic likelihoods |
 | [`docs/FALSIFICATION.md`](docs/FALSIFICATION.md) | Solar-System failure tests and candidate model sensitivity |
+| [`docs/WEB_OBSERVATORY.md`](docs/WEB_OBSERVATORY.md) | Eleven-room research website, refresh policy, motion and accessibility contract |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |
