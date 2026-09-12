@@ -806,6 +806,43 @@ def main() -> int:
     )
     check("information-gain product hashes match the release manifest", information_hashes_match)
 
+    falsification_dir = RESULTS_DIR / "falsification"
+    controls = pd.read_csv(falsification_dir / "solar_system_controls.csv").set_index("pl_name")
+    sensitivity = pd.read_csv(falsification_dir / "candidate_model_sensitivity.csv")
+    check(
+        "Solar-System controls expose the Venus similarity failure",
+        set(controls.index) == {"Earth", "Venus", "Mars", "Mercury", "Jupiter"}
+        and controls.loc["Earth", "esi_global"] == 1
+        and controls.loc["Venus", "esi_global"] > 0.85
+        and controls.loc["Venus", "hz_conservative_prob"] == 0,
+    )
+    check(
+        "candidate robustness ranges are bounded to the declared model menu",
+        len(sensitivity) == 25
+        and sensitivity["pl_name"].is_unique
+        and sensitivity["label"].eq("MODEL-SENSITIVITY").all()
+        and sensitivity["legacy_rank_span"].ge(0).all()
+        and all(
+            sensitivity[column].dropna().between(0, 1).all()
+            for column in [
+                "hz_model_probability_range",
+                "p_rocky_model_range",
+                "hwo_accessibility_range",
+            ]
+        ),
+    )
+    falsification_manifest = json.loads(
+        (falsification_dir / "falsification_products.json").read_text()
+    )
+    falsification_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in falsification_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("falsification product hashes match the release manifest", falsification_hashes_match)
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

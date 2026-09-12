@@ -433,3 +433,21 @@
   reported. Released CSV/JSON, a generated information map, method documentation
   and SHA-256 hashes. Release invariants require posterior shrinkage, finite
   non-negative information and exact withheld-action accounting.
+
+## Phase 13 Solar-System falsification and robustness — 2026-09-12
+
+- Ran Earth, Venus, Mars, Mercury and Jupiter through every current model with
+  supported inputs while preserving them as unranked Solar-System controls.
+- Demonstrated the central Venus failure: ESI is 0.874 despite its hostile
+  runaway-greenhouse surface. Mars receives conservative-HZ probability 1 while
+  remaining a cold, arid, low-pressure world. Similarity and HZ membership are
+  therefore explicitly falsified as habitability classifiers.
+- Audited composition support: radius-only rocky classification cannot determine
+  surface outcome, and unsupported Zeng/Otegi control domains remain missing.
+- Recomputed the full catalogue under baseline, equal, similarity-emphasis,
+  HZ-emphasis and confidence-emphasis legacy weights. The leading 25 candidates
+  retain their minimum/maximum rank and span rather than a hidden robustness blend.
+- Added per-candidate ranges across three climate boundaries, supported composition
+  models, generic HWO trade cases and atmospheric molecular-weight scenarios.
+  Missing support remains visible. Released two tables, JSON, PNG/SVG, documentation
+  and hash gates.

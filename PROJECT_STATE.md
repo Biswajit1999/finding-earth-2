@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **13 next — Phase 12 expected information gain complete**; v2 is not complete.
+- Current phase: **14 next — Phase 13 falsification and robustness complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,7 +9,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 273 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 275 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -119,8 +119,14 @@
   Ephemeris, XUV, atmosphere, albedo, transmission-spectrum and HWO-detection
   actions are withheld until defensible joint posteriors or instrument likelihoods
   exist; no generic instrument precision is fabricated.
-- Exact next action: run the Solar-System falsification and cross-model robustness
-  suite, exposing Venus-like similarity failures and unsupported model domains.
+- Phase 13 falsification and robustness: Earth, Venus, Mars, Mercury and Jupiter
+  remain unranked controls. Venus retains ESI 0.874 despite a hostile surface,
+  falsifying any habitability reading of similarity; Mars shows that HZ membership
+  is not climate. Twenty-five candidate rows expose HZ, composition, HWO and
+  atmosphere model ranges plus rank spans across five legacy-weight menus.
+- Exact next action: rebuild the research website around the full evidence story,
+  fix overlapping consoles, add mission/information/sensitivity/falsification
+  routes and implement a safe current-data refresh path.
 
 ## Execution contract
 

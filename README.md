@@ -393,6 +393,7 @@ docs/              research notes, methods, limitations, reproducibility
 | [`docs/COMPOSITION_ENSEMBLE.md`](docs/COMPOSITION_ENSEMBLE.md) | Probabilistic rocky/volatile evidence and model disagreement |
 | [`docs/MISSION_OBSERVATORY.md`](docs/MISSION_OBSERVATORY.md) | Separate JWST, HWO, ANDES, PLATO, Gaia and Roman evidence views |
 | [`docs/INFORMATION_GAIN.md`](docs/INFORMATION_GAIN.md) | Action-specific uncertainty reduction under explicit synthetic likelihoods |
+| [`docs/FALSIFICATION.md`](docs/FALSIFICATION.md) | Solar-System failure tests and candidate model sensitivity |
 | [`docs/RESEARCH_NOTES.md`](docs/RESEARCH_NOTES.md) | Evidence ledger built during the research pass |
 | [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) | Seeds, versions, determinism, re-running |
 | [`references/references.bib`](references/references.bib) | BibTeX bibliography |
