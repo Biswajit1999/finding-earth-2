@@ -1,6 +1,7 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **16 next — Phase 15 publication package complete**; final release audit remains.
+- Current phase: **core v2 complete — Phase 16 passed**; Beyond Earth 2.0 and the
+  LinkedIn release video are the active post-v2 deliverables.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,7 +10,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 281 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 282 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -141,8 +142,14 @@
   contribution, conduct, roadmap, changelog and scientific issue templates are
   present. Search metadata now exposes canonical, Dataset and ScholarlyArticle
   records. The DOI is explicitly pending rather than invented.
-- Exact next action: run the final scientific release audit, publish final status
-  and scientific summary, create the LinkedIn video package, then tag v2.0.0.
+- Phase 16 final audit: all 26 machine-readable scientific gates pass. The final
+  status answers all 24 requested release questions; the astronomer summary,
+  full test/lint/type/build/export/browser evidence and exact release boundaries
+  are recorded. GitHub Discussions, homepage metadata and eight research topics
+  are enabled.
+- Exact next action: complete the clearly separated Beyond Earth 2.0 futures
+  chapter and interactive physics, render the 30-second LinkedIn video, then
+  perform the terminal remote verification and tag v2.0.0.
 
 ## Execution contract
 

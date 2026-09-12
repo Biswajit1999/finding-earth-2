@@ -496,3 +496,16 @@
   conduct policies, and bug/data/scientific-method issue forms.
 - Added canonical metadata plus Dataset and ScholarlyArticle JSON-LD to the
   production website. Package versions are now 2.0.0.
+
+## Phase 16 final scientific audit — 2026-09-13
+
+- Added a machine-readable audit covering 26 release gates; all pass, including
+  v1 preservation, selection and population validation, evidence layers,
+  publication artifacts, website export and release checksums.
+- Added `FINAL_RESEARCH_STATUS.md` with the 24 requested final answers and an
+  astronomer-facing synthesis in `docs/V2_SCIENTIFIC_SUMMARY.md`.
+- Re-ran 282 Python tests, Ruff, mypy across 73 source files, all scientific
+  invariants, manuscript validation, TypeScript, ESLint, the 6,387-page build,
+  6,386-file static export, and desktop/mobile browser QA.
+- Enabled GitHub Discussions, set the live site as the repository homepage and
+  added focused research and implementation topics.
