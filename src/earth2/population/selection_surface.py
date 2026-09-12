@@ -14,6 +14,7 @@ from dataclasses import asdict, dataclass
 import numpy as np
 import pandas as pd
 from astropy import constants as c
+from numpy.typing import NDArray
 from scipy.optimize import minimize
 from scipy.stats import binom
 
@@ -528,6 +529,7 @@ def fit_selection_model(
     frame = joined.loc[domain.mask(joined)].copy().reset_index(drop=True)
     if not {"pipeline_recovered", "vetted_pc", "Expected_MES"}.issubset(frame.columns):
         raise ValueError("Joined injection outcomes are incomplete")
+    training: NDArray[np.bool_]
     if training_mask is None:
         training = np.ones(len(frame), bool)
     else:
@@ -734,6 +736,8 @@ def target_averaged_surface(
             "mes_above",
         )
     }
+    impact_nodes: NDArray[np.float64]
+    impact_weights: NDArray[np.float64]
     impact_nodes, impact_weights = np.polynomial.legendre.leggauss(model.impact_quadrature_nodes)
     impact_nodes = (impact_nodes + 1) / 2
     impact_weights = impact_weights / 2

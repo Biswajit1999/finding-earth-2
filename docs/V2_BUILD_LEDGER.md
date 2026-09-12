@@ -533,3 +533,13 @@
 - Inspected a six-frame contact sheet and the final cover frame. Added a concise
   caption that states the research objectives and links the live site, source,
   paper/data release and Beyond calculator.
+
+## Release portability closeout — 2026-09-13
+
+- Normalized every generated and copied publication-bundle text file to canonical
+  LF bytes before hashing and ZIP creation. The staged Git blobs now verify
+  against all 64 manifest entries on Windows and Linux, and two consecutive
+  builds produce the same archive SHA-256.
+- Added explicit NumPy array annotations where NumPy 2.2 and newer stubs infer
+  different shape precision. Mypy now accepts the same scientific source across
+  the supported Python 3.10 and 3.12 CI matrix without changing calculations.

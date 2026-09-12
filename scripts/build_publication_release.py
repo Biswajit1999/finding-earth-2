@@ -94,6 +94,20 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def write_lf_text(dst: Path, text: str, *, encoding: str = "utf-8") -> None:
+    """Write repository text without platform-dependent newline translation."""
+    normalized = text.replace("\r\n", "\n").replace("\r", "\n")
+    with dst.open("w", encoding=encoding, newline="\n") as handle:
+        handle.write(normalized)
+
+
+def copy_release_text(src: Path, dst: Path) -> None:
+    """Copy UTF-8 release text with repository-canonical LF newlines."""
+    text = src.read_text(encoding="utf-8")
+    with dst.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(text.replace("\r\n", "\n").replace("\r", "\n"))
+
+
 def source_commit() -> str:
     git = shutil.which("git")
     if git is None:
@@ -197,25 +211,23 @@ def build() -> dict[str, Any]:
             raise FileNotFoundError(rel)
         dst = RELEASE / rel
         dst.parent.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(src, dst)
+        copy_release_text(src, dst)
 
     manifest_dir = RELEASE / "data" / "manifests"
     manifest_dir.mkdir(parents=True)
     for src in sorted((ROOT / "data" / "manifests").glob("*.json")):
-        shutil.copy2(src, manifest_dir / src.name)
+        copy_release_text(src, manifest_dir / src.name)
 
-    (RELEASE / "README.md").write_text(release_readme(commit), encoding="utf-8")
-    (RELEASE / "VERSION").write_text("2.0.0\n", encoding="ascii")
-    (RELEASE / "SOURCE_COMMIT").write_text(commit + "\n", encoding="ascii")
+    write_lf_text(RELEASE / "README.md", release_readme(commit))
+    write_lf_text(RELEASE / "VERSION", "2.0.0\n", encoding="ascii")
+    write_lf_text(RELEASE / "SOURCE_COMMIT", commit + "\n", encoding="ascii")
 
     paper_figures = ROOT / "paper" / "figures" / "v2"
     paper_figures.mkdir(parents=True, exist_ok=True)
     for rel in PAPER_FIGURES:
         shutil.copy2(ROOT / rel, paper_figures / Path(rel).name)
     shutil.copy2(ROOT / "references" / "references.bib", ROOT / "paper" / "references.bib")
-    (ROOT / "paper" / "generated_results.tex").write_text(
-        latex_macros(), encoding="utf-8"
-    )
+    write_lf_text(ROOT / "paper" / "generated_results.tex", latex_macros())
 
     inventory_files = []
     for path in sorted(p for p in RELEASE.rglob("*") if p.is_file()):
@@ -233,7 +245,7 @@ def build() -> dict[str, Any]:
         "files": inventory_files,
     }
     inv_path = RELEASE / "release_inventory.json"
-    inv_path.write_text(json.dumps(inventory, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    write_lf_text(inv_path, json.dumps(inventory, indent=2, sort_keys=True) + "\n")
 
     manifest_paths = sorted(
         p for p in RELEASE.rglob("*") if p.is_file() and p.name != "MANIFEST.sha256"
@@ -241,7 +253,7 @@ def build() -> dict[str, Any]:
     manifest = "".join(
         f"{sha256(path)}  {path.relative_to(RELEASE).as_posix()}\n" for path in manifest_paths
     )
-    (RELEASE / "MANIFEST.sha256").write_text(manifest, encoding="ascii")
+    write_lf_text(RELEASE / "MANIFEST.sha256", manifest, encoding="ascii")
 
     if ZIP_PATH.exists():
         ZIP_PATH.unlink()

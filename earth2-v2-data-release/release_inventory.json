@@ -9,14 +9,14 @@
       "sha256": "325992a915862bceda07844c59a12e804686b1169aabeb4bcee65629f779026b"
     },
     {
-      "bytes": 1895,
+      "bytes": 1803,
       "path": "data/manifests/_sync_state.json",
-      "sha256": "41c978c1779b7efd5e591701d994f18aee9e4542c628befee39e11f76680c197"
+      "sha256": "f34de19afad03d753343cf5df0ed3794cf923eac108ceb676e68a70fc75c5349"
     },
     {
-      "bytes": 1728,
+      "bytes": 1691,
       "path": "data/manifests/gaia_dr3_crossmatch.json",
-      "sha256": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae"
+      "sha256": "948bd5087f9cd0fec63a385cf564d50393e58d1b4bb02873326eecdfc05a8f19"
     },
     {
       "bytes": 1977,
@@ -39,64 +39,64 @@
       "sha256": "c10be9e0388df794617e0d640ea1d8337e63028772d16d6a440c95a6519ef2e6"
     },
     {
-      "bytes": 2103,
+      "bytes": 2024,
       "path": "data/manifests/nasa_di_stars.json",
-      "sha256": "6441894927b1ff43332168a045e77d646a2989fa5cc040467ee45a3a676ac19a"
+      "sha256": "dbecf1d453b50a74f5c1e3aba1244333ac561a3dd406d7891a42671bc68b13bb"
     },
     {
-      "bytes": 1348,
+      "bytes": 1311,
       "path": "data/manifests/nasa_emissionspec.json",
-      "sha256": "64cf7c6e208c7a607e249db39bd9c544ee51c986fc378cd529bfc8fb31ff5f2f"
+      "sha256": "c4e476c39f3c4973b259bf1a9c80a39813b3aa29fd64dde94cc61f8a4fb64182"
     },
     {
-      "bytes": 2484,
+      "bytes": 2426,
       "path": "data/manifests/nasa_k2pandc.json",
-      "sha256": "f76a48e46ade406f9cedcf9f52b3f33f9ec5c827da3a7a1292db70d0bf85b842"
+      "sha256": "33da60efbac118fd6b777cf5135cc7391bb5f8db4fc05d8cda809972b7663d2a"
     },
     {
-      "bytes": 2833,
+      "bytes": 2776,
       "path": "data/manifests/nasa_koi_dr25.json",
-      "sha256": "21bc43e65b72c7d56856ca95580c1b7f1d5b4187248c8ec4c816093ff1c439c3"
+      "sha256": "755360b9dc3a35c19509f42fc3a3fc4a00ca8f3f3a33e1683ec022c4f0a68cea"
     },
     {
-      "bytes": 1527,
+      "bytes": 1496,
       "path": "data/manifests/nasa_microlensing.json",
-      "sha256": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac"
+      "sha256": "f40c79aee1f92f8569b82a6c41ad8f0595fde7a258d7526f5207cc61a3a843e2"
     },
     {
-      "bytes": 6845,
+      "bytes": 6697,
       "path": "data/manifests/nasa_ps.json",
-      "sha256": "4db6dfdba53cea6dc3163b701364ceec940111d0041e55c6ec93c8016465738b"
+      "sha256": "0e7e60887e6e79d9c16107bcf42468468ea02753003a396056992c5aac34eb24"
     },
     {
-      "bytes": 8199,
+      "bytes": 8028,
       "path": "data/manifests/nasa_pscomppars.json",
-      "sha256": "0f0b92a82230b9391e67786840674c26f5097a10d4f7f35a4de6282cc997947a"
+      "sha256": "fc3e0969c0d7f2e0619825a0f4ff58f90a35bd01666268f8b144817156c6f788"
     },
     {
-      "bytes": 1242,
+      "bytes": 1209,
       "path": "data/manifests/nasa_spectra_index.json",
-      "sha256": "0e89c5b0599cf09dde223b31d4ab5a359eac4767c11d2b17991b84c694ebf474"
+      "sha256": "20651e456a3b80b97261b0e0f35c5da9f243f17e980e7831f7d690e3adffb86a"
     },
     {
-      "bytes": 2465,
+      "bytes": 2407,
       "path": "data/manifests/nasa_stellarhosts.json",
-      "sha256": "054384694de27ac56964649709a0048fdf533784f1f4d3b820737e29e37bec44"
+      "sha256": "ca63abe9ce3278a26f122c8ae10848e25159d4c14908f8263ee2236770bebe18"
     },
     {
-      "bytes": 2149,
+      "bytes": 2106,
       "path": "data/manifests/nasa_tce_dr25.json",
-      "sha256": "bb3b42fcd2826d347191c8e19716246717a40064e3be180fa3273990e7208f92"
+      "sha256": "fce285d2c66ddffdd7511fdabf8e873aa55305387a15ef25a81a9c7d51d2eee3"
     },
     {
-      "bytes": 2730,
+      "bytes": 2619,
       "path": "data/manifests/nasa_toi.json",
-      "sha256": "372ff6fe263e5f054b63720cdaca8565136b20eaadd5167a26ecba049455224b"
+      "sha256": "d35621b9e5b296ed90ae25ee5c6d447c4d412ebd76225121bd0e9f3aa50c9166"
     },
     {
-      "bytes": 1663,
+      "bytes": 1616,
       "path": "data/manifests/nasa_transitspec.json",
-      "sha256": "c25fa9e78e73f2f3c5b09f881a8e74dc0ce3de4dc74d609e7bf8b5bb3569f47c"
+      "sha256": "35f7b08647e671a70386630065689396447e51f392d82cbdcee6f1e70e616759"
     },
     {
       "bytes": 1756,
@@ -109,9 +109,9 @@
       "sha256": "cdc699a2439054c128f451a2785c00ccd6e6a3112d3cab66cdf0a7408ebaef15"
     },
     {
-      "bytes": 1055,
+      "bytes": 1035,
       "path": "README.md",
-      "sha256": "20be286a565de9631e6203fc93df0c72ab9e767c551c99c5e357fdfc75c52234"
+      "sha256": "c9f6c1d4da5461d65f101dbf16b31368f13a37438187d2b1ba61ace6aa15e5db"
     },
     {
       "bytes": 1206,
@@ -119,9 +119,9 @@
       "sha256": "470cff70185129c271a0a53e3db33ee0e9315be0511155170c0ccd89e42dcb30"
     },
     {
-      "bytes": 20636,
+      "bytes": 19978,
       "path": "results/analysis_summary.json",
-      "sha256": "70eba31d5714403af122c469ef585c03d76098e28a62b6a0ed18b73b9d3e971f"
+      "sha256": "a2c4b0b4c9bbc502db7bfd025858322fb8c99406fe00e9ff70f1ab21a1fb495d"
     },
     {
       "bytes": 345236,
@@ -144,9 +144,9 @@
       "sha256": "65766a85e53516ed66805fed3c693f9730200dfc55aa79f8582fde02f0353a67"
     },
     {
-      "bytes": 6898221,
+      "bytes": 6891861,
       "path": "results/candidate_ranking.csv",
-      "sha256": "2f843af68c6caed28af434bac749ad3456d6c88063c4dbee646e5cb7f3ed1052"
+      "sha256": "4ecf046f2906235a756819eef3c9c39fe531814071824746c9e1cc3859632929"
     },
     {
       "bytes": 1199332,
@@ -169,9 +169,9 @@
       "sha256": "34c526eae9224191e8ff773139dedd34cd5d2c5bebc6c8eb3264a26a7a35d2e5"
     },
     {
-      "bytes": 920,
+      "bytes": 904,
       "path": "results/data_coverage.csv",
-      "sha256": "f00f151c1de38237fbb898936543c3fe74acedf5b6a13d640dc18b901042073e"
+      "sha256": "f01e97179e051480cc28e711bc299840e3bcadc436544229e51f1601a26ec8fa"
     },
     {
       "bytes": 1110,
@@ -184,14 +184,14 @@
       "sha256": "6dda40506c810cd56d31d5ba730b00f2c4bd407668fec02b8bc0d00add183599"
     },
     {
-      "bytes": 53299,
+      "bytes": 52211,
       "path": "results/evidence/mass_evidence_examples.json",
-      "sha256": "86161f356e3ad085a6fdd90991c0d1e633bcf7828416186b6f2daa0c90985f1a"
+      "sha256": "bdff84f5a3d464cbd8e0f0930062e3a7c1205b8829f3c82e7482c21543b0b41e"
     },
     {
-      "bytes": 534,
+      "bytes": 514,
       "path": "results/evidence/summary.json",
-      "sha256": "65ec1857602d3a3097b2b1cb58f68ab25f2e6a30b1ada60c98315bd0868a5b21"
+      "sha256": "32b6051aa3201f2b095611f1d63b98210abebc8e9e03342b773e56e8a03bbaf7"
     },
     {
       "bytes": 2934,
@@ -214,14 +214,14 @@
       "sha256": "920113f62d6517db562dc21eb2982ad3141ca41686fc27d4c9cacbdbc5e2618a"
     },
     {
-      "bytes": 3316,
+      "bytes": 3218,
       "path": "results/hwo/hwo_precursor_atlas.json",
-      "sha256": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+      "sha256": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
     },
     {
-      "bytes": 1113,
+      "bytes": 1083,
       "path": "results/hwo/hwo_products.json",
-      "sha256": "3108f381541617efe9ce236e26f4d8ff20e6cbc0a0f41d19c8fa382140be4b98"
+      "sha256": "807fea12c7fba6b56f6a8cb329e3e79defd917c289ab6045a1520ec6a91b3e6c"
     },
     {
       "bytes": 1182209,
@@ -269,9 +269,9 @@
       "sha256": "29140abdbe684254abf27e80762dd6f2fc73b93b414f40df63071862886464c9"
     },
     {
-      "bytes": 9313,
+      "bytes": 9270,
       "path": "results/population/dr25_reliability_grid.csv",
-      "sha256": "0a82470a5d651d34bdd9db1b0ed38d0def34130f8758a660fc2d81df88e7bcfe"
+      "sha256": "6fc3f8700bbb441792c1679bd3c693d0a4d5dd1b9f81080a72ec7caf41663bf1"
     },
     {
       "bytes": 13016,
@@ -289,39 +289,39 @@
       "sha256": "76f745a22f5c3b6b22881188a9be125cd303ea96b827d9c8d2e5ed209dec24db"
     },
     {
-      "bytes": 15373,
+      "bytes": 14908,
       "path": "results/population/dr25_smooth_reliability_model.json",
-      "sha256": "d4dded4fb8675531643e494f100b980e7905f67ed8d5671a32cbb45b50a2ebb4"
+      "sha256": "7a0bbcfb3791d26f6d79001c4bf9a1a15c5d9785e2a37af2023b6a18f8373b94"
     },
     {
-      "bytes": 2122,
+      "bytes": 2080,
       "path": "results/population/dr25_summary.json",
-      "sha256": "31c0ad75deb859e401635c20d01e190e7b4a149bf2e4295c7451347cf4564462"
+      "sha256": "be165ff8119886fe8c344d4614a6e25abf8e44a9d16637eb3761646128839ab0"
     },
     {
-      "bytes": 14213,
+      "bytes": 13760,
       "path": "results/provenance_manifest.json",
-      "sha256": "23cadf4b363b31f43902fbe24cb66e81c5a7b9f0cc096f136a21308e7a0db54d"
+      "sha256": "8afba63818589bd0c1b137e3c5da8e0cc0e23aa63ba6d76d1e4cbc021ba3d84a"
     },
     {
-      "bytes": 9836,
+      "bytes": 9537,
       "path": "results/transformation_ledger.json",
-      "sha256": "1787a3c0e03d69bac9e93c1e0a91a8380b7668499a135d295bdf0f775545579d"
+      "sha256": "5ac9b38b4769d86594204bcceb3c595ec708959b5c788cb87c170baed1831b12"
     },
     {
-      "bytes": 42,
+      "bytes": 41,
       "path": "SOURCE_COMMIT",
-      "sha256": "dc2f0a2c793a00f9f7ae4b426ffeb34092c0bfe4f329a36efb8c902d0065ab63"
+      "sha256": "ea96b9af3c63b6dc9736de2ab01ce33d5118ed967285a9fd98ec3f34cf87ffbf"
     },
     {
-      "bytes": 7,
+      "bytes": 6,
       "path": "VERSION",
-      "sha256": "efdfae9d0dc9b09f9524df6c401bf7143a882469c6243bfbcb0bbeaefe9aa3c1"
+      "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624"
     }
   ],
   "licensing_boundary": "Derived products only; no cached third-party source tables.",
   "release": "2.0.0",
   "schema_version": "1.0",
-  "source_commit": "d1772672e0c85ac2690016de71fde19c112f7efb",
+  "source_commit": "57e5be1d38111aa74e374103aa8fff4c0a80ebd7",
   "title": "Finding Earth 2.0 v2 data release"
 }

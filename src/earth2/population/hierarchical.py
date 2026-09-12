@@ -16,6 +16,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 from astropy import constants as c
+from numpy.typing import NDArray
 
 from earth2.population.geometry import semimajor_axis_au, transit_probability
 from earth2.population.occurrence import LogQuadrature, OccurrenceDomain
@@ -253,6 +254,8 @@ def evaluate_selection_exposure(
     shape = (len(radii), len(periods))
     exposure = np.zeros(shape)
     gradient = np.zeros((*shape, len(names)))
+    impact_nodes: NDArray[np.float64]
+    impact_weights: NDArray[np.float64]
     impact_nodes, impact_weights = np.polynomial.legendre.leggauss(model.impact_quadrature_nodes)
     impact_nodes = (impact_nodes + 1) / 2
     impact_weights /= 2

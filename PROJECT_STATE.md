@@ -1,7 +1,8 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **all requested research, website and LinkedIn media deliverables
-  complete**; terminal push, deployment verification and v2.0.0 tag remain.
+- Current phase: **100% complete for the declared v2, Beyond Earth 2.0 and
+  LinkedIn media scope**. The public site, source repository and v2.0.0 GitHub
+  Release are published; DOI minting remains an optional external archive action.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -15,8 +16,8 @@
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
-- Website: production build (6,386 HTML files), lint and type check passed;
-  static export integrity passed across 34 route templates. Browser QA reports
+- Website: production build (6,387 HTML files), lint and type check passed;
+  static export integrity passed across 35 route templates. Browser QA reports
   zero console overlap and zero horizontal overflow at 1365x773 and 390x844.
 - Known limitations and scientific assumptions: see
   [baseline audit](docs/V2_BASELINE_AUDIT.md). A conditional fixed-box
@@ -155,8 +156,10 @@
 - LinkedIn package: 30.00-second 1350×1080 H.264/yuv420p MP4, inspected six-scene
   contact sheet, matching cover frame, reproducible Playwright capture script and
   ready-to-post caption with website, repository and Beyond links.
-- Exact next action: commit and push this final package, verify GitHub Actions and
-  the deployed route, create/push the v2.0.0 tag, then publish the release record.
+- Release engineering: the deterministic bundle now writes canonical LF bytes on
+  every operating system, and NumPy array annotations are portable across the
+  supported Python 3.10/3.12 CI matrix. The v2.0.0 tag and public GitHub Release
+  identify the finished package.
 
 ## Execution contract
 
@@ -166,7 +169,7 @@ deterministic outputs, inspection, state/ledger update, commit, push, remote
 verification. Checkpoint before bulk archive requests or expensive computation.
 Never report a simulated recovery experiment as an astronomical measurement.
 
-## Remaining ordered phases
+## Completed ordered phases
 
 1. Literature and evidence architecture.
 2. Kepler DR25 completeness integration.
