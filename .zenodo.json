@@ -1,0 +1,12 @@
+{
+  "title": "Finding Earth 2.0: v2 data release",
+  "upload_type": "dataset",
+  "description": "Derived, selection-aware exoplanet research products connecting the observed catalogue to conditional population inference, model sensitivity, observability, information gain, and falsification controls. No output estimates the probability of life.",
+  "creators": [{"name": "Jana, Biswajit"}],
+  "version": "2.0.0",
+  "publication_date": "2026-09-13",
+  "license": "MIT",
+  "keywords": ["exoplanets", "habitable zone", "selection effects", "Bayesian inference", "reproducible research"],
+  "related_identifiers": [{"identifier": "https://github.com/Biswajit1999/finding-earth-2", "relation": "isSupplementTo", "scheme": "url"}],
+  "notes": "The MIT licence covers project software. Source astronomical data retain provider terms; the archive excludes source tables and includes derived products only."
+}

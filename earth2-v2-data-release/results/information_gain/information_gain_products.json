@@ -1,0 +1,22 @@
+{
+  "files": {
+    "results/information_gain/action_information_gain.csv": {
+      "bytes": 40456,
+      "sha256": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76"
+    },
+    "results/information_gain/expected_information_gain.png": {
+      "bytes": 210017,
+      "sha256": "6b399e464aad4f9b3dda4b98814b1d2cc110469a0f2dc6299f1b9413b0dff362"
+    },
+    "results/information_gain/expected_information_gain.svg": {
+      "bytes": 69495,
+      "sha256": "12a7a935e3aecf1e057c2b05a41015528eff88ecbac90f90c3866d71616e96b3"
+    },
+    "results/information_gain/information_gain.json": {
+      "bytes": 9419,
+      "sha256": "0dc09ddd11a93f23d5cd965ef439b4e31ec1361e190bebf40a70674128179c9d"
+    }
+  },
+  "product": "Phase 12 action-specific expected information gain",
+  "schema_version": "1.0"
+}

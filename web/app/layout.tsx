@@ -26,6 +26,7 @@ export function generateMetadata(): Metadata {
       template: "%s — Finding Earth 2.0",
     },
     description,
+    alternates: { canonical: SITE_URL },
     keywords: [
       "Finding Earth 2.0",
       "Earth 2.0",
@@ -163,6 +164,24 @@ export default function RootLayout({
           "Radial-velocity analysis",
           "Atmospheric spectroscopy metadata analysis",
         ],
+        distribution: {
+          "@type": "DataDownload",
+          encodingFormat: "application/zip",
+          contentUrl: `${REPOSITORY_URL}/raw/main/earth2-v2-data-release.zip`,
+        },
+        license: `${REPOSITORY_URL}/blob/main/DATA_LICENSES.md`,
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "@id": `${SITE_URL}#paper`,
+        headline: "Finding Earth 2.0: From the Observed Exoplanet Catalogue to Selection-Corrected Temperate Terrestrial Planet Inference",
+        author: { "@id": `${SITE_URL}#author` },
+        datePublished: "2026-09-13",
+        dateModified: observatoryRelease.generated_utc,
+        isPartOf: { "@id": `${SITE_URL}#website` },
+        about: { "@id": `${SITE_URL}#dataset` },
+        url: `${REPOSITORY_URL}/blob/main/paper/main.tex`,
+        description: "A reproducible analysis separating observed exoplanet evidence, selection-corrected population inference, model sensitivity, and mission scenarios.",
       },
     ],
   };

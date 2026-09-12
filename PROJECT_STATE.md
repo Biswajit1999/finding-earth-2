@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **15 next — Phase 14 research website complete**; v2 is not complete.
+- Current phase: **16 next — Phase 15 publication package complete**; final release audit remains.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,7 +9,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 278 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 281 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -133,8 +133,16 @@
   scientific inputs; a daily GitHub workflow rebuilds data while the browser
   checks the latest committed release on open. The Universe HUD now reserves
   separate control/history rows and passes automated overlap regression checks.
-- Exact next action: generate the v2 manuscript and frozen, hash-verified data
-  release with citation, licensing and public research infrastructure.
+- Phase 15 publication package: the v2 manuscript has all 19 requested core
+  sections and six technical appendices. Thirty-two headline values are
+  generated from machine-readable products. The derived-only data release holds
+  65 checksum-controlled files and produces a deterministic 3.54 MB Zenodo-ready
+  ZIP; raw provider tables are excluded. Citation, software/data licensing,
+  contribution, conduct, roadmap, changelog and scientific issue templates are
+  present. Search metadata now exposes canonical, Dataset and ScholarlyArticle
+  records. The DOI is explicitly pending rather than invented.
+- Exact next action: run the final scientific release audit, publish final status
+  and scientific summary, create the LinkedIn video package, then tag v2.0.0.
 
 ## Execution contract
 

@@ -1,0 +1,86 @@
+{
+  "missions": [
+    {
+      "evidence_file": "results/missions/jwst.json",
+      "labels_present": [
+        "DERIVED",
+        "OBSERVED"
+      ],
+      "mission_id": "jwst",
+      "name": "James Webb Space Telescope",
+      "page": "docs/missions/JWST.md",
+      "scientific_role": "Existing and planned infrared atmospheric characterisation",
+      "status": "operational observatory; public atmospheric reductions available",
+      "status_as_of": "2026-09-12"
+    },
+    {
+      "evidence_file": "results/missions/hwo.json",
+      "labels_present": [
+        "FORECAST",
+        "OBSERVED"
+      ],
+      "mission_id": "hwo",
+      "name": "Habitable Worlds Observatory",
+      "page": "docs/missions/HWO.md",
+      "scientific_role": "Future reflected-light detection and spectroscopy of terrestrial planets",
+      "status": "pre-formulation concept and technology maturation",
+      "status_as_of": "2026-09-12"
+    },
+    {
+      "evidence_file": "results/missions/andes.json",
+      "labels_present": [
+        "DERIVED",
+        "FORECAST"
+      ],
+      "mission_id": "andes",
+      "name": "ELT / ANDES",
+      "page": "docs/missions/ANDES.md",
+      "scientific_role": "Future high-resolution spectroscopy, precision radial velocity, and atmosphere pathways",
+      "status": "second-phase ELT instrument in development",
+      "status_as_of": "2026-09-12"
+    },
+    {
+      "evidence_file": "results/missions/plato.json",
+      "labels_present": [
+        "DERIVED",
+        "FORECAST"
+      ],
+      "mission_id": "plato",
+      "name": "PLATO",
+      "page": "docs/missions/PLATO.md",
+      "scientific_role": "Future bright-star terrestrial discovery and stellar characterisation",
+      "status": "spacecraft testing; launch planned for March 2027",
+      "status_as_of": "2026-09-12"
+    },
+    {
+      "evidence_file": "results/missions/gaia.json",
+      "labels_present": [
+        "FORECAST",
+        "OBSERVED"
+      ],
+      "mission_id": "gaia",
+      "name": "Gaia",
+      "page": "docs/missions/GAIA.md",
+      "scientific_role": "Astrometry, distances, stellar context, multiplicity, and future orbital solutions",
+      "status": "Gaia DR3 public; Gaia DR4 not public in this snapshot",
+      "status_as_of": "2026-09-12"
+    },
+    {
+      "evidence_file": "results/missions/roman.json",
+      "labels_present": [
+        "FORECAST",
+        "OBSERVED"
+      ],
+      "mission_id": "roman",
+      "name": "Nancy Grace Roman Space Telescope",
+      "page": "docs/missions/ROMAN.md",
+      "scientific_role": "Future microlensing demographics across cold, wide-orbit, and free-floating planets",
+      "status": "launched 2026-08-30; travelling to Sun-Earth L2 and not yet in science operations",
+      "status_as_of": "2026-09-12"
+    }
+  ],
+  "schema_version": "1.0",
+  "separation_policy": "Each mission answers a different measurement question. No cross-mission aggregate, ranking, or scientific merit number is defined.",
+  "status_as_of": "2026-09-12",
+  "title": "Finding Earth 2.0 mission observatory"
+}

@@ -1,0 +1,26 @@
+{
+  "files": {
+    "results/falsification/candidate_model_sensitivity.csv": {
+      "bytes": 2934,
+      "sha256": "d3a1975ac7e5253e9723e40e72718ea69606236fd011e407c2e7ce90e0e37f46"
+    },
+    "results/falsification/falsification_and_robustness.png": {
+      "bytes": 182897,
+      "sha256": "04ee4ddc607aa0978de31fcc174c676f369b94db1d51892f9d197bff84a01e2b"
+    },
+    "results/falsification/falsification_and_robustness.svg": {
+      "bytes": 72194,
+      "sha256": "d6d2bfb30031321b6cdcea8cbcfd6e46e59ccd5993886eb9175d6559ad789dae"
+    },
+    "results/falsification/falsification_summary.json": {
+      "bytes": 1557,
+      "sha256": "e8fc2eca593f19baf2e8d86509f40434e044b86a9cdc7464bbf367a50724a718"
+    },
+    "results/falsification/solar_system_controls.csv": {
+      "bytes": 1285,
+      "sha256": "920113f62d6517db562dc21eb2982ad3141ca41686fc27d4c9cacbdbc5e2618a"
+    }
+  },
+  "product": "Phase 13 falsification and robustness",
+  "schema_version": "1.0"
+}

@@ -1,0 +1,42 @@
+{
+  "label": "SIMULATED",
+  "scope": "Official DR25 artificial-signal experiment; selected stellar subset",
+  "interpretation": "Recovery conditional on the injection proposal, not a population selection surface or occurrence rate.",
+  "selection": {
+    "teff_min": 4800.0,
+    "teff_max": 6300.0,
+    "logg_min": 4.0,
+    "radius_max_solar": 1.5
+  },
+  "selection_additional_requirements": "Finite positive mass, radius, dataspan, six-hour CDPP and MES threshold; 0 < dutycycle <= 1",
+  "archive_stellar_rows": 200038,
+  "selected_stars": 114105,
+  "injections_all": 146294,
+  "injections_without_stellar_match": 0,
+  "recovered_all": 45377,
+  "recovery_code_2_all": 586,
+  "recovery_definition": "Codes 1 and 2 with a matching official INJ1 TCE; code 2 audited separately, not asserted to have a correct recovered period",
+  "vetted_pc_all": 38668,
+  "injections_selected": 84556,
+  "recovered_selected": 30012,
+  "recovery_code_2_selected": 359,
+  "vetted_pc_selected": 26219,
+  "selected_stars_without_injection": 29549,
+  "grid_injections": 84445,
+  "grid_empty_cells": 11,
+  "interval": "95% equal-tail Beta posterior, Jeffreys Beta(0.5,0.5) prior; empty cells undefined",
+  "radius_convention": "Original DR25 radius times injected Rp/Rstar; IAU nominal solar and equatorial Earth radii from astropy.constants",
+  "transit_criterion": "centre_crossing, b in [0,1]; circular injected orbits",
+  "source_hashes": {
+    "stars": "b8883287f9daee42ea02d09bb420229f7d40ee30f08a397955d87fff28f4aea0",
+    "injections": "6b9f2d8b597902aa4037b4a05d4dfd255f281f8f25f6b970e5a88fc8f0652979",
+    "vetting": "e0d6d05b36a4180c7bc1b69d6d1a1feab95b02f26ed66d6fe89b8aa631e63e3f"
+  },
+  "scientific_gates_open": [
+    "Verified searched-target denominator and per-target calibration",
+    "Injection-proposal correction or validated per-target detection model",
+    "False-alarm reliability and astrophysical false-positive treatment",
+    "Measurement uncertainties and prior-consistent hierarchical likelihood",
+    "Synthetic recovery and literature-matched occurrence comparison"
+  ]
+}

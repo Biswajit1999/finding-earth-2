@@ -1,0 +1,275 @@
+{
+  "action_count": 6,
+  "actions": [
+    {
+      "action_id": "mass_precision_requirement",
+      "errors": [
+        "pl_bmasseerr1",
+        "pl_bmasseerr2"
+      ],
+      "gate": "measured_or_msini",
+      "noise_floor": 0.1,
+      "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
+      "observation_model": "A future independent Gaussian mass-like measurement.",
+      "parameter": "planet mass or minimum mass",
+      "relative_noise": 0.1,
+      "unit": "Earth masses",
+      "value": "pl_bmasse"
+    },
+    {
+      "action_id": "radius_precision_requirement",
+      "errors": [
+        "pl_radeerr1",
+        "pl_radeerr2"
+      ],
+      "gate": "finite_measurement",
+      "noise_floor": 0.01,
+      "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
+      "observation_model": "A future independent Gaussian radius measurement.",
+      "parameter": "planet radius",
+      "relative_noise": 0.02,
+      "unit": "Earth radii",
+      "value": "pl_rade"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "errors": [
+        "st_raderr1",
+        "st_raderr2"
+      ],
+      "gate": "finite_measurement",
+      "noise_floor": 0.005,
+      "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
+      "observation_model": "A future independent Gaussian stellar-radius measurement.",
+      "parameter": "stellar radius",
+      "relative_noise": 0.01,
+      "unit": "Solar radii",
+      "value": "st_rad"
+    },
+    {
+      "action_id": "stellar_age_precision_requirement",
+      "errors": [
+        "st_ageerr1",
+        "st_ageerr2"
+      ],
+      "gate": "finite_measurement",
+      "noise_floor": 0.2,
+      "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
+      "observation_model": "A future independent Gaussian stellar-age constraint.",
+      "parameter": "stellar age",
+      "relative_noise": 0.2,
+      "unit": "Gyr",
+      "value": "st_age"
+    },
+    {
+      "absolute_noise": 0.03,
+      "action_id": "eccentricity_precision_requirement",
+      "errors": [
+        "pl_orbeccenerr1",
+        "pl_orbeccenerr2"
+      ],
+      "gate": "finite_measurement",
+      "noise_floor": 0.03,
+      "noise_rule": "Gaussian sigma 0.03",
+      "observation_model": "A local Gaussian approximation to a bounded eccentricity posterior.",
+      "parameter": "orbital eccentricity",
+      "unit": "dimensionless",
+      "value": "pl_orbeccen"
+    },
+    {
+      "absolute_noise": 0.5,
+      "action_id": "inclination_precision_requirement",
+      "errors": [
+        "pl_orbinclerr1",
+        "pl_orbinclerr2"
+      ],
+      "gate": "finite_measurement",
+      "noise_floor": 0.5,
+      "noise_rule": "Gaussian sigma 0.5 degrees",
+      "observation_model": "A future independent astrometric or transit-geometry constraint.",
+      "parameter": "orbital inclination",
+      "unit": "degrees",
+      "value": "pl_orbincl"
+    }
+  ],
+  "best_supported_action_by_target": [
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 0.6460676992850464,
+      "pl_name": "GJ 1002 b"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 0.6787760023090419,
+      "pl_name": "GJ 1002 c"
+    },
+    {
+      "action_id": "eccentricity_precision_requirement",
+      "expected_information_gain_bits": 0.6197329673476948,
+      "pl_name": "GJ 1061 d"
+    },
+    {
+      "action_id": "stellar_age_precision_requirement",
+      "expected_information_gain_bits": 1.8328308572491225,
+      "pl_name": "GJ 251 c"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 1.0420321323942372,
+      "pl_name": "GJ 3378 b"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 1.8838904817353292,
+      "pl_name": "GJ 667 C c"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 2.4969322116046726,
+      "pl_name": "GJ 667 C e"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 2.2979440078683138,
+      "pl_name": "GJ 667 C f"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 1.1946119037425262,
+      "pl_name": "Gl 725 B c"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 2.529455164519408,
+      "pl_name": "Kepler-1229 b"
+    },
+    {
+      "action_id": "stellar_age_precision_requirement",
+      "expected_information_gain_bits": 1.757002263331644,
+      "pl_name": "Kepler-1544 b"
+    },
+    {
+      "action_id": "radius_precision_requirement",
+      "expected_information_gain_bits": 2.58024806906848,
+      "pl_name": "Kepler-1649 c"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 2.938381245390777,
+      "pl_name": "Kepler-1652 b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 2.112276789454083,
+      "pl_name": "Kepler-186 f"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 3.938534681147518,
+      "pl_name": "Kepler-296 f"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 3.258761901708636,
+      "pl_name": "Kepler-438 b"
+    },
+    {
+      "action_id": "stellar_age_precision_requirement",
+      "expected_information_gain_bits": 2.8529404761945347,
+      "pl_name": "Kepler-442 b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 3.44054859880985,
+      "pl_name": "Kepler-452 b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 1.7141800863521457,
+      "pl_name": "Kepler-62 f"
+    },
+    {
+      "action_id": "radius_precision_requirement",
+      "expected_information_gain_bits": 0.30301683192659357,
+      "pl_name": "LHS 1140 b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 2.1101649774397777,
+      "pl_name": "Proxima Cen b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 1.745285065223101,
+      "pl_name": "TOI-700 d"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 1.3785116232537298,
+      "pl_name": "TOI-715 b"
+    },
+    {
+      "action_id": "stellar_radius_precision_requirement",
+      "expected_information_gain_bits": 1.3785116232537298,
+      "pl_name": "Teegarden's Star c"
+    },
+    {
+      "action_id": "mass_precision_requirement",
+      "expected_information_gain_bits": 0.9587689199040134,
+      "pl_name": "Wolf 1069 b"
+    }
+  ],
+  "candidate_count": 25,
+  "claim_boundary": "These are synthetic precision-requirement experiments, not proposals, exposure-time estimates, instrument forecasts, or guarantees of achievable information. Comparisons are conditional on the listed Gaussian priors and likelihoods. Cost and time are not modelled.",
+  "equation": "E_y[KL(p(theta|D,y,a) || p(theta|D))]",
+  "label": "SIMULATED",
+  "linear_gaussian_solution_nats": "0.5 * ln(1 + prior_variance / observation_noise_variance)",
+  "references": [
+    {
+      "citation": "Lindley (1956), On a Measure of the Information Provided by an Experiment",
+      "doi": "10.1214/aoms/1177728069"
+    },
+    {
+      "arxiv": "1612.02085",
+      "citation": "Batalha & Line (2017), Information Content Analysis for Selection of Optimal JWST Observing Modes for Transiting Exoplanet Atmospheres"
+    }
+  ],
+  "row_count": 150,
+  "schema_version": "1.0",
+  "source": "results/analysis_catalogue.parquet",
+  "source_sha256": "bf017e351bee9619e8d8f4ac078ceb57d9b6c6ce1bf983210604e6804cd7ca9a",
+  "supported_rows": 83,
+  "title": "Action-specific expected information gain under declared synthetic likelihoods",
+  "withheld_actions": [
+    {
+      "action_id": "ephemeris_refinement",
+      "reason": "A future transit window needs the epoch-period covariance, which the catalogue does not provide.",
+      "status": "withheld_no_joint_epoch_period_posterior"
+    },
+    {
+      "action_id": "xuv_observation",
+      "reason": "The current XUV ranges are physical scenarios, not calibrated posterior samples.",
+      "status": "withheld_no_statistical_likelihood"
+    },
+    {
+      "action_id": "transmission_spectrum",
+      "reason": "Scale-height amplitudes do not specify throughput, wavelength covariance, clouds, or systematics.",
+      "status": "withheld_no_target_instrument_likelihood"
+    },
+    {
+      "action_id": "direct_imaging_detection",
+      "reason": "HWO trade cases are not a final observatory architecture or validated noise model.",
+      "status": "withheld_no_final_instrument_likelihood"
+    },
+    {
+      "action_id": "albedo_measurement",
+      "reason": "The existing albedo range is a scenario assumption rather than a posterior.",
+      "status": "withheld_no_observational_prior"
+    },
+    {
+      "action_id": "atmospheric_presence_test",
+      "reason": "No target-specific atmosphere prior, sensitivity, or false-positive rate is defensible yet.",
+      "status": "withheld_no_calibrated_prevalence_or_test_model"
+    }
+  ]
+}

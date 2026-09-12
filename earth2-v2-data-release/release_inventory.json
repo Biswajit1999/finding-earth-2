@@ -1,0 +1,327 @@
+{
+  "analysis_timestamp": "2026-08-28T20:00:42Z",
+  "doi": "pending",
+  "file_count_before_inventory": 63,
+  "files": [
+    {
+      "bytes": 1056,
+      "path": "CITATION.cff",
+      "sha256": "325992a915862bceda07844c59a12e804686b1169aabeb4bcee65629f779026b"
+    },
+    {
+      "bytes": 1895,
+      "path": "data/manifests/_sync_state.json",
+      "sha256": "41c978c1779b7efd5e591701d994f18aee9e4542c628befee39e11f76680c197"
+    },
+    {
+      "bytes": 1728,
+      "path": "data/manifests/gaia_dr3_crossmatch.json",
+      "sha256": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae"
+    },
+    {
+      "bytes": 1977,
+      "path": "data/manifests/hwo_hpic.json",
+      "sha256": "e9a0a934dafff355b2626d59345bd3e46f97bb96b61966a116491c331bc5407a"
+    },
+    {
+      "bytes": 4698,
+      "path": "data/manifests/mission_observatory_sources.json",
+      "sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c"
+    },
+    {
+      "bytes": 548,
+      "path": "data/manifests/mist_v1p2_basic_isochrones.json",
+      "sha256": "70f01b30e91465b2844ae2813ad09edcea160ed7a9bc722ec7beb0a3bd2c7839"
+    },
+    {
+      "bytes": 1696,
+      "path": "data/manifests/muscles_xuv.json",
+      "sha256": "c10be9e0388df794617e0d640ea1d8337e63028772d16d6a440c95a6519ef2e6"
+    },
+    {
+      "bytes": 2103,
+      "path": "data/manifests/nasa_di_stars.json",
+      "sha256": "6441894927b1ff43332168a045e77d646a2989fa5cc040467ee45a3a676ac19a"
+    },
+    {
+      "bytes": 1348,
+      "path": "data/manifests/nasa_emissionspec.json",
+      "sha256": "64cf7c6e208c7a607e249db39bd9c544ee51c986fc378cd529bfc8fb31ff5f2f"
+    },
+    {
+      "bytes": 2484,
+      "path": "data/manifests/nasa_k2pandc.json",
+      "sha256": "f76a48e46ade406f9cedcf9f52b3f33f9ec5c827da3a7a1292db70d0bf85b842"
+    },
+    {
+      "bytes": 2833,
+      "path": "data/manifests/nasa_koi_dr25.json",
+      "sha256": "21bc43e65b72c7d56856ca95580c1b7f1d5b4187248c8ec4c816093ff1c439c3"
+    },
+    {
+      "bytes": 1527,
+      "path": "data/manifests/nasa_microlensing.json",
+      "sha256": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac"
+    },
+    {
+      "bytes": 6845,
+      "path": "data/manifests/nasa_ps.json",
+      "sha256": "4db6dfdba53cea6dc3163b701364ceec940111d0041e55c6ec93c8016465738b"
+    },
+    {
+      "bytes": 8199,
+      "path": "data/manifests/nasa_pscomppars.json",
+      "sha256": "0f0b92a82230b9391e67786840674c26f5097a10d4f7f35a4de6282cc997947a"
+    },
+    {
+      "bytes": 1242,
+      "path": "data/manifests/nasa_spectra_index.json",
+      "sha256": "0e89c5b0599cf09dde223b31d4ab5a359eac4767c11d2b17991b84c694ebf474"
+    },
+    {
+      "bytes": 2465,
+      "path": "data/manifests/nasa_stellarhosts.json",
+      "sha256": "054384694de27ac56964649709a0048fdf533784f1f4d3b820737e29e37bec44"
+    },
+    {
+      "bytes": 2149,
+      "path": "data/manifests/nasa_tce_dr25.json",
+      "sha256": "bb3b42fcd2826d347191c8e19716246717a40064e3be180fa3273990e7208f92"
+    },
+    {
+      "bytes": 2730,
+      "path": "data/manifests/nasa_toi.json",
+      "sha256": "372ff6fe263e5f054b63720cdaca8565136b20eaadd5167a26ecba049455224b"
+    },
+    {
+      "bytes": 1663,
+      "path": "data/manifests/nasa_transitspec.json",
+      "sha256": "c25fa9e78e73f2f3c5b09f881a8e74dc0ce3de4dc74d609e7bf8b5bb3569f47c"
+    },
+    {
+      "bytes": 1756,
+      "path": "DATA_LICENSES.md",
+      "sha256": "6ebfb8368ee33f0890852c9a509d04d7639b472ed184929e67c3e5168c98bdc9"
+    },
+    {
+      "bytes": 3489,
+      "path": "pyproject.toml",
+      "sha256": "cdc699a2439054c128f451a2785c00ccd6e6a3112d3cab66cdf0a7408ebaef15"
+    },
+    {
+      "bytes": 1055,
+      "path": "README.md",
+      "sha256": "20be286a565de9631e6203fc93df0c72ab9e767c551c99c5e357fdfc75c52234"
+    },
+    {
+      "bytes": 1206,
+      "path": "requirements-lock.txt",
+      "sha256": "470cff70185129c271a0a53e3db33ee0e9315be0511155170c0ccd89e42dcb30"
+    },
+    {
+      "bytes": 20636,
+      "path": "results/analysis_summary.json",
+      "sha256": "70eba31d5714403af122c469ef585c03d76098e28a62b6a0ed18b73b9d3e971f"
+    },
+    {
+      "bytes": 345236,
+      "path": "results/atmosphere/atmosphere_evidence.json",
+      "sha256": "234b20042d6d7662001452a6b5c99156d5a18803c93c58c0a0bc0cae9c8cbed1"
+    },
+    {
+      "bytes": 1137,
+      "path": "results/atmosphere/atmosphere_products.json",
+      "sha256": "799cbe2b5cddf2c45c3bbda22e86100556854104b9094299499d8db178b4f7f6"
+    },
+    {
+      "bytes": 19935,
+      "path": "results/atmosphere/observability_scenarios.csv",
+      "sha256": "6cf168bf0cdd94292fb8a2b4e6899a39baa0a0cee01d75924e5cd5db28359bf1"
+    },
+    {
+      "bytes": 6237,
+      "path": "results/candidate_identifiers.csv",
+      "sha256": "65766a85e53516ed66805fed3c693f9730200dfc55aa79f8582fde02f0353a67"
+    },
+    {
+      "bytes": 6898221,
+      "path": "results/candidate_ranking.csv",
+      "sha256": "2f843af68c6caed28af434bac749ad3456d6c88063c4dbee646e5cb7f3ed1052"
+    },
+    {
+      "bytes": 1199332,
+      "path": "results/climate/continuous_hz.csv",
+      "sha256": "19d6248acb9a8b631bb45882c04cfdb48818939b5b7360fe90b0f69a5b1069b9"
+    },
+    {
+      "bytes": 769,
+      "path": "results/climate/continuous_hz_products.json",
+      "sha256": "9792d8b49f8397faa9dc151a6c980e6ff62399d9438f8804018cfde015f71689"
+    },
+    {
+      "bytes": 1172345,
+      "path": "results/composition/bulk_composition_ensemble.csv",
+      "sha256": "72bd56e8ffe62afdd9271f1689daec4f3dc570d4693d0014b12dea0ecfd64d5d"
+    },
+    {
+      "bytes": 816,
+      "path": "results/composition/composition_products.json",
+      "sha256": "34c526eae9224191e8ff773139dedd34cd5d2c5bebc6c8eb3264a26a7a35d2e5"
+    },
+    {
+      "bytes": 920,
+      "path": "results/data_coverage.csv",
+      "sha256": "f00f151c1de38237fbb898936543c3fe74acedf5b6a13d640dc18b901042073e"
+    },
+    {
+      "bytes": 1110,
+      "path": "results/environment/environment_products.json",
+      "sha256": "7f0c464c51cad4ee6c3b493de6c88dffdba0d2ee1ac2dd5566c63520d28b4777"
+    },
+    {
+      "bytes": 18723,
+      "path": "results/environment/xuv_escape_scenarios.csv",
+      "sha256": "6dda40506c810cd56d31d5ba730b00f2c4bd407668fec02b8bc0d00add183599"
+    },
+    {
+      "bytes": 53299,
+      "path": "results/evidence/mass_evidence_examples.json",
+      "sha256": "86161f356e3ad085a6fdd90991c0d1e633bcf7828416186b6f2daa0c90985f1a"
+    },
+    {
+      "bytes": 534,
+      "path": "results/evidence/summary.json",
+      "sha256": "65ec1857602d3a3097b2b1cb58f68ab25f2e6a30b1ada60c98315bd0868a5b21"
+    },
+    {
+      "bytes": 2934,
+      "path": "results/falsification/candidate_model_sensitivity.csv",
+      "sha256": "d3a1975ac7e5253e9723e40e72718ea69606236fd011e407c2e7ce90e0e37f46"
+    },
+    {
+      "bytes": 965,
+      "path": "results/falsification/falsification_products.json",
+      "sha256": "3f7abaa829185333ec938c26a13d254121648dd3359b52111945e80adba0e762"
+    },
+    {
+      "bytes": 1557,
+      "path": "results/falsification/falsification_summary.json",
+      "sha256": "e8fc2eca593f19baf2e8d86509f40434e044b86a9cdc7464bbf367a50724a718"
+    },
+    {
+      "bytes": 1285,
+      "path": "results/falsification/solar_system_controls.csv",
+      "sha256": "920113f62d6517db562dc21eb2982ad3141ca41686fc27d4c9cacbdbc5e2618a"
+    },
+    {
+      "bytes": 3316,
+      "path": "results/hwo/hwo_precursor_atlas.json",
+      "sha256": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+    },
+    {
+      "bytes": 1113,
+      "path": "results/hwo/hwo_products.json",
+      "sha256": "3108f381541617efe9ce236e26f4d8ff20e6cbc0a0f41d19c8fa382140be4b98"
+    },
+    {
+      "bytes": 1182209,
+      "path": "results/hwo/known_planet_accessibility.csv",
+      "sha256": "07a4682a784030387c57f0fc88280d3cc6dac92af8158e62dc6a7c36fc206764"
+    },
+    {
+      "bytes": 40456,
+      "path": "results/information_gain/action_information_gain.csv",
+      "sha256": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76"
+    },
+    {
+      "bytes": 9419,
+      "path": "results/information_gain/information_gain.json",
+      "sha256": "0dc09ddd11a93f23d5cd965ef439b4e31ec1361e190bebf40a70674128179c9d"
+    },
+    {
+      "bytes": 808,
+      "path": "results/information_gain/information_gain_products.json",
+      "sha256": "76849f069ae56c57e8a123099d918532fdd8c895caf38b2e5b8c4c801ab597b2"
+    },
+    {
+      "bytes": 3044,
+      "path": "results/missions/mission_observatory.json",
+      "sha256": "b3a5e4d995aa323977dd86c927db2903181cfd3824f70197cbaaaa578b154668"
+    },
+    {
+      "bytes": 2164,
+      "path": "results/missions/mission_products.json",
+      "sha256": "5f0f4443ffcaba363c9aba5b68c47390406e2f126fff74b444280a2a99c40e91"
+    },
+    {
+      "bytes": 5449,
+      "path": "results/population/dr25_observed_vs_intrinsic.json",
+      "sha256": "0ae21f47b29bba7a28e9495566bab629f981bf122faed34cf1395c1b7b14f425"
+    },
+    {
+      "bytes": 46717,
+      "path": "results/population/dr25_occurrence_posterior.json",
+      "sha256": "4b0c6c94b796a7f1fe4f17324e2e5d61c3493ac4d1fede69ccb14c2307789be9"
+    },
+    {
+      "bytes": 1337409,
+      "path": "results/population/dr25_occurrence_posterior_samples.csv",
+      "sha256": "29140abdbe684254abf27e80762dd6f2fc73b93b414f40df63071862886464c9"
+    },
+    {
+      "bytes": 9313,
+      "path": "results/population/dr25_reliability_grid.csv",
+      "sha256": "0a82470a5d651d34bdd9db1b0ed38d0def34130f8758a660fc2d81df88e7bcfe"
+    },
+    {
+      "bytes": 13016,
+      "path": "results/population/dr25_selection_model.json",
+      "sha256": "d8b2272b04ef4f4e40c4a338bbd543e72306a948d74a1b4630be80c7066965b8"
+    },
+    {
+      "bytes": 67184,
+      "path": "results/population/dr25_selection_surface.csv",
+      "sha256": "b8b31a47356da0c77ee7eea8e10e1b0f0e5330464637cb389f0a692c7e2b9228"
+    },
+    {
+      "bytes": 16624,
+      "path": "results/population/dr25_selection_validation.json",
+      "sha256": "76f745a22f5c3b6b22881188a9be125cd303ea96b827d9c8d2e5ed209dec24db"
+    },
+    {
+      "bytes": 15373,
+      "path": "results/population/dr25_smooth_reliability_model.json",
+      "sha256": "d4dded4fb8675531643e494f100b980e7905f67ed8d5671a32cbb45b50a2ebb4"
+    },
+    {
+      "bytes": 2122,
+      "path": "results/population/dr25_summary.json",
+      "sha256": "31c0ad75deb859e401635c20d01e190e7b4a149bf2e4295c7451347cf4564462"
+    },
+    {
+      "bytes": 14213,
+      "path": "results/provenance_manifest.json",
+      "sha256": "23cadf4b363b31f43902fbe24cb66e81c5a7b9f0cc096f136a21308e7a0db54d"
+    },
+    {
+      "bytes": 9836,
+      "path": "results/transformation_ledger.json",
+      "sha256": "1787a3c0e03d69bac9e93c1e0a91a8380b7668499a135d295bdf0f775545579d"
+    },
+    {
+      "bytes": 42,
+      "path": "SOURCE_COMMIT",
+      "sha256": "dc2f0a2c793a00f9f7ae4b426ffeb34092c0bfe4f329a36efb8c902d0065ab63"
+    },
+    {
+      "bytes": 7,
+      "path": "VERSION",
+      "sha256": "efdfae9d0dc9b09f9524df6c401bf7143a882469c6243bfbcb0bbeaefe9aa3c1"
+    }
+  ],
+  "licensing_boundary": "Derived products only; no cached third-party source tables.",
+  "release": "2.0.0",
+  "schema_version": "1.0",
+  "source_commit": "d1772672e0c85ac2690016de71fde19c112f7efb",
+  "title": "Finding Earth 2.0 v2 data release"
+}

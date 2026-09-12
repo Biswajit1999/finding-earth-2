@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "archive": "MAST MUSCLES / Mega-MUSCLES High-Level Science Products",
+  "doi": "10.17909/T9DG6F",
+  "retrieved_utc": "2026-09-12T07:59:00Z",
+  "licence": "CC BY 4.0",
+  "claim_boundary": "Panchromatic SEDs stitch observed spectra with reconstructed and modeled regions. EUV values are not direct observations.",
+  "files": [
+    {
+      "host": "Proxima Cen",
+      "target": "GJ551",
+      "release": "v22",
+      "path": "data/raw/muscles/hlsp_muscles_multi_multi_gj551_broadband_v22_adapt-const-res-sed.fits",
+      "url": "https://archive.stsci.edu/hlsps/muscles/v22/gj551/hlsp_muscles_multi_multi_gj551_broadband_v22_adapt-const-res-sed.fits",
+      "bytes": 5189760,
+      "sha256": "f276dab8d8fda845583abfd9ecb1a7618c314851c6588f8b0843d1c652090614"
+    },
+    {
+      "host": "GJ 667 C",
+      "target": "GJ667C",
+      "release": "v22",
+      "path": "data/raw/muscles/hlsp_muscles_multi_multi_gj667c_broadband_v22_adapt-const-res-sed.fits",
+      "url": "https://archive.stsci.edu/hlsps/muscles/v22/gj667c/hlsp_muscles_multi_multi_gj667c_broadband_v22_adapt-const-res-sed.fits",
+      "bytes": 5186880,
+      "sha256": "b24ac1670749d5514f4681898456fabc7f9235e8f4ddf33196c32cbac08dbdac"
+    },
+    {
+      "host": "TRAPPIST-1",
+      "target": "TRAPPIST-1",
+      "release": "v25",
+      "path": "data/raw/muscles/hlsp_muscles_multi_multi_trappist-1_broadband_v25_adapt-const-res-sed.fits",
+      "url": "https://archive.stsci.edu/hlsps/muscles/v25/trappist-1/hlsp_muscles_multi_multi_trappist-1_broadband_v25_adapt-const-res-sed.fits",
+      "bytes": 13538880,
+      "sha256": "6bbfce43034074d863b875ebe311e230416d9c30cc76bcc4091cd82d1dea840c"
+    }
+  ]
+}

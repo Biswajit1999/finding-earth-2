@@ -6,6 +6,44 @@
 
 **A reproducible, data-driven search for potentially Earth-like worlds across the public astronomical archives.**
 
+## v2 release status
+
+**Finding Earth 2.0 v2 is publication-ready.** The project follows the funnel
+from **164,209 source records** to **6,354 confirmed planets**, then to the
+observed temperate-terrestrial candidate set and a separate selection-corrected
+population inference. The catalogue is what our instruments and pipelines made
+visible; **the catalogue is not the Universe**.
+
+The work answers four questions:
+
+1. Which known worlds best match explicit terrestrial-size and temperate-orbit
+   criteria, and what evidence supports each value?
+2. How do transit geometry, observing windows, pipeline recovery, vetting, and
+   reliability reshape the population hidden behind the observed catalogue?
+3. Which conclusions survive alternate composition, climate, stellar-environment,
+   and mission assumptions?
+4. Which feasible next measurement has the highest expected information gain?
+
+| Release item | Status |
+|---|---|
+| Scientific status | v2.0; evidence-labelled, conditional inference; no life claim |
+| Analysis timestamp | `2026-08-28T20:00:42Z` |
+| Frozen source checkpoint | `d1772672e0c85ac2690016de71fde19c112f7efb` |
+| Data release | [`earth2-v2-data-release/`](earth2-v2-data-release/) + deterministic ZIP; Zenodo DOI pending |
+| Manuscript | [`paper/main.tex`](paper/main.tex), generated values and verified bibliography |
+| Interactive observatory | [Open the live website](https://biswajit1999.github.io/finding-earth-2/) |
+| Release documentation | [`docs/DATA_RELEASE.md`](docs/DATA_RELEASE.md) |
+
+Reproduce and validate the publication products:
+
+```bash
+python scripts/build_publication_release.py
+python scripts/validate_manuscript.py
+python scripts/check_release_invariants.py
+pytest -q
+cd web && npm ci && npm run build && npm run audit:visual
+```
+
 <p align="center">
   <img src="results/figures/hz_diagram.png" alt="Habitable-zone boundaries after Kopparapu et al. (2013), with every confirmed planet placed by incident stellar flux and host temperature" width="88%">
 </p>

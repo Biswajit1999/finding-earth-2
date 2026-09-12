@@ -1,0 +1,6 @@
+label,pl_name,esi_global,score_earth_similarity,hz_conservative_prob,rocky_plausibility,earth2_index,p_rocky_rogers_radius_only,p_rocky_zeng_fe_si_envelope,p_rocky_otegi_equal_prior,known_surface_outcome,falsification_result
+OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS,Earth,1,1,1,0.9525741268,0.8484114466,0.9525741268,1,0.6583437011,only known inhabited control,"Earth reference is recovered by similarity, HZ, and supported rocky models"
+OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS,Mars,0.7124724126,0.712447259,1,0.9952270199,0.7667950878,0.9952270199,,,cold arid low-pressure control,control exposes model scope or unsupported composition domain
+OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS,Venus,0.873838259,0.8738412524,0,0.9626910753,0.1307821272,0.9626910753,,0.7230524045,hostile runaway-greenhouse control,ESI is high despite a hostile surface; similarity cannot establish habitability
+OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS,Mercury,0.5708409872,0.5709075992,0,0.9977295405,0.1126795347,,,,airless hot/cold control,control exposes model scope or unsupported composition domain
+OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS,Jupiter,0.2457323542,0.2423696537,0,1.362453274e-21,0.08348614187,,,,gas-giant control,control exposes model scope or unsupported composition domain

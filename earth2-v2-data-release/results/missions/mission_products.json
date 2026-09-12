@@ -1,0 +1,62 @@
+{
+  "files": {
+    "docs/MISSION_OBSERVATORY.md": {
+      "bytes": 1793,
+      "sha256": "a121c47ba95d554ade362429a1c4ee7a21a6b195ff05ad545e655b5ca3535f48"
+    },
+    "docs/missions/ANDES.md": {
+      "bytes": 1856,
+      "sha256": "e73b581be6710a36b31cee56d0ca0db4e631274fa3aaf36511debeff4c0b930f"
+    },
+    "docs/missions/GAIA.md": {
+      "bytes": 1999,
+      "sha256": "423716692019f63009f5f829bb2b49dbf606efed750a011bbe8707f7ce030d71"
+    },
+    "docs/missions/HWO.md": {
+      "bytes": 2234,
+      "sha256": "276601ac22191d29a17d92bcfa7eacf7c4a9d605879e3516306f634d290a505f"
+    },
+    "docs/missions/JWST.md": {
+      "bytes": 3153,
+      "sha256": "ffd6a487c1b174a14538e241245bf6b2cc25a9fa74e449c15be73870ed556cb7"
+    },
+    "docs/missions/PLATO.md": {
+      "bytes": 1911,
+      "sha256": "8315407e216a329fc8d1377388344a0da954acc6f602990c8ba2c0da6bac5a09"
+    },
+    "docs/missions/ROMAN.md": {
+      "bytes": 2454,
+      "sha256": "d19a633f4237878826929be46586e4af28f442561dd0bf42118d36adf8dbc9db"
+    },
+    "results/missions/andes.json": {
+      "bytes": 3178,
+      "sha256": "f863853284fcb1df1a4b518bdf87addb52d78c5fa72b40bfed74d36274b6f441"
+    },
+    "results/missions/gaia.json": {
+      "bytes": 3464,
+      "sha256": "f811e0a4da7e4110218ac86a9acee408fd409b2e2129fae2a276b4190510e9ca"
+    },
+    "results/missions/hwo.json": {
+      "bytes": 3821,
+      "sha256": "c1feaaeb05256e4f7ef388f39020f22e1049dd6e56d1d7a0266f05c8b915df39"
+    },
+    "results/missions/jwst.json": {
+      "bytes": 5076,
+      "sha256": "31dd9cc02411726aa26916a092a5fdaeffe637ce31e96243b4f7f96b217a1d43"
+    },
+    "results/missions/mission_observatory.json": {
+      "bytes": 3044,
+      "sha256": "b3a5e4d995aa323977dd86c927db2903181cfd3824f70197cbaaaa578b154668"
+    },
+    "results/missions/plato.json": {
+      "bytes": 3358,
+      "sha256": "0d86e57cd00c31553269c7acc7d706bf501bf43b745ab4779280017544f5e538"
+    },
+    "results/missions/roman.json": {
+      "bytes": 4133,
+      "sha256": "b1f00655c3246aa40eb381106430ad81f9a7aad141866408431c002b9d12372a"
+    }
+  },
+  "product": "Phase 11 scientifically separate mission observatory",
+  "schema_version": "1.0"
+}

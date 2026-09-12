@@ -477,3 +477,22 @@
 - Passed 278 Python tests, full Ruff and mypy gates, every scientific release
   invariant, frontend type check and lint, a 6,386-page production build and
   static-export integrity across 34 route templates.
+
+## Phase 15 manuscript and frozen data release — 2026-09-13
+
+- Replaced the v1 manuscript with the requested 19-section v2 paper plus six
+  appendices. Thirty-two scientific values are generated from committed JSON
+  products and the bibliography and ten paper figures are copied by the builder.
+- Added a static validator for section coverage, brace/environment balance,
+  generated macros, citations and figure paths because no TeX engine is present
+  in the authoring environment.
+- Built a 65-file, derived-only publication directory and deterministic 3.54 MB
+  ZIP. Two consecutive builds produced SHA-256
+  `05079be910306fcdd37dc7cf95ca2eb8d18e2df8089d6e865ed9e7b6bf9db85f`.
+- Excluded raw/cache/processed provider rows, raw spectra and time series, MIST
+  source products and HPIC source data. Added centralized data licensing and a
+  Zenodo metadata/checklist package; the DOI remains pending until minted.
+- Added v2 README status, citation metadata, changelog, roadmap, contribution and
+  conduct policies, and bug/data/scientific-method issue forms.
+- Added canonical metadata plus Dataset and ScholarlyArticle JSON-LD to the
+  production website. Package versions are now 2.0.0.

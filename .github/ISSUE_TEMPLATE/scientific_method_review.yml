@@ -1,0 +1,20 @@
+name: Scientific method review
+description: Challenge an assumption, model, prior, inference, or claim boundary
+title: "[Method]: "
+labels: [science]
+body:
+  - type: textarea
+    id: claim
+    attributes: {label: Affected claim, description: Quote or link the exact result and evidence label.}
+    validations: {required: true}
+  - type: textarea
+    id: concern
+    attributes: {label: Scientific concern, description: State the assumption, failure mode, or alternative interpretation.}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Supporting evidence, description: Link primary literature, data, or a reproducible counterexample.}
+    validations: {required: true}
+  - type: textarea
+    id: test
+    attributes: {label: Proposed test, description: How could the project falsify or quantify this concern?}

@@ -1,0 +1,22 @@
+{
+  "files": {
+    "results/climate/continuous_hz.csv": {
+      "bytes": 1199332,
+      "sha256": "19d6248acb9a8b631bb45882c04cfdb48818939b5b7360fe90b0f69a5b1069b9"
+    },
+    "results/climate/continuous_hz.json": {
+      "bytes": 5387491,
+      "sha256": "b72c3921403c123f934ab80d97591ec6331b31cfdc18784de431e10ddbb89c06"
+    },
+    "results/climate/continuous_hz_sensitivity.png": {
+      "bytes": 184083,
+      "sha256": "39b9224edd029bf6ee59543d0eac25a4d7e888b6b9c8d2a40815a6013d028c2a"
+    },
+    "results/climate/continuous_hz_sensitivity.svg": {
+      "bytes": 231037,
+      "sha256": "cac0c264006fec114c0f1dadd9d0ea8597d94c1d32b604c4f118a0c668689fef"
+    }
+  },
+  "product": "Phase 7 continuous-HZ and climate-boundary sensitivity",
+  "schema_version": "1.0"
+}

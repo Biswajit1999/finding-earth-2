@@ -1,0 +1,30 @@
+{
+  "files": {
+    "results/environment/bolometric_vs_xuv.png": {
+      "bytes": 166663,
+      "sha256": "dd0416eae010a86707438d92b4e24082f36c2b19f8c846d8855b3b3afe044ae0"
+    },
+    "results/environment/bolometric_vs_xuv.svg": {
+      "bytes": 69835,
+      "sha256": "3765d33095d6940429fbb6006848b29df26bcf60521cdf3f51fc1ebcc607221d"
+    },
+    "results/environment/escape_sensitivity.png": {
+      "bytes": 159795,
+      "sha256": "848edf8ca5a1275f17b77e57cdc4e509bac2f093546c42a42f226ff41213a283"
+    },
+    "results/environment/escape_sensitivity.svg": {
+      "bytes": 79844,
+      "sha256": "37610d64f8a5f73e23510099efc4b79bde844fd69da2ca442726cfab67e97cca"
+    },
+    "results/environment/xuv_escape_scenarios.csv": {
+      "bytes": 18723,
+      "sha256": "6dda40506c810cd56d31d5ba730b00f2c4bd407668fec02b8bc0d00add183599"
+    },
+    "results/environment/xuv_escape_scenarios.json": {
+      "bytes": 757974,
+      "sha256": "b26486d3eeb6a16c69423277604aa3e19ff8fff64c0e3d8d15e03224345fcb33"
+    }
+  },
+  "product": "Phase 8 XUV environment and atmospheric-escape scenarios",
+  "schema_version": "1.0"
+}

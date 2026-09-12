@@ -1,0 +1,40 @@
+# Pinned dependency versions for reproducing this project's published results.
+#
+# pyproject.toml declares minimum versions (">=") so the package can be
+# installed alongside a consumer's own environment; this file pins the exact
+# versions the analysis in results/ and paper/ was regenerated against, for
+# anyone who wants byte-for-byte reproducibility rather than "any compatible
+# version". It is not consumed automatically by `pip install .` -- install it
+# explicitly when exact reproduction matters:
+#
+#     pip install -r requirements-lock.txt
+#     pip install --no-deps -e .
+#
+# Regenerate after any dependency bump with the versions actually used for
+# that run (see results/analysis_summary.json["software"] for what produced
+# the currently-committed results).
+
+# Regenerated against Python 3.9.19.
+
+numpy==1.26.4
+pandas==2.2.2
+scipy==1.10.1
+astropy==6.0.1
+astroquery==0.4.11
+pyarrow==21.0.0
+requests==2.32.5
+matplotlib==3.8.4
+pyyaml==6.0.1
+
+# Optional "products" extra (transit/RV deep dives)
+lightkurve==2.3.0
+pyvo==1.5.2
+dace-query==3.0.2
+
+# Optional "dev" extra (tests, lint, type-check, notebooks)
+pytest==8.4.2
+pytest-cov==7.1.0
+ruff==0.15.18
+mypy==1.10.0
+jupyter==1.1.1
+nbformat==5.9.2

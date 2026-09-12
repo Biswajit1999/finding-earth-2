@@ -1,0 +1,20 @@
+name: Data source request
+description: Propose a public source or correction to source provenance
+title: "[Data]: "
+labels: [data]
+body:
+  - type: input
+    id: source
+    attributes: {label: Source URL or DOI}
+    validations: {required: true}
+  - type: textarea
+    id: value
+    attributes: {label: Scientific value, description: Which question or missing evidence would this source address?}
+    validations: {required: true}
+  - type: textarea
+    id: access
+    attributes: {label: Access and licence, description: Describe API access, redistribution terms, attribution, and expected scale.}
+    validations: {required: true}
+  - type: textarea
+    id: identity
+    attributes: {label: Identity and joins, description: Which stable identifiers permit a defensible crossmatch?}

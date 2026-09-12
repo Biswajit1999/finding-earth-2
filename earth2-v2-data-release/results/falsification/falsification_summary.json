@@ -1,0 +1,47 @@
+{
+  "candidate_count": 25,
+  "claim_boundary": "Controls test model behaviour; they do not calibrate a probability of habitability. Sensitivity ranges measure dependence on the implemented model menu, not all plausible models.",
+  "control_count": 5,
+  "labels": [
+    "OBSERVED_CONTROL_WITH_DERIVED_MODEL_OUTPUTS",
+    "MODEL-SENSITIVITY"
+  ],
+  "legacy_weight_scenarios": {
+    "baseline": [
+      0.35,
+      0.4,
+      0.25
+    ],
+    "confidence_emphasis": [
+      0.2,
+      0.2,
+      0.6
+    ],
+    "equal": [
+      0.3333333333333333,
+      0.3333333333333333,
+      0.3333333333333333
+    ],
+    "hz_emphasis": [
+      0.2,
+      0.6,
+      0.2
+    ],
+    "similarity_emphasis": [
+      0.6,
+      0.2,
+      0.2
+    ]
+  },
+  "schema_version": "1.0",
+  "source_hashes": {
+    "results/atmosphere/observability_scenarios.csv": "6cf168bf0cdd94292fb8a2b4e6899a39baa0a0cee01d75924e5cd5db28359bf1",
+    "results/candidate_ranking.parquet": "fee2f6af125aad62417f2539fb55245d2d8481a68dc42a21b6331f729feeef0f",
+    "results/climate/continuous_hz.csv": "19d6248acb9a8b631bb45882c04cfdb48818939b5b7360fe90b0f69a5b1069b9",
+    "results/composition/bulk_composition_ensemble.csv": "72bd56e8ffe62afdd9271f1689daec4f3dc570d4693d0014b12dea0ecfd64d5d",
+    "results/hwo/known_planet_accessibility.csv": "07a4682a784030387c57f0fc88280d3cc6dac92af8158e62dc6a7c36fc206764"
+  },
+  "venus_conservative_hz_probability": 0.0,
+  "venus_esi": 0.8738382590111385,
+  "venus_falsification": "ESI is high despite a hostile surface; similarity cannot establish habitability"
+}

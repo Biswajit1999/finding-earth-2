@@ -215,14 +215,17 @@ what was originally hashed, if the archive has since revised, added or removed
 records. The manifest can prove that drift occurred; it cannot restore the
 original byte stream once the archive's own copy has changed. Reconstructing
 today's exact historical response is not guaranteed -- only re-verifiable
-against whatever the archive currently serves. Publication-grade,
-frozen-in-time reproduction requires a separate immutable snapshot of the
-release inputs (e.g. a DOI-backed data release), which this repository does
-not yet publish.
+against whatever the archive currently serves. Publication-grade reproduction
+is supported by the deterministic v2 derived bundle documented in
+[`DATA_RELEASE.md`](DATA_RELEASE.md). It freezes derived tables, posterior
+samples, model products, manifests, checksums, software versions, and the source
+commit. Source archive snapshots remain excluded where redistribution rights are
+not explicit. The Zenodo DOI remains pending until the deposit is published.
 
 ## Software licence vs. data licence
 
-The software in this repository is MIT-licensed (see `LICENSE`). That licence
-covers the code only. The retrieved datasets remain governed by the terms of
-their originating archives, listed above. This project does not claim
-ownership of any astronomical dataset.
+The software in this repository is MIT-licensed (see `LICENSE`). Data and
+derived-product boundaries are centralized in
+[`DATA_LICENSES.md`](../DATA_LICENSES.md). Retrieved datasets remain governed by
+their originating archives. This project does not claim ownership of any
+astronomical dataset.
