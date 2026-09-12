@@ -229,10 +229,8 @@ def main() -> None:
     }
 
     output = DATA / "observatory.json"
-    output.write_text(
-        json.dumps(payload, indent=2, sort_keys=True, allow_nan=False) + "\n",
-        encoding="utf-8",
-    )
+    with output.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(payload, indent=2, sort_keys=True, allow_nan=False) + "\n")
 
     release = {
         "schema_version": "1.0",
@@ -247,9 +245,8 @@ def main() -> None:
             "validated and committed by the scheduled workflow before publication."
         ),
     }
-    (DATA / "release.json").write_text(
-        json.dumps(release, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    with (DATA / "release.json").open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(release, indent=2, sort_keys=True) + "\n")
 
     figure_sources = {
         "selection-surface.png": "results/population/dr25_selection_surface.png",

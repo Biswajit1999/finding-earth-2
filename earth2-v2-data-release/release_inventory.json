@@ -111,7 +111,7 @@
     {
       "bytes": 1035,
       "path": "README.md",
-      "sha256": "c9f6c1d4da5461d65f101dbf16b31368f13a37438187d2b1ba61ace6aa15e5db"
+      "sha256": "83bfd2ea0a3ab537558f4ad2d7b0711f889ca9a5eb4b186fd2def6b0ba364750"
     },
     {
       "bytes": 1206,
@@ -201,7 +201,7 @@
     {
       "bytes": 965,
       "path": "results/falsification/falsification_products.json",
-      "sha256": "3f7abaa829185333ec938c26a13d254121648dd3359b52111945e80adba0e762"
+      "sha256": "091e102e838fb8e8a42631b931208ccd8bc50cb938a5ebf24f02adb373c6afa1"
     },
     {
       "bytes": 1557,
@@ -311,7 +311,7 @@
     {
       "bytes": 41,
       "path": "SOURCE_COMMIT",
-      "sha256": "ea96b9af3c63b6dc9736de2ab01ce33d5118ed967285a9fd98ec3f34cf87ffbf"
+      "sha256": "521810e7005f90d08ad38c05acc9a0ddf24e9ece47f9e56f9a440bbb5d954025"
     },
     {
       "bytes": 6,
@@ -322,6 +322,6 @@
   "licensing_boundary": "Derived products only; no cached third-party source tables.",
   "release": "2.0.0",
   "schema_version": "1.0",
-  "source_commit": "57e5be1d38111aa74e374103aa8fff4c0a80ebd7",
+  "source_commit": "096ccc48c57d0cfb12f0dc089c3e9dbac71976bc",
   "title": "Finding Earth 2.0 v2 data release"
 }

@@ -135,7 +135,14 @@ def make_figure(controls: pd.DataFrame, robust: pd.DataFrame, output: Path) -> N
     axes[1].set_title("Candidate ordering is assumption-sensitive")
     figure.suptitle("How Finding Earth 2.0 can be wrong | CONTROL + MODEL-SENSITIVITY")
     figure.savefig(output.with_suffix(".png"), dpi=220, facecolor="#080b14")
-    figure.savefig(output.with_suffix(".svg"), facecolor="#080b14", metadata={"Date": None})
+    svg_path = output.with_suffix(".svg")
+    figure.savefig(svg_path, facecolor="#080b14", metadata={"Date": None})
+    # Matplotlib writes platform newlines into SVG text. Canonicalize them before
+    # recording byte sizes and hashes so Git's LF normalization cannot invalidate
+    # the committed product manifest on Linux checkouts.
+    svg_text = svg_path.read_text(encoding="utf-8")
+    with svg_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(svg_text.replace("\r\n", "\n").replace("\r", "\n"))
     plt.close(figure)
 
 
