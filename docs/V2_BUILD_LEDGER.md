@@ -295,3 +295,26 @@
 - Audited the analysis catalogue: 1,947 systems carry age, mass, metallicity,
   luminosity, orbit and every corresponding asymmetric uncertainty needed for
   the strict initial time-dependent-HZ support contract.
+
+## Phase 7 time-dependent HZ and climate sensitivity — 2026-09-12
+
+- Added trilinear interpolation over the pinned MIST v1.2 phase-0 grid and
+  propagated asymmetric stellar age, mass, metallicity, log-luminosity and
+  semimajor-axis uncertainties through 256 deterministic draws per planet.
+- Anchored every supported luminosity history to its sampled present catalogue
+  luminosity. The integration begins at the grid's 0.1 Gyr limit; the
+  unavailable earlier interval is not counted as habitable, while `f_CHZ`
+  remains normalized by the full sampled stellar age.
+- Evaluated all 6,354 confirmed planets. The strict contract supports 815
+  continuous histories; 4,407 records lack required inputs, 635 have
+  effectively unconstrained ages, 420 lack present-day MIST support, 49 lack a
+  continuous supported track and 28 are invalid or younger than the model.
+- Compared conservative runaway/maximum-greenhouse, moist/maximum-greenhouse
+  and empirical recent-Venus/early-Mars prescriptions. There are 22 systems
+  robustly inside, 777 robustly outside and 16 boundary-sensitive across the
+  supported set. These share one Kopparapu 1D framework and are not presented
+  as an independent 3D GCM ensemble.
+- Released deterministic CSV/JSON, PNG/SVG and a SHA-256 manifest. Release
+  invariants require full catalogue accounting, bounded probabilities and
+  lifetime fractions, complete-track support, exact luminosity anchoring,
+  climate-agreement arithmetic and matching product hashes.

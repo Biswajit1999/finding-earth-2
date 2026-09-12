@@ -349,6 +349,67 @@ def main() -> int:
     )
     check("compact MIST product hashes match the release manifest", mist_hashes_match)
 
+    continuous = json.loads((climate_dir / "continuous_hz.json").read_text())
+    continuous_records = continuous["records"]
+    inferred_hz = [row for row in continuous_records if row["status"] == "inferred"]
+    check(
+        "continuous-HZ product preserves model label and full catalogue accounting",
+        continuous["label"] == "MODEL-INFERRED"
+        and continuous["population"]["confirmed_planets_evaluated"] == 6354
+        and len(continuous_records) == 6354
+        and len(inferred_hz) == continuous["population"]["inferred"],
+    )
+    continuous_probabilities = [
+        model["p_current_hz"]
+        for row in inferred_hz
+        for model in row["climate_prescriptions"].values()
+        if model["p_current_hz"] is not None
+    ]
+    continuous_fractions = [
+        value
+        for row in inferred_hz
+        for model in row["climate_prescriptions"].values()
+        for value in model["f_chz"].values()
+        if value is not None
+    ]
+    check(
+        "continuous-HZ probabilities and lifetime fractions are bounded",
+        all(0 <= value <= 1 for value in continuous_probabilities)
+        and all(0 <= value <= 1 for value in continuous_fractions),
+    )
+    check(
+        "every inferred history passes support and luminosity-anchor contracts",
+        all(
+            row["supported_fraction"]
+            >= continuous["sampling"]["minimum_supported_fraction"]
+            and row["luminosity_anchor_max_abs_dex"] < 1e-10
+            and set(row["climate_prescriptions"])
+            == set(continuous["climate_prescriptions"])
+            for row in inferred_hz
+        ),
+    )
+    check(
+        "climate agreement is the complement of boundary sensitivity",
+        all(
+            abs(row["model_agreement"] + row["boundary_sensitivity"] - 1) < 1e-12
+            for row in inferred_hz
+        ),
+    )
+    continuous_manifest = json.loads(
+        (climate_dir / "continuous_hz_products.json").read_text()
+    )
+    continuous_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in continuous_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check(
+        "continuous-HZ product hashes match the release manifest",
+        continuous_hashes_match,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

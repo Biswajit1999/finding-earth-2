@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **7 in progress — official MIST v1.2 main-sequence grid prepared; time-dependent HZ inference next**; v2 is not complete.
+- Current phase: **8 next — Phase 7 time-dependent HZ and climate-boundary sensitivity complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -79,10 +79,15 @@
   metallicities, 0.5–1.5 solar masses and log-age 8.0–10.15 where main-sequence
   support exists. The catalogue contains 1,947 systems with age, mass,
   metallicity, luminosity, orbit and all corresponding uncertainty fields.
-- Exact next action: interpolate the compact MIST grid through those stellar
-  posteriors, anchor tracks to current luminosity, integrate tau_HZ, and build
-  the climate-model sensitivity matrix with unsupported systems marked
-  undetermined.
+- Phase 7 inference: 815 of 6,354 confirmed planets pass the age-precision and
+  complete-track gates. Each uses 256 deterministic posterior draws, an
+  exactly present-luminosity-anchored MIST history, time-integrated `tau_HZ`
+  and `f_CHZ`, and three separate Kopparapu boundary prescriptions. Unsupported
+  systems remain `undetermined`; the result is not evidence of surface liquid
+  water, habitability or life.
+- Exact next action: build the supported-system stellar UV/XUV evidence layer,
+  integrate defensible exposure histories, and keep atmospheric escape as a
+  separate scenario ensemble rather than a habitability penalty.
 
 ## Execution contract
 
