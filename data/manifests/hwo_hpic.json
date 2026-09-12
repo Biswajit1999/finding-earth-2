@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "retrieved_utc": "2026-09-12T07:30:01Z",
+  "software_commit": "868912c7bb5c3ea994a368cd493dc27438069677",
+  "claim_boundary": "HPIC membership identifies potential input stars; TSS25 tier is a separate community priority class. Neither is an HWO observation, final target list, instrument design, or exo-Earth detection.",
+  "datasets": [
+    {
+      "dataset_id": "hpic_v1p1",
+      "title": "The Habitable Worlds Observatory Preliminary Input Catalog version 1.1",
+      "version": "1.1",
+      "doi": "10.5281/zenodo.17178761",
+      "publication_date": "2025-09-22",
+      "licence": "CC BY 4.0",
+      "source_url": "https://zenodo.org/api/records/17178761/files/HPIC_1.1.tar.gz/content",
+      "archive_path": "data/raw/hwo/HPIC_1.1.tar.gz",
+      "archive_bytes": 6033670,
+      "archive_md5": "e9f8fed2cc9da2251be99a45dd103fe8",
+      "archive_sha256": "51bb0ed436d79c5c70863044c4f8ebac08ec57e9c86d3333a44354c110cad81c",
+      "table_path": "data/raw/hwo/HPIC/full_HPIC.txt",
+      "table_bytes": 20346218,
+      "table_sha256": "82d03c11885a49a9e0d243f9f18e680dd6798e27bb91a712a564a6ecfcc67916",
+      "rows": 12944,
+      "columns": 129
+    },
+    {
+      "dataset_id": "tss25_2025",
+      "title": "HWO Target Stars and Systems 2025 (TSS25) List",
+      "version": "2025-09-24",
+      "doi": "10.5281/zenodo.17195128",
+      "publication_date": "2025-09-24",
+      "licence": "CC BY 4.0",
+      "source_url": "https://zenodo.org/api/records/17195128/files/TSS25.tgz/content",
+      "archive_path": "data/raw/hwo/TSS25.tgz",
+      "archive_bytes": 1324715,
+      "archive_md5": "7ba7e69f343902cecc2da5522e6fc513",
+      "archive_sha256": "3037d73a08b5dff0f50db486bcf0001c735b5c23a89db345fc2db6b4bdb2693a",
+      "table_path": "data/raw/hwo/TSS25/TSS25_list.csv",
+      "table_bytes": 2919936,
+      "table_sha256": "e355faf851e7d3b73a6422238fd45e9bd7da14aafeb3f8640d2157415a78536e",
+      "rows": 12944,
+      "columns": 17
+    }
+  ]
+}

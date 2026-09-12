@@ -573,6 +573,138 @@ def main() -> int:
         atmosphere_hashes_match,
     )
 
+    hwo_dir = RESULTS_DIR / "hwo"
+    hwo = json.loads((hwo_dir / "hwo_precursor_atlas.json").read_text())
+    hwo_source = json.loads(
+        (RESULTS_DIR.parent / "data/manifests/hwo_hpic.json").read_text()
+    )
+    hwo_atlas = pd.read_csv(
+        hwo_dir / "hpic_v1p1_atlas.csv.gz",
+        dtype={
+            "star_name": "string",
+            "tic_id": "string",
+            "gaia_dr2_id": "string",
+            "gaia_dr3_id": "string",
+        },
+        low_memory=False,
+    )
+    exoearth_forecast = pd.read_csv(hwo_dir / "exoearth_accessibility.csv.gz")
+    known_planet_forecast = pd.read_csv(
+        hwo_dir / "known_planet_accessibility.csv"
+    )
+    check(
+        "HWO source manifest pins HPIC v1.1 and TSS25 independently",
+        [dataset["dataset_id"] for dataset in hwo_source["datasets"]]
+        == ["hpic_v1p1", "tss25_2025"]
+        and all(
+            dataset["rows"] == 12944
+            and len(dataset["archive_sha256"]) == 64
+            and len(dataset["table_sha256"]) == 64
+            for dataset in hwo_source["datasets"]
+        )
+        and hashlib.sha256(
+            (RESULTS_DIR.parent / "data/manifests/hwo_hpic.json").read_bytes()
+        ).hexdigest()
+        == hwo["source_manifest_sha256"],
+    )
+    check(
+        "HPIC atlas preserves all unique stars, identifiers, and TSS25 tiers",
+        len(hwo_atlas) == 12944
+        and hwo_atlas["star_name"].is_unique
+        and hwo_atlas["source_label"].eq("OBSERVED").all()
+        and hwo_atlas["derived_geometry_label"].eq("DERIVED").all()
+        and hwo_atlas["TSS_tier"].value_counts().sort_index().to_dict()
+        == {1: 164, 2: 495, 3: 12285}
+        and not hwo_atlas["gaia_dr3_id"].dropna().str.contains(r"[eE+]").any(),
+    )
+    hwo_eeid = hwo_atlas[
+        hwo_atlas[["st_lum", "sy_dist", "eeid_au", "eeid_angular_mas"]]
+        .notna()
+        .all(axis=1)
+    ]
+    check(
+        "EEID distances and angular scales reproduce their declared equations",
+        len(hwo_eeid) == 12682
+        and (
+            hwo_eeid["eeid_au"].pow(2).sub(10 ** hwo_eeid["st_lum"]).abs()
+            / (10 ** hwo_eeid["st_lum"])
+        ).max()
+        < 1e-8
+        and (
+            hwo_eeid["eeid_angular_mas"]
+            .sub(1000 * hwo_eeid["eeid_au"] / hwo_eeid["sy_dist"])
+            .abs()
+            / hwo_eeid["eeid_angular_mas"]
+        ).max()
+        < 1e-8,
+    )
+    check(
+        "exo-Earth accessibility remains a complete bounded forecast grid",
+        len(exoearth_forecast) == 12944 * 3
+        and exoearth_forecast["label"].eq("FORECAST").all()
+        and exoearth_forecast["p_observable"].dropna().between(0, 1).all()
+        and exoearth_forecast.loc[
+            exoearth_forecast["status"].eq(
+                "catalogue_conditioned_scenario_probability"
+            ),
+            "star_name",
+        ].nunique()
+        == 12682,
+    )
+    exoearth_wide = exoearth_forecast.pivot(
+        index="star_name", columns="scenario", values="p_observable"
+    ).dropna()
+    check(
+        "HWO analytic trade cases obey their inner-working-angle ordering",
+        (
+            exoearth_wide["analytic_8m_500nm_3lambda_d"]
+            >= exoearth_wide["analytic_6m_500nm_3lambda_d"]
+        ).all()
+        and (
+            exoearth_wide["analytic_6m_500nm_3lambda_d"]
+            >= exoearth_wide["analytic_6m_750nm_3lambda_d"]
+        ).all()
+        and all(
+            scenario["label"] == "SCENARIO"
+            and scenario["interpretation"]
+            == "generic analytic trade case; not a final HWO design"
+            for scenario in hwo["instrument_scenarios"]
+        ),
+    )
+    check(
+        "known-planet imaging forecasts retain M sin i as a separate quantity",
+        len(known_planet_forecast) == 744 * 3
+        and known_planet_forecast["pl_name"].nunique() == 744
+        and known_planet_forecast["hostname"].nunique() == 464
+        and known_planet_forecast["p_observable"].dropna().between(0, 1).all()
+        and known_planet_forecast.loc[
+            known_planet_forecast["mass_class"].eq("msini_lower_limit"),
+            "pl_name",
+        ].nunique()
+        == 406
+        and (
+            known_planet_forecast.loc[
+                known_planet_forecast["mass_class"].eq("msini_lower_limit")
+                & known_planet_forecast["true_mass_scenario_p50"].notna(),
+                "true_mass_scenario_p50",
+            ]
+            >= known_planet_forecast.loc[
+                known_planet_forecast["mass_class"].eq("msini_lower_limit")
+                & known_planet_forecast["true_mass_scenario_p50"].notna(),
+                "minimum_mass_earth",
+            ]
+        ).all(),
+    )
+    hwo_manifest = json.loads((hwo_dir / "hwo_products.json").read_text())
+    hwo_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in hwo_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("HWO precursor product hashes match the release manifest", hwo_hashes_match)
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

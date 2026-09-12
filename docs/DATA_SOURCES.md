@@ -88,6 +88,28 @@ survey exposure is documented in
 [DR25_SELECTION_SURFACE.md](DR25_SELECTION_SURFACE.md). No intrinsic occurrence
 rate is released at this stage.
 
+## HWO precursor catalogues
+
+**Role:** nearby-star atlas and scenario-conditioned direct-imaging geometry.
+**Access:** public Zenodo records, no authentication.
+
+| Dataset | Release | Rows | DOI |
+|---|---:|---:|---|
+| Habitable Worlds Observatory Preliminary Input Catalog | HPIC 1.1 | 12,944 | `10.5281/zenodo.17178761` |
+| HWO Target Stars and Systems community list | TSS25, 2025-09-24 | 12,944 | `10.5281/zenodo.17195128` |
+
+HPIC v1.1 is the full broad input catalogue. TSS25 supplies a distinct
+community precursor-priority tier joined by exact `star_name`; it does not
+replace HPIC. The archives are CC BY 4.0 and their bytes, extracted tables,
+versions, retrieval time, URLs and hashes are pinned in
+`data/manifests/hwo_hpic.json`. Raw files remain ignored and are reconstructed
+with `python.exe scripts/fetch_hwo_catalogs.py`.
+
+Catalogue membership and TSS25 priority are not HWO observations, final target
+selections, or evidence that an exo-Earth exists. The committed derivatives in
+`results/hwo/` retain those boundaries and label analytic accessibility as a
+FORECAST under explicit instrument and orbital scenarios.
+
 ## Gaia Archive (ESA)
 
 **Role:** independent astrometry crossmatch for confirmed-planet host stars.

@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **10 next — Phase 9 atmospheric signal and reduction provenance complete**; v2 is not complete.
+- Current phase: **11 next — Phase 10 HWO atlas and direct-imaging physics complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,8 +9,8 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 256 passed; Ruff passes across source, tests, notebooks and scripts,
-  and mypy passes across 68 checked source and Phase 9 product-builder files. DR25
+- Tests: 262 passed; Ruff passes across source, tests, notebooks and scripts,
+  and mypy passes across 73 checked source and product-builder files. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
@@ -26,9 +26,9 @@
   KeplerPORTs reference; deterministic synthetic selection recovery. Broader
   literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
-- Last successful and remotely verified pre-Phase-9 commit:
-  `04b0ea013f239ff985a3651ac295f83b72dd5d2e` (XUV environments and
-  escape scenarios), authored as Biswajit Jana. Resolve this document's
+- Last successful and remotely verified pre-Phase-10 commit:
+  `868912c7bb5c3ea994a368cd493dc27438069677` (atmospheric signal and
+  reduction provenance), authored as Biswajit Jana. Resolve this document's
   containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
 - KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
 - Synthetic recovery: 300 replicates of 10,000 artificial stars recover a known
@@ -98,9 +98,17 @@
   reductions and 8,309 measurements retain stable reduction identities,
   references, instruments and source rows; 557 overlap diagnostics expose
   disagreement without pooling reductions or claiming a retrieval.
-- Exact next action: ingest and pin the public HWO Preliminary Input Catalog,
-  then propagate stellar and orbital uncertainty into scenario-labelled
-  direct-imaging separation, contrast and accessibility posteriors.
+- Phase 10 HWO atlas: the hash-pinned HPIC v1.1 provides 12,944 stars and all
+  129 published columns; TSS25 remains a separate exact-identity priority
+  membership with 164 tier-1 and 495 tier-2 stars. EEID geometry is available
+  for 12,682 stars and Kopparapu HZ geometry for 12,405. Three generic analytic
+  coronagraph trade cases propagate 512 draws per supported star. Separately,
+  744 known planets across 464 HPIC hosts are matched, 694 support imaging
+  forecasts, and 406 M sin i planets retain their minimum mass while exposing
+  an inclination-conditioned true-mass scenario.
+- Exact next action: build the mission observatory as scientifically separate
+  JWST, HWO, ELT/ANDES, PLATO, Gaia and Roman modules without combining them
+  into a single mission score.
 
 ## Execution contract
 

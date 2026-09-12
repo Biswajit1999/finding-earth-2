@@ -1,0 +1,98 @@
+{
+  "catalogue": {
+    "eeid_supported": 12682,
+    "gaia_binary_rows": 4064,
+    "hpic_rows": 12944,
+    "hpic_version": "1.1",
+    "known_binary_rows": 4432,
+    "known_planet_host_rows": 471,
+    "kopparapu_hz_supported": 12405,
+    "tss25_tiers": {
+      "1": 164,
+      "2": 495,
+      "3": 12285
+    }
+  },
+  "claim_boundary": "HPIC/TSS25 are input and priority catalogues. Accessibility is a Monte Carlo forecast under generic analytic trade cases, not an HWO observation, yield, flight specification, exo-Earth occurrence result, or target selection.",
+  "exoearth_forecast": {
+    "by_scenario": {
+      "analytic_6m_500nm_3lambda_d": {
+        "mean_p_observable": 0.006556413617725911,
+        "stars_p_observable_ge_0p5": 39
+      },
+      "analytic_6m_750nm_3lambda_d": {
+        "mean_p_observable": 0.002134700017741681,
+        "stars_p_observable_ge_0p5": 13
+      },
+      "analytic_8m_500nm_3lambda_d": {
+        "mean_p_observable": 0.01456881554565526,
+        "stars_p_observable_ge_0p5": 80
+      }
+    },
+    "rows": 38832,
+    "supported_stars": 12682
+  },
+  "files": {
+    "atlas": "results/hwo/hpic_v1p1_atlas.csv.gz",
+    "exoearth_forecast": "results/hwo/exoearth_accessibility.csv.gz",
+    "known_planet_forecast": "results/hwo/known_planet_accessibility.csv"
+  },
+  "instrument_scenarios": [
+    {
+      "contrast_floor": 1e-10,
+      "diameter_m": 6.0,
+      "interpretation": "generic analytic trade case; not a final HWO design",
+      "iwa_lambda_over_d": 3.0,
+      "iwa_mas": 51.5662015617741,
+      "label": "SCENARIO",
+      "name": "analytic_6m_500nm_3lambda_d",
+      "wavelength_nm": 500.0
+    },
+    {
+      "contrast_floor": 1e-10,
+      "diameter_m": 8.0,
+      "interpretation": "generic analytic trade case; not a final HWO design",
+      "iwa_lambda_over_d": 3.0,
+      "iwa_mas": 38.674651171330574,
+      "label": "SCENARIO",
+      "name": "analytic_8m_500nm_3lambda_d",
+      "wavelength_nm": 500.0
+    },
+    {
+      "contrast_floor": 1e-10,
+      "diameter_m": 6.0,
+      "interpretation": "generic analytic trade case; not a final HWO design",
+      "iwa_lambda_over_d": 3.0,
+      "iwa_mas": 77.34930234266113,
+      "label": "SCENARIO",
+      "name": "analytic_6m_750nm_3lambda_d",
+      "wavelength_nm": 750.0
+    }
+  ],
+  "known_planet_forecast": {
+    "matched_hosts": 464,
+    "matched_planets": 744,
+    "msini_planets_deprojected": 406,
+    "supported_planets": 694
+  },
+  "labels": [
+    "OBSERVED",
+    "DERIVED",
+    "SCENARIO",
+    "FORECAST"
+  ],
+  "sampling": {
+    "draws_per_target": 512,
+    "exoearth_eccentricity_prior": "uniform[0,0.2]",
+    "exoearth_radius_prior_earth": "uniform[0.8,1.2]",
+    "geometric_albedo_prior": "uniform[0.1,0.4]",
+    "stellar_measurements": "Gaussian HPIC distance and log-luminosity errors",
+    "unknown_argument_periapsis": "uniform[0,2pi]",
+    "unknown_mean_anomaly": "uniform[0,2pi]",
+    "unknown_orientation_prior": "isotropic in cos(inclination)"
+  },
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/hwo_hpic.json",
+  "source_manifest_sha256": "e9a0a934dafff355b2626d59345bd3e46f97bb96b61966a116491c331bc5407a",
+  "title": "HWO precursor atlas and direct-imaging scenario probabilities"
+}

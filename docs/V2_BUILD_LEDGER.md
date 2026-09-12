@@ -364,3 +364,31 @@
   SHA-256 product manifest. Focused physics/provenance tests and release
   invariants protect evidence labels, mass gates, signal scaling, row counts,
   reduction separation and product hashes.
+
+## Phase 10 HWO precursor atlas and direct-imaging physics — 2026-09-12
+
+- Downloaded and hash-pinned the CC BY 4.0 HPIC v1.1 Zenodo release: 12,944
+  unique stars, 129 source columns and a 6,033,670-byte archive. The fetcher
+  extracts only declared members and verifies both archive and table hashes.
+- Joined the separate TSS25 community list by exact HPIC `star_name`. Its 164
+  tier-1, 495 tier-2 and 12,285 tier-3 memberships remain priority classes,
+  never detections or a substitute for the broad HPIC catalogue.
+- Preserved all published identifiers and fields, then derived Galactic
+  coordinates, linear luminosity, Earth-equivalent-insolation distance and
+  angular scale. EEID geometry is supported for 12,682 stars and Kopparapu
+  conservative-HZ geometry for 12,405 within the temperature validity domain.
+- Added vectorized Kepler-orbit geometry, Lambert reflected-light phase,
+  `N lambda/D` IWA, constant-floor and tabulated contrast-curve support. Six
+  focused tests cover analytic limits, orbital projection, IWA, curve
+  interpolation, joint separation/contrast selection and mass deprojection.
+- Evaluated 512 deterministic draws for a hypothetical EEID planet around each
+  HPIC star under three generic 6 m/8 m, 500 nm/750 nm trade cases. Distance,
+  luminosity, orbit, radius and albedo uncertainties or priors remain visible.
+  These are FORECAST rows for a planet whose existence is not asserted.
+- Exactly matched 744 known planets across 464 HPIC hosts; 694 support imaging
+  probabilities. Published orbit values and errors are used when available.
+  For 406 M sin i planets, the minimum mass remains intact beside a separately
+  named inclination-conditioned true-mass scenario.
+- Released the full compressed atlas, 38,832 exo-Earth scenario rows, 2,232
+  known-planet scenario rows, PNG/SVG, summary and SHA-256 product manifest.
+  No analytic trade case is described as a final HWO architecture or yield.
