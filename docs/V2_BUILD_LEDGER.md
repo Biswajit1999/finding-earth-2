@@ -340,3 +340,27 @@
 - Released CSV/JSON, bolometric-versus-XUV and escape-sensitivity PNG/SVG
   figures, and a SHA-256 product manifest. No XUV value becomes a habitability
   penalty and no escape scenario decides whether an atmosphere exists.
+
+## Phase 9 atmospheric signal physics and evidence lab — 2026-09-12
+
+- Evaluated four clear, isothermal atmospheric scenarios for the 60 leading
+  non-control planets at or below 2.5 Earth radii. Fifty-four have usable mass,
+  radius, equilibrium temperature and stellar radius; three mass upper limits
+  remain undetermined and never enter the calculation.
+- Applied the scale-height and five-scale-height transmission approximations
+  for mean molecular weights 2.3, 18, 28.97 and 44. At fixed temperature and
+  gravity, the H/He signal is 12.596 times the Earth-like N2/O2 signal, making
+  the difficulty of high-molecular-weight atmospheres explicit.
+- Indexed all 1,826 NASA Exoplanet Archive spectrum entries and harmonized
+  8,309 published transmission and eclipse measurements. Every row retains its
+  source table and row, units, facility, instrument, paper reference, ADS
+  bibcode, archive path when matched and a stable reduction identifier.
+- Program IDs and DOIs are absent from the current archive tables and remain
+  explicitly unavailable. No metadata is inferred or invented.
+- Generated 557 wavelength-overlap diagnostics between distinct reductions.
+  They quantify differences without selecting, averaging or merging reductions
+  and do not constitute an atmospheric retrieval or molecular detection.
+- Released deterministic CSV/JSON, compressed measurement table, PNG/SVG and a
+  SHA-256 product manifest. Focused physics/provenance tests and release
+  invariants protect evidence labels, mass gates, signal scaling, row counts,
+  reduction separation and product hashes.

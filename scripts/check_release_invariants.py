@@ -480,6 +480,99 @@ def main() -> int:
         environment_hashes_match,
     )
 
+    atmosphere_dir = RESULTS_DIR / "atmosphere"
+    atmosphere = json.loads(
+        (atmosphere_dir / "atmosphere_evidence.json").read_text()
+    )
+    observability = pd.read_csv(atmosphere_dir / "observability_scenarios.csv")
+    reductions = pd.read_csv(atmosphere_dir / "spectrum_reductions.csv")
+    measurements = pd.read_csv(atmosphere_dir / "spectrum_measurements.csv.gz")
+    check(
+        "atmospheric evidence uses only the declared evidence classes",
+        atmosphere["labels"] == ["OBSERVED", "DERIVED", "SCENARIO"]
+        and observability["label"].eq("SCENARIO").all()
+        and reductions["label"].eq("OBSERVED").all()
+        and measurements["label"].eq("DERIVED").all(),
+    )
+    check(
+        "atmospheric observability covers the fixed target set and four compositions",
+        len(observability) == 60
+        and [int(value) for value in observability["earth2_rank"]]
+        == list(range(1, 61))
+        and all(
+            f"{name}__transmission_signal_ppm" in observability.columns
+            for name in (
+                "hydrogen_helium",
+                "water_vapour",
+                "earth_like_n2_o2",
+                "carbon_dioxide",
+            )
+        ),
+    )
+    supported_observability = observability[
+        observability["status"].eq("scenario_ensemble")
+    ]
+    check(
+        "high molecular-weight atmospheres have the explicitly smaller clear-sky signal",
+        len(supported_observability) == 54
+        and (
+            supported_observability["hydrogen_helium__transmission_signal_ppm"]
+            > supported_observability["earth_like_n2_o2__transmission_signal_ppm"]
+        ).all()
+        and (
+            supported_observability["hydrogen_to_earth_air_signal_ratio"]
+            .sub(28.97 / 2.3)
+            .abs()
+            .lt(1e-8)
+            .all()
+        ),
+    )
+    check(
+        "upper-limit planet masses never enter atmospheric signal scenarios",
+        observability.loc[
+            observability["planet_mass_basis"].eq("upper_limit_not_used"),
+            "status",
+        ]
+        .eq("undetermined_missing_usable_mass_radius_temperature_or_star_radius")
+        .all(),
+    )
+    spectrum_evidence = atmosphere["spectrum_evidence"]
+    check(
+        "spectrum archive rows preserve reductions and measurement provenance",
+        len(reductions) == 1826
+        and reductions["reduction_id"].is_unique
+        and len(measurements) == 8309
+        and measurements["reduction_id"].nunique() == 502
+        and spectrum_evidence["comparison_count"] == 557
+        and len(spectrum_evidence["reduction_comparisons"]) == 557
+        and all(
+            row["interpretation"]
+            == "overlap diagnostic only; neither reduction is preferred or merged"
+            for row in spectrum_evidence["reduction_comparisons"]
+        ),
+    )
+    check(
+        "missing program and DOI metadata remain explicit rather than fabricated",
+        reductions["program_status"].eq("not_provided_by_archive_index").all()
+        and measurements["program_status"].eq("not_provided_by_source_table").all()
+        and spectrum_evidence["doi_metadata_status"]
+        == "not_provided_by_current_archive_tables; bibcodes retained",
+    )
+    atmosphere_manifest = json.loads(
+        (atmosphere_dir / "atmosphere_products.json").read_text()
+    )
+    atmosphere_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in atmosphere_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check(
+        "atmospheric evidence product hashes match the release manifest",
+        atmosphere_hashes_match,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

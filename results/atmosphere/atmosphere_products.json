@@ -1,0 +1,30 @@
+{
+  "files": {
+    "results/atmosphere/atmosphere_evidence.json": {
+      "bytes": 345236,
+      "sha256": "234b20042d6d7662001452a6b5c99156d5a18803c93c58c0a0bc0cae9c8cbed1"
+    },
+    "results/atmosphere/observability_scenarios.csv": {
+      "bytes": 19935,
+      "sha256": "6cf168bf0cdd94292fb8a2b4e6899a39baa0a0cee01d75924e5cd5db28359bf1"
+    },
+    "results/atmosphere/spectrum_measurements.csv.gz": {
+      "bytes": 174708,
+      "sha256": "c49d89a05a37f032d1bc0a8dabb945ec4a667226339564d3984b07fbdee953fe"
+    },
+    "results/atmosphere/spectrum_reductions.csv": {
+      "bytes": 565058,
+      "sha256": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b"
+    },
+    "results/atmosphere/transmission_observability.png": {
+      "bytes": 215515,
+      "sha256": "0670eba3497eda2c1d308288e6e54b9e0a661fc9bbd5f5ed68623b9f889f8c06"
+    },
+    "results/atmosphere/transmission_observability.svg": {
+      "bytes": 90156,
+      "sha256": "5320836a05f9d210bda581d0f6899841fd287b02e09464bf68e0c1f8293b13d8"
+    }
+  },
+  "product": "Phase 9 atmospheric signal and spectrum evidence architecture",
+  "schema_version": "1.0"
+}

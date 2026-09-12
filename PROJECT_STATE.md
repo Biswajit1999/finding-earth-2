@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **9 next — Phase 8 XUV environment and escape scenarios complete**; v2 is not complete.
+- Current phase: **10 next — Phase 9 atmospheric signal and reduction provenance complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,8 +9,8 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 243 passed; Ruff passes across source, tests and scripts, and mypy
-  passes across 63 checked source and product-builder files. DR25
+- Tests: 256 passed; Ruff passes across source, tests, notebooks and scripts,
+  and mypy passes across 68 checked source and Phase 9 product-builder files. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
 - Formatting: 47 pre-existing files differ from Ruff format; avoid a bulk rewrite.
@@ -26,10 +26,10 @@
   KeplerPORTs reference; deterministic synthetic selection recovery. Broader
   literature and complete per-publication evidence enrichment remain open.
 - DR25 source products: 200,038 original stellar rows; 146,294 injections; 45,377 recovered TCE vetting rows. All injections join a star. Diagnostic stellar subset: 114,105 stars / 84,556 injections / 30,012 recoveries / 26,219 vetted PCs. This is an artificial-signal experiment, not an occurrence estimate.
-- Last successful and remotely verified commit:
-  `08ba60cd34d7168edc89e9f819e28c69748f50ef` (conditional DR25
-  occurrence posterior), authored as Biswajit Jana. Resolve this document's containing
-  checkpoint with `git log -1 -- PROJECT_STATE.md`.
+- Last successful and remotely verified pre-Phase-9 commit:
+  `04b0ea013f239ff985a3651ac295f83b72dd5d2e` (XUV environments and
+  escape scenarios), authored as Biswajit Jana. Resolve this document's
+  containing checkpoint with `git log -1 -- PROJECT_STATE.md`.
 - KeplerPORTs reference: official NASA repository pinned at `6770bc14516592f4e502a20d5c67e61d361c050f`; six required files hash-gated. The documented KIC 3429335 grid reproduces byte-for-byte with explicit MES-smearing seed 21037. Upstream files remain external.
 - Synthetic recovery: 300 replicates of 10,000 artificial stars recover a known
   0.7 planets-per-star rate with +0.69% relative bias and 94.67% coverage for
@@ -91,9 +91,16 @@
   across Proxima Centauri, GJ 667 C and TRAPPIST-1 use exact-host pinned MAST
   MUSCLES SEDs. Stitched/reconstructed spectral evidence and all scenario
   assumptions remain explicit.
-- Exact next action: implement atmospheric scale-height and transmission-signal
-  scenarios, then upgrade modern atmospheric spectrum-file provenance without
-  converting a retrieval or a spectral feature into a biosignature claim.
+- Phase 9 atmosphere evidence: 54 of the leading 60 terrestrial-size targets
+  support four clear, isothermal scale-height scenarios spanning H/He, water,
+  Earth-like N2/O2 and CO2. The H/He signal is 12.596 times the Earth-like-air
+  signal at fixed temperature and gravity. Separately, 1,826 archive spectrum
+  reductions and 8,309 measurements retain stable reduction identities,
+  references, instruments and source rows; 557 overlap diagnostics expose
+  disagreement without pooling reductions or claiming a retrieval.
+- Exact next action: ingest and pin the public HWO Preliminary Input Catalog,
+  then propagate stellar and orbital uncertainty into scenario-labelled
+  direct-imaging separation, contrast and accessibility posteriors.
 
 ## Execution contract
 
