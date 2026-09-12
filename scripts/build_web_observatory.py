@@ -238,6 +238,7 @@ def main() -> None:
         "schema_version": "1.0",
         "title": payload["title"],
         "author": payload["author"],
+        "release_version": "2.0.0",
         "generated_utc": payload["generated_utc"],
         "observatory_sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         "source_count": len(source_files),

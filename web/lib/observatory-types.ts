@@ -224,6 +224,7 @@ export interface ObservatoryRelease {
   schema_version: string;
   title: string;
   author: string;
+  release_version: string;
   generated_utc: string;
   observatory_sha256: string;
   source_count: number;

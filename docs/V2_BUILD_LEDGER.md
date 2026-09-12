@@ -509,3 +509,27 @@
   6,386-file static export, and desktop/mobile browser QA.
 - Enabled GitHub Discussions, set the live site as the repository homepage and
   added focused research and implementation topics.
+
+## Post-v2 frontier — Beyond Earth 2.0 — 2026-09-13
+
+- Added a tested physics package for inverse-square flux, Earth-Sun angular
+  separation, Earth-diameter resolution, ideal diffraction, communication delay,
+  Earth-frame travel time, Lorentz factor and traveller proper time.
+- Generated six feasibility cases from Proxima Centauri through 100 Mpc. The
+  photon calculation is explicitly an optimistic upper bound and the M51 case is
+  labelled an unconfirmed Saturn-size candidate rather than an Earth analogue.
+- Added the `/beyond` interactive calculator, cosmic-conversation timeline,
+  extragalactic negative-feasibility chapter and technosignature evidence matrix.
+- Retitled `/perspective` as “Beyond Earth 2.0 — An Author’s Perspective,” kept
+  it separate from scientific results, and added Biswajit Jana’s forward-looking
+  questions beside the existing learning log, dictionary and conclusion.
+
+## LinkedIn release media — 2026-09-13
+
+- Captured six close-up website scenes at 1350×1080: the observatory, population,
+  selection, Venus falsification, Beyond calculator and author conclusion.
+- Trimmed browser warm-up and retimed the complete capture to exactly 30.00
+  seconds; encoded H.264 High Profile at 30 fps with yuv420p and fast-start MP4.
+- Inspected a six-frame contact sheet and the final cover frame. Added a concise
+  caption that states the research objectives and links the live site, source,
+  paper/data release and Beyond calculator.

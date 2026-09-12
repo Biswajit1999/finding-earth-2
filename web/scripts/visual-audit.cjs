@@ -31,7 +31,7 @@ async function main() {
     await page.close();
   }
 
-  for (const route of ["/", "/population", "/selection", "/missions", "/information-gain", "/falsification", "/evidence", "/perspective"]) {
+  for (const route of ["/", "/population", "/selection", "/missions", "/information-gain", "/falsification", "/evidence", "/beyond", "/perspective"]) {
     const page = await browser.newPage({ viewport: { width: 1440, height: 900 } });
     const errors = [];
     page.on("pageerror", (error) => errors.push(error.message));

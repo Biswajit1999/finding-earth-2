@@ -160,11 +160,11 @@ cd web && npm ci && npm run typecheck && npm run lint && npm run build
 
 ## 20. Test results
 
-The final local release run passes **282 Python tests**, Ruff, mypy across 73
-source files, 67 scientific release invariants, manuscript validation, 26 final
-audit gates, TypeScript, ESLint, a 6,387-page Next build, 6,386 exported HTML
-files, 34 export templates, and desktop/mobile browser QA with zero HUD overlap
-or horizontal overflow.
+The final local release run passes **287 Python tests**, Ruff, mypy across 75
+source files, 67 scientific release invariants, manuscript validation, 26 core
+audit gates, TypeScript, ESLint, a 6,388-page Next build, 6,387 exported HTML
+files, 35 export templates, and desktop/mobile browser QA with zero HUD overlap
+or horizontal overflow. The post-v2 physics calculator adds five tests.
 
 ## 21. Website URL
 

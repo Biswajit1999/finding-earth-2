@@ -56,6 +56,7 @@ export function SiteFooter({
             title="Explore"
             links={[
               ["/universe", "Universe"],
+              ["/beyond", "Beyond Earth 2.0"],
               ["/atlas", "Candidate Atlas"],
               ["/ranking", "Ranking"],
               ["/compare", "Compare Worlds"],
@@ -79,7 +80,7 @@ export function SiteFooter({
               ["/data", "Data sources"],
               ["/limitations", "Limitations"],
               ["/references", "References"],
-              ["/perspective", "What I learned"],
+              ["/perspective", "Author perspective"],
               ["/about", "About"],
             ]}
           />

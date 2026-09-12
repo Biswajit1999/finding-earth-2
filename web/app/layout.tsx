@@ -220,7 +220,7 @@ export default function RootLayout({
         <main id="main">{children}</main>
         <SiteFooter
           generatedUtc={summary.generated_utc}
-          version={summary.earth2_version}
+          version={observatoryRelease.release_version}
           sourceRecords={summary.scale.total_source_records}
         />
       </body>

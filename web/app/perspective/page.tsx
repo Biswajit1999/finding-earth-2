@@ -7,8 +7,8 @@ import { LiveDataPulse } from "@/components/perspective/LiveDataPulse";
 import { getSummary } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "What I Learned",
-  description: "Biswajit Jana’s learning log, research dictionary and author conclusion from building Finding Earth 2.0.",
+  title: "Beyond Earth 2.0 — An Author’s Perspective",
+  description: "Biswajit Jana’s learning log, research dictionary, author conclusion and forward-looking questions from building Finding Earth 2.0.",
 };
 
 export default function PerspectivePage() {
@@ -16,8 +16,8 @@ export default function PerspectivePage() {
   return (
     <>
       <PageHeader
-        eyebrow="Author perspective · Biswajit Jana"
-        title="What I learned by trying to find Earth 2.0"
+        eyebrow="Author perspective · hypotheses and questions, not observational conclusions · Biswajit Jana"
+        title="Beyond Earth 2.0 — An Author’s Perspective"
         lede="I began with a simple question and built a reproducible research system around it. The deeper lesson was that finding another Earth is less about sorting a catalogue and more about learning exactly what each observation can—and cannot—tell us."
         meta={`${summary.scale.total_source_records.toLocaleString("en-GB")} source records · ${summary.population.n_confirmed_planets.toLocaleString("en-GB")} confirmed planets · every claim labelled by evidence type`}
       />
@@ -37,6 +37,20 @@ export default function PerspectivePage() {
 
         <LearningJourney />
 
+        <section className="border-y border-[var(--color-line)] bg-[var(--color-deep)]">
+          <div className="mx-auto grid max-w-[1400px] gap-10 px-4 py-20 sm:px-6 lg:grid-cols-[.8fr_1.2fr]">
+            <div><p className="eyebrow text-[var(--color-gold)]">Author perspective</p><h2 className="mt-3 text-[length:var(--text-display)] font-light">Questions I carry forward</h2><p className="mt-5 text-xs leading-relaxed text-[var(--color-muted)]">These are my hypotheses, values and open questions. They are not NASA or ESA conclusions and they are not outputs of the candidate model.</p></div>
+            <div className="grid gap-3 sm:grid-cols-2">{[
+              "Is finding a physically compatible world enough—or only the start?",
+              "Should humanity transmit, listen, or decide through a wider public process?",
+              "What message could remain intelligible after a century of delay?",
+              "Could autonomous probes make exploration more realistic than human travel?",
+              "How would relativistic time change the human meaning of a journey?",
+              "What would evidence of another civilisation ask humanity to become?",
+            ].map((question) => <article key={question} className="panel-raised p-5 text-sm leading-relaxed text-[var(--color-dim)]">{question}</article>)}</div>
+          </div>
+        </section>
+
         <section className="mx-auto max-w-[1400px] px-4 pb-20 sm:px-6">
           <LiveDataPulse records={summary.scale.total_source_records} planets={summary.population.n_confirmed_planets} generated={summary.generated_utc} />
         </section>
@@ -53,6 +67,7 @@ export default function PerspectivePage() {
               <Link href="/methods" className="link">Inspect the methods →</Link>
               <Link href="/occurrence" className="link">See observed become intrinsic →</Link>
               <Link href="/universe" className="link">Explore the discovery universe →</Link>
+              <Link href="/beyond" className="link">Calculate distance and contact →</Link>
             </div>
           </div>
         </section>

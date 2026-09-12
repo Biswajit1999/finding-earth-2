@@ -33,6 +33,7 @@ const GROUPS: { label: string; items: { href: string; label: string; hint: strin
     items: [
       { href: "/universe", label: "Universe", hint: "3D map of every system with a measured distance" },
       { href: "/galaxy", label: "Galaxy", hint: "Where the Sun sits in the Milky Way, and how far we've reached" },
+      { href: "/beyond", label: "Beyond Earth 2.0", hint: "Distance, contact and extragalactic feasibility" },
       { href: "/atlas", label: "Candidate Atlas", hint: "Filter and sort the full analysed catalogue" },
       { href: "/ranking", label: "Ranking", hint: "Re-weight the composite index yourself" },
       { href: "/compare", label: "Compare Worlds", hint: "Put candidates side by side" },
@@ -179,7 +180,7 @@ export function SiteHeader({ bundledHash }: { bundledHash: string }) {
                 : "text-[var(--color-dim)] hover:text-[var(--color-ivory)]"
             }`}
           >
-            What I learned
+            Author perspective
           </Link>
         </nav>
 
@@ -246,7 +247,7 @@ export function SiteHeader({ bundledHash }: { bundledHash: string }) {
             Research article
           </Link>
           <Link href="/perspective" className="block py-2 text-[14px] text-[var(--color-ivory)]">
-            What I learned
+            Author perspective
           </Link>
           <Link href="/about" className="block py-2 text-[14px] text-[var(--color-ivory)]">
             About

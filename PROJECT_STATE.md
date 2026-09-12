@@ -1,7 +1,7 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **core v2 complete — Phase 16 passed**; Beyond Earth 2.0 and the
-  LinkedIn release video are the active post-v2 deliverables.
+- Current phase: **all requested research, website and LinkedIn media deliverables
+  complete**; terminal push, deployment verification and v2.0.0 tag remain.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -10,7 +10,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 282 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 287 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -147,9 +147,16 @@
   full test/lint/type/build/export/browser evidence and exact release boundaries
   are recorded. GitHub Discussions, homepage metadata and eight research topics
   are enabled.
-- Exact next action: complete the clearly separated Beyond Earth 2.0 futures
-  chapter and interactive physics, render the 30-second LinkedIn video, then
-  perform the terminal remote verification and tag v2.0.0.
+- Beyond Earth 2.0: the post-v2 frontier now includes inverse-square flux,
+  angular-resolution and photon upper-bound calculations; special-relativistic
+  Earth/traveller time; a communication timeline; a disciplined M51 candidate
+  case study; a technosignature evidence matrix; scalable data architecture;
+  and a prominently separated Biswajit Jana author perspective.
+- LinkedIn package: 30.00-second 1350×1080 H.264/yuv420p MP4, inspected six-scene
+  contact sheet, matching cover frame, reproducible Playwright capture script and
+  ready-to-post caption with website, repository and Beyond links.
+- Exact next action: commit and push this final package, verify GitHub Actions and
+  the deployed route, create/push the v2.0.0 tag, then publish the release record.
 
 ## Execution contract
 

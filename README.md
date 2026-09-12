@@ -32,6 +32,7 @@ The work answers four questions:
 | Data release | [`earth2-v2-data-release/`](earth2-v2-data-release/) + deterministic ZIP; Zenodo DOI pending |
 | Manuscript | [`paper/main.tex`](paper/main.tex), generated values and verified bibliography |
 | Interactive observatory | [Open the live website](https://biswajit1999.github.io/finding-earth-2/) |
+| Beyond Earth 2.0 | [Distance, contact and extragalactic feasibility](https://biswajit1999.github.io/finding-earth-2/beyond/) |
 | Release documentation | [`docs/DATA_RELEASE.md`](docs/DATA_RELEASE.md) |
 
 Reproduce and validate the publication products:

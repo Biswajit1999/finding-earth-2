@@ -10,6 +10,7 @@ const coreRoutes = [
   "",
   "about",
   "atlas",
+  "beyond",
   "atmospheres",
   "climate",
   "compare",
