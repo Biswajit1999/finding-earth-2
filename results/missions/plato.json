@@ -1,0 +1,79 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "mission_camera_design",
+      "interpretation": "Mission configuration before launch, not observing output.",
+      "label": "FORECAST",
+      "source": "official:plato_overview",
+      "unit": "cameras",
+      "value": 26
+    },
+    {
+      "evidence_id": "science_observations",
+      "interpretation": "Launch is planned for March 2027; future ingestion remains disabled.",
+      "label": "DERIVED",
+      "source": "mission release adapter",
+      "unit": "PLATO science rows in project",
+      "value": 0
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "European Space Agency",
+    "cannot_measure": [
+      "PLATO discoveries before public mission data releases",
+      "planet mass from photometry alone in the general case",
+      "atmospheric composition or confirmed habitability from transit discovery photometry"
+    ],
+    "data_available": [
+      "official mission design and status",
+      "future release adapter only; no PLATO observations in the current project snapshot"
+    ],
+    "forecast_boundary": "Expected target counts and science capabilities are forecasts. The adapter refuses to label pre-release PLATO rows as observations.",
+    "measures": [
+      "visible-light transit photometry with 26 cameras",
+      "planet radii and orbital periods from transit light curves",
+      "host-star oscillations for stellar radii, masses, and ages where supported"
+    ],
+    "mission_id": "plato",
+    "name": "PLATO",
+    "official_source_ids": [
+      "plato_overview",
+      "plato_factsheet"
+    ],
+    "resolution": [
+      "time-series photometric cadence and precision, not a spectroscopic resolving power"
+    ],
+    "scientific_role": "Future bright-star terrestrial discovery and stellar characterisation",
+    "status": "spacecraft testing; launch planned for March 2027",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "visible-light photometry; response varies with camera class"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "European Space Agency",
+      "source_id": "plato_overview",
+      "supports": "Launch is planned for March 2027; 26 cameras will study terrestrial transits and stellar oscillations.",
+      "title": "Plato",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Plato"
+    },
+    {
+      "agency": "European Space Agency",
+      "source_id": "plato_factsheet",
+      "supports": "The spacecraft is in final testing and the science products are prospective.",
+      "title": "Plato factsheet",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

@@ -1,0 +1,72 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "instrument_design",
+      "interpretation": "Design requirement, not on-sky achieved performance.",
+      "label": "FORECAST",
+      "source": "official:andes_design",
+      "unit": "baseline resolving power",
+      "value": 100000
+    },
+    {
+      "evidence_id": "science_observations",
+      "interpretation": "The instrument is not commissioned; future ingestion remains disabled.",
+      "label": "DERIVED",
+      "source": "mission release adapter",
+      "unit": "ANDES science rows in project",
+      "value": 0
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "European Southern Observatory and ANDES consortium",
+    "cannot_measure": [
+      "ANDES observations before instrument commissioning",
+      "surface habitability or biology directly",
+      "all terrestrial atmospheres independent of host brightness, tellurics, geometry, and exposure time"
+    ],
+    "data_available": [
+      "official design requirements and exposure-time calculator",
+      "no ANDES science observations in the current project snapshot"
+    ],
+    "forecast_boundary": "Instrument specifications describe a design. Target pathways remain forecasts until public ANDES observations and reductions exist.",
+    "measures": [
+      "resolved high-dispersion spectral lines from 0.4-1.8 micrometres in the baseline design",
+      "precision Doppler shifts and atmospheric molecular cross-correlation signals",
+      "stellar composition, activity, and line-profile diagnostics"
+    ],
+    "mission_id": "andes",
+    "name": "ELT / ANDES",
+    "official_source_ids": [
+      "andes_design"
+    ],
+    "resolution": [
+      "baseline resolving power about 100,000",
+      "baseline wavelength precision 1 metre per second; goals are not achieved performance"
+    ],
+    "scientific_role": "Future high-resolution spectroscopy, precision radial velocity, and atmosphere pathways",
+    "status": "second-phase ELT instrument in development",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "0.40-1.80 micrometres baseline; 0.35-2.40 micrometres goal"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "European Southern Observatory",
+      "source_id": "andes_design",
+      "supports": "ANDES is a second-phase instrument with a 0.40-1.80 micrometre baseline and resolving power around 100,000.",
+      "title": "ANDES instrument design",
+      "url": "https://elt.eso.org/instrument/ANDES/"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

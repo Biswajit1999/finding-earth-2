@@ -1,0 +1,79 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "dr3_exact_host_crossmatch",
+      "interpretation": "Exact source identifiers from confirmed-planet hosts.",
+      "label": "OBSERVED",
+      "source": "data/manifests/gaia_dr3_crossmatch.json",
+      "unit": "Gaia DR3 source rows",
+      "value": 4408
+    },
+    {
+      "evidence_id": "dr4_science_rows",
+      "interpretation": "DR4 is not public in this dated snapshot and is not fabricated.",
+      "label": "FORECAST",
+      "source": "official:gaia_dr4",
+      "unit": "Gaia DR4 rows in project",
+      "value": 0
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "European Space Agency / Gaia DPAC",
+    "cannot_measure": [
+      "unreleased Gaia DR4 quantities",
+      "planet atmosphere composition",
+      "habitability from astrometry or multiplicity alone"
+    ],
+    "data_available": [
+      "exact-source Gaia DR3 crossmatch for confirmed-planet hosts",
+      "versioned DR4 schema contract with ingestion disabled until public release"
+    ],
+    "forecast_boundary": "Only DR3 rows are observations here. DR4 expectations describe a future release and cannot populate observed fields until an official public archive release is verified.",
+    "measures": [
+      "positions, parallaxes, proper motions, photometry, and selected radial velocities",
+      "astrometric quality and non-single-star indicators",
+      "release-specific astrophysical and variability products"
+    ],
+    "mission_id": "gaia",
+    "name": "Gaia",
+    "official_source_ids": [
+      "gaia_dr3",
+      "gaia_dr4"
+    ],
+    "resolution": [
+      "mission scanning astrometry and release-specific spectrophotometric/RVS products"
+    ],
+    "scientific_role": "Astrometry, distances, stellar context, multiplicity, and future orbital solutions",
+    "status": "Gaia DR3 public; Gaia DR4 not public in this snapshot",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "broad optical G, BP, and RP photometry; RVS spectroscopy for supported sources"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "European Space Agency / Gaia DPAC",
+      "source_id": "gaia_dr3",
+      "supports": "Gaia DR3 was publicly released on 13 June 2022 with astrometry, photometry, radial velocities, astrophysical parameters, variability, and non-single-star products.",
+      "title": "Gaia Data Release 3 contents summary",
+      "url": "https://www.cosmos.esa.int/web/gaia/dr3"
+    },
+    {
+      "agency": "European Space Agency / Gaia DPAC",
+      "source_id": "gaia_dr4",
+      "supports": "The official DR4 page still describes the release as forthcoming; no DR4 rows are ingested.",
+      "title": "Gaia Data Release 4",
+      "url": "https://www.cosmos.esa.int/web/gaia/data-release-4"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

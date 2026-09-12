@@ -705,6 +705,54 @@ def main() -> int:
     )
     check("HWO precursor product hashes match the release manifest", hwo_hashes_match)
 
+    mission_dir = RESULTS_DIR / "missions"
+    mission_index = json.loads((mission_dir / "mission_observatory.json").read_text())
+    mission_ids = [item["mission_id"] for item in mission_index["missions"]]
+    mission_payloads = {
+        mission_id: json.loads((mission_dir / f"{mission_id}.json").read_text())
+        for mission_id in mission_ids
+    }
+    check(
+        "mission observatory preserves six scientifically separate views",
+        mission_ids == ["jwst", "hwo", "andes", "plato", "gaia", "roman"]
+        and all(
+            payload["mission"]["mission_id"] == mission_id
+            and payload["mission"]["measures"]
+            and payload["mission"]["cannot_measure"]
+            and payload["mission"]["wavelength"]
+            and payload["mission"]["resolution"]
+            and payload["mission"]["data_available"]
+            and payload["mission"]["forecast_boundary"]
+            for mission_id, payload in mission_payloads.items()
+        ),
+    )
+    all_mission_records = [
+        row for payload in mission_payloads.values() for row in payload["evidence_records"]
+    ]
+    check(
+        "mission evidence labels preserve observation and forecast boundaries",
+        {row["label"] for row in all_mission_records}
+        <= {"OBSERVED", "DERIVED", "MODEL-INFERRED", "SCENARIO", "FORECAST", "SIMULATED"}
+        and next(
+            row for row in mission_payloads["gaia"]["evidence_records"]
+            if row["evidence_id"] == "dr4_science_rows"
+        )["value"]
+        == 0
+        and next(
+            row for row in mission_payloads["roman"]["evidence_records"]
+            if row["evidence_id"] == "historical_microlensing_context"
+        )["interpretation"].endswith("zero rows are Roman observations."),
+    )
+    mission_manifest = json.loads((mission_dir / "mission_products.json").read_text())
+    mission_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in mission_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("mission observatory product hashes match the release manifest", mission_hashes_match)
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

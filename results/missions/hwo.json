@@ -1,0 +1,85 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "hpic_v1p1_stars",
+      "interpretation": "Potential inputs, not observed HWO targets or detections.",
+      "label": "OBSERVED",
+      "source": "results/hwo/hpic_v1p1_atlas.csv.gz",
+      "unit": "precursor catalogue stars",
+      "value": 12944
+    },
+    {
+      "evidence_id": "generic_exoearth_accessibility",
+      "interpretation": "Three generic analytic trade cases; not a mission yield.",
+      "label": "FORECAST",
+      "secondary_unit": "stars with supported geometry",
+      "secondary_value": 12682,
+      "source": "results/hwo/exoearth_accessibility.csv.gz",
+      "unit": "star-scenario rows",
+      "value": 38832
+    },
+    {
+      "evidence_id": "known_planet_accessibility",
+      "interpretation": "Catalogue-conditioned accessibility, not HWO observations.",
+      "label": "FORECAST",
+      "secondary_unit": "planets with supported forecast",
+      "secondary_value": 694,
+      "source": "results/hwo/known_planet_accessibility.csv",
+      "unit": "matched known planets",
+      "value": 744
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "NASA",
+    "cannot_measure": [
+      "anything observationally before an observatory is built and commissioned",
+      "life from a single gas or spectrum without environmental and false-positive context",
+      "a guaranteed exo-Earth yield from a preliminary input catalogue"
+    ],
+    "data_available": [
+      "HPIC v1.1 precursor-star measurements",
+      "TSS25 community priority tiers",
+      "generic analytic accessibility scenarios from this project; no HWO observations"
+    ],
+    "forecast_boundary": "HPIC and TSS25 are source catalogues. All planet accessibility values in this project are forecasts under declared generic coronagraph assumptions, not a mission yield.",
+    "measures": [
+      "planned direct imaging of reflected ultraviolet, visible, and near-infrared light",
+      "planned spectroscopy of planetary atmospheres separated from host-star light",
+      "planned system-level context for nearby stars and planets"
+    ],
+    "mission_id": "hwo",
+    "name": "Habitable Worlds Observatory",
+    "official_source_ids": [
+      "hwo_overview"
+    ],
+    "resolution": [
+      "final telescope aperture, coronagraph performance, inner working angle, and spectral resolution are not fixed"
+    ],
+    "scientific_role": "Future reflected-light detection and spectroscopy of terrestrial planets",
+    "status": "pre-formulation concept and technology maturation",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "ultraviolet / visible / near-infrared; final bandpasses remain under study"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "NASA",
+      "page_last_updated": "2026-04-07",
+      "source_id": "hwo_overview",
+      "supports": "HWO is a future flagship concept in architecture and technology maturation; engineering concepts are trade cases rather than a final design.",
+      "title": "Habitable Worlds Observatory",
+      "url": "https://science.nasa.gov/astrophysics/programs/habitable-worlds-observatory/"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

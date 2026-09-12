@@ -1,0 +1,94 @@
+{
+  "schema_version": "1.0",
+  "accessed_utc": "2026-09-12T13:18:35Z",
+  "policy": "Mission status is a dated assertion from an official agency page. A capability or planned survey is FORECAST until a public observation or release is ingested with provenance.",
+  "sources": [
+    {
+      "source_id": "jwst_instruments",
+      "agency": "Space Telescope Science Institute",
+      "title": "JWST Science Instruments and Observing Modes",
+      "url": "https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-peer-review-information/general-info-and-getting-started/jwst-science-instruments-and-observing-modes",
+      "supports": "Four instruments collectively cover approximately 0.6-28 micrometres."
+    },
+    {
+      "source_id": "jwst_nirspec",
+      "agency": "Space Telescope Science Institute",
+      "title": "NIRSpec Instrumentation",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-instrumentation",
+      "supports": "NIRSpec covers 0.6-5.3 micrometres at resolving powers around 100, 1,000, and 2,700."
+    },
+    {
+      "source_id": "jwst_niriss",
+      "agency": "Space Telescope Science Institute",
+      "title": "NIRISS Instrumentation",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-imager-and-slitless-spectrograph/niriss-instrumentation",
+      "supports": "NIRISS SOSS uses GR700XD over 0.6-2.8 micrometres at resolving power around 700."
+    },
+    {
+      "source_id": "jwst_miri",
+      "agency": "Space Telescope Science Institute",
+      "title": "MIRI Medium Resolution Spectroscopy",
+      "url": "https://jwst-docs.stsci.edu/jwst-mid-infrared-instrument/miri-observing-modes/miri-medium-resolution-spectroscopy",
+      "supports": "MIRI MRS spans 4.9-27.9 micrometres at useful response, with resolving power varying from about 3,500 to 1,500."
+    },
+    {
+      "source_id": "hwo_overview",
+      "agency": "NASA",
+      "title": "Habitable Worlds Observatory",
+      "url": "https://science.nasa.gov/astrophysics/programs/habitable-worlds-observatory/",
+      "page_last_updated": "2026-04-07",
+      "supports": "HWO is a future flagship concept in architecture and technology maturation; engineering concepts are trade cases rather than a final design."
+    },
+    {
+      "source_id": "andes_design",
+      "agency": "European Southern Observatory",
+      "title": "ANDES instrument design",
+      "url": "https://elt.eso.org/instrument/ANDES/",
+      "supports": "ANDES is a second-phase instrument with a 0.40-1.80 micrometre baseline and resolving power around 100,000."
+    },
+    {
+      "source_id": "plato_overview",
+      "agency": "European Space Agency",
+      "title": "Plato",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Plato",
+      "supports": "Launch is planned for March 2027; 26 cameras will study terrestrial transits and stellar oscillations."
+    },
+    {
+      "source_id": "plato_factsheet",
+      "agency": "European Space Agency",
+      "title": "Plato factsheet",
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Plato_factsheet",
+      "supports": "The spacecraft is in final testing and the science products are prospective."
+    },
+    {
+      "source_id": "gaia_dr3",
+      "agency": "European Space Agency / Gaia DPAC",
+      "title": "Gaia Data Release 3 contents summary",
+      "url": "https://www.cosmos.esa.int/web/gaia/dr3",
+      "supports": "Gaia DR3 was publicly released on 13 June 2022 with astrometry, photometry, radial velocities, astrophysical parameters, variability, and non-single-star products."
+    },
+    {
+      "source_id": "gaia_dr4",
+      "agency": "European Space Agency / Gaia DPAC",
+      "title": "Gaia Data Release 4",
+      "url": "https://www.cosmos.esa.int/web/gaia/data-release-4",
+      "supports": "The official DR4 page still describes the release as forthcoming; no DR4 rows are ingested."
+    },
+    {
+      "source_id": "roman_launch",
+      "agency": "NASA",
+      "title": "Roman Launch",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/roman-launch/",
+      "page_last_updated": "2026-09-08",
+      "supports": "Roman launched on 30 August 2026 and is travelling to Sun-Earth L2 before science operations."
+    },
+    {
+      "source_id": "roman_gbtds",
+      "agency": "NASA",
+      "title": "Galactic Bulge Time-Domain Survey technical overview",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/galactic-bulge-time-domain-survey-technical/",
+      "page_last_updated": "2026-05-26",
+      "supports": "The planned survey uses 12.1-minute high-cadence observations over six seasons and is designed for microlensing demographics."
+    }
+  ]
+}

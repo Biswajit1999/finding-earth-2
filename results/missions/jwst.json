@@ -1,0 +1,103 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "published_atmosphere_reductions",
+      "interpretation": "Published reductions whose archive facility names JWST; reductions are not merged.",
+      "label": "OBSERVED",
+      "secondary_unit": "unique planets",
+      "secondary_value": 101,
+      "source": "results/atmosphere/spectrum_reductions.csv",
+      "unit": "separate spectrum reductions",
+      "value": 396
+    },
+    {
+      "evidence_id": "programme_status_coverage",
+      "interpretation": "The pinned NASA Archive spectrum table does not provide complete programme IDs or planned/approved/scheduled states.",
+      "label": "DERIVED",
+      "source": "results/atmosphere/spectrum_reductions.csv",
+      "unit": "reductions with programme status",
+      "value": 0
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "NASA / ESA / CSA",
+    "cannot_measure": [
+      "life or habitability from a spectrum alone",
+      "a unique atmospheric composition without retrieval assumptions and degeneracy tests",
+      "Earth-Sun analogues in reflected light at HWO-like angular separation and contrast"
+    ],
+    "data_available": [
+      "NASA Exoplanet Archive published spectrum index and atmospheric tables",
+      "separate literature reductions with bibcodes, facilities, instruments, and archive paths",
+      "programme identifiers and complete planned/approved/scheduled status are unavailable in the pinned archive tables"
+    ],
+    "forecast_boundary": "The observatory records published reductions as observations. Scale-height signals and unexecuted programme states remain scenarios or forecasts.",
+    "measures": [
+      "wavelength-dependent transit and eclipse depths",
+      "direct spectra and images of sufficiently bright, widely separated companions",
+      "time-series spectrophotometry constrained by instrument modes and target brightness"
+    ],
+    "mission_id": "jwst",
+    "name": "James Webb Space Telescope",
+    "official_source_ids": [
+      "jwst_instruments",
+      "jwst_nirspec",
+      "jwst_niriss",
+      "jwst_miri"
+    ],
+    "resolution": [
+      "NIRSpec spectroscopy: resolving power about 100, 1,000, or 2,700",
+      "NIRISS SOSS: resolving power about 700",
+      "MIRI MRS: resolving power about 3,500 at 5 micrometres to 1,500 at 28 micrometres"
+    ],
+    "scientific_role": "Existing and planned infrared atmospheric characterisation",
+    "status": "operational observatory; public atmospheric reductions available",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "JWST instruments collectively: approximately 0.6-28 micrometres",
+      "NIRSpec: 0.6-5.3 micrometres",
+      "NIRISS SOSS: 0.6-2.8 micrometres",
+      "MIRI MRS: 4.9-27.9 micrometres at useful detector response"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "Space Telescope Science Institute",
+      "source_id": "jwst_instruments",
+      "supports": "Four instruments collectively cover approximately 0.6-28 micrometres.",
+      "title": "JWST Science Instruments and Observing Modes",
+      "url": "https://jwst-docs.stsci.edu/jwst-opportunities-and-policies/jwst-peer-review-information/general-info-and-getting-started/jwst-science-instruments-and-observing-modes"
+    },
+    {
+      "agency": "Space Telescope Science Institute",
+      "source_id": "jwst_nirspec",
+      "supports": "NIRSpec covers 0.6-5.3 micrometres at resolving powers around 100, 1,000, and 2,700.",
+      "title": "NIRSpec Instrumentation",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-spectrograph/nirspec-instrumentation"
+    },
+    {
+      "agency": "Space Telescope Science Institute",
+      "source_id": "jwst_niriss",
+      "supports": "NIRISS SOSS uses GR700XD over 0.6-2.8 micrometres at resolving power around 700.",
+      "title": "NIRISS Instrumentation",
+      "url": "https://jwst-docs.stsci.edu/jwst-near-infrared-imager-and-slitless-spectrograph/niriss-instrumentation"
+    },
+    {
+      "agency": "Space Telescope Science Institute",
+      "source_id": "jwst_miri",
+      "supports": "MIRI MRS spans 4.9-27.9 micrometres at useful response, with resolving power varying from about 3,500 to 1,500.",
+      "title": "MIRI Medium Resolution Spectroscopy",
+      "url": "https://jwst-docs.stsci.edu/jwst-mid-infrared-instrument/miri-observing-modes/miri-medium-resolution-spectroscopy"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

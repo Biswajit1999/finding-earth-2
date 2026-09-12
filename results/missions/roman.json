@@ -1,0 +1,92 @@
+{
+  "evidence_records": [
+    {
+      "evidence_id": "launch_status",
+      "interpretation": "Launched 2026-08-30; travelling to L2 before science operations.",
+      "label": "OBSERVED",
+      "source": "official:roman_launch",
+      "unit": "verified launch event",
+      "value": 1
+    },
+    {
+      "evidence_id": "gbtds_high_cadence",
+      "interpretation": "Current survey design, not executed observations or measured yield.",
+      "label": "FORECAST",
+      "secondary_unit": "planned seasons",
+      "secondary_value": 6,
+      "source": "official:roman_gbtds",
+      "unit": "minutes per planned high-cadence visit",
+      "value": 12.1
+    },
+    {
+      "evidence_id": "historical_microlensing_context",
+      "interpretation": "Historical microlensing context; zero rows are Roman observations.",
+      "label": "OBSERVED",
+      "source": "data/manifests/nasa_microlensing.json",
+      "unit": "NASA Archive comparison rows",
+      "value": 895
+    }
+  ],
+  "input_hashes": {
+    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
+    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
+    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
+    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+  },
+  "mission": {
+    "agency": "NASA",
+    "cannot_measure": [
+      "Roman survey planets before science operations and public releases",
+      "atmospheric composition for the statistical microlensing sample",
+      "habitability from a lensing light curve"
+    ],
+    "data_available": [
+      "verified launch status and current survey design",
+      "historical NASA Archive microlensing catalogue for context, explicitly not Roman observations",
+      "future Roman release adapter; no Roman science rows in the current project snapshot"
+    ],
+    "forecast_boundary": "Roman is in post-launch transfer to L2. Survey yields and cadence are forecasts/design; the historical microlensing comparison table is not attributed to Roman.",
+    "measures": [
+      "planned high-cadence wide-field infrared microlensing light curves",
+      "planned demographic sensitivity complementary to transit surveys",
+      "planned multiband stellar photometry and grism context in Galactic-bulge fields"
+    ],
+    "mission_id": "roman",
+    "name": "Nancy Grace Roman Space Telescope",
+    "official_source_ids": [
+      "roman_launch",
+      "roman_gbtds"
+    ],
+    "resolution": [
+      "GBTDS recommended high-cadence observations every 12.1 minutes over six seasons"
+    ],
+    "scientific_role": "Future microlensing demographics across cold, wide-orbit, and free-floating planets",
+    "status": "launched 2026-08-30; travelling to Sun-Earth L2 and not yet in science operations",
+    "status_as_of": "2026-09-12",
+    "wavelength": [
+      "WFI infrared filters; GBTDS high cadence uses the broad F146 filter"
+    ]
+  },
+  "official_sources": [
+    {
+      "agency": "NASA",
+      "page_last_updated": "2026-09-08",
+      "source_id": "roman_launch",
+      "supports": "Roman launched on 30 August 2026 and is travelling to Sun-Earth L2 before science operations.",
+      "title": "Roman Launch",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/roman-launch/"
+    },
+    {
+      "agency": "NASA",
+      "page_last_updated": "2026-05-26",
+      "source_id": "roman_gbtds",
+      "supports": "The planned survey uses 12.1-minute high-cadence observations over six seasons and is designed for microlensing demographics.",
+      "title": "Galactic Bulge Time-Domain Survey technical overview",
+      "url": "https://science.nasa.gov/mission/roman-space-telescope/galactic-bulge-time-domain-survey-technical/"
+    }
+  ],
+  "schema_version": "1.0",
+  "source_manifest": "data/manifests/mission_observatory_sources.json",
+  "source_manifest_sha256": "c700135b6c751d50ff629bfde5835ce9f2af86c7abc659161a7e679c53968b3c",
+  "source_snapshot": "2026-09-12T13:18:35Z"
+}

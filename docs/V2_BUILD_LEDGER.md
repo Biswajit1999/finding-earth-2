@@ -392,3 +392,23 @@
 - Released the full compressed atlas, 38,832 exo-Earth scenario rows, 2,232
   known-planet scenario rows, PNG/SVG, summary and SHA-256 product manifest.
   No analytic trade case is described as a final HWO architecture or yield.
+
+## Phase 11 mission-specific observatory — 2026-09-12
+
+- Added six independent mission profiles for JWST, HWO, ELT/ANDES, PLATO,
+  Gaia and Roman. Every profile states the scientific role, measurable
+  quantities, claim limits, wavelength domain, resolution concept, available
+  project data and observation/forecast boundary.
+- Pinned 12 dated official agency and observatory sources. The status snapshot
+  records Roman's 30 August 2026 launch and transfer to L2, PLATO's planned
+  March 2027 launch, Gaia DR3 as public and DR4 as unavailable, ANDES as a
+  second-phase ELT instrument, and HWO as a concept in maturation.
+- Connected 396 published JWST reductions across 101 planets, 12,944 HPIC v1.1
+  stars, 4,408 exact Gaia DR3 host-source rows and 895 historical microlensing
+  comparison rows. The microlensing comparison is explicitly not Roman data.
+- Added release adapters that raise on attempts to treat Gaia DR4 or future
+  ANDES, PLATO, HWO and Roman science releases as observations. Zero available
+  rows are retained as project-inventory audits rather than fabricated data.
+- Released 14 evidence records, six JSON products, six mission pages, an index
+  and a SHA-256 product manifest. No combined mission ranking or merit number
+  is defined.
