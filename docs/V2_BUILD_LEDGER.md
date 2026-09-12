@@ -412,3 +412,24 @@
 - Released 14 evidence records, six JSON products, six mission pages, an index
   and a SHA-256 product manifest. No combined mission ranking or merit number
   is defined.
+
+## Phase 12 expected information gain — 2026-09-12
+
+- Added a Bayesian decision package with the exact conjugate expected-KL result
+  for a scalar Gaussian prior and independent Gaussian observation, plus the
+  corresponding posterior uncertainty and an imperfect binary-test utility.
+- Defined six transparent synthetic precision requirements for planet mass,
+  planet radius, stellar radius, stellar age, eccentricity and inclination.
+  Every action stores its parameter, units, noise rule, likelihood and support
+  gate; mass predictions and limits cannot enter the mass action.
+- Evaluated the six actions for the leading 25 catalogue candidates. Of 150
+  target-action rows, 83 have finite measured two-sided catalogue uncertainties
+  and therefore support the linear-Gaussian experiment. All rows are SIMULATED.
+- Withheld ephemeris refinement because the catalogue lacks an epoch-period
+  covariance, and withheld XUV, transmission, direct-imaging, albedo and
+  atmosphere-presence actions because their current scenarios do not define
+  calibrated target/instrument likelihoods.
+- Observing cost and time remain `not_modelled`; no information-per-time value is
+  reported. Released CSV/JSON, a generated information map, method documentation
+  and SHA-256 hashes. Release invariants require posterior shrinkage, finite
+  non-negative information and exact withheld-action accounting.

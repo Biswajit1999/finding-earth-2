@@ -20,6 +20,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import sys
 from pathlib import Path
 
@@ -752,6 +753,58 @@ def main() -> int:
         for path in [RESULTS_DIR.parent / relative]
     )
     check("mission observatory product hashes match the release manifest", mission_hashes_match)
+
+    information_dir = RESULTS_DIR / "information_gain"
+    information = json.loads((information_dir / "information_gain.json").read_text())
+    information_rows = pd.read_csv(information_dir / "action_information_gain.csv")
+    supported_information = information_rows[
+        information_rows["expected_information_gain_nats"].notna()
+    ]
+    check(
+        "information-gain release is a complete synthetic target-action grid",
+        information["label"] == "SIMULATED"
+        and information["candidate_count"] == 25
+        and information["action_count"] == 6
+        and len(information_rows) == 150
+        and len(supported_information) == 83
+        and information_rows["label"].eq("SIMULATED").all(),
+    )
+    check(
+        "supported Gaussian actions reduce uncertainty and have finite non-negative EIG",
+        supported_information["expected_information_gain_nats"].ge(0).all()
+        and supported_information["expected_information_gain_nats"].map(math.isfinite).all()
+        and (
+            supported_information["expected_posterior_sigma"]
+            < supported_information["prior_sigma"]
+        ).all()
+        and supported_information["cost_or_time"].eq("not_modelled").all(),
+    )
+    withheld_actions = {item["action_id"] for item in information["withheld_actions"]}
+    check(
+        "unsupported actions remain withheld rather than receiving generic instrument values",
+        withheld_actions
+        == {
+            "ephemeris_refinement",
+            "xuv_observation",
+            "transmission_spectrum",
+            "direct_imaging_detection",
+            "albedo_measurement",
+            "atmospheric_presence_test",
+        }
+        and all(item["status"].startswith("withheld_") for item in information["withheld_actions"])
+        and "Cost and time are not modelled" in information["claim_boundary"],
+    )
+    information_manifest = json.loads(
+        (information_dir / "information_gain_products.json").read_text()
+    )
+    information_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in information_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check("information-gain product hashes match the release manifest", information_hashes_match)
 
     print()
     if FAILURES:

@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **12 next — Phase 11 mission observatory complete**; v2 is not complete.
+- Current phase: **13 next — Phase 12 expected information gain complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -9,7 +9,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 267 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 273 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -112,9 +112,15 @@
   boundary. Fourteen evidence records retain dated official sources. Future
   release adapters refuse to label Gaia DR4 or pre-release ANDES, PLATO, HWO
   and Roman science data as observations. No combined mission ranking exists.
-- Exact next action: implement expected information gain as an action-specific,
-  uncertainty-reduction framework without collapsing mission capabilities into
-  a universal merit number.
+- Phase 12 information gain: the exact scalar linear-Gaussian expected-KL
+  solution now evaluates 150 synthetic target-action combinations for the 25
+  leading candidates. Eighty-three rows have adequate two-sided catalogue
+  uncertainties across six named precision requirements. Cost remains separate.
+  Ephemeris, XUV, atmosphere, albedo, transmission-spectrum and HWO-detection
+  actions are withheld until defensible joint posteriors or instrument likelihoods
+  exist; no generic instrument precision is fabricated.
+- Exact next action: run the Solar-System falsification and cross-model robustness
+  suite, exposing Venus-like similarity failures and unsupported model domains.
 
 ## Execution contract
 
