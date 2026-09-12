@@ -410,6 +410,76 @@ def main() -> int:
         continuous_hashes_match,
     )
 
+    environment_dir = RESULTS_DIR / "environment"
+    environment = json.loads(
+        (environment_dir / "xuv_escape_scenarios.json").read_text()
+    )
+    environment_records = environment["records"]
+    check(
+        "XUV environment release contains the fixed high-value target set",
+        environment["labels"] == ["DERIVED", "SCENARIO"]
+        and len(environment_records) == 60
+        and [row["earth2_rank"] for row in environment_records] == list(range(1, 61)),
+    )
+    muscles_records = [
+        row for row in environment_records if row["muscles_current_environment"] is not None
+    ]
+    check(
+        "MUSCLES matches retain stitched-evidence labels and archive source hashes",
+        len(muscles_records) == 9
+        and len({row["hostname"] for row in muscles_records}) == 3
+        and all(
+            row["muscles_current_environment"]["evidence_basis"]
+            == "MAST_MUSCLES_STITCHED_OBSERVED_RECONSTRUCTED_MODEL_SED"
+            and len(row["muscles_current_environment"]["source_sha256"]) == 64
+            and row["muscles_current_environment"]["bands"]["xuv_5_912a"][
+                "flux_at_planet_w_m2"
+            ]
+            > 0
+            for row in muscles_records
+        ),
+    )
+    escape_records = [
+        row
+        for row in environment_records
+        if row["escape_status"] == "energy_limited_scenario_ensemble"
+    ]
+    check(
+        "energy-limited escape ensembles span every declared assumption combination",
+        len(escape_records) == environment["population"]["with_escape_ensemble"]
+        and all(len(row["escape_scenarios"]) == 27 for row in escape_records)
+        and all(
+            scenario["label"] == "SCENARIO"
+            and scenario["current_mass_loss_kg_s"] > 0
+            and scenario["integrated_lost_earth_masses"] > 0
+            and 0 < scenario["tide_factor"] <= 1
+            for row in escape_records
+            for scenario in row["escape_scenarios"]
+        ),
+    )
+    check(
+        "upper-limit masses never enter the atmospheric-escape calculation",
+        all(
+            not row["escape_scenarios"]
+            for row in environment_records
+            if row["planet_mass_basis"] == "upper_limit_not_used"
+        ),
+    )
+    environment_manifest = json.loads(
+        (environment_dir / "environment_products.json").read_text()
+    )
+    environment_hashes_match = all(
+        path.exists()
+        and path.stat().st_size == metadata["bytes"]
+        and hashlib.sha256(path.read_bytes()).hexdigest() == metadata["sha256"]
+        for relative, metadata in environment_manifest["files"].items()
+        for path in [RESULTS_DIR.parent / relative]
+    )
+    check(
+        "XUV and escape product hashes match the release manifest",
+        environment_hashes_match,
+    )
+
     print()
     if FAILURES:
         print(f"{len(FAILURES)} invariant(s) failed:")

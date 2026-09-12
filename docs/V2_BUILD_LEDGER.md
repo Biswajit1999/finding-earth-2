@@ -318,3 +318,25 @@
   invariants require full catalogue accounting, bounded probabilities and
   lifetime fractions, complete-track support, exact luminosity anchoring,
   climate-agreement arithmetic and matching product hashes.
+
+## Phase 8 XUV environments and atmospheric escape — 2026-09-12
+
+- Selected the top 60 ranked non-control planets at or below 2.5 Earth radii;
+  46 have the age, stellar mass and bolometric flux needed for bounded
+  saturated-then-decaying XUV histories. Low, nominal and extended/high
+  scenarios retain their saturation level, lifetime and decay assumptions.
+- Downloaded and hash-pinned current MAST MUSCLES products for Proxima
+  Centauri, GJ 667 C and TRAPPIST-1. Nine planet rows use their exact-host
+  5–912 Å XUV, FUV, NUV and reconstructed Ly-alpha band integrals. The evidence
+  label states that the SEDs stitch observations, reconstructions and models;
+  EUV is not presented as directly observed.
+- Added an Erkaev-style Roche correction and the transparent energy-limited
+  escape equation. Forty-three candidates support all 27 combinations of
+  three XUV histories, three heating efficiencies and three XUV absorption
+  radii. Initial-envelope fractions remain sensitivity denominators, not
+  assumed atmospheric detections.
+- Measured mass, minimum-mass, deprojected and mass-radius prediction inputs
+  remain distinct. Three upper-limit rows do not enter escape calculations.
+- Released CSV/JSON, bolometric-versus-XUV and escape-sensitivity PNG/SVG
+  figures, and a SHA-256 product manifest. No XUV value becomes a habitability
+  penalty and no escape scenario decides whether an atmosphere exists.

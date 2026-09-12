@@ -1,6 +1,6 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **8 next — Phase 7 time-dependent HZ and climate-boundary sensitivity complete**; v2 is not complete.
+- Current phase: **9 next — Phase 8 XUV environment and escape scenarios complete**; v2 is not complete.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
   measurement references, Kopparapu HZ, legacy ESI, Monte Carlo uncertainty,
@@ -85,9 +85,15 @@
   and `f_CHZ`, and three separate Kopparapu boundary prescriptions. Unsupported
   systems remain `undetermined`; the result is not evidence of surface liquid
   water, habitability or life.
-- Exact next action: build the supported-system stellar UV/XUV evidence layer,
-  integrate defensible exposure histories, and keep atmospheric escape as a
-  separate scenario ensemble rather than a habitability penalty.
+- Phase 8 environment: the 60 highest-ranked terrestrial-size candidates now
+  carry separate bolometric and XUV diagnostics; 46 support bounded activity
+  histories, 43 support 27-case energy-limited escape ensembles, and nine rows
+  across Proxima Centauri, GJ 667 C and TRAPPIST-1 use exact-host pinned MAST
+  MUSCLES SEDs. Stitched/reconstructed spectral evidence and all scenario
+  assumptions remain explicit.
+- Exact next action: implement atmospheric scale-height and transmission-signal
+  scenarios, then upgrade modern atmospheric spectrum-file provenance without
+  converting a retrieval or a spectral feature into a biosignature claim.
 
 ## Execution contract
 
