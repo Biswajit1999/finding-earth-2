@@ -6,6 +6,32 @@
 
 **A reproducible, data-driven search for potentially Earth-like worlds across the public astronomical archives.**
 
+## Project tour and latest research snapshot
+
+<p align="center">
+  <a href="media/finding-earth-2-project.mp4">
+    <img src="media/linkedin-earth2-plots-1200x1200.png" alt="Finding Earth 2.0 research snapshot: interactive 3D exoplanet map, distance distribution, propagated candidate uncertainty and atmospheric spectrum coverage" width="92%">
+  </a>
+</p>
+
+<p align="center">
+  <strong><a href="media/finding-earth-2-project.mp4">▶ Watch the 80-second project tour</a></strong>
+  · <a href="https://biswajit1999.github.io/finding-earth-2/">Open the interactive observatory</a>
+</p>
+
+The card and video are direct captures of the implemented website and generated
+scientific plots. Every dot in the 3D panel is a known exoplanet system with a
+measured distance in the analysed catalogue; it is not an artist's impression.
+
+<p align="center">
+  <img src="results/atmosphere/earth_analogue_spectrum_screen.png" alt="Atmospheric evidence coverage funnel for the strict small-and-temperate candidate sample" width="92%">
+</p>
+
+The latest spectrum cross-match retains **15** strict small-and-temperate
+candidates, but finds tabulated wavelength spectra for **0** of those exact
+targets. This is an observational coverage gap, not a conclusion that their
+atmospheres or life are absent.
+
 ## v2 release status
 
 **Finding Earth 2.0 v2 is publication-ready.** The project follows the funnel
@@ -144,6 +170,27 @@ routinely conflated.
 | Planets with published eclipse spectra | 54 |
 | Plot-ready atmospheric spectra (≥4 usable points) | 66 transmission + 31 eclipse |
 | Measurement-level provenance links | 89,131 across 1,814 publications |
+
+### Why 15 candidates does not mean 15 habitable worlds
+
+The **15** is a screening count: confirmed planets that are nominally inside
+the conservative stellar habitable zone and smaller than 1.6 Earth radii. It
+does not measure surface water, atmospheric pressure, climate stability or
+biology. The **0** in the spectrum-coverage figure means that none of those
+exact 15 has a tabulated atmospheric spectrum in the ingested archives. It is
+not a zero-percent habitability estimate.
+
+Carbon, hydrogen, nitrogen, oxygen, phosphorus and sulfur are important to life
+as we know it, but detecting a few elements or molecules is insufficient. They
+are widespread and can be produced without biology; even oxygen can have
+abiotic false-positive pathways. A credible assessment needs the atmosphere,
+surface and stellar environment together, repeated spectra, disequilibrium
+tests and explicit exclusion of non-biological explanations. Organic or
+subsurface life remains possible on worlds that fail this project's narrow
+Earth-analogue screen, but current observations do not establish that it exists.
+See [NASA's habitable-zone explanation](https://science.nasa.gov/exoplanets/habitable-zone/),
+[NASA's discussion of searching for life](https://science.nasa.gov/exoplanets/can-we-find-life/)
+and the [biosignature assessment framework](https://doi.org/10.1089/ast.2017.1737).
 
 > **The headline finding is a scarcity result.** Of 6,354 confirmed
 > planets, only **15** are both inside the
