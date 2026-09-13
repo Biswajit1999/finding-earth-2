@@ -3,7 +3,7 @@
 **Release:** 2.0.0  
 **Scientific status:** complete for the declared v2 scope; conditional inference,
 not a discovery or probability of life  
-**Audited source checkpoint:** `096ccc48c57d0cfb12f0dc089c3e9dbac71976bc`
+**Audited source checkpoint:** `79d6c9b59d82a184af47bb118d866f3aed87efc5`
 **Website:** <https://biswajit1999.github.io/finding-earth-2/>  
 **Author:** Biswajit Jana
 
@@ -178,7 +178,7 @@ deposit is prepared; its DOI is `pending` until minted and is not fabricated.
 ## 23. Git commit SHA
 
 The publication bundle records source checkpoint
-`096ccc48c57d0cfb12f0dc089c3e9dbac71976bc`, which contains the completed core,
+`79d6c9b59d82a184af47bb118d866f3aed87efc5`, which contains the completed core,
 Beyond Earth 2.0 chapter and LinkedIn release package. The authoritative release
 reference is the repository's annotated `v2.0.0` tag.
 

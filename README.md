@@ -28,11 +28,12 @@ The work answers four questions:
 |---|---|
 | Scientific status | v2.0; evidence-labelled, conditional inference; no life claim |
 | Analysis timestamp | `2026-08-28T20:00:42Z` |
-| Frozen source checkpoint | `d1772672e0c85ac2690016de71fde19c112f7efb` |
+| Frozen source checkpoint | `79d6c9b59d82a184af47bb118d866f3aed87efc5` |
 | Data release | [`earth2-v2-data-release/`](earth2-v2-data-release/) + deterministic ZIP; Zenodo DOI pending |
 | Manuscript | [`paper/main.tex`](paper/main.tex), generated values and verified bibliography |
 | Interactive observatory | [Open the live website](https://biswajit1999.github.io/finding-earth-2/) |
 | Beyond Earth 2.0 | [Distance, contact and extragalactic feasibility](https://biswajit1999.github.io/finding-earth-2/beyond/) |
+| Author story and roadmap | [What I learned and what I plan next](https://biswajit1999.github.io/finding-earth-2/perspective/) · [`docs/AUTHOR_VISION_AND_ROADMAP.md`](docs/AUTHOR_VISION_AND_ROADMAP.md) |
 | Release documentation | [`docs/DATA_RELEASE.md`](docs/DATA_RELEASE.md) |
 
 Reproduce and validate the publication products:
@@ -57,7 +58,7 @@ cd web && npm ci && npm run build && npm run audit:visual
 
 ---
 
-> **Scientific status: Beta.** The Earth-2.0 index ranks physical similarity
+> **Scientific boundary.** The Earth-2.0 index ranks physical similarity
 > and observational evidence; it does not estimate the probability that a
 > planet supports life. Population analysis uses NASA Exoplanet Archive
 > catalogues cross-matched against Gaia DR3 astrometry by exact source

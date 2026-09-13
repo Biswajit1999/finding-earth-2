@@ -156,6 +156,11 @@
 - LinkedIn package: 30.00-second 1350×1080 H.264/yuv420p MP4, inspected six-scene
   contact sheet, matching cover frame, reproducible Playwright capture script and
   ready-to-post caption with website, repository and Beyond links.
+- Final author-story upgrade: `/perspective` now turns the future questions into
+  a four-horizon animated mission trajectory with a reduced-motion path, responsive
+  cards and explicit author/science boundaries. `docs/AUTHOR_VISION_AND_ROADMAP.md`
+  records why the project exists, what it built, what it taught and the five-part
+  future plan in a shareable report.
 - Release engineering: the deterministic bundle now writes canonical LF bytes on
   every operating system, and NumPy array annotations are portable across the
   supported Python 3.10/3.12 CI matrix. The v2.0.0 tag and public GitHub Release

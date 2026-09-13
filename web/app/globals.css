@@ -524,6 +524,99 @@ p, li {
   background-size: 64px 64px;
 }
 
+/* --- author mission trajectory ----------------------------------------- */
+.future-roadmap {
+  background:
+    radial-gradient(circle at 18% 36%, color-mix(in srgb, var(--color-cyan) 10%, transparent), transparent 30rem),
+    radial-gradient(circle at 82% 70%, color-mix(in srgb, var(--color-gold) 7%, transparent), transparent 32rem),
+    var(--color-deep);
+}
+.future-grid {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.28;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--color-cyan) 10%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--color-cyan) 10%, transparent) 1px, transparent 1px);
+  background-size: 56px 56px;
+  mask-image: linear-gradient(to bottom, transparent, black 18%, black 82%, transparent);
+}
+.future-orbit {
+  position: absolute;
+  border: 1px solid color-mix(in srgb, var(--color-cyan) 42%, transparent);
+  border-radius: 999px;
+}
+.future-orbit::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--color-cyan);
+  box-shadow: 0 0 18px var(--color-cyan);
+}
+.future-orbit-outer { inset: 0; border-style: dashed; }
+.future-orbit-inner { inset: 27px; border-color: color-mix(in srgb, var(--color-gold) 42%, transparent); }
+.future-orbit-inner::after { background: var(--color-gold); box-shadow: 0 0 18px var(--color-gold); }
+.future-core {
+  position: absolute;
+  inset: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-line-strong);
+  border-radius: 999px;
+  text-align: center;
+  background: color-mix(in srgb, var(--color-panel) 82%, transparent);
+  box-shadow: 0 0 48px color-mix(in srgb, var(--color-cyan) 9%, transparent);
+  backdrop-filter: blur(10px);
+}
+.future-beam {
+  position: absolute;
+  top: 1.75rem;
+  bottom: 1.75rem;
+  left: 0.35rem;
+  width: 1px;
+  transform-origin: top;
+  background: linear-gradient(var(--color-cyan), color-mix(in srgb, var(--color-gold) 65%, transparent), transparent);
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-cyan) 55%, transparent);
+}
+.future-card {
+  background: linear-gradient(115deg, color-mix(in srgb, var(--color-panel) 94%, transparent), color-mix(in srgb, var(--color-raised) 62%, transparent));
+  backdrop-filter: blur(14px);
+  transition: border-color 220ms ease, transform 220ms ease, background 220ms ease;
+}
+.future-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: linear-gradient(105deg, transparent 25%, color-mix(in srgb, var(--color-cyan) 8%, transparent), transparent 70%);
+  transform: translateX(-45%);
+  transition: opacity 220ms ease, transform 500ms ease;
+}
+.future-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--color-cyan) 42%, var(--color-line));
+}
+.future-card:hover::after { opacity: 1; transform: translateX(45%); }
+.future-node {
+  position: absolute;
+  top: 50%;
+  left: -1.72rem;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--color-deep);
+  border-radius: 999px;
+  background: var(--color-cyan);
+  box-shadow: 0 0 0 1px var(--color-cyan), 0 0 16px var(--color-cyan);
+}
+
 /* ==========================================================================
    Reduced motion — a genuine low-motion path, not just disabled transitions
    ========================================================================== */

@@ -636,7 +636,8 @@ def write_products(
         },
     }
     summary_path = output / "hwo_precursor_atlas.json"
-    summary_path.write_text(json.dumps(payload, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    with summary_path.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(payload, indent=2, sort_keys=True) + "\n")
     product_paths = [
         atlas_path,
         exoearth_path,
@@ -656,9 +657,8 @@ def write_products(
             for path in product_paths
         },
     }
-    (output / "hwo_products.json").write_text(
-        json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
-    )
+    with (output / "hwo_products.json").open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(json.dumps(manifest, indent=2, sort_keys=True) + "\n")
 
 
 def main() -> None:

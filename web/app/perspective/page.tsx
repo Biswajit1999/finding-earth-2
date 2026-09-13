@@ -3,12 +3,13 @@ import Link from "next/link";
 
 import { PageHeader } from "@/components/PageHeader";
 import { LearningJourney } from "@/components/perspective/LearningJourney";
+import { FutureRoadmap } from "@/components/perspective/FutureRoadmap";
 import { LiveDataPulse } from "@/components/perspective/LiveDataPulse";
 import { getSummary } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "Beyond Earth 2.0 — An Author’s Perspective",
-  description: "Biswajit Jana’s learning log, research dictionary, author conclusion and forward-looking questions from building Finding Earth 2.0.",
+  description: "Biswajit Jana’s learning log, research dictionary, author conclusion and future roadmap from building Finding Earth 2.0.",
 };
 
 export default function PerspectivePage() {
@@ -51,6 +52,8 @@ export default function PerspectivePage() {
           </div>
         </section>
 
+        <FutureRoadmap />
+
         <section className="mx-auto max-w-[1400px] px-4 pb-20 sm:px-6">
           <LiveDataPulse records={summary.scale.total_source_records} planets={summary.population.n_confirmed_planets} generated={summary.generated_utc} />
         </section>
@@ -61,13 +64,14 @@ export default function PerspectivePage() {
             <blockquote className="mt-6 max-w-5xl font-[family-name:var(--font-display)] text-3xl font-light leading-[1.25] text-[var(--color-ivory)] sm:text-4xl">
               “I did not find a second Earth. I learned how difficult it is to earn that conclusion—and built a system that makes every step of the search inspectable.”
             </blockquote>
-            <p className="mt-8 max-w-[70ch] text-sm leading-relaxed text-[var(--color-muted)]">The most honest result is not a winner. It is a map of what humanity has measured, what the models add, where the selection effects hide, and what evidence is still missing. That map can improve as the archives grow.</p>
+            <p className="mt-8 max-w-[70ch] text-sm leading-relaxed text-[var(--color-muted)]">The most honest result is not a winner. It is a map of what humanity has measured, what the models add, where the selection effects hide, and what evidence is still missing. My plan is to keep that map alive, make its uncertainty more connected, and let new observations—not ambition alone—move its conclusions forward.</p>
             <div className="mt-8 flex flex-wrap gap-5 text-sm">
               <Link href="/research" className="link">Read the research article →</Link>
               <Link href="/methods" className="link">Inspect the methods →</Link>
               <Link href="/occurrence" className="link">See observed become intrinsic →</Link>
               <Link href="/universe" className="link">Explore the discovery universe →</Link>
               <Link href="/beyond" className="link">Calculate distance and contact →</Link>
+              <a href="https://github.com/Biswajit1999/finding-earth-2/blob/main/docs/AUTHOR_VISION_AND_ROADMAP.md" className="link">Read my full roadmap →</a>
             </div>
           </div>
         </section>

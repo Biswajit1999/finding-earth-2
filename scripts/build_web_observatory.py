@@ -44,7 +44,11 @@ def read_csv(relative: str) -> list[dict[str, Any]]:
 
 
 def sha256(relative: str) -> str:
-    return hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
+    # Every input is repository text. Hash its canonical LF representation so
+    # the browser provenance contract matches Git blobs on every platform.
+    text = (ROOT / relative).read_text(encoding="utf-8")
+    canonical = text.replace("\r\n", "\n").replace("\r", "\n").encode("utf-8")
+    return hashlib.sha256(canonical).hexdigest()
 
 
 def take_fields(row: dict[str, Any], fields: tuple[str, ...]) -> dict[str, Any]:

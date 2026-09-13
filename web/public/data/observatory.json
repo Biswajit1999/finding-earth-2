@@ -19081,7 +19081,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "European Southern Observatory and ANDES consortium",
@@ -19153,7 +19153,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "European Space Agency / Gaia DPAC",
@@ -19244,7 +19244,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "NASA",
@@ -19319,7 +19319,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "NASA / ESA / CSA",
@@ -19420,7 +19420,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "European Space Agency",
@@ -19509,7 +19509,7 @@
           "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
           "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
           "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-          "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+          "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
         },
         "mission": {
           "agency": "NASA",
@@ -25566,17 +25566,17 @@
     }
   },
   "source_hashes": {
-    "results/analysis_summary.json": "70eba31d5714403af122c469ef585c03d76098e28a62b6a0ed18b73b9d3e971f",
+    "results/analysis_summary.json": "a2c4b0b4c9bbc502db7bfd025858322fb8c99406fe00e9ff70f1ab21a1fb495d",
     "results/atmosphere/atmosphere_evidence.json": "234b20042d6d7662001452a6b5c99156d5a18803c93c58c0a0bc0cae9c8cbed1",
     "results/climate/continuous_hz.json": "b72c3921403c123f934ab80d97591ec6331b31cfdc18784de431e10ddbb89c06",
     "results/composition/bulk_composition_ensemble.json": "04268663640dee5719352a8fed409699373289d17e49004ebe703e10b6ff322a",
     "results/environment/xuv_escape_scenarios.json": "b26486d3eeb6a16c69423277604aa3e19ff8fff64c0e3d8d15e03224345fcb33",
-    "results/evidence/mass_evidence_examples.json": "86161f356e3ad085a6fdd90991c0d1e633bcf7828416186b6f2daa0c90985f1a",
-    "results/evidence/summary.json": "65ec1857602d3a3097b2b1cb58f68ab25f2e6a30b1ada60c98315bd0868a5b21",
+    "results/evidence/mass_evidence_examples.json": "bdff84f5a3d464cbd8e0f0930062e3a7c1205b8829f3c82e7482c21543b0b41e",
+    "results/evidence/summary.json": "32b6051aa3201f2b095611f1d63b98210abebc8e9e03342b773e56e8a03bbaf7",
     "results/falsification/candidate_model_sensitivity.csv": "d3a1975ac7e5253e9723e40e72718ea69606236fd011e407c2e7ce90e0e37f46",
     "results/falsification/falsification_summary.json": "e8fc2eca593f19baf2e8d86509f40434e044b86a9cdc7464bbf367a50724a718",
     "results/falsification/solar_system_controls.csv": "920113f62d6517db562dc21eb2982ad3141ca41686fc27d4c9cacbdbc5e2618a",
-    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d",
+    "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3",
     "results/hwo/known_planet_accessibility.csv": "07a4682a784030387c57f0fc88280d3cc6dac92af8158e62dc6a7c36fc206764",
     "results/information_gain/action_information_gain.csv": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76",
     "results/information_gain/information_gain.json": "0dc09ddd11a93f23d5cd965ef439b4e31ec1361e190bebf40a70674128179c9d",

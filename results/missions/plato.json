@@ -21,7 +21,7 @@
     "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
     "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
     "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-    "results/hwo/hwo_precursor_atlas.json": "67da6c7330db906dcab738df1e4e8cfa5cb44b437a3bede02a3ac6b08d7f4c1d"
+    "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
   },
   "mission": {
     "agency": "European Space Agency",

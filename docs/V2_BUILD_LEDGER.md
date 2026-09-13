@@ -543,3 +543,15 @@
 - Added explicit NumPy array annotations where NumPy 2.2 and newer stubs infer
   different shape precision. Mypy now accepts the same scientific source across
   the supported Python 3.10 and 3.12 CI matrix without changing calculations.
+
+## Final author-story and interface polish — 2026-09-13
+
+- Reviewed the live author perspective and added a cinematic four-horizon mission
+  trajectory for the project's future: continuous evidence updates, joint
+  uncertainty, atmosphere evidence and future-observatory adapters.
+- Added subtle grid depth, cyan/gold orbit motion, a scroll-drawn timeline and
+  responsive glass panels. Motion respects `prefers-reduced-motion`; the evidence
+  labels and author/science boundary remain explicit.
+- Published a shareable author vision and roadmap explaining why Biswajit Jana
+  built the project, what it contains, what he learned and the next five planned
+  research directions.
