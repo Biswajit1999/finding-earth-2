@@ -1,5 +1,125 @@
 {
   "atmosphere": {
+    "earth_analogue_screen": {
+      "claim_boundary": "This cross-match measures published spectral coverage. It does not detect an atmosphere, identify a molecule, establish habitability, or provide evidence of life.",
+      "confirmed_planets": 6354,
+      "finding": "None of the 15 strict small-and-temperate candidates has an indexed published spectrum or tabulated wavelength measurement in the ingested archives.",
+      "label": "OBSERVED",
+      "nearby_comparison_set": [
+        {
+          "earth2_rank": 31,
+          "median_uncertainty_ppm": 18265.08,
+          "planet": "TRAPPIST-1 g",
+          "radius_earth": 1.129,
+          "spectral_points": 13,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 1.635,
+          "wavelength_min_um": 1.1375
+        },
+        {
+          "earth2_rank": 65,
+          "median_uncertainty_ppm": 99.0,
+          "planet": "TRAPPIST-1 b",
+          "radius_earth": 1.116,
+          "spectral_points": 1,
+          "spectrum_types": "eclipse",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 15.0,
+          "wavelength_min_um": 15.0
+        },
+        {
+          "earth2_rank": 71,
+          "median_uncertainty_ppm": 28.3525,
+          "planet": "K2-3 c",
+          "radius_earth": 1.582,
+          "spectral_points": 2,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 4.5,
+          "wavelength_min_um": 0.6
+        },
+        {
+          "earth2_rank": 94,
+          "median_uncertainty_ppm": 52.725,
+          "planet": "K2-3 d",
+          "radius_earth": 1.458,
+          "spectral_points": 2,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 4.5,
+          "wavelength_min_um": 0.6
+        },
+        {
+          "earth2_rank": 104,
+          "median_uncertainty_ppm": 172.0,
+          "planet": "Kepler-138 c",
+          "radius_earth": 1.51,
+          "spectral_points": 2,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 4.5,
+          "wavelength_min_um": 0.6
+        },
+        {
+          "earth2_rank": 181,
+          "median_uncertainty_ppm": 77.1,
+          "planet": "GJ 1132 b",
+          "radius_earth": 1.19151465,
+          "spectral_points": 117,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 1.637,
+          "wavelength_min_um": 0.475
+        },
+        {
+          "earth2_rank": 293,
+          "median_uncertainty_ppm": 425.0,
+          "planet": "Kepler-249 d",
+          "radius_earth": 1.57,
+          "spectral_points": 4,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 4.5,
+          "wavelength_min_um": 0.6
+        },
+        {
+          "earth2_rank": 411,
+          "median_uncertainty_ppm": 20.0,
+          "planet": "GJ 486 b",
+          "radius_earth": 1.289,
+          "spectral_points": 203,
+          "spectrum_types": "transmission",
+          "strict_conservative_hz": false,
+          "wavelength_max_um": 5.155,
+          "wavelength_min_um": 2.854
+        }
+      ],
+      "next_observation": "The next decisive step is target-specific atmospheric follow-up: obtain a calibrated spectrum, preserve each reduction separately, and test atmospheric models only after instrument and stellar systematics are quantified.",
+      "schema_version": "1.0",
+      "selection": "confirmed planet; nominal conservative HZ; radius < 1.6 Earth radii",
+      "strict_candidate_names": [
+        "Proxima Cen b",
+        "GJ 1061 d",
+        "GJ 1002 b",
+        "Wolf 1069 b",
+        "Teegarden's Star c",
+        "Kepler-1649 c",
+        "GJ 1002 c",
+        "Kepler-1229 b",
+        "GJ 667 C f",
+        "TOI-700 d",
+        "Kepler-442 b",
+        "Kepler-186 f",
+        "GJ 667 C e",
+        "TOI-715 b",
+        "Kepler-62 f"
+      ],
+      "strict_candidates_with_indexed_reductions": 0,
+      "strict_candidates_with_tabulated_measurements": 0,
+      "strict_small_temperate_candidates": 15,
+      "title": "Atmospheric spectrum screen for the strict Earth-analogue sample"
+    },
     "labels": [
       "OBSERVED",
       "DERIVED",
@@ -25568,6 +25688,7 @@
   "source_hashes": {
     "results/analysis_summary.json": "a2c4b0b4c9bbc502db7bfd025858322fb8c99406fe00e9ff70f1ab21a1fb495d",
     "results/atmosphere/atmosphere_evidence.json": "234b20042d6d7662001452a6b5c99156d5a18803c93c58c0a0bc0cae9c8cbed1",
+    "results/atmosphere/earth_analogue_spectrum_screen.json": "e728f941a2b15227da8d8addf5c8fb40defb324b5686ef14c14ea6db52f8d4cf",
     "results/climate/continuous_hz.json": "b72c3921403c123f934ab80d97591ec6331b31cfdc18784de431e10ddbb89c06",
     "results/composition/bulk_composition_ensemble.json": "04268663640dee5719352a8fed409699373289d17e49004ebe703e10b6ff322a",
     "results/environment/xuv_escape_scenarios.json": "b26486d3eeb6a16c69423277604aa3e19ff8fff64c0e3d8d15e03224345fcb33",

@@ -593,7 +593,11 @@ def fig_period_radius(df: pd.DataFrame, out: Path) -> Path:
     p = _planets(df)
     p = p[p["pl_orbper"].notna() & p["pl_rade"].notna()]
 
-    fig, ax = plt.subplots(figsize=(7.6, 5.6))
+    # Reserve a dedicated left rail for the discovery-method key. Keeping the
+    # key outside the data axes prevents it from covering the dense short-period
+    # population while remaining readable at article width.
+    fig, ax = plt.subplots(figsize=(9.4, 5.8))
+    fig.subplots_adjust(left=0.30, right=0.98, bottom=0.13, top=0.90)
     for method, colour in METHOD_COLOURS.items():
         sub = p[p["discoverymethod"] == method]
         if sub.empty:
@@ -633,7 +637,17 @@ def fig_period_radius(df: pd.DataFrame, out: Path) -> Path:
     ax.set_xlabel("Orbital period  [days]")
     ax.set_ylabel(r"Planet radius  [R$_\oplus$]")
     _title(ax, "Period-radius diagram: where the known population sits")
-    ax.legend(loc="upper left", fontsize=7, markerscale=1.6, ncol=1)
+    ax.legend(
+        loc="upper left",
+        bbox_to_anchor=(-0.43, 1.0),
+        fontsize=7,
+        markerscale=1.6,
+        ncol=1,
+        borderaxespad=0,
+        frameon=False,
+        title="Discovery method",
+        title_fontsize=7.5,
+    )
     _source_note(ax)
     fig.savefig(out); plt.close(fig)
     return out
@@ -711,12 +725,15 @@ def fig_distance_distribution(df: pd.DataFrame, out: Path) -> Path:
     dist = pd.to_numeric(p["sy_dist"], errors="coerce").dropna()
     dist = dist[dist > 0]
 
-    fig, ax = plt.subplots(figsize=(7.6, 4.8))
+    fig = plt.figure(figsize=(9.4, 6.0))
+    grid = fig.add_gridspec(3, 1, height_ratios=[1.15, 0.34, 4], hspace=0.02)
+    label_ax = fig.add_subplot(grid[0])
+    title_ax = fig.add_subplot(grid[1])
+    ax = fig.add_subplot(grid[2])
     ax.hist(dist, bins=np.logspace(np.log10(max(dist.min(), 1)), np.log10(dist.max()), 60).tolist(),
            color=VIOLET, alpha=0.82, linewidth=0)
 
     top = p.dropna(subset=["earth2_index", "sy_dist"]).nlargest(8, "earth2_index")
-    ymax = ax.get_ylim()[1]
     # Sibling planets in the same system (TRAPPIST-1 e/f/g, GJ 1002 b/c) sit at
     # an identical distance and would otherwise print overlapping labels on
     # the same vertical line. Grouping by host merges them into one label per
@@ -724,25 +741,45 @@ def fig_distance_distribution(df: pd.DataFrame, out: Path) -> Path:
     groups = sorted(
         top.groupby("hostname"), key=lambda kv: float(kv[1]["sy_dist"].iloc[0])
     )
-    # Two systems can sit within a few percent of each other in distance (GJ
-    # 1061 and Teegarden's Star both do here), too close for rotated labels on
-    # separate lines to avoid touching. Alternating the label's starting
-    # height resolves it without needing to know in advance which pairs clash.
+    best_ranks = [float(pd.to_numeric(grp["earth2_rank"], errors="coerce").min()) for _, grp in groups]
+    rank_max = max(best_ranks)
+    rank_colours = {
+        host: plt.get_cmap("viridis")(
+            0.10 + 0.80 * ((float(pd.to_numeric(grp["earth2_rank"], errors="coerce").min()) - 1)
+                           / max(rank_max - 1, 1))
+        )
+        for host, grp in groups
+    }
+    # Candidate names live in their own two-row key instead of on the histogram.
+    # Vertical markers still connect each system to its measured distance.
     for i, (host, grp) in enumerate(groups):
         d = float(grp["sy_dist"].iloc[0])
+        colour = rank_colours[host]
+        best_rank = int(pd.to_numeric(grp["earth2_rank"], errors="coerce").min())
         letters = sorted(n.replace(host, "").strip() for n in grp["pl_name"])
         label = host + " " + "/".join(letters) if len(grp) > 1 else grp["pl_name"].iloc[0]
-        ax.axvline(d, color=WARM, lw=0.9, alpha=0.75, zorder=4)
-        y_start = ymax if i % 2 == 0 else ymax * 0.4
-        ax.annotate(label, (d, y_start), xytext=(-3, -4),
-                    textcoords="offset points", rotation=90, fontsize=6.6,
-                    color=WARM, ha="right", va="top")
+        ax.axvline(d, color=colour, lw=1.15, alpha=0.88, zorder=4)
+        col, row = i % 4, i // 4
+        x = 0.02 + col * 0.245
+        y = 0.62 - row * 0.46
+        label_ax.plot([x, x + 0.025], [y, y], color=colour, lw=2.0,
+                      transform=label_ax.transAxes, clip_on=False)
+        label_ax.text(x + 0.035, y, f"#{best_rank}  {label}  ·  {d:.1f} pc", fontsize=7.2,
+                      color=INK, va="center", transform=label_ax.transAxes)
+
+    label_ax.text(0.0, 1.0, "TOP-CANDIDATE DISTANCE MARKERS · COLOUR ENCODES EARTH 2.0 RANK",
+                  fontsize=7,
+                  color=MUTED, va="top", transform=label_ax.transAxes)
+    label_ax.axis("off")
+    title_ax.text(0.5, 0.5, "Distance distribution: top candidates sit in the nearest tail",
+                  ha="center", va="center", fontsize=13, color=INK, weight="600",
+                  transform=title_ax.transAxes)
+    title_ax.axis("off")
 
     ax.set_xscale("log")
     ax.set_yscale("log")
     ax.set_xlabel("System distance  [pc]")
     ax.set_ylabel("Planets (log)")
-    _title(ax, "Distance distribution: top candidates sit in the nearest tail")
     _source_note(ax)
     fig.savefig(out); plt.close(fig)
     return out
@@ -892,12 +929,11 @@ def fig_posterior_clouds(df: pd.DataFrame, out: Path, n: int = 6, n_samples: int
     p = _planets(df).dropna(subset=["earth2_index"]).nlargest(n, "earth2_index")
     rng = np.random.default_rng(20260824)
 
-    fig, ax = plt.subplots(figsize=(7.8, 6.4))
+    fig, axes = plt.subplots(2, 3, figsize=(10.8, 7.7))
+    fig.subplots_adjust(left=0.075, right=0.985, bottom=0.12, top=0.91, hspace=0.25, wspace=0.16)
     colours = matplotlib.colormaps["viridis"](np.linspace(0.08, 0.92, len(p)))
 
-    medians = []
-    rade_bounds = []  # (p1, p99) per candidate, to size the x-axis to the data actually drawn
-    for (_, r), colour in zip(p.iterrows(), colours):
+    for ax, ((_, r), colour) in zip(axes.flat, zip(p.iterrows(), colours)):
         rade = sample_split_normal(
             np.array([r["pl_rade"]]), np.array([abs(r.get("pl_radeerr1", 0.05) or 0.05)]),
             np.array([abs(r.get("pl_radeerr2", 0.05) or 0.05)]), n_samples, rng, positive=True,
@@ -909,48 +945,36 @@ def fig_posterior_clouds(df: pd.DataFrame, out: Path, n: int = 6, n_samples: int
         with np.errstate(invalid="ignore", divide="ignore"):
             dens = RHO_EARTH_G_CM3 * mass / (rade**3)
         ok = np.isfinite(rade) & np.isfinite(dens)
-        ax.scatter(rade[ok], dens[ok], s=3, color=colour, alpha=0.05, linewidths=0)
+        # Each candidate receives its own robust view. This keeps a broad
+        # posterior from compressing five well-measured clouds into a sliver.
+        ax.scatter(rade[ok], dens[ok], s=4, color=colour, alpha=0.075, linewidths=0)
         mx, my = float(np.nanmedian(rade[ok])), float(np.nanmedian(dens[ok]))
-        ax.scatter([mx], [my], s=30, color=colour, edgecolors="white", linewidths=0.6, zorder=5)
-        medians.append((mx, my, r["pl_name"], colour))
-        rade_bounds.append((float(np.percentile(rade[ok], 1)), float(np.percentile(rade[ok], 99))))
+        ax.scatter([mx], [my], s=38, color=colour, edgecolors="white", linewidths=0.7, zorder=5)
+        x1, x99 = np.percentile(rade[ok], [1, 99])
+        y1, y99 = np.percentile(dens[ok], [1, 99])
+        x_lo, x_hi = min(float(x1), 1.0), max(float(x99), 1.0)
+        y_lo, y_hi = min(float(y1), 5.514), max(float(y99), 5.514)
+        x_pad = max((x_hi - x_lo) * 0.10, 0.015)
+        y_pad = max((y_hi - y_lo) * 0.10, 0.25)
+        ax.set_xlim(max(0, x_lo - x_pad), x_hi + x_pad)
+        ax.set_ylim(max(0, y_lo - y_pad), y_hi + y_pad)
+        ax.axvline(1.0, color=EARTH, lw=0.7, alpha=0.45, ls="--")
+        ax.axhline(5.514, color=EARTH, lw=0.7, alpha=0.45, ls="--")
+        ax.scatter([1.0], [5.514], s=38, marker="*", c=EARTH,
+                   edgecolors="white", linewidths=0.5, zorder=6)
+        ax.set_title(str(r["pl_name"]), loc="left", fontsize=9,
+                     color=tuple(colour[:3]) + (1.0,), weight="600")
+        ax.text(0.98, 0.04, f"median  {mx:.2f} R⊕ · {my:.2f} g cm⁻³",
+                transform=ax.transAxes, ha="right", va="bottom", fontsize=6.7,
+                color=MUTED)
 
-    # Size the x-axis to the candidates actually plotted rather than a fixed
-    # guess: the current top-ranked set happens to cluster within ~1.0-1.2
-    # R_Earth, and a wide fixed range compresses every cloud into an
-    # unreadable sliver against empty axis. A generous 35% pad on each side
-    # keeps the clouds legible while still framing Earth (1 R_Earth) as the
-    # reference point even if every candidate sits to one side of it.
-    data_lo = min(lo for lo, _ in rade_bounds + [(1.0, 1.0)])
-    data_hi = max(hi for _, hi in rade_bounds + [(1.0, 1.0)])
-    pad = (data_hi - data_lo) * 0.35
-    x_lo, x_hi = max(0.0, data_lo - pad), data_hi + pad
-
-    # The medians cluster tightly in radius (most top candidates ARE close to
-    # 1 R_Earth), so inline offset labels collide. Instead, label slots are
-    # spread evenly along the top margin, ordered left-to-right by radius, with
-    # a thin leader line back to each point -- the same device used for the
-    # Solar System labels in the HZ diagram, for the same reason.
-    medians.sort(key=lambda t: t[0])
-    y_top = 11.4
-    for i, (mx, my, name, colour) in enumerate(medians):
-        lx = x_lo + (i + 0.5) * (x_hi - x_lo) / len(medians)
-        ly = y_top - (i % 2) * 0.55
-        ax.plot([mx, lx], [my, ly], color=colour, lw=0.6, alpha=0.6, zorder=4)
-        ax.annotate(name, (lx, ly), fontsize=8, color=tuple(colour[:3]) + (1.0,),
-                    weight="600", ha="center", va="bottom")
-
-    ax.scatter([1.0], [5.514], s=90, marker="*", c=EARTH, edgecolors="white",
-              linewidths=0.8, zorder=6)
-    ax.annotate("Earth", (1.0, 5.514), textcoords="offset points", xytext=(8, -4),
-                fontsize=9, color=EARTH, weight="600")
-
-    ax.set_xlabel(r"Planet radius  [R$_\oplus$]")
-    ax.set_ylabel(r"Bulk density  [g cm$^{-3}$]")
-    _title(ax, "Monte Carlo posterior clouds: propagated uncertainty for the top candidates")
-    ax.set_xlim(x_lo, x_hi)
-    ax.set_ylim(0, 12)
-    _source_note(ax, "NASA Exoplanet Archive | earth2 Monte Carlo (%d draws/planet)" % n_samples)
+    fig.suptitle("Candidate-by-candidate posterior clouds", fontsize=13, color=INK)
+    fig.supxlabel(r"Planet radius  [R$_\oplus$]", fontsize=9, y=0.055)
+    fig.supylabel(r"Bulk density  [g cm$^{-3}$]", fontsize=9)
+    fig.text(0.99, 0.012,
+             "Independent robust axes per panel · dashed cross marks Earth · "
+             "NASA Exoplanet Archive | earth2 Monte Carlo (%d draws/planet)" % n_samples,
+             ha="right", va="bottom", fontsize=6.5, color=MUTED)
     fig.savefig(out); plt.close(fig)
     return out
 

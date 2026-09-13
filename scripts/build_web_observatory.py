@@ -78,6 +78,7 @@ def main() -> None:
         "results/falsification/candidate_model_sensitivity.csv",
         "results/evidence/summary.json",
         "results/evidence/mass_evidence_examples.json",
+        "results/atmosphere/earth_analogue_spectrum_screen.json",
     ]
 
     summary = read_json(source_files[0])
@@ -102,6 +103,7 @@ def main() -> None:
     sensitivity = read_csv(source_files[15])
     evidence = read_json(source_files[16])
     evidence_examples = read_json(source_files[17])
+    atmospheric_screen = read_json(source_files[18])
 
     ranked_names = {
         item["pl_name"] for item in information_gain["best_supported_action_by_target"]
@@ -209,6 +211,7 @@ def main() -> None:
                 if key != "records"
             },
             "records": atmosphere_records,
+            "earth_analogue_screen": atmospheric_screen,
         },
         "hwo": {
             "labels": hwo["labels"],
@@ -260,6 +263,7 @@ def main() -> None:
         "bolometric-xuv.png": "results/environment/bolometric_vs_xuv.png",
         "escape-sensitivity.png": "results/environment/escape_sensitivity.png",
         "atmosphere-observability.png": "results/atmosphere/transmission_observability.png",
+        "earth-analogue-spectrum-screen.png": "results/atmosphere/earth_analogue_spectrum_screen.png",
         "hwo-atlas.png": "results/hwo/hwo_precursor_atlas.png",
         "information-gain.png": "results/information_gain/expected_information_gain.png",
         "falsification.png": "results/falsification/falsification_and_robustness.png",

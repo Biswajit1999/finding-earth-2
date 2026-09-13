@@ -1,10 +1,10 @@
 {
   "author": "Biswajit Jana",
   "generated_utc": "2026-08-28T20:00:42Z",
-  "observatory_sha256": "fc4286864411d567d3c8c0f1845b7715ae8779900afd0f0faa954f949ae92f0a",
+  "observatory_sha256": "562530b4de0ddce8411908a8c47eeda27eddc2d8daa0fc2d5b30940c850845d6",
   "release_version": "2.0.0",
   "schema_version": "1.0",
-  "source_count": 18,
+  "source_count": 19,
   "title": "Finding Earth 2.0 Exoearth Evidence Observatory",
   "update_policy": "The browser checks GitHub main on open. New archive inputs are processed, validated and committed by the scheduled workflow before publication."
 }

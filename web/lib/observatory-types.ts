@@ -156,6 +156,15 @@ export interface ObservatoryData {
     spectrum_evidence: Record<string, number | string | unknown[]>;
     observability: Record<string, unknown>;
     records: Array<Record<string, unknown>>;
+    earth_analogue_screen: Record<string, unknown> & {
+      confirmed_planets: number;
+      strict_small_temperate_candidates: number;
+      strict_candidates_with_indexed_reductions: number;
+      strict_candidates_with_tabulated_measurements: number;
+      finding: string;
+      next_observation: string;
+      claim_boundary: string;
+    };
   };
   hwo: Record<string, unknown> & {
     labels: EvidenceLabel[];

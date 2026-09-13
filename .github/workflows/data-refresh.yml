@@ -64,6 +64,7 @@ jobs:
           python scripts/fetch_muscles_xuv.py
           python scripts/build_xuv_escape.py
           python scripts/build_atmosphere_evidence.py
+          python scripts/build_atmospheric_earth_screen.py
           python scripts/fetch_hwo_catalogs.py
           python scripts/build_hwo_atlas.py
           python scripts/build_mission_observatory.py
