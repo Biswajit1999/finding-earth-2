@@ -1,7 +1,7 @@
 {
   "analysis_timestamp": "2026-08-28T20:00:42Z",
   "doi": "pending",
-  "file_count_before_inventory": 63,
+  "file_count_before_inventory": 65,
   "files": [
     {
       "bytes": 1056,
@@ -111,7 +111,7 @@
     {
       "bytes": 1035,
       "path": "README.md",
-      "sha256": "9705f2c7fd6ae5a40c07560a3252781643d4c246ae222138d6798486ac6a1b0d"
+      "sha256": "fd61fab72caec46f979d7e6d9213e592cafdce917a9ce70e4e81db88df03be63"
     },
     {
       "bytes": 1206,
@@ -132,6 +132,16 @@
       "bytes": 1137,
       "path": "results/atmosphere/atmosphere_products.json",
       "sha256": "799cbe2b5cddf2c45c3bbda22e86100556854104b9094299499d8db178b4f7f6"
+    },
+    {
+      "bytes": 1192,
+      "path": "results/atmosphere/earth_analogue_spectrum_candidates.csv",
+      "sha256": "1a912d7271da5d2d444bd008590b4fc082e2855a77d8d48fac82a6424f3ee208"
+    },
+    {
+      "bytes": 3816,
+      "path": "results/atmosphere/earth_analogue_spectrum_screen.json",
+      "sha256": "e728f941a2b15227da8d8addf5c8fb40defb324b5686ef14c14ea6db52f8d4cf"
     },
     {
       "bytes": 19935,
@@ -311,7 +321,7 @@
     {
       "bytes": 41,
       "path": "SOURCE_COMMIT",
-      "sha256": "45c2d4d1a15a05ef61d65d4fdb0b8f34d14eb2c74df572fa0c4aa142cd3b9bec"
+      "sha256": "2055f4eadcce2c1ad9d566d64823df7e6ffedd3e3b7ecf020b40e250e7e29a59"
     },
     {
       "bytes": 6,
@@ -322,6 +332,6 @@
   "licensing_boundary": "Derived products only; no cached third-party source tables.",
   "release": "2.0.0",
   "schema_version": "1.0",
-  "source_commit": "79d6c9b59d82a184af47bb118d866f3aed87efc5",
+  "source_commit": "33829cf176eb41a780f318e2fe2fc335dfa32437",
   "title": "Finding Earth 2.0 v2 data release"
 }
