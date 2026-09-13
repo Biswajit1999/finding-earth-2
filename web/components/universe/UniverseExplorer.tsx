@@ -21,7 +21,17 @@ import { SkyProjection } from "@/components/universe/SkyProjection";
 import { DiscoveryTimelineCharts } from "@/components/universe/DiscoveryTimelineCharts";
 import type { DiscoveryTimelineFile, UniverseFile } from "@/lib/types";
 import { compactInt, EMDASH, int, num, slugify, utcLabel } from "@/lib/format";
-import { downloadCsv } from "@/lib/csv";
+
+const PLOT_CITATION = `Jana, Biswajit (2026). Finding Earth 2.0: an evidence-labelled search across public astronomical archives (v2.0.0). https://github.com/Biswajit1999/finding-earth-2. Data: NASA Exoplanet Archive and Gaia DR3. Accessed ${new Date().toISOString().slice(0, 10)}.`;
+
+function downloadBlob(filename: string, blob: Blob): void {
+  const url = URL.createObjectURL(blob);
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  anchor.click();
+  URL.revokeObjectURL(url);
+}
 
 /** The subset of three-stdlib's OrbitControls this component actually drives. */
 interface OrbitControlsHandle {
@@ -165,6 +175,7 @@ export function UniverseExplorer({
   const [ready, setReady] = useState(false);
   const [viewMode, setViewMode] = useState<"3d" | "2d">("3d");
   const controlsRef = useRef<OrbitControlsHandle | null>(null);
+  const renderRef = useRef<HTMLDivElement | null>(null);
 
   // WebGL failure forces the 2D projection rather than a dead end: same real
   // data, a projection that needs no WebGL at all. The 2D view never shows a
@@ -274,28 +285,30 @@ export function UniverseExplorer({
     return { mask, nVisible };
   }, [data, distRange, activeMethods, discoveryYear, maxDiscoveryYear, countMode]);
 
-  const handleDownloadCsv = () => {
-    const headers = [
-      "name", "host", "method", "dist_pc", "disc_year",
-      "earth2_index", "esi", "gaia_ruwe", "gal_l_deg", "gal_b_deg",
-    ];
-    const rows: (string | number | null)[][] = [];
-    for (let i = 0; i < data.n_points; i++) {
-      if (!filterMask.mask[i]) continue;
-      rows.push([
-        data.name[i],
-        data.host[i],
-        data.method[i],
-        data.dist_pc[i],
-        data.disc_year[i],
-        data.earth2_index[i],
-        data.esi[i],
-        data.gaia_ruwe[i],
-        data.gal_l_deg[i],
-        data.gal_b_deg[i],
-      ]);
+  const handleDownloadPlot = () => {
+    const surface = renderRef.current;
+    const canvas = surface?.querySelector("canvas");
+    if (canvas) {
+      canvas.toBlob((blob) => {
+        if (blob) downloadBlob("finding-earth-2-3d-universe.png", blob);
+      }, "image/png");
+      return;
     }
-    downloadCsv("finding-earth-2-universe-filtered.csv", headers, rows);
+    const svg = surface?.querySelector("svg");
+    if (svg) {
+      const source = new XMLSerializer().serializeToString(svg);
+      downloadBlob(
+        "finding-earth-2-sky-projection.svg",
+        new Blob([source], { type: "image/svg+xml;charset=utf-8" }),
+      );
+    }
+  };
+
+  const handleDownloadCitation = () => {
+    downloadBlob(
+      "finding-earth-2-plot-citation.txt",
+      new Blob([PLOT_CITATION + "\n"], { type: "text/plain;charset=utf-8" }),
+    );
   };
 
   const filtersActive =
@@ -316,11 +329,12 @@ export function UniverseExplorer({
             "radial-gradient(ellipse at 50% 45%, #10152a 0%, #090b16 45%, #05060b 100%)",
         }}
       >
+        <div ref={renderRef} data-testid="universe-render-surface" className="absolute inset-0">
         {effectiveViewMode === "3d" && (
           <Canvas
             camera={{ position: [0, 1.1, 5.2], fov: 55 }}
             dpr={[1, 1.75]}
-            gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+            gl={{ antialias: true, alpha: true, preserveDrawingBuffer: true, powerPreference: "high-performance" }}
             onCreated={({ gl, raycaster }) => {
               // Transparent so the container's own radial gradient (a soft
               // haze, not flat black) shows behind the points instead of being
@@ -379,6 +393,7 @@ export function UniverseExplorer({
             flagLowConfidenceAstrometry={flagRuwe}
           />
         )}
+        </div>
 
         {/* ---------------- branded loading veil ---------------- */}
         <div
@@ -503,8 +518,6 @@ export function UniverseExplorer({
                 )}
               </div>
             )}
-            </div>
-
             <div className="pointer-events-auto panel-raised p-3">
               <p className="eyebrow mb-1.5">Colour by</p>
               <div className="flex flex-wrap gap-1.5">
@@ -564,13 +577,22 @@ export function UniverseExplorer({
                   different projection.
                 </p>
               )}
-              <button
-                type="button"
-                onClick={handleDownloadCsv}
-                className="mt-2.5 w-full cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2 py-1.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
-              >
-                Download CSV ({compactInt(filterMask.nVisible)})
-              </button>
+              <div className="mt-2.5 grid grid-cols-2 gap-1.5">
+                <button
+                  type="button"
+                  onClick={handleDownloadPlot}
+                  className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2 py-1.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                >
+                  Download {effectiveViewMode === "3d" ? "PNG" : "SVG"}
+                </button>
+                <button
+                  type="button"
+                  onClick={handleDownloadCitation}
+                  className="cursor-pointer rounded-[var(--radius-sm)] border border-[var(--color-line-strong)] px-2 py-1.5 text-[11px] text-[var(--color-dim)] hover:border-[var(--color-cyan)] hover:text-[var(--color-cyan)]"
+                >
+                  Citation
+                </button>
+              </div>
             </div>
 
             <div className="pointer-events-auto panel-raised w-[230px] p-3">
@@ -779,6 +801,7 @@ export function UniverseExplorer({
                   </label>
                 ))}
               </div>
+            </div>
             </div>
           </div>
 
