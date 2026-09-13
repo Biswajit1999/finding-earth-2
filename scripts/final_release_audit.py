@@ -56,7 +56,19 @@ def audit() -> dict[str, Any]:
         "frozen release": release["file_count_before_inventory"] >= 60,
         "manuscript": exists("paper/main.tex") and exists("paper/generated_results.tex"),
         "README v2": "catalogue is not the Universe" in (ROOT / "README.md").read_text(encoding="utf-8"),
-        "website export": exists("web/out/index.html") and exists("web/out/sitemap.xml"),
+        # `web/out` is intentionally untracked and is built in the independent
+        # frontend CI job. The Python audit verifies the committed inputs and
+        # export validator; that job then proves the actual static output.
+        "website export": all(
+            exists(path)
+            for path in (
+                "web/app/page.tsx",
+                "web/app/beyond/page.tsx",
+                "web/app/perspective/page.tsx",
+                "web/public/data/release.json",
+                "web/scripts/check-static-export.mjs",
+            )
+        ),
         "source scale": summary["scale"]["total_source_records"] == 164209,
     }
     failed = [name for name, passed in gates.items() if not passed]
