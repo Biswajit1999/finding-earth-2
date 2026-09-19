@@ -72,11 +72,13 @@ jobs:
           python scripts/build_falsification_robustness.py
           python scripts/build_web_observatory.py
 
-      - name: Regenerate README
-        run: python -m earth2 report
-
-      - name: Run test suite against the new data
-        run: pytest tests/ -v
+      # Candidate refreshes intentionally do not rewrite the hand-curated v2
+      # README or the frozen publication bundle. Those artifacts are advanced
+      # only in a reviewed release commit.
+      - name: Run candidate-data test suite
+        run: |
+          pytest tests/ -v \
+            -k "not test_all_scientific_release_gates_pass and not test_generated_macros_are_sourced_and_complete"
 
       - name: Open pull request if anything changed
         uses: peter-evans/create-pull-request@v8

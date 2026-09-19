@@ -581,3 +581,15 @@
   match the committed manifest before the raw payload is cached.
 - Raw-only partial caches are still rejected. Regression tests cover archive and
   reliability-support hydration plus upstream-drift rejection.
+
+## v2.1.2 candidate-refresh validation closeout — 2026-09-19
+
+- A live manual refresh proved that all ignored DR25 and support inputs now
+  hydrate, then rebuilt the complete inference stack through the observatory.
+- The same run exposed two release-process conflicts: refreshed catalogues were
+  compared with intentionally frozen v2.1 counts, and the legacy report command
+  replaced the hand-curated v2 README before review.
+- Scheduled refreshes now preserve release artifacts and run the 293 non-frozen
+  tests against candidate data. Exact counts, the publication bundle, README
+  narrative and all 26 release gates remain protected by normal CI and explicit
+  release commits.

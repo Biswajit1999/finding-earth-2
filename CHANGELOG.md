@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.2 — 2026-09-19
+
+- Separated scheduled candidate-data validation from frozen-release validation:
+  live archive refreshes now run 293 non-frozen tests after rebuilding every
+  scientific layer, while exact publication counts remain gated in normal CI.
+- Stopped scheduled refreshes from replacing the hand-curated v2 README with
+  the legacy report generator before opening a reviewable data pull request.
+
 ## 2.1.1 — 2026-09-19
 
 - Fixed clean-checkout DR25 refreshes by rehydrating ignored raw inputs only

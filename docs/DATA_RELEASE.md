@@ -32,7 +32,7 @@ commit's own hash inside itself.
 
 1. Create an upload and reserve its DOI.
 2. Upload `earth2-v2-data-release.zip`.
-3. Use title “Finding Earth 2.0 v2 data release”, version `2.1.1`, creator
+3. Use title “Finding Earth 2.0 v2 data release”, version `2.1.2`, creator
    `Jana, Biswajit`, and release date `2026-09-13`.
 4. Copy the abstract and keywords from `.zenodo.json`.
 5. Add the GitHub repository as the related software identifier.

@@ -83,7 +83,7 @@ def audit() -> dict[str, Any]:
     return {
         "schema_version": "1.0",
         "label": "RELEASE-AUDIT",
-        "release": "2.1.1",
+        "release": "2.1.2",
         "gate_count": len(gates),
         "passed": len(gates) - len(failed),
         "failed": failed,
