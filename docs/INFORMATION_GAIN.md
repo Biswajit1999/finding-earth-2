@@ -44,6 +44,34 @@ two-sided uncertainty required by the model. Within-target ordering is condition
 on this exact menu and its deliberately visible precision requirements. It is not
 an instrument forecast or observing proposal.
 
+## Objective-conditioned robustness audit
+
+The original table reports *own-parameter* information: a stellar-radius action
+is scored on what it teaches about stellar radius, while a planet-radius action
+is scored on what it teaches about planet radius. Those values are valid under
+their declared scalar models, but they are not interchangeable utilities.
+
+The v2.1 audit therefore fixes one scientific objective—reducing **planet-radius
+uncertainty**—and asks how much information a stellar-radius measurement could
+transfer to that objective. For a bivariate Gaussian prior with target `z`,
+measured parameter `x`, correlation `rho`, and measurement noise `sigma_y`,
+
+`EIG_z = -0.5 ln(1 - rho^2 sigma_x^2 / (sigma_x^2 + sigma_y^2))`.
+
+The archive supplies only marginal uncertainties, not a joint planet/stellar
+radius posterior. The released `|rho| = 0...1` grid is therefore labelled
+**SENSITIVITY**; none of its correlations is presented as measured.
+
+Thirteen of the 25 candidates support both radius actions. The scalar
+stellar-radius score exceeds the direct planet-radius score for 10 of them, but
+for **zero of 13** does the indirect stellar-radius action win when
+`|rho| <= 0.90`. For Kepler-296 f, the comparison changes from 3.94 bits about
+stellar radius versus 3.09 bits about planet radius to **1.19 bits transferred
+to planet radius at `|rho| = 0.90`**; parity requires `|rho| = 0.9952` under the
+synthetic model. The scientific conclusion is not that stellar measurements are
+unimportant. It is that a scheduling claim requires a declared objective and a
+measured joint posterior.
+
 ## Actions withheld from numerical ordering
 
 - Ephemeris refinement needs a joint epoch-period posterior and covariance. A
@@ -76,6 +104,9 @@ and instrument noise must enter a spectral information calculation.
 
 ## Reproduction
 
-Run `python scripts/build_information_gain.py`. The source catalogue hash, action
-definitions, observation models, output hashes, and unsupported-action reasons are
-stored in `results/information_gain/`.
+Run `python scripts/build_information_gain.py`. A full pipeline checkout rebuilds
+from `results/analysis_catalogue.parquet`; a public clean checkout reproducibly
+re-audits the committed target-action grid because the full intermediate is
+intentionally excluded. The source hash, rebuild mode, action definitions,
+observation models, covariance-sensitivity rows, output hashes, and unsupported-
+action reasons are stored in `results/information_gain/`.

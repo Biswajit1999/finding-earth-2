@@ -8,13 +8,33 @@ export const metadata: Metadata = { title: "Expected Information Gain", descript
 
 export default function InformationGainPage() {
   const data = getObservatory().information_gain;
-  return <ObservatoryChapter eyebrow="Exoearth evidence observatory · decisions" title="What should we measure next?" lede="Candidate ranking identifies interesting worlds. Expected information gain asks a different question: which supported measurement would reduce a declared uncertainty the most?" meta={`${data.candidate_count} candidates × ${data.action_count} actions · ${data.supported_rows} supported calculations`} label={data.label} stats={[
-    { value: String(data.candidate_count), label: "candidate worlds", sub: "leading ranked sample" },
-    { value: String(data.action_count), label: "measurement actions", sub: "explicit synthetic likelihoods" },
-    { value: String(data.supported_rows), label: "supported actions", sub: `${data.row_count - data.supported_rows} remain undetermined` },
-    { value: "bits", label: "information unit", sub: "expected KL divergence" },
-  ]} findingTitle="The highest score is not always the most useful next target" finding={<p>A precise parameter offers little information if it is already known well. A weaker parameter can dominate the decision if a plausible measurement sharply contracts its posterior. Unsupported actions remain withheld because information gain requires both a calibrated prior and a defensible observation model.</p>} interpretation={data.claim_boundary} figure="/figures/v2/information-gain.png" figureAlt="Expected information gain for measurement actions across leading candidates" figureCaption="The heatmap reports synthetic linear-Gaussian information in bits. Cost, observing time and instrument feasibility are not modelled.">
-    <InformationGainExplorer rows={data.rows} />
-  </ObservatoryChapter>;
+  const audit = data.objective_conditioned_audit;
+  const kepler296f = audit.rows.find((row) => row.pl_name === "Kepler-296 f");
+  return (
+    <ObservatoryChapter
+      eyebrow="Exoearth evidence observatory · decisions"
+      title="What should we measure next?"
+      lede="Expected information gain is only comparable after the scientific objective is fixed. This lab separates information about each measured parameter from information transferred to planet radius."
+      meta={`${data.candidate_count} candidates × ${data.action_count} actions · ${data.supported_rows} supported calculations`}
+      label={audit.label}
+      stats={[
+        { value: String(audit.eligible_target_count), label: "jointly testable worlds", sub: "both radius actions supported" },
+        { value: String(audit.scalar_stellar_action_wins), label: "scalar stellar wins", sub: "different own-parameter objectives" },
+        { value: String(audit.indirect_wins_at_or_below_ceiling), label: "objective-conditioned wins", sub: "stellar → planet radius at |ρ| ≤ 0.90" },
+        { value: `${kepler296f?.stellar_to_planet_radius_information_bits_at_abs_correlation_0p90.toFixed(2) ?? "—"} bits`, label: "Kepler-296 f transfer", sub: "planet-radius EIG at |ρ| = 0.90" },
+      ]}
+      findingTitle="A high score can answer the wrong question"
+      finding={
+        <p>
+          Stellar-radius precision has the larger own-parameter score for 10 of 13 eligible worlds. Once the objective is fixed to planet-radius uncertainty, none beats a direct radius measurement at |ρ| ≤ 0.90. Kepler-296 f needs |ρ| = 0.9952 merely to break even under this synthetic model.
+        </p>
+      }
+      interpretation={`${audit.claim_boundary} ${data.claim_boundary}`}
+      figure="/figures/v2/objective-conditioned-information.png"
+      figureAlt="Direct planet-radius information compared with information transferred from a stellar-radius measurement under an absolute correlation of 0.90"
+      figureCaption="Cyan and gold bars answer the same planet-radius objective. Rose bars show the original stellar-radius own-parameter score and are displayed only to expose why cross-objective rankings can mislead."
+    >
+      <InformationGainExplorer rows={data.rows} />
+    </ObservatoryChapter>
+  );
 }
-

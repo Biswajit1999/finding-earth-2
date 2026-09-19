@@ -50,6 +50,12 @@ The work answers four questions:
    and mission assumptions?
 4. Which feasible next measurement has the highest expected information gain?
 
+The v2.1 decision audit now separates information about a measured parameter
+from information about the scientific objective. For planet-radius uncertainty,
+none of 13 eligible stellar-radius actions beats a direct radius measurement at
+`|rho| <= 0.90`; the released correlation grid is explicitly a sensitivity test,
+not a claimed joint posterior.
+
 | Release item | Status |
 |---|---|
 | Scientific status | v2.0; evidence-labelled, conditional inference; no life claim |

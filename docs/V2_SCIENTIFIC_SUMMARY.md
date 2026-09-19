@@ -46,6 +46,15 @@ direct guard against overinterpretation: Venus has ESI 0.874 but fails the
 conservative HZ test, while Mars demonstrates that HZ membership is not surface
 climate.
 
+The v2.1 objective-conditioned audit shows why those own-parameter scores must
+not be read as a universal observing priority. Among 13 targets supporting both
+radius actions, stellar-radius EIG is numerically larger in 10 scalar
+comparisons, yet it never provides more information about *planet radius* than
+a direct radius measurement for `|rho| <= 0.90`. Kepler-296 f transfers 1.19
+bits at that ceiling and needs `|rho| = 0.9952` to break even. The correlation
+grid is sensitivity analysis because the archive does not publish the joint
+posterior.
+
 All results are labelled as observations, model inferences, simulations, or
 scenario assumptions. The v2 deposit contains derived products, posterior
 samples, query manifests, configurations, and SHA-256 inventories while

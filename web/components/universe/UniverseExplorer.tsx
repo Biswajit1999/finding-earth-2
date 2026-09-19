@@ -22,7 +22,7 @@ import { DiscoveryTimelineCharts } from "@/components/universe/DiscoveryTimeline
 import type { DiscoveryTimelineFile, UniverseFile } from "@/lib/types";
 import { compactInt, EMDASH, int, num, slugify, utcLabel } from "@/lib/format";
 
-const PLOT_CITATION = `Jana, Biswajit (2026). Finding Earth 2.0: an evidence-labelled search across public astronomical archives (v2.0.0). https://github.com/Biswajit1999/finding-earth-2. Data: NASA Exoplanet Archive and Gaia DR3. Accessed ${new Date().toISOString().slice(0, 10)}.`;
+const PLOT_CITATION = `Jana, Biswajit (2026). Finding Earth 2.0: an evidence-labelled search across public astronomical archives (v2.1.0). https://github.com/Biswajit1999/finding-earth-2. Data: NASA Exoplanet Archive and Gaia DR3. Accessed ${new Date().toISOString().slice(0, 10)}.`;
 
 function downloadBlob(filename: string, blob: Blob): void {
   const url = URL.createObjectURL(blob);

@@ -1,5 +1,15 @@
 # Changelog
 
+## 2.1.0 — 2026-09-19
+
+- Added covariance-aware Gaussian information transfer and analytic break-even
+  correlation calculations with unit and release-contract tests.
+- Published an objective-conditioned planet-radius decision audit across 13
+  eligible candidates; none of the indirect stellar-radius actions wins at
+  `|rho| <= 0.90` despite 10 larger own-parameter scalar scores.
+- Added deterministic PNG/SVG research outputs, clean-checkout rebuilding,
+  public observatory evidence, documentation, and release-bundle integration.
+
 ## 2.0.0 — 2026-09-12
 
 - Connected the observed Kepler DR25 catalogue to a validated, conditional

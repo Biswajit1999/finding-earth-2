@@ -39,6 +39,32 @@ export interface InformationGainRow {
   within_target_information_rank: number | null;
 }
 
+export interface ObjectiveConditionedAuditRow {
+  label: EvidenceLabel;
+  pl_name: string;
+  earth2_rank: number;
+  objective: string;
+  direct_planet_radius_information_bits: number;
+  stellar_radius_own_parameter_information_bits: number;
+  stellar_to_planet_radius_information_bits_at_abs_correlation_0p90: number;
+  break_even_absolute_correlation: number | null;
+  break_even_status: string;
+  transfer_bits_by_absolute_correlation: Record<string, number>;
+}
+
+export interface ObjectiveConditionedAudit {
+  label: EvidenceLabel;
+  objective: string;
+  method: string;
+  correlation_grid: number[];
+  assumed_absolute_correlation_ceiling: number;
+  eligible_target_count: number;
+  scalar_stellar_action_wins: number;
+  indirect_wins_at_or_below_ceiling: number;
+  claim_boundary: string;
+  rows: ObjectiveConditionedAuditRow[];
+}
+
 export interface SensitivityRow {
   label: EvidenceLabel;
   pl_name: string;
@@ -193,6 +219,7 @@ export interface ObservatoryData {
     linear_gaussian_solution_nats: string;
     claim_boundary: string;
     withheld_actions: Array<{ action_id: string; status: string; reason: string }>;
+    objective_conditioned_audit: ObjectiveConditionedAudit;
     rows: InformationGainRow[];
   };
   falsification: Record<string, unknown> & {

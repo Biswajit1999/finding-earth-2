@@ -16,9 +16,14 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
 from earth2.decision.information_gain import (  # noqa: E402
+    correlated_gaussian_target_information_gain,
     gaussian_expected_information_gain,
     gaussian_posterior_sigma,
+    gaussian_transfer_break_even_correlation,
 )
+
+CORRELATION_GRID = (0.0, 0.25, 0.5, 0.75, 0.9, 0.95, 0.99, 1.0)
+CORRELATION_CEILING = 0.9
 
 ACTION_MODELS: tuple[dict[str, Any], ...] = (
     {
@@ -250,17 +255,142 @@ def make_figure(frame: pd.DataFrame, output: Path) -> None:
         handle.write(payload.replace("\r\n", "\n"))
 
 
+def build_objective_audit(frame: pd.DataFrame) -> list[dict[str, Any]]:
+    """Compare direct and correlation-mediated information about planet radius."""
+
+    records: list[dict[str, Any]] = []
+    for planet, group in frame.groupby("pl_name", sort=False):
+        actions = group.set_index("action_id")
+        direct = actions.loc["radius_precision_requirement"]
+        stellar = actions.loc["stellar_radius_precision_requirement"]
+        required = [
+            direct["prior_sigma"],
+            direct["observation_sigma"],
+            direct["expected_information_gain_nats"],
+            stellar["prior_sigma"],
+            stellar["observation_sigma"],
+            stellar["expected_information_gain_nats"],
+        ]
+        if any(pd.isna(value) for value in required):
+            continue
+
+        direct_nats = float(direct["expected_information_gain_nats"])
+        transferred = {
+            f"{correlation:.2f}": float(
+                correlated_gaussian_target_information_gain(
+                    float(direct["prior_sigma"]),
+                    float(stellar["prior_sigma"]),
+                    correlation,
+                    float(stellar["observation_sigma"]),
+                )
+                / np.log(2)
+            )
+            for correlation in CORRELATION_GRID
+        }
+        break_even = float(
+            gaussian_transfer_break_even_correlation(
+                direct_nats,
+                float(stellar["prior_sigma"]),
+                float(stellar["observation_sigma"]),
+            )
+        )
+        direct_bits = direct_nats / np.log(2)
+        stellar_own_bits = float(stellar["expected_information_gain_bits"])
+        ceiling_bits = transferred[f"{CORRELATION_CEILING:.2f}"]
+        records.append(
+            {
+                "label": "SENSITIVITY",
+                "pl_name": str(planet),
+                "earth2_rank": int(direct["earth2_rank"]),
+                "objective": "planet radius uncertainty",
+                "direct_planet_radius_information_bits": direct_bits,
+                "stellar_radius_own_parameter_information_bits": stellar_own_bits,
+                "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": ceiling_bits,
+                "break_even_absolute_correlation": break_even if break_even <= 1 else None,
+                "break_even_status": "reachable_only_above_ceiling"
+                if break_even <= 1 and break_even > CORRELATION_CEILING
+                else ("reachable_at_or_below_ceiling" if break_even <= 1 else "not_reachable"),
+                "transfer_bits_by_absolute_correlation": transferred,
+            }
+        )
+    return records
+
+
+def make_objective_audit_figure(rows: list[dict[str, Any]], output: Path) -> None:
+    ordered = sorted(rows, key=lambda row: int(row["earth2_rank"]), reverse=True)
+    labels = [str(row["pl_name"]) for row in ordered]
+    y = np.arange(len(ordered))
+    direct = [float(row["direct_planet_radius_information_bits"]) for row in ordered]
+    transfer = [
+        float(row["stellar_to_planet_radius_information_bits_at_abs_correlation_0p90"])
+        for row in ordered
+    ]
+    own = [float(row["stellar_radius_own_parameter_information_bits"]) for row in ordered]
+
+    plt.style.use("dark_background")
+    plt.rcParams["svg.hashsalt"] = "finding-earth-2-objective-audit-v1"
+    figure, axis = plt.subplots(figsize=(12, max(7, len(ordered) * 0.48)), constrained_layout=True)
+    figure.patch.set_facecolor("#080b14")
+    axis.set_facecolor("#080b14")
+    width = 0.24
+    axis.barh(y - width, direct, height=width, color="#62d6d0", label="direct planet radius")
+    axis.barh(
+        y,
+        transfer,
+        height=width,
+        color="#e9b44c",
+        label="stellar → planet at |ρ| = 0.90",
+    )
+    axis.barh(
+        y + width,
+        own,
+        height=width,
+        color="#e97a8d",
+        alpha=0.75,
+        label="stellar own-parameter (different objective)",
+    )
+    axis.set_yticks(y, labels)
+    axis.set_xlabel("expected information gain [bits]")
+    axis.set_title("Objective-conditioned information audit | SENSITIVITY")
+    axis.grid(axis="x", color="#ffffff", alpha=0.12, linewidth=0.8)
+    axis.legend(loc="lower right", frameon=False, fontsize=9)
+    figure.savefig(output.with_suffix(".png"), dpi=220, facecolor="#080b14")
+    figure.savefig(output.with_suffix(".svg"), facecolor="#080b14", metadata={"Date": None})
+    plt.close(figure)
+    svg = output.with_suffix(".svg")
+    payload = svg.read_text(encoding="utf-8")
+    with svg.open("w", encoding="utf-8", newline="\n") as handle:
+        handle.write(payload.replace("\r\n", "\n"))
+
+
 def main() -> None:
     source = ROOT / "results/analysis_catalogue.parquet"
-    catalogue = pd.read_parquet(source)
-    frame = build_rows(catalogue)
     output = ROOT / "results/information_gain"
     output.mkdir(parents=True, exist_ok=True)
     table_path = output / "action_information_gain.csv"
     summary_path = output / "information_gain.json"
     figure_path = output / "expected_information_gain"
+    objective_figure_path = output / "objective_conditioned_information"
+    if source.exists():
+        catalogue = pd.read_parquet(source)
+        frame = build_rows(catalogue)
+        source_hash = sha256(source)
+        rebuild_mode = "full_analysis_catalogue"
+    else:
+        try:
+            prior_summary = json.loads(summary_path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            observatory = json.loads(
+                (ROOT / "web/public/data/observatory.json").read_text(encoding="utf-8")
+            )
+            prior_summary = observatory["information_gain"]
+        frame = pd.read_csv(table_path)
+        source_hash = str(prior_summary["source_sha256"])
+        rebuild_mode = "committed_target_action_grid"
     frame.to_csv(table_path, index=False, lineterminator="\n", float_format="%.10g")
     make_figure(frame, figure_path)
+    objective_rows = build_objective_audit(frame)
+    make_objective_audit_figure(objective_rows, objective_figure_path)
 
     supported = frame[frame["expected_information_gain_nats"].notna()]
     best = (
@@ -278,7 +408,8 @@ def main() -> None:
         "equation": "E_y[KL(p(theta|D,y,a) || p(theta|D))]",
         "linear_gaussian_solution_nats": "0.5 * ln(1 + prior_variance / observation_noise_variance)",
         "source": source.relative_to(ROOT).as_posix(),
-        "source_sha256": sha256(source),
+        "source_sha256": source_hash,
+        "rebuild_mode": rebuild_mode,
         "candidate_count": int(frame["pl_name"].nunique()),
         "action_count": len(ACTION_MODELS),
         "row_count": len(frame),
@@ -293,6 +424,36 @@ def main() -> None:
             }
             for _, row in best.iterrows()
         ],
+        "objective_conditioned_audit": {
+            "label": "SENSITIVITY",
+            "objective": "planet radius uncertainty",
+            "method": (
+                "Bivariate Gaussian transfer from a stellar-radius measurement to planet-radius "
+                "uncertainty across an explicit absolute-correlation grid."
+            ),
+            "correlation_grid": list(CORRELATION_GRID),
+            "assumed_absolute_correlation_ceiling": CORRELATION_CEILING,
+            "eligible_target_count": len(objective_rows),
+            "scalar_stellar_action_wins": int(
+                sum(
+                    row["stellar_radius_own_parameter_information_bits"]
+                    > row["direct_planet_radius_information_bits"]
+                    for row in objective_rows
+                )
+            ),
+            "indirect_wins_at_or_below_ceiling": int(
+                sum(
+                    row["break_even_status"] == "reachable_at_or_below_ceiling"
+                    for row in objective_rows
+                )
+            ),
+            "claim_boundary": (
+                "The archive publishes marginal uncertainties, not the joint radius posterior. "
+                "Correlation values are sensitivity coordinates, not measured correlations. "
+                "Own-parameter information and objective-conditioned information answer different questions."
+            ),
+            "rows": objective_rows,
+        },
         "claim_boundary": (
             "These are synthetic precision-requirement experiments, not proposals, exposure-time "
             "estimates, instrument forecasts, or guarantees of achievable information. Comparisons are "
@@ -310,7 +471,14 @@ def main() -> None:
         ],
     }
     write_json(summary_path, payload)
-    files = [table_path, summary_path, figure_path.with_suffix(".png"), figure_path.with_suffix(".svg")]
+    files = [
+        table_path,
+        summary_path,
+        figure_path.with_suffix(".png"),
+        figure_path.with_suffix(".svg"),
+        objective_figure_path.with_suffix(".png"),
+        objective_figure_path.with_suffix(".svg"),
+    ]
     write_json(
         output / "information_gain_products.json",
         {

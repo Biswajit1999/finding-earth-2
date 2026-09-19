@@ -1,7 +1,7 @@
 # Finding Earth 2.0 project state
 
-- Current phase: **100% complete for the declared v2, Beyond Earth 2.0 and
-  LinkedIn media scope**. The public site, source repository and v2.0.0 GitHub
+- Current phase: **100% complete for the declared v2.1, Beyond Earth 2.0 and
+  LinkedIn media scope**. The public site, source repository and v2.1.0 GitHub
   Release are published; DOI minting remains an optional external archive action.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
@@ -11,7 +11,7 @@
   across 4,764 hosts; five Solar-System controls are separate.
 - Stored candidate counts: 174 nominal conservative HZ; 15 also below
   1.6 Earth radii; one classified as measured mass by v1, pending evidence audit.
-- Tests: 287 passed; Ruff passes across source, tests, notebooks and scripts,
+- Tests: 292 passed; Ruff passes across source, tests, notebooks and scripts,
   and mypy passes across the source package. DR25
   contracts cover delivered row discrepancies, support-file integrity,
   target-isolated selection validation and the KeplerPORTs reference.
@@ -122,6 +122,12 @@
   Ephemeris, XUV, atmosphere, albedo, transmission-spectrum and HWO-detection
   actions are withheld until defensible joint posteriors or instrument likelihoods
   exist; no generic instrument precision is fabricated.
+- Phase 12.1 objective audit: a tested bivariate-Gaussian transfer calculation
+  fixes the utility to planet-radius uncertainty and scans `|rho| = 0...1`.
+  Thirteen candidates support both radius actions. Scalar stellar-radius EIG is
+  larger for 10, but the indirect route wins for zero at `|rho| <= 0.90`.
+  Kepler-296 f transfers 1.19 bits at the ceiling and needs `|rho| = 0.9952` to
+  break even. Correlations remain SENSITIVITY coordinates, not measurements.
 - Phase 13 falsification and robustness: Earth, Venus, Mars, Mercury and Jupiter
   remain unranked controls. Venus retains ESI 0.874 despite a hostile surface,
   falsifying any habitability reading of similarity; Mars shows that HZ membership
@@ -163,7 +169,7 @@
   future plan in a shareable report.
 - Release engineering: the deterministic bundle now writes canonical LF bytes on
   every operating system, and NumPy array annotations are portable across the
-  supported Python 3.10/3.12 CI matrix. The v2.0.0 tag and public GitHub Release
+  supported Python 3.10/3.12 CI matrix. The v2.1.0 tag and public GitHub Release
   identify the finished package.
 
 ## Execution contract

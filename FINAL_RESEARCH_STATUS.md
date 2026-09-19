@@ -1,6 +1,6 @@
-# Finding Earth 2.0 v2 — final research status
+# Finding Earth 2.0 v2.1 — final research status
 
-**Release:** 2.0.0  
+**Release:** 2.1.0
 **Scientific status:** complete for the declared v2 scope; conditional inference,
 not a discovery or probability of life  
 **Audited source checkpoint:** `79d6c9b59d82a184af47bb118d866f3aed87efc5`
@@ -114,6 +114,14 @@ experiment, improving the stellar radius of Kepler-296 f is the largest supporte
 action at **3.94 bits**. Observing cost and time are not modelled, so this is not
 an observing-program priority per hour.
 
+The v2.1 audit fixes the objective to planet-radius uncertainty and then tests
+stellar-to-planet information transfer over an explicit correlation grid.
+Thirteen targets support both actions. Although the scalar stellar-radius score
+is larger for 10, the indirect action wins for **0/13** at `|rho| <= 0.90`.
+For Kepler-296 f it transfers 1.19 bits at that ceiling and requires
+`|rho| = 0.9952` to match the direct-radius action. These are sensitivity
+coordinates because the archive does not provide the joint posterior.
+
 ## 15. Solar-System falsification
 
 Venus falsifies ESI-as-habitability; Mars falsifies HZ-membership-as-surface
@@ -160,7 +168,7 @@ cd web && npm ci && npm run typecheck && npm run lint && npm run build
 
 ## 20. Test results
 
-The final local release run passes **287 Python tests**, Ruff, mypy across 75
+The final local release run passes **292 Python tests**, Ruff, mypy across 75
 source files, 67 scientific release invariants, manuscript validation, 26 core
 audit gates, TypeScript, ESLint, a 6,388-page Next build, 6,387 exported HTML
 files, 35 export templates, and desktop/mobile browser QA with zero HUD overlap
@@ -172,7 +180,7 @@ or horizontal overflow. The post-v2 physics calculator adds five tests.
 
 ## 22. Release version
 
-Software, website, manuscript, and data bundle are version **2.0.0**. The Zenodo
+Software, website, manuscript, and data bundle are version **2.1.0**. The Zenodo
 deposit is prepared; its DOI is `pending` until minted and is not fabricated.
 
 ## 23. Git commit SHA
@@ -180,10 +188,11 @@ deposit is prepared; its DOI is `pending` until minted and is not fabricated.
 The publication bundle records source checkpoint
 `79d6c9b59d82a184af47bb118d866f3aed87efc5`, which contains the completed core,
 Beyond Earth 2.0 chapter and LinkedIn release package. The authoritative release
-reference is the repository's annotated `v2.0.0` tag.
+reference for the covariance-aware decision audit is the annotated `v2.1.0` tag.
 
 ## 24. Highest-value next scientific experiment
 
-Under the supported EIG prototype, improve **Kepler-296 f's stellar radius**.
-The next methodological upgrade should add realistic observing cost and a joint
-stellar/planet posterior before treating that result as a scheduling decision.
+Obtain or construct a defensible **joint stellar/planet-radius posterior** and
+an instrument-specific exposure-cost model. The v2.1 audit shows that marginal
+catalogue errors alone cannot justify treating Kepler-296 f's stellar radius as
+the best scheduling decision.

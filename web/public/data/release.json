@@ -1,8 +1,8 @@
 {
   "author": "Biswajit Jana",
   "generated_utc": "2026-08-28T20:00:42Z",
-  "observatory_sha256": "562530b4de0ddce8411908a8c47eeda27eddc2d8daa0fc2d5b30940c850845d6",
-  "release_version": "2.0.0",
+  "observatory_sha256": "799a7c991607fc9f8ab6fc5f849c9dce94d01d10ee1a97da881dd2f993c298f1",
+  "release_version": "2.1.0",
   "schema_version": "1.0",
   "source_count": 19,
   "title": "Finding Earth 2.0 Exoearth Evidence Observatory",

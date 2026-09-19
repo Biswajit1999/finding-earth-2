@@ -243,7 +243,7 @@ def main() -> None:
         "schema_version": "1.0",
         "title": payload["title"],
         "author": payload["author"],
-        "release_version": "2.0.0",
+        "release_version": "2.1.0",
         "generated_utc": payload["generated_utc"],
         "observatory_sha256": hashlib.sha256(output.read_bytes()).hexdigest(),
         "source_count": len(source_files),
@@ -266,6 +266,7 @@ def main() -> None:
         "earth-analogue-spectrum-screen.png": "results/atmosphere/earth_analogue_spectrum_screen.png",
         "hwo-atlas.png": "results/hwo/hwo_precursor_atlas.png",
         "information-gain.png": "results/information_gain/expected_information_gain.png",
+        "objective-conditioned-information.png": "results/information_gain/objective_conditioned_information.png",
         "falsification.png": "results/falsification/falsification_and_robustness.png",
     }
     for destination, source in figure_sources.items():

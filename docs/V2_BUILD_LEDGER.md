@@ -555,3 +555,18 @@
 - Published a shareable author vision and roadmap explaining why Biswajit Jana
   built the project, what it contains, what he learned and the next five planned
   research directions.
+
+## v2.1 objective-conditioned decision audit — 2026-09-19
+
+- Added exact bivariate-Gaussian information transfer and analytic break-even
+  correlation functions. The new tests recover the scalar limit at `|rho| = 1`,
+  verify monotonicity, validate the break-even solution, and reject invalid
+  correlation or information inputs.
+- Reframed the radius decision around one utility: planet-radius uncertainty.
+  Thirteen targets support direct planet-radius and stellar-radius actions. The
+  scalar stellar score is larger for 10, but no indirect route wins at
+  `|rho| <= 0.90`; Kepler-296 f needs `|rho| = 0.9952` to break even.
+- Labelled every correlation as SENSITIVITY because the public catalogue contains
+  marginal errors rather than a joint posterior. Added machine-readable rows,
+  deterministic PNG/SVG comparisons, manifest hashes, release invariants, public
+  site interpretation, and clean-checkout reproduction from the committed grid.

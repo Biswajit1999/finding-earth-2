@@ -794,6 +794,24 @@ def main() -> int:
         and all(item["status"].startswith("withheld_") for item in information["withheld_actions"])
         and "Cost and time are not modelled" in information["claim_boundary"],
     )
+    objective_audit = information["objective_conditioned_audit"]
+    objective_rows = objective_audit["rows"]
+    check(
+        "objective-conditioned EIG keeps covariance assumptions explicit",
+        objective_audit["label"] == "SENSITIVITY"
+        and objective_audit["objective"] == "planet radius uncertainty"
+        and objective_audit["assumed_absolute_correlation_ceiling"] == 0.9
+        and objective_audit["eligible_target_count"] == len(objective_rows) == 13
+        and objective_audit["scalar_stellar_action_wins"] == 10
+        and objective_audit["indirect_wins_at_or_below_ceiling"] == 0
+        and all(row["label"] == "SENSITIVITY" for row in objective_rows)
+        and all(
+            row["stellar_to_planet_radius_information_bits_at_abs_correlation_0p90"]
+            < row["direct_planet_radius_information_bits"]
+            for row in objective_rows
+        )
+        and "not the joint radius posterior" in objective_audit["claim_boundary"],
+    )
     information_manifest = json.loads(
         (information_dir / "information_gain_products.json").read_text()
     )
