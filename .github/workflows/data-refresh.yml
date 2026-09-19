@@ -34,8 +34,46 @@ jobs:
       - name: Sync archives
         run: python -m earth2 sync
 
+      - name: Refresh Gaia exact-identifier crossmatch
+        run: python -m earth2 sync-gaia
+
       - name: Run analysis
         run: python -m earth2 analyse
+
+      - name: Enforce candidate refresh evidence contract
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+
+          summary = json.loads(Path("results/analysis_summary.json").read_text(encoding="utf-8"))
+          gaia_manifest = json.loads(Path("data/manifests/gaia_dr3_crossmatch.json").read_text(encoding="utf-8"))
+
+          matched = summary["gaia_crossmatch"]["n_hosts_matched"]
+          manifest_rows = gaia_manifest["n_rows"]
+          datasets_ok = summary["provenance"]["n_datasets_ok"]
+          datasets_total = summary["provenance"]["n_datasets"]
+          confirmed = summary["population"]["n_confirmed_planets"]
+
+          failures = []
+          if matched <= 0:
+              failures.append("Gaia crossmatch collapsed to zero matched hosts")
+          if manifest_rows <= 0:
+              failures.append("Gaia manifest reports no rows")
+          if matched != manifest_rows:
+              failures.append(f"Gaia summary/manifest mismatch: {matched} != {manifest_rows}")
+          if datasets_ok != datasets_total:
+              failures.append(f"only {datasets_ok}/{datasets_total} provenance datasets are healthy")
+          if confirmed <= 0:
+              failures.append("confirmed-planet population is empty")
+
+          if failures:
+              raise SystemExit("Candidate refresh rejected: " + "; ".join(failures))
+          print(
+              f"Candidate refresh accepted: {confirmed} confirmed planets, "
+              f"{matched} Gaia hosts, {datasets_ok}/{datasets_total} datasets healthy"
+          )
+          PY
 
       - name: Generate figures
         run: python -m earth2 figures
