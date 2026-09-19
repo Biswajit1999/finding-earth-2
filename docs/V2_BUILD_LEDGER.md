@@ -570,3 +570,14 @@
   marginal errors rather than a joint posterior. Added machine-readable rows,
   deterministic PNG/SVG comparisons, manifest hashes, release invariants, public
   site interpretation, and clean-checkout reproduction from the committed grid.
+
+## v2.1.1 clean-checkout refresh closeout — 2026-09-19
+
+- Corrected the DR25 cache contract used by scheduled refreshes: committed
+  manifests with ignored raw payloads are now treated as a reproducible checkout,
+  not as corruption.
+- Rehydration remains fail-closed. The downloaded source, pinned repository
+  commit where applicable, byte length, SHA-256 digest and parsed row count must
+  match the committed manifest before the raw payload is cached.
+- Raw-only partial caches are still rejected. Regression tests cover archive and
+  reliability-support hydration plus upstream-drift rejection.

@@ -224,7 +224,7 @@ def build() -> dict[str, Any]:
         copy_release_text(src, manifest_dir / src.name)
 
     write_lf_text(RELEASE / "README.md", release_readme(commit))
-    write_lf_text(RELEASE / "VERSION", "2.1.0\n", encoding="ascii")
+    write_lf_text(RELEASE / "VERSION", "2.1.1\n", encoding="ascii")
     write_lf_text(RELEASE / "SOURCE_COMMIT", commit + "\n", encoding="ascii")
 
     paper_figures = ROOT / "paper" / "figures" / "v2"
@@ -240,7 +240,7 @@ def build() -> dict[str, Any]:
         inventory_files.append({"path": rel, "bytes": path.stat().st_size, "sha256": sha256(path)})
     inventory: dict[str, Any] = {
         "schema_version": "1.0",
-        "release": "2.1.0",
+        "release": "2.1.1",
         "title": "Finding Earth 2.0 v2 data release",
         "doi": "pending",
         "source_commit": commit,

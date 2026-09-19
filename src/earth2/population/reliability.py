@@ -176,29 +176,38 @@ def validate_support_payload(payload: bytes, kind: str) -> pd.DataFrame:
 def fetch_support_product(
     root: Path, kind: str, *, session=None, max_bytes: int = 5_000_000
 ) -> tuple[pd.DataFrame, dict]:
-    """Fetch or verify one commit-pinned reliability support product."""
+    """Fetch or verify one commit-pinned reliability support product.
+
+    A manifest-only clean checkout may restore its ignored raw file only when
+    the downloaded source, commit, bytes, digest and row count all match the
+    committed manifest. Raw-only partial caches remain invalid.
+    """
     if kind not in SUPPORT_SPECS:
         raise ValueError(f"Unsupported DR25 reliability support product: {kind}")
     spec = SUPPORT_SPECS[kind]
     source_url = RAW_BASE + spec["filename"]
     raw = root / "data/raw/kepler_dr25" / f"{kind}.txt"
     manifest_path = root / "data/manifests/population" / f"dr25_{kind}.json"
-    if raw.exists() or manifest_path.exists():
-        if not (raw.exists() and manifest_path.exists()):
-            raise ValueError(f"Incomplete cache for {kind}: raw payload and manifest required")
+    if raw.exists() and not manifest_path.exists():
+        raise ValueError(f"Incomplete cache for {kind}: raw payload has no manifest")
+    pinned_manifest = (
+        json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest_path.exists()
+        else None
+    )
+    if raw.exists() and pinned_manifest is not None:
         payload = raw.read_bytes()
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         if (
-            manifest["source_url"] != source_url
-            or manifest["repository_commit"] != REPOSITORY_COMMIT
-            or manifest["sha256"] != _sha256(payload)
-            or manifest["bytes"] != len(payload)
+            pinned_manifest["source_url"] != source_url
+            or pinned_manifest["repository_commit"] != REPOSITORY_COMMIT
+            or pinned_manifest["sha256"] != _sha256(payload)
+            or pinned_manifest["bytes"] != len(payload)
         ):
             raise ValueError(f"Cache integrity or source mismatch for {kind}")
         frame = validate_support_payload(payload, kind)
-        if manifest["row_count"] != len(frame):
+        if pinned_manifest["row_count"] != len(frame):
             raise ValueError("Cached support manifest row count mismatch")
-        return frame, manifest
+        return frame, pinned_manifest
 
     owned_session = session is None
     if owned_session:
@@ -232,6 +241,20 @@ def fetch_support_product(
             session.close()
 
     frame = validate_support_payload(payload, kind)
+    if pinned_manifest is not None:
+        if (
+            pinned_manifest["source_url"] != source_url
+            or pinned_manifest["repository_commit"] != REPOSITORY_COMMIT
+            or pinned_manifest["sha256"] != _sha256(payload)
+            or pinned_manifest["bytes"] != len(payload)
+            or pinned_manifest["row_count"] != len(frame)
+        ):
+            raise ValueError(f"Downloaded payload does not match pinned manifest for {kind}")
+        raw.parent.mkdir(parents=True, exist_ok=True)
+        with raw.open("xb") as stream:
+            stream.write(payload)
+        return frame, pinned_manifest
+
     git = shutil.which("git.exe") or shutil.which("git")
     if git is None:
         raise RuntimeError("Git is required to record software provenance")

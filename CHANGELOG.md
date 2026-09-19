@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.1 — 2026-09-19
+
+- Fixed clean-checkout DR25 refreshes by rehydrating ignored raw inputs only
+  after their source, byte length, SHA-256 digest and parsed row count match the
+  committed manifest.
+- Kept raw-only partial caches fail-closed and added regression coverage for
+  catalogue hydration, support-product hydration and upstream drift rejection.
+
 ## 2.1.0 — 2026-09-19
 
 - Added covariance-aware Gaussian information transfer and analytic break-even

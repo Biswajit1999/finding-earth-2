@@ -7,7 +7,7 @@ authors:
     given-names: "Biswajit"
 repository-code: "https://github.com/Biswajit1999/finding-earth-2"
 license: MIT
-version: 2.1.0
+version: 2.1.1
 date-released: 2026-09-19
 abstract: >
   A reproducible evidence architecture connecting the observed exoplanet

@@ -10,7 +10,7 @@ import pytest
 from astropy.io import ascii
 from astropy.table import Table
 
-from earth2.population import archive
+from earth2.population import archive, reliability
 from earth2.population.completeness import (
     SurveyContract,
     binomial_efficiency,
@@ -403,3 +403,126 @@ def test_archive_incomplete_cache_fails_closed(tmp_path):
     raw.write_bytes(b"partial")
     with pytest.raises(ValueError, match="Incomplete"):
         archive.fetch_product(tmp_path, "stars")
+
+
+def test_archive_manifest_only_checkout_rehydrates_pinned_payload(tmp_path, monkeypatch):
+    payload = star_fixture().to_csv(index=False).encode()
+
+    class Response:
+        headers = {"Content-Length": str(len(payload))}
+        url = archive.SPECS["stars"]["url"]
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def raise_for_status(self):
+            pass
+
+        def iter_content(self, **kwargs):
+            yield payload
+
+    class Session:
+        calls = 0
+
+        def get(self, *args, **kwargs):
+            self.calls += 1
+            return Response()
+
+    monkeypatch.setattr(archive.subprocess, "check_output", lambda *a, **k: "a" * 40)
+    monkeypatch.setattr(archive.shutil, "which", lambda x: x)
+    session = Session()
+    _, original = archive.fetch_product(tmp_path, "stars", session=session)
+    raw = tmp_path / original["raw_path"]
+    raw.unlink()
+
+    _, rehydrated = archive.fetch_product(tmp_path, "stars", session=session)
+
+    assert rehydrated == original
+    assert raw.read_bytes() == payload
+    assert session.calls == 2
+
+
+def test_archive_manifest_only_checkout_rejects_upstream_drift(tmp_path, monkeypatch):
+    payload = star_fixture().to_csv(index=False).encode()
+    manifest = {
+        "source_url": archive.SPECS["stars"]["url"],
+        "sha256": "0" * 64,
+        "bytes": len(payload),
+        "row_count": 3,
+    }
+    path = tmp_path / "data/manifests/population/dr25_stars.json"
+    path.parent.mkdir(parents=True)
+    path.write_text(json.dumps(manifest))
+
+    class Response:
+        headers = {"Content-Length": str(len(payload))}
+        url = archive.SPECS["stars"]["url"]
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def raise_for_status(self):
+            pass
+
+        def iter_content(self, **kwargs):
+            yield payload
+
+    class Session:
+        def get(self, *args, **kwargs):
+            return Response()
+
+    with pytest.raises(ValueError, match="does not match pinned manifest"):
+        archive.fetch_product(tmp_path, "stars", session=Session())
+    assert not (tmp_path / "data/raw/kepler_dr25/stars.csv").exists()
+
+
+def test_support_manifest_only_checkout_rehydrates_pinned_payload(tmp_path, monkeypatch):
+    payload = b"pinned support payload"
+    frame = pd.DataFrame({"TCE_ID": ["000000001-01"]})
+
+    class Response:
+        headers = {"Content-Length": str(len(payload))}
+        url = reliability.RAW_BASE + reliability.SUPPORT_SPECS["droplist_inv"]["filename"]
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *args):
+            pass
+
+        def raise_for_status(self):
+            pass
+
+        def iter_content(self, **kwargs):
+            yield payload
+
+    class Session:
+        calls = 0
+
+        def get(self, *args, **kwargs):
+            self.calls += 1
+            return Response()
+
+    monkeypatch.setattr(reliability, "validate_support_payload", lambda *args: frame)
+    monkeypatch.setattr(reliability.subprocess, "check_output", lambda *a, **k: "a" * 40)
+    monkeypatch.setattr(reliability.shutil, "which", lambda x: x)
+    session = Session()
+    _, original = reliability.fetch_support_product(
+        tmp_path, "droplist_inv", session=session
+    )
+    raw = tmp_path / original["raw_path"]
+    raw.unlink()
+
+    _, rehydrated = reliability.fetch_support_product(
+        tmp_path, "droplist_inv", session=session
+    )
+
+    assert rehydrated == original
+    assert raw.read_bytes() == payload
+    assert session.calls == 2

@@ -1,7 +1,7 @@
 # Finding Earth 2.0 project state
 
 - Current phase: **100% complete for the declared v2.1, Beyond Earth 2.0 and
-  LinkedIn media scope**. The public site, source repository and v2.1.0 GitHub
+  LinkedIn media scope**. The public site, source repository and v2.1.1 GitHub
   Release are published; DOI minting remains an optional external archive action.
 - Baseline commit: `82d5b127418e32d2cacc95c6ed12dc8dad140bac`.
 - Existing capabilities: catalogue ingestion, exact Gaia DR3 crossmatch,
@@ -169,7 +169,7 @@
   future plan in a shareable report.
 - Release engineering: the deterministic bundle now writes canonical LF bytes on
   every operating system, and NumPy array annotations are portable across the
-  supported Python 3.10/3.12 CI matrix. The v2.1.0 tag and public GitHub Release
+  supported Python 3.10/3.12 CI matrix. The v2.1.1 tag and public GitHub Release
   identify the finished package.
 
 ## Execution contract

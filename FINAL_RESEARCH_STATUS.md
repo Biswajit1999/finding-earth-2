@@ -1,6 +1,6 @@
 # Finding Earth 2.0 v2.1 — final research status
 
-**Release:** 2.1.0
+**Release:** 2.1.1
 **Scientific status:** complete for the declared v2 scope; conditional inference,
 not a discovery or probability of life  
 **Audited source checkpoint:** `79d6c9b59d82a184af47bb118d866f3aed87efc5`
@@ -180,7 +180,7 @@ or horizontal overflow. The post-v2 physics calculator adds five tests.
 
 ## 22. Release version
 
-Software, website, manuscript, and data bundle are version **2.1.0**. The Zenodo
+Software, website, manuscript, and data bundle are version **2.1.1**. The Zenodo
 deposit is prepared; its DOI is `pending` until minted and is not fabricated.
 
 ## 23. Git commit SHA
@@ -188,7 +188,7 @@ deposit is prepared; its DOI is `pending` until minted and is not fabricated.
 The publication bundle records source checkpoint
 `79d6c9b59d82a184af47bb118d866f3aed87efc5`, which contains the completed core,
 Beyond Earth 2.0 chapter and LinkedIn release package. The authoritative release
-reference for the covariance-aware decision audit is the annotated `v2.1.0` tag.
+reference for the covariance-aware decision audit is the annotated `v2.1.1` tag.
 
 ## 24. Highest-value next scientific experiment
 

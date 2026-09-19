@@ -131,26 +131,33 @@ def fetch_product(
     """Retrieve once, validate before saving; refuse incomplete/corrupt caches.
 
     A changed upstream release requires a new explicit cache namespace, rather
-    than silently replacing a scientifically frozen input. No credentials used.
+    than silently replacing a scientifically frozen input. A manifest-only
+    clean checkout rehydrates its ignored raw payload only after the downloaded
+    bytes, source and parsed row count match that committed manifest. No
+    credentials are used.
     """
     spec = SPECS[kind]
     raw = root / "data" / "raw" / "kepler_dr25" / f"{kind}.{spec['extension']}"
     manifest_path = root / "data" / "manifests" / "population" / f"dr25_{kind}.json"
-    if raw.exists() or manifest_path.exists():
-        if not (raw.exists() and manifest_path.exists()):
-            raise ValueError(f"Incomplete cache for {kind}: both raw payload and manifest required")
-        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    if raw.exists() and not manifest_path.exists():
+        raise ValueError(f"Incomplete cache for {kind}: raw payload has no manifest")
+    pinned_manifest = (
+        json.loads(manifest_path.read_text(encoding="utf-8"))
+        if manifest_path.exists()
+        else None
+    )
+    if raw.exists() and pinned_manifest is not None:
         payload = raw.read_bytes()
         if (
-            manifest["source_url"] != spec["url"]
-            or manifest["sha256"] != sha256(payload)
-            or manifest["bytes"] != len(payload)
+            pinned_manifest["source_url"] != spec["url"]
+            or pinned_manifest["sha256"] != sha256(payload)
+            or pinned_manifest["bytes"] != len(payload)
         ):
             raise ValueError(f"Cache integrity or source mismatch for {kind}")
         frame = validate_payload(payload, kind)
-        if manifest["row_count"] != len(frame):
+        if pinned_manifest["row_count"] != len(frame):
             raise ValueError("Cached manifest row count mismatch")
-        return frame, manifest
+        return frame, pinned_manifest
     owned_session = session is None
     if owned_session:
         session = requests.Session()
@@ -183,6 +190,19 @@ def fetch_product(
         if owned_session:
             session.close()
     frame = validate_payload(payload, kind)
+    if pinned_manifest is not None:
+        if (
+            pinned_manifest["source_url"] != spec["url"]
+            or pinned_manifest["sha256"] != sha256(payload)
+            or pinned_manifest["bytes"] != len(payload)
+            or pinned_manifest["row_count"] != len(frame)
+        ):
+            raise ValueError(f"Downloaded payload does not match pinned manifest for {kind}")
+        raw.parent.mkdir(parents=True, exist_ok=True)
+        with raw.open("xb") as stream:
+            stream.write(payload)
+        return frame, pinned_manifest
+
     git = shutil.which("git.exe") or shutil.which("git")
     if git is None:
         raise RuntimeError("Git is required to record software provenance")
