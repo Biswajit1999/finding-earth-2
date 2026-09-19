@@ -7,14 +7,15 @@ authors:
     given-names: "Biswajit"
 repository-code: "https://github.com/Biswajit1999/finding-earth-2"
 license: MIT
-version: 2.0.0
-date-released: 2026-09-13
+version: 2.1.0
+date-released: 2026-09-19
 abstract: >
   A reproducible evidence architecture connecting the observed exoplanet
   catalogue to selection-corrected population inference, composition-model
   disagreement, time-dependent climate context, stellar environment,
-  atmospheric observability, direct-imaging scenarios, information gain, and
-  Solar-System falsification controls. It makes no claim of life detection.
+  atmospheric observability, direct-imaging scenarios, objective-conditioned
+  information-gain sensitivity, and Solar-System falsification controls. It
+  makes no claim of life detection.
 keywords:
   - exoplanets
   - astrobiology

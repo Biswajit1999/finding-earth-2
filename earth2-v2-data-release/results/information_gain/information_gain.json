@@ -95,127 +95,127 @@
   "best_supported_action_by_target": [
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 0.6460676992850464,
+      "expected_information_gain_bits": 0.6460676993,
       "pl_name": "GJ 1002 b"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 0.6787760023090419,
+      "expected_information_gain_bits": 0.6787760023,
       "pl_name": "GJ 1002 c"
     },
     {
       "action_id": "eccentricity_precision_requirement",
-      "expected_information_gain_bits": 0.6197329673476948,
+      "expected_information_gain_bits": 0.6197329673,
       "pl_name": "GJ 1061 d"
     },
     {
       "action_id": "stellar_age_precision_requirement",
-      "expected_information_gain_bits": 1.8328308572491225,
+      "expected_information_gain_bits": 1.832830857,
       "pl_name": "GJ 251 c"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.0420321323942372,
+      "expected_information_gain_bits": 1.042032132,
       "pl_name": "GJ 3378 b"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 1.8838904817353292,
+      "expected_information_gain_bits": 1.883890482,
       "pl_name": "GJ 667 C c"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 2.4969322116046726,
+      "expected_information_gain_bits": 2.496932212,
       "pl_name": "GJ 667 C e"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 2.2979440078683138,
+      "expected_information_gain_bits": 2.297944008,
       "pl_name": "GJ 667 C f"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 1.1946119037425262,
+      "expected_information_gain_bits": 1.194611904,
       "pl_name": "Gl 725 B c"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 2.529455164519408,
+      "expected_information_gain_bits": 2.529455165,
       "pl_name": "Kepler-1229 b"
     },
     {
       "action_id": "stellar_age_precision_requirement",
-      "expected_information_gain_bits": 1.757002263331644,
+      "expected_information_gain_bits": 1.757002263,
       "pl_name": "Kepler-1544 b"
     },
     {
       "action_id": "radius_precision_requirement",
-      "expected_information_gain_bits": 2.58024806906848,
+      "expected_information_gain_bits": 2.580248069,
       "pl_name": "Kepler-1649 c"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 2.938381245390777,
+      "expected_information_gain_bits": 2.938381245,
       "pl_name": "Kepler-1652 b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 2.112276789454083,
+      "expected_information_gain_bits": 2.112276789,
       "pl_name": "Kepler-186 f"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 3.938534681147518,
+      "expected_information_gain_bits": 3.938534681,
       "pl_name": "Kepler-296 f"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 3.258761901708636,
+      "expected_information_gain_bits": 3.258761902,
       "pl_name": "Kepler-438 b"
     },
     {
       "action_id": "stellar_age_precision_requirement",
-      "expected_information_gain_bits": 2.8529404761945347,
+      "expected_information_gain_bits": 2.852940476,
       "pl_name": "Kepler-442 b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 3.44054859880985,
+      "expected_information_gain_bits": 3.440548599,
       "pl_name": "Kepler-452 b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.7141800863521457,
+      "expected_information_gain_bits": 1.714180086,
       "pl_name": "Kepler-62 f"
     },
     {
       "action_id": "radius_precision_requirement",
-      "expected_information_gain_bits": 0.30301683192659357,
+      "expected_information_gain_bits": 0.3030168319,
       "pl_name": "LHS 1140 b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 2.1101649774397777,
+      "expected_information_gain_bits": 2.110164977,
       "pl_name": "Proxima Cen b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.745285065223101,
+      "expected_information_gain_bits": 1.745285065,
       "pl_name": "TOI-700 d"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.3785116232537298,
+      "expected_information_gain_bits": 1.378511623,
       "pl_name": "TOI-715 b"
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.3785116232537298,
+      "expected_information_gain_bits": 1.378511623,
       "pl_name": "Teegarden's Star c"
     },
     {
       "action_id": "mass_precision_requirement",
-      "expected_information_gain_bits": 0.9587689199040134,
+      "expected_information_gain_bits": 0.9587689199,
       "pl_name": "Wolf 1069 b"
     }
   ],
@@ -224,6 +224,302 @@
   "equation": "E_y[KL(p(theta|D,y,a) || p(theta|D))]",
   "label": "SIMULATED",
   "linear_gaussian_solution_nats": "0.5 * ln(1 + prior_variance / observation_noise_variance)",
+  "objective_conditioned_audit": {
+    "assumed_absolute_correlation_ceiling": 0.9,
+    "claim_boundary": "The archive publishes marginal uncertainties, not the joint radius posterior. Correlation values are sensitivity coordinates, not measured correlations. Own-parameter information and objective-conditioned information answer different questions.",
+    "correlation_grid": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      0.99,
+      1.0
+    ],
+    "eligible_target_count": 13,
+    "indirect_wins_at_or_below_ceiling": 0,
+    "label": "SENSITIVITY",
+    "method": "Bivariate Gaussian transfer from a stellar-radius measurement to planet-radius uncertainty across an explicit absolute-correlation grid.",
+    "objective": "planet radius uncertainty",
+    "rows": [
+      {
+        "break_even_absolute_correlation": null,
+        "break_even_status": "not_reachable",
+        "direct_planet_radius_information_bits": 2.580248068751001,
+        "earth2_rank": 6,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-1649 c",
+        "stellar_radius_own_parameter_information_bits": 0.4855740259,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.36466857475346615,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.02243195947884477,
+          "0.50": 0.0942439380095696,
+          "0.75": 0.2325396680805964,
+          "0.90": 0.36466857475346615,
+          "0.95": 0.4210057276409875,
+          "0.99": 0.47191774833142863,
+          "1.00": 0.48557402593015353
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9887857613879925,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 2.1377772160927813,
+        "earth2_rank": 8,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-1229 b",
+        "stellar_radius_own_parameter_information_bits": 2.529455165,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.111149065855896,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04511346453585618,
+          "0.50": 0.20034118552658112,
+          "0.75": 0.5690226269214489,
+          "0.90": 1.111149065855896,
+          "0.95": 1.5024585686832774,
+          "0.99": 2.1710953393457544,
+          "1.00": 2.529455164519406
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9794218124786566,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 1.493811719992206,
+        "earth2_rank": 10,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "TOI-700 d",
+        "stellar_radius_own_parameter_information_bits": 1.745285065,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.966004299322872,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04228888538518229,
+          "0.50": 0.18643754388822337,
+          "0.75": 0.5181971186301997,
+          "0.90": 0.966004299322872,
+          "0.95": 1.2458623741938464,
+          "0.99": 1.611501585849802,
+          "1.00": 1.7452850652231002
+        }
+      },
+      {
+        "break_even_absolute_correlation": null,
+        "break_even_status": "not_reachable",
+        "direct_planet_radius_information_bits": 2.459978561295664,
+        "earth2_rank": 11,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-442 b",
+        "stellar_radius_own_parameter_information_bits": 2.019703446,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.0316717091873369,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04363598694275312,
+          "0.50": 0.19304185607235194,
+          "0.75": 0.5420155431122262,
+          "0.90": 1.0316717091873369,
+          "0.95": 1.3570970759237826,
+          "0.99": 1.8263990006628,
+          "1.00": 2.0197034464095434
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9865327673735165,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 1.8327087127062733,
+        "earth2_rank": 12,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-186 f",
+        "stellar_radius_own_parameter_information_bits": 2.112276789,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.049784623881538,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04398689316527745,
+          "0.50": 0.19477014716505256,
+          "0.75": 0.5483438269755924,
+          "0.90": 1.049784623881538,
+          "0.95": 1.3890882152637367,
+          "0.99": 1.8946633025486794,
+          "1.00": 2.112276789454084
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9749797674858267,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 1.1978367212419114,
+        "earth2_rank": 14,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "TOI-715 b",
+        "stellar_radius_own_parameter_information_bits": 1.378511623,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.8452431220558341,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.03947567069741099,
+          "0.50": 0.17279850039049735,
+          "0.75": 0.4707239088224436,
+          "0.90": 0.8452431220558341,
+          "0.95": 1.0569991442470112,
+          "0.99": 1.3002330618217135,
+          "1.00": 1.3785116232537293
+        }
+      },
+      {
+        "break_even_absolute_correlation": null,
+        "break_even_status": "not_reachable",
+        "direct_planet_radius_information_bits": 0.30301683190910067,
+        "earth2_rank": 15,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "LHS 1140 b",
+        "stellar_radius_own_parameter_information_bits": 0.2218033257,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.17407738519497712,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.012033879980915058,
+          "0.50": 0.049389077239086775,
+          "0.75": 0.11629722899505152,
+          "0.90": 0.17407738519497712,
+          "0.95": 0.1969182498296151,
+          "0.99": 0.2166540149878519,
+          "1.00": 0.22180332573780734
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9738938586999963,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 1.4201472043856476,
+        "earth2_rank": 17,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-62 f",
+        "stellar_radius_own_parameter_information_bits": 1.714180086,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.9573162883759271,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04210149606758695,
+          "0.50": 0.18552264746079397,
+          "0.75": 0.5149418356275174,
+          "0.90": 0.9573162883759271,
+          "0.95": 1.231648707979832,
+          "0.99": 1.5860757420884524,
+          "1.00": 1.7141800863521457
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9930488094199752,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 2.5142983883915253,
+        "earth2_rank": 18,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-1652 b",
+        "stellar_radius_own_parameter_information_bits": 2.938381245,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.1474405135451102,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04573675503876746,
+          "0.50": 0.20343825725354572,
+          "0.75": 0.5807090977113241,
+          "0.90": 1.1474405135451102,
+          "0.95": 1.5737027503741183,
+          "0.99": 2.3864061954084703,
+          "1.00": 2.9383812453907736
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9919473622670297,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 1.2984517658615276,
+        "earth2_rank": 20,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-1544 b",
+        "stellar_radius_own_parameter_information_bits": 1.360422224,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.8381932310970193,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.03929680495665698,
+          "0.50": 0.17193819956138395,
+          "0.75": 0.46780257541825015,
+          "0.90": 0.8381932310970193,
+          "0.95": 1.0464894326659544,
+          "0.99": 1.2843029545203288,
+          "1.00": 1.3604222243510191
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9952250259103569,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 3.092720695001956,
+        "earth2_rank": 22,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-296 f",
+        "stellar_radius_own_parameter_information_bits": 3.938534681,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.185000504269202,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04635017194203639,
+          "0.50": 0.206496677801394,
+          "0.75": 0.5923882163555736,
+          "0.90": 1.185000504269202,
+          "0.95": 1.6513696168116936,
+          "0.99": 2.6883387452838945,
+          "1.00": 3.938534681147515
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9929197547777576,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 2.737789531895647,
+        "earth2_rank": 23,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-452 b",
+        "stellar_radius_own_parameter_information_bits": 3.440548599,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.172335935300108,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.04614683963648183,
+          "0.50": 0.20548173906532827,
+          "0.75": 0.5884969956459336,
+          "0.90": 1.172335935300108,
+          "0.95": 1.6246950006960834,
+          "0.99": 2.573701092429199,
+          "1.00": 3.4405485988098468
+        }
+      },
+      {
+        "break_even_absolute_correlation": 0.9963630386225565,
+        "break_even_status": "reachable_only_above_ceiling",
+        "direct_planet_radius_information_bits": 2.8940688835803674,
+        "earth2_rank": 24,
+        "label": "SENSITIVITY",
+        "objective": "planet radius uncertainty",
+        "pl_name": "Kepler-438 b",
+        "stellar_radius_own_parameter_information_bits": 3.258761902,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.1651554209848474,
+        "transfer_bits_by_absolute_correlation": {
+          "0.00": 0.0,
+          "0.25": 0.046029985169240395,
+          "0.50": 0.2048989730539032,
+          "0.75": 0.5862696907153875,
+          "0.90": 1.1651554209848474,
+          "0.95": 1.609796730812172,
+          "0.99": 2.5152107912319894,
+          "1.00": 3.2587619017086378
+        }
+      }
+    ],
+    "scalar_stellar_action_wins": 10
+  },
+  "rebuild_mode": "committed_target_action_grid",
   "references": [
     {
       "citation": "Lindley (1956), On a Measure of the Information Provided by an Experiment",

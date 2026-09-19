@@ -5,16 +5,24 @@
       "sha256": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76"
     },
     "results/information_gain/expected_information_gain.png": {
-      "bytes": 210017,
-      "sha256": "6b399e464aad4f9b3dda4b98814b1d2cc110469a0f2dc6299f1b9413b0dff362"
+      "bytes": 195524,
+      "sha256": "a43e1b518599893373969329be4b40e460c6cb4402c36d54db7471573f3a1899"
     },
     "results/information_gain/expected_information_gain.svg": {
-      "bytes": 69495,
-      "sha256": "12a7a935e3aecf1e057c2b05a41015528eff88ecbac90f90c3866d71616e96b3"
+      "bytes": 78204,
+      "sha256": "2724ce50d2bb26dfdccce45c35f17599856ff7d7776be193ddf91e40660380a6"
     },
     "results/information_gain/information_gain.json": {
-      "bytes": 9419,
-      "sha256": "0dc09ddd11a93f23d5cd965ef439b4e31ec1361e190bebf40a70674128179c9d"
+      "bytes": 21382,
+      "sha256": "8d36a329f09319589e6c07ffdfeffb3824067c33a3d32e7abed557ec40a79955"
+    },
+    "results/information_gain/objective_conditioned_information.png": {
+      "bytes": 128215,
+      "sha256": "d970e9ef7e78e3f669eb2376a92b8ac2ee87e1ff342ed05498255137a3e69c8a"
+    },
+    "results/information_gain/objective_conditioned_information.svg": {
+      "bytes": 67350,
+      "sha256": "037b077468579ae4e8869d52862c40cb9f258736bf6012c6565ad10ee98c5bcd"
     }
   },
   "product": "Phase 12 action-specific expected information gain",

@@ -1,12 +1,12 @@
 {
   "analysis_timestamp": "2026-08-28T20:00:42Z",
   "doi": "pending",
-  "file_count_before_inventory": 65,
+  "file_count_before_inventory": 66,
   "files": [
     {
-      "bytes": 1056,
+      "bytes": 1092,
       "path": "CITATION.cff",
-      "sha256": "325992a915862bceda07844c59a12e804686b1169aabeb4bcee65629f779026b"
+      "sha256": "9db9c1d23b66b2b1e58306bc3b53f38a61ca0daaf563068f500928694ca25258"
     },
     {
       "bytes": 1803,
@@ -106,12 +106,12 @@
     {
       "bytes": 3489,
       "path": "pyproject.toml",
-      "sha256": "cdc699a2439054c128f451a2785c00ccd6e6a3112d3cab66cdf0a7408ebaef15"
+      "sha256": "48977849e5464d7ac3e7020511cbb0897233f80962d14e68c5e3ff4b493d5389"
     },
     {
       "bytes": 1035,
       "path": "README.md",
-      "sha256": "fd61fab72caec46f979d7e6d9213e592cafdce917a9ce70e4e81db88df03be63"
+      "sha256": "21f95723989aa9967ad417186db2dd6806d3a69113d9516d85868ef1f411b6d4"
     },
     {
       "bytes": 1206,
@@ -244,14 +244,19 @@
       "sha256": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76"
     },
     {
-      "bytes": 9419,
+      "bytes": 21382,
       "path": "results/information_gain/information_gain.json",
-      "sha256": "0dc09ddd11a93f23d5cd965ef439b4e31ec1361e190bebf40a70674128179c9d"
+      "sha256": "8d36a329f09319589e6c07ffdfeffb3824067c33a3d32e7abed557ec40a79955"
     },
     {
-      "bytes": 808,
+      "bytes": 1178,
       "path": "results/information_gain/information_gain_products.json",
-      "sha256": "76849f069ae56c57e8a123099d918532fdd8c895caf38b2e5b8c4c801ab597b2"
+      "sha256": "da9153712891ec25a03cdb00df0afcd7ac6e4d30e984379f37d5f91a5ab67480"
+    },
+    {
+      "bytes": 67350,
+      "path": "results/information_gain/objective_conditioned_information.svg",
+      "sha256": "037b077468579ae4e8869d52862c40cb9f258736bf6012c6565ad10ee98c5bcd"
     },
     {
       "bytes": 3044,
@@ -321,17 +326,17 @@
     {
       "bytes": 41,
       "path": "SOURCE_COMMIT",
-      "sha256": "2055f4eadcce2c1ad9d566d64823df7e6ffedd3e3b7ecf020b40e250e7e29a59"
+      "sha256": "25630f2173ebcd144ed42653c1e84f4b9157fb3b0aef1807b58590a183e57ab3"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624"
+      "sha256": "c89b87c262e9d5ffd20e73aac74a1772adcc9f5a21682cc33adcf5086e5fef5c"
     }
   ],
   "licensing_boundary": "Derived products only; no cached third-party source tables.",
-  "release": "2.0.0",
+  "release": "2.1.0",
   "schema_version": "1.0",
-  "source_commit": "33829cf176eb41a780f318e2fe2fc335dfa32437",
+  "source_commit": "f3d646af586b10ce0d6581a26628ea79a616388b",
   "title": "Finding Earth 2.0 v2 data release"
 }
