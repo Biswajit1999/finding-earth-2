@@ -6,7 +6,7 @@
     {
       "bytes": 1092,
       "path": "CITATION.cff",
-      "sha256": "501a56d7cf07b5c9481850bce669e6d87e53027b4a45ce942e213238b022737c"
+      "sha256": "9b6d6090abff5565f8c12dafff95ef32ab084fe2ccaf6291d49595e31cc7aeca"
     },
     {
       "bytes": 1803,
@@ -106,12 +106,12 @@
     {
       "bytes": 3489,
       "path": "pyproject.toml",
-      "sha256": "6828327a41c45e755629d7c435f58a1c04e04fc49010a8f00cb322dd68d210ae"
+      "sha256": "8ce3b48109c09de5846e0260437986fd9cf715008671b788e1a9bbd900d01c72"
     },
     {
       "bytes": 1035,
       "path": "README.md",
-      "sha256": "9c8e516de35c94fe298ae395b5fe9ae114df78b965c84360f97e3477568d9bfd"
+      "sha256": "840cd164d9574b341329dcd19ba0cbdf39fbbf584dd891e6900ebfd5c62e50c3"
     },
     {
       "bytes": 1206,
@@ -326,17 +326,17 @@
     {
       "bytes": 41,
       "path": "SOURCE_COMMIT",
-      "sha256": "751564d79e04adac816193d51dc8e5dc76a8902edde4dd4e1e9d32360611d3c0"
+      "sha256": "6e563fa04cdea0105a09b4b0cbf35f2ec7f0620f851914f8e240122d502f1b5e"
     },
     {
       "bytes": 6,
       "path": "VERSION",
-      "sha256": "7b3ff271f1373cfb97e9e53349794e1450f3794e4c0788c54a2060c7596da821"
+      "sha256": "9f6271951edca02e0c8a669a79930626717b77f0443ad8a327b93a52e4194829"
     }
   ],
   "licensing_boundary": "Derived products only; no cached third-party source tables.",
-  "release": "2.1.1",
+  "release": "2.1.2",
   "schema_version": "1.0",
-  "source_commit": "318768a5628fee837447d715214d719d8bad1cd9",
+  "source_commit": "4f13a889f5bfebae941edc54d098aea4c60ac05f",
   "title": "Finding Earth 2.0 v2 data release"
 }

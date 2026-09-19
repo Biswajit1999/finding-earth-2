@@ -1,7 +1,7 @@
 # Finding Earth 2.0 — v2 data release
 
 This is the deterministic, machine-readable companion to the v2 manuscript.
-It was built from source commit `318768a5628fee837447d715214d719d8bad1cd9`.
+It was built from source commit `4f13a889f5bfebae941edc54d098aea4c60ac05f`.
 
 The release contains derived catalogues, posterior summaries and samples,
 selection/reliability surfaces, model-sensitivity tables, mission scenarios,
