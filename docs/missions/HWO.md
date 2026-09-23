@@ -36,7 +36,7 @@ This page is one independent observatory view. Its rows are not converted into a
 
 - **OBSERVED — hpic_v1p1_stars**: 12,944 precursor catalogue stars. Potential inputs, not observed HWO targets or detections.
 - **FORECAST — generic_exoearth_accessibility**: 38,832 star-scenario rows; 12,682 stars with supported geometry. Three generic analytic trade cases; not a mission yield.
-- **FORECAST — known_planet_accessibility**: 744 matched known planets; 694 planets with supported forecast. Catalogue-conditioned accessibility, not HWO observations.
+- **FORECAST — known_planet_accessibility**: 746 matched known planets; 696 planets with supported forecast. Catalogue-conditioned accessibility, not HWO observations.
 
 ## Observation / forecast boundary
 

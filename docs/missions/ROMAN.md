@@ -36,7 +36,7 @@ This page is one independent observatory view. Its rows are not converted into a
 
 - **OBSERVED — launch_status**: 1 verified launch event. Launched 2026-08-30; travelling to L2 before science operations.
 - **FORECAST — gbtds_high_cadence**: 12.1 minutes per planned high-cadence visit; 6 planned seasons. Current survey design, not executed observations or measured yield.
-- **OBSERVED — historical_microlensing_context**: 895 NASA Archive comparison rows. Historical microlensing context; zero rows are Roman observations.
+- **OBSERVED — historical_microlensing_context**: 907 NASA Archive comparison rows. Historical microlensing context; zero rows are Roman observations.
 
 ## Observation / forecast boundary
 

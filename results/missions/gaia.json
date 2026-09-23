@@ -6,7 +6,7 @@
       "label": "OBSERVED",
       "source": "data/manifests/gaia_dr3_crossmatch.json",
       "unit": "Gaia DR3 source rows",
-      "value": 4408
+      "value": 4412
     },
     {
       "evidence_id": "dr4_science_rows",
@@ -18,10 +18,10 @@
     }
   ],
   "input_hashes": {
-    "data/manifests/gaia_dr3_crossmatch.json": "2ac7c61f569a9890d178d0366e88c0b7e7443d747b6967290b0ffc200eb6fbae",
-    "data/manifests/nasa_microlensing.json": "72afa6a36d7f0d3f08633988f8f2b04c49f844d70b4a931b35cc228f1fe70aac",
-    "results/atmosphere/spectrum_reductions.csv": "89a388665c4361b978eda791c993a9961f269b2c00f5713e7d62e3345415b16b",
-    "results/hwo/hwo_precursor_atlas.json": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
+    "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
+    "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
+    "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+    "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
   },
   "mission": {
     "agency": "European Space Agency / Gaia DPAC",

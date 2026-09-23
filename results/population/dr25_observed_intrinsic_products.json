@@ -3,24 +3,24 @@
   "product": "DR25 observed-versus-intrinsic narrative",
   "files": {
     "results/population/dr25_observed_vs_intrinsic.json": {
-      "bytes": 5449,
-      "sha256": "0ae21f47b29bba7a28e9495566bab629f981bf122faed34cf1395c1b7b14f425"
+      "bytes": 5443,
+      "sha256": "8f67d3e1bd92aa4e9f963b0c2965d5ea3fca2c4c92f690a0eb681885b39ed8a0"
     },
     "results/population/dr25_observed_vs_intrinsic.png": {
-      "bytes": 247965,
-      "sha256": "01541bceda32dcf420cc9e03bbd756c271cc27a810659941fcb4d833ed953843"
+      "bytes": 313161,
+      "sha256": "93ea922209527c37ca939459bb1138623b2304ae79a4a2e4f28ae628f69731bc"
     },
     "results/population/dr25_observed_vs_intrinsic.svg": {
-      "bytes": 4398813,
-      "sha256": "7430d60b46f5579ef03ef1ebc4ed6ee1bd0e54597c6cffc97d274ed98d88e1fd"
+      "bytes": 4401056,
+      "sha256": "340de7631f6d0721fc5901b9dbbc9953874e975a4c259a9781bbec5f179958d7"
     },
     "web/public/data/occurrence.json": {
-      "bytes": 5449,
-      "sha256": "0ae21f47b29bba7a28e9495566bab629f981bf122faed34cf1395c1b7b14f425"
+      "bytes": 5443,
+      "sha256": "8f67d3e1bd92aa4e9f963b0c2965d5ea3fca2c4c92f690a0eb681885b39ed8a0"
     },
     "web/public/figures/observed_vs_intrinsic.png": {
-      "bytes": 247965,
-      "sha256": "01541bceda32dcf420cc9e03bbd756c271cc27a810659941fcb4d833ed953843"
+      "bytes": 313161,
+      "sha256": "93ea922209527c37ca939459bb1138623b2304ae79a4a2e4f28ae628f69731bc"
     }
   }
 }

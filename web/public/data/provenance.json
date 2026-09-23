@@ -1,16 +1,16 @@
 {
- "generated_utc": "2026-08-29T14:41:49Z",
- "total_source_records": 164209,
+ "generated_utc": "2026-09-23T09:27:59Z",
+ "total_source_records": 164346,
  "datasets": [
   {
    "dataset_id": "gaia_dr3_crossmatch",
    "archive": "Gaia Archive (ESA)",
    "source_table": "gaiadr3.gaia_source",
-   "n_rows": 4408,
+   "n_rows": 4412,
    "n_columns": 17,
-   "retrieved_utc": "2026-08-28T19:57:46Z",
+   "retrieved_utc": "2026-09-23T09:23:23Z",
    "status": "ok",
-   "sha256_short": "0b620cefa44c",
+   "sha256_short": "8e63dc34fc65",
    "doi": ""
   },
   {
@@ -19,7 +19,7 @@
    "source_table": "di_stars_exep",
    "n_rows": 164,
    "n_columns": 59,
-   "retrieved_utc": "2026-08-28T19:57:19Z",
+   "retrieved_utc": "2026-09-23T09:23:06Z",
    "status": "ok",
    "sha256_short": "38052f559fc9",
    "doi": ""
@@ -30,20 +30,20 @@
    "source_table": "emissionspec",
    "n_rows": 2361,
    "n_columns": 18,
-   "retrieved_utc": "2026-08-28T19:57:12Z",
+   "retrieved_utc": "2026-09-23T09:23:00Z",
    "status": "ok",
    "sha256_short": "8d78a5057343",
-   "doi": "10.26133/NEA9"
+   "doi": "10.26133/NEA11"
   },
   {
    "dataset_id": "nasa_k2pandc",
    "archive": "NASA Exoplanet Archive",
    "source_table": "k2pandc",
-   "n_rows": 4068,
+   "n_rows": 4070,
    "n_columns": 38,
-   "retrieved_utc": "2026-08-28T19:56:44Z",
+   "retrieved_utc": "2026-09-23T09:22:47Z",
    "status": "ok",
-   "sha256_short": "1444b1fa2b15",
+   "sha256_short": "39f1918a0efe",
    "doi": "10.26133/NEA1"
   },
   {
@@ -52,7 +52,7 @@
    "source_table": "q1_q17_dr25_koi",
    "n_rows": 8054,
    "n_columns": 37,
-   "retrieved_utc": "2026-08-28T19:56:50Z",
+   "retrieved_utc": "2026-09-23T09:22:51Z",
    "status": "ok",
    "sha256_short": "5a62619a39df",
    "doi": "10.26133/NEA4"
@@ -61,33 +61,33 @@
    "dataset_id": "nasa_microlensing",
    "archive": "NASA Exoplanet Archive",
    "source_table": "ml",
-   "n_rows": 895,
+   "n_rows": 907,
    "n_columns": 11,
-   "retrieved_utc": "2026-08-28T19:57:17Z",
+   "retrieved_utc": "2026-09-23T09:23:04Z",
    "status": "ok",
-   "sha256_short": "7f7d795fca9d",
+   "sha256_short": "93c6e237b3da",
    "doi": ""
   },
   {
    "dataset_id": "nasa_ps",
    "archive": "NASA Exoplanet Archive",
    "source_table": "ps",
-   "n_rows": 40106,
+   "n_rows": 40155,
    "n_columns": 128,
-   "retrieved_utc": "2026-08-28T19:56:34Z",
+   "retrieved_utc": "2026-09-23T09:22:40Z",
    "status": "ok",
-   "sha256_short": "19761f0cba6c",
+   "sha256_short": "04051ee00ead",
    "doi": "10.26133/NEA12"
   },
   {
    "dataset_id": "nasa_pscomppars",
    "archive": "NASA Exoplanet Archive",
    "source_table": "pscomppars",
-   "n_rows": 6354,
+   "n_rows": 6366,
    "n_columns": 151,
-   "retrieved_utc": "2026-08-28T19:56:08Z",
+   "retrieved_utc": "2026-09-23T09:22:26Z",
    "status": "ok",
-   "sha256_short": "73eed33e0d57",
+   "sha256_short": "f5b9a88e5442",
    "doi": "10.26133/NEA13"
   },
   {
@@ -96,20 +96,20 @@
    "source_table": "spectra",
    "n_rows": 1826,
    "n_columns": 13,
-   "retrieved_utc": "2026-08-28T19:57:14Z",
+   "retrieved_utc": "2026-09-23T09:23:02Z",
    "status": "ok",
-   "sha256_short": "ffb3a6f2b29d",
+   "sha256_short": "83a9b10f2c3f",
    "doi": ""
   },
   {
    "dataset_id": "nasa_stellarhosts",
    "archive": "NASA Exoplanet Archive",
    "source_table": "stellarhosts",
-   "n_rows": 47857,
+   "n_rows": 47903,
    "n_columns": 38,
-   "retrieved_utc": "2026-08-28T19:57:33Z",
+   "retrieved_utc": "2026-09-23T09:23:13Z",
    "status": "ok",
-   "sha256_short": "45513b70c576",
+   "sha256_short": "0dd88dccd755",
    "doi": ""
   },
   {
@@ -118,7 +118,7 @@
    "source_table": "q1_q17_dr25_tce",
    "n_rows": 34032,
    "n_columns": 23,
-   "retrieved_utc": "2026-08-28T19:57:00Z",
+   "retrieved_utc": "2026-09-23T09:22:58Z",
    "status": "ok",
    "sha256_short": "246512d90dc8",
    "doi": ""
@@ -127,11 +127,11 @@
    "dataset_id": "nasa_toi",
    "archive": "NASA Exoplanet Archive",
    "source_table": "toi",
-   "n_rows": 8136,
+   "n_rows": 8148,
    "n_columns": 91,
-   "retrieved_utc": "2026-08-28T19:56:40Z",
+   "retrieved_utc": "2026-09-23T09:22:44Z",
    "status": "ok",
-   "sha256_short": "77b693084fe4",
+   "sha256_short": "f04e2776205e",
    "doi": "10.26134/ExoFOP5"
   },
   {
@@ -140,100 +140,100 @@
    "source_table": "transitspec",
    "n_rows": 5948,
    "n_columns": 27,
-   "retrieved_utc": "2026-08-28T19:57:03Z",
+   "retrieved_utc": "2026-09-23T09:22:59Z",
    "status": "ok",
    "sha256_short": "ace18f6adaee",
    "doi": "10.26133/NEA10"
   }
  ],
  "sync_state": {
-  "last_sync_utc": "2026-08-28T19:57:33Z",
+  "last_sync_utc": "2026-09-23T09:23:13Z",
   "datasets_ok": 12,
   "datasets_failed": 0,
-  "total_source_records": 164209,
+  "total_source_records": 164342,
   "outcomes": [
    {
     "dataset_id": "nasa_pscomppars",
     "status": "ok",
-    "n_rows": 6354,
-    "elapsed_s": 10.86,
+    "n_rows": 6366,
+    "elapsed_s": 7.01,
     "error": ""
    },
    {
     "dataset_id": "nasa_ps",
     "status": "ok",
-    "n_rows": 40106,
-    "elapsed_s": 25.52,
+    "n_rows": 40155,
+    "elapsed_s": 14.68,
     "error": ""
    },
    {
     "dataset_id": "nasa_toi",
     "status": "ok",
-    "n_rows": 8136,
-    "elapsed_s": 5.42,
+    "n_rows": 8148,
+    "elapsed_s": 3.25,
     "error": ""
    },
    {
     "dataset_id": "nasa_k2pandc",
     "status": "ok",
-    "n_rows": 4068,
-    "elapsed_s": 4.83,
+    "n_rows": 4070,
+    "elapsed_s": 3.47,
     "error": ""
    },
    {
     "dataset_id": "nasa_koi_dr25",
     "status": "ok",
     "n_rows": 8054,
-    "elapsed_s": 6.06,
+    "elapsed_s": 3.8,
     "error": ""
    },
    {
     "dataset_id": "nasa_tce_dr25",
     "status": "ok",
     "n_rows": 34032,
-    "elapsed_s": 9.09,
+    "elapsed_s": 6.38,
     "error": ""
    },
    {
     "dataset_id": "nasa_transitspec",
     "status": "ok",
     "n_rows": 5948,
-    "elapsed_s": 3.01,
+    "elapsed_s": 1.47,
     "error": ""
    },
    {
     "dataset_id": "nasa_emissionspec",
     "status": "ok",
     "n_rows": 2361,
-    "elapsed_s": 9.37,
+    "elapsed_s": 1.23,
     "error": ""
    },
    {
     "dataset_id": "nasa_spectra_index",
     "status": "ok",
     "n_rows": 1826,
-    "elapsed_s": 1.69,
+    "elapsed_s": 1.24,
     "error": ""
    },
    {
     "dataset_id": "nasa_microlensing",
     "status": "ok",
-    "n_rows": 895,
-    "elapsed_s": 3.17,
+    "n_rows": 907,
+    "elapsed_s": 2.56,
     "error": ""
    },
    {
     "dataset_id": "nasa_di_stars",
     "status": "ok",
     "n_rows": 164,
-    "elapsed_s": 2.04,
+    "elapsed_s": 1.47,
     "error": ""
    },
    {
     "dataset_id": "nasa_stellarhosts",
     "status": "ok",
-    "n_rows": 47857,
-    "elapsed_s": 14.28,
+    "n_rows": 47903,
+    "elapsed_s": 7.72,
     "error": ""
    }
   ]

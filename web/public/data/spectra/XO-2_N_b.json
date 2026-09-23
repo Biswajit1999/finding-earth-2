@@ -251,8 +251,17 @@
   {
    "wavelength_um": 0.44,
    "bandwidth_um": null,
-   "depth_ppm": 10857.64,
-   "depth_ppm_err": 1125.36,
+   "depth_ppm": 10609.0,
+   "depth_ppm_err": 412.0,
+   "source": "plnratror_squared",
+   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
+   "instrument": "Mont4k CCD"
+  },
+  {
+   "wavelength_um": 0.44,
+   "bandwidth_um": null,
+   "depth_ppm": 10609.0,
+   "depth_ppm_err": 401.7,
    "source": "plnratror_squared",
    "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
    "instrument": "Mont4k CCD"
@@ -278,8 +287,8 @@
   {
    "wavelength_um": 0.44,
    "bandwidth_um": null,
-   "depth_ppm": 10609.0,
-   "depth_ppm_err": 412.0,
+   "depth_ppm": 10857.64,
+   "depth_ppm_err": 1125.36,
    "source": "plnratror_squared",
    "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
    "instrument": "Mont4k CCD"
@@ -289,15 +298,6 @@
    "bandwidth_um": null,
    "depth_ppm": 11109.16,
    "depth_ppm_err": 326.74,
-   "source": "plnratror_squared",
-   "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
-   "instrument": "Mont4k CCD"
-  },
-  {
-   "wavelength_um": 0.44,
-   "bandwidth_um": null,
-   "depth_ppm": 10609.0,
-   "depth_ppm_err": 401.7,
    "source": "plnratror_squared",
    "facility": "Steward Observatory's 1.5 meter Kuiper Telescope",
    "instrument": "Mont4k CCD"
@@ -673,21 +673,21 @@
   },
   {
    "wavelength_um": 0.5663,
-   "bandwidth_um": 0.0017,
-   "depth_ppm": 10693.63,
-   "depth_ppm_err": 184.07,
-   "source": "plnratror_squared",
-   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
-   "instrument": "GMOS"
-  },
-  {
-   "wavelength_um": 0.5663,
    "bandwidth_um": 0.0015,
    "depth_ppm": 10801.44,
    "depth_ppm_err": 187.07,
    "source": "plnratror_squared",
    "facility": "National Optical Astronomy Observatory (NOAO) 4m Nicholas U. Mayall Telescope at Kitt Peak National Observatory (KPNO)",
    "instrument": "KOSMOS"
+  },
+  {
+   "wavelength_um": 0.5663,
+   "bandwidth_um": 0.0017,
+   "depth_ppm": 10693.63,
+   "depth_ppm_err": 184.07,
+   "source": "plnratror_squared",
+   "facility": "Association of Universities for Research in Astronomy (AURA) 8.1m Frederick C. Gillett Gemini North Telescope at Mauna Kea Observatory",
+   "instrument": "GMOS"
   },
   {
    "wavelength_um": 0.5678,

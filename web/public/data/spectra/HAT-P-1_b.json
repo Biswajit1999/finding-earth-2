@@ -424,18 +424,18 @@
   },
   {
    "wavelength_um": 0.71,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 13738.18,
-   "depth_ppm_err": 150.03,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 13921.64,
+   "depth_ppm_err": 125.07,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.71,
-   "bandwidth_um": 0.04,
-   "depth_ppm": 13921.64,
-   "depth_ppm_err": 125.07,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 13738.18,
+   "depth_ppm_err": 150.03,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -470,8 +470,8 @@
   {
    "wavelength_um": 0.7582,
    "bandwidth_um": 0.0012,
-   "depth_ppm": 15575.04,
-   "depth_ppm_err": 449.28,
+   "depth_ppm": 15550.09,
+   "depth_ppm_err": 548.68,
    "source": "plnratror_squared",
    "facility": "Gran Telescopio CANARIAS 10.4m telescope (GRANTECAN)",
    "instrument": "OSIRIS"
@@ -479,8 +479,8 @@
   {
    "wavelength_um": 0.7582,
    "bandwidth_um": 0.0012,
-   "depth_ppm": 15550.09,
-   "depth_ppm_err": 548.68,
+   "depth_ppm": 15575.04,
+   "depth_ppm_err": 449.28,
    "source": "plnratror_squared",
    "facility": "Gran Telescopio CANARIAS 10.4m telescope (GRANTECAN)",
    "instrument": "OSIRIS"

@@ -1,28 +1,28 @@
 {
   "files": {
     "results/environment/bolometric_vs_xuv.png": {
-      "bytes": 166663,
-      "sha256": "dd0416eae010a86707438d92b4e24082f36c2b19f8c846d8855b3b3afe044ae0"
+      "bytes": 169711,
+      "sha256": "b0bfdfe224d99f82c72a2231ad1a58b67df60eb64b16ebad136a35c48e491969"
     },
     "results/environment/bolometric_vs_xuv.svg": {
-      "bytes": 69835,
-      "sha256": "3765d33095d6940429fbb6006848b29df26bcf60521cdf3f51fc1ebcc607221d"
+      "bytes": 79750,
+      "sha256": "8ee53186c3b807ad02edaad28efd97fba15f07b246fcee957729d2786eab6099"
     },
     "results/environment/escape_sensitivity.png": {
-      "bytes": 159795,
-      "sha256": "848edf8ca5a1275f17b77e57cdc4e509bac2f093546c42a42f226ff41213a283"
+      "bytes": 149813,
+      "sha256": "7a568d32ce0b88d519a0225c435a1e0bc7c9aaf6438debf6d9b0853586c2bbfa"
     },
     "results/environment/escape_sensitivity.svg": {
-      "bytes": 79844,
-      "sha256": "37610d64f8a5f73e23510099efc4b79bde844fd69da2ca442726cfab67e97cca"
+      "bytes": 86810,
+      "sha256": "cf6ebbadb3269ab6d7fbae0636a0ddeb5f20d5824aac2abfe53e269417298a86"
     },
     "results/environment/xuv_escape_scenarios.csv": {
-      "bytes": 18723,
-      "sha256": "6dda40506c810cd56d31d5ba730b00f2c4bd407668fec02b8bc0d00add183599"
+      "bytes": 18706,
+      "sha256": "4b4c05f9c53866e6567218f89452985749861c067e748b99e5536dfeb90bb777"
     },
     "results/environment/xuv_escape_scenarios.json": {
-      "bytes": 757974,
-      "sha256": "b26486d3eeb6a16c69423277604aa3e19ff8fff64c0e3d8d15e03224345fcb33"
+      "bytes": 757873,
+      "sha256": "aff0cfcea0edbf76f61da72052b2ebeb86f3fdf319aaba297d6afbcb8e6068bc"
     }
   },
   "product": "Phase 8 XUV environment and atmospheric-escape scenarios",

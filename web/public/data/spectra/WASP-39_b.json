@@ -32,12 +32,12 @@
  ],
  "references": [
   {
-   "label": "Fischer et al. 2016",
-   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...827...19F/abstract"
-  },
-  {
    "label": "Sing et al. 2016",
    "url": "https://ui.adsabs.harvard.edu/abs/2016Natur.529...59S/abstract"
+  },
+  {
+   "label": "Fischer et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016ApJ...827...19F/abstract"
   },
   {
    "label": "Ricci et al. 2015",
@@ -196,18 +196,18 @@
  "points": [
   {
    "wavelength_um": 0.33,
-   "bandwidth_um": 0.08,
-   "depth_ppm": 20819.6,
-   "depth_ppm_err": 663.73,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 22084.93,
+   "depth_ppm_err": 344.78,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.33,
-   "bandwidth_um": 0.04,
-   "depth_ppm": 22084.93,
-   "depth_ppm_err": 344.78,
+   "bandwidth_um": 0.08,
+   "depth_ppm": 20819.6,
+   "depth_ppm_err": 663.73,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -313,15 +313,6 @@
   },
   {
    "wavelength_um": 0.445,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 21456.39,
-   "depth_ppm_err": 407.21,
-   "source": "plnratror_squared",
-   "facility": "Very Large Telescope (Antu)",
-   "instrument": "FORS2"
-  },
-  {
-   "wavelength_um": 0.445,
    "bandwidth_um": 0.005,
    "depth_ppm": 21330.6,
    "depth_ppm_err": 297.94,
@@ -330,19 +321,19 @@
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
+   "wavelength_um": 0.445,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 21456.39,
+   "depth_ppm_err": 407.21,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
    "wavelength_um": 0.45,
    "bandwidth_um": 0.01,
    "depth_ppm": 20998.91,
    "depth_ppm_err": 269.53,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.455,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 21556.11,
-   "depth_ppm_err": 264.28,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -357,19 +348,19 @@
    "instrument": "FORS2"
   },
   {
-   "wavelength_um": 0.46,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 20724.48,
-   "depth_ppm_err": 244.73,
+   "wavelength_um": 0.455,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 21556.11,
+   "depth_ppm_err": 264.28,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
-   "wavelength_um": 0.465,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 21120.81,
-   "depth_ppm_err": 264.5,
+   "wavelength_um": 0.46,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 20724.48,
+   "depth_ppm_err": 244.73,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -382,6 +373,15 @@
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.465,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 21120.81,
+   "depth_ppm_err": 264.5,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.47,
@@ -403,15 +403,6 @@
   },
   {
    "wavelength_um": 0.475,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 20906.27,
-   "depth_ppm_err": 257.37,
-   "source": "plnratror_squared",
-   "facility": "Very Large Telescope (Antu)",
-   "instrument": "FORS2"
-  },
-  {
-   "wavelength_um": 0.475,
    "bandwidth_um": 0.005,
    "depth_ppm": 21406.62,
    "depth_ppm_err": 280.92,
@@ -420,10 +411,28 @@
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
+   "wavelength_um": 0.475,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 20906.27,
+   "depth_ppm_err": 257.37,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
    "wavelength_um": 0.48,
    "bandwidth_um": 0.01,
    "depth_ppm": 20912.05,
    "depth_ppm_err": 219.81,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.485,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 20914.94,
+   "depth_ppm_err": 248.75,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -438,28 +447,10 @@
    "instrument": "FORS2"
   },
   {
-   "wavelength_um": 0.485,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 20914.94,
-   "depth_ppm_err": 248.75,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
    "wavelength_um": 0.49,
    "bandwidth_um": 0.01,
    "depth_ppm": 20681.32,
    "depth_ppm_err": 232.97,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.495,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 21257.64,
-   "depth_ppm_err": 247.86,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -472,6 +463,15 @@
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.495,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 21257.64,
+   "depth_ppm_err": 247.86,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.505,
@@ -529,21 +529,21 @@
   },
   {
    "wavelength_um": 0.525,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 21316.0,
-   "depth_ppm_err": 230.68,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.525,
    "bandwidth_um": 0.01,
    "depth_ppm": 20560.69,
    "depth_ppm_err": 567.82,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.525,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 21316.0,
+   "depth_ppm_err": 230.68,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.53,
@@ -565,21 +565,21 @@
   },
   {
    "wavelength_um": 0.535,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 20669.81,
-   "depth_ppm_err": 270.29,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.535,
    "bandwidth_um": 0.01,
    "depth_ppm": 21027.9,
    "depth_ppm_err": 287.12,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.535,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 20669.81,
+   "depth_ppm_err": 270.29,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.5391,
@@ -601,21 +601,21 @@
   },
   {
    "wavelength_um": 0.545,
-   "bandwidth_um": 0.005,
-   "depth_ppm": 20426.13,
-   "depth_ppm_err": 277.26,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.545,
    "bandwidth_um": 0.01,
    "depth_ppm": 21091.75,
    "depth_ppm_err": 325.32,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.545,
+   "bandwidth_um": 0.005,
+   "depth_ppm": 20426.13,
+   "depth_ppm_err": 277.26,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.5455,
@@ -692,15 +692,6 @@
   {
    "wavelength_um": 0.56,
    "bandwidth_um": 0.01,
-   "depth_ppm": 20681.32,
-   "depth_ppm_err": 330.76,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.56,
-   "bandwidth_um": 0.01,
    "depth_ppm": 21193.54,
    "depth_ppm_err": 241.66,
    "source": "plnratror_squared",
@@ -712,6 +703,15 @@
    "bandwidth_um": 0.01,
    "depth_ppm": 20842.7,
    "depth_ppm_err": 282.97,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.56,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 20681.32,
+   "depth_ppm_err": 330.76,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -773,8 +773,8 @@
   {
    "wavelength_um": 0.576,
    "bandwidth_um": 0.022,
-   "depth_ppm": 20964.14,
-   "depth_ppm_err": 330.12,
+   "depth_ppm": 21435.89,
+   "depth_ppm_err": 196.19,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
@@ -782,8 +782,8 @@
   {
    "wavelength_um": 0.576,
    "bandwidth_um": 0.022,
-   "depth_ppm": 21435.89,
-   "depth_ppm_err": 196.19,
+   "depth_ppm": 20964.14,
+   "depth_ppm_err": 330.12,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
@@ -836,8 +836,8 @@
   {
    "wavelength_um": 0.589,
    "bandwidth_um": 0.003,
-   "depth_ppm": 22353.24,
-   "depth_ppm_err": 639.9,
+   "depth_ppm": 22578.07,
+   "depth_ppm_err": 619.07,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
@@ -845,8 +845,8 @@
   {
    "wavelength_um": 0.589,
    "bandwidth_um": 0.003,
-   "depth_ppm": 22578.07,
-   "depth_ppm_err": 619.07,
+   "depth_ppm": 22353.24,
+   "depth_ppm_err": 639.9,
    "source": "plnratror_squared",
    "facility": "Very Large Telescope (Antu)",
    "instrument": "FORS2"
@@ -1259,6 +1259,15 @@
   {
    "wavelength_um": 0.67,
    "bandwidth_um": 0.02,
+   "depth_ppm": 20868.69,
+   "depth_ppm_err": 346.7,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
+  },
+  {
+   "wavelength_um": 0.67,
+   "bandwidth_um": 0.02,
    "depth_ppm": 20491.92,
    "depth_ppm_err": 260.53,
    "source": "plnratror_squared",
@@ -1273,15 +1282,6 @@
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.67,
-   "bandwidth_um": 0.02,
-   "depth_ppm": 20868.69,
-   "depth_ppm_err": 346.7,
-   "source": "plnratror_squared",
-   "facility": "Very Large Telescope (Antu)",
-   "instrument": "FORS2"
   },
   {
    "wavelength_um": 0.6701,
@@ -1402,21 +1402,21 @@
   },
   {
    "wavelength_um": 0.695,
-   "bandwidth_um": 0.03,
-   "depth_ppm": 20776.34,
-   "depth_ppm_err": 193.15,
-   "source": "plnratror_squared",
-   "facility": "Very Large Telescope (Antu)",
-   "instrument": "FORS2"
-  },
-  {
-   "wavelength_um": 0.695,
    "bandwidth_um": 0.015,
    "depth_ppm": 20534.89,
    "depth_ppm_err": 226.41,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
+  },
+  {
+   "wavelength_um": 0.695,
+   "bandwidth_um": 0.03,
+   "depth_ppm": 20776.34,
+   "depth_ppm_err": 193.15,
+   "source": "plnratror_squared",
+   "facility": "Very Large Telescope (Antu)",
+   "instrument": "FORS2"
   },
   {
    "wavelength_um": 0.6974,
@@ -1708,21 +1708,21 @@
   },
   {
    "wavelength_um": 0.77,
-   "bandwidth_um": 0.01,
-   "depth_ppm": 21117.9,
-   "depth_ppm_err": 822.51,
-   "source": "plnratror_squared",
-   "facility": "Hubble Space Telescope satellite",
-   "instrument": "Space Telescope Imaging Spectrograph"
-  },
-  {
-   "wavelength_um": 0.77,
    "bandwidth_um": 0.0016,
    "depth_ppm": 21346.6,
    "depth_ppm_err": 86.62,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Imager and Slitless Spectrograph (NIRISS)"
+  },
+  {
+   "wavelength_um": 0.77,
+   "bandwidth_um": 0.01,
+   "depth_ppm": 21117.9,
+   "depth_ppm_err": 822.51,
+   "source": "plnratror_squared",
+   "facility": "Hubble Space Telescope satellite",
+   "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.7732,
@@ -1771,21 +1771,21 @@
   },
   {
    "wavelength_um": 0.7896,
-   "bandwidth_um": null,
-   "depth_ppm": 20913.35,
-   "depth_ppm_err": 78.19,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 0.7896,
    "bandwidth_um": 0.0016,
    "depth_ppm": 20956.96,
    "depth_ppm_err": 94.56,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Imager and Slitless Spectrograph (NIRISS)"
+  },
+  {
+   "wavelength_um": 0.7896,
+   "bandwidth_um": null,
+   "depth_ppm": 20913.35,
+   "depth_ppm_err": 78.19,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 0.79,
@@ -1951,18 +1951,18 @@
   },
   {
    "wavelength_um": 0.83,
-   "bandwidth_um": 0.02,
-   "depth_ppm": 21199.36,
-   "depth_ppm_err": 474.66,
+   "bandwidth_um": 0.04,
+   "depth_ppm": 20883.14,
+   "depth_ppm_err": 578.04,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
   },
   {
    "wavelength_um": 0.83,
-   "bandwidth_um": 0.04,
-   "depth_ppm": 20883.14,
-   "depth_ppm_err": 578.04,
+   "bandwidth_um": 0.02,
+   "depth_ppm": 21199.36,
+   "depth_ppm_err": 474.66,
    "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Space Telescope Imaging Spectrograph"
@@ -5821,21 +5821,21 @@
   },
   {
    "wavelength_um": 2.9375,
-   "bandwidth_um": 0.0068,
-   "depth_ppm": 21867.82,
-   "depth_ppm_err": 163.67,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
-  },
-  {
-   "wavelength_um": 2.9375,
    "bandwidth_um": 0.015,
    "depth_ppm": 21646.94,
    "depth_ppm_err": 136.65,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 2.9375,
+   "bandwidth_um": 0.0068,
+   "depth_ppm": 21867.82,
+   "depth_ppm_err": 163.67,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
   },
   {
    "wavelength_um": 2.9443,
@@ -6029,20 +6029,20 @@
   {
    "wavelength_um": 3.0139,
    "bandwidth_um": null,
-   "depth_ppm": 21613.62,
-   "depth_ppm_err": 76.25,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.0139,
-   "bandwidth_um": null,
    "depth_ppm": 21338.0,
    "depth_ppm_err": 98.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.0139,
+   "bandwidth_um": null,
+   "depth_ppm": 21613.62,
+   "depth_ppm_err": 76.25,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.017,
@@ -6128,20 +6128,20 @@
   {
    "wavelength_um": 3.0402,
    "bandwidth_um": null,
-   "depth_ppm": 21701.31,
-   "depth_ppm_err": 75.99,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.0402,
-   "bandwidth_um": null,
    "depth_ppm": 21504.0,
    "depth_ppm_err": 97.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.0402,
+   "bandwidth_um": null,
+   "depth_ppm": 21701.31,
+   "depth_ppm_err": 75.99,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.0425,
@@ -6218,20 +6218,20 @@
   {
    "wavelength_um": 3.0662,
    "bandwidth_um": null,
-   "depth_ppm": 21558.11,
-   "depth_ppm_err": 76.37,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.0662,
-   "bandwidth_um": null,
    "depth_ppm": 21196.0,
    "depth_ppm_err": 97.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.0662,
+   "bandwidth_um": null,
+   "depth_ppm": 21558.11,
+   "depth_ppm_err": 76.37,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.0664,
@@ -6316,15 +6316,6 @@
   },
   {
    "wavelength_um": 3.0921,
-   "bandwidth_um": 0.0258,
-   "depth_ppm": 21470.21,
-   "depth_ppm_err": 79.08,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.0921,
    "bandwidth_um": null,
    "depth_ppm": 21570.52,
    "depth_ppm_err": 77.93,
@@ -6340,6 +6331,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.0921,
+   "bandwidth_um": 0.0258,
+   "depth_ppm": 21470.21,
+   "depth_ppm_err": 79.08,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.0935,
@@ -6361,21 +6361,21 @@
   },
   {
    "wavelength_um": 3.1025,
-   "bandwidth_um": 0.0115,
-   "depth_ppm": 21456.28,
-   "depth_ppm_err": 103.49,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
-  },
-  {
-   "wavelength_um": 3.1025,
    "bandwidth_um": 0.015,
    "depth_ppm": 21277.87,
    "depth_ppm_err": 119.21,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Camera (NIRCam)"
+  },
+  {
+   "wavelength_um": 3.1025,
+   "bandwidth_um": 0.0115,
+   "depth_ppm": 21456.28,
+   "depth_ppm_err": 103.49,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
   },
   {
    "wavelength_um": 3.1049,
@@ -6415,15 +6415,6 @@
   },
   {
    "wavelength_um": 3.1177,
-   "bandwidth_um": 0.0255,
-   "depth_ppm": 21455.04,
-   "depth_ppm_err": 79.82,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.1177,
    "bandwidth_um": null,
    "depth_ppm": 21324.63,
    "depth_ppm_err": 78.45,
@@ -6439,6 +6430,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.1177,
+   "bandwidth_um": 0.0255,
+   "depth_ppm": 21455.04,
+   "depth_ppm_err": 79.82,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.118,
@@ -6515,11 +6515,11 @@
   {
    "wavelength_um": 3.1432,
    "bandwidth_um": null,
-   "depth_ppm": 21444.26,
-   "depth_ppm_err": 82.35,
+   "depth_ppm": 21298.0,
+   "depth_ppm_err": 103.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.1432,
@@ -6533,11 +6533,11 @@
   {
    "wavelength_um": 3.1432,
    "bandwidth_um": null,
-   "depth_ppm": 21298.0,
-   "depth_ppm_err": 103.0,
+   "depth_ppm": 21444.26,
+   "depth_ppm_err": 82.35,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.1475,
@@ -6622,21 +6622,21 @@
   },
   {
    "wavelength_um": 3.1684,
-   "bandwidth_um": 0.0252,
-   "depth_ppm": 21449.9,
-   "depth_ppm_err": 80.59,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.1684,
    "bandwidth_um": null,
    "depth_ppm": 21136.0,
    "depth_ppm_err": 105.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.1684,
+   "bandwidth_um": 0.0252,
+   "depth_ppm": 21449.9,
+   "depth_ppm_err": 80.59,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.1684,
@@ -6712,6 +6712,15 @@
   },
   {
    "wavelength_um": 3.1935,
+   "bandwidth_um": 0.025,
+   "depth_ppm": 21353.57,
+   "depth_ppm_err": 82.4,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.1935,
    "bandwidth_um": null,
    "depth_ppm": 21119.0,
    "depth_ppm_err": 106.0,
@@ -6727,15 +6736,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.1935,
-   "bandwidth_um": 0.025,
-   "depth_ppm": 21353.57,
-   "depth_ppm_err": 82.4,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.1951,
@@ -6910,21 +6910,21 @@
   },
   {
    "wavelength_um": 3.243,
-   "bandwidth_um": 0.0246,
-   "depth_ppm": 21229.77,
-   "depth_ppm_err": 87.07,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.243,
    "bandwidth_um": null,
    "depth_ppm": 21234.58,
    "depth_ppm_err": 85.88,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.243,
+   "bandwidth_um": 0.0246,
+   "depth_ppm": 21229.77,
+   "depth_ppm_err": 87.07,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.243,
@@ -6964,21 +6964,21 @@
   },
   {
    "wavelength_um": 3.2553,
-   "bandwidth_um": 0.0068,
-   "depth_ppm": 21289.81,
-   "depth_ppm_err": 124.88,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
-  },
-  {
-   "wavelength_um": 3.2553,
    "bandwidth_um": null,
    "depth_ppm": 21113.0,
    "depth_ppm_err": 110.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.2553,
+   "bandwidth_um": 0.0068,
+   "depth_ppm": 21289.81,
+   "depth_ppm_err": 124.88,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
   },
   {
    "wavelength_um": 3.2621,
@@ -7000,30 +7000,12 @@
   },
   {
    "wavelength_um": 3.2675,
-   "bandwidth_um": 0.0244,
-   "depth_ppm": 21156.5,
-   "depth_ppm_err": 84.13,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.2675,
    "bandwidth_um": 0.015,
    "depth_ppm": 20919.44,
    "depth_ppm_err": 132.64,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Camera (NIRCam)"
-  },
-  {
-   "wavelength_um": 3.2675,
-   "bandwidth_um": null,
-   "depth_ppm": 20892.0,
-   "depth_ppm_err": 110.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.2675,
@@ -7042,6 +7024,24 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.2675,
+   "bandwidth_um": null,
+   "depth_ppm": 20892.0,
+   "depth_ppm_err": 110.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.2675,
+   "bandwidth_um": 0.0244,
+   "depth_ppm": 21156.5,
+   "depth_ppm_err": 84.13,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.2688,
@@ -7108,15 +7108,6 @@
   },
   {
    "wavelength_um": 3.2918,
-   "bandwidth_um": 0.0242,
-   "depth_ppm": 21212.03,
-   "depth_ppm_err": 84.54,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.2918,
    "bandwidth_um": null,
    "depth_ppm": 21096.39,
    "depth_ppm_err": 86.72,
@@ -7132,6 +7123,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.2918,
+   "bandwidth_um": 0.0242,
+   "depth_ppm": 21212.03,
+   "depth_ppm_err": 84.54,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.2962,
@@ -7208,20 +7208,20 @@
   {
    "wavelength_um": 3.316,
    "bandwidth_um": null,
-   "depth_ppm": 21194.76,
-   "depth_ppm_err": 88.74,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.316,
-   "bandwidth_um": null,
    "depth_ppm": 21062.0,
    "depth_ppm_err": 115.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.316,
+   "bandwidth_um": null,
+   "depth_ppm": 21194.76,
+   "depth_ppm_err": 88.74,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.316,
@@ -7307,20 +7307,20 @@
   {
    "wavelength_um": 3.34,
    "bandwidth_um": null,
-   "depth_ppm": 21024.0,
-   "depth_ppm_err": 117.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.34,
-   "bandwidth_um": null,
    "depth_ppm": 21134.89,
    "depth_ppm_err": 90.03,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.34,
+   "bandwidth_um": null,
+   "depth_ppm": 21024.0,
+   "depth_ppm_err": 117.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.3425,
@@ -7414,21 +7414,21 @@
   },
   {
    "wavelength_um": 3.3638,
-   "bandwidth_um": 0.0068,
-   "depth_ppm": 21419.28,
-   "depth_ppm_err": 154.72,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
-  },
-  {
-   "wavelength_um": 3.3638,
    "bandwidth_um": null,
    "depth_ppm": 20942.0,
    "depth_ppm_err": 120.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.3638,
+   "bandwidth_um": 0.0068,
+   "depth_ppm": 21419.28,
+   "depth_ppm_err": 154.72,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
   },
   {
    "wavelength_um": 3.3703,
@@ -7486,15 +7486,6 @@
   },
   {
    "wavelength_um": 3.3874,
-   "bandwidth_um": 0.0236,
-   "depth_ppm": 21275.68,
-   "depth_ppm_err": 91.06,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.3874,
    "bandwidth_um": null,
    "depth_ppm": 21057.0,
    "depth_ppm_err": 122.0,
@@ -7510,6 +7501,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.3874,
+   "bandwidth_um": 0.0236,
+   "depth_ppm": 21275.68,
+   "depth_ppm_err": 91.06,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.3875,
@@ -7585,21 +7585,21 @@
   },
   {
    "wavelength_um": 3.4108,
-   "bandwidth_um": 0.0234,
-   "depth_ppm": 21151.62,
-   "depth_ppm_err": 92.57,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.4108,
    "bandwidth_um": 0.0068,
    "depth_ppm": 21368.35,
    "depth_ppm_err": 136.07,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
+  },
+  {
+   "wavelength_um": 3.4108,
+   "bandwidth_um": 0.0234,
+   "depth_ppm": 21151.62,
+   "depth_ppm_err": 92.57,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.4109,
@@ -7621,21 +7621,21 @@
   },
   {
    "wavelength_um": 3.4175,
-   "bandwidth_um": 0.015,
-   "depth_ppm": 20906.1,
-   "depth_ppm_err": 135.22,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Camera (NIRCam)"
-  },
-  {
-   "wavelength_um": 3.4175,
    "bandwidth_um": 0.0068,
    "depth_ppm": 21495.88,
    "depth_ppm_err": 136.71,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
+  },
+  {
+   "wavelength_um": 3.4175,
+   "bandwidth_um": 0.015,
+   "depth_ppm": 20906.1,
+   "depth_ppm_err": 135.22,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Camera (NIRCam)"
   },
   {
    "wavelength_um": 3.4225,
@@ -7693,21 +7693,21 @@
   },
   {
    "wavelength_um": 3.4342,
-   "bandwidth_um": 0.0232,
-   "depth_ppm": 21309.2,
-   "depth_ppm_err": 92.76,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.4342,
    "bandwidth_um": null,
    "depth_ppm": 21259.14,
    "depth_ppm_err": 95.44,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.4342,
+   "bandwidth_um": 0.0232,
+   "depth_ppm": 21309.2,
+   "depth_ppm_err": 92.76,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.4378,
@@ -7873,12 +7873,12 @@
   },
   {
    "wavelength_um": 3.4803,
-   "bandwidth_um": 0.0229,
-   "depth_ppm": 21312.56,
-   "depth_ppm_err": 95.95,
+   "bandwidth_um": null,
+   "depth_ppm": 21252.31,
+   "depth_ppm_err": 98.19,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.4803,
@@ -7891,12 +7891,12 @@
   },
   {
    "wavelength_um": 3.4803,
-   "bandwidth_um": null,
-   "depth_ppm": 21252.31,
-   "depth_ppm_err": 98.19,
+   "bandwidth_um": 0.0229,
+   "depth_ppm": 21312.56,
+   "depth_ppm_err": 95.95,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.485,
@@ -8053,6 +8053,15 @@
   },
   {
    "wavelength_um": 3.5259,
+   "bandwidth_um": 0.0226,
+   "depth_ppm": 21214.88,
+   "depth_ppm_err": 97.73,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.5259,
    "bandwidth_um": null,
    "depth_ppm": 21233.72,
    "depth_ppm_err": 99.97,
@@ -8068,15 +8077,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.5259,
-   "bandwidth_um": 0.0226,
-   "depth_ppm": 21214.88,
-   "depth_ppm_err": 97.73,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.526,
@@ -8144,6 +8144,15 @@
   {
    "wavelength_um": 3.5484,
    "bandwidth_um": null,
+   "depth_ppm": 20978.0,
+   "depth_ppm_err": 135.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.5484,
+   "bandwidth_um": null,
    "depth_ppm": 21140.35,
    "depth_ppm_err": 100.72,
    "source": "plntransdep_percent",
@@ -8158,15 +8167,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.5484,
-   "bandwidth_um": null,
-   "depth_ppm": 20978.0,
-   "depth_ppm_err": 135.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.5524,
@@ -8432,20 +8432,20 @@
   {
    "wavelength_um": 3.6152,
    "bandwidth_um": null,
-   "depth_ppm": 21040.6,
-   "depth_ppm_err": 104.76,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.6152,
-   "bandwidth_um": null,
    "depth_ppm": 21046.0,
    "depth_ppm_err": 143.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.6152,
+   "bandwidth_um": null,
+   "depth_ppm": 21040.6,
+   "depth_ppm_err": 104.76,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.6152,
@@ -8611,12 +8611,12 @@
   },
   {
    "wavelength_um": 3.6591,
-   "bandwidth_um": 0.0218,
-   "depth_ppm": 21227.04,
-   "depth_ppm_err": 105.1,
+   "bandwidth_um": null,
+   "depth_ppm": 21046.0,
+   "depth_ppm_err": 149.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.6591,
@@ -8629,12 +8629,12 @@
   },
   {
    "wavelength_um": 3.6591,
-   "bandwidth_um": null,
-   "depth_ppm": 21046.0,
-   "depth_ppm_err": 149.0,
+   "bandwidth_um": 0.0218,
+   "depth_ppm": 21227.04,
+   "depth_ppm_err": 105.1,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.6603,
@@ -8719,21 +8719,21 @@
   },
   {
    "wavelength_um": 3.6808,
-   "bandwidth_um": null,
-   "depth_ppm": 21286.16,
-   "depth_ppm_err": 112.43,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.6808,
    "bandwidth_um": 0.0217,
    "depth_ppm": 21264.22,
    "depth_ppm_err": 107.78,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.6808,
+   "bandwidth_um": null,
+   "depth_ppm": 21286.16,
+   "depth_ppm_err": 112.43,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.6872,
@@ -8791,12 +8791,12 @@
   },
   {
    "wavelength_um": 3.7024,
-   "bandwidth_um": null,
-   "depth_ppm": 20919.26,
-   "depth_ppm_err": 112.23,
+   "bandwidth_um": 0.0215,
+   "depth_ppm": 20979.42,
+   "depth_ppm_err": 107.67,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.7024,
@@ -8809,12 +8809,12 @@
   },
   {
    "wavelength_um": 3.7024,
-   "bandwidth_um": 0.0215,
-   "depth_ppm": 20979.42,
-   "depth_ppm_err": 107.67,
+   "bandwidth_um": null,
+   "depth_ppm": 20919.26,
+   "depth_ppm_err": 112.23,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.7025,
@@ -8891,20 +8891,20 @@
   {
    "wavelength_um": 3.7239,
    "bandwidth_um": null,
-   "depth_ppm": 21069.61,
-   "depth_ppm_err": 112.74,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.7239,
-   "bandwidth_um": null,
    "depth_ppm": 21040.0,
    "depth_ppm_err": 156.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.7239,
+   "bandwidth_um": null,
+   "depth_ppm": 21069.61,
+   "depth_ppm_err": 112.74,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.7325,
@@ -9062,6 +9062,15 @@
   {
    "wavelength_um": 3.7875,
    "bandwidth_um": null,
+   "depth_ppm": 20707.0,
+   "depth_ppm_err": 163.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.7875,
+   "bandwidth_um": null,
    "depth_ppm": 20807.1,
    "depth_ppm_err": 116.07,
    "source": "plntransdep_percent",
@@ -9076,15 +9085,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.7875,
-   "bandwidth_um": null,
-   "depth_ppm": 20707.0,
-   "depth_ppm_err": 163.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.7925,
@@ -9115,15 +9115,6 @@
   },
   {
    "wavelength_um": 3.808,
-   "bandwidth_um": 0.012,
-   "depth_ppm": 21198.4,
-   "depth_ppm_err": 107.83,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
-  },
-  {
-   "wavelength_um": 3.808,
    "bandwidth_um": null,
    "depth_ppm": 20912.65,
    "depth_ppm_err": 98.7,
@@ -9132,13 +9123,13 @@
    "instrument": "Near Infrared Spectrograph (NIRSpec) - tshirt pipeline"
   },
   {
-   "wavelength_um": 3.8085,
-   "bandwidth_um": null,
-   "depth_ppm": 21189.98,
-   "depth_ppm_err": 117.85,
+   "wavelength_um": 3.808,
+   "bandwidth_um": 0.012,
+   "depth_ppm": 21198.4,
+   "depth_ppm_err": 107.83,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
   },
   {
    "wavelength_um": 3.8085,
@@ -9148,6 +9139,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.8085,
+   "bandwidth_um": null,
+   "depth_ppm": 21189.98,
+   "depth_ppm_err": 117.85,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.8085,
@@ -9268,15 +9268,6 @@
   },
   {
    "wavelength_um": 3.8501,
-   "bandwidth_um": null,
-   "depth_ppm": 20932.0,
-   "depth_ppm_err": 174.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.8501,
    "bandwidth_um": 0.0207,
    "depth_ppm": 21166.68,
    "depth_ppm_err": 118.47,
@@ -9292,6 +9283,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.8501,
+   "bandwidth_um": null,
+   "depth_ppm": 20932.0,
+   "depth_ppm_err": 174.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.8525,
@@ -9358,21 +9358,21 @@
   },
   {
    "wavelength_um": 3.8707,
-   "bandwidth_um": null,
-   "depth_ppm": 21053.0,
-   "depth_ppm_err": 178.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.8707,
    "bandwidth_um": 0.0206,
    "depth_ppm": 21070.73,
    "depth_ppm_err": 119.83,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.8707,
+   "bandwidth_um": null,
+   "depth_ppm": 21053.0,
+   "depth_ppm_err": 178.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.8707,
@@ -9439,6 +9439,15 @@
   },
   {
    "wavelength_um": 3.8912,
+   "bandwidth_um": 0.0205,
+   "depth_ppm": 21008.39,
+   "depth_ppm_err": 122.18,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 3.8912,
    "bandwidth_um": null,
    "depth_ppm": 20825.0,
    "depth_ppm_err": 181.0,
@@ -9454,15 +9463,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 3.8912,
-   "bandwidth_um": 0.0205,
-   "depth_ppm": 21008.39,
-   "depth_ppm_err": 122.18,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.893,
@@ -9530,11 +9530,11 @@
   {
    "wavelength_um": 3.9116,
    "bandwidth_um": null,
-   "depth_ppm": 20947.86,
-   "depth_ppm_err": 128.13,
+   "depth_ppm": 20835.0,
+   "depth_ppm_err": 184.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.9116,
@@ -9548,11 +9548,11 @@
   {
    "wavelength_um": 3.9116,
    "bandwidth_um": null,
-   "depth_ppm": 20835.0,
-   "depth_ppm_err": 184.0,
+   "depth_ppm": 20947.86,
+   "depth_ppm_err": 128.13,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.9125,
@@ -9619,21 +9619,21 @@
   },
   {
    "wavelength_um": 3.9319,
-   "bandwidth_um": 0.0202,
-   "depth_ppm": 21156.44,
-   "depth_ppm_err": 125.33,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 3.9319,
    "bandwidth_um": null,
    "depth_ppm": 20956.0,
    "depth_ppm_err": 191.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 3.9319,
+   "bandwidth_um": 0.0202,
+   "depth_ppm": 21156.44,
+   "depth_ppm_err": 125.33,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 3.9319,
@@ -9709,15 +9709,6 @@
   },
   {
    "wavelength_um": 3.9521,
-   "bandwidth_um": null,
-   "depth_ppm": 21250.0,
-   "depth_ppm_err": 196.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.9521,
    "bandwidth_um": 0.0201,
    "depth_ppm": 20993.48,
    "depth_ppm_err": 130.25,
@@ -9733,6 +9724,15 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.9521,
+   "bandwidth_um": null,
+   "depth_ppm": 21250.0,
+   "depth_ppm_err": 196.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.9539,
@@ -9790,6 +9790,15 @@
   },
   {
    "wavelength_um": 3.9722,
+   "bandwidth_um": null,
+   "depth_ppm": 21087.98,
+   "depth_ppm_err": 131.05,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.9722,
    "bandwidth_um": 0.02,
    "depth_ppm": 21217.62,
    "depth_ppm_err": 128.09,
@@ -9805,15 +9814,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.9722,
-   "bandwidth_um": null,
-   "depth_ppm": 21087.98,
-   "depth_ppm_err": 131.05,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 3.9725,
@@ -9890,20 +9890,20 @@
   {
    "wavelength_um": 3.9922,
    "bandwidth_um": null,
-   "depth_ppm": 21230.0,
-   "depth_ppm_err": 195.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 3.9922,
-   "bandwidth_um": null,
    "depth_ppm": 21301.83,
    "depth_ppm_err": 132.04,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 3.9922,
+   "bandwidth_um": null,
+   "depth_ppm": 21230.0,
+   "depth_ppm_err": 195.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 3.9941,
@@ -9970,21 +9970,21 @@
   },
   {
    "wavelength_um": 4.012,
-   "bandwidth_um": 0.0198,
-   "depth_ppm": 21419.78,
-   "depth_ppm_err": 130.79,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 4.012,
    "bandwidth_um": null,
    "depth_ppm": 21302.0,
    "depth_ppm_err": 201.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.012,
+   "bandwidth_um": 0.0198,
+   "depth_ppm": 21419.78,
+   "depth_ppm_err": 130.79,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.0142,
@@ -10133,20 +10133,20 @@
   {
    "wavelength_um": 4.0514,
    "bandwidth_um": null,
-   "depth_ppm": 21529.0,
-   "depth_ppm_err": 207.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.0514,
-   "bandwidth_um": null,
    "depth_ppm": 21369.54,
    "depth_ppm_err": 135.76,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.0514,
+   "bandwidth_um": null,
+   "depth_ppm": 21529.0,
+   "depth_ppm_err": 207.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.0544,
@@ -10204,21 +10204,21 @@
   },
   {
    "wavelength_um": 4.071,
-   "bandwidth_um": 0.0195,
-   "depth_ppm": 21213.4,
-   "depth_ppm_err": 133.62,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 4.071,
    "bandwidth_um": null,
    "depth_ppm": 21155.11,
    "depth_ppm_err": 138.02,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.071,
+   "bandwidth_um": 0.0195,
+   "depth_ppm": 21213.4,
+   "depth_ppm_err": 133.62,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.071,
@@ -10277,20 +10277,20 @@
   {
    "wavelength_um": 4.0905,
    "bandwidth_um": null,
-   "depth_ppm": 21199.04,
-   "depth_ppm_err": 141.26,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.0905,
-   "bandwidth_um": null,
    "depth_ppm": 21010.0,
    "depth_ppm_err": 215.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.0905,
+   "bandwidth_um": null,
+   "depth_ppm": 21199.04,
+   "depth_ppm_err": 141.26,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.0905,
@@ -10358,20 +10358,20 @@
   {
    "wavelength_um": 4.1099,
    "bandwidth_um": null,
-   "depth_ppm": 20829.51,
-   "depth_ppm_err": 145.72,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.1099,
-   "bandwidth_um": null,
    "depth_ppm": 20969.0,
    "depth_ppm_err": 219.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.1099,
+   "bandwidth_um": null,
+   "depth_ppm": 20829.51,
+   "depth_ppm_err": 145.72,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.1135,
@@ -10420,12 +10420,12 @@
   },
   {
    "wavelength_um": 4.1291,
-   "bandwidth_um": 0.0192,
-   "depth_ppm": 21114.38,
-   "depth_ppm_err": 139.19,
+   "bandwidth_um": null,
+   "depth_ppm": 21031.3,
+   "depth_ppm_err": 143.57,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.1291,
@@ -10438,12 +10438,12 @@
   },
   {
    "wavelength_um": 4.1291,
-   "bandwidth_um": null,
-   "depth_ppm": 21031.3,
-   "depth_ppm_err": 143.57,
+   "bandwidth_um": 0.0192,
+   "depth_ppm": 21114.38,
+   "depth_ppm_err": 139.19,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.134,
@@ -10502,11 +10502,11 @@
   {
    "wavelength_um": 4.1483,
    "bandwidth_um": null,
-   "depth_ppm": 21324.0,
-   "depth_ppm_err": 217.0,
+   "depth_ppm": 21122.29,
+   "depth_ppm_err": 144.07,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.1483,
@@ -10520,11 +10520,11 @@
   {
    "wavelength_um": 4.1483,
    "bandwidth_um": null,
-   "depth_ppm": 21122.29,
-   "depth_ppm_err": 144.07,
+   "depth_ppm": 21324.0,
+   "depth_ppm_err": 217.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.1547,
@@ -10564,6 +10564,15 @@
   },
   {
    "wavelength_um": 4.1674,
+   "bandwidth_um": null,
+   "depth_ppm": 21248.0,
+   "depth_ppm_err": 220.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.1674,
    "bandwidth_um": 0.019,
    "depth_ppm": 21413.78,
    "depth_ppm_err": 139.66,
@@ -10579,15 +10588,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.1674,
-   "bandwidth_um": null,
-   "depth_ppm": 21248.0,
-   "depth_ppm_err": 220.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.168,
@@ -10646,20 +10646,20 @@
   {
    "wavelength_um": 4.1864,
    "bandwidth_um": null,
-   "depth_ppm": 21281.41,
-   "depth_ppm_err": 146.71,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.1864,
-   "bandwidth_um": null,
    "depth_ppm": 21369.0,
    "depth_ppm_err": 220.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.1864,
+   "bandwidth_um": null,
+   "depth_ppm": 21281.41,
+   "depth_ppm_err": 146.71,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.1881,
@@ -10790,20 +10790,20 @@
   {
    "wavelength_um": 4.2241,
    "bandwidth_um": null,
-   "depth_ppm": 21850.14,
-   "depth_ppm_err": 150.35,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.2241,
-   "bandwidth_um": null,
    "depth_ppm": 21979.0,
    "depth_ppm_err": 228.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.2241,
+   "bandwidth_um": null,
+   "depth_ppm": 21850.14,
+   "depth_ppm_err": 150.35,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.2281,
@@ -10997,20 +10997,20 @@
   {
    "wavelength_um": 4.28,
    "bandwidth_um": null,
-   "depth_ppm": 22345.0,
-   "depth_ppm_err": 233.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.28,
-   "bandwidth_um": null,
    "depth_ppm": 22490.09,
    "depth_ppm_err": 154.57,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.28,
+   "bandwidth_um": null,
+   "depth_ppm": 22345.0,
+   "depth_ppm_err": 233.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.2821,
@@ -11060,20 +11060,20 @@
   {
    "wavelength_um": 4.2985,
    "bandwidth_um": null,
-   "depth_ppm": 22481.49,
-   "depth_ppm_err": 156.22,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.2985,
-   "bandwidth_um": null,
    "depth_ppm": 22446.0,
    "depth_ppm_err": 239.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.2985,
+   "bandwidth_um": null,
+   "depth_ppm": 22481.49,
+   "depth_ppm_err": 156.22,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.3015,
@@ -11132,20 +11132,20 @@
   {
    "wavelength_um": 4.3169,
    "bandwidth_um": null,
-   "depth_ppm": 22520.0,
-   "depth_ppm_err": 240.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.3169,
-   "bandwidth_um": null,
    "depth_ppm": 22553.36,
    "depth_ppm_err": 159.28,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.3169,
+   "bandwidth_um": null,
+   "depth_ppm": 22520.0,
+   "depth_ppm_err": 240.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.32,
@@ -11204,20 +11204,20 @@
   {
    "wavelength_um": 4.3352,
    "bandwidth_um": null,
-   "depth_ppm": 22648.0,
-   "depth_ppm_err": 243.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.3352,
-   "bandwidth_um": null,
    "depth_ppm": 22541.65,
    "depth_ppm_err": 160.24,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.3352,
+   "bandwidth_um": null,
+   "depth_ppm": 22648.0,
+   "depth_ppm_err": 243.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.3355,
@@ -11267,20 +11267,20 @@
   {
    "wavelength_um": 4.3534,
    "bandwidth_um": null,
-   "depth_ppm": 22763.0,
-   "depth_ppm_err": 164.2,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.3534,
-   "bandwidth_um": null,
    "depth_ppm": 22684.0,
    "depth_ppm_err": 249.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.3534,
+   "bandwidth_um": null,
+   "depth_ppm": 22763.0,
+   "depth_ppm_err": 164.2,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.3555,
@@ -11411,20 +11411,20 @@
   {
    "wavelength_um": 4.3896,
    "bandwidth_um": null,
-   "depth_ppm": 22753.0,
-   "depth_ppm_err": 257.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.3896,
-   "bandwidth_um": null,
    "depth_ppm": 22673.48,
    "depth_ppm_err": 169.03,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.3896,
+   "bandwidth_um": null,
+   "depth_ppm": 22753.0,
+   "depth_ppm_err": 257.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.391,
@@ -11474,20 +11474,20 @@
   {
    "wavelength_um": 4.4076,
    "bandwidth_um": null,
-   "depth_ppm": 22607.0,
-   "depth_ppm_err": 263.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.4076,
-   "bandwidth_um": null,
    "depth_ppm": 22673.9,
    "depth_ppm_err": 172.64,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.4076,
+   "bandwidth_um": null,
+   "depth_ppm": 22607.0,
+   "depth_ppm_err": 263.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.4087,
@@ -11618,20 +11618,20 @@
   {
    "wavelength_um": 4.4433,
    "bandwidth_um": null,
-   "depth_ppm": 22227.0,
-   "depth_ppm_err": 262.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.4433,
-   "bandwidth_um": null,
    "depth_ppm": 22393.2,
    "depth_ppm_err": 175.24,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.4433,
+   "bandwidth_um": null,
+   "depth_ppm": 22227.0,
+   "depth_ppm_err": 262.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.4486,
@@ -11744,20 +11744,20 @@
   {
    "wavelength_um": 4.4788,
    "bandwidth_um": null,
-   "depth_ppm": 22223.91,
-   "depth_ppm_err": 178.28,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.4788,
-   "bandwidth_um": null,
    "depth_ppm": 22302.0,
    "depth_ppm_err": 267.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.4788,
+   "bandwidth_um": null,
+   "depth_ppm": 22223.91,
+   "depth_ppm_err": 178.28,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.4817,
@@ -12041,20 +12041,20 @@
   {
    "wavelength_um": 4.5487,
    "bandwidth_um": null,
-   "depth_ppm": 21993.87,
-   "depth_ppm_err": 188.92,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 4.5487,
-   "bandwidth_um": null,
    "depth_ppm": 21809.0,
    "depth_ppm_err": 285.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.5487,
+   "bandwidth_um": null,
+   "depth_ppm": 21993.87,
+   "depth_ppm_err": 188.92,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 4.5547,
@@ -12104,20 +12104,20 @@
   {
    "wavelength_um": 4.5661,
    "bandwidth_um": null,
-   "depth_ppm": 21728.0,
-   "depth_ppm_err": 287.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.5661,
-   "bandwidth_um": null,
    "depth_ppm": 21733.94,
    "depth_ppm_err": 190.02,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
+  },
+  {
+   "wavelength_um": 4.5661,
+   "bandwidth_um": null,
+   "depth_ppm": 21728.0,
+   "depth_ppm_err": 287.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.568,
@@ -12337,21 +12337,21 @@
   },
   {
    "wavelength_um": 4.63,
-   "bandwidth_um": 0.012,
-   "depth_ppm": 21407.36,
-   "depth_ppm_err": 136.92,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
-  },
-  {
-   "wavelength_um": 4.63,
    "bandwidth_um": null,
    "depth_ppm": 21490.34,
    "depth_ppm_err": 155.94,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - tshirt pipeline"
+  },
+  {
+   "wavelength_um": 4.63,
+   "bandwidth_um": 0.012,
+   "depth_ppm": 21407.36,
+   "depth_ppm_err": 136.92,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Eureka! pipeline"
   },
   {
    "wavelength_um": 4.6343,
@@ -13030,6 +13030,15 @@
   },
   {
    "wavelength_um": 4.8258,
+   "bandwidth_um": 0.0325,
+   "depth_ppm": 21415.42,
+   "depth_ppm_err": 145.95,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 4.8258,
    "bandwidth_um": 0.0066,
    "depth_ppm": 21499.5,
    "depth_ppm_err": 278.08,
@@ -13045,15 +13054,6 @@
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.8258,
-   "bandwidth_um": 0.0325,
-   "depth_ppm": 21415.42,
-   "depth_ppm_err": 145.95,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.831,
@@ -13147,21 +13147,21 @@
   },
   {
    "wavelength_um": 4.8582,
-   "bandwidth_um": 0.0323,
-   "depth_ppm": 21308.61,
-   "depth_ppm_err": 158.53,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 4.8582,
    "bandwidth_um": null,
    "depth_ppm": 21528.0,
    "depth_ppm_err": 332.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.8582,
+   "bandwidth_um": 0.0323,
+   "depth_ppm": 21308.61,
+   "depth_ppm_err": 158.53,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.8588,
@@ -13399,21 +13399,21 @@
   },
   {
    "wavelength_um": 4.9224,
-   "bandwidth_um": 0.0318,
-   "depth_ppm": 21402.63,
-   "depth_ppm_err": 156.49,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 4.9224,
    "bandwidth_um": null,
    "depth_ppm": 21455.0,
    "depth_ppm_err": 348.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 4.9224,
+   "bandwidth_um": 0.0318,
+   "depth_ppm": 21402.63,
+   "depth_ppm_err": 156.49,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 4.9246,
@@ -13516,21 +13516,21 @@
   },
   {
    "wavelength_um": 4.9541,
-   "bandwidth_um": null,
-   "depth_ppm": 21826.0,
-   "depth_ppm_err": 354.0,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
-  },
-  {
-   "wavelength_um": 4.9541,
    "bandwidth_um": 0.0316,
    "depth_ppm": 21700.29,
    "depth_ppm_err": 156.23,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
+  },
+  {
+   "wavelength_um": 4.9541,
+   "bandwidth_um": null,
+   "depth_ppm": 21826.0,
+   "depth_ppm_err": 354.0,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
   },
   {
    "wavelength_um": 4.9574,
@@ -13570,21 +13570,21 @@
   },
   {
    "wavelength_um": 4.964,
-   "bandwidth_um": 0.0066,
-   "depth_ppm": 21737.18,
-   "depth_ppm_err": 301.85,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
-  },
-  {
-   "wavelength_um": 4.964,
    "bandwidth_um": null,
    "depth_ppm": 21590.04,
    "depth_ppm_err": 179.44,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - tshirt pipeline"
+  },
+  {
+   "wavelength_um": 4.964,
+   "bandwidth_um": 0.0066,
+   "depth_ppm": 21737.18,
+   "depth_ppm_err": 301.85,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - G395H"
   },
   {
    "wavelength_um": 4.9699,
@@ -13768,21 +13768,21 @@
   },
   {
    "wavelength_um": 5.0169,
-   "bandwidth_um": 0.0312,
-   "depth_ppm": 21371.96,
-   "depth_ppm_err": 162.79,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 5.0169,
    "bandwidth_um": null,
    "depth_ppm": 21587.0,
    "depth_ppm_err": 372.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.0169,
+   "bandwidth_um": 0.0312,
+   "depth_ppm": 21371.96,
+   "depth_ppm_err": 162.79,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 5.0237,
@@ -13876,21 +13876,21 @@
   },
   {
    "wavelength_um": 5.048,
-   "bandwidth_um": 0.031,
-   "depth_ppm": 21380.72,
-   "depth_ppm_err": 165.46,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 5.048,
    "bandwidth_um": null,
    "depth_ppm": 21783.0,
    "depth_ppm_err": 375.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.048,
+   "bandwidth_um": 0.031,
+   "depth_ppm": 21380.72,
+   "depth_ppm_err": 165.46,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 5.05,
@@ -13940,20 +13940,20 @@
   {
    "wavelength_um": 5.0634,
    "bandwidth_um": null,
-   "depth_ppm": 21531.43,
-   "depth_ppm_err": 177.18,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 5.0634,
-   "bandwidth_um": null,
    "depth_ppm": 21685.0,
    "depth_ppm_err": 360.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.0634,
+   "bandwidth_um": null,
+   "depth_ppm": 21531.43,
+   "depth_ppm_err": 177.18,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 5.0696,
@@ -13993,21 +13993,21 @@
   },
   {
    "wavelength_um": 5.0788,
-   "bandwidth_um": 0.0308,
-   "depth_ppm": 21637.16,
-   "depth_ppm_err": 167.52,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 5.0788,
    "bandwidth_um": null,
    "depth_ppm": 21851.0,
    "depth_ppm_err": 388.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.0788,
+   "bandwidth_um": 0.0308,
+   "depth_ppm": 21637.16,
+   "depth_ppm_err": 167.52,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 5.0821,
@@ -14110,21 +14110,21 @@
   },
   {
    "wavelength_um": 5.1095,
-   "bandwidth_um": 0.0306,
-   "depth_ppm": 21227.79,
-   "depth_ppm_err": 183.02,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
-  },
-  {
-   "wavelength_um": 5.1095,
    "bandwidth_um": null,
    "depth_ppm": 21303.0,
    "depth_ppm_err": 411.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.1095,
+   "bandwidth_um": 0.0306,
+   "depth_ppm": 21227.79,
+   "depth_ppm_err": 183.02,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - FIREFLy pipeline"
   },
   {
    "wavelength_um": 5.1151,
@@ -14381,20 +14381,20 @@
   {
    "wavelength_um": 5.1853,
    "bandwidth_um": null,
-   "depth_ppm": 21251.71,
-   "depth_ppm_err": 194.54,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 5.1853,
-   "bandwidth_um": null,
    "depth_ppm": 21611.0,
    "depth_ppm_err": 431.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.1853,
+   "bandwidth_um": null,
+   "depth_ppm": 21251.71,
+   "depth_ppm_err": 194.54,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 5.1928,
@@ -14597,20 +14597,20 @@
   {
    "wavelength_um": 5.2746,
    "bandwidth_um": null,
-   "depth_ppm": 21452.62,
-   "depth_ppm_err": 198.16,
-   "source": "plntransdep_percent",
-   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
-   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
-  },
-  {
-   "wavelength_um": 5.2746,
-   "bandwidth_um": null,
    "depth_ppm": 21525.0,
    "depth_ppm_err": 448.0,
    "source": "plntransdep_percent",
    "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
    "instrument": "Near Infrared Spectrograph (NIRSpec) - Tiberius pipeline"
+  },
+  {
+   "wavelength_um": 5.2746,
+   "bandwidth_um": null,
+   "depth_ppm": 21452.62,
+   "depth_ppm_err": 198.16,
+   "source": "plntransdep_percent",
+   "facility": "NASA 6.5m James Webb Space Telescope (JWST) Satellite Mission",
+   "instrument": "Near Infrared Spectrograph (NIRSpec) - PRISM"
   },
   {
    "wavelength_um": 5.282,
