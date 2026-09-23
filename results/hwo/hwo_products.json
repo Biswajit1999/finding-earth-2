@@ -10,19 +10,19 @@
     },
     "results/hwo/hwo_precursor_atlas.json": {
       "bytes": 3218,
-      "sha256": "bbf29ba23e931c67a4a7fbb1705335313ae9ce94d611e459edd6f708a3a257d3"
+      "sha256": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
     },
     "results/hwo/hwo_precursor_atlas.png": {
-      "bytes": 1920500,
-      "sha256": "6f52cc4aa9f2d55992d91665a8ebc92989a51b4821736d2b5d89b51ae042c61f"
+      "bytes": 1906911,
+      "sha256": "e78331c88ed7340711979075ad40d8d6687ba705163d7342a337c784ded092ed"
     },
     "results/hwo/hwo_precursor_atlas.svg": {
-      "bytes": 2392008,
-      "sha256": "be2810757d2659e062be93828783e2769370d01e7c91fdf0476a016f574d513c"
+      "bytes": 2400112,
+      "sha256": "d6a4740e97fe96e3b427eb0b4aaa2d8fb3d79ba355fab628d31303ad24b1174d"
     },
     "results/hwo/known_planet_accessibility.csv": {
-      "bytes": 1182209,
-      "sha256": "07a4682a784030387c57f0fc88280d3cc6dac92af8158e62dc6a7c36fc206764"
+      "bytes": 1185137,
+      "sha256": "8de01ef5f92198bee77d76737e05a459695b5ff2c383ee0f6228c3909d78034f"
     }
   },
   "product": "Phase 10 HWO precursor atlas and direct-imaging physics",

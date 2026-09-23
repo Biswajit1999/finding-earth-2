@@ -3,32 +3,32 @@
   "product": "Kepler DR25 conditional fixed-box occurrence posterior",
   "files": {
     "results/population/dr25_occurrence_posterior.json": {
-      "bytes": 46717,
-      "sha256": "4b0c6c94b796a7f1fe4f17324e2e5d61c3493ac4d1fede69ccb14c2307789be9"
+      "bytes": 46685,
+      "sha256": "a496be75beb622329155fd662e06ddd1192a437e86609322d5f02076f7ec5eb7"
     },
     "results/population/dr25_occurrence_posterior_samples.csv": {
-      "bytes": 1337409,
-      "sha256": "29140abdbe684254abf27e80762dd6f2fc73b93b414f40df63071862886464c9"
+      "bytes": 1337377,
+      "sha256": "ac7c44da43c4caf131dcae10bdadfddbb1cc531203a3295b18b8bdd8d187dad3"
     },
     "results/population/dr25_occurrence_published_comparison.json": {
-      "bytes": 4639,
-      "sha256": "fed87285b645485320e7009863b70c233ab6735d0f53b4db8c1bee87db00177f"
+      "bytes": 4636,
+      "sha256": "542258030928e6f7d1a22268714b956ec4a1344a4a0d59663e5d49d6b07dd339"
     },
     "results/population/dr25_occurrence_exposure.csv": {
-      "bytes": 167158,
-      "sha256": "0704f5fb54ef416b974a7a9674a1f4f3bf564a26a80fb1b88d3358ab88917ccf"
+      "bytes": 167141,
+      "sha256": "264d294f3d85a17f1b5d7425fb7e8e35004b54ec082734419bd3a290b421f445"
     },
     "results/population/dr25_occurrence_exposure.json": {
       "bytes": 2071,
-      "sha256": "712dc1fc32026b401d794c573547a103489cfa3a7641cb3ab014f4b1b1e11a94"
+      "sha256": "a8fe0ab38a79b3f8e8db61a0d6443e844398b4311d993b44ec7e6b4ea7810297"
     },
     "results/population/dr25_occurrence_posterior.png": {
-      "bytes": 267730,
-      "sha256": "44af68a706dad29257761d5078a8c3da458b03260daacaae79d10772aab05959"
+      "bytes": 268335,
+      "sha256": "38dc0b5e8c2da228ddb6f5d50f31e89b4f2d98625a73523f2d2e374abed66c07"
     },
     "results/population/dr25_occurrence_posterior.svg": {
-      "bytes": 115149,
-      "sha256": "90c814fa06919ac35379229e0c5760ab578c0d276a6cc2eedb72f094b81b503c"
+      "bytes": 120430,
+      "sha256": "8bda5a0a28eee8aefcc9b29736c86b4e1f7eed02e32e7ce0a547a747cdd2a20e"
     }
   }
 }

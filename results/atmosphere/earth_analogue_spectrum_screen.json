@@ -1,11 +1,11 @@
 {
   "claim_boundary": "This cross-match measures published spectral coverage. It does not detect an atmosphere, identify a molecule, establish habitability, or provide evidence of life.",
-  "confirmed_planets": 6354,
+  "confirmed_planets": 6366,
   "finding": "None of the 15 strict small-and-temperate candidates has an indexed published spectrum or tabulated wavelength measurement in the ingested archives.",
   "label": "OBSERVED",
   "nearby_comparison_set": [
     {
-      "earth2_rank": 31,
+      "earth2_rank": 30,
       "median_uncertainty_ppm": 18265.08,
       "planet": "TRAPPIST-1 g",
       "radius_earth": 1.129,
@@ -60,7 +60,7 @@
       "wavelength_min_um": 0.6
     },
     {
-      "earth2_rank": 181,
+      "earth2_rank": 182,
       "median_uncertainty_ppm": 77.1,
       "planet": "GJ 1132 b",
       "radius_earth": 1.19151465,
@@ -71,7 +71,7 @@
       "wavelength_min_um": 0.475
     },
     {
-      "earth2_rank": 293,
+      "earth2_rank": 290,
       "median_uncertainty_ppm": 425.0,
       "planet": "Kepler-249 d",
       "radius_earth": 1.57,
@@ -82,7 +82,7 @@
       "wavelength_min_um": 0.6
     },
     {
-      "earth2_rank": 411,
+      "earth2_rank": 410,
       "median_uncertainty_ppm": 20.0,
       "planet": "GJ 486 b",
       "radius_earth": 1.289,

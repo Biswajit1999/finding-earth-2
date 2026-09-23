@@ -3,28 +3,28 @@
   "product": "Kepler DR25 survey-wide selection surface",
   "files": {
     "results/population/dr25_selection_surface.csv": {
-      "bytes": 67184,
-      "sha256": "b8b31a47356da0c77ee7eea8e10e1b0f0e5330464637cb389f0a692c7e2b9228"
+      "bytes": 67180,
+      "sha256": "4b463e17beb9c875c9fd4b49c42fd4a1fd0d87c9b3662d72f113005b198ff6de"
     },
     "results/population/dr25_keplerports_selection_comparison.csv": {
-      "bytes": 1827,
-      "sha256": "cffcb0257a9580b3e823706df75a2e62b14376c95dfdb827dfcaec18d36fc695"
+      "bytes": 1829,
+      "sha256": "7313bef6990a1d3e7a60a8092e7ae406db9ef2d4942f03717354df4907fdcc2e"
     },
     "results/population/dr25_selection_model.json": {
-      "bytes": 13016,
-      "sha256": "d8b2272b04ef4f4e40c4a338bbd543e72306a948d74a1b4630be80c7066965b8"
+      "bytes": 13029,
+      "sha256": "e8bf7f7b1caab7c7bc67e5f3cf82a330ca3e41f6ad39bbbff8ec1ceccb6e6c8d"
     },
     "results/population/dr25_selection_validation.json": {
-      "bytes": 16624,
-      "sha256": "76f745a22f5c3b6b22881188a9be125cd303ea96b827d9c8d2e5ed209dec24db"
+      "bytes": 16619,
+      "sha256": "16cc17b9d583ef73111b2b1a38e75b86b71e10cfa6b5a962168c3afa946edbe5"
     },
     "results/population/dr25_selection_surface.png": {
-      "bytes": 201726,
-      "sha256": "b8e1e12401a2eed5e5690ff6dd2f0d016a1e434325d2615268f50159f0e05f85"
+      "bytes": 291368,
+      "sha256": "5cc19295978cd9bee57f297888e25f6bd53d6f560ea836059bd5919199dad4cb"
     },
     "results/population/dr25_selection_surface.svg": {
-      "bytes": 173825,
-      "sha256": "4c1c22ea846cffc843c401c0f5ac26981ceae6dc46c58f57cc0781ef23af1c19"
+      "bytes": 200087,
+      "sha256": "56e065d54c9dd466fa7c03a0b22febda6ba1072b73d53bf421b4ef9b2ae6b061"
     }
   }
 }

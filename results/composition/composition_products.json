@@ -3,20 +3,20 @@
   "product": "Phase 6 probabilistic composition evidence ensemble",
   "files": {
     "results/composition/bulk_composition_ensemble.csv": {
-      "bytes": 1172345,
-      "sha256": "72bd56e8ffe62afdd9271f1689daec4f3dc570d4693d0014b12dea0ecfd64d5d"
+      "bytes": 1172986,
+      "sha256": "127404a7c65e92cd3d4f4feb761c1a4f33f629d660b13e4c86081d00d9bbc64a"
     },
     "results/composition/bulk_composition_ensemble.json": {
-      "bytes": 5965261,
-      "sha256": "04268663640dee5719352a8fed409699373289d17e49004ebe703e10b6ff322a"
+      "bytes": 5968363,
+      "sha256": "54231d89f371e090a3038260dffc2272ac880c20ff5c3e4fb332e4592ede2dd1"
     },
     "results/composition/composition_model_disagreement.png": {
-      "bytes": 489139,
-      "sha256": "8583988b74483a598bc5aac752920d8b122b3ac50f2e910cc1cae3ce4f19ffde"
+      "bytes": 484718,
+      "sha256": "49e3d22650a6381ea06aff068ac5e50b7f766649dd3d815bb45fb4da0a8852df"
     },
     "results/composition/composition_model_disagreement.svg": {
-      "bytes": 216179,
-      "sha256": "762662ba0dfbbd1cc35219ccf87af4ce9b765036fc4b7e797ab699baf89a43f7"
+      "bytes": 227228,
+      "sha256": "9c16d26f409b9b0017d49e75539cc57ba6e64920c248a81a0c90a286b90da48a"
     }
   }
 }

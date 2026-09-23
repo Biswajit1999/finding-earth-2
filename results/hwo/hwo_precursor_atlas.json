@@ -71,9 +71,9 @@
   ],
   "known_planet_forecast": {
     "matched_hosts": 464,
-    "matched_planets": 744,
+    "matched_planets": 746,
     "msini_planets_deprojected": 406,
-    "supported_planets": 694
+    "supported_planets": 696
   },
   "labels": [
     "OBSERVED",

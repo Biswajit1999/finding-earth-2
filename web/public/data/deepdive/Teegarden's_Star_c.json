@@ -1,7 +1,7 @@
 {
  "planet": "Teegarden's Star c",
  "hostname": "Teegarden's Star",
- "generated_utc": "2026-08-28T20:10:24Z",
+ "generated_utc": "2026-09-23T09:24:30Z",
  "narrative": {
   "location": "Teegarden's Star lies 12.49 light-years (3.831 pc) from the Sun.",
   "host_star": "Teegarden's Star is a M7.0 V star with 0.097\u00d7 the Sun's mass and 0.12\u00d7 its radius (effective temperature 3034 K, versus the Sun's 5772 K).",
@@ -14,7 +14,7 @@
   "earth2_rank": 5,
   "earth2_index": 0.8234,
   "scores": {
-   "earth_similarity": 0.8071,
+   "earth_similarity": 0.8072,
    "conservative_habitability": 0.9478,
    "observational_confidence": 0.6758,
    "characterisation_potential": null
@@ -22,7 +22,7 @@
   "component_ranks": {
    "earth_similarity": 46,
    "conservative_habitability": 1,
-   "observational_confidence": 2116
+   "observational_confidence": 2118
   }
  },
  "planet_parameters": {
@@ -53,14 +53,14 @@
    "value": 0.35,
    "source": "catalogue",
    "p16": 0.3297,
-   "p84": 0.3695
+   "p84": 0.3707
   },
   "equilibrium_temperature_k": {
    "value": 195.52,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
    "p16": 192.61,
-   "p84": 198.18,
+   "p84": 198.34,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.8191,
-  "esi_p16": 0.7913,
-  "esi_p50": 0.8071,
-  "esi_p84": 0.8202,
+  "esi_p16": 0.791,
+  "esi_p50": 0.8072,
+  "esi_p84": 0.8206,
   "esi_interior": 0.9936,
   "esi_surface": 0.6753,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -191,7 +191,7 @@
     "insol_used": 0.12,
     "teq_used": 149.6,
     "hz_conservative_prob": 0.0,
-    "earth2_index": 0.1212,
+    "earth2_index": 0.1213,
     "mass_class": "msini_lower_limit"
    }
   ]
@@ -353,7 +353,724 @@
   "reason": "Planet is not flagged as transiting; a light curve cannot show a transit."
  },
  "rv_analysis": {
-  "attempted": false,
-  "reason": "Not requested for this build."
+  "target": "Teegarden's Star",
+  "analysed_utc": "2026-09-23T09:24:30Z",
+  "status": "ok",
+  "source": "DACE (public)",
+  "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
+  "source_url": "https://dace.unige.ch/",
+  "dataset": {
+   "target": "Teegarden's Star",
+   "n_measurements_raw": 13,
+   "n_measurements_used": 13,
+   "baseline_days": 6.15,
+   "baseline_years": 0.02,
+   "instruments": {
+    "ESPRESSO19": 13
+   },
+   "median_uncertainty_ms": 1.645,
+   "rv_rms_ms": 2080.29,
+   "retrieved_utc": "2026-09-23T09:24:30Z",
+   "source": "DACE (public)",
+   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
+  },
+  "instrument_offsets_removed_ms": {
+   "ESPRESSO19": 68680.6114
+  },
+  "instrument_offset_note": "A per-instrument median was subtracted. Combining spectrographs -- or one spectrograph across a hardware intervention -- without this injects a step into the time series, which a periodogram converts into spurious long-period power.",
+  "rv_periodogram": {
+   "ok": true,
+   "n_points": 13,
+   "baseline_days": 6.15,
+   "period_range": [
+    1.0,
+    6.145425550173968
+   ],
+   "peaks": [
+    {
+     "period_days": 1.505,
+     "power": 0.00243,
+     "fap": 0.9999005505922564
+    },
+    {
+     "period_days": 3.07271,
+     "power": 0.00207,
+     "fap": 0.9998785477042373
+    },
+    {
+     "period_days": 3.35205,
+     "power": 0.00168,
+     "fap": 0.9998474902941558
+    },
+    {
+     "period_days": 3.51167,
+     "power": 0.00147,
+     "fap": 0.9998273618768315
+    },
+    {
+     "period_days": 2.83635,
+     "power": 0.00112,
+     "fap": 0.999790070906166
+    },
+    {
+     "period_days": 2.04848,
+     "power": 0.00109,
+     "fap": 0.9997856736383908
+    }
+   ],
+   "best_period_days": 1.505,
+   "best_fap": 0.9999005505922564,
+   "curve": {
+    "period_days": [
+     0.99656,
+     1.01021,
+     1.02424,
+     1.03866,
+     1.0535,
+     1.06877,
+     1.08449,
+     1.10067,
+     1.11735,
+     1.13454,
+     1.15227,
+     1.17056,
+     1.18944,
+     1.20894,
+     1.22909,
+     1.24992,
+     1.27147,
+     1.29377,
+     1.31688,
+     1.34082,
+     1.36565,
+     1.39142,
+     1.41818,
+     1.44598,
+     1.4749,
+     1.505,
+     1.53636,
+     1.56904,
+     1.60315,
+     1.63878,
+     1.67603,
+     1.715,
+     1.75584,
+     1.79866,
+     1.84363,
+     1.8909,
+     1.94066,
+     1.99311,
+     2.04848,
+     2.107,
+     2.16897,
+     2.2347,
+     2.30453,
+     2.37887,
+     2.45817,
+     2.54293,
+     2.63375,
+     2.7313,
+     2.83635,
+     2.9498,
+     3.07271,
+     3.20631,
+     3.35205,
+     3.51167,
+     3.68726,
+     3.88132,
+     4.09695,
+     4.33795,
+     4.60907,
+     4.91634,
+     5.26751,
+     5.6727,
+     6.14543
+    ],
+    "power": [
+     0.00041,
+     0.00028,
+     0.00031,
+     0.00016,
+     0.00015,
+     0.00025,
+     0.00039,
+     0.00053,
+     0.00065,
+     0.00075,
+     0.00083,
+     0.00089,
+     0.00092,
+     0.00093,
+     0.00091,
+     0.00086,
+     0.00075,
+     0.00055,
+     0.00025,
+     1e-05,
+     0.00015,
+     0.00058,
+     0.001,
+     0.00142,
+     0.00196,
+     0.00243,
+     0.00198,
+     0.00126,
+     0.00081,
+     0.0005,
+     0.00024,
+     6e-05,
+     1e-05,
+     0.00012,
+     0.00036,
+     0.00062,
+     0.00085,
+     0.00107,
+     0.00109,
+     0.00098,
+     0.00081,
+     0.00055,
+     0.00027,
+     6e-05,
+     1e-05,
+     0.00014,
+     0.00037,
+     0.00068,
+     0.00112,
+     0.00176,
+     0.00207,
+     0.00187,
+     0.00168,
+     0.00147,
+     0.00101,
+     0.00028,
+     2e-05,
+     0.00024,
+     0.0005,
+     0.0007,
+     0.00084,
+     0.00095,
+     0.00105
+    ]
+   },
+   "method": "generalised Lomb-Scargle (floating mean), Baluev FAP"
+  },
+  "activity_periodograms": {
+   "spectro_rhk": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 2.04848,
+      "power": 0.61221,
+      "fap": 0.645694152007631
+     },
+     {
+      "period_days": 1.01021,
+      "power": 0.3877,
+      "fap": 0.9984719049482926
+     },
+     {
+      "period_days": 2.16897,
+      "power": 0.31172,
+      "fap": 0.9999484380423803
+     },
+     {
+      "period_days": 2.83635,
+      "power": 0.2698,
+      "fap": 0.9999939376279819
+     }
+    ],
+    "best_period_days": 2.04848,
+    "best_fap": 0.645694152007631,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "log R'HK (chromospheric emission)"
+   },
+   "spectro_halpha": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 1.17056,
+      "power": 0.71026,
+      "fap": 0.25956143334267145
+     },
+     {
+      "period_days": 1.34082,
+      "power": 0.61974,
+      "fap": 0.6154197326823846
+     },
+     {
+      "period_days": 6.14543,
+      "power": 0.58721,
+      "fap": 0.739897322646897
+     },
+     {
+      "period_days": 1.11735,
+      "power": 0.53633,
+      "fap": 0.8862245555652809
+     }
+    ],
+    "best_period_days": 1.17056,
+    "best_fap": 0.25956143334267145,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "H-alpha index"
+   },
+   "spectro_ca": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 1.01021,
+      "power": 0.67668,
+      "fap": 0.38165903794929135
+     },
+     {
+      "period_days": 2.9498,
+      "power": 0.34021,
+      "fap": 0.9997997661021015
+     },
+     {
+      "period_days": 1.53636,
+      "power": 0.33284,
+      "fap": 0.9998577064398777
+     },
+     {
+      "period_days": 2.04848,
+      "power": 0.31422,
+      "fap": 0.9999417051011263
+     }
+    ],
+    "best_period_days": 1.01021,
+    "best_fap": 0.38165903794929135,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "Ca II H&K index"
+   },
+   "spectro_smw": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 1.01021,
+      "power": 0.67668,
+      "fap": 0.38165903794929523
+     },
+     {
+      "period_days": 2.9498,
+      "power": 0.34021,
+      "fap": 0.9997997661021015
+     },
+     {
+      "period_days": 1.53636,
+      "power": 0.33284,
+      "fap": 0.9998577064398777
+     },
+     {
+      "period_days": 2.04848,
+      "power": 0.31422,
+      "fap": 0.9999417051011263
+     }
+    ],
+    "best_period_days": 1.01021,
+    "best_fap": 0.38165903794929523,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "Mount Wilson S-index"
+   },
+   "ccf_fwhm": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 3.68726,
+      "power": 0.50775,
+      "fap": 0.9373291527960144
+     },
+     {
+      "period_days": 3.88132,
+      "power": 0.49834,
+      "fap": 0.9496510335595144
+     },
+     {
+      "period_days": 3.51167,
+      "power": 0.46467,
+      "fap": 0.9791252541726274
+     },
+     {
+      "period_days": 3.07271,
+      "power": 0.45332,
+      "fap": 0.9850206126468152
+     }
+    ],
+    "best_period_days": 3.68726,
+    "best_fap": 0.9373291527960144,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "CCF FWHM (line width)"
+   },
+   "ccf_bispan": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 3.68726,
+      "power": 0.50848,
+      "fap": 0.9362801762388195
+     },
+     {
+      "period_days": 3.88132,
+      "power": 0.49904,
+      "fap": 0.9488032758033157
+     },
+     {
+      "period_days": 3.51167,
+      "power": 0.46509,
+      "fap": 0.9788715339160302
+     },
+     {
+      "period_days": 3.07271,
+      "power": 0.45309,
+      "fap": 0.9851239826915154
+     }
+    ],
+    "best_period_days": 3.68726,
+    "best_fap": 0.9362801762388195,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "CCF bisector span (line asymmetry)"
+   },
+   "ccf_contrast": {
+    "ok": true,
+    "n_points": 13,
+    "baseline_days": 6.15,
+    "period_range": [
+     1.0,
+     6.145425550173968
+    ],
+    "peaks": [
+     {
+      "period_days": 3.68726,
+      "power": 0.52546,
+      "fap": 0.9082320957923843
+     },
+     {
+      "period_days": 3.88132,
+      "power": 0.50532,
+      "fap": 0.9407103409362148
+     },
+     {
+      "period_days": 3.07271,
+      "power": 0.50151,
+      "fap": 0.945721933030155
+     },
+     {
+      "period_days": 3.51167,
+      "power": 0.4916,
+      "fap": 0.95726656497494
+     }
+    ],
+    "best_period_days": 3.68726,
+    "best_fap": 0.9082320957923843,
+    "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
+    "label": "CCF contrast (line depth)"
+   }
+  },
+  "activity_coincidences": [
+   {
+    "rv_period_days": 1.505,
+    "rv_power": 0.00243,
+    "indicator": "spectro_ca",
+    "indicator_label": "Ca II H&K index",
+    "indicator_period_days": 1.53636,
+    "fractional_difference": 0.0204,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 1.505,
+    "rv_power": 0.00243,
+    "indicator": "spectro_smw",
+    "indicator_label": "Mount Wilson S-index",
+    "indicator_period_days": 1.53636,
+    "fractional_difference": 0.0204,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.07271,
+    "rv_power": 0.00207,
+    "indicator": "spectro_ca",
+    "indicator_label": "Ca II H&K index",
+    "indicator_period_days": 2.9498,
+    "fractional_difference": 0.0417,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.07271,
+    "rv_power": 0.00207,
+    "indicator": "spectro_smw",
+    "indicator_label": "Mount Wilson S-index",
+    "indicator_period_days": 2.9498,
+    "fractional_difference": 0.0417,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.07271,
+    "rv_power": 0.00207,
+    "indicator": "ccf_fwhm",
+    "indicator_label": "CCF FWHM (line width)",
+    "indicator_period_days": 3.07271,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.07271,
+    "rv_power": 0.00207,
+    "indicator": "ccf_bispan",
+    "indicator_label": "CCF bisector span (line asymmetry)",
+    "indicator_period_days": 3.07271,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.07271,
+    "rv_power": 0.00207,
+    "indicator": "ccf_contrast",
+    "indicator_label": "CCF contrast (line depth)",
+    "indicator_period_days": 3.07271,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.35205,
+    "rv_power": 0.00168,
+    "indicator": "ccf_fwhm",
+    "indicator_label": "CCF FWHM (line width)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0455,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.35205,
+    "rv_power": 0.00168,
+    "indicator": "ccf_bispan",
+    "indicator_label": "CCF bisector span (line asymmetry)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0455,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.35205,
+    "rv_power": 0.00168,
+    "indicator": "ccf_contrast",
+    "indicator_label": "CCF contrast (line depth)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0455,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_fwhm",
+    "indicator_label": "CCF FWHM (line width)",
+    "indicator_period_days": 3.68726,
+    "fractional_difference": 0.0476,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_fwhm",
+    "indicator_label": "CCF FWHM (line width)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_bispan",
+    "indicator_label": "CCF bisector span (line asymmetry)",
+    "indicator_period_days": 3.68726,
+    "fractional_difference": 0.0476,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_bispan",
+    "indicator_label": "CCF bisector span (line asymmetry)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_contrast",
+    "indicator_label": "CCF contrast (line depth)",
+    "indicator_period_days": 3.68726,
+    "fractional_difference": 0.0476,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 3.51167,
+    "rv_power": 0.00147,
+    "indicator": "ccf_contrast",
+    "indicator_label": "CCF contrast (line depth)",
+    "indicator_period_days": 3.51167,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.83635,
+    "rv_power": 0.00112,
+    "indicator": "spectro_rhk",
+    "indicator_label": "log R'HK (chromospheric emission)",
+    "indicator_period_days": 2.83635,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.83635,
+    "rv_power": 0.00112,
+    "indicator": "spectro_ca",
+    "indicator_label": "Ca II H&K index",
+    "indicator_period_days": 2.9498,
+    "fractional_difference": 0.0385,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.83635,
+    "rv_power": 0.00112,
+    "indicator": "spectro_smw",
+    "indicator_label": "Mount Wilson S-index",
+    "indicator_period_days": 2.9498,
+    "fractional_difference": 0.0385,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.04848,
+    "rv_power": 0.00109,
+    "indicator": "spectro_rhk",
+    "indicator_label": "log R'HK (chromospheric emission)",
+    "indicator_period_days": 2.04848,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.04848,
+    "rv_power": 0.00109,
+    "indicator": "spectro_ca",
+    "indicator_label": "Ca II H&K index",
+    "indicator_period_days": 2.04848,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   },
+   {
+    "rv_period_days": 2.04848,
+    "rv_power": 0.00109,
+    "indicator": "spectro_smw",
+    "indicator_label": "Mount Wilson S-index",
+    "indicator_period_days": 2.04848,
+    "fractional_difference": 0.0,
+    "interpretation": "This RV period coincides with a periodicity in a stellar activity indicator measured from the same spectra. The signal is consistent with stellar activity and must not be treated as a planet without further argument."
+   }
+  ],
+  "n_activity_coincidences": 22,
+  "keplerian_fit": {
+   "ok": true,
+   "semi_amplitude_ms": 2.8913,
+   "semi_amplitude_err_ms": 0.992,
+   "semi_amplitude_snr": 2.91,
+   "offset_ms": 1.728,
+   "residual_rms_ms": 2080.185,
+   "n_points": 13,
+   "reliable": false,
+   "unreliable_because": [
+    "fewer than 20 velocities (13)",
+    "amplitude significance below 3 sigma (K/sigma_K = 2.9)",
+    "residual scatter 2080.2 m/s exceeds five times the fitted amplitude 2.9 m/s"
+   ],
+   "model": "circular (fixed period, fitted amplitude/phase/offset)",
+   "caveat": "THIS FIT IS NOT A MEASUREMENT. The data cannot support an amplitude at this period; the value is reported only so the failure is visible.",
+   "period_days": 11.416,
+   "period_source": "published",
+   "msini_earth": null,
+   "msini_earth_if_fit_were_reliable": 2.1492,
+   "msini_note": "No mass is reported: the amplitude fit failed its reliability checks, so any mass derived from it would be meaningless.",
+   "period_matches_activity_indicator": false,
+   "folded": {
+    "phase": [
+     0.08765,
+     0.093,
+     0.09825,
+     0.18496,
+     0.27028,
+     0.27298,
+     0.27652,
+     0.35381,
+     0.36093,
+     0.44831,
+     0.61776,
+     0.62236,
+     0.62597
+    ],
+    "rv_ms": [
+     3.3017,
+     2.3311,
+     0.8366,
+     -7806.1793,
+     0.0,
+     -0.0572,
+     -0.7656,
+     -3.1553,
+     1.6754,
+     -2.3251,
+     -0.0009,
+     2.5978,
+     3.7555
+    ],
+    "rv_err_ms": [
+     1.8488,
+     1.6122,
+     1.5644,
+     90.2083,
+     1.6448,
+     1.4769,
+     1.4429,
+     1.897,
+     2.1335,
+     2.792,
+     1.6936,
+     1.4984,
+     1.5257
+    ]
+   }
+  }
  }
 }

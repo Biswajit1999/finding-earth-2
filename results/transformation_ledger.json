@@ -1,6 +1,6 @@
 {
   "ledger": "earth2-analysis",
-  "generated_utc": "2026-08-28T20:00:42Z",
+  "generated_utc": "2026-09-23T09:24:08Z",
   "n_steps": 12,
   "steps": [
     {
@@ -24,9 +24,9 @@
       "citation": "",
       "parameters": {},
       "n_rows_in": 0,
-      "n_rows_out": 6354,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
-      "software": "{\"earth2\": \"1.0.1\", \"python\": \"3.9.19\", \"numpy\": \"1.26.4\", \"pandas\": \"2.2.2\", \"scipy\": \"1.10.1\", \"astropy\": \"6.0.1\", \"platform\": \"Windows-10-10.0.26200-SP0\"}"
+      "n_rows_out": 6366,
+      "timestamp_utc": "2026-09-23T09:23:23Z",
+      "software": "{\"earth2\": \"2.1.2\", \"python\": \"3.12.14\", \"numpy\": \"2.5.3\", \"pandas\": \"2.3.3\", \"scipy\": \"1.18.1\", \"astropy\": \"8.0.1\", \"platform\": \"Linux-6.17.0-1022-azure-x86_64-with-glibc2.39\"}"
     },
     {
       "step": "classify_mass_provenance",
@@ -44,9 +44,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:24Z",
       "software": ""
     },
     {
@@ -64,9 +64,9 @@
       "equation": "S = L / a^2,  L = 10**st_lum",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:24Z",
       "software": ""
     },
     {
@@ -85,9 +85,9 @@
       "parameters": {
         "bond_albedo": 0.306
       },
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:24Z",
       "software": ""
     },
     {
@@ -107,9 +107,9 @@
       "equation": "ESI_x = (1 - |(x-x0)/(x+x0)|)**(w/n)",
       "citation": "schulzemakuch2011",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:24Z",
       "software": ""
     },
     {
@@ -127,9 +127,9 @@
       "equation": "S_eff = S_eff_sun + a*T + b*T^2 + c*T^3 + d*T^4,  T = Teff - 5780",
       "citation": "kopparapu2013,kopparapu2013erratum",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:27Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:24Z",
       "software": ""
     },
     {
@@ -153,9 +153,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:32Z",
       "software": ""
     },
     {
@@ -173,9 +173,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:32Z",
       "software": ""
     },
     {
@@ -200,11 +200,11 @@
       "equation": "",
       "citation": "GaiaDR3",
       "parameters": {
-        "n_planets_matched": 5970
+        "n_planets_matched": 5975
       },
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T19:59:38Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:23:32Z",
       "software": ""
     },
     {
@@ -230,9 +230,9 @@
         "seed": 20260824,
         "distribution": "two-piece (split) normal"
       },
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:24:01Z",
       "software": ""
     },
     {
@@ -260,9 +260,9 @@
         "geometric_albedo": 0.3,
         "phase_model": "Lambert sphere at quadrature"
       },
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:24:01Z",
       "software": ""
     },
     {
@@ -290,9 +290,9 @@
         "combination": "weighted geometric mean",
         "epsilon_floor": 0.01
       },
-      "n_rows_in": 6359,
-      "n_rows_out": 6359,
-      "timestamp_utc": "2026-08-28T20:00:32Z",
+      "n_rows_in": 6371,
+      "n_rows_out": 6371,
+      "timestamp_utc": "2026-09-23T09:24:01Z",
       "software": ""
     }
   ]

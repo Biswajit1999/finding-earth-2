@@ -7,9 +7,9 @@
         "model": {
           "rows": 2081,
           "observed_fraction": 0.9855838539163864,
-          "predicted_fraction": 0.9901495764838599,
-          "brier": 0.014037776060783378,
-          "log_loss": 0.0712924367197592
+          "predicted_fraction": 0.9901495905266559,
+          "brier": 0.014037776424825761,
+          "log_loss": 0.07129244211995492
         },
         "constant_training_fraction_baseline": {
           "rows": 2081,
@@ -25,9 +25,9 @@
         "model": {
           "rows": 2919,
           "observed_fraction": 0.9955464200068517,
-          "predicted_fraction": 0.9915549644468955,
-          "brier": 0.0044197888054684316,
-          "log_loss": 0.027291785756603345
+          "predicted_fraction": 0.9915549647709336,
+          "brier": 0.004419788771370658,
+          "log_loss": 0.0272917847241087
         },
         "constant_training_fraction_baseline": {
           "rows": 2919,
@@ -43,9 +43,9 @@
         "model": {
           "rows": 3062,
           "observed_fraction": 0.9924885695623775,
-          "predicted_fraction": 0.9928519020522343,
-          "brier": 0.007336489165849063,
-          "log_loss": 0.039224745533610036
+          "predicted_fraction": 0.992851889040605,
+          "brier": 0.007336489419875418,
+          "log_loss": 0.03922473883177904
         },
         "constant_training_fraction_baseline": {
           "rows": 3062,
@@ -61,9 +61,9 @@
         "model": {
           "rows": 3042,
           "observed_fraction": 0.9917817225509533,
-          "predicted_fraction": 0.9934037357468363,
-          "brier": 0.008076871132676008,
-          "log_loss": 0.04333212598146172
+          "predicted_fraction": 0.9934037360674522,
+          "brier": 0.008076871115517803,
+          "log_loss": 0.043332125124001974
         },
         "constant_training_fraction_baseline": {
           "rows": 3042,
@@ -80,9 +80,9 @@
       "model": {
         "rows": 931,
         "observed_fraction": 0.9441460794844253,
-        "predicted_fraction": 0.9316349110023824,
-        "brier": 0.03832802776313036,
-        "log_loss": 0.14683145483514895
+        "predicted_fraction": 0.9316347879409224,
+        "brier": 0.03832803799720896,
+        "log_loss": 0.14683155413224117
       },
       "constant_training_fraction_baseline": {
         "rows": 931,
@@ -105,14 +105,14 @@
     "evaluation_points": 63,
     "generating_family": "same constrained quadratic-logistic family used for fitting",
     "mean_rmse": {
-      "false_alarm_effectiveness": 0.00582369713860359,
-      "observed_false_alarm_fraction": 0.02015892447490161,
-      "false_alarm_reliability": 0.04166815422731636
+      "false_alarm_effectiveness": 0.005823697138681728,
+      "observed_false_alarm_fraction": 0.02015892447359957,
+      "false_alarm_reliability": 0.041668154227476786
     },
     "p95_rmse": {
-      "false_alarm_effectiveness": 0.009749820344971651,
-      "observed_false_alarm_fraction": 0.0356204535124204,
-      "false_alarm_reliability": 0.07183487574981912
+      "false_alarm_effectiveness": 0.009749820345130361,
+      "observed_false_alarm_fraction": 0.03562045351845051,
+      "false_alarm_reliability": 0.07183487570634768
     },
     "thresholds": {
       "all_replicates_converge": true,

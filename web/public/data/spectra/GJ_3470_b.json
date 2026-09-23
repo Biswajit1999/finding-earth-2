@@ -47,24 +47,24 @@
  ],
  "references": [
   {
-   "label": "Nascimbeni et al. 2013",
-   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...559A..32N/abstract"
-  },
-  {
    "label": "Biddle et al. 2014",
    "url": "https://ui.adsabs.harvard.edu/abs/2014MNRAS.443.1810B/abstract"
+  },
+  {
+   "label": "Nascimbeni et al. 2013",
+   "url": "https://ui.adsabs.harvard.edu/abs/2013A&A...559A..32N/abstract"
   },
   {
    "label": "Dragomir et al. 2015",
    "url": "https://ui.adsabs.harvard.edu/abs/2015ApJ...814..102D/abstract"
   },
   {
-   "label": "Awiphan et al. 2016",
-   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.2574A/abstract"
-  },
-  {
    "label": "Fukui et al. 2013",
    "url": "https://ui.adsabs.harvard.edu/abs/2013ApJ...770...95F/abstract"
+  },
+  {
+   "label": "Awiphan et al. 2016",
+   "url": "https://ui.adsabs.harvard.edu/abs/2016MNRAS.463.2574A/abstract"
   },
   {
    "label": "Benneke et al. 2019",
@@ -203,20 +203,20 @@
   {
    "wavelength_um": 0.3575,
    "bandwidth_um": null,
-   "depth_ppm": 6740.41,
-   "depth_ppm_err": 213.46,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": "LBC"
-  },
-  {
-   "wavelength_um": 0.3575,
-   "bandwidth_um": null,
    "depth_ppm": 6272.64,
    "depth_ppm_err": 300.96,
    "source": "plnratror_squared",
    "facility": "Large Binocular Telescope Observatory",
    "instrument": null
+  },
+  {
+   "wavelength_um": 0.3575,
+   "bandwidth_um": null,
+   "depth_ppm": 6740.41,
+   "depth_ppm_err": 213.46,
+   "source": "plnratror_squared",
+   "facility": "Large Binocular Telescope Observatory",
+   "instrument": "LBC"
   },
   {
    "wavelength_um": 0.4326,
@@ -239,20 +239,20 @@
   {
    "wavelength_um": 0.4858,
    "bandwidth_um": null,
-   "depth_ppm": 6922.24,
-   "depth_ppm_err": 449.28,
-   "source": "plnratror_squared",
-   "facility": "Thai National Observatory's 2.4m Telescope",
-   "instrument": "ULTRASPEC"
-  },
-  {
-   "wavelength_um": 0.4858,
-   "bandwidth_um": null,
    "depth_ppm": 6400.0,
    "depth_ppm_err": 480.0,
    "source": "plnratror_squared",
    "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
    "instrument": null
+  },
+  {
+   "wavelength_um": 0.4858,
+   "bandwidth_um": null,
+   "depth_ppm": 6922.24,
+   "depth_ppm_err": 449.28,
+   "source": "plnratror_squared",
+   "facility": "Thai National Observatory's 2.4m Telescope",
+   "instrument": "ULTRASPEC"
   },
   {
    "wavelength_um": 0.4858,
@@ -275,6 +275,15 @@
   {
    "wavelength_um": 0.49,
    "bandwidth_um": null,
+   "depth_ppm": 6922.24,
+   "depth_ppm_err": 973.44,
+   "source": "plnratror_squared",
+   "facility": "LCOGT 2m telescope at Siding Springs Observatory",
+   "instrument": "Fairchild CCD486 BI"
+  },
+  {
+   "wavelength_um": 0.49,
+   "bandwidth_um": null,
    "depth_ppm": 6724.0,
    "depth_ppm_err": 385.4,
    "source": "plnratror_squared",
@@ -288,15 +297,6 @@
    "depth_ppm_err": 870.45,
    "source": "plnratror_squared",
    "facility": "LCOGT 2m telescope at Haleakala Observatory",
-   "instrument": "Fairchild CCD486 BI"
-  },
-  {
-   "wavelength_um": 0.49,
-   "bandwidth_um": null,
-   "depth_ppm": 6922.24,
-   "depth_ppm_err": 973.44,
-   "source": "plnratror_squared",
-   "facility": "LCOGT 2m telescope at Siding Springs Observatory",
    "instrument": "Fairchild CCD486 BI"
   },
   {
@@ -341,7 +341,7 @@
    "depth_ppm": 6448.09,
    "depth_ppm_err": 401.5,
    "source": "plnratror_squared",
-   "facility": "LCOGT 1m telescope at Cerro Tololo Inter-American Observatory",
+   "facility": "LCOGT 1m telescope at McDonald Observatory",
    "instrument": "SBIG imager"
   },
   {
@@ -350,7 +350,7 @@
    "depth_ppm": 6448.09,
    "depth_ppm_err": 401.5,
    "source": "plnratror_squared",
-   "facility": "LCOGT 1m telescope at McDonald Observatory",
+   "facility": "LCOGT 1m telescope at Cerro Tololo Inter-American Observatory",
    "instrument": "SBIG imager"
   },
   {
@@ -419,8 +419,35 @@
   {
    "wavelength_um": 0.763,
    "bandwidth_um": null,
-   "depth_ppm": 5314.41,
-   "depth_ppm_err": 750.87,
+   "depth_ppm": 6021.76,
+   "depth_ppm_err": 729.44,
+   "source": "plnratror_squared",
+   "facility": "LCOGT 1m telescope at South African Astronomical Observatory",
+   "instrument": "SBIG imager"
+  },
+  {
+   "wavelength_um": 0.763,
+   "bandwidth_um": null,
+   "depth_ppm": 5852.25,
+   "depth_ppm_err": 436.05,
+   "source": "plnratror_squared",
+   "facility": "LCOGT 1m telescope at McDonald Observatory",
+   "instrument": "SBIG imager"
+  },
+  {
+   "wavelength_um": 0.763,
+   "bandwidth_um": null,
+   "depth_ppm": 5535.36,
+   "depth_ppm_err": 498.48,
+   "source": "plnratror_squared",
+   "facility": "LCOGT 1m telescope at McDonald Observatory",
+   "instrument": "SBIG imager"
+  },
+  {
+   "wavelength_um": 0.763,
+   "bandwidth_um": null,
+   "depth_ppm": 6084.0,
+   "depth_ppm_err": 382.2,
    "source": "plnratror_squared",
    "facility": "LCOGT 1m telescope at South African Astronomical Observatory",
    "instrument": "SBIG imager"
@@ -437,37 +464,10 @@
   {
    "wavelength_um": 0.763,
    "bandwidth_um": null,
-   "depth_ppm": 6021.76,
-   "depth_ppm_err": 729.44,
+   "depth_ppm": 5314.41,
+   "depth_ppm_err": 750.87,
    "source": "plnratror_squared",
    "facility": "LCOGT 1m telescope at South African Astronomical Observatory",
-   "instrument": "SBIG imager"
-  },
-  {
-   "wavelength_um": 0.763,
-   "bandwidth_um": null,
-   "depth_ppm": 6084.0,
-   "depth_ppm_err": 382.2,
-   "source": "plnratror_squared",
-   "facility": "LCOGT 1m telescope at South African Astronomical Observatory",
-   "instrument": "SBIG imager"
-  },
-  {
-   "wavelength_um": 0.763,
-   "bandwidth_um": null,
-   "depth_ppm": 5535.36,
-   "depth_ppm_err": 498.48,
-   "source": "plnratror_squared",
-   "facility": "LCOGT 1m telescope at McDonald Observatory",
-   "instrument": "SBIG imager"
-  },
-  {
-   "wavelength_um": 0.763,
-   "bandwidth_um": null,
-   "depth_ppm": 5852.25,
-   "depth_ppm_err": 436.05,
-   "source": "plnratror_squared",
-   "facility": "LCOGT 1m telescope at McDonald Observatory",
    "instrument": "SBIG imager"
   },
   {
@@ -491,10 +491,10 @@
   {
    "wavelength_um": 0.7886,
    "bandwidth_um": null,
-   "depth_ppm": 6352.09,
-   "depth_ppm_err": 223.16,
+   "depth_ppm": 6084.0,
+   "depth_ppm_err": 241.8,
    "source": "plnratror_squared",
-   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
+   "facility": "Calar Alto observatory's 1.23m Telescope",
    "instrument": null
   },
   {
@@ -521,14 +521,14 @@
    "depth_ppm": 6084.0,
    "depth_ppm_err": 241.8,
    "source": "plnratror_squared",
-   "facility": "Calar Alto observatory's 1.23m Telescope",
+   "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
    "instrument": null
   },
   {
    "wavelength_um": 0.7886,
    "bandwidth_um": null,
-   "depth_ppm": 6084.0,
-   "depth_ppm_err": 241.8,
+   "depth_ppm": 6352.09,
+   "depth_ppm_err": 223.16,
    "source": "plnratror_squared",
    "facility": "National Astronomical Observatory of Japan's Okayama Astrophysical Observatory 0.5m Telescope",
    "instrument": null
@@ -572,6 +572,42 @@
   {
    "wavelength_um": 0.9222,
    "bandwidth_um": null,
+   "depth_ppm": 5535.36,
+   "depth_ppm_err": 297.6,
+   "source": "plnratror_squared",
+   "facility": "Thai National Observatory's 2.4m Telescope",
+   "instrument": "ULTRASPEC"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 5867.56,
+   "depth_ppm_err": 298.74,
+   "source": "plnratror_squared",
+   "facility": "Lick Observatory's 1m Nickel Telescope",
+   "instrument": "CCD-2 Direct Imaging Camera"
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 5867.56,
+   "depth_ppm_err": 298.74,
+   "source": "plnratror_squared",
+   "facility": "La Silla Observatory's 60-cm Trappist Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
+   "depth_ppm": 5867.56,
+   "depth_ppm_err": 298.74,
+   "source": "plnratror_squared",
+   "facility": "La Silla Observatory's 60-cm Trappist Telescope",
+   "instrument": null
+  },
+  {
+   "wavelength_um": 0.9222,
+   "bandwidth_um": null,
    "depth_ppm": 5867.56,
    "depth_ppm_err": 298.74,
    "source": "plnratror_squared",
@@ -597,39 +633,12 @@
    "instrument": "CCD-2 Direct Imaging Camera"
   },
   {
-   "wavelength_um": 0.9222,
-   "bandwidth_um": null,
-   "depth_ppm": 5867.56,
-   "depth_ppm_err": 298.74,
+   "wavelength_um": 0.9635,
+   "bandwidth_um": 0.022,
+   "depth_ppm": 5520.49,
+   "depth_ppm_err": 106.99,
    "source": "plnratror_squared",
-   "facility": "La Silla Observatory's 60-cm Trappist Telescope",
-   "instrument": null
-  },
-  {
-   "wavelength_um": 0.9222,
-   "bandwidth_um": null,
-   "depth_ppm": 5867.56,
-   "depth_ppm_err": 298.74,
-   "source": "plnratror_squared",
-   "facility": "Lick Observatory's 1m Nickel Telescope",
-   "instrument": "CCD-2 Direct Imaging Camera"
-  },
-  {
-   "wavelength_um": 0.9222,
-   "bandwidth_um": null,
-   "depth_ppm": 5535.36,
-   "depth_ppm_err": 297.6,
-   "source": "plnratror_squared",
-   "facility": "Thai National Observatory's 2.4m Telescope",
-   "instrument": "ULTRASPEC"
-  },
-  {
-   "wavelength_um": 0.9222,
-   "bandwidth_um": null,
-   "depth_ppm": 5867.56,
-   "depth_ppm_err": 298.74,
-   "source": "plnratror_squared",
-   "facility": "La Silla Observatory's 60-cm Trappist Telescope",
+   "facility": "Large Binocular Telescope Observatory",
    "instrument": null
   },
   {
@@ -640,15 +649,6 @@
    "source": "plnratror_squared",
    "facility": "Large Binocular Telescope Observatory",
    "instrument": "LBC"
-  },
-  {
-   "wavelength_um": 0.9635,
-   "bandwidth_um": 0.022,
-   "depth_ppm": 5520.49,
-   "depth_ppm_err": 106.99,
-   "source": "plnratror_squared",
-   "facility": "Large Binocular Telescope Observatory",
-   "instrument": null
   },
   {
    "wavelength_um": 1.135,
@@ -1039,19 +1039,19 @@
   },
   {
    "wavelength_um": 1.315,
-   "bandwidth_um": 0.03,
-   "depth_ppm": 6055.0,
-   "depth_ppm_err": 29.0,
-   "source": "plntransdep_percent",
+   "bandwidth_um": null,
+   "depth_ppm": 6328.2,
+   "depth_ppm_err": 502.76,
+   "source": "plnratror_squared",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Wide Field Camera 3"
   },
   {
    "wavelength_um": 1.315,
-   "bandwidth_um": null,
-   "depth_ppm": 6328.2,
-   "depth_ppm_err": 502.76,
-   "source": "plnratror_squared",
+   "bandwidth_um": 0.03,
+   "depth_ppm": 6055.0,
+   "depth_ppm_err": 29.0,
+   "source": "plntransdep_percent",
    "facility": "Hubble Space Telescope satellite",
    "instrument": "Wide Field Camera 3"
   },
