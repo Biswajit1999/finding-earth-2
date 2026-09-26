@@ -1,7 +1,7 @@
 {
  "planet": "GJ 1002 b",
  "hostname": "GJ 1002",
- "generated_utc": "2026-09-23T09:24:26Z",
+ "generated_utc": "2026-09-26T09:26:50Z",
  "narrative": {
   "location": "GJ 1002 lies 15.81 light-years (4.849 pc) from the Sun.",
   "host_star": "GJ 1002 is a M5.5 V star with 0.12\u00d7 the Sun's mass and 0.137\u00d7 its radius (effective temperature 3024 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 3,
-  "earth2_index": 0.8489,
+  "earth2_index": 0.8486,
   "scores": {
-   "earth_similarity": 0.9141,
+   "earth_similarity": 0.9132,
    "conservative_habitability": 0.9453,
    "observational_confidence": 0.6442,
    "characterisation_potential": null
   },
   "component_ranks": {
-   "earth_similarity": 6,
+   "earth_similarity": 7,
    "conservative_habitability": 3,
-   "observational_confidence": 2597
+   "observational_confidence": 2605
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.67,
    "source": "catalogue",
-   "p16": 0.6307,
-   "p84": 0.7111
+   "p16": 0.6318,
+   "p84": 0.7074
   },
   "equilibrium_temperature_k": {
    "value": 229.98,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 226.53,
-   "p84": 233.42,
+   "p16": 226.62,
+   "p84": 233.12,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.9251,
-  "esi_p16": 0.8971,
-  "esi_p50": 0.9141,
-  "esi_p84": 0.9277,
+  "esi_p16": 0.8966,
+  "esi_p50": 0.9132,
+  "esi_p84": 0.927,
   "esi_interior": 0.9917,
   "esi_surface": 0.863,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -178,8 +178,8 @@
     "pl_orbsmax": 0.0738,
     "insol_used": 0.257,
     "teq_used": 181.0,
-    "hz_conservative_prob": 0.952,
-    "earth2_index": 0.7697,
+    "hz_conservative_prob": 0.953,
+    "earth2_index": 0.7704,
     "mass_class": "msini_lower_limit"
    }
   ]
@@ -325,7 +325,7 @@
  },
  "rv_analysis": {
   "target": "GJ 1002",
-  "analysed_utc": "2026-09-23T09:24:26Z",
+  "analysed_utc": "2026-09-26T09:26:50Z",
   "status": "ok",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
@@ -343,7 +343,7 @@
    },
    "median_uncertainty_ms": 0.608,
    "rv_rms_ms": 6.317,
-   "retrieved_utc": "2026-09-23T09:24:27Z",
+   "retrieved_utc": "2026-09-26T09:26:51Z",
    "source": "DACE (public)",
    "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
   },

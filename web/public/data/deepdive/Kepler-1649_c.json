@@ -1,7 +1,7 @@
 {
  "planet": "Kepler-1649 c",
  "hostname": "Kepler-1649",
- "generated_utc": "2026-09-23T09:24:30Z",
+ "generated_utc": "2026-09-26T09:26:55Z",
  "narrative": {
   "location": "Kepler-1649 lies 300.69 light-years (92.191 pc) from the Sun.",
   "host_star": "Kepler-1649 is the host star with 0.198\u00d7 the Sun's mass and 0.232\u00d7 its radius (effective temperature 3240 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 6,
-  "earth2_index": 0.7728,
+  "earth2_index": 0.7764,
   "scores": {
-   "earth_similarity": 0.8854,
-   "conservative_habitability": 0.8979,
+   "earth_similarity": 0.8881,
+   "conservative_habitability": 0.9061,
    "observational_confidence": 0.5023,
    "characterisation_potential": 0.4278
   },
   "component_ranks": {
    "earth_similarity": 15,
    "conservative_habitability": 5,
-   "observational_confidence": 5785
+   "observational_confidence": 5793
   }
  },
  "planet_parameters": {
@@ -30,9 +30,9 @@
    "value": 1.06,
    "err_upper": 0.15,
    "err_lower": -0.1,
-   "p16": 0.9629,
-   "p50": 1.068,
-   "p84": 1.2175
+   "p16": 0.9609,
+   "p50": 1.0585,
+   "p84": 1.205
   },
   "mass_earth": {
    "value": 1.2,
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.75,
    "source": "catalogue",
-   "p16": 0.4562,
-   "p84": 0.7819
+   "p16": 0.4592,
+   "p84": 0.7814
   },
   "equilibrium_temperature_k": {
    "value": 236.55,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 208.91,
-   "p84": 239.03,
+   "p16": 209.25,
+   "p84": 238.99,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -98,8 +98,8 @@
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
-  "conservative_probability": 0.9607,
-  "optimistic_probability": 0.9673,
+  "conservative_probability": 0.9665,
+  "optimistic_probability": 0.974,
   "position_across_conservative_hz": 0.188,
   "model_extrapolated": false,
   "teff_offset_from_validity_k": 0.0,
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.9404,
-  "esi_p16": 0.8079,
-  "esi_p50": 0.8854,
-  "esi_p84": 0.9294,
+  "esi_p16": 0.8138,
+  "esi_p50": 0.8881,
+  "esi_p84": 0.9306,
   "esi_interior": 0.9904,
   "esi_surface": 0.893,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -335,7 +335,7 @@
  "transit_analysis": {
   "target": "Kepler-1649",
   "requested_mission": "TESS",
-  "analysed_utc": "2026-09-23T09:24:30Z",
+  "analysed_utc": "2026-09-26T09:26:55Z",
   "status": "fit_not_validated",
   "n_products_found": 28,
   "products": [
@@ -481,7 +481,7 @@
    "n_used_cadences": 19611,
    "baseline_days": 28.200438866105287,
    "median_flux_precision_ppm": 42410.81327199936,
-   "retrieved_utc": "2026-09-23T09:24:52Z",
+   "retrieved_utc": "2026-09-26T09:27:08Z",
    "note": "stitched 1 product(s), mission default quality mask applied"
   },
   "t0_time_system": {
@@ -1193,7 +1193,7 @@
  },
  "rv_analysis": {
   "target": "Kepler-1649",
-  "analysed_utc": "2026-09-23T09:24:52Z",
+  "analysed_utc": "2026-09-26T09:27:08Z",
   "status": "no_data",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",

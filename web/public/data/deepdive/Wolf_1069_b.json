@@ -1,7 +1,7 @@
 {
  "planet": "Wolf 1069 b",
  "hostname": "Wolf 1069",
- "generated_utc": "2026-09-23T09:24:29Z",
+ "generated_utc": "2026-09-26T09:26:53Z",
  "narrative": {
   "location": "Wolf 1069 lies 31.26 light-years (9.583 pc) from the Sun.",
   "host_star": "Wolf 1069 is a M5.0 V star with 0.167\u00d7 the Sun's mass and 0.181\u00d7 its radius (effective temperature 3158 K, versus the Sun's 5772 K).",
@@ -12,9 +12,9 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 4,
-  "earth2_index": 0.8391,
+  "earth2_index": 0.8389,
   "scores": {
-   "earth_similarity": 0.9,
+   "earth_similarity": 0.8995,
    "conservative_habitability": 0.9309,
    "observational_confidence": 0.6442,
    "characterisation_potential": null
@@ -22,7 +22,7 @@
   "component_ranks": {
    "earth_similarity": 12,
    "conservative_habitability": 4,
-   "observational_confidence": 2597
+   "observational_confidence": 2605
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.652,
    "source": "catalogue",
-   "p16": 0.6253,
-   "p84": 0.6812
+   "p16": 0.6252,
+   "p84": 0.6807
   },
   "equilibrium_temperature_k": {
    "value": 228.42,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 226.04,
-   "p84": 230.93,
+   "p16": 226.03,
+   "p84": 230.89,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -122,8 +122,8 @@
  },
  "earth_similarity": {
   "esi_global": 0.9145,
-  "esi_p16": 0.8791,
-  "esi_p50": 0.9,
+  "esi_p16": 0.8795,
+  "esi_p50": 0.8995,
   "esi_p84": 0.9127,
   "esi_interior": 0.9882,
   "esi_surface": 0.8463,
@@ -311,7 +311,7 @@
  },
  "rv_analysis": {
   "target": "Wolf 1069",
-  "analysed_utc": "2026-09-23T09:24:29Z",
+  "analysed_utc": "2026-09-26T09:26:53Z",
   "status": "no_data",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",

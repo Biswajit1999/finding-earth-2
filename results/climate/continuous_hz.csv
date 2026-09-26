@@ -269,304 +269,6 @@ CoRoT-11 b,CoRoT-11,False,2,1.27,-0.03,0.37753,0.0436,MODEL-INFERRED,inferred,,2
 TOI-286 c,TOI-286,False,,0.832,-0.05,-0.41364,0.213,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-1806.01,TOI-1806,False,,0.392935,,-1.77852,0.087735044,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-4443.01,TOI-4443,False,,1.049133,,0.03349,0.029962645,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-141 c,K2-141,False,6.3,0.708,0,-0.75,0.0683,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-232 b,K2-232,False,1.43,1.188,0.1,0.23805,0.10356,MODEL-INFERRED,inferred,,256,250,0.9765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-GJ 1132 c,GJ 1132,False,5,0.198,-0.18,-2.32148,0.0476,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc b,55 Cnc,False,10,1.015,0.39,-0.19695,0.118,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc c,55 Cnc,False,10,1.015,0.39,-0.19695,0.247,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc d,55 Cnc,False,10,1.015,0.39,-0.19695,5.6,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc e,55 Cnc,False,5.5,0.905,0.35,-0.19695,0.01544,MODEL-INFERRED,inferred,,256,241,0.94140625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-55 Cnc f,55 Cnc,False,10,1.015,0.39,-0.19695,0.802,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 1214 b,GJ 1214,False,3,0.182,0.24,-2.40894,0.01505,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 436 b,GJ 436,False,6,0.47,0.0991,-1.585,0.0291,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-12 b,HAT-P-12,False,2.5,0.733,-0.29,-0.678,0.0384,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-13 b,HAT-P-13,False,5,1.32,0.46,0.346,0.04383,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,32,0.125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-13 c,HAT-P-13,False,5,1.32,0.46,0.346,1.258,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,37,0.14453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-14 b,HAT-P-14,False,1.6,2.65,0.11,0.64412,0.0596,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-17 b,HAT-P-17,False,7,0.99,0,-0.28893,0.0892,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-17 c,HAT-P-17,False,7,0.92,0.0512,-0.28893,5.6,MODEL-INFERRED,inferred,,256,212,0.828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-HAT-P-18 b,HAT-P-18,False,12.4,0.77,0.1,-0.58537,0.0559,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-1 b,HAT-P-1,False,3.6,1.151,0.13,0.22463,0.05561,MODEL-INFERRED,inferred,,256,254,0.9921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-HAT-P-26 b,HAT-P-26,False,9,1.12,-0.04,-0.35928,0.04748,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-30 b,HAT-P-30,False,1,1.55,0.13,0.312,0.0419,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-32 b,HAT-P-32,False,2.7,1.132,-0.16,0.33806,0.03397,MODEL-INFERRED,inferred,,256,251,0.98046875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-HD 149026 b,HD 149026,False,2.6,1.42,0.32,0.48,0.04364,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 189733 b,HD 189733,False,1.4,0.79,-0.02,-0.46119,0.03126,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 209458 b,HD 209458,False,3.1,1.23,0.01,0.23086,0.04707,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 80606 b,HD 80606,False,5.9,1.05,0.35,-0.00237,0.4603,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 86226 b,HD 86226,False,4.6,1.019,0.018,0.07188,2.73,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TrES-4 b,TrES-4,False,2.2,1.08,0.14,0.72552,0.05084,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-12 b,WASP-12,False,3.05,1.325,0.12,0.59711,0.0234,MODEL-INFERRED,inferred,,256,157,0.61328125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-WASP-15 b,WASP-15,False,2.4,1.18,-0.17,0.49,0.05165,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-17 b,WASP-17,False,2.65,2.28,-0.25,0.61272,0.0515,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-18 b,WASP-18,False,1.57,1.294,0.107,0.42813,0.02024,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-19 b,WASP-19,False,6.4,0.965,0.04,-0.04335,0.01652,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-25 b,WASP-25,False,1.9,0.962,-0.2,-0.143,0.0473,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-39 b,WASP-39,False,8.5,0.913,0.01,-0.12792,0.04828,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-43 b,WASP-43,False,7,0.58,-0.05,-0.82509,0.0142,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-6 b,WASP-6,False,3.2,0.854,-0.15,-0.29675,0.04217,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3470 b,GJ 3470,False,1.65,0.539,0.2,-1.5376,0.0355,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-47 b,WASP-47,False,6.5,1.058,0.43,0.03167,0.052,MODEL-INFERRED,inferred,,256,196,0.765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
-WASP-63 b,WASP-63,False,8.3,1.28,0.08,0.44936,0.0574,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-52 b,WASP-52,False,0.4,0.87,0.03,-0.35366,0.0272,MODEL-INFERRED,inferred,,256,236,0.921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-WASP-77 A b,WASP-77 A,False,6.2,0.903,-0.1,-0.12901,0.023233633,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-80 b,WASP-80,False,7,0.577,-0.13,-1.03998,0.0344,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-103 b,WASP-103,False,4,1.22,0.06,0.413,0.01985,MODEL-INFERRED,inferred,,256,145,0.56640625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-WASP-96 b,WASP-96,False,8,1.06,0.14,0.00217,0.0453,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-94 A b,WASP-94 A,False,2.7,1.67,0.26,0.50992,0.055,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-94 B b,WASP-94 B,False,4,1.24,0.23,0.35112,0.0335,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-69 b,WASP-69,False,1.8,0.83,0.35,-0.48149,0.0453,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-84 b,WASP-84,False,2.1,0.853,0,-0.325,0.0778,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-20 b,WASP-20,False,7,1.2,-0.008,0.239,0.05999,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-6 b,HATS-6,False,8.1,0.574,0.2,-1.09983,0.03623,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KELT-7 b,KELT-7,False,1.3,1.76,0,0.758,0.04415,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-18 b,K2-18,False,,0.359,0.12,-1.59688,0.1429,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KELT-8 b,KELT-8,False,5.4,0.81,0.27,0.26483,0.0455,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-22 b,K2-22,False,,0.595292,0.032,-1.0744,0.009,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-47 c,WASP-47,False,6.5,1.058,0.43,0.03167,1.393,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_inside_across_prescriptions,1,4.754315462,5.866665737,6.95644049,0.8738353654,0.9799123021,0.9841227266,1,4.754315462,5.866665737,6.95644049,0.8738353654,0.9799123021,0.9841227266,1,4.906807945,6.019882535,7.305397065,0.9778867857,0.982548762,0.9856391952,0.1,72,2.081668171e-17
-WASP-47 d,WASP-47,False,6.5,1.058,0.43,0.03167,0.085,MODEL-INFERRED,inferred,,256,189,0.73828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-WASP-47 e,WASP-47,False,6.5,1.058,0.43,0.03167,0.01673,MODEL-INFERRED,inferred,,256,190,0.7421875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-GJ 1132 b,GJ 1132,False,5,0.1945,-0.17,-2.32148,0.0157,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-76 b,WASP-76,False,1.816,1.458,0.366,0.65418,0.033,MODEL-INFERRED,inferred,,256,251,0.98046875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-KELT-4 A b,KELT-4 A,False,4.44,1.201,-0.116,0.53529,0.04317,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,73,0.28515625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 b,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.01154,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 c,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.0158,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 d,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.02227,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-34 b,K2-34,False,2.88,1.16,0.01,0.3997,0.0442,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-WASP-121 b,WASP-121,False,1.11,1.33,0.17,0.64372,0.02571,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-HIP 41378 b,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.1303,MODEL-INFERRED,inferred,,256,255,0.99609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-HIP 41378 c,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.2093,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-HIP 41378 d,HIP 41378,False,2.07,1.22,-0.05,0.39646,1.17,MODEL-INFERRED,inferred,,256,256,1,supported,0.4921875,0.5078125,boundary_or_model_sensitive,0.01953125,0,0,0.4469068596,0,0,0.1679297511,0.015625,0,0,0.06364280191,0,0,0.02304105889,0.5234375,0.7147157405,1.734636612,2.143631274,0.3667540703,0.9397578069,0.9550570981,0.1,72,0
-HIP 41378 e,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.68,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-HIP 41378 f,HIP 41378,False,2.07,1.22,-0.05,0.39646,1.394,MODEL-INFERRED,inferred,,256,256,1,supported,0,1,boundary_or_model_sensitive,0,0.7575496718,1.181672328,1.594323648,0.409409095,0.5699623836,0.6784973566,0,0.3953774338,0.8056916669,1.231339174,0.2184885657,0.39147422,0.5208208924,1,1.674756289,1.954849777,2.318155576,0.9436542175,0.9513344959,0.9586461344,0.1,72,0
-HD 3167 b,HD 3167,False,8.4,0.864,0.037,-0.25727,0.01814,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 3167 c,HD 3167,False,8.4,0.864,0.037,-0.25727,0.1794,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-65 b,HAT-P-65,False,3.9,1.297,0.208,0.47276,0.04042,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,105,0.41015625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-131 b,WASP-131,False,7,1.06,-0.2,0.53005,0.0608,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,52,0.203125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-139 b,WASP-139,False,0.5,0.92,0.2,-0.34535,0.062,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-127 b,WASP-127,False,11.41,0.95,-0.193,0.27574,0.0484,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,18,0.0703125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 e,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.02925,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 f,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.03849,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 g,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.04683,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TRAPPIST-1 h,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.06189,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 106315 b,HD 106315,False,4.48,1.091,-0.311,0.39454,0.0907,MODEL-INFERRED,inferred,,256,136,0.53125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-HD 106315 c,HD 106315,False,4.48,1.091,-0.311,0.39454,0.1536,MODEL-INFERRED,inferred,,256,153,0.59765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-LHS 1140 b,LHS 1140,False,5,0.1844,-0.15,-2.42022,0.0946,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KELT-11 b,KELT-11,False,,1.44,0.17,0.74429,0.0623,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KELT-9 b,KELT-9,False,0.45,2.32,0.07,1.58995,0.03368,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 3167 d,HD 3167,False,8.4,0.864,0.037,-0.25727,0.077,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-107 b,WASP-107,False,3.4,0.683,0.02,-0.87943,0.055,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,79,0.30859375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 9827 b,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.0189,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 9827 c,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.0395,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 9827 d,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.053,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KELT-20 b,KELT-20,False,0.6,1.76,-0.29,1.1038,0.0542,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-18 c,K2-18,False,,0.359,0.09,-1.59688,0.06,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-141 b,K2-141,False,6.3,0.708,0,-0.75,0.00747,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-11 c,HAT-P-11,False,2.69,0.811,0.31,-0.56702,4.1,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-NGTS-2 b,NGTS-2,False,2.17,1.64,-0.06,0.63077,0.063,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,44,0.171875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-164 b,WASP-164,False,4.08,0.946,-0.01,-0.06732,0.02818,MODEL-INFERRED,inferred,,256,228,0.890625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,4.163336342e-17
-LHS 1140 c,LHS 1140,False,5,0.1844,-0.15,-2.42022,0.027,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-287 b,K2-287,False,4.5,1.056,0.2,-0.10829,0.1206,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-LHS 3844 b,LHS 3844,False,7.8,0.151,0.22,-2.56543,0.00624,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 15337 b,HD 15337,False,9.6,0.829,0.03,-0.32606,0.05245,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 15337 c,HD 15337,False,9.6,0.829,0.03,-0.32606,0.1235,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-L 98-59 b,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0223,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-L 98-59 c,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0309,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-L 98-59 d,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0494,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-V1298 Tau b,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.1685,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-166 b,WASP-166,False,2.1,1.19,0.19,0.2826,0.0641,MODEL-INFERRED,inferred,,256,249,0.97265625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-TOI-270 b,TOI-270,False,,0.386,-0.17,-1.7122,0.03197,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-270 c,TOI-270,False,,0.386,-0.17,-1.7122,0.04526,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-270 d,TOI-270,False,,0.386,-0.17,-1.7122,0.0721,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 357 b,GJ 357,False,,0.342,-0.12,-1.79833,0.036,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 357 c,GJ 357,False,,0.342,-0.12,-1.79833,0.061,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 357 d,GJ 357,False,,0.342,-0.12,-1.79833,0.204,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LTT 1445 A b,LTT 1445 A,False,,0.257,-0.34,-2.04591,0.0381,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-178 b,WASP-178,False,0.43,2.07,0.21,1.21484,0.0558,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-V1298 Tau c,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.0824,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-V1298 Tau d,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.1081,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-V1298 Tau e,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.2689,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LP 791-18 b,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.00978,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LP 791-18 c,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.02961,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-125 b,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.05186,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-125 c,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.0814,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-L 168-9 b,L 168-9,False,,0.614,-0.03,-1.14086,0.0208,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-125 d,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.137,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-48 A b,HATS-48 A,False,11.97,0.7279,0.186,-0.70885,0.03769,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-72 b,HATS-72,False,12.17,0.7311,0.099,-0.65896,0.066517,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-NGTS-10 b,NGTS-10,False,10.4,0.696,-0.02,-0.75673,0.0143,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,114,0.4453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1130 b,TOI-1130,False,5.4,0.745,0.11,-0.85387,0.0453,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1130 c,TOI-1130,False,5.4,0.745,0.11,-0.85387,0.0731,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-677 b,TOI-677,False,2.92,1.181,0,0.31172,0.1041,MODEL-INFERRED,inferred,,256,231,0.90234375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-LTT 3780 b,LTT 3780,False,3.1,0.381,0.06,-1.78252,0.01195,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LTT 3780 c,LTT 3780,False,3.1,0.381,0.06,-1.78252,0.0757,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1338 b,TOI-1338 A,False,4.4,1.0936,0.01,0.32898,0.4607,MODEL-INFERRED,inferred,,256,255,0.99609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-AU Mic b,AU Mic,False,0.019,0.635,0.01,-0.97757,0.07,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-148 b,WASP-148,False,3.6,0.954,0.099,-0.13906,0.08215,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-148 c,WASP-148,False,3.6,0.954,0.099,-0.13906,0.2044,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-NGTS-11 b,NGTS-11,False,3.9,0.862,0.22,-0.39518,0.201,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-TOI-849 b,TOI-849,False,6.7,0.97,0.19,-0.2184,0.0155,MODEL-INFERRED,inferred,,256,213,0.83203125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-700 b,TOI-700,False,1.5,0.415,-0.07,-1.64016,0.0677,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-700 c,TOI-700,False,1.5,0.415,-0.07,-1.64016,0.0929,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-700 d,TOI-700,False,1.5,0.415,-0.07,-1.64016,0.1633,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HIP 67522 b,HIP 67522,False,0.017,1.22,0,0.24304,0.0748,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1899 b,TOI-1899,False,7.1,0.632,0.28,-1.05685,0.1525,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 86226 c,HD 86226,False,4.6,1.019,0.018,0.07188,0.049,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WD 1856+534 b,WD 1856+534,False,7.93,0.518,,-4.12,0.0204,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LTT 9779 b,LTT 9779,False,2,1.02,0.27,-0.16749,0.01679,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-824 b,TOI-824,False,7.5,0.71,-0.092,-0.70997,0.02177,MODEL-INFERRED,inferred,,256,204,0.796875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-421 b,TOI-421,False,10.9,0.833,-0.044,-0.26777,0.0554,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-421 c,TOI-421,False,10.9,0.833,-0.044,-0.26777,0.117,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3473 b,GJ 3473,False,,0.36,0.11,-1.82391,0.01589,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3473 c,GJ 3473,False,,0.36,0.11,-1.82391,0.0876,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-107 c,WASP-107,False,3.4,0.683,0.02,-0.87943,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-776 b,TOI-776,False,6.1,0.542,-0.21,-1.3098,0.0653,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-776 c,TOI-776,False,6.1,0.542,-0.21,-1.3098,0.1001,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-561 b,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.01064,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,49,0.19140625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-561 c,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.0889,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,40,0.15625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-561 d,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.1587,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,32,0.125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-561 e,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.33,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,37,0.14453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-451 b,TOI-451,False,0.125,0.93,0.02,-0.22915,0.0274,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-451 c,TOI-451,False,0.125,0.93,0.02,-0.22915,0.0795,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-451 d,TOI-451,False,0.125,0.93,0.02,-0.22915,0.1168,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-178 b,TOI-178,False,6,0.647,-0.23,-0.86646,0.02607,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-178 c,TOI-178,False,6,0.647,-0.23,-0.86646,0.037,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-178 d,TOI-178,False,6,0.647,-0.23,-0.86646,0.0592,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-178 e,TOI-178,False,6,0.647,-0.23,-0.86646,0.0783,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-178 f,TOI-178,False,6,0.647,-0.23,-0.86646,0.1039,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-178 g,TOI-178,False,6,0.647,-0.23,-0.86646,0.1275,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 486 b,GJ 486,False,4,0.312,-0.15,-1.93892,0.01714,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LHS 1478 b,LHS 1478,False,,0.236,-0.13,-2.14569,0.01848,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1231 b,TOI-1231,False,,0.485,0.041,-1.48678,0.1288,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-674 b,TOI-674,False,,0.42,0.17,-1.61439,0.025,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1685 b,TOI-1685,False,1.4,0.466,0.01,-1.51856,0.01164,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,5,0.01953125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1807 b,TOI-1807,False,2.1,0.8048,0.044,-0.53313,0.0122,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2076 b,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.08781,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-2076 c,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.1407,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-2076 d,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.1982,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-AU Mic c,AU Mic,False,0.019,0.635,0.01,-0.97757,0.119,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-431 b,TOI-431,False,,0.78,0.2,-0.56509,0.0113,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-431 c,TOI-431,False,,0.78,0.2,-0.56509,0.052,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-431 d,TOI-431,False,,0.78,0.2,-0.56509,0.098,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-L 98-59 e,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0712,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 63935 b,HD 63935,False,6.6,0.9406,0.107,-0.11464,0.083,MODEL-INFERRED,inferred,,256,237,0.92578125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-HD 63935 c,HD 63935,False,6.6,0.9406,0.107,-0.11464,0.148,MODEL-INFERRED,inferred,,256,244,0.953125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
-GJ 367 b,GJ 367,False,,0.451,-0.01,-1.54061,0.0071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2109 b,TOI-2109,False,1.77,1.453,0.068,0.67302,0.01791,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,118,0.4609375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-75 b,HATS-75,False,14.9,0.6017,0.522,-1.19661,0.032742,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LTT 1445 A c,LTT 1445 A,False,,0.257,-0.34,-2.04591,0.02661,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-500 b,TOI-500,False,5,0.74,0.12,-0.70002,0.01189,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,75,0.29296875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1075 b,TOI-1075,False,6,0.604,-0.08,-1.14436,0.01159,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1442 b,TOI-1442,False,,0.29,,-1.97722,0.0071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2260 b,TOI-2260,False,0.321,0.99,0.22,-0.19851,0.0097,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-2445 b,TOI-2445,False,,0.25,,-2.08408,0.0064,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3929 b,GJ 3929,False,7.1,0.313,-0.02,-1.96257,0.0252,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-189 b,WASP-189,False,0.73,2.03,0.29,1.31471,0.05053,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1670 b,TOI-1670,False,2.53,1.21,0.09,0.40046,0.103,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-1670 c,TOI-1670,False,2.53,1.21,0.09,0.40046,0.249,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-500 c,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-500 d,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-500 e,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 260655 b,HD 260655,False,5,0.439,-0.43,-1.43997,0.02933,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 260655 c,HD 260655,False,5,0.439,-0.43,-1.43997,0.04749,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3714 b,TOI-3714,False,2.9,0.53,0.1,-1.40671,0.027,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3929 c,GJ 3929,False,7.1,0.313,-0.02,-1.96257,0.081,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3090 b,GJ 3090,False,,0.519,0.12,-1.34199,0.0316,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-181 b,TOI-181,False,5.4,0.822,0.272,-0.52578,0.0539,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-199 b,TOI-199,False,0.8,0.936,0.22,-0.33819,0.4254,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-700 e,TOI-700,False,1.5,0.415,-0.07,-1.64016,0.134,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-771 b,TOI-771,False,6.7,0.22,-0.13,-2.20343,0.0208,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-836.01,TOI-836,False,5.4,0.678,-0.284,-0.85276,0.075,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-836 b,TOI-836,False,5.4,0.678,-0.284,-0.85276,0.0422,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LHS 475 b,LHS 475,False,,0.262,,-2.06449,0.02037,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1136 d,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.1062,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,7.632783294e-17
-TOI-1136 c,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.0669,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.734723476e-17
-TOI-1136 f,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.174,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
-TOI-1136 e,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.14,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.428612866e-17
-TOI-1173 b,TOI-1173,False,8.7,0.911,0.191,-0.16877,0.071,MODEL-INFERRED,inferred,,256,250,0.9765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-1416 b,TOI-1416,False,6.9,0.798,0.08,-0.46008,0.019,MODEL-INFERRED,inferred,,256,215,0.83984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-TOI-1420 b,TOI-1420,False,10.7,0.987,0.28,-0.15181,0.071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1468 c,TOI-1468,False,,0.3527,-0.01,-1.7921,0.08608,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1468 b,TOI-1468,False,,0.3527,-0.01,-1.7921,0.02107,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HIP 9618 b,HIP 9618,False,5.6,0.942,-0.018,-0.0716,0.145,MODEL-INFERRED,inferred,,256,234,0.9140625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-HIP 9618 c,HIP 9618,False,5.6,0.942,-0.018,-0.0716,0.269,MODEL-INFERRED,inferred,,256,242,0.9453125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-TOI-1801 b,TOI-1801,False,0.7,0.556,-0.19,-1.23003,0.075,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1823 b,TOI-1823,False,6.3,0.8414,0.243,-0.46092,0.212,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2031 A b,TOI-2031 A,False,2,1.174,-0.24,0.39094,0.066,MODEL-INFERRED,inferred,,256,212,0.828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-2134 b,TOI-2134,False,3.8,0.744,0.12,-0.7167,0.07803,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2134 c,TOI-2134,False,3.8,0.744,0.12,-0.7167,0.3715,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2374 b,TOI-2374,False,4.5,0.802,0.128,-0.54516,0.04818,MODEL-INFERRED,inferred,,256,246,0.9609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-2431 b,TOI-2431,False,2,0.661,-0.02,-0.96257,0.0063,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3235 b,TOI-3235,False,,0.3939,0.264,-1.78968,0.02709,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3757 b,TOI-3757,False,7.1,0.64,0,-1.06048,0.03845,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3884 b,TOI-3884,False,,0.298,0.04,-2.03152,0.0361,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3984 A b,TOI-3984 A,False,2.9,0.49,0.18,-1.57408,0.041,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-4010 c,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.058,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-4010 d,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.113,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-4010 b,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.0229,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-LP 890-9 b,LP 890-9,False,7.2,0.118,-0.028,-2.84134,0.01875,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-4336 A b,TOI-4336 A,False,6.7,0.306,0.14,-1.95861,0.0849,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 20329 b,HD 20329,False,11,0.9,-0.07,0.04922,0.018,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,117,0.45703125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-167 e,Kepler-167,False,7.1,0.777,0.02,-0.5391,1.883,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-5205 b,TOI-5205,False,,0.392,0,-1.7122,0.0199,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-167 c,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.0684,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-5293 A b,TOI-5293 A,False,2.9,0.54,-0.03,-1.37414,0.034,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KOI-94 d,KOI-94,False,3.16,1.277,0.0228,0.479,0.1684,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
-LP 890-9 c,LP 890-9,False,7.2,0.118,-0.028,-2.84134,0.03984,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 3167 e,HD 3167,False,8.4,0.864,0.037,-0.25727,0.3797,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1136 b,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.05106,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
-TOI-1136 g,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.229,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
-TOI-1338 c,TOI-1338 A,False,4.4,1.0936,0.01,0.32898,0.794,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-WASP-84 c,WASP-84,False,2.1,0.853,0,-0.325,0.02359,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-6109 c,TOI-6109,False,0.075,1.03,0.0895,-0.05453,0.0786,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-6255 b,TOI-6255,False,,0.353,-0.14,-1.77344,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-193 b,WASP-193,False,6.8,1.018,-0.108,0.26007,0.0668,MODEL-INFERRED,inferred,,256,133,0.51953125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-LP 791-18 d,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.01992,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-6324 b,TOI-6324,False,,0.269,-0.32,-1.99802,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 207496 b,HD 207496,False,0.52,0.8,0.095,-0.50858,0.0629,MODEL-INFERRED,inferred,,256,216,0.84375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-4010 e,TOI-4010,False,6.1,0.88,0.37,-0.3996,1.57,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 367 c,GJ 367,False,,0.455,-0.01,-1.5391,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 367 d,GJ 367,False,,0.455,-0.01,-1.5391,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-6109 b,TOI-6109,False,0.075,1.03,0.0895,-0.05453,0.0599,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-199 c,TOI-199,False,0.8,0.936,0.22,-0.33819,0.807,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-AU Mic e,AU Mic,False,0.0185,0.6,0.12,-0.99,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-AU Mic d,AU Mic,False,0.0201,0.51,0.23,-1.0381,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 806 b,GJ 806,False,5,0.413,-0.28,-1.58528,0.01406,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 806 c,GJ 806,False,5,0.413,-0.28,-1.58528,0.0523,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 b,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.0793,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 c,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1039,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 d,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1362,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 e,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1785,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 f,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.2163,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 110067 g,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.2621,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 341 b,GJ 341,False,,0.48,-0.16,-1.31072,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-6894 b,TOI-6894,False,,0.207,0.142,-2.42597,0.02604,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-IRAS 04125+2902 b,IRAS 04125+2902,False,0.0033,0.7,,-0.33161,0.077,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HIP 67522 c,HIP 67522,False,0.017,1.22,0,0.24304,0.1228,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-51 e,Kepler-51,False,0.7,0.96,0.047,-0.1417,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-BD+05 4868 A b,BD+05 4868 A,False,11.1,0.7,-0.05,-0.7167,0.0208,MODEL-INFERRED,inferred,,256,162,0.6328125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-TOI-771 c,TOI-771,False,6.7,0.22,-0.13,-2.20343,0.046,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2076 e,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.03863,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-L 98-59 f,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.1052,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HIP 41378 g,HIP 41378,False,2.07,1.22,-0.05,0.39646,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc B b,55 Cnc B,False,10,0.26,0.16,-2.10811,0.044,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-55 Cnc B c,55 Cnc B,False,10,0.26,0.16,-2.10811,0.13,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-GJ 3090 c,GJ 3090,False,,0.519,0.12,-1.34199,0.0997,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-4336 A c,TOI-4336 A,False,6.7,0.306,0.14,-1.95861,0.05092,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-260 b,TOI-260,False,15.9,0.616,-0.47,-1.05899,0.0943,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 278555 b,HD 278555,False,3.8,1.255,0.269,0.49554,0.1985,MODEL-INFERRED,inferred,,256,144,0.5625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-Kepler-12 b,Kepler-12,False,4,1.166,0.07,0.44933,0.0553,MODEL-INFERRED,inferred,,256,230,0.8984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-KOI-94 b,KOI-94,False,3.16,1.277,0.0228,0.479,0.05119,MODEL-INFERRED,inferred,,256,188,0.734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-Kepler-167 d,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.1404,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-51 d,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.509,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-51 c,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.384,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-51 b,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.2514,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-Kepler-167 b,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.04825,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-KOI-94 c,KOI-94,False,3.16,1.277,0.0228,0.479,0.1013,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-KOI-94 e,KOI-94,False,3.16,1.277,0.0228,0.479,0.3046,MODEL-INFERRED,inferred,,256,191,0.74609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
-PH2 b,PH2,False,4.1,0.966,0.017,-0.05849,0.833,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-33 b,K2-33,False,0.0093,0.56,,-0.82391,0.0409,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HAT-P-11 b,HAT-P-11,False,2.69,0.811,0.31,-0.56702,0.05258,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-136 b,K2-136,False,0.65,0.742,-0.02,-0.7765,0.0707,MODEL-INFERRED,inferred,,256,196,0.765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 HAT-P-52 b,HAT-P-52,False,9.4,0.887,0.28,-0.30452,0.03694,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-4747 b,TOI-4747,False,,1.01,,-0.03529,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -673,6 +375,10 @@ Kepler-855 b,Kepler-855,False,4.17,1.03,0.06,0.33305,0.0762,MODEL-INFERRED,undet
 TOI-205 b,TOI-205,False,,1.2,0.13,0.45558,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1886 b,Kepler-1886,False,,0.928,-0.2,-0.16101,0.16,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-279 c,Kepler-279,False,0.22,1.1,-0.1141,0.5188,0.2236,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1839 b,TOI-1839,False,4.1,0.86,0.09,-0.264,0.02355,MODEL-INFERRED,inferred,,256,254,0.9921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-1839 c,TOI-1839,False,4.1,0.86,0.09,-0.264,0.04708,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+KMT-2023-BLG-1810L b,KMT-2023-BLG-1810L,False,,0.56,,,3.4,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KMT-2023-BLG-0084L b,KMT-2023-BLG-0084L,False,,0.23,,,2.5,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-401 b,K2-401,False,,0.87,-0.098,-0.8353,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-3807 b,TOI-3807,False,5.6,1.181,0.278,0.33244,0.0421,MODEL-INFERRED,inferred,,256,132,0.515625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 Kepler-931 b,Kepler-931,False,4.68,0.86,-0.01,-0.35,0.0719,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -873,6 +579,306 @@ HD 219134 h,HD 219134,False,12.46,0.794,0.08,-0.50864,3.11,MODEL-INFERRED,undete
 K2-183 c,K2-183,False,,0.942219,0.09,-0.13179,0.0932,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 NGTS-21 b,NGTS-21,False,10.02,0.72,-0.26,-0.53854,0.0236,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1519 b,Kepler-1519,False,3.98,0.94,-0.07,0.32617,0.7655,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc b,55 Cnc,False,10,1.015,0.39,-0.19695,0.118,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-270 d,TOI-270,False,,0.386,-0.17,-1.7122,0.0721,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc c,55 Cnc,False,10,1.015,0.39,-0.19695,0.247,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc d,55 Cnc,False,10,1.015,0.39,-0.19695,5.6,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc e,55 Cnc,False,5.5,0.905,0.35,-0.19695,0.01544,MODEL-INFERRED,inferred,,256,241,0.94140625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+55 Cnc f,55 Cnc,False,10,1.015,0.39,-0.19695,0.802,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 1214 b,GJ 1214,False,3,0.182,0.24,-2.40894,0.01505,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 436 b,GJ 436,False,6,0.47,0.0991,-1.585,0.0291,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-12 b,HAT-P-12,False,2.5,0.733,-0.29,-0.678,0.0384,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-13 b,HAT-P-13,False,5,1.32,0.46,0.346,0.04383,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,32,0.125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-13 c,HAT-P-13,False,5,1.32,0.46,0.346,1.258,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,37,0.14453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-14 b,HAT-P-14,False,1.6,2.65,0.11,0.64412,0.0596,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-17 b,HAT-P-17,False,7,0.99,0,-0.28893,0.0892,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-17 c,HAT-P-17,False,7,0.92,0.0512,-0.28893,5.6,MODEL-INFERRED,inferred,,256,212,0.828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+HAT-P-18 b,HAT-P-18,False,12.4,0.77,0.1,-0.58537,0.0559,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-1 b,HAT-P-1,False,3.6,1.151,0.13,0.22463,0.05561,MODEL-INFERRED,inferred,,256,254,0.9921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+HAT-P-26 b,HAT-P-26,False,9,1.12,-0.04,-0.35928,0.04748,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-30 b,HAT-P-30,False,1,1.55,0.13,0.312,0.0419,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-32 b,HAT-P-32,False,2.7,1.132,-0.16,0.33806,0.03397,MODEL-INFERRED,inferred,,256,251,0.98046875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+HD 149026 b,HD 149026,False,2.6,1.42,0.32,0.48,0.04364,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 189733 b,HD 189733,False,1.4,0.79,-0.02,-0.46119,0.03126,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 209458 b,HD 209458,False,3.1,1.23,0.01,0.23086,0.04707,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 80606 b,HD 80606,False,5.9,1.05,0.35,-0.00237,0.4603,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 86226 b,HD 86226,False,4.6,1.019,0.018,0.07188,2.73,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TrES-4 b,TrES-4,False,2.2,1.08,0.14,0.72552,0.05084,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-12 b,WASP-12,False,3.05,1.325,0.12,0.59711,0.0234,MODEL-INFERRED,inferred,,256,157,0.61328125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+WASP-15 b,WASP-15,False,2.4,1.18,-0.17,0.49,0.05165,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-17 b,WASP-17,False,2.65,2.28,-0.25,0.61272,0.0515,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-18 b,WASP-18,False,1.57,1.294,0.107,0.42813,0.02024,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-19 b,WASP-19,False,6.4,0.965,0.04,-0.04335,0.01652,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-25 b,WASP-25,False,1.9,0.962,-0.2,-0.143,0.0473,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-39 b,WASP-39,False,8.5,0.913,0.01,-0.12792,0.04828,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-43 b,WASP-43,False,7,0.58,-0.05,-0.82509,0.0142,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-6 b,WASP-6,False,3.2,0.854,-0.15,-0.29675,0.04217,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3470 b,GJ 3470,False,1.65,0.539,0.2,-1.5376,0.0355,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-47 b,WASP-47,False,6.5,1.058,0.43,0.03167,0.052,MODEL-INFERRED,inferred,,256,196,0.765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
+WASP-63 b,WASP-63,False,8.3,1.28,0.08,0.44936,0.0574,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-52 b,WASP-52,False,0.4,0.87,0.03,-0.35366,0.0272,MODEL-INFERRED,inferred,,256,236,0.921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+WASP-77 A b,WASP-77 A,False,6.2,0.903,-0.1,-0.12901,0.023233633,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-80 b,WASP-80,False,7,0.577,-0.13,-1.03998,0.0344,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-103 b,WASP-103,False,4,1.22,0.06,0.413,0.01985,MODEL-INFERRED,inferred,,256,145,0.56640625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+WASP-96 b,WASP-96,False,8,1.06,0.14,0.00217,0.0453,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-94 A b,WASP-94 A,False,2.7,1.67,0.26,0.50992,0.055,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-94 B b,WASP-94 B,False,4,1.24,0.23,0.35112,0.0335,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-69 b,WASP-69,False,1.8,0.83,0.35,-0.48149,0.0453,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-84 b,WASP-84,False,2.1,0.853,0,-0.325,0.0778,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-20 b,WASP-20,False,7,1.2,-0.008,0.239,0.05999,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HATS-6 b,HATS-6,False,8.1,0.574,0.2,-1.09983,0.03623,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KELT-7 b,KELT-7,False,1.3,1.76,0,0.758,0.04415,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-18 b,K2-18,False,,0.359,0.12,-1.59688,0.1429,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KELT-8 b,KELT-8,False,5.4,0.81,0.27,0.26483,0.0455,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-22 b,K2-22,False,,0.595292,0.032,-1.0744,0.009,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-47 c,WASP-47,False,6.5,1.058,0.43,0.03167,1.393,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_inside_across_prescriptions,1,4.754315462,5.866665737,6.95644049,0.8738353654,0.9799123021,0.9841227266,1,4.754315462,5.866665737,6.95644049,0.8738353654,0.9799123021,0.9841227266,1,4.906807945,6.019882535,7.305397065,0.9778867857,0.982548762,0.9856391952,0.1,72,2.081668171e-17
+WASP-47 d,WASP-47,False,6.5,1.058,0.43,0.03167,0.085,MODEL-INFERRED,inferred,,256,189,0.73828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+WASP-47 e,WASP-47,False,6.5,1.058,0.43,0.03167,0.01673,MODEL-INFERRED,inferred,,256,190,0.7421875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+GJ 1132 b,GJ 1132,False,5,0.1945,-0.17,-2.32148,0.0157,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-76 b,WASP-76,False,1.816,1.458,0.366,0.65418,0.033,MODEL-INFERRED,inferred,,256,251,0.98046875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+KELT-4 A b,KELT-4 A,False,4.44,1.201,-0.116,0.53529,0.04317,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,73,0.28515625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 b,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.01154,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 c,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.0158,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 d,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.02227,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-34 b,K2-34,False,2.88,1.16,0.01,0.3997,0.0442,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+WASP-121 b,WASP-121,False,1.11,1.33,0.17,0.64372,0.02571,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+HIP 41378 b,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.1303,MODEL-INFERRED,inferred,,256,255,0.99609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+HIP 41378 c,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.2093,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+HIP 41378 d,HIP 41378,False,2.07,1.22,-0.05,0.39646,1.17,MODEL-INFERRED,inferred,,256,256,1,supported,0.4921875,0.5078125,boundary_or_model_sensitive,0.01953125,0,0,0.4469068596,0,0,0.1679297511,0.015625,0,0,0.06364280191,0,0,0.02304105889,0.5234375,0.7147157405,1.734636612,2.143631274,0.3667540703,0.9397578069,0.9550570981,0.1,72,0
+HIP 41378 e,HIP 41378,False,2.07,1.22,-0.05,0.39646,0.68,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+HIP 41378 f,HIP 41378,False,2.07,1.22,-0.05,0.39646,1.394,MODEL-INFERRED,inferred,,256,256,1,supported,0,1,boundary_or_model_sensitive,0,0.7575496718,1.181672328,1.594323648,0.409409095,0.5699623836,0.6784973566,0,0.3953774338,0.8056916669,1.231339174,0.2184885657,0.39147422,0.5208208924,1,1.674756289,1.954849777,2.318155576,0.9436542175,0.9513344959,0.9586461344,0.1,72,0
+HD 3167 b,HD 3167,False,8.4,0.864,0.037,-0.25727,0.01814,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 3167 c,HD 3167,False,8.4,0.864,0.037,-0.25727,0.1794,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-65 b,HAT-P-65,False,3.9,1.297,0.208,0.47276,0.04042,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,105,0.41015625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-131 b,WASP-131,False,7,1.06,-0.2,0.53005,0.0608,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,52,0.203125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-139 b,WASP-139,False,0.5,0.92,0.2,-0.34535,0.062,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-127 b,WASP-127,False,11.41,0.95,-0.193,0.27574,0.0484,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,18,0.0703125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 e,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.02925,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 f,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.03849,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 g,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.04683,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TRAPPIST-1 h,TRAPPIST-1,False,7.6,0.0898,0.052,-3.25727,0.06189,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 106315 b,HD 106315,False,4.48,1.091,-0.311,0.39454,0.0907,MODEL-INFERRED,inferred,,256,136,0.53125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+HD 106315 c,HD 106315,False,4.48,1.091,-0.311,0.39454,0.1536,MODEL-INFERRED,inferred,,256,153,0.59765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+LHS 1140 b,LHS 1140,False,5,0.1844,-0.15,-2.42022,0.0946,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KELT-11 b,KELT-11,False,,1.44,0.17,0.74429,0.0623,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KELT-9 b,KELT-9,False,0.45,2.32,0.07,1.58995,0.03368,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 3167 d,HD 3167,False,8.4,0.864,0.037,-0.25727,0.077,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-107 b,WASP-107,False,3.4,0.683,0.02,-0.87943,0.055,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,79,0.30859375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 9827 b,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.0189,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 9827 c,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.0395,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 9827 d,GJ 9827,False,5.465,0.62,-0.29,-1.00436,0.053,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KELT-20 b,KELT-20,False,0.6,1.76,-0.29,1.1038,0.0542,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-18 c,K2-18,False,,0.359,0.09,-1.59688,0.06,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-141 b,K2-141,False,6.3,0.708,0,-0.75,0.00747,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-141 c,K2-141,False,6.3,0.708,0,-0.75,0.0683,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-232 b,K2-232,False,3.9,1.121,0.106,0.21643,0.1016,MODEL-INFERRED,inferred,,256,188,0.734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+GJ 1132 c,GJ 1132,False,5,0.198,-0.18,-2.32148,0.0476,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-11 c,HAT-P-11,False,2.69,0.811,0.31,-0.56702,4.1,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+NGTS-2 b,NGTS-2,False,2.17,1.64,-0.06,0.63077,0.063,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,44,0.171875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-164 b,WASP-164,False,4.08,0.946,-0.01,-0.06732,0.02818,MODEL-INFERRED,inferred,,256,228,0.890625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,4.163336342e-17
+LHS 1140 c,LHS 1140,False,5,0.1844,-0.15,-2.42022,0.027,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-287 b,K2-287,False,4.5,1.056,0.2,-0.10829,0.1206,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+LHS 3844 b,LHS 3844,False,7.8,0.151,0.22,-2.56543,0.00624,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 15337 b,HD 15337,False,9.6,0.829,0.03,-0.32606,0.05245,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 15337 c,HD 15337,False,9.6,0.829,0.03,-0.32606,0.1235,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+L 98-59 b,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0223,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+L 98-59 c,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0309,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+L 98-59 d,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0494,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+V1298 Tau b,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.1685,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-166 b,WASP-166,False,2.1,1.19,0.19,0.2826,0.0641,MODEL-INFERRED,inferred,,256,249,0.97265625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+TOI-270 b,TOI-270,False,,0.386,-0.17,-1.7122,0.03197,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-270 c,TOI-270,False,,0.386,-0.17,-1.7122,0.04526,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 357 b,GJ 357,False,,0.342,-0.12,-1.79833,0.036,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 357 c,GJ 357,False,,0.342,-0.12,-1.79833,0.061,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 357 d,GJ 357,False,,0.342,-0.12,-1.79833,0.204,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LTT 1445 A b,LTT 1445 A,False,,0.257,-0.34,-2.04591,0.0381,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-178 b,WASP-178,False,0.43,2.07,0.21,1.21484,0.0558,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+V1298 Tau c,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.0824,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+V1298 Tau d,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.1081,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+V1298 Tau e,V1298 Tau,False,0.02,1.1,0.1,-0.02045,0.2689,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LP 791-18 b,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.00978,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LP 791-18 c,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.02961,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-125 b,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.05186,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-125 c,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.0814,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+L 168-9 b,L 168-9,False,,0.614,-0.03,-1.14086,0.0208,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-125 d,TOI-125,False,6.8,0.859,-0.02,-0.28483,0.137,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HATS-48 A b,HATS-48 A,False,11.97,0.7279,0.186,-0.70885,0.03769,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HATS-72 b,HATS-72,False,12.17,0.7311,0.099,-0.65896,0.066517,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+NGTS-10 b,NGTS-10,False,10.4,0.696,-0.02,-0.75673,0.0143,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,114,0.4453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1130 b,TOI-1130,False,5.4,0.745,0.11,-0.85387,0.0453,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1130 c,TOI-1130,False,5.4,0.745,0.11,-0.85387,0.0731,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-677 b,TOI-677,False,2.92,1.181,0,0.31172,0.1041,MODEL-INFERRED,inferred,,256,231,0.90234375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+LTT 3780 b,LTT 3780,False,3.1,0.381,0.06,-1.78252,0.01195,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LTT 3780 c,LTT 3780,False,3.1,0.381,0.06,-1.78252,0.0757,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1338 b,TOI-1338 A,False,4.4,1.0936,0.01,0.32898,0.4607,MODEL-INFERRED,inferred,,256,255,0.99609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+AU Mic b,AU Mic,False,0.019,0.635,0.01,-0.97757,0.07,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-148 b,WASP-148,False,3.6,0.954,0.099,-0.13906,0.08215,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-148 c,WASP-148,False,3.6,0.954,0.099,-0.13906,0.2044,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+NGTS-11 b,NGTS-11,False,3.9,0.862,0.22,-0.39518,0.201,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+TOI-849 b,TOI-849,False,6.7,0.97,0.19,-0.2184,0.0155,MODEL-INFERRED,inferred,,256,213,0.83203125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-700 b,TOI-700,False,1.5,0.417,-0.07,-1.63264,0.0678,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-700 c,TOI-700,False,1.5,0.417,-0.07,-1.63264,0.0931,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-700 d,TOI-700,False,1.5,0.417,-0.07,-1.63264,0.1642,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HIP 67522 b,HIP 67522,False,0.017,1.22,0,0.24304,0.0748,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1899 b,TOI-1899,False,7.1,0.632,0.28,-1.05685,0.1525,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 86226 c,HD 86226,False,4.6,1.019,0.018,0.07188,0.049,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WD 1856+534 b,WD 1856+534,False,7.93,0.518,,-4.12,0.0204,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LTT 9779 b,LTT 9779,False,2,1.02,0.27,-0.16749,0.01679,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-824 b,TOI-824,False,7.5,0.71,-0.092,-0.70997,0.02177,MODEL-INFERRED,inferred,,256,204,0.796875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-421 b,TOI-421,False,10.9,0.833,-0.044,-0.26777,0.0554,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-421 c,TOI-421,False,10.9,0.833,-0.044,-0.26777,0.117,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3473 b,GJ 3473,False,,0.36,0.11,-1.82391,0.01589,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3473 c,GJ 3473,False,,0.36,0.11,-1.82391,0.0876,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-107 c,WASP-107,False,3.4,0.683,0.02,-0.87943,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-776 b,TOI-776,False,6.1,0.542,-0.21,-1.3098,0.0653,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-776 c,TOI-776,False,6.1,0.542,-0.21,-1.3098,0.1001,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-561 b,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.01064,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,49,0.19140625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-561 c,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.0889,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,40,0.15625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-561 d,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.1587,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,32,0.125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-561 e,TOI-561,False,16.1,0.806,-0.41,-0.28233,0.33,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,37,0.14453125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-451 b,TOI-451,False,0.125,0.93,0.02,-0.22915,0.0274,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-451 c,TOI-451,False,0.125,0.93,0.02,-0.22915,0.0795,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-451 d,TOI-451,False,0.125,0.93,0.02,-0.22915,0.1168,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-178 b,TOI-178,False,6,0.647,-0.23,-0.86646,0.02607,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-178 c,TOI-178,False,6,0.647,-0.23,-0.86646,0.037,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-178 d,TOI-178,False,6,0.647,-0.23,-0.86646,0.0592,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-178 e,TOI-178,False,6,0.647,-0.23,-0.86646,0.0783,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-178 f,TOI-178,False,6,0.647,-0.23,-0.86646,0.1039,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-178 g,TOI-178,False,6,0.647,-0.23,-0.86646,0.1275,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 486 b,GJ 486,False,4,0.312,-0.15,-1.93892,0.01714,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LHS 1478 b,LHS 1478,False,,0.2301,-0.38,-2.1296,0.01872,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1231 b,TOI-1231,False,,0.485,0.041,-1.48678,0.1288,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-674 b,TOI-674,False,,0.42,0.17,-1.61439,0.025,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1685 b,TOI-1685,False,1.4,0.466,0.01,-1.51856,0.01164,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,5,0.01953125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1807 b,TOI-1807,False,2.1,0.8048,0.044,-0.53313,0.0122,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2076 b,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.08781,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-2076 c,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.1407,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-2076 d,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.1982,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+AU Mic c,AU Mic,False,0.019,0.635,0.01,-0.97757,0.119,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-431 b,TOI-431,False,,0.78,0.2,-0.56509,0.0113,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-431 c,TOI-431,False,,0.78,0.2,-0.56509,0.052,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-431 d,TOI-431,False,,0.78,0.2,-0.56509,0.098,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+L 98-59 e,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.0712,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 63935 b,HD 63935,False,6.6,0.9406,0.107,-0.11464,0.083,MODEL-INFERRED,inferred,,256,237,0.92578125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+HD 63935 c,HD 63935,False,6.6,0.9406,0.107,-0.11464,0.148,MODEL-INFERRED,inferred,,256,244,0.953125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
+GJ 367 b,GJ 367,False,,0.451,-0.01,-1.54061,0.0071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2109 b,TOI-2109,False,1.77,1.453,0.068,0.67302,0.01791,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,118,0.4609375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HATS-75 b,HATS-75,False,14.9,0.6017,0.522,-1.19661,0.032742,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LTT 1445 A c,LTT 1445 A,False,,0.257,-0.34,-2.04591,0.02661,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-500 b,TOI-500,False,5,0.74,0.12,-0.70002,0.01189,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,75,0.29296875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1075 b,TOI-1075,False,6,0.604,-0.08,-1.14436,0.01159,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1442 b,TOI-1442,False,,0.29,,-1.97722,0.0071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2260 b,TOI-2260,False,0.321,0.99,0.22,-0.19851,0.0097,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-2445 b,TOI-2445,False,,0.25,,-2.08408,0.0064,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3929 b,GJ 3929,False,7.1,0.313,-0.02,-1.96257,0.0252,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-189 b,WASP-189,False,0.73,2.03,0.29,1.31471,0.05053,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1670 b,TOI-1670,False,2.53,1.21,0.09,0.40046,0.103,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-1670 c,TOI-1670,False,2.53,1.21,0.09,0.40046,0.249,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-500 c,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-500 d,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-500 e,TOI-500,False,5,0.74,0.12,-0.70002,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 260655 b,HD 260655,False,5,0.439,-0.43,-1.43997,0.02933,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 260655 c,HD 260655,False,5,0.439,-0.43,-1.43997,0.04749,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-3714 b,TOI-3714,False,2.9,0.53,0.1,-1.40671,0.027,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3929 c,GJ 3929,False,7.1,0.313,-0.02,-1.96257,0.081,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3090 b,GJ 3090,False,,0.519,0.12,-1.34199,0.0316,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-181 b,TOI-181,False,5.4,0.822,0.272,-0.52578,0.0539,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-199 b,TOI-199,False,0.8,0.936,0.22,-0.33819,0.4254,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-700 e,TOI-700,False,1.5,0.417,-0.07,-1.63264,0.1336,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-771 b,TOI-771,False,6.7,0.22,-0.13,-2.20343,0.0208,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-836.01,TOI-836,False,5.4,0.678,-0.284,-0.85276,0.075,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-836 b,TOI-836,False,5.4,0.678,-0.284,-0.85276,0.0422,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LHS 475 b,LHS 475,False,,0.262,,-2.06449,0.02037,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1136 d,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.1062,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,7.632783294e-17
+TOI-1136 c,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.0669,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.734723476e-17
+TOI-1136 f,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.174,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
+TOI-1136 e,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.14,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.428612866e-17
+TOI-1173 b,TOI-1173,False,8.7,0.911,0.191,-0.16877,0.071,MODEL-INFERRED,inferred,,256,250,0.9765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-1416 b,TOI-1416,False,6.9,0.798,0.08,-0.46008,0.019,MODEL-INFERRED,inferred,,256,215,0.83984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+TOI-1420 b,TOI-1420,False,10.7,0.987,0.28,-0.15181,0.071,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1468 c,TOI-1468,False,,0.3527,-0.01,-1.7921,0.08608,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1468 b,TOI-1468,False,,0.3527,-0.01,-1.7921,0.02107,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HIP 9618 b,HIP 9618,False,5.6,0.942,-0.018,-0.0716,0.145,MODEL-INFERRED,inferred,,256,234,0.9140625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+HIP 9618 c,HIP 9618,False,5.6,0.942,-0.018,-0.0716,0.269,MODEL-INFERRED,inferred,,256,242,0.9453125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-1801 b,TOI-1801,False,0.7,0.556,-0.19,-1.23003,0.075,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1823 b,TOI-1823,False,6.3,0.8414,0.243,-0.46092,0.212,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2031 A b,TOI-2031 A,False,2,1.174,-0.24,0.39094,0.066,MODEL-INFERRED,inferred,,256,212,0.828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-2134 b,TOI-2134,False,3.8,0.744,0.12,-0.7167,0.07803,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2134 c,TOI-2134,False,3.8,0.744,0.12,-0.7167,0.3715,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2374 b,TOI-2374,False,4.5,0.802,0.128,-0.54516,0.04818,MODEL-INFERRED,inferred,,256,246,0.9609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-2431 b,TOI-2431,False,2,0.661,-0.02,-0.96257,0.0063,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2525 b,TOI-2525,False,3.99,0.849,0.14,-0.44009,0.1511,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2525 c,TOI-2525,False,3.99,0.849,0.14,-0.44009,0.249,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-3235 b,TOI-3235,False,,0.3939,0.264,-1.78968,0.02709,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-3757 b,TOI-3757,False,7.1,0.64,0,-1.06048,0.03845,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 g,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.2621,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 341 b,GJ 341,False,,0.48,-0.16,-1.31072,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-6894 b,TOI-6894,False,,0.207,0.142,-2.42597,0.02604,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-3884 b,TOI-3884,False,,0.298,0.04,-2.03152,0.0361,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-3984 A b,TOI-3984 A,False,2.9,0.49,0.18,-1.57408,0.041,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-4010 c,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.058,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-4010 d,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.113,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-4010 b,TOI-4010,False,6.1,0.88,0.37,-0.3996,0.0229,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+LP 890-9 b,LP 890-9,False,7.2,0.118,-0.028,-2.84134,0.01875,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-4336 A b,TOI-4336 A,False,6.7,0.306,0.14,-1.95861,0.0849,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 20329 b,HD 20329,False,11,0.9,-0.07,0.04922,0.018,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,117,0.45703125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-167 e,Kepler-167,False,7.1,0.777,0.02,-0.5391,1.883,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-5205 b,TOI-5205,False,,0.392,0,-1.7122,0.0199,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-167 c,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.0684,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-5293 A b,TOI-5293 A,False,2.9,0.54,-0.03,-1.37414,0.034,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KOI-94 d,KOI-94,False,3.16,1.277,0.0228,0.479,0.1684,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+LP 890-9 c,LP 890-9,False,7.2,0.118,-0.028,-2.84134,0.03984,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 3167 e,HD 3167,False,8.4,0.864,0.037,-0.25727,0.3797,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1136 b,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.05106,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
+TOI-1136 g,TOI-1136,False,0.7,1.022,0.07,-0.02687,0.229,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
+TOI-1338 c,TOI-1338 A,False,4.4,1.0936,0.01,0.32898,0.794,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+WASP-84 c,WASP-84,False,2.1,0.853,0,-0.325,0.02359,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-6109 c,TOI-6109,False,0.075,1.03,0.0895,-0.05453,0.0786,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-6255 b,TOI-6255,False,,0.353,-0.14,-1.77344,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+WASP-193 b,WASP-193,False,6.8,1.018,-0.108,0.26007,0.0668,MODEL-INFERRED,inferred,,256,133,0.51953125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+LP 791-18 d,LP 791-18,False,0.5,0.139,-0.09,-2.63827,0.01992,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-6324 b,TOI-6324,False,,0.269,-0.32,-1.99802,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 207496 b,HD 207496,False,0.52,0.8,0.095,-0.50858,0.0629,MODEL-INFERRED,inferred,,256,216,0.84375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-4010 e,TOI-4010,False,6.1,0.88,0.37,-0.3996,1.57,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 367 c,GJ 367,False,,0.455,-0.01,-1.5391,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 367 d,GJ 367,False,,0.455,-0.01,-1.5391,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-6109 b,TOI-6109,False,0.075,1.03,0.0895,-0.05453,0.0599,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-199 c,TOI-199,False,0.8,0.936,0.22,-0.33819,0.807,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+AU Mic e,AU Mic,False,0.0185,0.6,0.12,-0.99,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+AU Mic d,AU Mic,False,0.0201,0.51,0.23,-1.0381,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 806 b,GJ 806,False,5,0.413,-0.28,-1.58528,0.01406,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 806 c,GJ 806,False,5,0.413,-0.28,-1.58528,0.0523,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 b,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.0793,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 c,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1039,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 d,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1362,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 e,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.1785,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 110067 f,HD 110067,False,8.1,0.798,-0.2,-0.36224,0.2163,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+IRAS 04125+2902 b,IRAS 04125+2902,False,0.0033,0.7,,-0.33161,0.077,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HIP 67522 c,HIP 67522,False,0.017,1.22,0,0.24304,0.1228,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-51 e,Kepler-51,False,0.7,0.96,0.047,-0.1417,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+BD+05 4868 A b,BD+05 4868 A,False,11.1,0.7,-0.05,-0.7167,0.0208,MODEL-INFERRED,inferred,,256,162,0.6328125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+TOI-771 c,TOI-771,False,6.7,0.22,-0.13,-2.20343,0.046,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2076 e,TOI-2076,False,0.21,0.849,-0.09,-0.42285,0.03863,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+L 98-59 f,L 98-59,False,4.94,0.2923,-0.46,-1.91364,0.1052,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HIP 41378 g,HIP 41378,False,2.07,1.22,-0.05,0.39646,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc B b,55 Cnc B,False,10,0.26,0.16,-2.10811,0.044,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+55 Cnc B c,55 Cnc B,False,10,0.26,0.16,-2.10811,0.13,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+GJ 3090 c,GJ 3090,False,,0.519,0.12,-1.34199,0.0997,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-4336 A c,TOI-4336 A,False,6.7,0.306,0.14,-1.95861,0.05092,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-260 b,TOI-260,False,15.9,0.616,-0.47,-1.05899,0.0943,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-232 c,K2-232,False,3.9,1.121,0.106,0.21643,3.17,MODEL-INFERRED,inferred,,256,189,0.73828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+Kepler-12 b,Kepler-12,False,4,1.166,0.07,0.44933,0.0553,MODEL-INFERRED,inferred,,256,230,0.8984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+KOI-94 b,KOI-94,False,3.16,1.277,0.0228,0.479,0.05119,MODEL-INFERRED,inferred,,256,188,0.734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+Kepler-167 d,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.1404,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-51 d,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.509,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-51 c,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.384,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-51 b,Kepler-51,False,0.3,1.04,0.05,-0.1417,0.2514,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+Kepler-167 b,Kepler-167,False,7.1,0.777,0.02,-0.5391,0.04825,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KOI-94 c,KOI-94,False,3.16,1.277,0.0228,0.479,0.1013,MODEL-INFERRED,inferred,,256,198,0.7734375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+KOI-94 e,KOI-94,False,3.16,1.277,0.0228,0.479,0.3046,MODEL-INFERRED,inferred,,256,191,0.74609375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
+PH2 b,PH2,False,4.1,0.966,0.017,-0.05849,0.833,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-33 b,K2-33,False,0.0093,0.56,,-0.82391,0.0409,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HAT-P-11 b,HAT-P-11,False,2.69,0.811,0.31,-0.56702,0.05258,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TCP J05074264+2447555 b,TCP J05074264+2447555,False,,0.586,,0.31745,0.94,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2459 b,TOI-2459,False,,0.66,,-0.89565,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-784 b,Kepler-784,False,9.12,1,0.07,0.85693,0.22111,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,105,0.41015625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -987,6 +993,8 @@ HD 219134 g,HD 219134,False,12.46,0.794,0.08,-0.50864,0.3753,MODEL-INFERRED,unde
 Kepler-708 b,Kepler-708,False,4.37,0.97,0.01,0.03695,0.0426,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 WASP-54 b,WASP-54,False,6.9,1.08,-0.27,0.57477,0.04988,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-250 b,K2-250,False,8.2,0.809,-0.02,-0.44491,0.04606,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-223 b,K2-223,False,2.8,1.07,0.18,-0.00436,0.0135,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+K2-223 c,K2-223,False,2.8,1.07,0.18,-0.00436,0.0584,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1325 b,Kepler-1325,False,4.79,0.93,0.01,-0.13603,0.2004,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-703 b,Kepler-703,False,2.69,1.18,0.05,0.06672,0.0535,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-1533 c,TOI-1533,False,6.9,0.88,0.24,-0.34679,0.076,MODEL-INFERRED,inferred,,256,245,0.95703125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
@@ -1023,6 +1031,7 @@ HD 25723 b,HD 25723,False,0.95,2.12,-0.03,1.94443,1.49,MODEL-INFERRED,undetermin
 TOI-7155 b,TOI-7155,False,,0.755,,-0.69716,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-84 b,Kepler-84,False,3.98,1,-0.07,0.39,0.0827,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-3353.01,TOI-3353,False,,1.332089,,-0.0264,0.060118218,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 278555 b,HD 278555,False,3.8,1.255,0.269,0.49554,0.1985,MODEL-INFERRED,inferred,,256,144,0.5625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 Kepler-1555 b,Kepler-1555,False,4.37,1.04,0.03,0.38933,0.0805,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1725 b,Kepler-1725,False,0.89,1.049,0,0.19852,0.13263,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2104 b,TOI-2104,False,,0.8,,-0.56286,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -1067,6 +1076,7 @@ HD 191939 g,HD 191939,False,8.7,0.81,-0.15,-0.18709,0.812,MODEL-INFERRED,undeter
 HD 87816 c,HD 87816,False,,2.41,0.14,1.65514,10.14,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-185 c,Kepler-185,False,11.9,0.763,-0.14,-0.50448,0.139,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-707 b,TOI-707,False,0.6,0.99,0.16,-0.10846,0.275,MODEL-INFERRED,inferred,,256,254,0.9921875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+WASP-7 b,WASP-7,False,2.4,1.276,0,0.53682,0.0617,MODEL-INFERRED,inferred,,256,204,0.796875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 Kepler-738 b,Kepler-738,False,4.57,0.86,-0.09,-0.21263,0.1552,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-725 c,Kepler-725,False,1.6,0.95,0.14,-0.31304,0.6744,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-658 b,Kepler-658,False,3.09,0.63,-0.04,-0.89922,0.0188,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -1080,7 +1090,6 @@ Kepler-1807 b,Kepler-1807,False,2.95,1.087,-0.36,0.60255,0.0988,MODEL-INFERRED,u
 GJ 3378 b,GJ 3378,False,,0.262,-0.09,-2.07058,0.09673,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-256 b,Kepler-256,False,1.82,1.037,0.26,-0.0591,0.027,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 NGTS-31 b,NGTS-31,False,9.97,0.96,0,0.443,0.064,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2525 c,TOI-2525,False,3.99,0.849,0.14,-0.44009,0.249,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-574 b,Kepler-574,False,4.17,0.95,-0.01,-0.21429,0.0723,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1062 b,Kepler-1062,False,2.45,0.75,0.11,-0.6822,0.0748,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 28185 c,HD 28185,False,8.3,0.974,0.19,-0.01323,8.5,MODEL-INFERRED,inferred,,256,221,0.86328125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
@@ -1139,19 +1148,23 @@ Kepler-1239 b,Kepler-1239,False,1.62,1.4,0.22,0.44712,0.0625,MODEL-INFERRED,unde
 Kepler-1902 b,Kepler-1902,False,,0.52,0.06,-1.11736,0.0385,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-297 b,Kepler-297,False,1.9,0.927,-0.11,-0.09608,0.217,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-351 d,Kepler-351,False,4.9,0.81,-0.16,-0.38644,0.5177,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2227 b,TOI-2227,False,,1.03,-0.0503,0.1619,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-136 d,K2-136,False,0.65,0.742,-0.02,-0.7765,0.1538,MODEL-INFERRED,inferred,,256,192,0.75,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 Kepler-789 b,Kepler-789,False,3.72,1.01,-0.06,0.49628,0.0951,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-279 b,K2-279,False,,0.79,-0.37,-0.20451,0.067,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 nu Oph c,nu Oph,False,0.65,2.61,0.1,1.89476,5.829,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,3,0.01171875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 KOI-1599.02,KOI-1599,False,4.7,1.02,0.06,0.16196,0.112293,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-261.02,TOI-261,False,,1.069,-0.35,0.24978,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 109833 b,HD 109833,False,0.027,1.08,-0.07,0.07188,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HIP 71135 b,HIP 71135,False,,0.66,,-0.908,0.335,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-262 b,TOI-262,False,0.8,0.913,0.26,-0.28987,0.163,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-147 b,K2-147,False,,0.563,-0.02,-1.25181,0.01575,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-11 d,Kepler-11,False,8.5,0.961,0.05,0.1202,0.155,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-131 b,K2-131,False,5.3,0.803,-0.04,-0.47906,0.00936,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-218 d,Kepler-218,False,5.62,1.01,0.31,0.00935,0.49884,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-6054.01,TOI-6054,False,6,1.107,-0.07,0.52244,0.0763,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,77,0.30078125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1937 b,Kepler-1937,False,2.45,1.19,-0.06,0.20922,0.0915,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2040 b,TOI-2040,False,8.7,0.92,0.3,-0.22185,0.0473,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HAT-P-56 b,HAT-P-56,False,2.01,1.42,0,0.55274,0.0423,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 8574 b,HD 8574,False,5.6,1.34,0.01,0.37649,0.76,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HATS-71 b,HATS-71,False,3.2,0.4861,0.17,-1.55988,0.03745,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -1186,16 +1199,11 @@ Kepler-1941 b,Kepler-1941,False,,1.175,-0.06,0.43611,0.2054,MODEL-INFERRED,undet
 Kepler-1311 d,Kepler-1311,False,7.59,1.032,0.04,0.47186,0.68434,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,125,0.48828125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1316 b,Kepler-1316,False,5.13,1.04,0.03,0.25347,0.39765,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-6954 b,TOI-6954,False,,0.834,0.03,-0.28972,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-7 b,WASP-7,False,2.4,1.276,0,0.53682,0.0617,MODEL-INFERRED,inferred,,256,204,0.796875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 DS Tuc A b,DS Tuc A,False,0.045,1.01,0,-0.13966,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-128.01,TOI-128,False,,0.851969,,0.18874,0.05381019,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-209 b,TOI-209,False,,0.81,,-0.53714,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-261.01,TOI-261,False,,0.496728,-0.35,0.24978,0.034792189,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-261.02,TOI-261,False,,1.069,-0.35,0.24978,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-262 b,TOI-262,False,0.8,0.913,0.26,-0.28987,0.163,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2040 b,TOI-2040,False,8.7,0.92,0.3,-0.22185,0.0473,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2227 b,TOI-2227,False,,1.03,-0.0503,0.1619,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2977 b,TOI-2977,False,9.8,0.936,0.013,0.03703,0.03386,MODEL-INFERRED,inferred,,256,147,0.57421875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-261.01,TOI-261,False,,0.496728,-0.35,0.24978,0.034792189,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-209 b,TOI-209,False,,0.81,,-0.53714,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-256 d,Kepler-256,False,1.82,1.037,0.26,-0.0591,0.064,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-90 c,K2-90,False,,0.704613,-0.225,-0.95318,0.035,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 11506 d,HD 11506,False,2.5,1.22,0.3,0.33685,18.2,MODEL-INFERRED,inferred,,256,253,0.98828125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
@@ -1529,6 +1537,12 @@ HD 150010 b,HD 150010,False,4.9,1.3,-0.25,1.98227,1.4,MODEL-INFERRED,undetermine
 Kepler-552 b,Kepler-552,False,3.89,1.03,0.01,0.06292,0.0612,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2719 b,TOI-2719,False,,1.02,0.27,0.43619,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 23596 b,HD 23596,False,5.68,1.1,0.33,0.45821,2.694,MODEL-INFERRED,inferred,,256,193,0.75390625,supported,0.9637305699,0.03626943005,robustly_inside_across_prescriptions,0.9533678756,0.6278829727,1.970608666,4.782604612,0.1173368895,0.3257711888,0.8372084997,0.9533678756,0.6278829727,1.970608666,4.782604612,0.1173368895,0.3257711888,0.8372084997,0.9896373057,1.734026147,3.123247587,5.374970857,0.2976144401,0.5332770239,0.9814560187,0.1,72,1.110223025e-16
+HATS-46 b,HATS-46,False,8.4,0.869,-0.029,-0.1986,0.05272,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-426 b,TOI-426,False,1.57,1,0.16,-0.022,0.02374,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-1452 b,TOI-1452,False,,0.249,-0.07,-2.1549,0.061,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2084 b,TOI-2084,False,7.5,0.453,-0.13,-1.49214,0.05006,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-2152 A b,TOI-2152,False,0.83,1.516,0.282,0.65321,0.05064,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-426 c,TOI-426,False,1.57,1,0.16,-0.022,0.747,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-347 b,K2-347,False,,0.66,-0.26,-0.89434,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-812 b,Kepler-812,False,1.66,1.45,0.02,0.75193,0.1024,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2266 b,TOI-2266,False,0.3,0.23,,-2.16716,0.02,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -3624,7 +3638,6 @@ Kepler-150 f,Kepler-150,False,1.74,0.97,0.12,-0.16141,1.24,MODEL-INFERRED,undete
 Qatar-3 b,Qatar-3,False,0.31,1.145,-0.041,0.27875,0.03783,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 K2-160 b,K2-160,False,,0.982829,0.07,-0.13676,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-128 b,K2-128,False,,0.711248,-0.26,-0.82159,0.056,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-34 b,HATS-34,False,7.7,0.955,0.25,-0.14026,0.03166,MODEL-INFERRED,inferred,,256,225,0.87890625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 KELT-18 b,KELT-18,False,1.9,1.524,0.09,0.81291,0.0455,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,84,0.328125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-163 b,K2-163,False,,0.826112,0.14,-0.54141,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-165 b,K2-165,False,,0.834847,-0.05,-0.36982,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -3800,7 +3813,6 @@ K2-248 b,K2-248,False,,0.88,-0.1,-0.18938,0.0699,MODEL-INFERRED,undetermined,mis
 K2-276 b,K2-276,False,,0.82,0.07,-0.40538,0.1291,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 102956 b,HD 102956,False,2.3,1.66,0.19,1.06446,0.0807,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 108863 b,HD 108863,False,1.8,1.59,0.2,1.22531,1.32,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HATS-46 b,HATS-46,False,3,0.917,-0.06,-0.22988,0.05367,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HATS-7 b,HATS-7,False,7.8,0.849,0.25,-0.43415,0.04012,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-252 b,K2-252,False,,0.79,-0.09,-0.40842,0.1041,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-188 c,K2-188,False,,1.06,-0.01,0.21087,0.0785,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4090,7 +4102,6 @@ HAT-P-64 b,HAT-P-64,False,2.88,1.298,-0.113,0.66839,0.05387,MODEL-INFERRED,undet
 Kepler-129 c,Kepler-129,False,6.43,1.178,0.29,0.46365,0.39,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-331 b,K2-331,False,,1.1,0.08,0.05943,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 EPIC 228836835 b,EPIC 228836835,False,,0.418179,-0.18,-1.61153,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-223 c,K2-223,False,,1.06,0.19,-0.03543,0.0549,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-32 c,K2-32,False,7.9,0.83,-0.06,-0.29607,0.13843,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-32 d,K2-32,False,7.9,0.83,-0.06,-0.29607,0.18422,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 KIC 10068024 b,KIC 10068024,False,0.56,1.22,0.01,0.496,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4487,7 +4498,6 @@ HD 43197 b,HD 43197,False,,0.96,0.4,-0.137,0.882,MODEL-INFERRED,undetermined,mis
 HD 4113 b,HD 4113,False,5,1.008,0.2,0.086,1.28,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 111232 c,HD 111232,False,5.2,0.96,-0.36,-0.161,17.25,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 62549 b,HD 62549,False,,1.08,,0.22846,11.842,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1452 b,TOI-1452,False,,0.249,-0.07,-2.1549,0.061,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 KMT-2021-BLG-0171L b,KMT-2021-BLG-0171L,False,,0.78,,,3.5,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 73267 b,HD 73267,False,8.14,0.93,0.03,-0.106,2.229,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 11505 b,HD 11505,False,,1.03,-0.2203,0.15075,20.247,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4495,7 +4505,6 @@ HD 80913 b,HD 80913,False,,1.11,-0.68,0.50831,9.95,MODEL-INFERRED,undetermined,m
 HD 81817 c,HD 81817,False,0.15,4.3,-0.17,3.26076,2.325,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2207 b,TOI-2207,False,3.3,1.296,0.181,0.4843,0.0854,MODEL-INFERRED,inferred,,256,154,0.6015625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 HD 86264 b,HD 86264,False,2.24,1.26,0.202,0.66,2.763,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-HD 7449 b,HD 7449,False,2.1,1.196,-0.105,0.10138,2.438,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 HD 8673 b,HD 8673,False,,1.28,0.1474,0.52992,2.97,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 127506 b,HD 127506,False,,0.73,-0.08,-0.66256,0.287,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 135872 b,HD 135872,False,,1.646,0.09,0.937,4.172,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4556,7 +4565,6 @@ HD 23472 e,HD 23472,False,,0.67,-0.2,-0.62525,0.068,MODEL-INFERRED,undetermined,
 HATS-54 b,HATS-54,False,7.96,1.05,0.37,0.11461,0.037,MODEL-INFERRED,inferred,,256,168,0.65625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 HD 45364 c,HD 45364,False,,0.82,-0.17,-0.19586,0.902,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 KMT-2021-BLG-1253L b,KMT-2021-BLG-1253L,False,,0.24,,,1.52,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2152 A b,TOI-2152,False,0.83,1.516,0.282,0.65321,0.05064,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 NGTS-23 b,NGTS-23,False,6.39,1.01,-0.26,0.2833,0.0504,MODEL-INFERRED,inferred,,256,140,0.546875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 NGTS-24 b,NGTS-24,False,4.77,1.26,0.27,0.44592,0.0479,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,122,0.4765625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 NGTS-25 b,NGTS-25,False,3.49,0.91,0.12,-0.29158,0.0388,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4614,7 +4622,6 @@ TOI-2018 b,TOI-2018,False,,0.57,-0.58,-1,,MODEL-INFERRED,undetermined,missing_re
 TOI-1052 c,TOI-1052,False,2.3,1.204,0.14,0.38373,0.2263,MODEL-INFERRED,inferred,,256,248,0.96875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 TOI-519 b,TOI-519,False,5.4,0.335,0.27,-1.85078,0.0159,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-244 b,TOI-244,False,7,0.428,-0.39,-1.64264,0.0559,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-2084 b,TOI-2084,False,7.5,0.453,-0.13,-1.49214,0.05006,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-4184 b,TOI-4184,False,6.7,0.2109,-0.27,-2.2644,0.0336,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-470 b,TOI-470,False,1.4,0.87,0.1,-0.35799,0.119,MODEL-INFERRED,inferred,,256,231,0.90234375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 TOI-1470 b,TOI-1470,False,1.3,0.471,0,-1.42481,0.0285,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,0,0,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4685,7 +4692,6 @@ Kepler-100 e,Kepler-100,False,6.92,1.097,0.1,0.39445,0.312391586,MODEL-INFERRED,
 NGTS-27 b,NGTS-27,False,7.9,1.07,0,0.51375,0.0446,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,59,0.23046875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 134606 d,HD 134606,False,7.3,1.046,0.343,0.06483,1.941,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HATS-2 b,HATS-2,False,7.2,0.904,0.15,-0.268,0.02317,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-gam Cep b,gam Cep,False,5.7,1.27,0.18,1.073,2.13,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,19,0.07421875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-5398 c,TOI-5398,False,0.65,1.146,0.09,0.11725,0.057,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,1.387778781e-17
 HD 134606 f,HD 134606,False,7.3,1.046,0.343,0.06483,0.1784,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 134606 e,HD 134606,False,7.3,1.046,0.343,0.06483,0.0527,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -4737,7 +4743,6 @@ TOI-3919 b,TOI-3919,False,3.1,1.208,0.175,0.33606,0.0795,MODEL-INFERRED,inferred
 TOI-1288 b,TOI-1288,False,6.5,0.9552,0.257,-0.1549,0.0374,MODEL-INFERRED,inferred,,256,241,0.94140625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 GJ 238 b,GJ 238,False,,0.4193,0.15,-1.61618,0.02123,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-49 c,Kepler-49,False,2.88,0.607,0.03,-1.13077,0.07821,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-5301 b,TOI-5301,False,2.43,1.483,0.03,0.81624,0.073,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,74,0.2890625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-5232 b,TOI-5232,False,2.37,1.389,-0.104,0.71265,0.05593,MODEL-INFERRED,undetermined,insufficient_continuous_track_support,256,104,0.40625,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-1410.01,TOI-1410,False,6.6,0.7941,0.328,-0.6216,0.0207,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-1386 b,TOI-1386,False,3.2,1.0363,0.149,0.0103,0.173,MODEL-INFERRED,inferred,,256,242,0.9453125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
@@ -4805,7 +4810,6 @@ TOI-837 b,TOI-837,False,0.035,1.142,0.01,0.1271,0.0888,MODEL-INFERRED,undetermin
 SWEEPS-11 b,SWEEPS-11,False,,1.1,,,0.03,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-24 c,Kepler-24,False,3.02,1.06,-0.0708,0.064,0.10612,MODEL-INFERRED,inferred,,256,230,0.8984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
 Kepler-57 b,Kepler-57,False,3.31,0.859,0.1166,-0.34241,0.05988,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-3894 b,TOI-3894,False,5.7,1.138,0.021,0.41896,0.05354,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,95,0.37109375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-3321 b,TOI-3321,False,8.1,1.041,-0.103,0.40483,0.047,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,63,0.24609375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-1744.01,TOI-1744,False,,1.18,,0.23178,0.164086,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-360 c,EPIC 201595106,False,6,0.958,0.01,-0.04915,0.0883,MODEL-INFERRED,inferred,,256,216,0.84375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
@@ -4837,7 +4841,6 @@ K2-180 b,K2-180,False,7.5,0.735,-0.578,-0.41341,0.0756,MODEL-INFERRED,undetermin
 TOI-2458 c,TOI-2458,False,5.7,1.05,-0.1,0.34128,0.129,MODEL-INFERRED,inferred,,256,173,0.67578125,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 K2-97 b,K2-97,False,7.5,1.17,0.328,0.86688,0.0854,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-182 b,K2-182,False,6.2,0.823,0.022,-0.41117,0.05174,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-NGTS-33 b,NGTS-33,False,0.03,1.6,-0.11,0.77159,0.048,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-105 b,Kepler-105,False,4.27,0.991,-0.09,0.09657,0.06016,MODEL-INFERRED,inferred,,256,250,0.9765625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 TOI-2537 b,TOI-2537,False,1.1,0.771,0.08,-0.52143,0.3715,MODEL-INFERRED,inferred,,256,169,0.66015625,supported,0.9526627219,0.04733727811,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.04733727811,0,0,0,0,0,0,0.1,72,0
 K2-98 b,K2-98,False,3.4,1.246,-0.044,0.50379,0.0986,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,124,0.484375,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -5148,7 +5151,15 @@ TOI-5630 b,TOI-5630,False,,0.934,0.135,-0.1813,,MODEL-INFERRED,undetermined,miss
 TIC 206466666 b,TIC 206466666,False,,0.76,,-0.69846,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-198 b,TOI-198,False,1,0.417,-0.66,-1.484,0.0675,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 KMT-2024-BLG-2005L b,KMT-2024-BLG-2005L,False,,0.12,,,1.12,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1839 b,TOI-1839,False,,0.934,0.252,-0.26441,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+gam Cep b,gam Cep,False,5.7,1.26,0.2,1.073,1.978,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,8,0.03125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HD 7449 b,HD 7449,False,2.1,1.196,-0.105,0.10138,2.438,MODEL-INFERRED,inferred,,256,252,0.984375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
+WASP-104 b,WASP-104,False,3,1.076,0.32,-0.18964,0.02918,MODEL-INFERRED,inferred,,256,231,0.90234375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+WASP-74 b,WASP-74,False,3.49,0.98,0.39,0.39971,0.03443,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+HATS-34 b,HATS-34,False,5.6,0.952,0.174,-0.15366,0.03165,MODEL-INFERRED,inferred,,256,249,0.97265625,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
+TOI-3894 b,TOI-3894,False,7.2,1.089,0.01,0.41847,0.05354,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,52,0.203125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+TOI-5301 b,TOI-5301,False,2.29,1.507,0.05,0.81757,0.073,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,69,0.26953125,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+NGTS-33 b,NGTS-33,False,0.03,1.6,-0.11,0.77159,0.048,MODEL-INFERRED,undetermined,nonpositive_or_premain_sequence_input,256,0,0,invalid,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
+KMT-2023-BLG-1118L b,KMT-2023-BLG-1118L,False,,0.09,,,0.9,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-5926 b,TOI-5926,False,,0.946,,-0.20728,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TIC 290487717 b,TIC 290487717,False,,0.92,0.0959,-0.1841,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-672 b,TOI-672,False,,0.54,-0.14,-1.31885,0.0376,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -5161,7 +5172,6 @@ EPIC 220674823 b,EPIC 220674823,False,7.5,0.913,-0.005,-0.11919,0.0132,MODEL-INF
 EPIC 220674823 c,EPIC 220674823,False,7.5,0.913,-0.005,-0.11919,0.1078,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-2654 b,TOI-2654,False,,0.69,,-0.71592,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-6699 b,TOI-6699,False,,0.75,,-0.59732,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-TOI-1839 c,TOI-1839,False,,0.934,0.252,-0.26441,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-111 c,K2-111,False,12.3,0.84,-0.46,0.27875,0.11565,MODEL-INFERRED,undetermined,insufficient_mist_main_sequence_support,256,27,0.10546875,supported,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-4156 b,TOI-4156,False,,1.1,,0.097,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-7333 b,TOI-7333,False,,0.721,,-0.75937,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -5243,7 +5253,6 @@ Kepler-491 b,Kepler-491,False,4.47,1.04,0.37,-0.05683,0.05191,MODEL-INFERRED,und
 Kepler-197 b,Kepler-197,False,5.37,0.857,-0.441,0.22187,0.06,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-216 b,Kepler-216,False,0.28,1.126,-0.1489,0.51836,0.079,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-176 b,K2-176,False,,0.938545,0.15,-0.34794,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-K2-223 b,K2-223,False,,1.06,0.19,-0.03543,0.0127,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-1732 b,Kepler-1732,False,2,1.043,0.04,0.29575,0.2015,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 14 Her b,14 Her,False,4.6,0.97,0.43,-0.15273,2.839,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 16 Cyg B b,16 Cyg B,False,7.4,1.08,0.06,0.09729,1.66,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -5426,7 +5435,6 @@ HATS-53 b,HATS-53,False,9,0.964,,0.04532,0.04753,MODEL-INFERRED,undetermined,mis
 Kepler-286 b,Kepler-286,False,2.75,0.83,-0.25,-0.11623,0.027,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-283 b,TOI-283,False,10.4,0.8,-0.09,-0.33724,0.123,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-69 b,Kepler-69,False,13.18,0.81,-0.29,-0.097,0.094,MODEL-INFERRED,inferred,,256,140,0.546875,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,5.551115123e-17
-TOI-2525 b,TOI-2525,False,3.99,0.849,0.14,-0.44009,0.1511,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 169830 b,HD 169830,False,2.2,1.17,0.21,0.662,0.765,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 192699 b,HD 192699,False,1.8,1.38,-0.15,1.009,1.063,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Pr0211 b,Pr0211,False,0.578,0.935,0.18,-0.33603,0.03176,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
@@ -5514,7 +5522,6 @@ TOI-969 b,TOI-969,False,2.03,0.734,0.175,-0.70042,0.02636,MODEL-INFERRED,undeter
 TOI-1291 b,TOI-1291,False,,1.2,,0.64816,,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 220689 b,HD 220689,False,4.586,1.016,-0.07,0.093,3.396,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 GJ 163 b,GJ 163,False,6,0.4,0.1,-1.708,0.0607,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-104 b,WASP-104,False,3,1.076,0.32,-0.18964,0.02918,MODEL-INFERRED,inferred,,256,231,0.90234375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 HAT-P-53 b,HAT-P-53,False,4.67,1.093,0,0.21748,0.03159,MODEL-INFERRED,inferred,,256,183,0.71484375,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,2.775557562e-17
 HD 111591 b,HD 111591,False,1.41,1.94,0.07,1.58058,2.5,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 K2-155 b,K2-155,False,,0.65,-0.3,-1.22915,0.0562,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
@@ -6323,7 +6330,6 @@ GJ 3512 b,GJ 3512,False,5.5,0.123,-0.07,-2.8041,0.3376,MODEL-INFERRED,undetermin
 HD 145675 c,14 Her,False,4.6,0.97,0.43,-0.15273,20,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 HD 95544 b,HD 95544,False,,1.01,0.11,0.47797,3.166,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Kepler-309 b,Kepler-309,False,3.02,0.816,0.27,-0.574,0.059,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
-WASP-74 b,WASP-74,False,3.49,0.98,0.39,0.39971,0.03443,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 Qatar-7 b,Qatar-7,False,1.69,1.409,0.276,0.56348,0.0352,MODEL-INFERRED,inferred,,256,256,1,supported,1,0,robustly_outside_across_prescriptions,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.1,72,0
 Kepler-270 b,Kepler-270,False,2.73,1.17,0.15,0.31211,0.107,MODEL-INFERRED,undetermined,missing_required_measurement_or_uncertainty,256,0,0,missing,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,
 TOI-628 b,TOI-628,False,1.28,1.311,0.258,0.39445,0.0486,MODEL-INFERRED,undetermined,stellar_age_effectively_unconstrained,256,0,0,too_broad,,,undetermined,,,,,,,,,,,,,,,,,,,,,,,,

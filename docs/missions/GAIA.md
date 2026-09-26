@@ -33,7 +33,7 @@ This page is one independent observatory view. Its rows are not converted into a
 
 ## Evidence snapshot
 
-- **OBSERVED — dr3_exact_host_crossmatch**: 4,412 Gaia DR3 source rows. Exact source identifiers from confirmed-planet hosts.
+- **OBSERVED — dr3_exact_host_crossmatch**: 4,413 Gaia DR3 source rows. Exact source identifiers from confirmed-planet hosts.
 - **FORECAST — dr4_science_rows**: 0 Gaia DR4 rows in project. DR4 is not public in this dated snapshot and is not fabricated.
 
 ## Observation / forecast boundary

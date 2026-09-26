@@ -26,12 +26,12 @@
   "doi": "",
   "earth2_version": "2.1.2",
   "n_columns": 17,
-  "n_rows": 4412,
-  "notes": "Aggregate of 3 chunked TAP queries against 4412 distinct source_ids (exact match, extracted from the NASA Exoplanet Archive's gaia_dr3_id column).",
-  "query": "select source_id, ra, dec, parallax, parallax_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, non_single_star, phot_g_mean_mag, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp, radial_velocity, radial_velocity_error from gaiadr3.gaia_source where source_id in (...) -- 3 chunks of <= 1500 ids each, 4412 ids total",
+  "n_rows": 4413,
+  "notes": "Aggregate of 3 chunked TAP queries against 4413 distinct source_ids (exact match, extracted from the NASA Exoplanet Archive's gaia_dr3_id column).",
+  "query": "select source_id, ra, dec, parallax, parallax_error, pmra, pmra_error, pmdec, pmdec_error, ruwe, non_single_star, phot_g_mean_mag, phot_bp_mean_mag, phot_rp_mean_mag, bp_rp, radial_velocity, radial_velocity_error from gaiadr3.gaia_source where source_id in (...) -- 3 chunks of <= 1500 ids each, 4413 ids total",
   "request_url": "https://gea.esac.esa.int/tap-server/tap/sync",
-  "retrieved_utc": "2026-09-23T09:23:23Z",
-  "sha256": "8e63dc34fc657aedf6601b39c257ffaed95fcdd9063e8b2dccdd85f82cbf94f0",
+  "retrieved_utc": "2026-09-26T09:25:47Z",
+  "sha256": "82e4a097ddfe16196d98f9021fcf21746460e25d30850b8e975aba6c879e554d",
   "source_table": "gaiadr3.gaia_source",
   "status": "ok"
 }

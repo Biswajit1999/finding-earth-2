@@ -1,5 +1,5 @@
 {
-  "generated_utc": "2026-09-23T09:24:08Z",
+  "generated_utc": "2026-09-26T09:26:33Z",
   "earth2_version": "2.1.2",
   "software": {
     "earth2": "2.1.2",
@@ -15,11 +15,11 @@
       "dataset_id": "gaia_dr3_crossmatch",
       "archive": "Gaia Archive (ESA)",
       "source_table": "gaiadr3.gaia_source",
-      "n_rows": 4412,
+      "n_rows": 4413,
       "n_columns": 17,
-      "retrieved_utc": "2026-09-23T09:23:23Z",
+      "retrieved_utc": "2026-09-26T09:25:47Z",
       "status": "ok",
-      "sha256_short": "8e63dc34fc65",
+      "sha256_short": "82e4a097ddfe",
       "doi": ""
     },
     {
@@ -28,7 +28,7 @@
       "source_table": "di_stars_exep",
       "n_rows": 164,
       "n_columns": 59,
-      "retrieved_utc": "2026-09-23T09:23:06Z",
+      "retrieved_utc": "2026-09-26T09:25:25Z",
       "status": "ok",
       "sha256_short": "38052f559fc9",
       "doi": ""
@@ -39,7 +39,7 @@
       "source_table": "emissionspec",
       "n_rows": 2361,
       "n_columns": 18,
-      "retrieved_utc": "2026-09-23T09:23:00Z",
+      "retrieved_utc": "2026-09-26T09:25:21Z",
       "status": "ok",
       "sha256_short": "8d78a5057343",
       "doi": "10.26133/NEA11"
@@ -48,11 +48,11 @@
       "dataset_id": "nasa_k2pandc",
       "archive": "NASA Exoplanet Archive",
       "source_table": "k2pandc",
-      "n_rows": 4070,
+      "n_rows": 4076,
       "n_columns": 38,
-      "retrieved_utc": "2026-09-23T09:22:47Z",
+      "retrieved_utc": "2026-09-26T09:25:08Z",
       "status": "ok",
-      "sha256_short": "39f1918a0efe",
+      "sha256_short": "22bf5220cc33",
       "doi": "10.26133/NEA1"
     },
     {
@@ -61,7 +61,7 @@
       "source_table": "q1_q17_dr25_koi",
       "n_rows": 8054,
       "n_columns": 37,
-      "retrieved_utc": "2026-09-23T09:22:51Z",
+      "retrieved_utc": "2026-09-26T09:25:12Z",
       "status": "ok",
       "sha256_short": "5a62619a39df",
       "doi": "10.26133/NEA4"
@@ -70,55 +70,55 @@
       "dataset_id": "nasa_microlensing",
       "archive": "NASA Exoplanet Archive",
       "source_table": "ml",
-      "n_rows": 907,
+      "n_rows": 915,
       "n_columns": 11,
-      "retrieved_utc": "2026-09-23T09:23:04Z",
+      "retrieved_utc": "2026-09-26T09:25:24Z",
       "status": "ok",
-      "sha256_short": "93c6e237b3da",
+      "sha256_short": "bf9b2e2cdaff",
       "doi": ""
     },
     {
       "dataset_id": "nasa_ps",
       "archive": "NASA Exoplanet Archive",
       "source_table": "ps",
-      "n_rows": 40155,
+      "n_rows": 40188,
       "n_columns": 128,
-      "retrieved_utc": "2026-09-23T09:22:40Z",
+      "retrieved_utc": "2026-09-26T09:25:02Z",
       "status": "ok",
-      "sha256_short": "04051ee00ead",
+      "sha256_short": "989dbd9d38ff",
       "doi": "10.26133/NEA12"
     },
     {
       "dataset_id": "nasa_pscomppars",
       "archive": "NASA Exoplanet Archive",
       "source_table": "pscomppars",
-      "n_rows": 6366,
+      "n_rows": 6372,
       "n_columns": 151,
-      "retrieved_utc": "2026-09-23T09:22:26Z",
+      "retrieved_utc": "2026-09-26T09:24:47Z",
       "status": "ok",
-      "sha256_short": "f5b9a88e5442",
+      "sha256_short": "36ba6b7b2439",
       "doi": "10.26133/NEA13"
     },
     {
       "dataset_id": "nasa_spectra_index",
       "archive": "NASA Exoplanet Archive",
       "source_table": "spectra",
-      "n_rows": 1826,
+      "n_rows": 1841,
       "n_columns": 13,
-      "retrieved_utc": "2026-09-23T09:23:02Z",
+      "retrieved_utc": "2026-09-26T09:25:22Z",
       "status": "ok",
-      "sha256_short": "83a9b10f2c3f",
+      "sha256_short": "6256d492b47f",
       "doi": ""
     },
     {
       "dataset_id": "nasa_stellarhosts",
       "archive": "NASA Exoplanet Archive",
       "source_table": "stellarhosts",
-      "n_rows": 47903,
+      "n_rows": 47925,
       "n_columns": 38,
-      "retrieved_utc": "2026-09-23T09:23:13Z",
+      "retrieved_utc": "2026-09-26T09:25:32Z",
       "status": "ok",
-      "sha256_short": "0dd88dccd755",
+      "sha256_short": "e21b440a90e2",
       "doi": ""
     },
     {
@@ -127,7 +127,7 @@
       "source_table": "q1_q17_dr25_tce",
       "n_rows": 34032,
       "n_columns": 23,
-      "retrieved_utc": "2026-09-23T09:22:58Z",
+      "retrieved_utc": "2026-09-26T09:25:18Z",
       "status": "ok",
       "sha256_short": "246512d90dc8",
       "doi": ""
@@ -138,9 +138,9 @@
       "source_table": "toi",
       "n_rows": 8148,
       "n_columns": 91,
-      "retrieved_utc": "2026-09-23T09:22:44Z",
+      "retrieved_utc": "2026-09-26T09:25:05Z",
       "status": "ok",
-      "sha256_short": "f04e2776205e",
+      "sha256_short": "e52ed881a4ff",
       "doi": "10.26134/ExoFOP5"
     },
     {
@@ -149,13 +149,13 @@
       "source_table": "transitspec",
       "n_rows": 5948,
       "n_columns": 27,
-      "retrieved_utc": "2026-09-23T09:22:59Z",
+      "retrieved_utc": "2026-09-26T09:25:20Z",
       "status": "ok",
       "sha256_short": "ace18f6adaee",
       "doi": "10.26133/NEA10"
     }
   ],
-  "total_source_records": 164346,
+  "total_source_records": 164437,
   "transformations": [
     {
       "step": "load_processed_tables",
@@ -178,8 +178,8 @@
       "citation": "",
       "parameters": {},
       "n_rows_in": 0,
-      "n_rows_out": 6366,
-      "timestamp_utc": "2026-09-23T09:23:23Z",
+      "n_rows_out": 6372,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": "{\"earth2\": \"2.1.2\", \"python\": \"3.12.14\", \"numpy\": \"2.5.3\", \"pandas\": \"2.3.3\", \"scipy\": \"1.18.1\", \"astropy\": \"8.0.1\", \"platform\": \"Linux-6.17.0-1022-azure-x86_64-with-glibc2.39\"}"
     },
     {
@@ -198,9 +198,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -218,9 +218,9 @@
       "equation": "S = L / a^2,  L = 10**st_lum",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -239,9 +239,9 @@
       "parameters": {
         "bond_albedo": 0.306
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -261,9 +261,9 @@
       "equation": "ESI_x = (1 - |(x-x0)/(x+x0)|)**(w/n)",
       "citation": "schulzemakuch2011",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -281,9 +281,9 @@
       "equation": "S_eff = S_eff_sun + a*T + b*T^2 + c*T^3 + d*T^4,  T = Teff - 5780",
       "citation": "kopparapu2013,kopparapu2013erratum",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -307,9 +307,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -327,9 +327,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -354,11 +354,11 @@
       "equation": "",
       "citation": "GaiaDR3",
       "parameters": {
-        "n_planets_matched": 5975
+        "n_planets_matched": 5978
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -384,9 +384,9 @@
         "seed": 20260824,
         "distribution": "two-piece (split) normal"
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     },
     {
@@ -414,9 +414,9 @@
         "geometric_albedo": 0.3,
         "phase_model": "Lambert sphere at quadrature"
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     },
     {
@@ -444,9 +444,9 @@
         "combination": "weighted geometric mean",
         "epsilon_floor": 0.01
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     }
   ]
