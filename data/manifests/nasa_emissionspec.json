@@ -31,7 +31,7 @@
   "notes": "Emission spectroscopy: per-bandpass secondary-eclipse depths and brightness temperatures.",
   "query": "select * from emissionspec",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+emissionspec&format=csv",
-  "retrieved_utc": "2026-09-23T09:23:00Z",
+  "retrieved_utc": "2026-09-26T09:25:21Z",
   "sha256": "8d78a505734380560b3a3c0653084dad5513e6e8e421d19a60ee2393ecba2854",
   "source_table": "emissionspec",
   "status": "ok"

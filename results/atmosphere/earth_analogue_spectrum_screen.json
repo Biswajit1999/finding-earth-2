@@ -1,11 +1,11 @@
 {
   "claim_boundary": "This cross-match measures published spectral coverage. It does not detect an atmosphere, identify a molecule, establish habitability, or provide evidence of life.",
-  "confirmed_planets": 6366,
+  "confirmed_planets": 6372,
   "finding": "None of the 15 strict small-and-temperate candidates has an indexed published spectrum or tabulated wavelength measurement in the ingested archives.",
   "label": "OBSERVED",
   "nearby_comparison_set": [
     {
-      "earth2_rank": 30,
+      "earth2_rank": 31,
       "median_uncertainty_ppm": 18265.08,
       "planet": "TRAPPIST-1 g",
       "radius_earth": 1.129,
@@ -49,7 +49,7 @@
       "wavelength_min_um": 0.6
     },
     {
-      "earth2_rank": 104,
+      "earth2_rank": 105,
       "median_uncertainty_ppm": 172.0,
       "planet": "Kepler-138 c",
       "radius_earth": 1.51,
@@ -60,7 +60,7 @@
       "wavelength_min_um": 0.6
     },
     {
-      "earth2_rank": 182,
+      "earth2_rank": 183,
       "median_uncertainty_ppm": 77.1,
       "planet": "GJ 1132 b",
       "radius_earth": 1.19151465,
@@ -71,7 +71,7 @@
       "wavelength_min_um": 0.475
     },
     {
-      "earth2_rank": 290,
+      "earth2_rank": 294,
       "median_uncertainty_ppm": 425.0,
       "planet": "Kepler-249 d",
       "radius_earth": 1.57,
@@ -82,7 +82,7 @@
       "wavelength_min_um": 0.6
     },
     {
-      "earth2_rank": 410,
+      "earth2_rank": 411,
       "median_uncertainty_ppm": 20.0,
       "planet": "GJ 486 b",
       "radius_earth": 1.289,
@@ -97,8 +97,8 @@
   "schema_version": "1.0",
   "selection": "confirmed planet; nominal conservative HZ; radius < 1.6 Earth radii",
   "strict_candidate_names": [
-    "Proxima Cen b",
     "GJ 1061 d",
+    "Proxima Cen b",
     "GJ 1002 b",
     "Wolf 1069 b",
     "Teegarden's Star c",

@@ -2,12 +2,12 @@
   "atmosphere": {
     "earth_analogue_screen": {
       "claim_boundary": "This cross-match measures published spectral coverage. It does not detect an atmosphere, identify a molecule, establish habitability, or provide evidence of life.",
-      "confirmed_planets": 6366,
+      "confirmed_planets": 6372,
       "finding": "None of the 15 strict small-and-temperate candidates has an indexed published spectrum or tabulated wavelength measurement in the ingested archives.",
       "label": "OBSERVED",
       "nearby_comparison_set": [
         {
-          "earth2_rank": 30,
+          "earth2_rank": 31,
           "median_uncertainty_ppm": 18265.08,
           "planet": "TRAPPIST-1 g",
           "radius_earth": 1.129,
@@ -51,7 +51,7 @@
           "wavelength_min_um": 0.6
         },
         {
-          "earth2_rank": 104,
+          "earth2_rank": 105,
           "median_uncertainty_ppm": 172.0,
           "planet": "Kepler-138 c",
           "radius_earth": 1.51,
@@ -62,7 +62,7 @@
           "wavelength_min_um": 0.6
         },
         {
-          "earth2_rank": 182,
+          "earth2_rank": 183,
           "median_uncertainty_ppm": 77.1,
           "planet": "GJ 1132 b",
           "radius_earth": 1.19151465,
@@ -73,7 +73,7 @@
           "wavelength_min_um": 0.475
         },
         {
-          "earth2_rank": 290,
+          "earth2_rank": 294,
           "median_uncertainty_ppm": 425.0,
           "planet": "Kepler-249 d",
           "radius_earth": 1.57,
@@ -84,7 +84,7 @@
           "wavelength_min_um": 0.6
         },
         {
-          "earth2_rank": 410,
+          "earth2_rank": 411,
           "median_uncertainty_ppm": 20.0,
           "planet": "GJ 486 b",
           "radius_earth": 1.289,
@@ -99,8 +99,8 @@
       "schema_version": "1.0",
       "selection": "confirmed planet; nominal conservative HZ; radius < 1.6 Earth radii",
       "strict_candidate_names": [
-        "Proxima Cen b",
         "GJ 1061 d",
+        "Proxima Cen b",
         "GJ 1002 b",
         "Wolf 1069 b",
         "Teegarden's Star c",
@@ -141,52 +141,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 1,
-        "equilibrium_temperature_k": 227.44666565682567,
-        "hostname": "Proxima Cen",
-        "hydrogen_to_earth_air_signal_ratio": 12.59565217391304,
-        "label": "SCENARIO",
-        "pl_name": "Proxima Cen b",
-        "planet_mass_basis": "msini_lower_limit",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 4.290813170633805,
-            "temperature_k": 227.44666565682567,
-            "transmission_signal_ppm": 28.9777825962325
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 6.516940956433808,
-            "temperature_k": 227.44666565682567,
-            "transmission_signal_ppm": 44.01182030494409
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 82.08512152516843,
-            "temperature_k": 227.44666565682567,
-            "transmission_signal_ppm": 554.3575801018391
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 10.488654417104856,
-            "temperature_k": 227.44666565682567,
-            "transmission_signal_ppm": 70.83457967967944
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.141
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 2,
         "equilibrium_temperature_k": 223.7190053103433,
         "hostname": "GJ 1061",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
@@ -229,6 +183,52 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.156
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 2,
+        "equilibrium_temperature_k": 227.44666565682567,
+        "hostname": "Proxima Cen",
+        "hydrogen_to_earth_air_signal_ratio": 12.59565217391304,
+        "label": "SCENARIO",
+        "pl_name": "Proxima Cen b",
+        "planet_mass_basis": "msini_lower_limit",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.290813170633805,
+            "temperature_k": 227.44666565682567,
+            "transmission_signal_ppm": 28.9777825962325
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.516940956433808,
+            "temperature_k": 227.44666565682567,
+            "transmission_signal_ppm": 44.01182030494409
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 82.08512152516843,
+            "temperature_k": 227.44666565682567,
+            "transmission_signal_ppm": 554.3575801018391
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 10.488654417104856,
+            "temperature_k": 227.44666565682567,
+            "transmission_signal_ppm": 70.83457967967944
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.141
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -524,7 +524,7 @@
         "earth2_rank": 10,
         "equilibrium_temperature_k": 244.0730333156009,
         "hostname": "TOI-700",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
         "label": "SCENARIO",
         "pl_name": "TOI-700 d",
         "planet_mass_basis": "inferred_mass_radius",
@@ -533,37 +533,37 @@
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 4.3005240041331945,
+            "scale_height_km": 3.874233852185419,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 3.4270505051276423
+            "transmission_signal_ppm": 3.4668911985720148
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.531689892366605,
+            "scale_height_km": 5.88423505337102,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 5.2050473671251725
+            "transmission_signal_ppm": 5.26555791291573
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 82.27089399211329,
+            "scale_height_km": 74.11577804180803,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 65.56096618505056
+            "transmission_signal_ppm": 66.32313597268204
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 10.512392010103364,
+            "scale_height_km": 9.470349416453246,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 8.377234568089793
+            "transmission_signal_ppm": 8.474622929842704
           }
         },
         "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.421
+        "stellar_radius_solar": 0.4104
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -962,52 +962,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 21,
-        "equilibrium_temperature_k": 202.6564395936115,
-        "hostname": "GJ 251",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
-        "label": "SCENARIO",
-        "pl_name": "GJ 251 c",
-        "planet_mass_basis": "msini_lower_limit",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 3.2373215603312313,
-            "temperature_k": 202.6564395936115,
-            "transmission_signal_ppm": 5.918572086658059
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 4.916884661876914,
-            "temperature_k": 202.6564395936115,
-            "transmission_signal_ppm": 8.989201650429914
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 61.93136898024965,
-            "temperature_k": 202.6564395936115,
-            "transmission_signal_ppm": 113.22485730998027
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 7.913452703031901,
-            "temperature_k": 202.6564395936115,
-            "transmission_signal_ppm": 14.467620656275258
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.36
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 22,
         "equilibrium_temperature_k": 225.56046929470872,
         "hostname": "Kepler-296",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
@@ -1053,53 +1007,53 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 23,
-        "equilibrium_temperature_k": 260.3234183439401,
-        "hostname": "Kepler-452",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "earth2_rank": 22,
+        "equilibrium_temperature_k": 202.6564395936115,
+        "hostname": "GJ 251",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
         "label": "SCENARIO",
-        "pl_name": "Kepler-452 b",
-        "planet_mass_basis": "inferred_mass_radius",
+        "pl_name": "GJ 251 c",
+        "planet_mass_basis": "msini_lower_limit",
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 4.021653928038083,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 0.7003416275217096
+            "scale_height_km": 3.2373215603312313,
+            "temperature_k": 202.6564395936115,
+            "transmission_signal_ppm": 5.918572086658059
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.108138516868336,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 1.063687663477916
+            "scale_height_km": 4.916884661876914,
+            "temperature_k": 202.6564395936115,
+            "transmission_signal_ppm": 8.989201650429914
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 76.93598818855465,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 13.3978398308501
+            "scale_height_km": 61.93136898024965,
+            "temperature_k": 202.6564395936115,
+            "transmission_signal_ppm": 113.22485730998027
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 9.830709601870872,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 1.711946200608624
+            "scale_height_km": 7.913452703031901,
+            "temperature_k": 202.6564395936115,
+            "transmission_signal_ppm": 14.467620656275258
           }
         },
         "status": "scenario_ensemble",
-        "stellar_radius_solar": 1.11
+        "stellar_radius_solar": 0.36
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 24,
+        "earth2_rank": 23,
         "equilibrium_temperature_k": 276.5012353885623,
         "hostname": "Kepler-438",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
@@ -1145,6 +1099,52 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 24,
+        "equilibrium_temperature_k": 260.3234183439401,
+        "hostname": "Kepler-452",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "Kepler-452 b",
+        "planet_mass_basis": "inferred_mass_radius",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.021653928038083,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 0.7003416275217096
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.108138516868336,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 1.063687663477916
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 76.93598818855465,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 13.3978398308501
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 9.830709601870872,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 1.711946200608624
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 1.11
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 25,
         "equilibrium_temperature_k": 246.01663539084134,
         "hostname": "GJ 667 C",
@@ -1159,52 +1159,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 26,
-        "equilibrium_temperature_k": 227.8889128656409,
-        "hostname": "TRAPPIST-1",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
-        "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 e",
-        "planet_mass_basis": "measured",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 5.332181250892699,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 45.44685329500861
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 8.098583881231576,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 69.02525181154226
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 102.00694566925164,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 869.4180630349474
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 13.034220835515486,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 111.09230805446552
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.1192
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 27,
         "equilibrium_temperature_k": 206.6501498529019,
         "hostname": "K2-288 B",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1250,45 +1204,45 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 28,
-        "equilibrium_temperature_k": 198.65169501881294,
+        "earth2_rank": 27,
+        "equilibrium_temperature_k": 227.8889128656409,
         "hostname": "TRAPPIST-1",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
         "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 f",
+        "pl_name": "TRAPPIST-1 e",
         "planet_mass_basis": "measured",
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 3.994123184772237,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 38.66774385405096
+            "scale_height_km": 5.332181250892699,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 45.44685329500861
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.066324478080028,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 58.729055214989366
+            "scale_height_km": 8.098583881231576,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 69.02525181154226
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 76.40931309999063,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 739.7307519905402
+            "scale_height_km": 102.00694566925164,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 869.4180630349474
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 9.763412229443245,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 94.52115164323568
+            "scale_height_km": 13.034220835515486,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 111.09230805446552
           }
         },
         "status": "scenario_ensemble",
@@ -1296,7 +1250,7 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 29,
+        "earth2_rank": 28,
         "equilibrium_temperature_k": 190.0542442177308,
         "hostname": "GJ 682",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1342,45 +1296,45 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 30,
-        "equilibrium_temperature_k": 180.10061768983417,
+        "earth2_rank": 29,
+        "equilibrium_temperature_k": 198.65169501881294,
         "hostname": "TRAPPIST-1",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
         "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 g",
+        "pl_name": "TRAPPIST-1 f",
         "planet_mass_basis": "measured",
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 3.3243934287425407,
-            "temperature_k": 180.10061768983417,
-            "transmission_signal_ppm": 34.771021109788094
+            "scale_height_km": 3.994123184772237,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 38.66774385405096
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 5.049130509653842,
-            "temperature_k": 180.10061768983417,
-            "transmission_signal_ppm": 52.810663749764466
+            "scale_height_km": 6.066324478080028,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 58.729055214989366
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 63.59709168029209,
-            "temperature_k": 180.10061768983417,
-            "transmission_signal_ppm": 665.1847516655116
+            "scale_height_km": 76.40931309999063,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 739.7307519905402
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 8.126295048037322,
-            "temperature_k": 180.10061768983417,
-            "transmission_signal_ppm": 84.99582937948203
+            "scale_height_km": 9.763412229443245,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 94.52115164323568
           }
         },
         "status": "scenario_ensemble",
@@ -1388,7 +1342,7 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 31,
+        "earth2_rank": 30,
         "equilibrium_temperature_k": 172.0758370433063,
         "hostname": "Kepler-441",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1434,53 +1388,53 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 32,
-        "equilibrium_temperature_k": 285.8874314637581,
-        "hostname": "Kepler-1512",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "earth2_rank": 31,
+        "equilibrium_temperature_k": 180.10061768983417,
+        "hostname": "TRAPPIST-1",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
         "label": "SCENARIO",
-        "pl_name": "Kepler-1512 b",
-        "planet_mass_basis": "inferred_mass_radius",
+        "pl_name": "TRAPPIST-1 g",
+        "planet_mass_basis": "measured",
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 4.3267176597692325,
-            "temperature_k": 285.8874314637581,
-            "transmission_signal_ppm": 1.4971129136793506
+            "scale_height_km": 3.3243934287425407,
+            "temperature_k": 180.10061768983417,
+            "transmission_signal_ppm": 34.771021109788094
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.571473145662623,
-            "temperature_k": 285.8874314637581,
-            "transmission_signal_ppm": 2.2738339041039493
+            "scale_height_km": 5.049130509653842,
+            "temperature_k": 180.10061768983417,
+            "transmission_signal_ppm": 52.810663749764466
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 82.77199001297662,
-            "temperature_k": 285.8874314637581,
-            "transmission_signal_ppm": 28.640420957344098
+            "scale_height_km": 63.59709168029209,
+            "temperature_k": 180.10061768983417,
+            "transmission_signal_ppm": 665.1847516655116
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 10.576420946102568,
-            "temperature_k": 285.8874314637581,
-            "transmission_signal_ppm": 3.6596093445495232
+            "scale_height_km": 8.126295048037322,
+            "temperature_k": 180.10061768983417,
+            "transmission_signal_ppm": 84.99582937948203
           }
         },
         "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.67
+        "stellar_radius_solar": 0.1192
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 33,
+        "earth2_rank": 32,
         "equilibrium_temperature_k": 234.88049267986872,
         "hostname": "Kepler-705",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
@@ -1523,6 +1477,52 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.51
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 33,
+        "equilibrium_temperature_k": 285.8874314637581,
+        "hostname": "Kepler-1512",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "label": "SCENARIO",
+        "pl_name": "Kepler-1512 b",
+        "planet_mass_basis": "inferred_mass_radius",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.3267176597692325,
+            "temperature_k": 285.8874314637581,
+            "transmission_signal_ppm": 1.4971129136793506
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.571473145662623,
+            "temperature_k": 285.8874314637581,
+            "transmission_signal_ppm": 2.2738339041039493
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 82.77199001297662,
+            "temperature_k": 285.8874314637581,
+            "transmission_signal_ppm": 28.640420957344098
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 10.576420946102568,
+            "temperature_k": 285.8874314637581,
+            "transmission_signal_ppm": 3.6596093445495232
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.67
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -1619,52 +1619,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 36,
-        "equilibrium_temperature_k": 252.91325211580428,
-        "hostname": "TOI-2094",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
-        "label": "SCENARIO",
-        "pl_name": "TOI-2094 b",
-        "planet_mass_basis": "inferred_mass_radius",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 4.090374380203818,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 6.937736645683566
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 6.21251200307104,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 10.537121588197339
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 78.25064031694262,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 132.7219184391639
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 9.998692929387113,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 16.95891180055983
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.384
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 37,
         "equilibrium_temperature_k": 209.48885872627955,
         "hostname": "55 Cnc B",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
@@ -1707,6 +1661,52 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.274
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 37,
+        "equilibrium_temperature_k": 252.91325211580428,
+        "hostname": "TOI-2094",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "TOI-2094 b",
+        "planet_mass_basis": "inferred_mass_radius",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.090374380203818,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 6.937736645683566
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.21251200307104,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 10.537121588197339
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 78.25064031694262,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 132.7219184391639
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 9.998692929387113,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 16.95891180055983
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.384
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -1757,19 +1757,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 39,
-        "equilibrium_temperature_k": 255.01599943311683,
-        "hostname": "Kepler-22",
-        "hydrogen_to_earth_air_signal_ratio": null,
-        "label": "SCENARIO",
-        "pl_name": "Kepler-22 b",
-        "planet_mass_basis": "upper_limit_not_used",
-        "scenarios": {},
-        "status": "undetermined_missing_usable_mass_radius_temperature_or_star_radius",
-        "stellar_radius_solar": 0.869
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 40,
         "equilibrium_temperature_k": 214.07061827546394,
         "hostname": "HN Lib",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913049,
@@ -1815,7 +1802,7 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 41,
+        "earth2_rank": 40,
         "equilibrium_temperature_k": 230.00240222931834,
         "hostname": "TOI-2257",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1858,6 +1845,19 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.313
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 41,
+        "equilibrium_temperature_k": 255.01599943311683,
+        "hostname": "Kepler-22",
+        "hydrogen_to_earth_air_signal_ratio": null,
+        "label": "SCENARIO",
+        "pl_name": "Kepler-22 b",
+        "planet_mass_basis": "upper_limit_not_used",
+        "scenarios": {},
+        "status": "undetermined_missing_usable_mass_radius_temperature_or_star_radius",
+        "stellar_radius_solar": 0.869
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -1908,52 +1908,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 43,
-        "equilibrium_temperature_k": 266.0482328763918,
-        "hostname": "K2-72",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
-        "label": "SCENARIO",
-        "pl_name": "K2-72 e",
-        "planet_mass_basis": "inferred_mass_radius",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 3.832301526652159,
-            "temperature_k": 266.0482328763918,
-            "transmission_signal_ppm": 5.939991988909214
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 5.820547710483086,
-            "temperature_k": 266.0482328763918,
-            "transmission_signal_ppm": 9.021734467104089
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 73.31359442291087,
-            "temperature_k": 266.0482328763918,
-            "transmission_signal_ppm": 113.63462935304587
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 9.367848176260834,
-            "temperature_k": 266.0482328763918,
-            "transmission_signal_ppm": 14.51998041733364
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.330989
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 44,
         "equilibrium_temperature_k": 257.92386817420834,
         "hostname": "Kepler-1410",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
@@ -1999,53 +1953,53 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 45,
-        "equilibrium_temperature_k": 184.90752048010458,
-        "hostname": "GJ 514",
+        "earth2_rank": 44,
+        "equilibrium_temperature_k": 266.0482328763918,
+        "hostname": "K2-72",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
         "label": "SCENARIO",
-        "pl_name": "GJ 514 b",
-        "planet_mass_basis": "msini_lower_limit",
+        "pl_name": "K2-72 e",
+        "planet_mass_basis": "inferred_mass_radius",
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 3.0861894678665793,
-            "temperature_k": 184.90752048010458,
-            "transmission_signal_ppm": 3.461192691119932
+            "scale_height_km": 3.832301526652159,
+            "temperature_k": 266.0482328763918,
+            "transmission_signal_ppm": 5.939991988909214
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 4.687343340908855,
-            "temperature_k": 184.90752048010458,
-            "transmission_signal_ppm": 5.256902948197344
+            "scale_height_km": 5.820547710483086,
+            "temperature_k": 266.0482328763918,
+            "transmission_signal_ppm": 9.021734467104089
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 59.04014634179544,
-            "temperature_k": 184.90752048010458,
-            "transmission_signal_ppm": 66.21412104751177
+            "scale_height_km": 73.31359442291087,
+            "temperature_k": 266.0482328763918,
+            "transmission_signal_ppm": 113.63462935304587
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 7.544018699229418,
-            "temperature_k": 184.90752048010458,
-            "transmission_signal_ppm": 8.460693244959835
+            "scale_height_km": 9.367848176260834,
+            "temperature_k": 266.0482328763918,
+            "transmission_signal_ppm": 14.51998041733364
           }
         },
         "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.5
+        "stellar_radius_solar": 0.330989
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 46,
+        "earth2_rank": 45,
         "equilibrium_temperature_k": 305.2200232777886,
         "hostname": "GJ 625",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -2088,6 +2042,52 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.31
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 46,
+        "equilibrium_temperature_k": 184.90752048010458,
+        "hostname": "GJ 514",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "GJ 514 b",
+        "planet_mass_basis": "msini_lower_limit",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 3.0861894678665793,
+            "temperature_k": 184.90752048010458,
+            "transmission_signal_ppm": 3.461192691119932
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.687343340908855,
+            "temperature_k": 184.90752048010458,
+            "transmission_signal_ppm": 5.256902948197344
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 59.04014634179544,
+            "temperature_k": 184.90752048010458,
+            "transmission_signal_ppm": 66.21412104751177
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 7.544018699229418,
+            "temperature_k": 184.90752048010458,
+            "transmission_signal_ppm": 8.460693244959835
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.5
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -2519,52 +2519,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 57,
-        "equilibrium_temperature_k": 238.97673635176534,
-        "hostname": "GJ 180",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
-        "label": "SCENARIO",
-        "pl_name": "GJ 180 c",
-        "planet_mass_basis": "msini_lower_limit",
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 4.148794116736955,
-            "temperature_k": 238.97673635176534,
-            "transmission_signal_ppm": 7.71435062999797
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 6.301240632945324,
-            "temperature_k": 238.97673635176534,
-            "transmission_signal_ppm": 11.716652665512969
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 79.36823527670697,
-            "temperature_k": 238.97673635176534,
-            "transmission_signal_ppm": 147.5788816173525
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 10.141496729801446,
-            "temperature_k": 238.97673635176534,
-            "transmission_signal_ppm": 18.85730153999504
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.413049
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 58,
         "equilibrium_temperature_k": 260.3234183439401,
         "hostname": "L 98-59",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -2607,6 +2561,52 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.3155
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 58,
+        "equilibrium_temperature_k": 238.97673635176534,
+        "hostname": "GJ 180",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "GJ 180 c",
+        "planet_mass_basis": "msini_lower_limit",
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.148794116736955,
+            "temperature_k": 238.97673635176534,
+            "transmission_signal_ppm": 7.71435062999797
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.301240632945324,
+            "temperature_k": 238.97673635176534,
+            "transmission_signal_ppm": 11.716652665512969
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 79.36823527670697,
+            "temperature_k": 238.97673635176534,
+            "transmission_signal_ppm": 147.5788816173525
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 10.141496729801446,
+            "temperature_k": 238.97673635176534,
+            "transmission_signal_ppm": 18.85730153999504
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.413049
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -8838,8 +8838,8 @@
           "spectrum_type": "eclipse"
         }
       ],
-      "reduction_count": 1826,
-      "reductions_with_archive_path": 1826,
+      "reduction_count": 1841,
+      "reductions_with_archive_path": 1841,
       "transmission_measurements": 5948
     }
   },
@@ -8851,18 +8851,18 @@
       "classification_robustness": {
         "boundary_or_model_sensitive": 16,
         "robustly_inside_across_prescriptions": 22,
-        "robustly_outside_across_prescriptions": 781,
-        "undetermined": 5547
+        "robustly_outside_across_prescriptions": 785,
+        "undetermined": 5549
       },
-      "confirmed_planets_evaluated": 6366,
-      "inferred": 819,
+      "confirmed_planets_evaluated": 6372,
+      "inferred": 823,
       "outcomes": {
-        "inferred": 819,
+        "inferred": 823,
         "insufficient_continuous_track_support": 49,
         "insufficient_mist_main_sequence_support": 421,
-        "missing_required_measurement_or_uncertainty": 4414,
+        "missing_required_measurement_or_uncertainty": 4413,
         "nonpositive_or_premain_sequence_input": 27,
-        "stellar_age_effectively_unconstrained": 636
+        "stellar_age_effectively_unconstrained": 639
       }
     },
     "prescriptions": {
@@ -8889,6 +8889,163 @@
         "st_feh": -0.37,
         "st_log_luminosity_solar": -0.678,
         "st_mass_solar": 0.69,
+        "status": "undetermined",
+        "supported_fraction": 0.0
+      },
+      {
+        "age_precision_status": "supported",
+        "boundary_sensitivity": 0.441747572815534,
+        "classification_robustness": "boundary_or_model_sensitive",
+        "climate_prescriptions": {
+          "kopparapu_conservative": {
+            "complete_history_draws": 206,
+            "f_chz": {
+              "p16": 0.0,
+              "p50": 0.0,
+              "p84": 0.0
+            },
+            "inner_boundary": "runaway_greenhouse",
+            "outer_boundary": "maximum_greenhouse",
+            "p_current_hz": 0.0,
+            "tau_hz_gyr": {
+              "p16": 0.0,
+              "p50": 0.0,
+              "p84": 0.0
+            }
+          },
+          "kopparapu_moist_greenhouse": {
+            "complete_history_draws": 206,
+            "f_chz": {
+              "p16": 0.0,
+              "p50": 0.0,
+              "p84": 0.0
+            },
+            "inner_boundary": "moist_greenhouse",
+            "outer_boundary": "maximum_greenhouse",
+            "p_current_hz": 0.0,
+            "tau_hz_gyr": {
+              "p16": 0.0,
+              "p50": 0.0,
+              "p84": 0.0
+            }
+          },
+          "kopparapu_optimistic_empirical": {
+            "complete_history_draws": 206,
+            "f_chz": {
+              "p16": 0.6658899926909455,
+              "p50": 0.9139606277745538,
+              "p84": 0.9541753986258916
+            },
+            "inner_boundary": "recent_venus",
+            "outer_boundary": "early_mars",
+            "p_current_hz": 0.441747572815534,
+            "tau_hz_gyr": {
+              "p16": 1.4775905106857656,
+              "p50": 1.8517285716991996,
+              "p84": 2.1457905330051994
+            }
+          }
+        },
+        "draws_requested": 256,
+        "draws_supported": 206,
+        "history_start_gyr": 0.1,
+        "history_steps": 72,
+        "hostname": "Kepler-419",
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "luminosity_anchor_max_abs_dex": 0.0,
+        "model_agreement": 0.558252427184466,
+        "pl_name": "Kepler-419 c",
+        "pl_orbsmax_au": 1.68,
+        "reason": null,
+        "st_age_gyr": 2.14,
+        "st_feh": 0.176,
+        "st_log_luminosity_solar": 0.7268,
+        "st_mass_solar": 1.39,
+        "status": "inferred",
+        "supported_fraction": 0.8046875
+      },
+      {
+        "age_precision_status": "supported",
+        "boundary_sensitivity": null,
+        "classification_robustness": "undetermined",
+        "climate_prescriptions": {},
+        "draws_requested": 256,
+        "draws_supported": 0,
+        "hostname": "GJ 1061",
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "model_agreement": null,
+        "pl_name": "GJ 1061 d",
+        "pl_orbsmax_au": 0.054,
+        "reason": "insufficient_mist_main_sequence_support",
+        "st_age_gyr": 7.0,
+        "st_feh": -0.08,
+        "st_log_luminosity_solar": -2.76955,
+        "st_mass_solar": 0.12,
+        "status": "undetermined",
+        "supported_fraction": 0.0
+      },
+      {
+        "age_precision_status": "missing",
+        "boundary_sensitivity": null,
+        "classification_robustness": "undetermined",
+        "climate_prescriptions": {},
+        "draws_requested": 256,
+        "draws_supported": 0,
+        "hostname": "GJ 1002",
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "model_agreement": null,
+        "pl_name": "GJ 1002 b",
+        "pl_orbsmax_au": 0.0457,
+        "reason": "missing_required_measurement_or_uncertainty",
+        "st_age_gyr": null,
+        "st_feh": -0.25,
+        "st_log_luminosity_solar": -2.85201,
+        "st_mass_solar": 0.12,
+        "status": "undetermined",
+        "supported_fraction": 0.0
+      },
+      {
+        "age_precision_status": "too_broad",
+        "boundary_sensitivity": null,
+        "classification_robustness": "undetermined",
+        "climate_prescriptions": {},
+        "draws_requested": 256,
+        "draws_supported": 0,
+        "hostname": "GJ 251",
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "model_agreement": null,
+        "pl_name": "GJ 251 c",
+        "pl_orbsmax_au": 0.196,
+        "reason": "stellar_age_effectively_unconstrained",
+        "st_age_gyr": 6.8,
+        "st_feh": 0.07,
+        "st_log_luminosity_solar": -1.80967,
+        "st_mass_solar": 0.35,
+        "status": "undetermined",
+        "supported_fraction": 0.0
+      },
+      {
+        "age_precision_status": "too_broad",
+        "boundary_sensitivity": null,
+        "classification_robustness": "undetermined",
+        "climate_prescriptions": {},
+        "draws_requested": 256,
+        "draws_supported": 0,
+        "hostname": "Kepler-296",
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "model_agreement": null,
+        "pl_name": "Kepler-296 f",
+        "pl_orbsmax_au": 0.255,
+        "reason": "stellar_age_effectively_unconstrained",
+        "st_age_gyr": 4.2,
+        "st_feh": -0.08,
+        "st_log_luminosity_solar": -1.50864,
+        "st_mass_solar": 0.498,
         "status": "undetermined",
         "supported_fraction": 0.0
       },
@@ -9071,169 +9228,12 @@
         "label": "MODEL-INFERRED",
         "model_agreement": null,
         "pl_name": "TOI-700 d",
-        "pl_orbsmax_au": 0.1633,
+        "pl_orbsmax_au": 0.1642,
         "reason": "missing_required_measurement_or_uncertainty",
         "st_age_gyr": 1.5,
         "st_feh": -0.07,
-        "st_log_luminosity_solar": -1.64016,
-        "st_mass_solar": 0.415,
-        "status": "undetermined",
-        "supported_fraction": 0.0
-      },
-      {
-        "age_precision_status": "supported",
-        "boundary_sensitivity": 0.441747572815534,
-        "classification_robustness": "boundary_or_model_sensitive",
-        "climate_prescriptions": {
-          "kopparapu_conservative": {
-            "complete_history_draws": 206,
-            "f_chz": {
-              "p16": 0.0,
-              "p50": 0.0,
-              "p84": 0.0
-            },
-            "inner_boundary": "runaway_greenhouse",
-            "outer_boundary": "maximum_greenhouse",
-            "p_current_hz": 0.0,
-            "tau_hz_gyr": {
-              "p16": 0.0,
-              "p50": 0.0,
-              "p84": 0.0
-            }
-          },
-          "kopparapu_moist_greenhouse": {
-            "complete_history_draws": 206,
-            "f_chz": {
-              "p16": 0.0,
-              "p50": 0.0,
-              "p84": 0.0
-            },
-            "inner_boundary": "moist_greenhouse",
-            "outer_boundary": "maximum_greenhouse",
-            "p_current_hz": 0.0,
-            "tau_hz_gyr": {
-              "p16": 0.0,
-              "p50": 0.0,
-              "p84": 0.0
-            }
-          },
-          "kopparapu_optimistic_empirical": {
-            "complete_history_draws": 206,
-            "f_chz": {
-              "p16": 0.6658899926909455,
-              "p50": 0.9139606277745538,
-              "p84": 0.9541753986258916
-            },
-            "inner_boundary": "recent_venus",
-            "outer_boundary": "early_mars",
-            "p_current_hz": 0.441747572815534,
-            "tau_hz_gyr": {
-              "p16": 1.4775905106857656,
-              "p50": 1.8517285716991996,
-              "p84": 2.1457905330051994
-            }
-          }
-        },
-        "draws_requested": 256,
-        "draws_supported": 206,
-        "history_start_gyr": 0.1,
-        "history_steps": 72,
-        "hostname": "Kepler-419",
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "luminosity_anchor_max_abs_dex": 0.0,
-        "model_agreement": 0.558252427184466,
-        "pl_name": "Kepler-419 c",
-        "pl_orbsmax_au": 1.68,
-        "reason": null,
-        "st_age_gyr": 2.14,
-        "st_feh": 0.176,
-        "st_log_luminosity_solar": 0.7268,
-        "st_mass_solar": 1.39,
-        "status": "inferred",
-        "supported_fraction": 0.8046875
-      },
-      {
-        "age_precision_status": "supported",
-        "boundary_sensitivity": null,
-        "classification_robustness": "undetermined",
-        "climate_prescriptions": {},
-        "draws_requested": 256,
-        "draws_supported": 0,
-        "hostname": "GJ 1061",
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "model_agreement": null,
-        "pl_name": "GJ 1061 d",
-        "pl_orbsmax_au": 0.054,
-        "reason": "insufficient_mist_main_sequence_support",
-        "st_age_gyr": 7.0,
-        "st_feh": -0.08,
-        "st_log_luminosity_solar": -2.76955,
-        "st_mass_solar": 0.12,
-        "status": "undetermined",
-        "supported_fraction": 0.0
-      },
-      {
-        "age_precision_status": "missing",
-        "boundary_sensitivity": null,
-        "classification_robustness": "undetermined",
-        "climate_prescriptions": {},
-        "draws_requested": 256,
-        "draws_supported": 0,
-        "hostname": "GJ 1002",
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "model_agreement": null,
-        "pl_name": "GJ 1002 b",
-        "pl_orbsmax_au": 0.0457,
-        "reason": "missing_required_measurement_or_uncertainty",
-        "st_age_gyr": null,
-        "st_feh": -0.25,
-        "st_log_luminosity_solar": -2.85201,
-        "st_mass_solar": 0.12,
-        "status": "undetermined",
-        "supported_fraction": 0.0
-      },
-      {
-        "age_precision_status": "too_broad",
-        "boundary_sensitivity": null,
-        "classification_robustness": "undetermined",
-        "climate_prescriptions": {},
-        "draws_requested": 256,
-        "draws_supported": 0,
-        "hostname": "GJ 251",
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "model_agreement": null,
-        "pl_name": "GJ 251 c",
-        "pl_orbsmax_au": 0.196,
-        "reason": "stellar_age_effectively_unconstrained",
-        "st_age_gyr": 6.8,
-        "st_feh": 0.07,
-        "st_log_luminosity_solar": -1.80967,
-        "st_mass_solar": 0.35,
-        "status": "undetermined",
-        "supported_fraction": 0.0
-      },
-      {
-        "age_precision_status": "too_broad",
-        "boundary_sensitivity": null,
-        "classification_robustness": "undetermined",
-        "climate_prescriptions": {},
-        "draws_requested": 256,
-        "draws_supported": 0,
-        "hostname": "Kepler-296",
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "model_agreement": null,
-        "pl_name": "Kepler-296 f",
-        "pl_orbsmax_au": 0.255,
-        "reason": "stellar_age_effectively_unconstrained",
-        "st_age_gyr": 4.2,
-        "st_feh": -0.08,
-        "st_log_luminosity_solar": -1.50864,
-        "st_mass_solar": 0.498,
+        "st_log_luminosity_solar": -1.63264,
+        "st_mass_solar": 0.417,
         "status": "undetermined",
         "supported_fraction": 0.0
       },
@@ -10592,7 +10592,7 @@
         }
       ],
       "median_probability_range_three_model_subset": 0.2513134761423822,
-      "p90_probability_range_three_model_subset": 0.4848463500312394
+      "p90_probability_range_three_model_subset": 0.4931561503661342
     },
     "models": {
       "otegi_bouchy_helled_2020": {
@@ -10618,61 +10618,25 @@
       }
     },
     "population": {
-      "independent_measured_masses": 679,
-      "otegi_supported": 609,
-      "planets_with_radius_in_domain": 3854,
+      "independent_measured_masses": 683,
+      "otegi_supported": 613,
+      "planets_with_radius_in_domain": 3855,
       "radius_domain_earth": [
         0.5,
         4.0
       ],
-      "zeng_supported": 352
+      "zeng_supported": 356
     },
     "records": [
-      {
-        "catalogue_mass_accepted_as_independent": false,
-        "catalogue_mass_class": "msini_lower_limit",
-        "catalogue_mass_value_earth": 1.055,
-        "composition_evidence_scope": "radius_only_baseline",
-        "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 1.0,
-        "hostname": "Proxima Cen",
-        "hz_conservative_probability": 0.9997497497497497,
-        "independent_mass_used": false,
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "mass_radius_correlation": null,
-        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
-        "n_rocky_models_supported": 1,
-        "otegi_supported_draw_fraction": 0.0,
-        "p_consistent_with_terrestrial_composition_zeng": null,
-        "p_requires_volatiles_zeng": null,
-        "p_rocky_model_max": 0.947846436921582,
-        "p_rocky_model_min": 0.947846436921582,
-        "p_rocky_model_range": null,
-        "p_rocky_otegi_equal_prior": null,
-        "p_rocky_otegi_scatter_0p10dex": null,
-        "p_rocky_otegi_scatter_0p30dex": null,
-        "p_rocky_rogers_radius_only": 0.947846436921582,
-        "p_rocky_zeng_fe_si_envelope": null,
-        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
-        "pl_name": "Proxima Cen b",
-        "radius_earth": 1.02,
-        "radius_error_minus": null,
-        "radius_error_plus": null,
-        "wolfgang_intrinsic_scatter_earth": 1.9,
-        "wolfgang_mass_location_earth": 2.7704096254646773,
-        "wolfgang_prediction_is_dynamical_mass": false,
-        "zeng_supported_draw_fraction": 0.0
-      },
       {
         "catalogue_mass_accepted_as_independent": true,
         "catalogue_mass_class": "measured",
         "catalogue_mass_value_earth": 1.67,
         "composition_evidence_scope": "independent_mass_and_radius",
         "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "hostname": "GJ 1061",
-        "hz_conservative_probability": 0.9949987496874219,
+        "hz_conservative_probability": 0.9969992498124531,
         "independent_mass_used": true,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -10699,6 +10663,42 @@
         "wolfgang_mass_location_earth": 3.2746067307533075,
         "wolfgang_prediction_is_dynamical_mass": false,
         "zeng_supported_draw_fraction": 1.0
+      },
+      {
+        "catalogue_mass_accepted_as_independent": false,
+        "catalogue_mass_class": "msini_lower_limit",
+        "catalogue_mass_value_earth": 1.055,
+        "composition_evidence_scope": "radius_only_baseline",
+        "covariance_status": "unavailable_assumed_zero",
+        "earth2_rank": 2.0,
+        "hostname": "Proxima Cen",
+        "hz_conservative_probability": 0.9997496244366549,
+        "independent_mass_used": false,
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "mass_radius_correlation": null,
+        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
+        "n_rocky_models_supported": 1,
+        "otegi_supported_draw_fraction": 0.0,
+        "p_consistent_with_terrestrial_composition_zeng": null,
+        "p_requires_volatiles_zeng": null,
+        "p_rocky_model_max": 0.947846436921582,
+        "p_rocky_model_min": 0.947846436921582,
+        "p_rocky_model_range": null,
+        "p_rocky_otegi_equal_prior": null,
+        "p_rocky_otegi_scatter_0p10dex": null,
+        "p_rocky_otegi_scatter_0p30dex": null,
+        "p_rocky_rogers_radius_only": 0.947846436921582,
+        "p_rocky_zeng_fe_si_envelope": null,
+        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
+        "pl_name": "Proxima Cen b",
+        "radius_earth": 1.02,
+        "radius_error_minus": null,
+        "radius_error_plus": null,
+        "wolfgang_intrinsic_scatter_earth": 1.9,
+        "wolfgang_mass_location_earth": 2.7704096254646773,
+        "wolfgang_prediction_is_dynamical_mass": false,
+        "zeng_supported_draw_fraction": 0.0
       },
       {
         "catalogue_mass_accepted_as_independent": false,
@@ -10816,7 +10816,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 6.0,
         "hostname": "Kepler-1649",
-        "hz_conservative_probability": 0.96075,
+        "hz_conservative_probability": 0.9665,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -10852,7 +10852,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 7.0,
         "hostname": "GJ 1002",
-        "hz_conservative_probability": 0.9515,
+        "hz_conservative_probability": 0.95325,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -10924,7 +10924,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 9.0,
         "hostname": "GJ 667 C",
-        "hz_conservative_probability": 0.98725,
+        "hz_conservative_probability": 0.994,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -10955,12 +10955,12 @@
       {
         "catalogue_mass_accepted_as_independent": false,
         "catalogue_mass_class": "inferred_mass_radius",
-        "catalogue_mass_value_earth": 1.25,
+        "catalogue_mass_value_earth": 1.58,
         "composition_evidence_scope": "radius_only_baseline",
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 10.0,
         "hostname": "TOI-700",
-        "hz_conservative_probability": 0.60025,
+        "hz_conservative_probability": 0.60225,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -10970,21 +10970,21 @@
         "otegi_supported_draw_fraction": 0.0,
         "p_consistent_with_terrestrial_composition_zeng": null,
         "p_requires_volatiles_zeng": null,
-        "p_rocky_model_max": 0.9301641549117058,
-        "p_rocky_model_min": 0.9301641549117058,
+        "p_rocky_model_max": 0.9049589706383272,
+        "p_rocky_model_min": 0.9049589706383272,
         "p_rocky_model_range": null,
         "p_rocky_otegi_equal_prior": null,
         "p_rocky_otegi_scatter_0p10dex": null,
         "p_rocky_otegi_scatter_0p30dex": null,
-        "p_rocky_rogers_radius_only": 0.9301641549117058,
+        "p_rocky_rogers_radius_only": 0.9049589706383272,
         "p_rocky_zeng_fe_si_envelope": null,
         "p_too_dense_for_zeng_cmf_0_to_0p4": null,
         "pl_name": "TOI-700 d",
-        "radius_earth": 1.073,
-        "radius_error_minus": -0.054,
-        "radius_error_plus": 0.059,
+        "radius_earth": 1.145,
+        "radius_error_minus": -0.026,
+        "radius_error_plus": 0.032,
         "wolfgang_intrinsic_scatter_earth": 1.9,
-        "wolfgang_mass_location_earth": 2.958989354529422,
+        "wolfgang_mass_location_earth": 3.2196665590953453,
         "wolfgang_prediction_is_dynamical_mass": false,
         "zeng_supported_draw_fraction": 0.0
       },
@@ -10996,7 +10996,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 11.0,
         "hostname": "Kepler-442",
-        "hz_conservative_probability": 0.72625,
+        "hz_conservative_probability": 0.72325,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11032,7 +11032,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 12.0,
         "hostname": "Kepler-186",
-        "hz_conservative_probability": 0.6435,
+        "hz_conservative_probability": 0.63525,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11068,7 +11068,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 13.0,
         "hostname": "GJ 667 C",
-        "hz_conservative_probability": 0.84275,
+        "hz_conservative_probability": 0.84325,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11104,7 +11104,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 14.0,
         "hostname": "TOI-715",
-        "hz_conservative_probability": 0.88525,
+        "hz_conservative_probability": 0.89775,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11248,7 +11248,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 18.0,
         "hostname": "Kepler-1652",
-        "hz_conservative_probability": 0.662,
+        "hz_conservative_probability": 0.6725,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11284,7 +11284,7 @@
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 19.0,
         "hostname": "GJ 3378",
-        "hz_conservative_probability": 0.32575,
+        "hz_conservative_probability": 0.33825,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11350,13 +11350,49 @@
       },
       {
         "catalogue_mass_accepted_as_independent": false,
+        "catalogue_mass_class": "inferred_mass_radius",
+        "catalogue_mass_value_earth": 3.89,
+        "composition_evidence_scope": "radius_only_baseline",
+        "covariance_status": "unavailable_assumed_zero",
+        "earth2_rank": 21.0,
+        "hostname": "Kepler-296",
+        "hz_conservative_probability": 0.9905,
+        "independent_mass_used": false,
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "mass_radius_correlation": null,
+        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
+        "n_rocky_models_supported": 1,
+        "otegi_supported_draw_fraction": 0.0,
+        "p_consistent_with_terrestrial_composition_zeng": null,
+        "p_requires_volatiles_zeng": null,
+        "p_rocky_model_max": 0.3326840570340037,
+        "p_rocky_model_min": 0.3326840570340037,
+        "p_rocky_model_range": null,
+        "p_rocky_otegi_equal_prior": null,
+        "p_rocky_otegi_scatter_0p10dex": null,
+        "p_rocky_otegi_scatter_0p30dex": null,
+        "p_rocky_rogers_radius_only": 0.3326840570340037,
+        "p_rocky_zeng_fe_si_envelope": null,
+        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
+        "pl_name": "Kepler-296 f",
+        "radius_earth": 1.8,
+        "radius_error_minus": -0.3,
+        "radius_error_plus": 0.31,
+        "wolfgang_intrinsic_scatter_earth": 1.9,
+        "wolfgang_mass_location_earth": 5.797196492792535,
+        "wolfgang_prediction_is_dynamical_mass": false,
+        "zeng_supported_draw_fraction": 0.0
+      },
+      {
+        "catalogue_mass_accepted_as_independent": false,
         "catalogue_mass_class": "msini_lower_limit",
         "catalogue_mass_value_earth": 3.88,
         "composition_evidence_scope": "radius_only_baseline",
         "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 21.0,
+        "earth2_rank": 22.0,
         "hostname": "GJ 251",
-        "hz_conservative_probability": 0.99675,
+        "hz_conservative_probability": 0.99725,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11387,84 +11423,12 @@
       {
         "catalogue_mass_accepted_as_independent": false,
         "catalogue_mass_class": "inferred_mass_radius",
-        "catalogue_mass_value_earth": 3.89,
-        "composition_evidence_scope": "radius_only_baseline",
-        "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 22.0,
-        "hostname": "Kepler-296",
-        "hz_conservative_probability": 0.99175,
-        "independent_mass_used": false,
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "mass_radius_correlation": null,
-        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
-        "n_rocky_models_supported": 1,
-        "otegi_supported_draw_fraction": 0.0,
-        "p_consistent_with_terrestrial_composition_zeng": null,
-        "p_requires_volatiles_zeng": null,
-        "p_rocky_model_max": 0.3326840570340037,
-        "p_rocky_model_min": 0.3326840570340037,
-        "p_rocky_model_range": null,
-        "p_rocky_otegi_equal_prior": null,
-        "p_rocky_otegi_scatter_0p10dex": null,
-        "p_rocky_otegi_scatter_0p30dex": null,
-        "p_rocky_rogers_radius_only": 0.3326840570340037,
-        "p_rocky_zeng_fe_si_envelope": null,
-        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
-        "pl_name": "Kepler-296 f",
-        "radius_earth": 1.8,
-        "radius_error_minus": -0.3,
-        "radius_error_plus": 0.31,
-        "wolfgang_intrinsic_scatter_earth": 1.9,
-        "wolfgang_mass_location_earth": 5.797196492792535,
-        "wolfgang_prediction_is_dynamical_mass": false,
-        "zeng_supported_draw_fraction": 0.0
-      },
-      {
-        "catalogue_mass_accepted_as_independent": false,
-        "catalogue_mass_class": "inferred_mass_radius",
-        "catalogue_mass_value_earth": 3.29,
-        "composition_evidence_scope": "radius_only_baseline",
-        "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 23.0,
-        "hostname": "Kepler-452",
-        "hz_conservative_probability": 0.38225,
-        "independent_mass_used": false,
-        "is_control": false,
-        "label": "MODEL-INFERRED",
-        "mass_radius_correlation": null,
-        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
-        "n_rocky_models_supported": 1,
-        "otegi_supported_draw_fraction": 0.0,
-        "p_consistent_with_terrestrial_composition_zeng": null,
-        "p_requires_volatiles_zeng": null,
-        "p_rocky_model_max": 0.45990578538905547,
-        "p_rocky_model_min": 0.45990578538905547,
-        "p_rocky_model_range": null,
-        "p_rocky_otegi_equal_prior": null,
-        "p_rocky_otegi_scatter_0p10dex": null,
-        "p_rocky_otegi_scatter_0p30dex": null,
-        "p_rocky_rogers_radius_only": 0.45990578538905547,
-        "p_rocky_zeng_fe_si_envelope": null,
-        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
-        "pl_name": "Kepler-452 b",
-        "radius_earth": 1.63,
-        "radius_error_minus": -0.2,
-        "radius_error_plus": 0.23,
-        "wolfgang_intrinsic_scatter_earth": 1.9,
-        "wolfgang_mass_location_earth": 5.095744564329955,
-        "wolfgang_prediction_is_dynamical_mass": false,
-        "zeng_supported_draw_fraction": 0.0
-      },
-      {
-        "catalogue_mass_accepted_as_independent": false,
-        "catalogue_mass_class": "inferred_mass_radius",
         "catalogue_mass_value_earth": 1.46,
         "composition_evidence_scope": "radius_only_baseline",
         "covariance_status": "unavailable_assumed_zero",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "hostname": "Kepler-438",
-        "hz_conservative_probability": 0.19,
+        "hz_conservative_probability": 0.19325,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11494,13 +11458,49 @@
       },
       {
         "catalogue_mass_accepted_as_independent": false,
+        "catalogue_mass_class": "inferred_mass_radius",
+        "catalogue_mass_value_earth": 3.29,
+        "composition_evidence_scope": "radius_only_baseline",
+        "covariance_status": "unavailable_assumed_zero",
+        "earth2_rank": 24.0,
+        "hostname": "Kepler-452",
+        "hz_conservative_probability": 0.37975,
+        "independent_mass_used": false,
+        "is_control": false,
+        "label": "MODEL-INFERRED",
+        "mass_radius_correlation": null,
+        "mass_use_reason": "mass excluded: only true measured masses support composition inference",
+        "n_rocky_models_supported": 1,
+        "otegi_supported_draw_fraction": 0.0,
+        "p_consistent_with_terrestrial_composition_zeng": null,
+        "p_requires_volatiles_zeng": null,
+        "p_rocky_model_max": 0.45990578538905547,
+        "p_rocky_model_min": 0.45990578538905547,
+        "p_rocky_model_range": null,
+        "p_rocky_otegi_equal_prior": null,
+        "p_rocky_otegi_scatter_0p10dex": null,
+        "p_rocky_otegi_scatter_0p30dex": null,
+        "p_rocky_rogers_radius_only": 0.45990578538905547,
+        "p_rocky_zeng_fe_si_envelope": null,
+        "p_too_dense_for_zeng_cmf_0_to_0p4": null,
+        "pl_name": "Kepler-452 b",
+        "radius_earth": 1.63,
+        "radius_error_minus": -0.2,
+        "radius_error_plus": 0.23,
+        "wolfgang_intrinsic_scatter_earth": 1.9,
+        "wolfgang_mass_location_earth": 5.095744564329955,
+        "wolfgang_prediction_is_dynamical_mass": false,
+        "zeng_supported_draw_fraction": 0.0
+      },
+      {
+        "catalogue_mass_accepted_as_independent": false,
         "catalogue_mass_class": "msini_lower_limit",
         "catalogue_mass_value_earth": 3.8,
         "composition_evidence_scope": "radius_only_baseline",
         "covariance_status": "unavailable_assumed_zero",
         "earth2_rank": 25.0,
         "hostname": "GJ 667 C",
-        "hz_conservative_probability": 0.48325,
+        "hz_conservative_probability": 0.48575,
         "independent_mass_used": false,
         "is_control": false,
         "label": "MODEL-INFERRED",
@@ -11563,24 +11563,9 @@
     },
     "records": [
       {
-        "bolometric_insolation_earth": 0.641,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 1,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "Proxima Cen",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "Proxima Cen b",
-        "planet_mass_basis": "minimum_mass_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
-      },
-      {
         "bolometric_insolation_earth": 0.6,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 2,
+        "earth2_rank": 1,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 1.0497599999999998,
@@ -11603,6 +11588,21 @@
         "planet_mass_basis": "measured_mass",
         "stellar_age_gyr": 7.0,
         "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 0.641,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 2,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "Proxima Cen",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "Proxima Cen b",
+        "planet_mass_basis": "minimum_mass_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
       },
       {
         "bolometric_insolation_earth": 0.67,
@@ -11762,9 +11762,9 @@
         },
         "hostname": "TOI-700",
         "integrated_lost_earth_masses": {
-          "maximum": 0.028996265386916496,
-          "median": 0.002833935018311856,
-          "minimum": 0.0001735853766896307
+          "maximum": 0.027856370101203974,
+          "median": 0.002722956260762231,
+          "minimum": 0.00016678765927221638
         },
         "label": "SCENARIO",
         "pl_name": "TOI-700 d",
@@ -12027,36 +12027,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.404,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 21,
-        "escape_status": "energy_limited_scenario_ensemble",
-        "generic_current_xuv_flux_w_m2": {
-          "maximum": 0.7276277647058823,
-          "median": 0.05202231842992722,
-          "minimum": 0.0032884296691502598
-        },
-        "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 2.8339789412548877e+17,
-          "median": 4.407058261955447e+16,
-          "minimum": 6343869936055550.0
-        },
-        "hostname": "GJ 251",
-        "integrated_lost_earth_masses": {
-          "maximum": 0.07631314614647637,
-          "median": 0.004225346772513448,
-          "minimum": 0.0001671040395600134
-        },
-        "label": "SCENARIO",
-        "pl_name": "GJ 251 c",
-        "planet_mass_basis": "minimum_mass_scenario",
-        "stellar_age_gyr": 6.8,
-        "xuv_history_status": "bounded_age_activity_scenarios"
-      },
-      {
         "bolometric_insolation_earth": 0.62,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 22,
+        "earth2_rank": 21,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 1.8079199999999995,
@@ -12081,36 +12054,36 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 1.1,
+        "bolometric_insolation_earth": 0.404,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 23,
+        "earth2_rank": 22,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
-          "maximum": 0.22453200000000004,
-          "median": 0.009728837462452334,
-          "minimum": 0.0001587680997933779
+          "maximum": 0.7276277647058823,
+          "median": 0.05202231842992722,
+          "minimum": 0.0032884296691502598
         },
         "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 1.6846062862638874e+17,
-          "median": 1.6780885736756374e+16,
-          "minimum": 1073616056673748.5
+          "maximum": 2.8339789412548877e+17,
+          "median": 4.407058261955447e+16,
+          "minimum": 6343869936055550.0
         },
-        "hostname": "Kepler-452",
+        "hostname": "GJ 251",
         "integrated_lost_earth_masses": {
-          "maximum": 0.03870940784103225,
-          "median": 0.0013785059462648032,
-          "minimum": 2.427951064638743e-05
+          "maximum": 0.07631314614647637,
+          "median": 0.004225346772513448,
+          "minimum": 0.0001671040395600134
         },
         "label": "SCENARIO",
-        "pl_name": "Kepler-452 b",
-        "planet_mass_basis": "mass_radius_prediction_scenario",
-        "stellar_age_gyr": 6.0,
+        "pl_name": "GJ 251 c",
+        "planet_mass_basis": "minimum_mass_scenario",
+        "stellar_age_gyr": 6.8,
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
         "bolometric_insolation_earth": 1.4,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 24,
+        "earth2_rank": 23,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 3.8968363636363628,
@@ -12132,6 +12105,33 @@
         "pl_name": "Kepler-438 b",
         "planet_mass_basis": "mass_radius_prediction_scenario",
         "stellar_age_gyr": 4.4,
+        "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 1.1,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 24,
+        "escape_status": "energy_limited_scenario_ensemble",
+        "generic_current_xuv_flux_w_m2": {
+          "maximum": 0.22453200000000004,
+          "median": 0.009728837462452334,
+          "minimum": 0.0001587680997933779
+        },
+        "generic_integrated_xuv_dose_j_m2": {
+          "maximum": 1.6846062862638874e+17,
+          "median": 1.6780885736756374e+16,
+          "minimum": 1073616056673748.5
+        },
+        "hostname": "Kepler-452",
+        "integrated_lost_earth_masses": {
+          "maximum": 0.03870940784103225,
+          "median": 0.0013785059462648032,
+          "minimum": 2.427951064638743e-05
+        },
+        "label": "SCENARIO",
+        "pl_name": "Kepler-452 b",
+        "planet_mass_basis": "mass_radius_prediction_scenario",
+        "stellar_age_gyr": 6.0,
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
@@ -12162,36 +12162,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.646,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 26,
-        "escape_status": "energy_limited_scenario_ensemble",
-        "generic_current_xuv_flux_w_m2": {
-          "maximum": 1.041012,
-          "median": 0.07254810954447427,
-          "minimum": 0.00445023240108696
-        },
-        "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 4.809241856344762e+17,
-          "median": 7.242959967117395e+16,
-          "minimum": 1.0266011157554552e+16
-        },
-        "hostname": "TRAPPIST-1",
-        "integrated_lost_earth_masses": {
-          "maximum": 0.10785724862354026,
-          "median": 0.005682862098838803,
-          "minimum": 0.00021939572497643874
-        },
-        "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 e",
-        "planet_mass_basis": "measured_mass",
-        "stellar_age_gyr": 7.6,
-        "xuv_history_status": "bounded_age_activity_scenarios"
-      },
-      {
         "bolometric_insolation_earth": 0.4368,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 27,
+        "earth2_rank": 26,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 1.78319232,
@@ -12216,9 +12189,51 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.373,
+        "bolometric_insolation_earth": 0.646,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 27,
+        "escape_status": "energy_limited_scenario_ensemble",
+        "generic_current_xuv_flux_w_m2": {
+          "maximum": 1.041012,
+          "median": 0.07254810954447427,
+          "minimum": 0.00445023240108696
+        },
+        "generic_integrated_xuv_dose_j_m2": {
+          "maximum": 4.809241856344762e+17,
+          "median": 7.242959967117395e+16,
+          "minimum": 1.0266011157554552e+16
+        },
+        "hostname": "TRAPPIST-1",
+        "integrated_lost_earth_masses": {
+          "maximum": 0.10785724862354026,
+          "median": 0.005682862098838803,
+          "minimum": 0.00021939572497643874
+        },
+        "label": "SCENARIO",
+        "pl_name": "TRAPPIST-1 e",
+        "planet_mass_basis": "measured_mass",
+        "stellar_age_gyr": 7.6,
+        "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 0.3125,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
         "earth2_rank": 28,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "GJ 682",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "GJ 682 b",
+        "planet_mass_basis": "minimum_mass_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
+      },
+      {
+        "bolometric_insolation_earth": 0.373,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 29,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 0.6010796842105264,
@@ -12243,51 +12258,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.3125,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 29,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "GJ 682",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "GJ 682 b",
-        "planet_mass_basis": "minimum_mass_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
-      },
-      {
-        "bolometric_insolation_earth": 0.252,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 30,
-        "escape_status": "energy_limited_scenario_ensemble",
-        "generic_current_xuv_flux_w_m2": {
-          "maximum": 0.4060913684210527,
-          "median": 0.02830050093685374,
-          "minimum": 0.001736003970702653
-        },
-        "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 1.8760510027846445e+17,
-          "median": 2.8254271079157644e+16,
-          "minimum": 4004697850934592.5
-        },
-        "hostname": "TRAPPIST-1",
-        "integrated_lost_earth_masses": {
-          "maximum": 0.03850363969838888,
-          "median": 0.0020479664863297586,
-          "minimum": 7.943030874695421e-05
-        },
-        "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 g",
-        "planet_mass_basis": "measured_mass",
-        "stellar_age_gyr": 7.6,
-        "xuv_history_status": "bounded_age_activity_scenarios"
-      },
-      {
         "bolometric_insolation_earth": 0.21,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 31,
+        "earth2_rank": 30,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 0.857304,
@@ -12312,36 +12285,36 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 1.6,
+        "bolometric_insolation_earth": 0.252,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 32,
+        "earth2_rank": 31,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
-          "maximum": 1.1008719101123596,
-          "median": 0.06308087087309758,
-          "minimum": 0.001429181601166981
+          "maximum": 0.4060913684210527,
+          "median": 0.02830050093685374,
+          "minimum": 0.001736003970702653
         },
         "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 1.6988782265092406e+17,
-          "median": 2.065184519332987e+16,
-          "minimum": 1488495953803157.0
+          "maximum": 1.8760510027846445e+17,
+          "median": 2.8254271079157644e+16,
+          "minimum": 4004697850934592.5
         },
-        "hostname": "Kepler-1512",
+        "hostname": "TRAPPIST-1",
         "integrated_lost_earth_masses": {
-          "maximum": 0.028987235975334032,
-          "median": 0.0012506246611416443,
-          "minimum": 2.4725676353579857e-05
+          "maximum": 0.03850363969838888,
+          "median": 0.0020479664863297586,
+          "minimum": 7.943030874695421e-05
         },
         "label": "SCENARIO",
-        "pl_name": "Kepler-1512 b",
-        "planet_mass_basis": "mass_radius_prediction_scenario",
-        "stellar_age_gyr": 1.78,
+        "pl_name": "TRAPPIST-1 g",
+        "planet_mass_basis": "measured_mass",
+        "stellar_age_gyr": 7.6,
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
         "bolometric_insolation_earth": 0.729,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 33,
+        "earth2_rank": 32,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 2.295169357326478,
@@ -12363,6 +12336,33 @@
         "pl_name": "Kepler-705 b",
         "planet_mass_basis": "mass_radius_prediction_scenario",
         "stellar_age_gyr": 3.89,
+        "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 1.6,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 33,
+        "escape_status": "energy_limited_scenario_ensemble",
+        "generic_current_xuv_flux_w_m2": {
+          "maximum": 1.1008719101123596,
+          "median": 0.06308087087309758,
+          "minimum": 0.001429181601166981
+        },
+        "generic_integrated_xuv_dose_j_m2": {
+          "maximum": 1.6988782265092406e+17,
+          "median": 2.065184519332987e+16,
+          "minimum": 1488495953803157.0
+        },
+        "hostname": "Kepler-1512",
+        "integrated_lost_earth_masses": {
+          "maximum": 0.028987235975334032,
+          "median": 0.0012506246611416443,
+          "minimum": 2.4725676353579857e-05
+        },
+        "label": "SCENARIO",
+        "pl_name": "Kepler-1512 b",
+        "planet_mass_basis": "mass_radius_prediction_scenario",
+        "stellar_age_gyr": 1.78,
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
@@ -12408,24 +12408,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.98,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 36,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "TOI-2094",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "TOI-2094 b",
-        "planet_mass_basis": "mass_radius_prediction_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
-      },
-      {
         "bolometric_insolation_earth": 0.4613,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 37,
+        "earth2_rank": 36,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 0.5649633359999999,
@@ -12448,6 +12433,21 @@
         "planet_mass_basis": "minimum_mass_scenario",
         "stellar_age_gyr": 10.0,
         "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 0.98,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 37,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "TOI-2094",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "TOI-2094 b",
+        "planet_mass_basis": "mass_radius_prediction_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
       },
       {
         "bolometric_insolation_earth": 0.5449,
@@ -12477,32 +12477,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 1.013,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 39,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": {
-          "maximum": 0.17723447999999994,
-          "median": 0.007411961533334633,
-          "minimum": 0.00011602720290801952
-        },
-        "generic_integrated_xuv_dose_j_m2": {
-          "maximum": 1.611724665839601e+17,
-          "median": 1.5710543100946496e+16,
-          "minimum": 992810154284888.5
-        },
-        "hostname": "Kepler-22",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "Kepler-22 b",
-        "planet_mass_basis": "upper_limit_not_used",
-        "stellar_age_gyr": 7.0,
-        "xuv_history_status": "bounded_age_activity_scenarios"
-      },
-      {
         "bolometric_insolation_earth": 0.503,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 40,
+        "earth2_rank": 39,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 1.4000776363636362,
@@ -12529,7 +12506,7 @@
       {
         "bolometric_insolation_earth": 0.6703,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 41,
+        "earth2_rank": 40,
         "escape_status": "undetermined_missing_age_environment_or_usable_mass",
         "generic_current_xuv_flux_w_m2": null,
         "generic_integrated_xuv_dose_j_m2": null,
@@ -12540,6 +12517,29 @@
         "planet_mass_basis": "mass_radius_prediction_scenario",
         "stellar_age_gyr": null,
         "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
+      },
+      {
+        "bolometric_insolation_earth": 1.013,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 41,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": {
+          "maximum": 0.17723447999999994,
+          "median": 0.007411961533334633,
+          "minimum": 0.00011602720290801952
+        },
+        "generic_integrated_xuv_dose_j_m2": {
+          "maximum": 1.611724665839601e+17,
+          "median": 1.5710543100946496e+16,
+          "minimum": 992810154284888.5
+        },
+        "hostname": "Kepler-22",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "Kepler-22 b",
+        "planet_mass_basis": "upper_limit_not_used",
+        "stellar_age_gyr": 7.0,
+        "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
         "bolometric_insolation_earth": 0.53,
@@ -12569,24 +12569,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 1.2,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 43,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "K2-72",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "K2-72 e",
-        "planet_mass_basis": "mass_radius_prediction_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
-      },
-      {
         "bolometric_insolation_earth": 1.06,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 44,
+        "earth2_rank": 43,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 0.31896884520884516,
@@ -12611,9 +12596,39 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.28,
+        "bolometric_insolation_earth": 1.2,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 44,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "K2-72",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "K2-72 e",
+        "planet_mass_basis": "mass_radius_prediction_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
+      },
+      {
+        "bolometric_insolation_earth": 2.0787,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
         "earth2_rank": 45,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "GJ 625",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "GJ 625 b",
+        "planet_mass_basis": "minimum_mass_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
+      },
+      {
+        "bolometric_insolation_earth": 0.28,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 46,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 1.143072,
@@ -12636,21 +12651,6 @@
         "planet_mass_basis": "minimum_mass_scenario",
         "stellar_age_gyr": 0.8,
         "xuv_history_status": "bounded_age_activity_scenarios"
-      },
-      {
-        "bolometric_insolation_earth": 2.0787,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 46,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "GJ 625",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "GJ 625 b",
-        "planet_mass_basis": "minimum_mass_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
       },
       {
         "bolometric_insolation_earth": 0.949,
@@ -12907,24 +12907,9 @@
         "xuv_history_status": "bounded_age_activity_scenarios"
       },
       {
-        "bolometric_insolation_earth": 0.7812,
-        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 57,
-        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-        "generic_current_xuv_flux_w_m2": null,
-        "generic_integrated_xuv_dose_j_m2": null,
-        "hostname": "GJ 180",
-        "integrated_lost_earth_masses": null,
-        "label": "SCENARIO",
-        "pl_name": "GJ 180 c",
-        "planet_mass_basis": "minimum_mass_scenario",
-        "stellar_age_gyr": null,
-        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
-      },
-      {
         "bolometric_insolation_earth": 1.1,
         "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-        "earth2_rank": 58,
+        "earth2_rank": 57,
         "escape_status": "energy_limited_scenario_ensemble",
         "generic_current_xuv_flux_w_m2": {
           "maximum": 2.727109311740891,
@@ -12947,6 +12932,21 @@
         "planet_mass_basis": "minimum_mass_scenario",
         "stellar_age_gyr": 4.94,
         "xuv_history_status": "bounded_age_activity_scenarios"
+      },
+      {
+        "bolometric_insolation_earth": 0.7812,
+        "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+        "earth2_rank": 58,
+        "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+        "generic_current_xuv_flux_w_m2": null,
+        "generic_integrated_xuv_dose_j_m2": null,
+        "hostname": "GJ 180",
+        "integrated_lost_earth_masses": null,
+        "label": "SCENARIO",
+        "pl_name": "GJ 180 c",
+        "planet_mass_basis": "minimum_mass_scenario",
+        "stellar_age_gyr": null,
+        "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux"
       },
       {
         "bolometric_insolation_earth": 1.62,
@@ -14135,15 +14135,15 @@
         "hz_model_probability_max": null,
         "hz_model_probability_min": null,
         "hz_model_probability_range": null,
-        "index": 658.0,
+        "index": 47.0,
         "label": "MODEL-SENSITIVITY",
         "legacy_rank_max": 2.0,
         "legacy_rank_min": 1.0,
         "legacy_rank_span": 1.0,
-        "p_rocky_model_max": 0.9478464369,
-        "p_rocky_model_min": 0.9478464369,
-        "p_rocky_model_range": null,
-        "pl_name": "Proxima Cen b"
+        "p_rocky_model_max": 0.937,
+        "p_rocky_model_min": 0.5562038893,
+        "p_rocky_model_range": 0.3807961107,
+        "pl_name": "GJ 1061 d"
       },
       {
         "climate_status": "undetermined",
@@ -14155,15 +14155,15 @@
         "hz_model_probability_max": null,
         "hz_model_probability_min": null,
         "hz_model_probability_range": null,
-        "index": 47.0,
+        "index": 658.0,
         "label": "MODEL-SENSITIVITY",
         "legacy_rank_max": 2.0,
         "legacy_rank_min": 1.0,
         "legacy_rank_span": 1.0,
-        "p_rocky_model_max": 0.937,
-        "p_rocky_model_min": 0.5562038893,
-        "p_rocky_model_range": 0.3807961107,
-        "pl_name": "GJ 1061 d"
+        "p_rocky_model_max": 0.9478464369,
+        "p_rocky_model_min": 0.9478464369,
+        "p_rocky_model_range": null,
+        "pl_name": "Proxima Cen b"
       },
       {
         "climate_status": "undetermined",
@@ -14237,9 +14237,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 136.0,
+        "legacy_rank_max": 128.0,
         "legacy_rank_min": 5.0,
-        "legacy_rank_span": 131.0,
+        "legacy_rank_span": 123.0,
         "p_rocky_model_max": 0.9184727982,
         "p_rocky_model_min": 0.9184727982,
         "p_rocky_model_range": null,
@@ -14257,9 +14257,9 @@
         "hz_model_probability_range": null,
         "index": 44.0,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 27.0,
+        "legacy_rank_max": 26.0,
         "legacy_rank_min": 7.0,
-        "legacy_rank_span": 20.0,
+        "legacy_rank_span": 19.0,
         "p_rocky_model_max": 0.92414182,
         "p_rocky_model_min": 0.92414182,
         "p_rocky_model_range": null,
@@ -14277,9 +14277,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 167.0,
+        "legacy_rank_max": 168.0,
         "legacy_rank_min": 8.0,
-        "legacy_rank_span": 159.0,
+        "legacy_rank_span": 160.0,
         "p_rocky_model_max": 0.7227597426,
         "p_rocky_model_min": 0.7227597426,
         "p_rocky_model_range": null,
@@ -14297,9 +14297,9 @@
         "hz_model_probability_range": null,
         "index": 135.0,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 106.0,
+        "legacy_rank_max": 105.0,
         "legacy_rank_min": 9.0,
-        "legacy_rank_span": 97.0,
+        "legacy_rank_span": 96.0,
         "p_rocky_model_max": 0.6791786992,
         "p_rocky_model_min": 0.6791786992,
         "p_rocky_model_range": null,
@@ -14317,11 +14317,11 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 94.0,
+        "legacy_rank_max": 79.0,
         "legacy_rank_min": 7.0,
-        "legacy_rank_span": 87.0,
-        "p_rocky_model_max": 0.9301641549,
-        "p_rocky_model_min": 0.9301641549,
+        "legacy_rank_span": 72.0,
+        "p_rocky_model_max": 0.9049589706,
+        "p_rocky_model_min": 0.9049589706,
         "p_rocky_model_range": null,
         "pl_name": "TOI-700 d"
       },
@@ -14337,9 +14337,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 114.0,
+        "legacy_rank_max": 118.0,
         "legacy_rank_min": 11.0,
-        "legacy_rank_span": 103.0,
+        "legacy_rank_span": 107.0,
         "p_rocky_model_max": 0.7877446359,
         "p_rocky_model_min": 0.7877446359,
         "p_rocky_model_range": null,
@@ -14357,9 +14357,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 314.0,
-        "legacy_rank_min": 12.0,
-        "legacy_rank_span": 302.0,
+        "legacy_rank_max": 336.0,
+        "legacy_rank_min": 13.0,
+        "legacy_rank_span": 323.0,
         "p_rocky_model_max": 0.8894838552,
         "p_rocky_model_min": 0.8894838552,
         "p_rocky_model_range": null,
@@ -14377,9 +14377,9 @@
         "hz_model_probability_range": null,
         "index": 134.0,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 388.0,
+        "legacy_rank_max": 377.0,
         "legacy_rank_min": 14.0,
-        "legacy_rank_span": 374.0,
+        "legacy_rank_span": 363.0,
         "p_rocky_model_max": 0.6791786992,
         "p_rocky_model_min": 0.6791786992,
         "p_rocky_model_range": null,
@@ -14397,9 +14397,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 461.0,
+        "legacy_rank_max": 432.0,
         "legacy_rank_min": 14.0,
-        "legacy_rank_span": 447.0,
+        "legacy_rank_span": 418.0,
         "p_rocky_model_max": 0.5614749951,
         "p_rocky_model_min": 0.5614749951,
         "p_rocky_model_range": null,
@@ -14437,9 +14437,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 384.0,
+        "legacy_rank_max": 383.0,
         "legacy_rank_min": 16.0,
-        "legacy_rank_span": 368.0,
+        "legacy_rank_span": 367.0,
         "p_rocky_model_max": 0.4255574832,
         "p_rocky_model_min": 0.4255574832,
         "p_rocky_model_range": null,
@@ -14457,9 +14457,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 600.0,
-        "legacy_rank_min": 11.0,
-        "legacy_rank_span": 589.0,
+        "legacy_rank_max": 601.0,
+        "legacy_rank_min": 10.0,
+        "legacy_rank_span": 591.0,
         "p_rocky_model_max": 0.7174977482,
         "p_rocky_model_min": 0.7174977482,
         "p_rocky_model_range": null,
@@ -14477,9 +14477,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 777.0,
+        "legacy_rank_max": 750.0,
         "legacy_rank_min": 18.0,
-        "legacy_rank_span": 759.0,
+        "legacy_rank_span": 732.0,
         "p_rocky_model_max": 0.4935848434,
         "p_rocky_model_min": 0.4935848434,
         "p_rocky_model_range": null,
@@ -14497,9 +14497,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 238.0,
-        "legacy_rank_min": 14.0,
-        "legacy_rank_span": 224.0,
+        "legacy_rank_max": 224.0,
+        "legacy_rank_min": 12.0,
+        "legacy_rank_span": 212.0,
         "p_rocky_model_max": 0.8021838886,
         "p_rocky_model_min": 0.8021838886,
         "p_rocky_model_range": null,
@@ -14517,9 +14517,9 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 589.0,
+        "legacy_rank_max": 583.0,
         "legacy_rank_min": 20.0,
-        "legacy_rank_span": 569.0,
+        "legacy_rank_span": 563.0,
         "p_rocky_model_max": 0.2872714789,
         "p_rocky_model_min": 0.2872714789,
         "p_rocky_model_range": null,
@@ -14528,6 +14528,26 @@
       {
         "climate_status": "undetermined",
         "earth2_rank": 21.0,
+        "hwo_accessibility_max": null,
+        "hwo_accessibility_min": null,
+        "hwo_accessibility_range": null,
+        "hydrogen_to_earth_air_signal_ratio": 12.59565217,
+        "hz_model_probability_max": null,
+        "hz_model_probability_min": null,
+        "hz_model_probability_range": null,
+        "index": null,
+        "label": "MODEL-SENSITIVITY",
+        "legacy_rank_max": 1622.0,
+        "legacy_rank_min": 22.0,
+        "legacy_rank_span": 1600.0,
+        "p_rocky_model_max": 0.332684057,
+        "p_rocky_model_min": 0.332684057,
+        "p_rocky_model_range": null,
+        "pl_name": "Kepler-296 f"
+      },
+      {
+        "climate_status": "undetermined",
+        "earth2_rank": 22.0,
         "hwo_accessibility_max": 0.017578125,
         "hwo_accessibility_min": 0.0,
         "hwo_accessibility_range": 0.017578125,
@@ -14537,9 +14557,9 @@
         "hz_model_probability_range": null,
         "index": 70.0,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 1093.0,
-        "legacy_rank_min": 22.0,
-        "legacy_rank_span": 1071.0,
+        "legacy_rank_max": 1100.0,
+        "legacy_rank_min": 21.0,
+        "legacy_rank_span": 1079.0,
         "p_rocky_model_max": 0.2689414214,
         "p_rocky_model_min": 0.2689414214,
         "p_rocky_model_range": null,
@@ -14547,7 +14567,7 @@
       },
       {
         "climate_status": "undetermined",
-        "earth2_rank": 22.0,
+        "earth2_rank": 23.0,
         "hwo_accessibility_max": null,
         "hwo_accessibility_min": null,
         "hwo_accessibility_range": null,
@@ -14557,17 +14577,17 @@
         "hz_model_probability_range": null,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 1626.0,
-        "legacy_rank_min": 23.0,
-        "legacy_rank_span": 1603.0,
-        "p_rocky_model_max": 0.332684057,
-        "p_rocky_model_min": 0.332684057,
+        "legacy_rank_max": 1102.0,
+        "legacy_rank_min": 25.0,
+        "legacy_rank_span": 1077.0,
+        "p_rocky_model_max": 0.897696577,
+        "p_rocky_model_min": 0.897696577,
         "p_rocky_model_range": null,
-        "pl_name": "Kepler-296 f"
+        "pl_name": "Kepler-438 b"
       },
       {
         "climate_status": "inferred",
-        "earth2_rank": 23.0,
+        "earth2_rank": 24.0,
         "hwo_accessibility_max": null,
         "hwo_accessibility_min": null,
         "hwo_accessibility_range": null,
@@ -14577,33 +14597,13 @@
         "hz_model_probability_range": 0.9441860465,
         "index": null,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 1426.0,
-        "legacy_rank_min": 27.0,
-        "legacy_rank_span": 1399.0,
+        "legacy_rank_max": 1432.0,
+        "legacy_rank_min": 26.0,
+        "legacy_rank_span": 1406.0,
         "p_rocky_model_max": 0.4599057854,
         "p_rocky_model_min": 0.4599057854,
         "p_rocky_model_range": null,
         "pl_name": "Kepler-452 b"
-      },
-      {
-        "climate_status": "undetermined",
-        "earth2_rank": 24.0,
-        "hwo_accessibility_max": null,
-        "hwo_accessibility_min": null,
-        "hwo_accessibility_range": null,
-        "hydrogen_to_earth_air_signal_ratio": 12.59565217,
-        "hz_model_probability_max": null,
-        "hz_model_probability_min": null,
-        "hz_model_probability_range": null,
-        "index": null,
-        "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 1108.0,
-        "legacy_rank_min": 25.0,
-        "legacy_rank_span": 1083.0,
-        "p_rocky_model_max": 0.897696577,
-        "p_rocky_model_min": 0.897696577,
-        "p_rocky_model_range": null,
-        "pl_name": "Kepler-438 b"
       },
       {
         "climate_status": "undetermined",
@@ -14617,9 +14617,9 @@
         "hz_model_probability_range": null,
         "index": 133.0,
         "label": "MODEL-SENSITIVITY",
-        "legacy_rank_max": 628.0,
+        "legacy_rank_max": 626.0,
         "legacy_rank_min": 28.0,
-        "legacy_rank_span": 600.0,
+        "legacy_rank_span": 598.0,
         "p_rocky_model_max": 0.2994328575,
         "p_rocky_model_min": 0.2994328575,
         "p_rocky_model_range": null,
@@ -14733,17 +14733,17 @@
     },
     "schema_version": "1.0",
     "source_hashes": {
-      "results/atmosphere/observability_scenarios.csv": "edf93711c6828b70acfde9e8cdf5413a285c17bf48b71ab1bfaf1be653152261",
-      "results/candidate_ranking.parquet": "bb0acea2ab8fc789d74811226137b107c9860e81b39d7a983b6ba19efa041740",
-      "results/climate/continuous_hz.csv": "1385ae23f088965ee75755777c7fc95946933c7a0c0539542fe714bcf2f1c68a",
-      "results/composition/bulk_composition_ensemble.csv": "127404a7c65e92cd3d4f4feb761c1a4f33f629d660b13e4c86081d00d9bbc64a",
-      "results/hwo/known_planet_accessibility.csv": "8de01ef5f92198bee77d76737e05a459695b5ff2c383ee0f6228c3909d78034f"
+      "results/atmosphere/observability_scenarios.csv": "d1b994842ec64a299cef4cae49ee2a2d85e83e0b8756543fed938b618d74b037",
+      "results/candidate_ranking.parquet": "3b450849af86082ad7aaf851e9700e91aa86ff8164e15be95323e6d46a5db343",
+      "results/climate/continuous_hz.csv": "be93c05f1db303adb3b96cb2c9856eb3173383a660d85024e07ab14f010755b7",
+      "results/composition/bulk_composition_ensemble.csv": "0a830ab74b0ca197c5679a6ad83eacf61f062eddfbf57dece383c4037cbcd84a",
+      "results/hwo/known_planet_accessibility.csv": "dc1930db8af2972fbdffb7ff7b7f651c3b31aba30feb6da401584f87a0522026"
     },
     "venus_conservative_hz_probability": 0.0,
     "venus_esi": 0.8738382590111385,
     "venus_falsification": "ESI is high despite a hostile surface; similarity cannot establish habitability"
   },
-  "generated_utc": "2026-09-23T09:24:08Z",
+  "generated_utc": "2026-09-26T09:26:33Z",
   "hwo": {
     "catalogue": {
       "eeid_supported": 12682,
@@ -16251,7 +16251,7 @@
       },
       {
         "action_id": "stellar_radius_precision_requirement",
-        "expected_information_gain_bits": 1.745285065223101,
+        "expected_information_gain_bits": 0.928871092230033,
         "pl_name": "TOI-700 d"
       },
       {
@@ -16337,24 +16337,24 @@
           }
         },
         {
-          "break_even_absolute_correlation": 0.9794218124875601,
+          "break_even_absolute_correlation": 0.9222942575532934,
           "break_even_status": "reachable_only_above_ceiling",
-          "direct_planet_radius_information_bits": 1.4938117200831147,
+          "direct_planet_radius_information_bits": 0.6902835606465787,
           "earth2_rank": 10,
           "label": "SENSITIVITY",
           "objective": "planet radius uncertainty",
           "pl_name": "TOI-700 d",
-          "stellar_radius_own_parameter_information_bits": 1.745285065223101,
-          "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.966004299322872,
+          "stellar_radius_own_parameter_information_bits": 0.928871092230033,
+          "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.6370460856321172,
           "transfer_bits_by_absolute_correlation": {
             "0.00": 0.0,
-            "0.25": 0.04228888538518229,
-            "0.50": 0.18643754388822337,
-            "0.75": 0.5181971186301997,
-            "0.90": 0.966004299322872,
-            "0.95": 1.2458623741938464,
-            "0.99": 1.6115015858498019,
-            "1.00": 1.7452850652231002
+            "0.25": 0.033406896807027416,
+            "0.50": 0.14405263745013658,
+            "0.75": 0.3773153289603305,
+            "0.90": 0.6370460856321172,
+            "0.95": 0.7645223563370485,
+            "0.99": 0.8921490919052941,
+            "1.00": 0.9288710922300328
           }
         },
         {
@@ -16508,7 +16508,7 @@
           "break_even_absolute_correlation": 0.9952250259134633,
           "break_even_status": "reachable_only_above_ceiling",
           "direct_planet_radius_information_bits": 3.0927206953251827,
-          "earth2_rank": 22,
+          "earth2_rank": 21,
           "label": "SENSITIVITY",
           "objective": "planet radius uncertainty",
           "pl_name": "Kepler-296 f",
@@ -16526,31 +16526,10 @@
           }
         },
         {
-          "break_even_absolute_correlation": 0.9929197547830382,
-          "break_even_status": "reachable_only_above_ceiling",
-          "direct_planet_radius_information_bits": 2.7377895322293657,
-          "earth2_rank": 23,
-          "label": "SENSITIVITY",
-          "objective": "planet radius uncertainty",
-          "pl_name": "Kepler-452 b",
-          "stellar_radius_own_parameter_information_bits": 3.44054859880985,
-          "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.172335935300108,
-          "transfer_bits_by_absolute_correlation": {
-            "0.00": 0.0,
-            "0.25": 0.04614683963648183,
-            "0.50": 0.20548173906532827,
-            "0.75": 0.5884969956459336,
-            "0.90": 1.172335935300108,
-            "0.95": 1.6246950006960839,
-            "0.99": 2.573701092429199,
-            "1.00": 3.4405485988098468
-          }
-        },
-        {
           "break_even_absolute_correlation": 0.9963630386142467,
           "break_even_status": "reachable_only_above_ceiling",
           "direct_planet_radius_information_bits": 2.894068882927501,
-          "earth2_rank": 24,
+          "earth2_rank": 23,
           "label": "SENSITIVITY",
           "objective": "planet radius uncertainty",
           "pl_name": "Kepler-438 b",
@@ -16565,6 +16544,27 @@
             "0.95": 1.609796730812172,
             "0.99": 2.5152107912319894,
             "1.00": 3.2587619017086378
+          }
+        },
+        {
+          "break_even_absolute_correlation": 0.9929197547830382,
+          "break_even_status": "reachable_only_above_ceiling",
+          "direct_planet_radius_information_bits": 2.7377895322293657,
+          "earth2_rank": 24,
+          "label": "SENSITIVITY",
+          "objective": "planet radius uncertainty",
+          "pl_name": "Kepler-452 b",
+          "stellar_radius_own_parameter_information_bits": 3.44054859880985,
+          "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 1.172335935300108,
+          "transfer_bits_by_absolute_correlation": {
+            "0.00": 0.0,
+            "0.25": 0.04614683963648183,
+            "0.50": 0.20548173906532827,
+            "0.75": 0.5884969956459336,
+            "0.90": 1.172335935300108,
+            "0.95": 1.6246950006960839,
+            "0.99": 2.573701092429199,
+            "1.00": 3.4405485988098468
           }
         }
       ],
@@ -16587,120 +16587,6 @@
         "action_id": "mass_precision_requirement",
         "cost_or_time": "not_modelled",
         "earth2_rank": 1.0,
-        "expected_information_gain_bits": 0.1734256157,
-        "expected_information_gain_nats": 0.1202094766,
-        "expected_posterior_sigma": 0.04877040669,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
-        "observation_model": "A future independent Gaussian mass-like measurement.",
-        "observation_sigma": 0.1055,
-        "parameter": "planet mass or minimum mass",
-        "parameter_value": 1.055,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": 0.055,
-        "status": "synthetic_linear_gaussian",
-        "unit": "Earth masses",
-        "within_target_information_rank": 2.0
-      },
-      {
-        "action_id": "radius_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 1.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
-        "observation_model": "A future independent Gaussian radius measurement.",
-        "observation_sigma": null,
-        "parameter": "planet radius",
-        "parameter_value": 1.02,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "Earth radii",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "stellar_radius_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 1.0,
-        "expected_information_gain_bits": 2.110164977,
-        "expected_information_gain_nats": 1.462654905,
-        "expected_posterior_sigma": 0.004864031073,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
-        "observation_model": "A future independent Gaussian stellar-radius measurement.",
-        "observation_sigma": 0.005,
-        "parameter": "stellar radius",
-        "parameter_value": 0.141,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": 0.021,
-        "status": "synthetic_linear_gaussian",
-        "unit": "Solar radii",
-        "within_target_information_rank": 1.0
-      },
-      {
-        "action_id": "stellar_age_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 1.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
-        "observation_model": "A future independent Gaussian stellar-age constraint.",
-        "observation_sigma": null,
-        "parameter": "stellar age",
-        "parameter_value": null,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "Gyr",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "eccentricity_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 1.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "Gaussian sigma 0.03",
-        "observation_model": "A local Gaussian approximation to a bounded eccentricity posterior.",
-        "observation_sigma": null,
-        "parameter": "orbital eccentricity",
-        "parameter_value": 0.0,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "dimensionless",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "inclination_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 1.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "Gaussian sigma 0.5 degrees",
-        "observation_model": "A future independent astrometric or transit-geometry constraint.",
-        "observation_sigma": null,
-        "parameter": "orbital inclination",
-        "parameter_value": null,
-        "pl_name": "Proxima Cen b",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "degrees",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "mass_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
         "expected_information_gain_bits": 0.5990638576,
         "expected_information_gain_nats": 0.4152394239,
         "expected_posterior_sigma": 0.1254346177,
@@ -16719,7 +16605,7 @@
       {
         "action_id": "radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -16738,7 +16624,7 @@
       {
         "action_id": "stellar_radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "expected_information_gain_bits": 0.5,
         "expected_information_gain_nats": 0.3465735903,
         "expected_posterior_sigma": 0.003535533906,
@@ -16757,7 +16643,7 @@
       {
         "action_id": "stellar_age_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "expected_information_gain_bits": 0.08659635764,
         "expected_information_gain_nats": 0.06002402114,
         "expected_posterior_sigma": 0.4708709558,
@@ -16776,7 +16662,7 @@
       {
         "action_id": "eccentricity_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "expected_information_gain_bits": 0.6197329673,
         "expected_information_gain_nats": 0.429566159,
         "expected_posterior_sigma": 0.02277769807,
@@ -16795,7 +16681,7 @@
       {
         "action_id": "inclination_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 2.0,
+        "earth2_rank": 1.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -16806,6 +16692,120 @@
         "parameter": "orbital inclination",
         "parameter_value": null,
         "pl_name": "GJ 1061 d",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "degrees",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "mass_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": 0.1734256157,
+        "expected_information_gain_nats": 0.1202094766,
+        "expected_posterior_sigma": 0.04877040669,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
+        "observation_model": "A future independent Gaussian mass-like measurement.",
+        "observation_sigma": 0.1055,
+        "parameter": "planet mass or minimum mass",
+        "parameter_value": 1.055,
+        "pl_name": "Proxima Cen b",
+        "prior_sigma": 0.055,
+        "status": "synthetic_linear_gaussian",
+        "unit": "Earth masses",
+        "within_target_information_rank": 2.0
+      },
+      {
+        "action_id": "radius_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
+        "observation_model": "A future independent Gaussian radius measurement.",
+        "observation_sigma": null,
+        "parameter": "planet radius",
+        "parameter_value": 1.02,
+        "pl_name": "Proxima Cen b",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "Earth radii",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "stellar_radius_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": 2.110164977,
+        "expected_information_gain_nats": 1.462654905,
+        "expected_posterior_sigma": 0.004864031073,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
+        "observation_model": "A future independent Gaussian stellar-radius measurement.",
+        "observation_sigma": 0.005,
+        "parameter": "stellar radius",
+        "parameter_value": 0.141,
+        "pl_name": "Proxima Cen b",
+        "prior_sigma": 0.021,
+        "status": "synthetic_linear_gaussian",
+        "unit": "Solar radii",
+        "within_target_information_rank": 1.0
+      },
+      {
+        "action_id": "stellar_age_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
+        "observation_model": "A future independent Gaussian stellar-age constraint.",
+        "observation_sigma": null,
+        "parameter": "stellar age",
+        "parameter_value": null,
+        "pl_name": "Proxima Cen b",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "Gyr",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "eccentricity_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "Gaussian sigma 0.03",
+        "observation_model": "A local Gaussian approximation to a bounded eccentricity posterior.",
+        "observation_sigma": null,
+        "parameter": "orbital eccentricity",
+        "parameter_value": 0.0,
+        "pl_name": "Proxima Cen b",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "dimensionless",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "inclination_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 2.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "Gaussian sigma 0.5 degrees",
+        "observation_model": "A future independent astrometric or transit-geometry constraint.",
+        "observation_sigma": null,
+        "parameter": "orbital inclination",
+        "parameter_value": null,
+        "pl_name": "Proxima Cen b",
         "prior_sigma": null,
         "status": "undetermined_missing_measured_value_or_uncertainty",
         "unit": "degrees",
@@ -17621,7 +17621,7 @@
         "observation_model": "A future independent Gaussian mass-like measurement.",
         "observation_sigma": null,
         "parameter": "planet mass or minimum mass",
-        "parameter_value": 1.25,
+        "parameter_value": 1.58,
         "pl_name": "TOI-700 d",
         "prior_sigma": null,
         "status": "undetermined_missing_measured_value_or_uncertainty",
@@ -17632,17 +17632,17 @@
         "action_id": "radius_precision_requirement",
         "cost_or_time": "not_modelled",
         "earth2_rank": 10.0,
-        "expected_information_gain_bits": 1.49381172,
-        "expected_information_gain_nats": 1.035431382,
-        "expected_posterior_sigma": 0.02006163443,
+        "expected_information_gain_bits": 0.6902835606,
+        "expected_information_gain_nats": 0.4784681038,
+        "expected_posterior_sigma": 0.01797222887,
         "label": "SIMULATED",
         "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
         "observation_model": "A future independent Gaussian radius measurement.",
-        "observation_sigma": 0.02146,
+        "observation_sigma": 0.0229,
         "parameter": "planet radius",
-        "parameter_value": 1.073,
+        "parameter_value": 1.145,
         "pl_name": "TOI-700 d",
-        "prior_sigma": 0.0565,
+        "prior_sigma": 0.029,
         "status": "synthetic_linear_gaussian",
         "unit": "Earth radii",
         "within_target_information_rank": 2.0
@@ -17651,17 +17651,17 @@
         "action_id": "stellar_radius_precision_requirement",
         "cost_or_time": "not_modelled",
         "earth2_rank": 10.0,
-        "expected_information_gain_bits": 1.745285065,
-        "expected_information_gain_nats": 1.209739422,
-        "expected_posterior_sigma": 0.00477239989,
+        "expected_information_gain_bits": 0.9288710922,
+        "expected_information_gain_nats": 0.6438443787,
+        "expected_posterior_sigma": 0.004254680551,
         "label": "SIMULATED",
         "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
         "observation_model": "A future independent Gaussian stellar-radius measurement.",
         "observation_sigma": 0.005,
         "parameter": "stellar radius",
-        "parameter_value": 0.421,
+        "parameter_value": 0.4104,
         "pl_name": "TOI-700 d",
-        "prior_sigma": 0.016,
+        "prior_sigma": 0.0081,
         "status": "synthetic_linear_gaussian",
         "unit": "Solar radii",
         "within_target_information_rank": 1.0
@@ -17708,17 +17708,17 @@
         "action_id": "inclination_precision_requirement",
         "cost_or_time": "not_modelled",
         "earth2_rank": 10.0,
-        "expected_information_gain_bits": 0.03409462939,
-        "expected_information_gain_nats": 0.02363259623,
-        "expected_posterior_sigma": 0.1074308913,
+        "expected_information_gain_bits": 0.01690776869,
+        "expected_information_gain_nats": 0.0117195722,
+        "expected_posterior_sigma": 0.07610286026,
         "label": "SIMULATED",
         "noise_rule": "Gaussian sigma 0.5 degrees",
         "observation_model": "A future independent astrometric or transit-geometry constraint.",
         "observation_sigma": 0.5,
         "parameter": "orbital inclination",
-        "parameter_value": 89.8,
+        "parameter_value": 89.83,
         "pl_name": "TOI-700 d",
-        "prior_sigma": 0.11,
+        "prior_sigma": 0.077,
         "status": "synthetic_linear_gaussian",
         "unit": "degrees",
         "within_target_information_rank": 4.0
@@ -18867,120 +18867,6 @@
         "action_id": "mass_precision_requirement",
         "cost_or_time": "not_modelled",
         "earth2_rank": 21.0,
-        "expected_information_gain_bits": 1.18167412,
-        "expected_information_gain_nats": 0.8190740844,
-        "expected_posterior_sigma": 0.3482633203,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
-        "observation_model": "A future independent Gaussian mass-like measurement.",
-        "observation_sigma": 0.388,
-        "parameter": "planet mass or minimum mass",
-        "parameter_value": 3.88,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": 0.79,
-        "status": "synthetic_linear_gaussian",
-        "unit": "Earth masses",
-        "within_target_information_rank": 2.0
-      },
-      {
-        "action_id": "radius_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 21.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
-        "observation_model": "A future independent Gaussian radius measurement.",
-        "observation_sigma": null,
-        "parameter": "planet radius",
-        "parameter_value": 1.8,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "Earth radii",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "stellar_radius_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 21.0,
-        "expected_information_gain_bits": 1.160964047,
-        "expected_information_gain_nats": 0.8047189562,
-        "expected_posterior_sigma": 0.004472135955,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
-        "observation_model": "A future independent Gaussian stellar-radius measurement.",
-        "observation_sigma": 0.005,
-        "parameter": "stellar radius",
-        "parameter_value": 0.36,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": 0.01,
-        "status": "synthetic_linear_gaussian",
-        "unit": "Solar radii",
-        "within_target_information_rank": 3.0
-      },
-      {
-        "action_id": "stellar_age_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 21.0,
-        "expected_information_gain_bits": 1.832830857,
-        "expected_information_gain_nats": 1.270421541,
-        "expected_posterior_sigma": 1.305316681,
-        "label": "SIMULATED",
-        "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
-        "observation_model": "A future independent Gaussian stellar-age constraint.",
-        "observation_sigma": 1.36,
-        "parameter": "stellar age",
-        "parameter_value": 6.8,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": 4.65,
-        "status": "synthetic_linear_gaussian",
-        "unit": "Gyr",
-        "within_target_information_rank": 1.0
-      },
-      {
-        "action_id": "eccentricity_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 21.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "Gaussian sigma 0.03",
-        "observation_model": "A local Gaussian approximation to a bounded eccentricity posterior.",
-        "observation_sigma": null,
-        "parameter": "orbital eccentricity",
-        "parameter_value": 0.0,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "dimensionless",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "inclination_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 21.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
-        "label": "SIMULATED",
-        "noise_rule": "Gaussian sigma 0.5 degrees",
-        "observation_model": "A future independent astrometric or transit-geometry constraint.",
-        "observation_sigma": null,
-        "parameter": "orbital inclination",
-        "parameter_value": null,
-        "pl_name": "GJ 251 c",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
-        "unit": "degrees",
-        "within_target_information_rank": null
-      },
-      {
-        "action_id": "mass_precision_requirement",
-        "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -18999,7 +18885,7 @@
       {
         "action_id": "radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
+        "earth2_rank": 21.0,
         "expected_information_gain_bits": 3.092720695,
         "expected_information_gain_nats": 2.14371063,
         "expected_posterior_sigma": 0.03575181891,
@@ -19018,7 +18904,7 @@
       {
         "action_id": "stellar_radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
+        "earth2_rank": 21.0,
         "expected_information_gain_bits": 3.938534681,
         "expected_information_gain_nats": 2.72998421,
         "expected_posterior_sigma": 0.004989354442,
@@ -19037,7 +18923,7 @@
       {
         "action_id": "stellar_age_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
+        "earth2_rank": 21.0,
         "expected_information_gain_bits": 1.650626252,
         "expected_information_gain_nats": 1.144126932,
         "expected_posterior_sigma": 0.7962546752,
@@ -19056,7 +18942,7 @@
       {
         "action_id": "eccentricity_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
+        "earth2_rank": 21.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -19075,7 +18961,7 @@
       {
         "action_id": "inclination_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 22.0,
+        "earth2_rank": 21.0,
         "expected_information_gain_bits": 0.02055138591,
         "expected_information_gain_nats": 0.0142451352,
         "expected_posterior_sigma": 0.08379774697,
@@ -19094,83 +18980,83 @@
       {
         "action_id": "mass_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
-        "expected_information_gain_bits": null,
-        "expected_information_gain_nats": null,
-        "expected_posterior_sigma": null,
+        "earth2_rank": 22.0,
+        "expected_information_gain_bits": 1.18167412,
+        "expected_information_gain_nats": 0.8190740844,
+        "expected_posterior_sigma": 0.3482633203,
         "label": "SIMULATED",
         "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
         "observation_model": "A future independent Gaussian mass-like measurement.",
-        "observation_sigma": null,
+        "observation_sigma": 0.388,
         "parameter": "planet mass or minimum mass",
-        "parameter_value": 3.29,
-        "pl_name": "Kepler-452 b",
-        "prior_sigma": null,
-        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "parameter_value": 3.88,
+        "pl_name": "GJ 251 c",
+        "prior_sigma": 0.79,
+        "status": "synthetic_linear_gaussian",
         "unit": "Earth masses",
-        "within_target_information_rank": null
+        "within_target_information_rank": 2.0
       },
       {
         "action_id": "radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
-        "expected_information_gain_bits": 2.737789532,
-        "expected_information_gain_nats": 1.897691095,
-        "expected_posterior_sigma": 0.03223158695,
+        "earth2_rank": 22.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
         "label": "SIMULATED",
         "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
         "observation_model": "A future independent Gaussian radius measurement.",
-        "observation_sigma": 0.0326,
+        "observation_sigma": null,
         "parameter": "planet radius",
-        "parameter_value": 1.63,
-        "pl_name": "Kepler-452 b",
-        "prior_sigma": 0.215,
-        "status": "synthetic_linear_gaussian",
+        "parameter_value": 1.8,
+        "pl_name": "GJ 251 c",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
         "unit": "Earth radii",
-        "within_target_information_rank": 2.0
+        "within_target_information_rank": null
       },
       {
         "action_id": "stellar_radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
-        "expected_information_gain_bits": 3.440548599,
-        "expected_information_gain_nats": 2.384806561,
-        "expected_posterior_sigma": 0.01105281539,
+        "earth2_rank": 22.0,
+        "expected_information_gain_bits": 1.160964047,
+        "expected_information_gain_nats": 0.8047189562,
+        "expected_posterior_sigma": 0.004472135955,
         "label": "SIMULATED",
         "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
         "observation_model": "A future independent Gaussian stellar-radius measurement.",
-        "observation_sigma": 0.0111,
+        "observation_sigma": 0.005,
         "parameter": "stellar radius",
-        "parameter_value": 1.11,
-        "pl_name": "Kepler-452 b",
-        "prior_sigma": 0.12,
+        "parameter_value": 0.36,
+        "pl_name": "GJ 251 c",
+        "prior_sigma": 0.01,
         "status": "synthetic_linear_gaussian",
         "unit": "Solar radii",
-        "within_target_information_rank": 1.0
+        "within_target_information_rank": 3.0
       },
       {
         "action_id": "stellar_age_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
-        "expected_information_gain_bits": 0.9587689199,
-        "expected_information_gain_nats": 0.6645679736,
-        "expected_posterior_sigma": 1.028991511,
+        "earth2_rank": 22.0,
+        "expected_information_gain_bits": 1.832830857,
+        "expected_information_gain_nats": 1.270421541,
+        "expected_posterior_sigma": 1.305316681,
         "label": "SIMULATED",
         "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
         "observation_model": "A future independent Gaussian stellar-age constraint.",
-        "observation_sigma": 1.2,
+        "observation_sigma": 1.36,
         "parameter": "stellar age",
-        "parameter_value": 6.0,
-        "pl_name": "Kepler-452 b",
-        "prior_sigma": 2.0,
+        "parameter_value": 6.8,
+        "pl_name": "GJ 251 c",
+        "prior_sigma": 4.65,
         "status": "synthetic_linear_gaussian",
         "unit": "Gyr",
-        "within_target_information_rank": 3.0
+        "within_target_information_rank": 1.0
       },
       {
         "action_id": "eccentricity_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
+        "earth2_rank": 22.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -19180,7 +19066,7 @@
         "observation_sigma": null,
         "parameter": "orbital eccentricity",
         "parameter_value": 0.0,
-        "pl_name": "Kepler-452 b",
+        "pl_name": "GJ 251 c",
         "prior_sigma": null,
         "status": "undetermined_missing_measured_value_or_uncertainty",
         "unit": "dimensionless",
@@ -19189,26 +19075,26 @@
       {
         "action_id": "inclination_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 23.0,
-        "expected_information_gain_bits": 0.02376151672,
-        "expected_information_gain_nats": 0.01647022832,
-        "expected_posterior_sigma": 0.09000531678,
+        "earth2_rank": 22.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
         "label": "SIMULATED",
         "noise_rule": "Gaussian sigma 0.5 degrees",
         "observation_model": "A future independent astrometric or transit-geometry constraint.",
-        "observation_sigma": 0.5,
+        "observation_sigma": null,
         "parameter": "orbital inclination",
-        "parameter_value": 89.806,
-        "pl_name": "Kepler-452 b",
-        "prior_sigma": 0.0915,
-        "status": "synthetic_linear_gaussian",
+        "parameter_value": null,
+        "pl_name": "GJ 251 c",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
         "unit": "degrees",
-        "within_target_information_rank": 4.0
+        "within_target_information_rank": null
       },
       {
         "action_id": "mass_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": null,
         "expected_information_gain_nats": null,
         "expected_posterior_sigma": null,
@@ -19227,7 +19113,7 @@
       {
         "action_id": "radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": 2.894068883,
         "expected_information_gain_nats": 2.006015687,
         "expected_posterior_sigma": 0.02219639276,
@@ -19246,7 +19132,7 @@
       {
         "action_id": "stellar_radius_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": 3.258761902,
         "expected_information_gain_nats": 2.258801624,
         "expected_posterior_sigma": 0.005171542735,
@@ -19265,7 +19151,7 @@
       {
         "action_id": "stellar_age_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": 0.3938703491,
         "expected_information_gain_nats": 0.273010122,
         "expected_posterior_sigma": 0.5708138129,
@@ -19284,7 +19170,7 @@
       {
         "action_id": "eccentricity_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": 1.254777549,
         "expected_information_gain_nats": 0.8697455203,
         "expected_posterior_sigma": 0.02723878154,
@@ -19303,7 +19189,7 @@
       {
         "action_id": "inclination_precision_requirement",
         "cost_or_time": "not_modelled",
-        "earth2_rank": 24.0,
+        "earth2_rank": 23.0,
         "expected_information_gain_bits": 0.1384567416,
         "expected_information_gain_nats": 0.09597090009,
         "expected_posterior_sigma": 0.2089528041,
@@ -19318,6 +19204,120 @@
         "status": "synthetic_linear_gaussian",
         "unit": "degrees",
         "within_target_information_rank": 5.0
+      },
+      {
+        "action_id": "mass_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.10 * measured value, 0.10 Earth masses)",
+        "observation_model": "A future independent Gaussian mass-like measurement.",
+        "observation_sigma": null,
+        "parameter": "planet mass or minimum mass",
+        "parameter_value": 3.29,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "Earth masses",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "radius_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": 2.737789532,
+        "expected_information_gain_nats": 1.897691095,
+        "expected_posterior_sigma": 0.03223158695,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.02 * measured value, 0.01 Earth radii)",
+        "observation_model": "A future independent Gaussian radius measurement.",
+        "observation_sigma": 0.0326,
+        "parameter": "planet radius",
+        "parameter_value": 1.63,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": 0.215,
+        "status": "synthetic_linear_gaussian",
+        "unit": "Earth radii",
+        "within_target_information_rank": 2.0
+      },
+      {
+        "action_id": "stellar_radius_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": 3.440548599,
+        "expected_information_gain_nats": 2.384806561,
+        "expected_posterior_sigma": 0.01105281539,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.01 * measured value, 0.005 Solar radii)",
+        "observation_model": "A future independent Gaussian stellar-radius measurement.",
+        "observation_sigma": 0.0111,
+        "parameter": "stellar radius",
+        "parameter_value": 1.11,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": 0.12,
+        "status": "synthetic_linear_gaussian",
+        "unit": "Solar radii",
+        "within_target_information_rank": 1.0
+      },
+      {
+        "action_id": "stellar_age_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": 0.9587689199,
+        "expected_information_gain_nats": 0.6645679736,
+        "expected_posterior_sigma": 1.028991511,
+        "label": "SIMULATED",
+        "noise_rule": "max(0.20 * measured value, 0.20 Gyr)",
+        "observation_model": "A future independent Gaussian stellar-age constraint.",
+        "observation_sigma": 1.2,
+        "parameter": "stellar age",
+        "parameter_value": 6.0,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": 2.0,
+        "status": "synthetic_linear_gaussian",
+        "unit": "Gyr",
+        "within_target_information_rank": 3.0
+      },
+      {
+        "action_id": "eccentricity_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": null,
+        "expected_information_gain_nats": null,
+        "expected_posterior_sigma": null,
+        "label": "SIMULATED",
+        "noise_rule": "Gaussian sigma 0.03",
+        "observation_model": "A local Gaussian approximation to a bounded eccentricity posterior.",
+        "observation_sigma": null,
+        "parameter": "orbital eccentricity",
+        "parameter_value": 0.0,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": null,
+        "status": "undetermined_missing_measured_value_or_uncertainty",
+        "unit": "dimensionless",
+        "within_target_information_rank": null
+      },
+      {
+        "action_id": "inclination_precision_requirement",
+        "cost_or_time": "not_modelled",
+        "earth2_rank": 24.0,
+        "expected_information_gain_bits": 0.02376151672,
+        "expected_information_gain_nats": 0.01647022832,
+        "expected_posterior_sigma": 0.09000531678,
+        "label": "SIMULATED",
+        "noise_rule": "Gaussian sigma 0.5 degrees",
+        "observation_model": "A future independent astrometric or transit-geometry constraint.",
+        "observation_sigma": 0.5,
+        "parameter": "orbital inclination",
+        "parameter_value": 89.806,
+        "pl_name": "Kepler-452 b",
+        "prior_sigma": 0.0915,
+        "status": "synthetic_linear_gaussian",
+        "unit": "degrees",
+        "within_target_information_rank": 4.0
       },
       {
         "action_id": "mass_precision_requirement",
@@ -19436,7 +19436,7 @@
     ],
     "schema_version": "1.0",
     "source": "results/analysis_catalogue.parquet",
-    "source_sha256": "9462b8bf3ad54dbff41f59256615e0997cf4993c8fbdeffd7d4a2fbae8d21821",
+    "source_sha256": "77d98fd777ba44becae590687d3699615a56834c0ea4b1c0fc1492601c12ad98",
     "supported_rows": 83,
     "title": "Action-specific expected information gain under declared synthetic likelihoods",
     "withheld_actions": [
@@ -19494,9 +19494,9 @@
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -19554,7 +19554,7 @@
             "label": "OBSERVED",
             "source": "data/manifests/gaia_dr3_crossmatch.json",
             "unit": "Gaia DR3 source rows",
-            "value": 4412
+            "value": 4413
           },
           {
             "evidence_id": "dr4_science_rows",
@@ -19566,9 +19566,9 @@
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -19657,9 +19657,9 @@
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -19717,10 +19717,10 @@
             "interpretation": "Published reductions whose archive facility names JWST; reductions are not merged.",
             "label": "OBSERVED",
             "secondary_unit": "unique planets",
-            "secondary_value": 101,
+            "secondary_value": 104,
             "source": "results/atmosphere/spectrum_reductions.csv",
             "unit": "separate spectrum reductions",
-            "value": 396
+            "value": 409
           },
           {
             "evidence_id": "programme_status_coverage",
@@ -19732,9 +19732,9 @@
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -19833,9 +19833,9 @@
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -19918,13 +19918,13 @@
             "label": "OBSERVED",
             "source": "data/manifests/nasa_microlensing.json",
             "unit": "NASA Archive comparison rows",
-            "value": 907
+            "value": 915
           }
         ],
         "input_hashes": {
-          "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-          "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-          "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
+          "data/manifests/gaia_dr3_crossmatch.json": "0d9f793b27ffa657a93b9ebfc7241640ef93f290c06bf4b8fd6412eb4383801c",
+          "data/manifests/nasa_microlensing.json": "6fa3de2d355a862351df94a442b105d7170e2e18d9be2e9461f9677c336a7fc7",
+          "results/atmosphere/spectrum_reductions.csv": "9b7a912d71bb1de464238096ccf45b6d4dbff90b0958d7644e54da7cc64d22f7",
           "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
         },
         "mission": {
@@ -20118,57 +20118,57 @@
       },
       {
         "interval": [
-          29.12159709226845,
-          184.7672114887792
+          29.12159709227018,
+          184.76721148877508
         ],
         "label": "MODEL-INFERRED",
         "stage": "shape-weighted exposure",
         "unit": "effective stars",
-        "value": 78.27805927355968
+        "value": 78.27805927356056
       },
       {
         "interval": [
-          0.26686720405933745,
-          1.918078759592883
+          0.26686720405934117,
+          1.9180787595927846
         ],
         "label": "MODEL-INFERRED",
         "stage": "intrinsic occurrence",
         "unit": "planets per selected star",
-        "value": 0.6920518850791126
+        "value": 0.6920518850791204
       }
     ],
     "intrinsic_posterior": {
       "earth_20_percent_box_projection": {
-        "mean": 0.04939850738061658,
-        "p025": 0.009594908780307465,
-        "p16": 0.020077580589591738,
-        "p50": 0.04107453752824276,
-        "p84": 0.07932116609139071,
-        "p975": 0.1321801703824754
+        "mean": 0.04939850738061471,
+        "p025": 0.009594908780308178,
+        "p16": 0.020077580589592015,
+        "p50": 0.041074537528242305,
+        "p84": 0.07932116609138778,
+        "p975": 0.13218017038246646
       },
       "full_fixed_box": {
-        "mean": 0.8037841969295202,
-        "p025": 0.26686720405933745,
-        "p16": 0.4115480794499355,
-        "p50": 0.6920518850791126,
-        "p84": 1.2091864252833837,
-        "p975": 1.918078759592883
+        "mean": 0.8037841969294938,
+        "p025": 0.26686720405934117,
+        "p16": 0.4115480794499342,
+        "p50": 0.6920518850791204,
+        "p84": 1.2091864252833524,
+        "p975": 1.9180787595927846
       },
       "gamma_earth_per_dlnp_dlnr": {
-        "mean": 0.2933146846444303,
-        "p025": 0.05715898011316748,
-        "p16": 0.12077466643156083,
-        "p50": 0.24624151516592496,
-        "p84": 0.46685618456510475,
-        "p975": 0.781358339184218
+        "mean": 0.29331468464441907,
+        "p025": 0.057158980113171436,
+        "p16": 0.12077466643156097,
+        "p50": 0.24624151516591894,
+        "p84": 0.46685618456507344,
+        "p975": 0.7813583391841544
       },
       "hsu_box_projection": {
-        "mean": 0.1447072885296957,
-        "p025": 0.03114211541719711,
-        "p16": 0.06223796154682781,
-        "p50": 0.12213536243194935,
-        "p84": 0.2273747019006549,
-        "p975": 0.3755984216579548
+        "mean": 0.14470728852969028,
+        "p025": 0.03114211541719792,
+        "p16": 0.062237961546826794,
+        "p50": 0.12213536243194617,
+        "p84": 0.22737470190064962,
+        "p975": 0.3755984216579281
       },
       "period_slope_alpha": {
         "mean": 0.23864999999999983,
@@ -20189,8 +20189,8 @@
     },
     "label": "OBSERVED + MODEL-INFERRED",
     "observed_rates_for_explanation_only": {
-      "intrinsic_to_raw_catalogue_ratio": 887.2649477185635,
-      "intrinsic_to_reliability_adjusted_observed_ratio": 1463.0304404588353,
+      "intrinsic_to_raw_catalogue_ratio": 887.2649477185734,
+      "intrinsic_to_reliability_adjusted_observed_ratio": 1463.030440458852,
       "mean_imputed_valid_candidates_per_selected_star": 0.0004730263061799804,
       "raw_candidate_entries_per_selected_star": 0.0007799833486700846,
       "warning": "These ratios explain scale; neither is the estimator. The posterior integrates target-specific selection over period-radius shape."
@@ -20199,7 +20199,7 @@
     "source_hashes": {
       "builder": "798737f5367c8ddee1aa9f400ddf37aeb93eca50e9bb0701f692b0e4d9f0611d",
       "candidate_reliability": "81ec878c19830a49b4f5b5335a4008c6ef05948cdcf546c61585e5546697bf39",
-      "occurrence_posterior": "a496be75beb622329155fd662e06ddd1192a437e86609322d5f02076f7ec5eb7",
+      "occurrence_posterior": "96ec3c9592de476dfe6e8a073c20b4c4cf955fa3d50d28e739273eca29e8e018",
       "selection_surface": "4b463e17beb9c875c9fd4b49c42fd4a1fd0d87c9b3662d72f113005b198ff6de"
     },
     "story_steps": [
@@ -25982,23 +25982,23 @@
     }
   },
   "source_hashes": {
-    "results/analysis_summary.json": "c49952e1ee62d9a2dfa398f4b54d5289584c212cd330ee9c04fcd78357c362fb",
-    "results/atmosphere/atmosphere_evidence.json": "ecc2d20540883ef1c035c1de38078a45f2e98fbe0a6898ed1c5b4d229cfb1140",
-    "results/atmosphere/earth_analogue_spectrum_screen.json": "052a337d0402319c05a5917c42d828ae76d08edc717dd8bdb1d769ee3f23a4c7",
-    "results/climate/continuous_hz.json": "67d600460d7ab7b1e74d78b4989087ea8d03b64c8bdbb65b7195aaf3bdf4ba5a",
-    "results/composition/bulk_composition_ensemble.json": "54231d89f371e090a3038260dffc2272ac880c20ff5c3e4fb332e4592ede2dd1",
-    "results/environment/xuv_escape_scenarios.json": "aff0cfcea0edbf76f61da72052b2ebeb86f3fdf319aaba297d6afbcb8e6068bc",
+    "results/analysis_summary.json": "0352cd86c780867a50634b76c5d43d35699ae14ef2fdef24dd11a23f0a023819",
+    "results/atmosphere/atmosphere_evidence.json": "8b42f7886bb85c94a34a5b9bba2e1888e14cd187af64d24309369d68845e4cc4",
+    "results/atmosphere/earth_analogue_spectrum_screen.json": "4ad26fe5cefe964e37b64e9c2b48d8addabd4b13bd7bd2eac3eb260e1712c469",
+    "results/climate/continuous_hz.json": "b1270dfaeee414b03dc3b8a1c921aebcd6c3cddd7085dba83893f895cdd3c393",
+    "results/composition/bulk_composition_ensemble.json": "44c7c87390e3ae577efed4e303ffd4666be3b26e463e7f8943a225d7af58434c",
+    "results/environment/xuv_escape_scenarios.json": "5a17d63183db8616a45794de55398463038ab21b9bd783a26c2903fab2954ef2",
     "results/evidence/mass_evidence_examples.json": "bdff84f5a3d464cbd8e0f0930062e3a7c1205b8829f3c82e7482c21543b0b41e",
     "results/evidence/summary.json": "32b6051aa3201f2b095611f1d63b98210abebc8e9e03342b773e56e8a03bbaf7",
-    "results/falsification/candidate_model_sensitivity.csv": "362da1bcaf5721f57cd51a18c92f631a334396236d9b958aa5aa01ee12497aad",
-    "results/falsification/falsification_summary.json": "78431482d1d346a0e6294f134939bd785259d0cc382382bf97e3b63363f5aa88",
+    "results/falsification/candidate_model_sensitivity.csv": "407c6fe9989996fbb118835d677c5e635c921ae50461a505a848df46ec47d374",
+    "results/falsification/falsification_summary.json": "3966b1464030dc68ff6a9f7043936e712b848930348df4afce4512c2faa44eab",
     "results/falsification/solar_system_controls.csv": "920113f62d6517db562dc21eb2982ad3141ca41686fc27d4c9cacbdbc5e2618a",
     "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b",
-    "results/hwo/known_planet_accessibility.csv": "8de01ef5f92198bee77d76737e05a459695b5ff2c383ee0f6228c3909d78034f",
-    "results/information_gain/action_information_gain.csv": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76",
-    "results/information_gain/information_gain.json": "afc8e58b49b7e3bee693a4c5a07c86edbabde68dcfdc0bdca66d05cdbc5e49b4",
+    "results/hwo/known_planet_accessibility.csv": "dc1930db8af2972fbdffb7ff7b7f651c3b31aba30feb6da401584f87a0522026",
+    "results/information_gain/action_information_gain.csv": "73c0e3029822b1395a73c2c78283a66c41ad6e666dfc4614f27a7ab08c2af4e8",
+    "results/information_gain/information_gain.json": "2925295919091f9867ab253eb75d2dcb37549a915f9c46eacf11dd959a777214",
     "results/missions/mission_observatory.json": "b3a5e4d995aa323977dd86c927db2903181cfd3824f70197cbaaaa578b154668",
-    "results/population/dr25_observed_vs_intrinsic.json": "8f67d3e1bd92aa4e9f963b0c2965d5ea3fca2c4c92f690a0eb681885b39ed8a0",
+    "results/population/dr25_observed_vs_intrinsic.json": "ec94d2cc48afefc981fcefecacfa110bf12583f6debdf0ccd76311b3ac777a82",
     "results/population/dr25_selection_model.json": "e8bf7f7b1caab7c7bc67e5f3cf82a330ca3e41f6ad39bbbff8ec1ceccb6e6c8d",
     "results/population/dr25_selection_surface.csv": "4b463e17beb9c875c9fd4b49c42fd4a1fd0d87c9b3662d72f113005b198ff6de"
   },

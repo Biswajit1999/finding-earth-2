@@ -35,20 +35,20 @@
     },
     {
       "stage": "shape-weighted exposure",
-      "value": 78.27805927355968,
+      "value": 78.27805927356056,
       "interval": [
-        29.12159709226845,
-        184.7672114887792
+        29.12159709227018,
+        184.76721148877508
       ],
       "unit": "effective stars",
       "label": "MODEL-INFERRED"
     },
     {
       "stage": "intrinsic occurrence",
-      "value": 0.6920518850791126,
+      "value": 0.6920518850791204,
       "interval": [
-        0.26686720405933745,
-        1.918078759592883
+        0.26686720405934117,
+        1.9180787595927846
       ],
       "unit": "planets per selected star",
       "label": "MODEL-INFERRED"
@@ -57,8 +57,8 @@
   "observed_rates_for_explanation_only": {
     "raw_candidate_entries_per_selected_star": 0.0007799833486700846,
     "mean_imputed_valid_candidates_per_selected_star": 0.0004730263061799804,
-    "intrinsic_to_raw_catalogue_ratio": 887.2649477185635,
-    "intrinsic_to_reliability_adjusted_observed_ratio": 1463.0304404588353,
+    "intrinsic_to_raw_catalogue_ratio": 887.2649477185734,
+    "intrinsic_to_reliability_adjusted_observed_ratio": 1463.030440458852,
     "warning": "These ratios explain scale; neither is the estimator. The posterior integrates target-specific selection over period-radius shape."
   },
   "earth_pivot_visibility": {
@@ -76,12 +76,12 @@
   },
   "intrinsic_posterior": {
     "full_fixed_box": {
-      "p025": 0.26686720405933745,
-      "p16": 0.4115480794499355,
-      "p50": 0.6920518850791126,
-      "p84": 1.2091864252833837,
-      "p975": 1.918078759592883,
-      "mean": 0.8037841969295202
+      "p025": 0.26686720405934117,
+      "p16": 0.4115480794499342,
+      "p50": 0.6920518850791204,
+      "p84": 1.2091864252833524,
+      "p975": 1.9180787595927846,
+      "mean": 0.8037841969294938
     },
     "period_slope_alpha": {
       "p025": -0.4500000000000002,
@@ -100,28 +100,28 @@
       "mean": -0.7015000000000003
     },
     "gamma_earth_per_dlnp_dlnr": {
-      "p025": 0.05715898011316748,
-      "p16": 0.12077466643156083,
-      "p50": 0.24624151516592496,
-      "p84": 0.46685618456510475,
-      "p975": 0.781358339184218,
-      "mean": 0.2933146846444303
+      "p025": 0.057158980113171436,
+      "p16": 0.12077466643156097,
+      "p50": 0.24624151516591894,
+      "p84": 0.46685618456507344,
+      "p975": 0.7813583391841544,
+      "mean": 0.29331468464441907
     },
     "hsu_box_projection": {
-      "p025": 0.03114211541719711,
-      "p16": 0.06223796154682781,
-      "p50": 0.12213536243194935,
-      "p84": 0.2273747019006549,
-      "p975": 0.3755984216579548,
-      "mean": 0.1447072885296957
+      "p025": 0.03114211541719792,
+      "p16": 0.062237961546826794,
+      "p50": 0.12213536243194617,
+      "p84": 0.22737470190064962,
+      "p975": 0.3755984216579281,
+      "mean": 0.14470728852969028
     },
     "earth_20_percent_box_projection": {
-      "p025": 0.009594908780307465,
-      "p16": 0.020077580589591738,
-      "p50": 0.04107453752824276,
-      "p84": 0.07932116609139071,
-      "p975": 0.1321801703824754,
-      "mean": 0.04939850738061658
+      "p025": 0.009594908780308178,
+      "p16": 0.020077580589592015,
+      "p50": 0.041074537528242305,
+      "p84": 0.07932116609138778,
+      "p975": 0.13218017038246646,
+      "mean": 0.04939850738061471
     }
   },
   "story_steps": [
@@ -148,7 +148,7 @@
   ],
   "claim_boundary": "This is a fixed period-radius occurrence result. It is not a probability of habitability, biology or a star-dependent habitable-zone eta Earth.",
   "source_hashes": {
-    "occurrence_posterior": "a496be75beb622329155fd662e06ddd1192a437e86609322d5f02076f7ec5eb7",
+    "occurrence_posterior": "96ec3c9592de476dfe6e8a073c20b4c4cf955fa3d50d28e739273eca29e8e018",
     "selection_surface": "4b463e17beb9c875c9fd4b49c42fd4a1fd0d87c9b3662d72f113005b198ff6de",
     "candidate_reliability": "81ec878c19830a49b4f5b5335a4008c6ef05948cdcf546c61585e5546697bf39",
     "builder": "798737f5367c8ddee1aa9f400ddf37aeb93eca50e9bb0701f692b0e4d9f0611d"

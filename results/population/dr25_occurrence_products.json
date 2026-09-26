@@ -3,16 +3,16 @@
   "product": "Kepler DR25 conditional fixed-box occurrence posterior",
   "files": {
     "results/population/dr25_occurrence_posterior.json": {
-      "bytes": 46685,
-      "sha256": "a496be75beb622329155fd662e06ddd1192a437e86609322d5f02076f7ec5eb7"
+      "bytes": 46712,
+      "sha256": "96ec3c9592de476dfe6e8a073c20b4c4cf955fa3d50d28e739273eca29e8e018"
     },
     "results/population/dr25_occurrence_posterior_samples.csv": {
-      "bytes": 1337377,
-      "sha256": "ac7c44da43c4caf131dcae10bdadfddbb1cc531203a3295b18b8bdd8d187dad3"
+      "bytes": 1337388,
+      "sha256": "cb5fa4f3e283ecb51f9f451f1699b36a521a8e82007e7271cb3f9e02751c9835"
     },
     "results/population/dr25_occurrence_published_comparison.json": {
-      "bytes": 4636,
-      "sha256": "542258030928e6f7d1a22268714b956ec4a1344a4a0d59663e5d49d6b07dd339"
+      "bytes": 4646,
+      "sha256": "36a8ff9b58996b32845b8dbb13b20a0c4027aed8dee468e9fd4a4076a8bd3a73"
     },
     "results/population/dr25_occurrence_exposure.csv": {
       "bytes": 167141,

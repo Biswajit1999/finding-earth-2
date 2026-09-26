@@ -1,6 +1,6 @@
 {
   "ledger": "earth2-analysis",
-  "generated_utc": "2026-09-23T09:24:08Z",
+  "generated_utc": "2026-09-26T09:26:33Z",
   "n_steps": 12,
   "steps": [
     {
@@ -24,8 +24,8 @@
       "citation": "",
       "parameters": {},
       "n_rows_in": 0,
-      "n_rows_out": 6366,
-      "timestamp_utc": "2026-09-23T09:23:23Z",
+      "n_rows_out": 6372,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": "{\"earth2\": \"2.1.2\", \"python\": \"3.12.14\", \"numpy\": \"2.5.3\", \"pandas\": \"2.3.3\", \"scipy\": \"1.18.1\", \"astropy\": \"8.0.1\", \"platform\": \"Linux-6.17.0-1022-azure-x86_64-with-glibc2.39\"}"
     },
     {
@@ -44,9 +44,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -64,9 +64,9 @@
       "equation": "S = L / a^2,  L = 10**st_lum",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -85,9 +85,9 @@
       "parameters": {
         "bond_albedo": 0.306
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -107,9 +107,9 @@
       "equation": "ESI_x = (1 - |(x-x0)/(x+x0)|)**(w/n)",
       "citation": "schulzemakuch2011",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -127,9 +127,9 @@
       "equation": "S_eff = S_eff_sun + a*T + b*T^2 + c*T^3 + d*T^4,  T = Teff - 5780",
       "citation": "kopparapu2013,kopparapu2013erratum",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:24Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:48Z",
       "software": ""
     },
     {
@@ -153,9 +153,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -173,9 +173,9 @@
       "equation": "",
       "citation": "",
       "parameters": {},
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -200,11 +200,11 @@
       "equation": "",
       "citation": "GaiaDR3",
       "parameters": {
-        "n_planets_matched": 5975
+        "n_planets_matched": 5978
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:23:32Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:25:56Z",
       "software": ""
     },
     {
@@ -230,9 +230,9 @@
         "seed": 20260824,
         "distribution": "two-piece (split) normal"
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     },
     {
@@ -260,9 +260,9 @@
         "geometric_albedo": 0.3,
         "phase_model": "Lambert sphere at quadrature"
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     },
     {
@@ -290,9 +290,9 @@
         "combination": "weighted geometric mean",
         "epsilon_floor": 0.01
       },
-      "n_rows_in": 6371,
-      "n_rows_out": 6371,
-      "timestamp_utc": "2026-09-23T09:24:01Z",
+      "n_rows_in": 6377,
+      "n_rows_out": 6377,
+      "timestamp_utc": "2026-09-26T09:26:26Z",
       "software": ""
     }
   ]

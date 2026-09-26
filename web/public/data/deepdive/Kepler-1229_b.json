@@ -1,7 +1,7 @@
 {
  "planet": "Kepler-1229 b",
  "hostname": "Kepler-1229",
- "generated_utc": "2026-09-23T09:24:56Z",
+ "generated_utc": "2026-09-26T09:27:11Z",
  "narrative": {
   "location": "Kepler-1229 lies 865.89 light-years (265.482 pc) from the Sun.",
   "host_star": "Kepler-1229 is the host star with 0.54\u00d7 the Sun's mass and 0.51\u00d7 its radius (effective temperature 3784 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 8,
-  "earth2_index": 0.7155,
+  "earth2_index": 0.7157,
   "scores": {
-   "earth_similarity": 0.8194,
-   "conservative_habitability": 0.7315,
+   "earth_similarity": 0.8193,
+   "conservative_habitability": 0.7319,
    "observational_confidence": 0.5713,
    "characterisation_potential": 0.2087
   },
   "component_ranks": {
    "earth_similarity": 40,
    "conservative_habitability": 8,
-   "observational_confidence": 3900
+   "observational_confidence": 3908
   }
  },
  "planet_parameters": {
@@ -30,9 +30,9 @@
    "value": 1.4,
    "err_upper": 0.11,
    "err_lower": -0.13,
-   "p16": 1.2745,
-   "p50": 1.3996,
-   "p84": 1.5093
+   "p16": 1.27,
+   "p50": 1.3992,
+   "p84": 1.5087
   },
   "mass_earth": {
    "value": 2.54,
@@ -53,14 +53,14 @@
    "value": 0.524,
    "source": "catalogue",
    "p16": 0.4751,
-   "p84": 0.5768
+   "p84": 0.5788
   },
   "equilibrium_temperature_k": {
    "value": 216.27,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 211.04,
-   "p84": 221.52,
+   "p16": 211.03,
+   "p84": 221.71,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.8335,
-  "esi_p16": 0.7928,
-  "esi_p50": 0.8194,
-  "esi_p84": 0.8416,
+  "esi_p16": 0.7915,
+  "esi_p50": 0.8193,
+  "esi_p84": 0.8415,
   "esi_interior": 0.9289,
   "esi_surface": 0.7479,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -330,7 +330,7 @@
  "transit_analysis": {
   "target": "Kepler-1229",
   "requested_mission": "TESS",
-  "analysed_utc": "2026-09-23T09:24:56Z",
+  "analysed_utc": "2026-09-26T09:27:11Z",
   "status": "fit_not_validated",
   "n_products_found": 28,
   "products": [
@@ -476,7 +476,7 @@
    "n_used_cadences": 18319,
    "baseline_days": 26.58897386477429,
    "median_flux_precision_ppm": 39731.56958818436,
-   "retrieved_utc": "2026-09-23T09:25:26Z",
+   "retrieved_utc": "2026-09-26T09:27:19Z",
    "note": "stitched 1 product(s), mission default quality mask applied"
   },
   "t0_time_system": {
@@ -518,7 +518,7 @@
  },
  "rv_analysis": {
   "target": "Kepler-1229",
-  "analysed_utc": "2026-09-23T09:25:26Z",
+  "analysed_utc": "2026-09-26T09:27:19Z",
   "status": "no_data",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",

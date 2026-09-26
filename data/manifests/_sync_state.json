@@ -1,20 +1,20 @@
 {
-  "last_sync_utc": "2026-09-23T09:23:13Z",
+  "last_sync_utc": "2026-09-26T09:25:32Z",
   "datasets_ok": 12,
   "datasets_failed": 0,
-  "total_source_records": 164342,
+  "total_source_records": 164436,
   "outcomes": [
     {
       "dataset_id": "nasa_pscomppars",
       "status": "ok",
-      "n_rows": 6366,
-      "elapsed_s": 7.01,
+      "n_rows": 6372,
+      "elapsed_s": 5.23,
       "error": ""
     },
     {
       "dataset_id": "nasa_ps",
       "status": "ok",
-      "n_rows": 40155,
+      "n_rows": 40188,
       "elapsed_s": 14.68,
       "error": ""
     },
@@ -22,70 +22,70 @@
       "dataset_id": "nasa_toi",
       "status": "ok",
       "n_rows": 8148,
-      "elapsed_s": 3.25,
+      "elapsed_s": 2.79,
       "error": ""
     },
     {
       "dataset_id": "nasa_k2pandc",
       "status": "ok",
-      "n_rows": 4070,
-      "elapsed_s": 3.47,
+      "n_rows": 4076,
+      "elapsed_s": 3.39,
       "error": ""
     },
     {
       "dataset_id": "nasa_koi_dr25",
       "status": "ok",
       "n_rows": 8054,
-      "elapsed_s": 3.8,
+      "elapsed_s": 4.04,
       "error": ""
     },
     {
       "dataset_id": "nasa_tce_dr25",
       "status": "ok",
       "n_rows": 34032,
-      "elapsed_s": 6.38,
+      "elapsed_s": 6.08,
       "error": ""
     },
     {
       "dataset_id": "nasa_transitspec",
       "status": "ok",
       "n_rows": 5948,
-      "elapsed_s": 1.47,
+      "elapsed_s": 1.37,
       "error": ""
     },
     {
       "dataset_id": "nasa_emissionspec",
       "status": "ok",
       "n_rows": 2361,
-      "elapsed_s": 1.23,
+      "elapsed_s": 1.15,
       "error": ""
     },
     {
       "dataset_id": "nasa_spectra_index",
       "status": "ok",
-      "n_rows": 1826,
-      "elapsed_s": 1.24,
+      "n_rows": 1841,
+      "elapsed_s": 1.17,
       "error": ""
     },
     {
       "dataset_id": "nasa_microlensing",
       "status": "ok",
-      "n_rows": 907,
-      "elapsed_s": 2.56,
+      "n_rows": 915,
+      "elapsed_s": 2.26,
       "error": ""
     },
     {
       "dataset_id": "nasa_di_stars",
       "status": "ok",
       "n_rows": 164,
-      "elapsed_s": 1.47,
+      "elapsed_s": 1.1,
       "error": ""
     },
     {
       "dataset_id": "nasa_stellarhosts",
       "status": "ok",
-      "n_rows": 47903,
-      "elapsed_s": 7.72,
+      "n_rows": 47925,
+      "elapsed_s": 7.01,
       "error": ""
     }
   ]
