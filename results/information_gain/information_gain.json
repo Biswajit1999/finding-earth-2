@@ -200,7 +200,7 @@
     },
     {
       "action_id": "stellar_radius_precision_requirement",
-      "expected_information_gain_bits": 1.745285065223101,
+      "expected_information_gain_bits": 0.928871092230033,
       "pl_name": "TOI-700 d"
     },
     {
@@ -286,24 +286,24 @@
         }
       },
       {
-        "break_even_absolute_correlation": 0.9794218124875601,
+        "break_even_absolute_correlation": 0.9222942575532934,
         "break_even_status": "reachable_only_above_ceiling",
-        "direct_planet_radius_information_bits": 1.4938117200831147,
+        "direct_planet_radius_information_bits": 0.6902835606465787,
         "earth2_rank": 10,
         "label": "SENSITIVITY",
         "objective": "planet radius uncertainty",
         "pl_name": "TOI-700 d",
-        "stellar_radius_own_parameter_information_bits": 1.745285065223101,
-        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.966004299322872,
+        "stellar_radius_own_parameter_information_bits": 0.928871092230033,
+        "stellar_to_planet_radius_information_bits_at_abs_correlation_0p90": 0.6370460856321172,
         "transfer_bits_by_absolute_correlation": {
           "0.00": 0.0,
-          "0.25": 0.04228888538518229,
-          "0.50": 0.18643754388822337,
-          "0.75": 0.5181971186301997,
-          "0.90": 0.966004299322872,
-          "0.95": 1.2458623741938464,
-          "0.99": 1.6115015858498019,
-          "1.00": 1.7452850652231002
+          "0.25": 0.033406896807027416,
+          "0.50": 0.14405263745013658,
+          "0.75": 0.3773153289603305,
+          "0.90": 0.6370460856321172,
+          "0.95": 0.7645223563370485,
+          "0.99": 0.8921490919052941,
+          "1.00": 0.9288710922300328
         }
       },
       {
@@ -533,7 +533,7 @@
   "row_count": 150,
   "schema_version": "1.0",
   "source": "results/analysis_catalogue.parquet",
-  "source_sha256": "9462b8bf3ad54dbff41f59256615e0997cf4993c8fbdeffd7d4a2fbae8d21821",
+  "source_sha256": "12bebfe380fc1af2b5168d0e8cb7c1d5d2a20526c336db95a6b84e52bb850211",
   "supported_rows": 83,
   "title": "Action-specific expected information gain under declared synthetic likelihoods",
   "withheld_actions": [

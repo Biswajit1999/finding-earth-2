@@ -10,18 +10,18 @@
     "classification_robustness": {
       "boundary_or_model_sensitive": 16,
       "robustly_inside_across_prescriptions": 22,
-      "robustly_outside_across_prescriptions": 781,
-      "undetermined": 5547
+      "robustly_outside_across_prescriptions": 787,
+      "undetermined": 5550
     },
-    "confirmed_planets_evaluated": 6366,
-    "inferred": 819,
+    "confirmed_planets_evaluated": 6375,
+    "inferred": 825,
     "outcomes": {
-      "inferred": 819,
-      "insufficient_continuous_track_support": 49,
+      "inferred": 825,
+      "insufficient_continuous_track_support": 51,
       "insufficient_mist_main_sequence_support": 421,
-      "missing_required_measurement_or_uncertainty": 4414,
+      "missing_required_measurement_or_uncertainty": 4412,
       "nonpositive_or_premain_sequence_input": 27,
-      "stellar_age_effectively_unconstrained": 636
+      "stellar_age_effectively_unconstrained": 639
     }
   },
   "records": [
@@ -7095,174 +7095,17 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "TOI-286",
+      "hostname": "WASP-74",
       "is_control": false,
       "label": "MODEL-INFERRED",
       "model_agreement": null,
-      "pl_name": "TOI-286 c",
-      "pl_orbsmax_au": 0.213,
+      "pl_name": "WASP-74 b",
+      "pl_orbsmax_au": 0.03443,
       "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.05,
-      "st_log_luminosity_solar": -0.41364,
-      "st_mass_solar": 0.832,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1806",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1806.01",
-      "pl_orbsmax_au": 0.087735044,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": null,
-      "st_log_luminosity_solar": -1.77852,
-      "st_mass_solar": 0.392935,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-4443",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-4443.01",
-      "pl_orbsmax_au": 0.029962645,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": null,
-      "st_log_luminosity_solar": 0.03349,
-      "st_mass_solar": 1.049133,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "K2-141",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "K2-141 c",
-      "pl_orbsmax_au": 0.0683,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 6.3,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": -0.75,
-      "st_mass_solar": 0.708,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 250,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 250,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 250,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 250,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "K2-232",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 0.0,
-      "model_agreement": 1.0,
-      "pl_name": "K2-232 b",
-      "pl_orbsmax_au": 0.10356,
-      "reason": null,
-      "st_age_gyr": 1.43,
-      "st_feh": 0.1,
-      "st_log_luminosity_solar": 0.23805,
-      "st_mass_solar": 1.188,
-      "status": "inferred",
-      "supported_fraction": 0.9765625
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "GJ 1132",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "GJ 1132 c",
-      "pl_orbsmax_au": 0.0476,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 5.0,
-      "st_feh": -0.18,
-      "st_log_luminosity_solar": -2.32148,
-      "st_mass_solar": 0.198,
+      "st_age_gyr": 3.49,
+      "st_feh": 0.39,
+      "st_log_luminosity_solar": 0.39971,
+      "st_mass_solar": 0.98,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -7284,6 +7127,48 @@
       "st_feh": 0.39,
       "st_log_luminosity_solar": -0.19695,
       "st_mass_solar": 1.015,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "K2-18",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "K2-18 b",
+      "pl_orbsmax_au": 0.1429,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": 0.12,
+      "st_log_luminosity_solar": -1.59688,
+      "st_mass_solar": 0.359,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "KELT-8",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "KELT-8 b",
+      "pl_orbsmax_au": 0.0455,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 5.4,
+      "st_feh": 0.27,
+      "st_log_luminosity_solar": 0.26483,
+      "st_mass_solar": 0.81,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -7420,6 +7305,27 @@
       "st_feh": 0.39,
       "st_log_luminosity_solar": -0.19695,
       "st_mass_solar": 1.015,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "bet Pic",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "bet Pic b",
+      "pl_orbsmax_au": 10.07,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.023,
+      "st_feh": -0.21,
+      "st_log_luminosity_solar": 0.95282,
+      "st_mass_solar": 1.789,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -8586,27 +8492,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "WASP-69",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "WASP-69 b",
-      "pl_orbsmax_au": 0.0453,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 1.8,
-      "st_feh": 0.35,
-      "st_log_luminosity_solar": -0.48149,
-      "st_mass_solar": 0.83,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "too_broad",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -8687,48 +8572,6 @@
       "st_feh": 0.0,
       "st_log_luminosity_solar": 0.758,
       "st_mass_solar": 1.76,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "K2-18",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "K2-18 b",
-      "pl_orbsmax_au": 0.1429,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.12,
-      "st_log_luminosity_solar": -1.59688,
-      "st_mass_solar": 0.359,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "KELT-8",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "KELT-8 b",
-      "pl_orbsmax_au": 0.0455,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 5.4,
-      "st_feh": 0.27,
-      "st_log_luminosity_solar": 0.26483,
-      "st_mass_solar": 0.81,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -10255,6 +10098,121 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
+      "hostname": "K2-141",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "K2-141 c",
+      "pl_orbsmax_au": 0.0683,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 6.3,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": -0.75,
+      "st_mass_solar": 0.708,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 188,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 188,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 188,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 188,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "K2-232",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "K2-232 b",
+      "pl_orbsmax_au": 0.1016,
+      "reason": null,
+      "st_age_gyr": 3.9,
+      "st_feh": 0.106,
+      "st_log_luminosity_solar": 0.21643,
+      "st_mass_solar": 1.121,
+      "status": "inferred",
+      "supported_fraction": 0.734375
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "GJ 1132",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "GJ 1132 c",
+      "pl_orbsmax_au": 0.0476,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 5.0,
+      "st_feh": -0.18,
+      "st_log_luminosity_solar": -2.32148,
+      "st_mass_solar": 0.198,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
       "hostname": "HAT-P-11",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -10821,6 +10779,27 @@
       "st_feh": -0.34,
       "st_log_luminosity_solar": -2.04591,
       "st_mass_solar": 0.257,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "bet Pic",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "bet Pic c",
+      "pl_orbsmax_au": 2.7,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.023,
+      "st_feh": -0.21,
+      "st_log_luminosity_solar": 0.95282,
+      "st_mass_solar": 1.789,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -11548,12 +11527,12 @@
       "label": "MODEL-INFERRED",
       "model_agreement": null,
       "pl_name": "TOI-700 b",
-      "pl_orbsmax_au": 0.0677,
+      "pl_orbsmax_au": 0.0678,
       "reason": "missing_required_measurement_or_uncertainty",
       "st_age_gyr": 1.5,
       "st_feh": -0.07,
-      "st_log_luminosity_solar": -1.64016,
-      "st_mass_solar": 0.415,
+      "st_log_luminosity_solar": -1.63264,
+      "st_mass_solar": 0.417,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -11569,12 +11548,12 @@
       "label": "MODEL-INFERRED",
       "model_agreement": null,
       "pl_name": "TOI-700 c",
-      "pl_orbsmax_au": 0.0929,
+      "pl_orbsmax_au": 0.0931,
       "reason": "missing_required_measurement_or_uncertainty",
       "st_age_gyr": 1.5,
       "st_feh": -0.07,
-      "st_log_luminosity_solar": -1.64016,
-      "st_mass_solar": 0.415,
+      "st_log_luminosity_solar": -1.63264,
+      "st_mass_solar": 0.417,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -11590,33 +11569,12 @@
       "label": "MODEL-INFERRED",
       "model_agreement": null,
       "pl_name": "TOI-700 d",
-      "pl_orbsmax_au": 0.1633,
+      "pl_orbsmax_au": 0.1642,
       "reason": "missing_required_measurement_or_uncertainty",
       "st_age_gyr": 1.5,
       "st_feh": -0.07,
-      "st_log_luminosity_solar": -1.64016,
-      "st_mass_solar": 0.415,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "HIP 67522",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "HIP 67522 b",
-      "pl_orbsmax_au": 0.0748,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.017,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": 0.24304,
-      "st_mass_solar": 1.22,
+      "st_log_luminosity_solar": -1.63264,
+      "st_mass_solar": 0.417,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -12433,27 +12391,6 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "LHS 1478",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "LHS 1478 b",
-      "pl_orbsmax_au": 0.01848,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.13,
-      "st_log_luminosity_solar": -2.14569,
-      "st_mass_solar": 0.236,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
       "hostname": "TOI-1231",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -12488,27 +12425,6 @@
       "st_mass_solar": 0.42,
       "status": "undetermined",
       "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 5,
-      "hostname": "TOI-1685",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1685 b",
-      "pl_orbsmax_au": 0.01164,
-      "reason": "insufficient_mist_main_sequence_support",
-      "st_age_gyr": 1.4,
-      "st_feh": 0.01,
-      "st_log_luminosity_solar": -1.51856,
-      "st_mass_solar": 0.466,
-      "status": "undetermined",
-      "supported_fraction": 0.01953125
     },
     {
       "age_precision_status": "too_broad",
@@ -13128,27 +13044,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1442",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1442 b",
-      "pl_orbsmax_au": 0.0071,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": null,
-      "st_log_luminosity_solar": -1.97722,
-      "st_mass_solar": 0.29,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -13652,12 +13547,12 @@
       "label": "MODEL-INFERRED",
       "model_agreement": null,
       "pl_name": "TOI-700 e",
-      "pl_orbsmax_au": 0.134,
+      "pl_orbsmax_au": 0.1336,
       "reason": "missing_required_measurement_or_uncertainty",
       "st_age_gyr": 1.5,
       "st_feh": -0.07,
-      "st_log_luminosity_solar": -1.64016,
-      "st_mass_solar": 0.415,
+      "st_log_luminosity_solar": -1.63264,
+      "st_mass_solar": 0.417,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -14640,6 +14535,48 @@
       "st_feh": -0.02,
       "st_log_luminosity_solar": -0.96257,
       "st_mass_solar": 0.661,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2525",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2525 b",
+      "pl_orbsmax_au": 0.1511,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 3.99,
+      "st_feh": 0.14,
+      "st_log_luminosity_solar": -0.44009,
+      "st_mass_solar": 0.849,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2525",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2525 c",
+      "pl_orbsmax_au": 0.249,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 3.99,
+      "st_feh": 0.14,
+      "st_log_luminosity_solar": -0.44009,
+      "st_mass_solar": 0.849,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -15907,27 +15844,6 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "HIP 67522",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "HIP 67522 c",
-      "pl_orbsmax_au": 0.1228,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.017,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": 0.24304,
-      "st_mass_solar": 1.22,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
       "hostname": "Kepler-51",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -16236,6 +16152,27 @@
       "supported_fraction": 0.0
     },
     {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "bet Pic",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "bet Pic d",
+      "pl_orbsmax_au": 26.0,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.023,
+      "st_feh": -0.21,
+      "st_log_luminosity_solar": 0.95282,
+      "st_mass_solar": 1.789,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "too_broad",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -16262,7 +16199,7 @@
       "classification_robustness": "robustly_outside_across_prescriptions",
       "climate_prescriptions": {
         "kopparapu_conservative": {
-          "complete_history_draws": 144,
+          "complete_history_draws": 189,
           "f_chz": {
             "p16": 0.0,
             "p50": 0.0,
@@ -16278,7 +16215,7 @@
           }
         },
         "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 144,
+          "complete_history_draws": 189,
           "f_chz": {
             "p16": 0.0,
             "p50": 0.0,
@@ -16294,7 +16231,7 @@
           }
         },
         "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 144,
+          "complete_history_draws": 189,
           "f_chz": {
             "p16": 0.0,
             "p50": 0.0,
@@ -16311,23 +16248,23 @@
         }
       },
       "draws_requested": 256,
-      "draws_supported": 144,
+      "draws_supported": 189,
       "history_start_gyr": 0.1,
       "history_steps": 72,
-      "hostname": "HD 278555",
+      "hostname": "K2-232",
       "is_control": false,
       "label": "MODEL-INFERRED",
       "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
       "model_agreement": 1.0,
-      "pl_name": "HD 278555 b",
-      "pl_orbsmax_au": 0.1985,
+      "pl_name": "K2-232 c",
+      "pl_orbsmax_au": 3.17,
       "reason": null,
-      "st_age_gyr": 3.8,
-      "st_feh": 0.269,
-      "st_log_luminosity_solar": 0.49554,
-      "st_mass_solar": 1.255,
+      "st_age_gyr": 3.9,
+      "st_feh": 0.106,
+      "st_log_luminosity_solar": 0.21643,
+      "st_mass_solar": 1.121,
       "status": "inferred",
-      "supported_fraction": 0.5625
+      "supported_fraction": 0.73828125
     },
     {
       "age_precision_status": "supported",
@@ -16786,6 +16723,69 @@
       "st_feh": 0.31,
       "st_log_luminosity_solar": -0.56702,
       "st_mass_solar": 0.811,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-286",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-286 c",
+      "pl_orbsmax_au": 0.213,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.05,
+      "st_log_luminosity_solar": -0.41364,
+      "st_mass_solar": 0.832,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1806",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1806.01",
+      "pl_orbsmax_au": 0.087735044,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": -1.77852,
+      "st_mass_solar": 0.392935,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-4443",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-4443.01",
+      "pl_orbsmax_au": 0.029962645,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": 0.03349,
+      "st_mass_solar": 1.049133,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -19900,6 +19900,194 @@
       "supported_fraction": 0.0
     },
     {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 254,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 254,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 254,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 254,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-1839",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 0.0,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-1839 b",
+      "pl_orbsmax_au": 0.02355,
+      "reason": null,
+      "st_age_gyr": 4.1,
+      "st_feh": 0.09,
+      "st_log_luminosity_solar": -0.264,
+      "st_mass_solar": 0.86,
+      "status": "inferred",
+      "supported_fraction": 0.9921875
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 256,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 256,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 256,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 256,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-1839",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 0.0,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-1839 c",
+      "pl_orbsmax_au": 0.04708,
+      "reason": null,
+      "st_age_gyr": 4.1,
+      "st_feh": 0.09,
+      "st_log_luminosity_solar": -0.264,
+      "st_mass_solar": 0.86,
+      "status": "inferred",
+      "supported_fraction": 1.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "KMT-2023-BLG-1810L",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "KMT-2023-BLG-1810L b",
+      "pl_orbsmax_au": 3.4,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": null,
+      "st_mass_solar": 0.56,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "KMT-2023-BLG-0084L",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "KMT-2023-BLG-0084L b",
+      "pl_orbsmax_au": 2.5,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": null,
+      "st_mass_solar": 0.23,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -22652,6 +22840,749 @@
       "st_feh": 0.04,
       "st_log_luminosity_solar": 0.25466,
       "st_mass_solar": 1.0,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "LHS 1478",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "LHS 1478 b",
+      "pl_orbsmax_au": 0.01872,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.38,
+      "st_log_luminosity_solar": -2.1296,
+      "st_mass_solar": 0.2301,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 5,
+      "hostname": "TOI-1685",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1685 b",
+      "pl_orbsmax_au": 0.01164,
+      "reason": "insufficient_mist_main_sequence_support",
+      "st_age_gyr": 1.4,
+      "st_feh": 0.01,
+      "st_log_luminosity_solar": -1.51856,
+      "st_mass_solar": 0.466,
+      "status": "undetermined",
+      "supported_fraction": 0.01953125
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1749",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1749 b",
+      "pl_orbsmax_au": 0.0291,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.8,
+      "st_feh": -0.26,
+      "st_log_luminosity_solar": -1.15649,
+      "st_mass_solar": 0.58,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1749",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1749 c",
+      "pl_orbsmax_au": 0.0443,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.8,
+      "st_feh": -0.26,
+      "st_log_luminosity_solar": -1.15649,
+      "st_mass_solar": 0.58,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1749",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1749 d",
+      "pl_orbsmax_au": 0.0707,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.8,
+      "st_feh": -0.26,
+      "st_log_luminosity_solar": -1.15649,
+      "st_mass_solar": 0.58,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 60,
+      "hostname": "TOI-1296",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1296 b",
+      "pl_orbsmax_au": 0.051,
+      "reason": "insufficient_mist_main_sequence_support",
+      "st_age_gyr": 7.1,
+      "st_feh": 0.405,
+      "st_log_luminosity_solar": 0.40157,
+      "st_mass_solar": 1.1576,
+      "status": "undetermined",
+      "supported_fraction": 0.234375
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1442",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1442 b",
+      "pl_orbsmax_au": 0.0071,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": -1.97722,
+      "st_mass_solar": 0.29,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1246",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1246 b",
+      "pl_orbsmax_au": 0.049,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 6.3,
+      "st_feh": 0.17,
+      "st_log_luminosity_solar": -0.30103,
+      "st_mass_solar": 0.87,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1246",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1246 c",
+      "pl_orbsmax_au": 0.061,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 6.3,
+      "st_feh": 0.168,
+      "st_log_luminosity_solar": -0.30103,
+      "st_mass_solar": 0.8889,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1246",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1246 d",
+      "pl_orbsmax_au": 0.132,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 6.3,
+      "st_feh": 0.168,
+      "st_log_luminosity_solar": -0.30103,
+      "st_mass_solar": 0.8889,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1246",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1246 e",
+      "pl_orbsmax_au": 0.212,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 6.3,
+      "st_feh": 0.168,
+      "st_log_luminosity_solar": -0.30103,
+      "st_mass_solar": 0.8889,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-4479",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-4479 b",
+      "pl_orbsmax_au": 0.0164,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": -1.60432,
+      "st_mass_solar": 0.452,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 193,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-1135",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-1135 b",
+      "pl_orbsmax_au": 0.0815,
+      "reason": null,
+      "st_age_gyr": 3.3,
+      "st_feh": -0.039,
+      "st_log_luminosity_solar": 0.31806,
+      "st_mass_solar": 1.119,
+      "status": "inferred",
+      "supported_fraction": 0.75390625
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1452",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1452 b",
+      "pl_orbsmax_au": 0.061,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.07,
+      "st_log_luminosity_solar": -2.1549,
+      "st_mass_solar": 0.249,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-1695",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-1695 b",
+      "pl_orbsmax_au": 0.033548,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": -1.3536,
+      "st_mass_solar": 0.513,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 146,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 146,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 146,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 146,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-2025",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-2025 b",
+      "pl_orbsmax_au": 0.0892,
+      "reason": null,
+      "st_age_gyr": 4.5,
+      "st_feh": 0.15,
+      "st_log_luminosity_solar": 0.38739,
+      "st_mass_solar": 1.199,
+      "status": "inferred",
+      "supported_fraction": 0.5703125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 242,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 242,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 242,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 242,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-2449",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-2449 b",
+      "pl_orbsmax_au": 0.45,
+      "reason": null,
+      "st_age_gyr": 2.5,
+      "st_feh": -0.03,
+      "st_log_luminosity_solar": 0.14808,
+      "st_mass_solar": 1.079,
+      "status": "inferred",
+      "supported_fraction": 0.9453125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 193,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 193,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "TOI-3688 A",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "TOI-3688 A b",
+      "pl_orbsmax_au": 0.0456,
+      "reason": null,
+      "st_age_gyr": 3.3,
+      "st_feh": 0.262,
+      "st_log_luminosity_solar": 0.2833,
+      "st_mass_solar": 1.199,
+      "status": "inferred",
+      "supported_fraction": 0.75390625
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-4600",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-4600 b",
+      "pl_orbsmax_au": 0.349,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 2.3,
+      "st_feh": 0.16,
+      "st_log_luminosity_solar": -0.37675,
+      "st_mass_solar": 0.89,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-4600",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-4600 c",
+      "pl_orbsmax_au": 1.152,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 2.3,
+      "st_feh": 0.16,
+      "st_log_luminosity_solar": -0.37675,
+      "st_mass_solar": 0.89,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 231,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 231,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 231,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 231,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "WASP-104",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "WASP-104 b",
+      "pl_orbsmax_au": 0.02918,
+      "reason": null,
+      "st_age_gyr": 3.0,
+      "st_feh": 0.32,
+      "st_log_luminosity_solar": -0.18964,
+      "st_mass_solar": 1.076,
+      "status": "inferred",
+      "supported_fraction": 0.90234375
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "WASP-69",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "WASP-69 b",
+      "pl_orbsmax_au": 0.0453,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 1.8,
+      "st_feh": 0.35,
+      "st_log_luminosity_solar": -0.48149,
+      "st_mass_solar": 0.83,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "NGTS-5",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "NGTS-5 b",
+      "pl_orbsmax_au": 0.0382,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": 0.12,
+      "st_log_luminosity_solar": -0.51087,
+      "st_mass_solar": 0.661,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -27846,6 +28777,48 @@
       "supported_fraction": 0.0
     },
     {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "K2-223",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "K2-223 b",
+      "pl_orbsmax_au": 0.0135,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 2.8,
+      "st_feh": 0.18,
+      "st_log_luminosity_solar": -0.00436,
+      "st_mass_solar": 1.07,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "K2-223",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "K2-223 c",
+      "pl_orbsmax_au": 0.0584,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 2.8,
+      "st_feh": 0.18,
+      "st_log_luminosity_solar": -0.00436,
+      "st_mass_solar": 1.07,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -28580,27 +29553,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1246",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1246 d",
-      "pl_orbsmax_au": 0.132,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 6.3,
-      "st_feh": 0.168,
-      "st_log_luminosity_solar": -0.30103,
-      "st_mass_solar": 0.8889,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -28704,6 +29656,79 @@
       "st_mass_solar": 1.332089,
       "status": "undetermined",
       "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 144,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 144,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 144,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 144,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HD 278555",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
+      "model_agreement": 1.0,
+      "pl_name": "HD 278555 b",
+      "pl_orbsmax_au": 0.1985,
+      "reason": null,
+      "st_age_gyr": 3.8,
+      "st_feh": 0.269,
+      "st_log_luminosity_solar": 0.49554,
+      "st_mass_solar": 1.255,
+      "status": "inferred",
+      "supported_fraction": 0.5625
     },
     {
       "age_precision_status": "missing",
@@ -29134,6 +30159,194 @@
       "st_mass_solar": 0.9,
       "status": "undetermined",
       "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "HIP 67522",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "HIP 67522 c",
+      "pl_orbsmax_au": 0.1228,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.017,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": 0.24304,
+      "st_mass_solar": 1.22,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 149,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 149,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 149,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 149,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HD 148797",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 0.0,
+      "model_agreement": 1.0,
+      "pl_name": "HD 148797 b",
+      "pl_orbsmax_au": 0.2568,
+      "reason": null,
+      "st_age_gyr": 2.94,
+      "st_feh": -0.093,
+      "st_log_luminosity_solar": 0.58206,
+      "st_mass_solar": 1.272,
+      "status": "inferred",
+      "supported_fraction": 0.58203125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 162,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 162,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 162,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 162,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HD 148797",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 0.0,
+      "model_agreement": 1.0,
+      "pl_name": "HD 148797 c",
+      "pl_orbsmax_au": 0.3536,
+      "reason": null,
+      "st_age_gyr": 2.94,
+      "st_feh": -0.093,
+      "st_log_luminosity_solar": 0.58206,
+      "st_mass_solar": 1.272,
+      "status": "inferred",
+      "supported_fraction": 0.6328125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 78,
+      "hostname": "TOI-2427",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2427 c",
+      "pl_orbsmax_au": 0.05,
+      "reason": "insufficient_continuous_track_support",
+      "st_age_gyr": 1.58,
+      "st_feh": -0.21,
+      "st_log_luminosity_solar": -0.95861,
+      "st_mass_solar": 0.639,
+      "status": "undetermined",
+      "supported_fraction": 0.3046875
     },
     {
       "age_precision_status": "missing",
@@ -29890,6 +31103,79 @@
       "supported_fraction": 0.9921875
     },
     {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 204,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 204,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 204,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 204,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "WASP-7",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 0.0,
+      "model_agreement": 1.0,
+      "pl_name": "WASP-7 b",
+      "pl_orbsmax_au": 0.0617,
+      "reason": null,
+      "st_age_gyr": 2.4,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": 0.53682,
+      "st_mass_solar": 1.276,
+      "status": "inferred",
+      "supported_fraction": 0.796875
+    },
+    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -30319,25 +31605,46 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "too_broad",
+      "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "TOI-2525",
+      "hostname": "HIP 67522",
       "is_control": false,
       "label": "MODEL-INFERRED",
       "model_agreement": null,
-      "pl_name": "TOI-2525 c",
-      "pl_orbsmax_au": 0.249,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 3.99,
-      "st_feh": 0.14,
-      "st_log_luminosity_solar": -0.44009,
-      "st_mass_solar": 0.849,
+      "pl_name": "HIP 67522 b",
+      "pl_orbsmax_au": 0.0748,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.017,
+      "st_feh": 0.0,
+      "st_log_luminosity_solar": 0.24304,
+      "st_mass_solar": 1.22,
       "status": "undetermined",
       "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 63,
+      "hostname": "TOI-2427",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2427 b",
+      "pl_orbsmax_au": 0.0202,
+      "reason": "insufficient_continuous_track_support",
+      "st_age_gyr": 1.58,
+      "st_feh": -0.21,
+      "st_log_luminosity_solar": -0.95861,
+      "st_mass_solar": 0.639,
+      "status": "undetermined",
+      "supported_fraction": 0.24609375
     },
     {
       "age_precision_status": "missing",
@@ -32026,6 +33333,27 @@
       "supported_fraction": 0.0
     },
     {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2227",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2227 b",
+      "pl_orbsmax_au": null,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.0503,
+      "st_log_luminosity_solar": 0.1619,
+      "st_mass_solar": 1.03,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -32189,6 +33517,27 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
+      "hostname": "TOI-261",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-261.02",
+      "pl_orbsmax_au": null,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.35,
+      "st_log_luminosity_solar": 0.24978,
+      "st_mass_solar": 1.069,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
       "hostname": "HD 109833",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -32221,6 +33570,27 @@
       "st_feh": null,
       "st_log_luminosity_solar": -0.908,
       "st_mass_solar": 0.66,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-262",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-262 b",
+      "pl_orbsmax_au": 0.163,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 0.8,
+      "st_feh": 0.26,
+      "st_log_luminosity_solar": -0.28987,
+      "st_mass_solar": 0.913,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -32347,6 +33717,27 @@
       "st_feh": -0.06,
       "st_log_luminosity_solar": 0.20922,
       "st_mass_solar": 1.19,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2040",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2040 b",
+      "pl_orbsmax_au": 0.0473,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": 8.7,
+      "st_feh": 0.3,
+      "st_log_luminosity_solar": -0.22185,
+      "st_mass_solar": 0.92,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -33273,79 +34664,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 204,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 204,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 204,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 204,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "WASP-7",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 0.0,
-      "model_agreement": 1.0,
-      "pl_name": "WASP-7 b",
-      "pl_orbsmax_au": 0.0617,
-      "reason": null,
-      "st_age_gyr": 2.4,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": 0.53682,
-      "st_mass_solar": 1.276,
-      "status": "inferred",
-      "supported_fraction": 0.796875
-    },
-    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -33384,132 +34702,6 @@
       "st_feh": null,
       "st_log_luminosity_solar": 0.18874,
       "st_mass_solar": 0.851969,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-209",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-209 b",
-      "pl_orbsmax_au": null,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": null,
-      "st_log_luminosity_solar": -0.53714,
-      "st_mass_solar": 0.81,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-261",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-261.01",
-      "pl_orbsmax_au": 0.034792189,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.35,
-      "st_log_luminosity_solar": 0.24978,
-      "st_mass_solar": 0.496728,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-261",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-261.02",
-      "pl_orbsmax_au": null,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.35,
-      "st_log_luminosity_solar": 0.24978,
-      "st_mass_solar": 1.069,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-262",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-262 b",
-      "pl_orbsmax_au": 0.163,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.8,
-      "st_feh": 0.26,
-      "st_log_luminosity_solar": -0.28987,
-      "st_mass_solar": 0.913,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2040",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2040 b",
-      "pl_orbsmax_au": 0.0473,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 8.7,
-      "st_feh": 0.3,
-      "st_log_luminosity_solar": -0.22185,
-      "st_mass_solar": 0.92,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2227",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2227 b",
-      "pl_orbsmax_au": null,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.0503,
-      "st_log_luminosity_solar": 0.1619,
-      "st_mass_solar": 1.03,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -33585,6 +34777,48 @@
       "st_mass_solar": 0.936,
       "status": "inferred",
       "supported_fraction": 0.57421875
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-261",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-261.01",
+      "pl_orbsmax_au": 0.034792189,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": -0.35,
+      "st_log_luminosity_solar": 0.24978,
+      "st_mass_solar": 0.496728,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "missing",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-209",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-209 b",
+      "pl_orbsmax_au": null,
+      "reason": "missing_required_measurement_or_uncertainty",
+      "st_age_gyr": null,
+      "st_feh": null,
+      "st_log_luminosity_solar": -0.53714,
+      "st_mass_solar": 0.81,
+      "status": "undetermined",
+      "supported_fraction": 0.0
     },
     {
       "age_precision_status": "missing",
@@ -38287,79 +39521,6 @@
       "st_mass_solar": 1.38,
       "status": "undetermined",
       "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 146,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 146,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 146,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 146,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "TOI-2025",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
-      "model_agreement": 1.0,
-      "pl_name": "TOI-2025 b",
-      "pl_orbsmax_au": 0.0892,
-      "reason": null,
-      "st_age_gyr": 4.5,
-      "st_feh": 0.15,
-      "st_log_luminosity_solar": 0.38739,
-      "st_mass_solar": 1.199,
-      "status": "inferred",
-      "supported_fraction": 0.5703125
     },
     {
       "age_precision_status": "missing",
@@ -43076,6 +44237,163 @@
       "supported_fraction": 0.75390625
     },
     {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 252,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HATS-46",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "HATS-46 b",
+      "pl_orbsmax_au": 0.05272,
+      "reason": null,
+      "st_age_gyr": 8.4,
+      "st_feh": -0.029,
+      "st_log_luminosity_solar": -0.1986,
+      "st_mass_solar": 0.869,
+      "status": "inferred",
+      "supported_fraction": 0.984375
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-426",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-426 b",
+      "pl_orbsmax_au": 0.02374,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 1.57,
+      "st_feh": 0.16,
+      "st_log_luminosity_solar": -0.022,
+      "st_mass_solar": 1.0,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2084",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2084 b",
+      "pl_orbsmax_au": 0.05006,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 7.5,
+      "st_feh": -0.13,
+      "st_log_luminosity_solar": -1.49214,
+      "st_mass_solar": 0.453,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-2152",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-2152 A b",
+      "pl_orbsmax_au": 0.05064,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 0.83,
+      "st_feh": 0.282,
+      "st_log_luminosity_solar": 0.65321,
+      "st_mass_solar": 1.516,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
+      "age_precision_status": "too_broad",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "TOI-426",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-426 c",
+      "pl_orbsmax_au": 0.747,
+      "reason": "stellar_age_effectively_unconstrained",
+      "st_age_gyr": 1.57,
+      "st_feh": 0.16,
+      "st_log_luminosity_solar": -0.022,
+      "st_mass_solar": 1.0,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -46332,27 +47650,6 @@
       "supported_fraction": 1.0
     },
     {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 60,
-      "hostname": "TOI-1296",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1296 b",
-      "pl_orbsmax_au": 0.051,
-      "reason": "insufficient_mist_main_sequence_support",
-      "st_age_gyr": 7.1,
-      "st_feh": 0.405,
-      "st_log_luminosity_solar": 0.40157,
-      "st_mass_solar": 1.1576,
-      "status": "undetermined",
-      "supported_fraction": 0.234375
-    },
-    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -48988,27 +50285,6 @@
       "st_feh": 0.21,
       "st_log_luminosity_solar": 0.11702,
       "st_mass_solar": 1.028,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1749",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1749 c",
-      "pl_orbsmax_au": 0.0443,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.8,
-      "st_feh": -0.26,
-      "st_log_luminosity_solar": -1.15649,
-      "st_mass_solar": 0.58,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -98252,79 +99528,6 @@
     },
     {
       "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 225,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 225,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 225,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 225,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "HATS-34",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
-      "model_agreement": 1.0,
-      "pl_name": "HATS-34 b",
-      "pl_orbsmax_au": 0.03166,
-      "reason": null,
-      "st_age_gyr": 7.7,
-      "st_feh": 0.25,
-      "st_log_luminosity_solar": -0.14026,
-      "st_mass_solar": 0.955,
-      "status": "inferred",
-      "supported_fraction": 0.87890625
-    },
-    {
-      "age_precision_status": "supported",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
       "climate_prescriptions": {},
@@ -102421,27 +103624,6 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "HATS-46",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "HATS-46 b",
-      "pl_orbsmax_au": 0.05367,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 3.0,
-      "st_feh": -0.06,
-      "st_log_luminosity_solar": -0.22988,
-      "st_mass_solar": 0.917,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
       "hostname": "HATS-7",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -104433,27 +105615,6 @@
       "st_feh": 0.252,
       "st_log_luminosity_solar": -0.82102,
       "st_mass_solar": 0.719,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "NGTS-5",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "NGTS-5 b",
-      "pl_orbsmax_au": 0.0382,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.12,
-      "st_log_luminosity_solar": -0.51087,
-      "st_mass_solar": 0.661,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -110429,27 +111590,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "K2-223",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "K2-223 c",
-      "pl_orbsmax_au": 0.0549,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.19,
-      "st_log_luminosity_solar": -0.03543,
-      "st_mass_solar": 1.06,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "too_broad",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -111212,48 +112352,6 @@
       "st_feh": -0.17,
       "st_log_luminosity_solar": 2.3941,
       "st_mass_solar": 1.7,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1749",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1749 b",
-      "pl_orbsmax_au": 0.0291,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.8,
-      "st_feh": -0.26,
-      "st_log_luminosity_solar": -1.15649,
-      "st_mass_solar": 0.58,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1749",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1749 d",
-      "pl_orbsmax_au": 0.0707,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.8,
-      "st_feh": -0.26,
-      "st_log_luminosity_solar": -1.15649,
-      "st_mass_solar": 0.58,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -117075,27 +118173,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1246",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1246 b",
-      "pl_orbsmax_au": 0.049,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 6.3,
-      "st_feh": 0.17,
-      "st_log_luminosity_solar": -0.30103,
-      "st_mass_solar": 0.87,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -118191,27 +119268,6 @@
       "st_feh": null,
       "st_log_luminosity_solar": -0.87076,
       "st_mass_solar": 0.65,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2427",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2427 b",
-      "pl_orbsmax_au": 0.0202,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": null,
-      "st_log_luminosity_solar": -0.94244,
-      "st_mass_solar": 0.64,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -121268,27 +122324,6 @@
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "TOI-1452",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1452 b",
-      "pl_orbsmax_au": 0.061,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": -0.07,
-      "st_log_luminosity_solar": -2.1549,
-      "st_mass_solar": 0.249,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
       "hostname": "KMT-2021-BLG-0171L",
       "is_control": false,
       "label": "MODEL-INFERRED",
@@ -121480,79 +122515,6 @@
       "st_mass_solar": 1.26,
       "status": "undetermined",
       "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 252,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 252,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 252,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 252,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "HD 7449",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
-      "model_agreement": 1.0,
-      "pl_name": "HD 7449 b",
-      "pl_orbsmax_au": 2.438,
-      "reason": null,
-      "st_age_gyr": 2.1,
-      "st_feh": -0.105,
-      "st_log_luminosity_solar": 0.10138,
-      "st_mass_solar": 1.196,
-      "status": "inferred",
-      "supported_fraction": 0.984375
     },
     {
       "age_precision_status": "missing",
@@ -122255,79 +123217,6 @@
       "st_mass_solar": 1.34,
       "status": "undetermined",
       "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 193,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "TOI-3688 A",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
-      "model_agreement": 1.0,
-      "pl_name": "TOI-3688 A b",
-      "pl_orbsmax_au": 0.0456,
-      "reason": null,
-      "st_age_gyr": 3.3,
-      "st_feh": 0.262,
-      "st_log_luminosity_solar": 0.2833,
-      "st_mass_solar": 1.199,
-      "status": "inferred",
-      "supported_fraction": 0.75390625
     },
     {
       "age_precision_status": "invalid",
@@ -123331,27 +124220,6 @@
       "st_feh": null,
       "st_log_luminosity_solar": null,
       "st_mass_solar": 0.24,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2152",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2152 A b",
-      "pl_orbsmax_au": 0.05064,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 0.83,
-      "st_feh": 0.282,
-      "st_log_luminosity_solar": 0.65321,
-      "st_mass_solar": 1.516,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -124696,27 +125564,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-4600",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-4600 b",
-      "pl_orbsmax_au": 0.349,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 2.3,
-      "st_feh": 0.16,
-      "st_log_luminosity_solar": -0.37675,
-      "st_mass_solar": 0.89,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -125329,27 +126176,6 @@
       "st_feh": -0.39,
       "st_log_luminosity_solar": -1.64264,
       "st_mass_solar": 0.428,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2084",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2084 b",
-      "pl_orbsmax_au": 0.05006,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 7.5,
-      "st_feh": -0.13,
-      "st_log_luminosity_solar": -1.49214,
-      "st_mass_solar": 0.453,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -127761,27 +128587,6 @@
     },
     {
       "age_precision_status": "supported",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 19,
-      "hostname": "gam Cep",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "gam Cep b",
-      "pl_orbsmax_au": 2.13,
-      "reason": "insufficient_mist_main_sequence_support",
-      "st_age_gyr": 5.7,
-      "st_feh": 0.18,
-      "st_log_luminosity_solar": 1.073,
-      "st_mass_solar": 1.27,
-      "status": "undetermined",
-      "supported_fraction": 0.07421875
-    },
-    {
-      "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
       "climate_prescriptions": {
@@ -129377,27 +130182,6 @@
       "classification_robustness": "undetermined",
       "climate_prescriptions": {},
       "draws_requested": 256,
-      "draws_supported": 74,
-      "hostname": "TOI-5301",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-5301 b",
-      "pl_orbsmax_au": 0.073,
-      "reason": "insufficient_mist_main_sequence_support",
-      "st_age_gyr": 2.43,
-      "st_feh": 0.03,
-      "st_log_luminosity_solar": 0.81624,
-      "st_mass_solar": 1.483,
-      "status": "undetermined",
-      "supported_fraction": 0.2890625
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
       "draws_supported": 104,
       "hostname": "TOI-5232",
       "is_control": false,
@@ -130345,27 +131129,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1246",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1246 c",
-      "pl_orbsmax_au": 0.061,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 6.3,
-      "st_feh": 0.168,
-      "st_log_luminosity_solar": -0.30103,
-      "st_mass_solar": 0.8889,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -130615,27 +131378,6 @@
       "st_mass_solar": 1.29,
       "status": "inferred",
       "supported_fraction": 1.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1246",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1246 e",
-      "pl_orbsmax_au": 0.212,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 6.3,
-      "st_feh": 0.168,
-      "st_log_luminosity_solar": -0.30103,
-      "st_mass_solar": 0.8889,
-      "status": "undetermined",
-      "supported_fraction": 0.0
     },
     {
       "age_precision_status": "supported",
@@ -131845,27 +132587,6 @@
       "classification_robustness": "undetermined",
       "climate_prescriptions": {},
       "draws_requested": 256,
-      "draws_supported": 95,
-      "hostname": "TOI-3894",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-3894 b",
-      "pl_orbsmax_au": 0.05354,
-      "reason": "insufficient_mist_main_sequence_support",
-      "st_age_gyr": 5.7,
-      "st_feh": 0.021,
-      "st_log_luminosity_solar": 0.41896,
-      "st_mass_solar": 1.138,
-      "status": "undetermined",
-      "supported_fraction": 0.37109375
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
       "draws_supported": 63,
       "hostname": "TOI-3321",
       "is_control": false,
@@ -132924,27 +133645,6 @@
       "st_feh": 0.022,
       "st_log_luminosity_solar": -0.41117,
       "st_mass_solar": 0.823,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "invalid",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "NGTS-33",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "NGTS-33 b",
-      "pl_orbsmax_au": 0.048,
-      "reason": "nonpositive_or_premain_sequence_input",
-      "st_age_gyr": 0.03,
-      "st_feh": -0.11,
-      "st_log_luminosity_solar": 0.77159,
-      "st_mass_solar": 1.6,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -136737,79 +137437,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 242,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 242,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 242,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 242,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "TOI-2449",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
-      "model_agreement": 1.0,
-      "pl_name": "TOI-2449 b",
-      "pl_orbsmax_au": 0.45,
-      "reason": null,
-      "st_age_gyr": 2.5,
-      "st_feh": -0.03,
-      "st_log_luminosity_solar": 0.14808,
-      "st_mass_solar": 1.079,
-      "status": "inferred",
-      "supported_fraction": 0.9453125
-    },
-    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -139437,79 +140064,6 @@
       "st_mass_solar": 0.86,
       "status": "inferred",
       "supported_fraction": 0.84375
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 193,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 193,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "TOI-1135",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
-      "model_agreement": 1.0,
-      "pl_name": "TOI-1135 b",
-      "pl_orbsmax_au": 0.0815,
-      "reason": null,
-      "st_age_gyr": 3.3,
-      "st_feh": -0.039,
-      "st_log_luminosity_solar": 0.31806,
-      "st_mass_solar": 1.119,
-      "status": "inferred",
-      "supported_fraction": 0.75390625
     },
     {
       "age_precision_status": "missing",
@@ -142631,23 +143185,253 @@
       "supported_fraction": 0.0
     },
     {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 8,
+      "hostname": "gam Cep",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "gam Cep b",
+      "pl_orbsmax_au": 1.978,
+      "reason": "insufficient_mist_main_sequence_support",
+      "st_age_gyr": 5.7,
+      "st_feh": 0.2,
+      "st_log_luminosity_solar": 1.073,
+      "st_mass_solar": 1.26,
+      "status": "undetermined",
+      "supported_fraction": 0.03125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 252,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 252,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HD 7449",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 5.551115123125783e-17,
+      "model_agreement": 1.0,
+      "pl_name": "HD 7449 b",
+      "pl_orbsmax_au": 2.438,
+      "reason": null,
+      "st_age_gyr": 2.1,
+      "st_feh": -0.105,
+      "st_log_luminosity_solar": 0.10138,
+      "st_mass_solar": 1.196,
+      "status": "inferred",
+      "supported_fraction": 0.984375
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": 0.0,
+      "classification_robustness": "robustly_outside_across_prescriptions",
+      "climate_prescriptions": {
+        "kopparapu_conservative": {
+          "complete_history_draws": 249,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "runaway_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_moist_greenhouse": {
+          "complete_history_draws": 249,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "moist_greenhouse",
+          "outer_boundary": "maximum_greenhouse",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        },
+        "kopparapu_optimistic_empirical": {
+          "complete_history_draws": 249,
+          "f_chz": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          },
+          "inner_boundary": "recent_venus",
+          "outer_boundary": "early_mars",
+          "p_current_hz": 0.0,
+          "tau_hz_gyr": {
+            "p16": 0.0,
+            "p50": 0.0,
+            "p84": 0.0
+          }
+        }
+      },
+      "draws_requested": 256,
+      "draws_supported": 249,
+      "history_start_gyr": 0.1,
+      "history_steps": 72,
+      "hostname": "HATS-34",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
+      "model_agreement": 1.0,
+      "pl_name": "HATS-34 b",
+      "pl_orbsmax_au": 0.03165,
+      "reason": null,
+      "st_age_gyr": 5.6,
+      "st_feh": 0.174,
+      "st_log_luminosity_solar": -0.15366,
+      "st_mass_solar": 0.952,
+      "status": "inferred",
+      "supported_fraction": 0.97265625
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 52,
+      "hostname": "TOI-3894",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-3894 b",
+      "pl_orbsmax_au": 0.05354,
+      "reason": "insufficient_mist_main_sequence_support",
+      "st_age_gyr": 7.2,
+      "st_feh": 0.01,
+      "st_log_luminosity_solar": 0.41847,
+      "st_mass_solar": 1.089,
+      "status": "undetermined",
+      "supported_fraction": 0.203125
+    },
+    {
+      "age_precision_status": "supported",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 69,
+      "hostname": "TOI-5301",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "TOI-5301 b",
+      "pl_orbsmax_au": 0.073,
+      "reason": "insufficient_mist_main_sequence_support",
+      "st_age_gyr": 2.29,
+      "st_feh": 0.05,
+      "st_log_luminosity_solar": 0.81757,
+      "st_mass_solar": 1.507,
+      "status": "undetermined",
+      "supported_fraction": 0.26953125
+    },
+    {
+      "age_precision_status": "invalid",
+      "boundary_sensitivity": null,
+      "classification_robustness": "undetermined",
+      "climate_prescriptions": {},
+      "draws_requested": 256,
+      "draws_supported": 0,
+      "hostname": "NGTS-33",
+      "is_control": false,
+      "label": "MODEL-INFERRED",
+      "model_agreement": null,
+      "pl_name": "NGTS-33 b",
+      "pl_orbsmax_au": 0.048,
+      "reason": "nonpositive_or_premain_sequence_input",
+      "st_age_gyr": 0.03,
+      "st_feh": -0.11,
+      "st_log_luminosity_solar": 0.77159,
+      "st_mass_solar": 1.6,
+      "status": "undetermined",
+      "supported_fraction": 0.0
+    },
+    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
       "climate_prescriptions": {},
       "draws_requested": 256,
       "draws_supported": 0,
-      "hostname": "TOI-1839",
+      "hostname": "KMT-2023-BLG-1118L",
       "is_control": false,
       "label": "MODEL-INFERRED",
       "model_agreement": null,
-      "pl_name": "TOI-1839 b",
-      "pl_orbsmax_au": null,
+      "pl_name": "KMT-2023-BLG-1118L b",
+      "pl_orbsmax_au": 0.9,
       "reason": "missing_required_measurement_or_uncertainty",
       "st_age_gyr": null,
-      "st_feh": 0.252,
-      "st_log_luminosity_solar": -0.26441,
-      "st_mass_solar": 0.934,
+      "st_feh": null,
+      "st_log_luminosity_solar": null,
+      "st_mass_solar": 0.09,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -142900,27 +143684,6 @@
       "st_feh": null,
       "st_log_luminosity_solar": -0.59732,
       "st_mass_solar": 0.75,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1839",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1839 c",
-      "pl_orbsmax_au": null,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.252,
-      "st_log_luminosity_solar": -0.26441,
-      "st_mass_solar": 0.934,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -144087,69 +144850,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "bet Pic",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "bet Pic b",
-      "pl_orbsmax_au": 10.07,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.023,
-      "st_feh": -0.21,
-      "st_log_luminosity_solar": 0.95282,
-      "st_mass_solar": 1.789,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "bet Pic",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "bet Pic c",
-      "pl_orbsmax_au": 2.7,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.023,
-      "st_feh": -0.21,
-      "st_log_luminosity_solar": 0.95282,
-      "st_mass_solar": 1.789,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "bet Pic",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "bet Pic d",
-      "pl_orbsmax_au": 26.0,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 0.023,
-      "st_feh": -0.21,
-      "st_log_luminosity_solar": 0.95282,
-      "st_mass_solar": 1.789,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -145194,27 +145894,6 @@
       "st_feh": 0.15,
       "st_log_luminosity_solar": -0.34794,
       "st_mass_solar": 0.938545,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "K2-223",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "K2-223 b",
-      "pl_orbsmax_au": 0.0127,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.19,
-      "st_log_luminosity_solar": -0.03543,
-      "st_mass_solar": 1.06,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -150497,27 +151176,6 @@
       "supported_fraction": 0.546875
     },
     {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-2525",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-2525 b",
-      "pl_orbsmax_au": 0.1511,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 3.99,
-      "st_feh": 0.14,
-      "st_log_luminosity_solar": -0.44009,
-      "st_mass_solar": 0.849,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "missing",
       "boundary_sensitivity": null,
       "classification_robustness": "undetermined",
@@ -153026,79 +153684,6 @@
       "classification_robustness": "robustly_outside_across_prescriptions",
       "climate_prescriptions": {
         "kopparapu_conservative": {
-          "complete_history_draws": 231,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "runaway_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_moist_greenhouse": {
-          "complete_history_draws": 231,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "moist_greenhouse",
-          "outer_boundary": "maximum_greenhouse",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        },
-        "kopparapu_optimistic_empirical": {
-          "complete_history_draws": 231,
-          "f_chz": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          },
-          "inner_boundary": "recent_venus",
-          "outer_boundary": "early_mars",
-          "p_current_hz": 0.0,
-          "tau_hz_gyr": {
-            "p16": 0.0,
-            "p50": 0.0,
-            "p84": 0.0
-          }
-        }
-      },
-      "draws_requested": 256,
-      "draws_supported": 231,
-      "history_start_gyr": 0.1,
-      "history_steps": 72,
-      "hostname": "WASP-104",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "luminosity_anchor_max_abs_dex": 2.7755575615628914e-17,
-      "model_agreement": 1.0,
-      "pl_name": "WASP-104 b",
-      "pl_orbsmax_au": 0.02918,
-      "reason": null,
-      "st_age_gyr": 3.0,
-      "st_feh": 0.32,
-      "st_log_luminosity_solar": -0.18964,
-      "st_mass_solar": 1.076,
-      "status": "inferred",
-      "supported_fraction": 0.90234375
-    },
-    {
-      "age_precision_status": "supported",
-      "boundary_sensitivity": 0.0,
-      "classification_robustness": "robustly_outside_across_prescriptions",
-      "climate_prescriptions": {
-        "kopparapu_conservative": {
           "complete_history_draws": 183,
           "f_chz": {
             "p16": 0.0,
@@ -153938,27 +154523,6 @@
       "st_feh": -0.088,
       "st_log_luminosity_solar": 0.08991,
       "st_mass_solar": 1.011,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-1695",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-1695 b",
-      "pl_orbsmax_au": 0.033548,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": -1.3536,
-      "st_mass_solar": 0.513,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -155017,27 +155581,6 @@
       "st_feh": -0.09,
       "st_log_luminosity_solar": -0.68565,
       "st_mass_solar": 0.65,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "too_broad",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-4600",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-4600 c",
-      "pl_orbsmax_au": 1.152,
-      "reason": "stellar_age_effectively_unconstrained",
-      "st_age_gyr": 2.3,
-      "st_feh": 0.16,
-      "st_log_luminosity_solar": -0.37675,
-      "st_mass_solar": 0.89,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -162582,27 +163125,6 @@
       "st_feh": 0.253,
       "st_log_luminosity_solar": -0.99183,
       "st_mass_solar": 0.655,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "TOI-4479",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "TOI-4479 b",
-      "pl_orbsmax_au": 0.0164,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": null,
-      "st_feh": 0.0,
-      "st_log_luminosity_solar": -1.60432,
-      "st_mass_solar": 0.452,
       "status": "undetermined",
       "supported_fraction": 0.0
     },
@@ -175262,27 +175784,6 @@
       "supported_fraction": 0.0
     },
     {
-      "age_precision_status": "missing",
-      "boundary_sensitivity": null,
-      "classification_robustness": "undetermined",
-      "climate_prescriptions": {},
-      "draws_requested": 256,
-      "draws_supported": 0,
-      "hostname": "WASP-74",
-      "is_control": false,
-      "label": "MODEL-INFERRED",
-      "model_agreement": null,
-      "pl_name": "WASP-74 b",
-      "pl_orbsmax_au": 0.03443,
-      "reason": "missing_required_measurement_or_uncertainty",
-      "st_age_gyr": 3.49,
-      "st_feh": 0.39,
-      "st_log_luminosity_solar": 0.39971,
-      "st_mass_solar": 0.98,
-      "status": "undetermined",
-      "supported_fraction": 0.0
-    },
-    {
       "age_precision_status": "supported",
       "boundary_sensitivity": 0.0,
       "classification_robustness": "robustly_outside_across_prescriptions",
@@ -176314,7 +176815,7 @@
     },
     "catalogue": {
       "path": "data/processed/nasa_pscomppars.parquet",
-      "sha256": "b9e06ccd49bbebf81cddc83f992499b5731c8c39f2abdba9eb19c1a79f5780df"
+      "sha256": "0a21e3d31f04903201be2a64bdb2c4518a063873579ce7970323b4b359cb2d8c"
     },
     "mist_grid": {
       "path": "results/climate/mist_v1p2_main_sequence_grid.csv",
