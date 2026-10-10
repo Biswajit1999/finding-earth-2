@@ -10,7 +10,7 @@
     },
     "results/hwo/hwo_precursor_atlas.json": {
       "bytes": 3218,
-      "sha256": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
+      "sha256": "b93c39604fafb2092010f1b381e6d1deb8089e6e16077a2ff3b2cf125a00ad86"
     },
     "results/hwo/hwo_precursor_atlas.png": {
       "bytes": 1906911,
@@ -21,8 +21,8 @@
       "sha256": "d6a4740e97fe96e3b427eb0b4aaa2d8fb3d79ba355fab628d31303ad24b1174d"
     },
     "results/hwo/known_planet_accessibility.csv": {
-      "bytes": 1185137,
-      "sha256": "8de01ef5f92198bee77d76737e05a459695b5ff2c383ee0f6228c3909d78034f"
+      "bytes": 1186949,
+      "sha256": "63dbfb3d31c8a8652049f1e473e17098fc7cae1836be147668977d50ebde2769"
     }
   },
   "product": "Phase 10 HWO precursor atlas and direct-imaging physics",

@@ -6,23 +6,23 @@
     },
     "results/environment/bolometric_vs_xuv.svg": {
       "bytes": 79750,
-      "sha256": "8ee53186c3b807ad02edaad28efd97fba15f07b246fcee957729d2786eab6099"
+      "sha256": "ccd5cf5d948e8f9fd28fdaf2d165ea3e9d51983c3e79c01ec675945c7510452b"
     },
     "results/environment/escape_sensitivity.png": {
-      "bytes": 149813,
-      "sha256": "7a568d32ce0b88d519a0225c435a1e0bc7c9aaf6438debf6d9b0853586c2bbfa"
+      "bytes": 149770,
+      "sha256": "a210b8a08d9ca8e885040b7971f3de20117147648dba5023d9f658d071f59dca"
     },
     "results/environment/escape_sensitivity.svg": {
       "bytes": 86810,
-      "sha256": "cf6ebbadb3269ab6d7fbae0636a0ddeb5f20d5824aac2abfe53e269417298a86"
+      "sha256": "1515c162b9eb47326b6a2cc66a6bbb91166b41fb1848ab8beb2d98584a6be351"
     },
     "results/environment/xuv_escape_scenarios.csv": {
-      "bytes": 18706,
-      "sha256": "4b4c05f9c53866e6567218f89452985749861c067e748b99e5536dfeb90bb777"
+      "bytes": 18705,
+      "sha256": "c5c5d519dcc1bdf1d74a872ce1532208235b56f1ece8c1ed04773fb1d8014638"
     },
     "results/environment/xuv_escape_scenarios.json": {
-      "bytes": 757873,
-      "sha256": "aff0cfcea0edbf76f61da72052b2ebeb86f3fdf319aaba297d6afbcb8e6068bc"
+      "bytes": 757871,
+      "sha256": "27ba8928d473779dc54c170e6343adfa221ff194d7d3a227bcbd5a11d5cd4d2b"
     }
   },
   "product": "Phase 8 XUV environment and atmospheric-escape scenarios",

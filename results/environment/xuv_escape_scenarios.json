@@ -1991,387 +1991,387 @@
       "bolometric_insolation_earth": 0.85,
       "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
       "current_mass_loss_kg_s": {
-        "maximum": 3682848.357351077,
-        "median": 265292.95455294225,
-        "minimum": 6927.0731955006095
+        "maximum": 3538068.971988132,
+        "median": 254890.61822630046,
+        "minimum": 6655.8044572534245
       },
       "earth2_rank": 10,
       "escape_scenarios": [
         {
-          "current_mass_loss_kg_s": 6927.0731955006095,
+          "current_mass_loss_kg_s": 6655.8044572534245,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.13886830135170455,
-            "fraction_0.01": 0.013886830135170456,
-            "fraction_0.1": 0.0013886830135170457
+            "fraction_0.001": 0.10556180966595974,
+            "fraction_0.01": 0.010556180966595972,
+            "fraction_0.1": 0.0010556180966595971
           },
-          "integrated_lost_earth_masses": 0.0001735853766896307,
+          "integrated_lost_earth_masses": 0.00016678765927221638,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 8406.903900855754,
+          "current_mass_loss_kg_s": 8077.262874429601,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.1685347377442411,
-            "fraction_0.01": 0.01685347377442411,
-            "fraction_0.1": 0.0016853473774424111
+            "fraction_0.001": 0.12810630054542105,
+            "fraction_0.01": 0.012810630054542105,
+            "fraction_0.1": 0.0012810630054542103
           },
-          "integrated_lost_earth_masses": 0.0002106684221803014,
+          "integrated_lost_earth_masses": 0.00020240795486176527,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 11812.74161389564,
+          "current_mass_loss_kg_s": 11348.361518826723,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.23681218834150494,
-            "fraction_0.01": 0.023681218834150492,
-            "fraction_0.1": 0.0023681218834150494
+            "fraction_0.001": 0.17998629412337547,
+            "fraction_0.01": 0.017998629412337545,
+            "fraction_0.1": 0.0017998629412337545
           },
-          "integrated_lost_earth_masses": 0.0002960152354268812,
+          "integrated_lost_earth_masses": 0.00028437834471493325,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 20781.219586501822,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.4166049040551135,
-            "fraction_0.01": 0.04166049040551135,
-            "fraction_0.1": 0.004166049040551135
-          },
-          "integrated_lost_earth_masses": 0.0005207561300688919,
-          "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 25220.711702567256,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.5056042132327232,
-            "fraction_0.01": 0.05056042132327231,
-            "fraction_0.1": 0.005056042132327232
-          },
-          "integrated_lost_earth_masses": 0.000632005266540904,
-          "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 35438.22484168692,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.7104365650245147,
-            "fraction_0.01": 0.07104365650245147,
-            "fraction_0.1": 0.007104365650245147
-          },
-          "integrated_lost_earth_masses": 0.0008880457062806434,
-          "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 41562.439173003644,
-          "heating_efficiency": 0.3,
+          "current_mass_loss_kg_s": 19967.413371760274,
+          "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.833209808110227,
-            "fraction_0.01": 0.0833209808110227,
-            "fraction_0.1": 0.00833209808110227
+            "fraction_0.001": 0.31668542899787927,
+            "fraction_0.01": 0.031668542899787926,
+            "fraction_0.1": 0.003166854289978792
           },
-          "integrated_lost_earth_masses": 0.0010415122601377838,
+          "integrated_lost_earth_masses": 0.0005003629778166492,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 50441.42340513451,
-          "heating_efficiency": 0.3,
+          "current_mass_loss_kg_s": 24231.788623288798,
+          "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.0112084264654464,
-            "fraction_0.01": 0.10112084264654463,
-            "fraction_0.1": 0.010112084264654464
+            "fraction_0.001": 0.38431890163626314,
+            "fraction_0.01": 0.03843189016362631,
+            "fraction_0.1": 0.0038431890163626308
           },
-          "integrated_lost_earth_masses": 0.001264010533081808,
+          "integrated_lost_earth_masses": 0.0006072238645852958,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 70876.44968337384,
-          "heating_efficiency": 0.3,
+          "current_mass_loss_kg_s": 34045.08455648017,
+          "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.4208731300490294,
-            "fraction_0.01": 0.14208731300490293,
-            "fraction_0.1": 0.014208731300490295
+            "fraction_0.001": 0.5399588823701263,
+            "fraction_0.01": 0.05399588823701264,
+            "fraction_0.1": 0.005399588823701263
           },
-          "integrated_lost_earth_masses": 0.0017760914125612868,
+          "integrated_lost_earth_masses": 0.0008531350341447997,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "short_low",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 72864.86345473689,
+          "current_mass_loss_kg_s": 39934.82674352055,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.6333708579957585,
+            "fraction_0.01": 0.06333708579957585,
+            "fraction_0.1": 0.006333708579957584
+          },
+          "integrated_lost_earth_masses": 0.0010007259556332985,
+          "label": "SCENARIO",
+          "tide_factor": 0.9714408900436082,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 48463.577246577595,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.7686378032725263,
+            "fraction_0.01": 0.07686378032725262,
+            "fraction_0.1": 0.0076863780327252615
+          },
+          "integrated_lost_earth_masses": 0.0012144477291705915,
+          "label": "SCENARIO",
+          "tide_factor": 0.9685857764910453,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 68090.16911296034,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.0799177647402527,
+            "fraction_0.01": 0.10799177647402528,
+            "fraction_0.1": 0.010799177647402526
+          },
+          "integrated_lost_earth_masses": 0.0017062700682895994,
+          "label": "SCENARIO",
+          "tide_factor": 0.962876253621363,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 70011.42752096351,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.6984683344468006,
-            "fraction_0.01": 0.06984683344468005,
-            "fraction_0.1": 0.0069846833444680055
+            "fraction_0.001": 0.5309460882065297,
+            "fraction_0.01": 0.053094608820652964,
+            "fraction_0.1": 0.005309460882065296
           },
-          "integrated_lost_earth_masses": 0.0008730854180585007,
+          "integrated_lost_earth_masses": 0.000838894819366317,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 88430.98485098078,
+          "current_mass_loss_kg_s": 84963.53940876684,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.8476821306434414,
-            "fraction_0.01": 0.08476821306434415,
-            "fraction_0.1": 0.008476821306434415
+            "fraction_0.001": 0.6443385099633697,
+            "fraction_0.01": 0.06443385099633696,
+            "fraction_0.1": 0.006443385099633696
           },
-          "integrated_lost_earth_masses": 0.0010596026633043019,
+          "integrated_lost_earth_masses": 0.0010180548457421241,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 124256.4905018865,
+          "current_mass_loss_kg_s": 119371.74462677828,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.1910984231648245,
-            "fraction_0.01": 0.11910984231648244,
-            "fraction_0.1": 0.011910984231648245
+            "fraction_0.001": 0.9052802249032689,
+            "fraction_0.01": 0.09052802249032688,
+            "fraction_0.1": 0.009052802249032687
           },
-          "integrated_lost_earth_masses": 0.0014888730289560306,
+          "integrated_lost_earth_masses": 0.0014303427553471648,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 218594.5903642106,
+          "current_mass_loss_kg_s": 210034.28256289053,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.095405003340401,
-            "fraction_0.01": 0.2095405003340401,
-            "fraction_0.1": 0.02095405003340401
+            "fraction_0.001": 1.5928382646195889,
+            "fraction_0.01": 0.15928382646195888,
+            "fraction_0.1": 0.015928382646195886
           },
-          "integrated_lost_earth_masses": 0.0026192562541755013,
+          "integrated_lost_earth_masses": 0.0025166844580989506,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 265292.95455294225,
+          "current_mass_loss_kg_s": 254890.61822630046,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.5430463919303237,
-            "fraction_0.01": 0.25430463919303237,
-            "fraction_0.1": 0.025430463919303238
+            "fraction_0.001": 1.9330155298901088,
+            "fraction_0.01": 0.1933015529890109,
+            "fraction_0.1": 0.019330155298901086
           },
-          "integrated_lost_earth_masses": 0.0031788079899129048,
+          "integrated_lost_earth_masses": 0.003054164537226372,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 372769.47150565946,
+          "current_mass_loss_kg_s": 358115.2338803348,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 3.5732952694944737,
-            "fraction_0.01": 0.35732952694944736,
-            "fraction_0.1": 0.03573295269494474
+            "fraction_0.001": 2.7158406747098067,
+            "fraction_0.01": 0.2715840674709807,
+            "fraction_0.1": 0.027158406747098063
           },
-          "integrated_lost_earth_masses": 0.004466619086868092,
+          "integrated_lost_earth_masses": 0.004291028266041495,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 437189.1807284212,
+          "current_mass_loss_kg_s": 420068.56512578105,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 4.190810006680802,
-            "fraction_0.01": 0.4190810006680802,
-            "fraction_0.1": 0.04190810006680802
+            "fraction_0.001": 3.1856765292391778,
+            "fraction_0.01": 0.31856765292391775,
+            "fraction_0.1": 0.03185676529239177
           },
-          "integrated_lost_earth_masses": 0.005238512508351003,
+          "integrated_lost_earth_masses": 0.005033368916197901,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 530585.9091058845,
+          "current_mass_loss_kg_s": 509781.2364526009,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 5.086092783860647,
-            "fraction_0.01": 0.5086092783860647,
-            "fraction_0.1": 0.050860927838606476
+            "fraction_0.001": 3.8660310597802177,
+            "fraction_0.01": 0.3866031059780218,
+            "fraction_0.1": 0.03866031059780217
           },
-          "integrated_lost_earth_masses": 0.0063576159798258095,
+          "integrated_lost_earth_masses": 0.006108329074452744,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 745538.9430113189,
+          "current_mass_loss_kg_s": 716230.4677606696,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 7.1465905389889475,
-            "fraction_0.01": 0.7146590538988947,
-            "fraction_0.1": 0.07146590538988948
+            "fraction_0.001": 5.4316813494196134,
+            "fraction_0.01": 0.5431681349419614,
+            "fraction_0.1": 0.05431681349419613
           },
-          "integrated_lost_earth_masses": 0.008933238173736185,
+          "integrated_lost_earth_masses": 0.00858205653208299,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "nominal",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 359941.28167066665,
+          "current_mass_loss_kg_s": 345845.74455618986,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.267148014649485,
-            "fraction_0.01": 0.22671480146494846,
-            "fraction_0.1": 0.02267148014649485
+            "fraction_0.001": 1.7233900384571084,
+            "fraction_0.01": 0.17233900384571083,
+            "fraction_0.1": 0.01723390038457108
           },
-          "integrated_lost_earth_masses": 0.002833935018311856,
+          "integrated_lost_earth_masses": 0.002722956260762231,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 436835.5407189346,
+          "current_mass_loss_kg_s": 419706.8905380571,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.751478864198246,
-            "fraction_0.01": 0.2751478864198246,
-            "fraction_0.1": 0.027514788641982462
+            "fraction_0.001": 2.0914488196270904,
+            "fraction_0.01": 0.20914488196270903,
+            "fraction_0.1": 0.0209144881962709
           },
-          "integrated_lost_earth_masses": 0.0034393485802478078,
+          "integrated_lost_earth_masses": 0.003304489135010803,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 613808.0595585128,
+          "current_mass_loss_kg_s": 589678.161998022,
           "heating_efficiency": 0.05,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 3.8661687182555333,
-            "fraction_0.01": 0.3866168718255533,
-            "fraction_0.1": 0.03866168718255533
+            "fraction_0.001": 2.9384356646839636,
+            "fraction_0.01": 0.2938435664683963,
+            "fraction_0.1": 0.02938435664683963
           },
-          "integrated_lost_earth_masses": 0.0048327108978194165,
+          "integrated_lost_earth_masses": 0.004642728350200662,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 1079823.8450119998,
+          "current_mass_loss_kg_s": 1037537.2336685696,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 6.801444043948453,
-            "fraction_0.01": 0.6801444043948452,
-            "fraction_0.1": 0.06801444043948453
+            "fraction_0.001": 5.1701701153713255,
+            "fraction_0.01": 0.5170170115371325,
+            "fraction_0.1": 0.051701701153713246
           },
-          "integrated_lost_earth_masses": 0.008501805054935566,
+          "integrated_lost_earth_masses": 0.008168868782286695,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 1310506.6221568037,
+          "current_mass_loss_kg_s": 1259120.671614171,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 8.254436592594736,
-            "fraction_0.01": 0.8254436592594736,
-            "fraction_0.1": 0.08254436592594737
+            "fraction_0.001": 6.27434645888127,
+            "fraction_0.01": 0.627434645888127,
+            "fraction_0.1": 0.06274346458881269
           },
-          "integrated_lost_earth_masses": 0.010318045740743421,
+          "integrated_lost_earth_masses": 0.009913467405032407,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 1841424.1786755384,
+          "current_mass_loss_kg_s": 1769034.485994066,
           "heating_efficiency": 0.15,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 11.598506154766598,
-            "fraction_0.01": 1.1598506154766597,
-            "fraction_0.1": 0.11598506154766598
+            "fraction_0.001": 8.815306994051891,
+            "fraction_0.01": 0.881530699405189,
+            "fraction_0.1": 0.08815306994051889
           },
-          "integrated_lost_earth_masses": 0.014498132693458248,
+          "integrated_lost_earth_masses": 0.013928185050601987,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.3
         },
         {
-          "current_mass_loss_kg_s": 2159647.6900239997,
+          "current_mass_loss_kg_s": 2075074.4673371392,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 13.602888087896906,
-            "fraction_0.01": 1.3602888087896905,
-            "fraction_0.1": 0.13602888087896906
+            "fraction_0.001": 10.340340230742651,
+            "fraction_0.01": 1.034034023074265,
+            "fraction_0.1": 0.10340340230742649
           },
-          "integrated_lost_earth_masses": 0.017003610109871132,
+          "integrated_lost_earth_masses": 0.01633773756457339,
           "label": "SCENARIO",
-          "tide_factor": 0.9709501591750993,
+          "tide_factor": 0.9714408900436082,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.0
         },
         {
-          "current_mass_loss_kg_s": 2621013.2443136075,
+          "current_mass_loss_kg_s": 2518241.343228342,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 16.508873185189472,
-            "fraction_0.01": 1.6508873185189472,
-            "fraction_0.1": 0.16508873185189474
+            "fraction_0.001": 12.54869291776254,
+            "fraction_0.01": 1.254869291776254,
+            "fraction_0.1": 0.12548692917762538
           },
-          "integrated_lost_earth_masses": 0.020636091481486842,
+          "integrated_lost_earth_masses": 0.019826934810064815,
           "label": "SCENARIO",
-          "tide_factor": 0.9680460143639966,
+          "tide_factor": 0.9685857764910453,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.1
         },
         {
-          "current_mass_loss_kg_s": 3682848.357351077,
+          "current_mass_loss_kg_s": 3538068.971988132,
           "heating_efficiency": 0.3,
           "initial_envelope_loss_ratios": {
-            "fraction_0.001": 23.197012309533196,
-            "fraction_0.01": 2.3197012309533194,
-            "fraction_0.1": 0.23197012309533196
+            "fraction_0.001": 17.630613988103782,
+            "fraction_0.01": 1.763061398810378,
+            "fraction_0.1": 0.17630613988103777
           },
-          "integrated_lost_earth_masses": 0.028996265386916496,
+          "integrated_lost_earth_masses": 0.027856370101203974,
           "label": "SCENARIO",
-          "tide_factor": 0.9622384659165228,
+          "tide_factor": 0.962876253621363,
           "xuv_history": "extended_high",
           "xuv_radius_factor": 1.3
         }
@@ -2389,19 +2389,19 @@
       },
       "hostname": "TOI-700",
       "integrated_lost_earth_masses": {
-        "maximum": 0.028996265386916496,
-        "median": 0.002833935018311856,
-        "minimum": 0.0001735853766896307
+        "maximum": 0.027856370101203974,
+        "median": 0.002722956260762231,
+        "minimum": 0.00016678765927221638
       },
       "label": "SCENARIO",
       "muscles_current_environment": null,
       "pl_name": "TOI-700 d",
       "planet_mass_basis": "mass_radius_prediction_scenario",
-      "planet_mass_earth_used": 1.25,
-      "planet_radius_earth": 1.073,
-      "semimajor_axis_au": 0.1633,
+      "planet_mass_earth_used": 1.58,
+      "planet_radius_earth": 1.145,
+      "semimajor_axis_au": 0.1642,
       "stellar_age_gyr": 1.5,
-      "stellar_mass_solar": 0.415,
+      "stellar_mass_solar": 0.417,
       "xuv_history_status": "bounded_age_activity_scenarios",
       "xuv_scenarios": {
         "extended_high": {
@@ -8278,6 +8278,444 @@
       }
     },
     {
+      "bolometric_flux_w_m2": 594.39744,
+      "bolometric_insolation_earth": 0.4368,
+      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+      "current_mass_loss_kg_s": {
+        "maximum": 3086279.642798602,
+        "median": 301397.595995492,
+        "minimum": 10656.014198086792
+      },
+      "earth2_rank": 26,
+      "escape_scenarios": [
+        {
+          "current_mass_loss_kg_s": 10656.014198086792,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.029200425778688605,
+            "fraction_0.01": 0.0029200425778688603,
+            "fraction_0.1": 0.000292004257786886
+          },
+          "integrated_lost_earth_masses": 0.00012468581807500032,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 12935.846352767254,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.035447796360511506,
+            "fraction_0.01": 0.0035447796360511506,
+            "fraction_0.1": 0.00035447796360511504
+          },
+          "integrated_lost_earth_masses": 0.00015136209045938412,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 18186.07720050739,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.049834880812589535,
+            "fraction_0.01": 0.004983488081258953,
+            "fraction_0.1": 0.0004983488081258953
+          },
+          "integrated_lost_earth_masses": 0.0002127949410697573,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 31968.042594260372,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.0876012773360658,
+            "fraction_0.01": 0.008760127733606581,
+            "fraction_0.1": 0.000876012773360658
+          },
+          "integrated_lost_earth_masses": 0.00037405745422500094,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 38807.539058301765,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.10634338908153453,
+            "fraction_0.01": 0.010634338908153452,
+            "fraction_0.1": 0.001063433890815345
+          },
+          "integrated_lost_earth_masses": 0.00045408627137815235,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 54558.23160152218,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.14950464243776865,
+            "fraction_0.01": 0.014950464243776863,
+            "fraction_0.1": 0.0014950464243776863
+          },
+          "integrated_lost_earth_masses": 0.000638384823209272,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 63936.085188520745,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.1752025546721316,
+            "fraction_0.01": 0.017520255467213162,
+            "fraction_0.1": 0.001752025546721316
+          },
+          "integrated_lost_earth_masses": 0.0007481149084500019,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 77615.07811660353,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.21268677816306905,
+            "fraction_0.01": 0.021268677816306904,
+            "fraction_0.1": 0.00212686778163069
+          },
+          "integrated_lost_earth_masses": 0.0009081725427563047,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 109116.46320304436,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.2990092848755373,
+            "fraction_0.01": 0.029900928487553727,
+            "fraction_0.1": 0.0029900928487553726
+          },
+          "integrated_lost_earth_masses": 0.001276769646418544,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 100465.86533183068,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.12308292525911954,
+            "fraction_0.01": 0.012308292525911955,
+            "fraction_0.1": 0.0012308292525911953
+          },
+          "integrated_lost_earth_masses": 0.0005255640908564404,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 121960.32901905323,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.1494162620473019,
+            "fraction_0.01": 0.014941626204730192,
+            "fraction_0.1": 0.0014941626204730192
+          },
+          "integrated_lost_earth_masses": 0.0006380074389419791,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 171459.98015547785,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.21005936546410725,
+            "fraction_0.01": 0.021005936546410725,
+            "fraction_0.1": 0.0021005936546410722
+          },
+          "integrated_lost_earth_masses": 0.0008969534905317379,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 301397.595995492,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.3692487757773586,
+            "fraction_0.01": 0.03692487757773586,
+            "fraction_0.1": 0.0036924877577735856
+          },
+          "integrated_lost_earth_masses": 0.001576692272569321,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 365880.9870571598,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.44824878614190583,
+            "fraction_0.01": 0.044824878614190586,
+            "fraction_0.1": 0.004482487861419058
+          },
+          "integrated_lost_earth_masses": 0.0019140223168259377,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 514379.9404664336,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.6301780963923218,
+            "fraction_0.01": 0.06301780963923218,
+            "fraction_0.1": 0.006301780963923217
+          },
+          "integrated_lost_earth_masses": 0.0026908604715952136,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 602795.191990984,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.7384975515547172,
+            "fraction_0.01": 0.07384975515547172,
+            "fraction_0.1": 0.007384975515547171
+          },
+          "integrated_lost_earth_masses": 0.003153384545138642,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 731761.9741143195,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.8964975722838117,
+            "fraction_0.01": 0.08964975722838117,
+            "fraction_0.1": 0.008964975722838116
+          },
+          "integrated_lost_earth_masses": 0.0038280446336518754,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 1028759.8809328672,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.2603561927846436,
+            "fraction_0.01": 0.12603561927846435,
+            "fraction_0.1": 0.012603561927846434
+          },
+          "integrated_lost_earth_masses": 0.005381720943190427,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 301397.595995492,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.3692487757773586,
+            "fraction_0.01": 0.03692487757773586,
+            "fraction_0.1": 0.0036924877577735856
+          },
+          "integrated_lost_earth_masses": 0.001576692272569321,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 365880.9870571598,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.44824878614190583,
+            "fraction_0.01": 0.044824878614190586,
+            "fraction_0.1": 0.004482487861419058
+          },
+          "integrated_lost_earth_masses": 0.0019140223168259377,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 514379.9404664336,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.6301780963923218,
+            "fraction_0.01": 0.06301780963923218,
+            "fraction_0.1": 0.006301780963923217
+          },
+          "integrated_lost_earth_masses": 0.0026908604715952136,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 904192.7879864761,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.107746327332076,
+            "fraction_0.01": 0.11077463273320759,
+            "fraction_0.1": 0.011077463273320758
+          },
+          "integrated_lost_earth_masses": 0.0047300768177079636,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 1097642.9611714792,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.3447463584257175,
+            "fraction_0.01": 0.13447463584257174,
+            "fraction_0.1": 0.013447463584257174
+          },
+          "integrated_lost_earth_masses": 0.005742066950477813,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 1543139.821399301,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.8905342891769656,
+            "fraction_0.01": 0.18905342891769655,
+            "fraction_0.1": 0.018905342891769653
+          },
+          "integrated_lost_earth_masses": 0.008072581414785642,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 1808385.5759729522,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 2.215492654664152,
+            "fraction_0.01": 0.22154926546641518,
+            "fraction_0.1": 0.022154926546641515
+          },
+          "integrated_lost_earth_masses": 0.009460153635415927,
+          "label": "SCENARIO",
+          "tide_factor": 0.9684925648384348,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 2195285.9223429584,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 2.689492716851435,
+            "fraction_0.01": 0.2689492716851435,
+            "fraction_0.1": 0.026894927168514347
+          },
+          "integrated_lost_earth_masses": 0.011484133900955627,
+          "label": "SCENARIO",
+          "tide_factor": 0.9653428921979332,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 3086279.642798602,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 3.7810685783539313,
+            "fraction_0.01": 0.3781068578353931,
+            "fraction_0.1": 0.037810685783539306
+          },
+          "integrated_lost_earth_masses": 0.016145162829571284,
+          "label": "SCENARIO",
+          "tide_factor": 0.9590444926253002,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        }
+      ],
+      "escape_status": "energy_limited_scenario_ensemble",
+      "generic_current_xuv_flux_w_m2": {
+        "maximum": 1.78319232,
+        "median": 0.5943974399999999,
+        "minimum": 0.0630453690815886
+      },
+      "generic_integrated_xuv_dose_j_m2": {
+        "maximum": 5.571053725805569e+16,
+        "median": 1.857017908601856e+16,
+        "minimum": 4405624378496505.5
+      },
+      "hostname": "K2-288 B",
+      "integrated_lost_earth_masses": {
+        "maximum": 0.016145162829571284,
+        "median": 0.001576692272569321,
+        "minimum": 0.00012468581807500032
+      },
+      "label": "SCENARIO",
+      "muscles_current_environment": null,
+      "pl_name": "K2-288 B b",
+      "planet_mass_basis": "mass_radius_prediction_scenario",
+      "planet_mass_earth_used": 4.27,
+      "planet_radius_earth": 1.9,
+      "semimajor_axis_au": 0.164,
+      "stellar_age_gyr": 1.0,
+      "stellar_mass_solar": 0.33,
+      "xuv_history_status": "bounded_age_activity_scenarios",
+      "xuv_scenarios": {
+        "extended_high": {
+          "current_xuv_flux_w_m2": 1.78319232,
+          "integrated_xuv_dose_j_m2": 5.571053725805569e+16,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 3.0
+        },
+        "nominal": {
+          "current_xuv_flux_w_m2": 0.5943974399999999,
+          "integrated_xuv_dose_j_m2": 1.857017908601856e+16,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 1.0
+        },
+        "short_low": {
+          "current_xuv_flux_w_m2": 0.0630453690815886,
+          "integrated_xuv_dose_j_m2": 4405624378496505.5,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 0.5
+        }
+      }
+    },
+    {
       "bolometric_flux_w_m2": 879.0768,
       "bolometric_insolation_earth": 0.646,
       "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
@@ -8286,7 +8724,7 @@
         "median": 33994.53768957586,
         "minimum": 567.9905718927282
       },
-      "earth2_rank": 26,
+      "earth2_rank": 27,
       "escape_scenarios": [
         {
           "current_mass_loss_kg_s": 567.9905718927282,
@@ -8758,442 +9196,28 @@
       }
     },
     {
-      "bolometric_flux_w_m2": 594.39744,
-      "bolometric_insolation_earth": 0.4368,
+      "bolometric_flux_w_m2": 425.25,
+      "bolometric_insolation_earth": 0.3125,
       "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-      "current_mass_loss_kg_s": {
-        "maximum": 3086279.642798602,
-        "median": 301397.595995492,
-        "minimum": 10656.014198086792
-      },
-      "earth2_rank": 27,
-      "escape_scenarios": [
-        {
-          "current_mass_loss_kg_s": 10656.014198086792,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.029200425778688605,
-            "fraction_0.01": 0.0029200425778688603,
-            "fraction_0.1": 0.000292004257786886
-          },
-          "integrated_lost_earth_masses": 0.00012468581807500032,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 12935.846352767254,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.035447796360511506,
-            "fraction_0.01": 0.0035447796360511506,
-            "fraction_0.1": 0.00035447796360511504
-          },
-          "integrated_lost_earth_masses": 0.00015136209045938412,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 18186.07720050739,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.049834880812589535,
-            "fraction_0.01": 0.004983488081258953,
-            "fraction_0.1": 0.0004983488081258953
-          },
-          "integrated_lost_earth_masses": 0.0002127949410697573,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 31968.042594260372,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.0876012773360658,
-            "fraction_0.01": 0.008760127733606581,
-            "fraction_0.1": 0.000876012773360658
-          },
-          "integrated_lost_earth_masses": 0.00037405745422500094,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 38807.539058301765,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.10634338908153453,
-            "fraction_0.01": 0.010634338908153452,
-            "fraction_0.1": 0.001063433890815345
-          },
-          "integrated_lost_earth_masses": 0.00045408627137815235,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 54558.23160152218,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.14950464243776865,
-            "fraction_0.01": 0.014950464243776863,
-            "fraction_0.1": 0.0014950464243776863
-          },
-          "integrated_lost_earth_masses": 0.000638384823209272,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 63936.085188520745,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.1752025546721316,
-            "fraction_0.01": 0.017520255467213162,
-            "fraction_0.1": 0.001752025546721316
-          },
-          "integrated_lost_earth_masses": 0.0007481149084500019,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 77615.07811660353,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.21268677816306905,
-            "fraction_0.01": 0.021268677816306904,
-            "fraction_0.1": 0.00212686778163069
-          },
-          "integrated_lost_earth_masses": 0.0009081725427563047,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 109116.46320304436,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.2990092848755373,
-            "fraction_0.01": 0.029900928487553727,
-            "fraction_0.1": 0.0029900928487553726
-          },
-          "integrated_lost_earth_masses": 0.001276769646418544,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 100465.86533183068,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.12308292525911954,
-            "fraction_0.01": 0.012308292525911955,
-            "fraction_0.1": 0.0012308292525911953
-          },
-          "integrated_lost_earth_masses": 0.0005255640908564404,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 121960.32901905323,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.1494162620473019,
-            "fraction_0.01": 0.014941626204730192,
-            "fraction_0.1": 0.0014941626204730192
-          },
-          "integrated_lost_earth_masses": 0.0006380074389419791,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 171459.98015547785,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.21005936546410725,
-            "fraction_0.01": 0.021005936546410725,
-            "fraction_0.1": 0.0021005936546410722
-          },
-          "integrated_lost_earth_masses": 0.0008969534905317379,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 301397.595995492,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.3692487757773586,
-            "fraction_0.01": 0.03692487757773586,
-            "fraction_0.1": 0.0036924877577735856
-          },
-          "integrated_lost_earth_masses": 0.001576692272569321,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 365880.9870571598,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.44824878614190583,
-            "fraction_0.01": 0.044824878614190586,
-            "fraction_0.1": 0.004482487861419058
-          },
-          "integrated_lost_earth_masses": 0.0019140223168259377,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 514379.9404664336,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.6301780963923218,
-            "fraction_0.01": 0.06301780963923218,
-            "fraction_0.1": 0.006301780963923217
-          },
-          "integrated_lost_earth_masses": 0.0026908604715952136,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 602795.191990984,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.7384975515547172,
-            "fraction_0.01": 0.07384975515547172,
-            "fraction_0.1": 0.007384975515547171
-          },
-          "integrated_lost_earth_masses": 0.003153384545138642,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 731761.9741143195,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.8964975722838117,
-            "fraction_0.01": 0.08964975722838117,
-            "fraction_0.1": 0.008964975722838116
-          },
-          "integrated_lost_earth_masses": 0.0038280446336518754,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 1028759.8809328672,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.2603561927846436,
-            "fraction_0.01": 0.12603561927846435,
-            "fraction_0.1": 0.012603561927846434
-          },
-          "integrated_lost_earth_masses": 0.005381720943190427,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 301397.595995492,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.3692487757773586,
-            "fraction_0.01": 0.03692487757773586,
-            "fraction_0.1": 0.0036924877577735856
-          },
-          "integrated_lost_earth_masses": 0.001576692272569321,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 365880.9870571598,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.44824878614190583,
-            "fraction_0.01": 0.044824878614190586,
-            "fraction_0.1": 0.004482487861419058
-          },
-          "integrated_lost_earth_masses": 0.0019140223168259377,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 514379.9404664336,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.6301780963923218,
-            "fraction_0.01": 0.06301780963923218,
-            "fraction_0.1": 0.006301780963923217
-          },
-          "integrated_lost_earth_masses": 0.0026908604715952136,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 904192.7879864761,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.107746327332076,
-            "fraction_0.01": 0.11077463273320759,
-            "fraction_0.1": 0.011077463273320758
-          },
-          "integrated_lost_earth_masses": 0.0047300768177079636,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 1097642.9611714792,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.3447463584257175,
-            "fraction_0.01": 0.13447463584257174,
-            "fraction_0.1": 0.013447463584257174
-          },
-          "integrated_lost_earth_masses": 0.005742066950477813,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 1543139.821399301,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.8905342891769656,
-            "fraction_0.01": 0.18905342891769655,
-            "fraction_0.1": 0.018905342891769653
-          },
-          "integrated_lost_earth_masses": 0.008072581414785642,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 1808385.5759729522,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.215492654664152,
-            "fraction_0.01": 0.22154926546641518,
-            "fraction_0.1": 0.022154926546641515
-          },
-          "integrated_lost_earth_masses": 0.009460153635415927,
-          "label": "SCENARIO",
-          "tide_factor": 0.9684925648384348,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 2195285.9223429584,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.689492716851435,
-            "fraction_0.01": 0.2689492716851435,
-            "fraction_0.1": 0.026894927168514347
-          },
-          "integrated_lost_earth_masses": 0.011484133900955627,
-          "label": "SCENARIO",
-          "tide_factor": 0.9653428921979332,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 3086279.642798602,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 3.7810685783539313,
-            "fraction_0.01": 0.3781068578353931,
-            "fraction_0.1": 0.037810685783539306
-          },
-          "integrated_lost_earth_masses": 0.016145162829571284,
-          "label": "SCENARIO",
-          "tide_factor": 0.9590444926253002,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        }
-      ],
-      "escape_status": "energy_limited_scenario_ensemble",
-      "generic_current_xuv_flux_w_m2": {
-        "maximum": 1.78319232,
-        "median": 0.5943974399999999,
-        "minimum": 0.0630453690815886
-      },
-      "generic_integrated_xuv_dose_j_m2": {
-        "maximum": 5.571053725805569e+16,
-        "median": 1.857017908601856e+16,
-        "minimum": 4405624378496505.5
-      },
-      "hostname": "K2-288 B",
-      "integrated_lost_earth_masses": {
-        "maximum": 0.016145162829571284,
-        "median": 0.001576692272569321,
-        "minimum": 0.00012468581807500032
-      },
+      "current_mass_loss_kg_s": null,
+      "earth2_rank": 28,
+      "escape_scenarios": [],
+      "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+      "generic_current_xuv_flux_w_m2": null,
+      "generic_integrated_xuv_dose_j_m2": null,
+      "hostname": "GJ 682",
+      "integrated_lost_earth_masses": null,
       "label": "SCENARIO",
       "muscles_current_environment": null,
-      "pl_name": "K2-288 B b",
-      "planet_mass_basis": "mass_radius_prediction_scenario",
-      "planet_mass_earth_used": 4.27,
-      "planet_radius_earth": 1.9,
-      "semimajor_axis_au": 0.164,
-      "stellar_age_gyr": 1.0,
-      "stellar_mass_solar": 0.33,
-      "xuv_history_status": "bounded_age_activity_scenarios",
-      "xuv_scenarios": {
-        "extended_high": {
-          "current_xuv_flux_w_m2": 1.78319232,
-          "integrated_xuv_dose_j_m2": 5.571053725805569e+16,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 3.0
-        },
-        "nominal": {
-          "current_xuv_flux_w_m2": 0.5943974399999999,
-          "integrated_xuv_dose_j_m2": 1.857017908601856e+16,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 1.0
-        },
-        "short_low": {
-          "current_xuv_flux_w_m2": 0.0630453690815886,
-          "integrated_xuv_dose_j_m2": 4405624378496505.5,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 0.5
-        }
-      }
+      "pl_name": "GJ 682 b",
+      "planet_mass_basis": "minimum_mass_scenario",
+      "planet_mass_earth_used": 4.4,
+      "planet_radius_earth": 1.93,
+      "semimajor_axis_au": 0.08,
+      "stellar_age_gyr": null,
+      "stellar_mass_solar": 0.27,
+      "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux",
+      "xuv_scenarios": {}
     },
     {
       "bolometric_flux_w_m2": 507.5784,
@@ -9204,7 +9228,7 @@
         "median": 18584.9110273157,
         "minimum": 311.45893895693985
       },
-      "earth2_rank": 28,
+      "earth2_rank": 29,
       "escape_scenarios": [
         {
           "current_mass_loss_kg_s": 311.45893895693985,
@@ -9674,30 +9698,6 @@
           "saturation_time_gyr": 0.5
         }
       }
-    },
-    {
-      "bolometric_flux_w_m2": 425.25,
-      "bolometric_insolation_earth": 0.3125,
-      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-      "current_mass_loss_kg_s": null,
-      "earth2_rank": 29,
-      "escape_scenarios": [],
-      "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-      "generic_current_xuv_flux_w_m2": null,
-      "generic_integrated_xuv_dose_j_m2": null,
-      "hostname": "GJ 682",
-      "integrated_lost_earth_masses": null,
-      "label": "SCENARIO",
-      "muscles_current_environment": null,
-      "pl_name": "GJ 682 b",
-      "planet_mass_basis": "minimum_mass_scenario",
-      "planet_mass_earth_used": 4.4,
-      "planet_radius_earth": 1.93,
-      "semimajor_axis_au": 0.08,
-      "stellar_age_gyr": null,
-      "stellar_mass_solar": 0.27,
-      "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux",
-      "xuv_scenarios": {}
     },
     {
       "bolometric_flux_w_m2": 342.9216,
@@ -11956,30 +11956,6 @@
       }
     },
     {
-      "bolometric_flux_w_m2": 1333.5839999999998,
-      "bolometric_insolation_earth": 0.98,
-      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-      "current_mass_loss_kg_s": null,
-      "earth2_rank": 36,
-      "escape_scenarios": [],
-      "escape_status": "undetermined_missing_age_environment_or_usable_mass",
-      "generic_current_xuv_flux_w_m2": null,
-      "generic_integrated_xuv_dose_j_m2": null,
-      "hostname": "TOI-2094",
-      "integrated_lost_earth_masses": null,
-      "label": "SCENARIO",
-      "muscles_current_environment": null,
-      "pl_name": "TOI-2094 b",
-      "planet_mass_basis": "mass_radius_prediction_scenario",
-      "planet_mass_earth_used": 4.27,
-      "planet_radius_earth": 1.9,
-      "semimajor_axis_au": 0.136,
-      "stellar_age_gyr": null,
-      "stellar_mass_solar": 0.425,
-      "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux",
-      "xuv_scenarios": {}
-    },
-    {
       "bolometric_flux_w_m2": 627.73704,
       "bolometric_insolation_earth": 0.4613,
       "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
@@ -11988,7 +11964,7 @@
         "median": 27160.16543217191,
         "minimum": 424.4678869710945
       },
-      "earth2_rank": 37,
+      "earth2_rank": 36,
       "escape_scenarios": [
         {
           "current_mass_loss_kg_s": 424.4678869710945,
@@ -12416,6 +12392,30 @@
           "saturation_time_gyr": 0.5
         }
       }
+    },
+    {
+      "bolometric_flux_w_m2": 1333.5839999999998,
+      "bolometric_insolation_earth": 0.98,
+      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+      "current_mass_loss_kg_s": null,
+      "earth2_rank": 37,
+      "escape_scenarios": [],
+      "escape_status": "undetermined_missing_age_environment_or_usable_mass",
+      "generic_current_xuv_flux_w_m2": null,
+      "generic_integrated_xuv_dose_j_m2": null,
+      "hostname": "TOI-2094",
+      "integrated_lost_earth_masses": null,
+      "label": "SCENARIO",
+      "muscles_current_environment": null,
+      "pl_name": "TOI-2094 b",
+      "planet_mass_basis": "mass_radius_prediction_scenario",
+      "planet_mass_earth_used": 4.27,
+      "planet_radius_earth": 1.9,
+      "semimajor_axis_au": 0.136,
+      "stellar_age_gyr": null,
+      "stellar_mass_solar": 0.425,
+      "xuv_history_status": "undetermined_missing_age_mass_or_bolometric_flux",
+      "xuv_scenarios": {}
     },
     {
       "bolometric_flux_w_m2": 741.4999200000001,
@@ -18376,444 +18376,6 @@
       "xuv_scenarios": {}
     },
     {
-      "bolometric_flux_w_m2": 1496.88,
-      "bolometric_insolation_earth": 1.1,
-      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
-      "current_mass_loss_kg_s": {
-        "maximum": 3452430.251379892,
-        "median": 94260.0705674569,
-        "minimum": 1781.4366146404973
-      },
-      "earth2_rank": 58,
-      "escape_scenarios": [
-        {
-          "current_mass_loss_kg_s": 1781.4366146404973,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.12234942871652736,
-            "fraction_0.01": 0.012234942871652738,
-            "fraction_0.1": 0.0012234942871652736
-          },
-          "integrated_lost_earth_masses": 0.0003425784004062766,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 2165.0926757390903,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.14869900495924915,
-            "fraction_0.01": 0.014869900495924916,
-            "fraction_0.1": 0.0014869900495924917
-          },
-          "integrated_lost_earth_masses": 0.0004163572138858976,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 3051.0121724856385,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.20954413603209826,
-            "fraction_0.01": 0.020954413603209827,
-            "fraction_0.1": 0.0020954413603209827
-          },
-          "integrated_lost_earth_masses": 0.0005867235808898751,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 5344.309843921492,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.367048286149582,
-            "fraction_0.01": 0.036704828614958204,
-            "fraction_0.1": 0.0036704828614958205
-          },
-          "integrated_lost_earth_masses": 0.0010277352012188297,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 6495.27802721727,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.4460970148777475,
-            "fraction_0.01": 0.04460970148777475,
-            "fraction_0.1": 0.0044609701487774754
-          },
-          "integrated_lost_earth_masses": 0.001249071641657693,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 9153.036517456914,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.6286324080962947,
-            "fraction_0.01": 0.06286324080962948,
-            "fraction_0.1": 0.0062863240809629475
-          },
-          "integrated_lost_earth_masses": 0.0017601707426696252,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 10688.619687842984,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.734096572299164,
-            "fraction_0.01": 0.07340965722991641,
-            "fraction_0.1": 0.007340965722991641
-          },
-          "integrated_lost_earth_masses": 0.0020554704024376594,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 12990.55605443454,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.892194029755495,
-            "fraction_0.01": 0.0892194029755495,
-            "fraction_0.1": 0.008921940297554951
-          },
-          "integrated_lost_earth_masses": 0.002498143283315386,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 18306.07303491383,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.2572648161925895,
-            "fraction_0.01": 0.12572648161925895,
-            "fraction_0.1": 0.012572648161925895
-          },
-          "integrated_lost_earth_masses": 0.0035203414853392503,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "short_low",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 25852.371569597763,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.8097692559074617,
-            "fraction_0.01": 0.08097692559074618,
-            "fraction_0.1": 0.008097692559074618
-          },
-          "integrated_lost_earth_masses": 0.002267353916540893,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 31420.023522485637,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 0.9841638319294049,
-            "fraction_0.01": 0.09841638319294051,
-            "fraction_0.1": 0.009841638319294051
-          },
-          "integrated_lost_earth_masses": 0.002755658729402334,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 44276.56852802589,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 1.3868671140886404,
-            "fraction_0.01": 0.13868671140886407,
-            "fraction_0.1": 0.013868671140886406
-          },
-          "integrated_lost_earth_masses": 0.0038832279194481933,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 77557.11470879329,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.429307767722385,
-            "fraction_0.01": 0.24293077677223854,
-            "fraction_0.1": 0.024293077677223853
-          },
-          "integrated_lost_earth_masses": 0.006802061749622678,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 94260.0705674569,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 2.952491495788215,
-            "fraction_0.01": 0.29524914957882153,
-            "fraction_0.1": 0.029524914957882155
-          },
-          "integrated_lost_earth_masses": 0.008266976188207003,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 132829.70558407766,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 4.160601342265921,
-            "fraction_0.01": 0.41606013422659216,
-            "fraction_0.1": 0.04160601342265922
-          },
-          "integrated_lost_earth_masses": 0.011649683758344579,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 155114.22941758658,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 4.85861553544477,
-            "fraction_0.01": 0.4858615535444771,
-            "fraction_0.1": 0.048586155354447706
-          },
-          "integrated_lost_earth_masses": 0.013604123499245356,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 188520.1411349138,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 5.90498299157643,
-            "fraction_0.01": 0.5904982991576431,
-            "fraction_0.1": 0.05904982991576431
-          },
-          "integrated_lost_earth_masses": 0.016533952376414005,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 265659.4111681553,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 8.321202684531842,
-            "fraction_0.01": 0.8321202684531843,
-            "fraction_0.1": 0.08321202684531843
-          },
-          "integrated_lost_earth_masses": 0.023299367516689158,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "nominal",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 335969.6887240998,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 4.683881305734001,
-            "fraction_0.01": 0.4683881305734001,
-            "fraction_0.1": 0.046838813057340015
-          },
-          "integrated_lost_earth_masses": 0.013114867656055202,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 408325.22827296023,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 5.69261742221597,
-            "fraction_0.01": 0.5692617422215971,
-            "fraction_0.1": 0.05692617422215971
-          },
-          "integrated_lost_earth_masses": 0.015939328782204717,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 575405.0418966488,
-          "heating_efficiency": 0.05,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 8.021940697090857,
-            "fraction_0.01": 0.8021940697090857,
-            "fraction_0.1": 0.08021940697090857
-          },
-          "integrated_lost_earth_masses": 0.022461433951854397,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 1007909.0661722994,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 14.051643917202004,
-            "fraction_0.01": 1.4051643917202006,
-            "fraction_0.1": 0.14051643917202006
-          },
-          "integrated_lost_earth_masses": 0.03934460296816561,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 1224975.6848188806,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 17.077852266647913,
-            "fraction_0.01": 1.7077852266647915,
-            "fraction_0.1": 0.17077852266647914
-          },
-          "integrated_lost_earth_masses": 0.047817986346614154,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 1726215.125689946,
-          "heating_efficiency": 0.15,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 24.065822091272562,
-            "fraction_0.01": 2.406582209127256,
-            "fraction_0.1": 0.24065822091272562
-          },
-          "integrated_lost_earth_masses": 0.06738430185556317,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        },
-        {
-          "current_mass_loss_kg_s": 2015818.1323445989,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 28.103287834404007,
-            "fraction_0.01": 2.810328783440401,
-            "fraction_0.1": 0.2810328783440401
-          },
-          "integrated_lost_earth_masses": 0.07868920593633122,
-          "label": "SCENARIO",
-          "tide_factor": 0.9577111115571267,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.0
-        },
-        {
-          "current_mass_loss_kg_s": 2449951.3696377613,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 34.155704533295825,
-            "fraction_0.01": 3.415570453329583,
-            "fraction_0.1": 0.3415570453329583
-          },
-          "integrated_lost_earth_masses": 0.09563597269322831,
-          "label": "SCENARIO",
-          "tide_factor": 0.9534848129076721,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.1
-        },
-        {
-          "current_mass_loss_kg_s": 3452430.251379892,
-          "heating_efficiency": 0.3,
-          "initial_envelope_loss_ratios": {
-            "fraction_0.001": 48.131644182545124,
-            "fraction_0.01": 4.813164418254512,
-            "fraction_0.1": 0.48131644182545125
-          },
-          "integrated_lost_earth_masses": 0.13476860371112634,
-          "label": "SCENARIO",
-          "tide_factor": 0.94503450305355,
-          "xuv_history": "extended_high",
-          "xuv_radius_factor": 1.3
-        }
-      ],
-      "escape_status": "energy_limited_scenario_ensemble",
-      "generic_current_xuv_flux_w_m2": {
-        "maximum": 2.727109311740891,
-        "median": 0.20984703562330104,
-        "minimum": 0.014460150850250743
-      },
-      "generic_integrated_xuv_dose_j_m2": {
-        "maximum": 6.357675657681117e+17,
-        "median": 1.0991419189719731e+17,
-        "minimum": 1.6607124175627688e+16
-      },
-      "hostname": "L 98-59",
-      "integrated_lost_earth_masses": {
-        "maximum": 0.13476860371112634,
-        "median": 0.008266976188207003,
-        "minimum": 0.0003425784004062766
-      },
-      "label": "SCENARIO",
-      "muscles_current_environment": null,
-      "pl_name": "L 98-59 f",
-      "planet_mass_basis": "minimum_mass_scenario",
-      "planet_mass_earth_used": 2.8,
-      "planet_radius_earth": 1.48,
-      "semimajor_axis_au": 0.1052,
-      "stellar_age_gyr": 4.94,
-      "stellar_mass_solar": 0.2923,
-      "xuv_history_status": "bounded_age_activity_scenarios",
-      "xuv_scenarios": {
-        "extended_high": {
-          "current_xuv_flux_w_m2": 2.727109311740891,
-          "integrated_xuv_dose_j_m2": 6.357675657681117e+17,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 3.0
-        },
-        "nominal": {
-          "current_xuv_flux_w_m2": 0.20984703562330104,
-          "integrated_xuv_dose_j_m2": 1.0991419189719731e+17,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 1.0
-        },
-        "short_low": {
-          "current_xuv_flux_w_m2": 0.014460150850250743,
-          "integrated_xuv_dose_j_m2": 1.6607124175627688e+16,
-          "integration_start_gyr": 0.01,
-          "saturation_time_gyr": 0.5
-        }
-      }
-    },
-    {
       "bolometric_flux_w_m2": 2204.496,
       "bolometric_insolation_earth": 1.62,
       "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
@@ -18822,7 +18384,7 @@
         "median": 67277.50990155136,
         "minimum": 1155.3821183345892
       },
-      "earth2_rank": 59,
+      "earth2_rank": 58,
       "escape_scenarios": [
         {
           "current_mass_loss_kg_s": 1155.3821183345892,
@@ -19260,7 +18822,7 @@
         "median": 115824.49121094386,
         "minimum": 1914.60198114304
       },
-      "earth2_rank": 60,
+      "earth2_rank": 59,
       "escape_scenarios": [
         {
           "current_mass_loss_kg_s": 1914.60198114304,
@@ -19730,6 +19292,444 @@
           "saturation_time_gyr": 0.5
         }
       }
+    },
+    {
+      "bolometric_flux_w_m2": 1496.88,
+      "bolometric_insolation_earth": 1.1,
+      "claim_boundary": "XUV histories and energy-limited losses are scenarios, not measurements of atmospheric mass or proof that an atmosphere exists or is absent.",
+      "current_mass_loss_kg_s": {
+        "maximum": 3452430.251379892,
+        "median": 94260.0705674569,
+        "minimum": 1781.4366146404973
+      },
+      "earth2_rank": 60,
+      "escape_scenarios": [
+        {
+          "current_mass_loss_kg_s": 1781.4366146404973,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.12234942871652736,
+            "fraction_0.01": 0.012234942871652738,
+            "fraction_0.1": 0.0012234942871652736
+          },
+          "integrated_lost_earth_masses": 0.0003425784004062766,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 2165.0926757390903,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.14869900495924915,
+            "fraction_0.01": 0.014869900495924916,
+            "fraction_0.1": 0.0014869900495924917
+          },
+          "integrated_lost_earth_masses": 0.0004163572138858976,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 3051.0121724856385,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.20954413603209826,
+            "fraction_0.01": 0.020954413603209827,
+            "fraction_0.1": 0.0020954413603209827
+          },
+          "integrated_lost_earth_masses": 0.0005867235808898751,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 5344.309843921492,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.367048286149582,
+            "fraction_0.01": 0.036704828614958204,
+            "fraction_0.1": 0.0036704828614958205
+          },
+          "integrated_lost_earth_masses": 0.0010277352012188297,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 6495.27802721727,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.4460970148777475,
+            "fraction_0.01": 0.04460970148777475,
+            "fraction_0.1": 0.0044609701487774754
+          },
+          "integrated_lost_earth_masses": 0.001249071641657693,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 9153.036517456914,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.6286324080962947,
+            "fraction_0.01": 0.06286324080962948,
+            "fraction_0.1": 0.0062863240809629475
+          },
+          "integrated_lost_earth_masses": 0.0017601707426696252,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 10688.619687842984,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.734096572299164,
+            "fraction_0.01": 0.07340965722991641,
+            "fraction_0.1": 0.007340965722991641
+          },
+          "integrated_lost_earth_masses": 0.0020554704024376594,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 12990.55605443454,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.892194029755495,
+            "fraction_0.01": 0.0892194029755495,
+            "fraction_0.1": 0.008921940297554951
+          },
+          "integrated_lost_earth_masses": 0.002498143283315386,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 18306.07303491383,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.2572648161925895,
+            "fraction_0.01": 0.12572648161925895,
+            "fraction_0.1": 0.012572648161925895
+          },
+          "integrated_lost_earth_masses": 0.0035203414853392503,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "short_low",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 25852.371569597763,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.8097692559074617,
+            "fraction_0.01": 0.08097692559074618,
+            "fraction_0.1": 0.008097692559074618
+          },
+          "integrated_lost_earth_masses": 0.002267353916540893,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 31420.023522485637,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 0.9841638319294049,
+            "fraction_0.01": 0.09841638319294051,
+            "fraction_0.1": 0.009841638319294051
+          },
+          "integrated_lost_earth_masses": 0.002755658729402334,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 44276.56852802589,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 1.3868671140886404,
+            "fraction_0.01": 0.13868671140886407,
+            "fraction_0.1": 0.013868671140886406
+          },
+          "integrated_lost_earth_masses": 0.0038832279194481933,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 77557.11470879329,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 2.429307767722385,
+            "fraction_0.01": 0.24293077677223854,
+            "fraction_0.1": 0.024293077677223853
+          },
+          "integrated_lost_earth_masses": 0.006802061749622678,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 94260.0705674569,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 2.952491495788215,
+            "fraction_0.01": 0.29524914957882153,
+            "fraction_0.1": 0.029524914957882155
+          },
+          "integrated_lost_earth_masses": 0.008266976188207003,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 132829.70558407766,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 4.160601342265921,
+            "fraction_0.01": 0.41606013422659216,
+            "fraction_0.1": 0.04160601342265922
+          },
+          "integrated_lost_earth_masses": 0.011649683758344579,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 155114.22941758658,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 4.85861553544477,
+            "fraction_0.01": 0.4858615535444771,
+            "fraction_0.1": 0.048586155354447706
+          },
+          "integrated_lost_earth_masses": 0.013604123499245356,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 188520.1411349138,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 5.90498299157643,
+            "fraction_0.01": 0.5904982991576431,
+            "fraction_0.1": 0.05904982991576431
+          },
+          "integrated_lost_earth_masses": 0.016533952376414005,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 265659.4111681553,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 8.321202684531842,
+            "fraction_0.01": 0.8321202684531843,
+            "fraction_0.1": 0.08321202684531843
+          },
+          "integrated_lost_earth_masses": 0.023299367516689158,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "nominal",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 335969.6887240998,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 4.683881305734001,
+            "fraction_0.01": 0.4683881305734001,
+            "fraction_0.1": 0.046838813057340015
+          },
+          "integrated_lost_earth_masses": 0.013114867656055202,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 408325.22827296023,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 5.69261742221597,
+            "fraction_0.01": 0.5692617422215971,
+            "fraction_0.1": 0.05692617422215971
+          },
+          "integrated_lost_earth_masses": 0.015939328782204717,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 575405.0418966488,
+          "heating_efficiency": 0.05,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 8.021940697090857,
+            "fraction_0.01": 0.8021940697090857,
+            "fraction_0.1": 0.08021940697090857
+          },
+          "integrated_lost_earth_masses": 0.022461433951854397,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 1007909.0661722994,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 14.051643917202004,
+            "fraction_0.01": 1.4051643917202006,
+            "fraction_0.1": 0.14051643917202006
+          },
+          "integrated_lost_earth_masses": 0.03934460296816561,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 1224975.6848188806,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 17.077852266647913,
+            "fraction_0.01": 1.7077852266647915,
+            "fraction_0.1": 0.17077852266647914
+          },
+          "integrated_lost_earth_masses": 0.047817986346614154,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 1726215.125689946,
+          "heating_efficiency": 0.15,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 24.065822091272562,
+            "fraction_0.01": 2.406582209127256,
+            "fraction_0.1": 0.24065822091272562
+          },
+          "integrated_lost_earth_masses": 0.06738430185556317,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        },
+        {
+          "current_mass_loss_kg_s": 2015818.1323445989,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 28.103287834404007,
+            "fraction_0.01": 2.810328783440401,
+            "fraction_0.1": 0.2810328783440401
+          },
+          "integrated_lost_earth_masses": 0.07868920593633122,
+          "label": "SCENARIO",
+          "tide_factor": 0.9577111115571267,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.0
+        },
+        {
+          "current_mass_loss_kg_s": 2449951.3696377613,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 34.155704533295825,
+            "fraction_0.01": 3.415570453329583,
+            "fraction_0.1": 0.3415570453329583
+          },
+          "integrated_lost_earth_masses": 0.09563597269322831,
+          "label": "SCENARIO",
+          "tide_factor": 0.9534848129076721,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.1
+        },
+        {
+          "current_mass_loss_kg_s": 3452430.251379892,
+          "heating_efficiency": 0.3,
+          "initial_envelope_loss_ratios": {
+            "fraction_0.001": 48.131644182545124,
+            "fraction_0.01": 4.813164418254512,
+            "fraction_0.1": 0.48131644182545125
+          },
+          "integrated_lost_earth_masses": 0.13476860371112634,
+          "label": "SCENARIO",
+          "tide_factor": 0.94503450305355,
+          "xuv_history": "extended_high",
+          "xuv_radius_factor": 1.3
+        }
+      ],
+      "escape_status": "energy_limited_scenario_ensemble",
+      "generic_current_xuv_flux_w_m2": {
+        "maximum": 2.727109311740891,
+        "median": 0.20984703562330104,
+        "minimum": 0.014460150850250743
+      },
+      "generic_integrated_xuv_dose_j_m2": {
+        "maximum": 6.357675657681117e+17,
+        "median": 1.0991419189719731e+17,
+        "minimum": 1.6607124175627688e+16
+      },
+      "hostname": "L 98-59",
+      "integrated_lost_earth_masses": {
+        "maximum": 0.13476860371112634,
+        "median": 0.008266976188207003,
+        "minimum": 0.0003425784004062766
+      },
+      "label": "SCENARIO",
+      "muscles_current_environment": null,
+      "pl_name": "L 98-59 f",
+      "planet_mass_basis": "minimum_mass_scenario",
+      "planet_mass_earth_used": 2.8,
+      "planet_radius_earth": 1.48,
+      "semimajor_axis_au": 0.1052,
+      "stellar_age_gyr": 4.94,
+      "stellar_mass_solar": 0.2923,
+      "xuv_history_status": "bounded_age_activity_scenarios",
+      "xuv_scenarios": {
+        "extended_high": {
+          "current_xuv_flux_w_m2": 2.727109311740891,
+          "integrated_xuv_dose_j_m2": 6.357675657681117e+17,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 3.0
+        },
+        "nominal": {
+          "current_xuv_flux_w_m2": 0.20984703562330104,
+          "integrated_xuv_dose_j_m2": 1.0991419189719731e+17,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 1.0
+        },
+        "short_low": {
+          "current_xuv_flux_w_m2": 0.014460150850250743,
+          "integrated_xuv_dose_j_m2": 1.6607124175627688e+16,
+          "integration_start_gyr": 0.01,
+          "saturation_time_gyr": 0.5
+        }
+      }
     }
   ],
   "schema_version": "1.0",
@@ -19741,7 +19741,7 @@
     },
     "candidate_ranking": {
       "path": "results/candidate_ranking.parquet",
-      "sha256": "bb0acea2ab8fc789d74811226137b107c9860e81b39d7a983b6ba19efa041740"
+      "sha256": "eb31f4d12f149be7bb3549fe9aefb8eba7b3a82903de4ce4537267e7d53c2d06"
     },
     "escape_model": {
       "path": "src/earth2/environment/escape.py",
