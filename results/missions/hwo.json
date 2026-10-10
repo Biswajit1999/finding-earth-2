@@ -23,17 +23,17 @@
       "interpretation": "Catalogue-conditioned accessibility, not HWO observations.",
       "label": "FORECAST",
       "secondary_unit": "planets with supported forecast",
-      "secondary_value": 696,
+      "secondary_value": 697,
       "source": "results/hwo/known_planet_accessibility.csv",
       "unit": "matched known planets",
-      "value": 746
+      "value": 747
     }
   ],
   "input_hashes": {
-    "data/manifests/gaia_dr3_crossmatch.json": "0f1aaf6c8d5d5d3bfc4e0dd670b440321a0840221fc0ad185677a074fe311771",
-    "data/manifests/nasa_microlensing.json": "b95460e80da507658b924faebfdd7f6f711ee1b8fa5f87ed20637c311778a70d",
-    "results/atmosphere/spectrum_reductions.csv": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a",
-    "results/hwo/hwo_precursor_atlas.json": "ef697b245a4ef3959fef03bf3958c339e37fe26a5c04a9fad65fba93b134503b"
+    "data/manifests/gaia_dr3_crossmatch.json": "09dd82bbae4ee82e6b55748fd4c9a3c882ad020ad8b8edd178d6e3062407d17f",
+    "data/manifests/nasa_microlensing.json": "03d80381725cd0e23933afabcbddd261593b66deaadaaa61c92034878dffba7d",
+    "results/atmosphere/spectrum_reductions.csv": "e0c4a008430288ac256939c1b51b135ecfaf5bc4a0846d2b8b8fe5db419dd9ff",
+    "results/hwo/hwo_precursor_atlas.json": "b93c39604fafb2092010f1b381e6d1deb8089e6e16077a2ff3b2cf125a00ad86"
   },
   "mission": {
     "agency": "NASA",

@@ -1,28 +1,28 @@
 {
   "files": {
     "results/information_gain/action_information_gain.csv": {
-      "bytes": 40456,
-      "sha256": "c42a933153eba4d9e959081087b23aaa70df87516037a51a765a0ee2da730d76"
+      "bytes": 40464,
+      "sha256": "d0d4b0b62d59a03b03efb24c827f0c109ae5e4c04d63d7f29c35bf250764ff15"
     },
     "results/information_gain/expected_information_gain.png": {
-      "bytes": 199926,
-      "sha256": "f0346916b12c3c535ec44f7e8b41b45ee4dab74b5269c553e0b8e5accc8be3a2"
+      "bytes": 199921,
+      "sha256": "060ed1fea0956c24982680540a595942c72be3f8391e1ed52c35dec40d9f2d93"
     },
     "results/information_gain/expected_information_gain.svg": {
-      "bytes": 77625,
-      "sha256": "71d92dab2a6eccca19cdc906d36d9235bd898449a7fa97ab4f5fd8fbe57650d8"
+      "bytes": 77629,
+      "sha256": "01d9a96ecbb6356071edb26d846e946ff9595f188a86a07d21c826a85195eb0c"
     },
     "results/information_gain/information_gain.json": {
-      "bytes": 21616,
-      "sha256": "afc8e58b49b7e3bee693a4c5a07c86edbabde68dcfdc0bdca66d05cdbc5e49b4"
+      "bytes": 21619,
+      "sha256": "283c835bd333af5d90f4f75e1df0b270dfede949ef9b67ee7441d3c848486c7e"
     },
     "results/information_gain/objective_conditioned_information.png": {
-      "bytes": 136317,
-      "sha256": "0d608d5e647a3b4da038086be7117223fc2b6a5fcf85c0f3f7cfc6684cab870a"
+      "bytes": 136289,
+      "sha256": "2c477bd1c1d3dd9e66e5eec864cac756a56f4f3cc03fea6c1ff21a3cb7de8efa"
     },
     "results/information_gain/objective_conditioned_information.svg": {
-      "bytes": 67475,
-      "sha256": "8057f7f1f56290402e6a3ee8b8b55f04aec491dca63b954cdf043b5b74963461"
+      "bytes": 67473,
+      "sha256": "c1dcd60339536f7ef43defaac8c1a8d9e05bce00c7c70253a8895b15dbd8d547"
     }
   },
   "product": "Phase 12 action-specific expected information gain",

@@ -423,48 +423,48 @@
         "earth2_rank": 10,
         "equilibrium_temperature_k": 244.0730333156009,
         "hostname": "TOI-700",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
         "label": "SCENARIO",
         "pl_name": "TOI-700 d",
         "planet_mass_basis": "inferred_mass_radius",
-        "planet_mass_earth_used": 1.25,
-        "planet_radius_earth": 1.073,
+        "planet_mass_earth_used": 1.58,
+        "planet_radius_earth": 1.145,
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 4.3005240041331945,
+            "scale_height_km": 3.874233852185419,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 3.4270505051276423
+            "transmission_signal_ppm": 3.4668911985720148
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.531689892366605,
+            "scale_height_km": 5.88423505337102,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 5.2050473671251725
+            "transmission_signal_ppm": 5.26555791291573
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 82.27089399211329,
+            "scale_height_km": 74.11577804180803,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 65.56096618505056
+            "transmission_signal_ppm": 66.32313597268204
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 10.512392010103364,
+            "scale_height_km": 9.470349416453246,
             "temperature_k": 244.0730333156009,
-            "transmission_signal_ppm": 8.377234568089793
+            "transmission_signal_ppm": 8.474622929842704
           }
         },
         "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.421
+        "stellar_radius_solar": 0.4104
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -1090,54 +1090,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 26,
-        "equilibrium_temperature_k": 227.8889128656409,
-        "hostname": "TRAPPIST-1",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
-        "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 e",
-        "planet_mass_basis": "measured",
-        "planet_mass_earth_used": 0.692,
-        "planet_radius_earth": 0.92,
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 5.332181250892699,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 45.44685329500861
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 8.098583881231576,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 69.02525181154226
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 102.00694566925164,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 869.4180630349474
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 13.034220835515486,
-            "temperature_k": 227.8889128656409,
-            "transmission_signal_ppm": 111.09230805446552
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.1192
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 27,
         "equilibrium_temperature_k": 206.6501498529019,
         "hostname": "K2-288 B",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1185,47 +1137,47 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 28,
-        "equilibrium_temperature_k": 198.65169501881294,
+        "earth2_rank": 27,
+        "equilibrium_temperature_k": 227.8889128656409,
         "hostname": "TRAPPIST-1",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913042,
         "label": "SCENARIO",
-        "pl_name": "TRAPPIST-1 f",
+        "pl_name": "TRAPPIST-1 e",
         "planet_mass_basis": "measured",
-        "planet_mass_earth_used": 1.039,
-        "planet_radius_earth": 1.045,
+        "planet_mass_earth_used": 0.692,
+        "planet_radius_earth": 0.92,
         "scenarios": {
           "carbon_dioxide": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 44.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 3.994123184772237,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 38.66774385405096
+            "scale_height_km": 5.332181250892699,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 45.44685329500861
           },
           "earth_like_n2_o2": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 28.97,
             "n_scale_heights": 5.0,
-            "scale_height_km": 6.066324478080028,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 58.729055214989366
+            "scale_height_km": 8.098583881231576,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 69.02525181154226
           },
           "hydrogen_helium": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 2.3,
             "n_scale_heights": 5.0,
-            "scale_height_km": 76.40931309999063,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 739.7307519905402
+            "scale_height_km": 102.00694566925164,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 869.4180630349474
           },
           "water_vapour": {
             "label": "SCENARIO",
             "mean_molecular_weight_amu": 18.0,
             "n_scale_heights": 5.0,
-            "scale_height_km": 9.763412229443245,
-            "temperature_k": 198.65169501881294,
-            "transmission_signal_ppm": 94.52115164323568
+            "scale_height_km": 13.034220835515486,
+            "temperature_k": 227.8889128656409,
+            "transmission_signal_ppm": 111.09230805446552
           }
         },
         "status": "scenario_ensemble",
@@ -1233,7 +1185,7 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 29,
+        "earth2_rank": 28,
         "equilibrium_temperature_k": 190.0542442177308,
         "hostname": "GJ 682",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -1278,6 +1230,54 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.298255
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 29,
+        "equilibrium_temperature_k": 198.65169501881294,
+        "hostname": "TRAPPIST-1",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
+        "label": "SCENARIO",
+        "pl_name": "TRAPPIST-1 f",
+        "planet_mass_basis": "measured",
+        "planet_mass_earth_used": 1.039,
+        "planet_radius_earth": 1.045,
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 3.994123184772237,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 38.66774385405096
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.066324478080028,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 58.729055214989366
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 76.40931309999063,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 739.7307519905402
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 9.763412229443245,
+            "temperature_k": 198.65169501881294,
+            "transmission_signal_ppm": 94.52115164323568
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.1192
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -1570,54 +1570,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 36,
-        "equilibrium_temperature_k": 252.91325211580428,
-        "hostname": "TOI-2094",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
-        "label": "SCENARIO",
-        "pl_name": "TOI-2094 b",
-        "planet_mass_basis": "inferred_mass_radius",
-        "planet_mass_earth_used": 4.27,
-        "planet_radius_earth": 1.9,
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 4.090374380203818,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 6.937736645683566
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 6.21251200307104,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 10.537121588197339
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 78.25064031694262,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 132.7219184391639
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 9.998692929387113,
-            "temperature_k": 252.91325211580428,
-            "transmission_signal_ppm": 16.95891180055983
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.384
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 37,
         "equilibrium_temperature_k": 209.48885872627955,
         "hostname": "55 Cnc B",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913043,
@@ -1662,6 +1614,54 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.274
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 37,
+        "equilibrium_temperature_k": 252.91325211580428,
+        "hostname": "TOI-2094",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "TOI-2094 b",
+        "planet_mass_basis": "inferred_mass_radius",
+        "planet_mass_earth_used": 4.27,
+        "planet_radius_earth": 1.9,
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 4.090374380203818,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 6.937736645683566
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 6.21251200307104,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 10.537121588197339
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 78.25064031694262,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 132.7219184391639
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 9.998692929387113,
+            "temperature_k": 252.91325211580428,
+            "transmission_signal_ppm": 16.95891180055983
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.384
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
@@ -2560,54 +2560,6 @@
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
         "earth2_rank": 58,
-        "equilibrium_temperature_k": 260.3234183439401,
-        "hostname": "L 98-59",
-        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
-        "label": "SCENARIO",
-        "pl_name": "L 98-59 f",
-        "planet_mass_basis": "msini_lower_limit",
-        "planet_mass_earth_used": 2.8,
-        "planet_radius_earth": 1.48,
-        "scenarios": {
-          "carbon_dioxide": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 44.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 3.89574735506424,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 7.624605377959272
-          },
-          "earth_like_n2_o2": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 28.97,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 5.916910031854558,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 11.580346449092438
-          },
-          "hydrogen_helium": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 2.3,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 74.52734070557676,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 145.86201592617738
-          },
-          "water_vapour": {
-            "label": "SCENARIO",
-            "mean_molecular_weight_amu": 18.0,
-            "n_scale_heights": 5.0,
-            "scale_height_km": 9.522937979045919,
-            "temperature_k": 260.3234183439401,
-            "transmission_signal_ppm": 18.637924257233777
-          }
-        },
-        "status": "scenario_ensemble",
-        "stellar_radius_solar": 0.3155
-      },
-      {
-        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 59,
         "equilibrium_temperature_k": 286.7766721589993,
         "hostname": "Gliese 12",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913047,
@@ -2655,7 +2607,7 @@
       },
       {
         "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
-        "earth2_rank": 60,
+        "earth2_rank": 59,
         "equilibrium_temperature_k": 310.0698015179781,
         "hostname": "TRAPPIST-1",
         "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
@@ -2700,6 +2652,54 @@
         },
         "status": "scenario_ensemble",
         "stellar_radius_solar": 0.1192
+      },
+      {
+        "claim_boundary": "Five-scale-height clear-atmosphere approximation; clouds, composition, refraction and molecular opacity are not retrieved.",
+        "earth2_rank": 60,
+        "equilibrium_temperature_k": 260.3234183439401,
+        "hostname": "L 98-59",
+        "hydrogen_to_earth_air_signal_ratio": 12.595652173913045,
+        "label": "SCENARIO",
+        "pl_name": "L 98-59 f",
+        "planet_mass_basis": "msini_lower_limit",
+        "planet_mass_earth_used": 2.8,
+        "planet_radius_earth": 1.48,
+        "scenarios": {
+          "carbon_dioxide": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 44.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 3.89574735506424,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 7.624605377959272
+          },
+          "earth_like_n2_o2": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 28.97,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 5.916910031854558,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 11.580346449092438
+          },
+          "hydrogen_helium": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 2.3,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 74.52734070557676,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 145.86201592617738
+          },
+          "water_vapour": {
+            "label": "SCENARIO",
+            "mean_molecular_weight_amu": 18.0,
+            "n_scale_heights": 5.0,
+            "scale_height_km": 9.522937979045919,
+            "temperature_k": 260.3234183439401,
+            "transmission_signal_ppm": 18.637924257233777
+          }
+        },
+        "status": "scenario_ensemble",
+        "stellar_radius_solar": 0.3155
       }
     ],
     "supported": 54,
@@ -2707,10 +2707,10 @@
   },
   "schema_version": "1.0",
   "sources": {
-    "data/processed/nasa_emissionspec.parquet": "06f2eab9ea7b77b5561f782b44ee9f9469fde453f9aa7a035d9efbc6090b5853",
-    "data/processed/nasa_spectra_index.parquet": "dea23545b2941a9cd99a21378c0f32c38f00bfe20cde92435388902f6dba95bd",
-    "data/processed/nasa_transitspec.parquet": "dd06dfe99b6459df88b0da2b67386844432618c55c664d08faee006d306a4fac",
-    "results/candidate_ranking.parquet": "bb0acea2ab8fc789d74811226137b107c9860e81b39d7a983b6ba19efa041740"
+    "data/processed/nasa_emissionspec.parquet": "8ec3fd833ebca3a3580f7c4a8db010ae9675eb634097e5bccce4d2075f8d9d6a",
+    "data/processed/nasa_spectra_index.parquet": "f8ed53be550d72709d4d468fcd641ff4c870f66b656a58c3c22a1b3226caa4e0",
+    "data/processed/nasa_transitspec.parquet": "71d5cdac5ad6ec8d6010c0c1810f93f325e206e61ed4704d67de858061a388fb",
+    "results/candidate_ranking.parquet": "eb31f4d12f149be7bb3549fe9aefb8eba7b3a82903de4ce4537267e7d53c2d06"
   },
   "spectrum_evidence": {
     "claim_boundary": "Published reductions remain separate. Pairwise overlap diagnostics do not select, average or retrieve an atmospheric composition.",
@@ -8849,8 +8849,8 @@
         "spectrum_type": "eclipse"
       }
     ],
-    "reduction_count": 1826,
-    "reductions_with_archive_path": 1826,
+    "reduction_count": 1847,
+    "reductions_with_archive_path": 1847,
     "transmission_measurements": 5948
   },
   "title": "Atmospheric observability scenarios and reduction-preserving evidence"
