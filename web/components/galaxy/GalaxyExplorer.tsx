@@ -121,11 +121,12 @@ export function GalaxyExplorer({
   deepDiveSlugs,
 }: {
   data: GalaxyFile;
-  /** Slugs with a full deep-dive page; most systems here don't have one. */
+  /** Slugs with a full deep-dive page; most planet records here don't have one. */
   deepDiveSlugs?: Set<string>;
 }) {
   const [selected, setSelected] = useState<number | null>(null);
   const [g1Zoom, setG1Zoom] = useState(1);
+  const uniqueHostCount = useMemo(() => new Set(data.host).size, [data.host]);
 
   const shells = useMemo(
     () =>
@@ -346,7 +347,7 @@ export function GalaxyExplorer({
             {data.sun_height_citation}). The dashed cyan ring marks the extent of the panel on the
             right — everything we&apos;ve found so far is that small a fraction of the galaxy. The
             faint cyan dots represent {compactInt(data.n_points)} confirmed-planet records in this
-            catalogue, sharing {compactInt(new Set(data.host).size)} host positions — at this scale they sit almost on top of
+            catalogue, sharing {compactInt(uniqueHostCount)} host positions — at this scale they sit almost on top of
             the Sun, which is itself the finding; use the{" "}
             <span className="font-[family-name:var(--font-mono)]">+</span> control above to zoom
             into the cluster and see it resolve. Zoomed in, one thin streak reaches toward the
@@ -369,7 +370,7 @@ export function GalaxyExplorer({
             <h2 className="font-[family-name:var(--font-display)] text-lg font-medium">
               How far each method has actually reached
             </h2>
-            <span className="eyebrow">{compactInt(data.n_points)} planets · {compactInt(new Set(data.host).size)} hosts</span>
+            <span className="eyebrow">{compactInt(data.n_points)} planets · {compactInt(uniqueHostCount)} hosts</span>
           </div>
           <svg viewBox={`0 0 ${L_W} ${L_W}`} role="img" aria-label="Planet records at host-star positions around the Sun, with detection-distance shells per method" className="w-full">
             {shellLabels.map(({ method, pc, radius, labelY }) => {
