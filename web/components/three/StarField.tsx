@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * GPU point cloud of real planetary systems.
+ * GPU point cloud of confirmed-planet records at measured host-star positions.
  *
- * Every point is a system with a MEASURED distance, placed at its true
+ * Every point is a planet record with a MEASURED host distance, placed at its
  * equatorial Cartesian position in parsecs with the Sun at the origin. Nothing
  * here is a decorative particle: if a planet has no parallax-derived distance,
  * the Python export excluded it rather than inventing a position, and the count
