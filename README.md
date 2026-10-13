@@ -19,6 +19,8 @@
   · <a href="https://biswajit1999.github.io/finding-earth-2/">Open the interactive observatory</a>
 </p>
 
+> **Independent discussion note (October 2026):** [Does a moving viewpoint change the exoplanet sky? (two-page PDF)](docs/community-discussions/moving-observer/Moving_Observer_Exoplanet_Sky_Community_Discussion.pdf) · [Context and questions for experts](docs/community-discussions/moving-observer/README.md). This is an open scientific question inspired by the Discovery Universe, not a prediction of new detections.
+
 The card and video are direct captures of the implemented website and generated
 scientific plots. Every dot in the 3D panel is a known exoplanet system with a
 measured distance in the analysed catalogue; it is not an artist's impression.
