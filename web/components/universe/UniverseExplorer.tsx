@@ -3,7 +3,7 @@
 /**
  * The full interactive 3D universe.
  *
- * Every point is a real system with a measured distance, at its true
+ * Every point is one confirmed-planet record placed at its host star's measured
  * equatorial position (Sun at the origin, radial axis log-compressed so the
  * view is not 99% empty space around a single visible cluster). Colour
  * encoding is switchable and always paired with a legend; nothing here uses
@@ -153,7 +153,7 @@ export function UniverseExplorer({
   timeline,
 }: {
   data: UniverseFile;
-  /** Slugs with a full deep-dive page; most of the 6,300+ systems here don't have one. */
+  /** Slugs with a full deep-dive page; most of the 6,300+ planet records here don't have one. */
   deepDiveSlugs?: Set<string>;
   /** Cumulative yearly method-share/distance-reach stats, absent only if the export predates it. */
   timeline?: DiscoveryTimelineFile | null;
@@ -172,6 +172,7 @@ export function UniverseExplorer({
   const [radialScale, setRadialScale] = useState<"log" | "linear">("log");
   const [flagRuwe, setFlagRuwe] = useState(false);
   const [countMode, setCountMode] = useState<"planets" | "hosts">("planets");
+  const uniqueHostCount = useMemo(() => new Set(data.host).size, [data.host]);
   const [ready, setReady] = useState(false);
   const [viewMode, setViewMode] = useState<"3d" | "2d">("3d");
   const controlsRef = useRef<OrbitControlsHandle | null>(null);
@@ -416,10 +417,10 @@ export function UniverseExplorer({
             ))}
           </div>
           <p className="font-[family-name:var(--font-mono)] text-[11px] text-[var(--color-muted)]">
-            {compactInt(data.n_points)} real systems · NASA Exoplanet Archive + Gaia DR3
+            {compactInt(data.n_points)} planet records · {compactInt(uniqueHostCount)} host stars
           </p>
           <p className="font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)]">
-            Static snapshot, last synced {utcLabel(data.generated_utc)} — not fetched live
+            NASA Exoplanet Archive; Gaia DR3 RUWE where matched · snapshot {utcLabel(data.generated_utc)}
           </p>
         </div>
 
@@ -766,14 +767,15 @@ export function UniverseExplorer({
               </div>
               {countMode === "hosts" && (
                 <p className="mt-1 text-[10px] text-[var(--color-muted)]">
-                  One point per host star — a system with several known planets no longer counts
-                  once per planet.
+                  One plotted point per host star after current filters; planets around the same
+                  host share its position.
                 </p>
               )}
 
               <p className="mb-1 mt-2.5 border-t border-[var(--color-line)] pt-2 text-[10.5px] text-[var(--color-muted)]">
                 Discovery method
               </p>
+              <p className="mb-1 text-[10px] text-[var(--color-faint)]">Full snapshot; planet records, before filters</p>
               <div className="flex flex-col gap-0.5">
                 {ALL_METHOD_GROUPS.map((g) => (
                   <label
@@ -855,7 +857,7 @@ export function UniverseExplorer({
               <div className="mt-0.5 flex justify-between font-[family-name:var(--font-mono)] text-[10px] text-[var(--color-muted)]">
                 <span>{minDiscoveryYear}</span>
                 <span aria-live="polite">
-                  {compactInt(filterMask.nVisible)} {countMode === "hosts" ? "host stars" : "systems"} visible
+                  {compactInt(filterMask.nVisible)} {countMode === "hosts" ? "host stars" : "planets"} visible
                 </span>
                 <span>{maxDiscoveryYear}</span>
               </div>
@@ -866,9 +868,9 @@ export function UniverseExplorer({
               )}
             </div>
             <div className="pointer-events-none hidden max-w-md text-right font-[family-name:var(--font-mono)] text-[10.5px] text-[var(--color-faint)] xl:block">
-              {compactInt(filterMask.nVisible)} of {compactInt(data.n_points)}{" "}
-              {countMode === "hosts" ? "host stars" : "systems"} shown ·{" "}
-              {compactInt(data.n_excluded_no_distance)} excluded (no measured distance) ·{" "}
+              {compactInt(filterMask.nVisible)} of {compactInt(countMode === "hosts" ? uniqueHostCount : data.n_points)}{" "}
+              {countMode === "hosts" ? "host stars" : "planets"} shown ·{" "}
+              {compactInt(data.n_excluded_no_distance)} planets excluded (no measured distance) ·{" "}
               {effectiveViewMode === "3d"
                 ? "drag to orbit, right-click or two-finger drag to pan, scroll or use the buttons to zoom, click a star"
                 : "Galactic longitude/latitude, as seen from the Sun — longitude increases to the left, click a point"}
