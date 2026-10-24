@@ -29,7 +29,7 @@
         "mean_posterior_mean": 0.6938543620698676,
         "bias": -0.006145637930132342,
         "relative_bias": -0.008779482757331918,
-        "rmse": 0.06254136397356937,
+        "rmse": 0.06254136397356935,
         "nominal_95_interval_coverage": 0.9333333333333333
       },
       "threshold": {
@@ -69,7 +69,7 @@
         "mean_posterior_mean": 0.7076826819987693,
         "bias": 0.007682681998769314,
         "relative_bias": 0.010975259998241877,
-        "rmse": 0.08772883743590257,
+        "rmse": 0.08772883743590255,
         "nominal_95_interval_coverage": 0.9333333333333333
       },
       "threshold": {
@@ -106,9 +106,9 @@
       "mean_candidate_count": 243.73333333333332,
       "mean_imputed_planet_count": 243.73333333333332,
       "rate": {
-        "mean_posterior_mean": 0.8512603099105132,
-        "bias": 0.1512603099105132,
-        "relative_bias": 0.21608615701501888,
+        "mean_posterior_mean": 0.8512603099105133,
+        "bias": 0.1512603099105133,
+        "relative_bias": 0.21608615701501904,
         "rmse": 0.17499696624453706,
         "nominal_95_interval_coverage": 0.5
       },
@@ -142,9 +142,9 @@
       "mean_candidate_count": 7.716666666666667,
       "mean_imputed_planet_count": 7.716666666666667,
       "rate": {
-        "mean_posterior_mean": 0.04548459550075286,
-        "bias": 0.005484595500752858,
-        "relative_bias": 0.13711488751882145,
+        "mean_posterior_mean": 0.04548459550075285,
+        "bias": 0.005484595500752851,
+        "relative_bias": 0.13711488751882125,
         "rmse": 0.014502268217453986,
         "nominal_95_interval_coverage": 0.9666666666666667
       },
@@ -265,7 +265,7 @@
         "mean_posterior_mean": 0.7004441163381908,
         "bias": 0.0004441163381908586,
         "relative_bias": 0.0006344519117012266,
-        "rmse": 0.05565483440655582,
+        "rmse": 0.05565483440655581,
         "nominal_95_interval_coverage": 0.9833333333333333
       },
       "threshold": {

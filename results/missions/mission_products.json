@@ -10,15 +10,15 @@
     },
     "docs/missions/GAIA.md": {
       "bytes": 1999,
-      "sha256": "8fd1bc44c34806f54507938f6c6cacb82c27f3419e6863c7fe84c5fa128f266c"
+      "sha256": "8bf47da8cf44d96b3bab80ef5c83b95a2659456e742e9ab3e95e42d2ebc80860"
     },
     "docs/missions/HWO.md": {
       "bytes": 2234,
-      "sha256": "00f509e931658db3dca25d45246a463407e618ad019d6c746a0c0703e9aef5cc"
+      "sha256": "82c5a59188c276095470c2ac55b5dd323bbb6f3b6a64e012d61591e9cbcb9855"
     },
     "docs/missions/JWST.md": {
       "bytes": 3153,
-      "sha256": "ffd6a487c1b174a14538e241245bf6b2cc25a9fa74e449c15be73870ed556cb7"
+      "sha256": "6f914dc2698a92d2993ad04eda051f2b0fc4b17517ba06c49a375281b7855360"
     },
     "docs/missions/PLATO.md": {
       "bytes": 1911,
@@ -26,23 +26,23 @@
     },
     "docs/missions/ROMAN.md": {
       "bytes": 2454,
-      "sha256": "76ba547c47ab206e8bd1ee967dcf0fbb45467bc2c4514c76dd014b5ecb7d0020"
+      "sha256": "21e94607a22cecc44e2b4472aaefcbef5a7b96d224ccf6d517424af800b65585"
     },
     "results/missions/andes.json": {
       "bytes": 3178,
-      "sha256": "8e06ee855980791b9d268f431b8214177110ae312352b77e7327d22809a40a3c"
+      "sha256": "619bc286d3d6bf8169ec4763cf09cfc6605236d7aee27aa5a5f4e7e28091e51a"
     },
     "results/missions/gaia.json": {
       "bytes": 3464,
-      "sha256": "ddd0a5991b15b2ea7b2eafd9c1bf107651ffd8380239df39f31e577a4486bede"
+      "sha256": "34984af46b30ab7cf5ad565b98668dff8a176c9e9fa288179d71871da274b6d1"
     },
     "results/missions/hwo.json": {
       "bytes": 3821,
-      "sha256": "51985f7770024547222d8ef8999ecd0c6e44053004c0712b385292a136491a55"
+      "sha256": "743c99ddb8671b7521cabb87c649d5024dee9c7f6a3cbe51b17dc2bccab84872"
     },
     "results/missions/jwst.json": {
       "bytes": 5076,
-      "sha256": "6534b2d4aa496531d06b10e8623faaf50c85a9f049621b7ba5135e5d32315155"
+      "sha256": "4a3d2307cc144b7415da34bb0b450a6fa3817955adcfc2cbc5442dd797fb72b7"
     },
     "results/missions/mission_observatory.json": {
       "bytes": 3044,
@@ -50,11 +50,11 @@
     },
     "results/missions/plato.json": {
       "bytes": 3358,
-      "sha256": "386cc978fef1df4ef9cc571f6f2b8a4a208e9f7de9395077f6fece16c61144f2"
+      "sha256": "458d559e450ef11bf141739d73c9bff34268ee652eb7f2177f97e2b76f1bb83d"
     },
     "results/missions/roman.json": {
       "bytes": 4133,
-      "sha256": "fcb9f7db843fa1b036abb148dc038bfa81dc3a88f7d443cc38e6738d32d6a4ae"
+      "sha256": "45bed305f49c603708ba6a4061a087262d5486fc966bdb0dad147ce28de41906"
     }
   },
   "product": "Phase 11 scientifically separate mission observatory",

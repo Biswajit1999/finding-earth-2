@@ -3,7 +3,7 @@
   "label": "MODEL-INFERRED",
   "selected_stars": 114105,
   "contract": {
-    "selection_model_sha256": "e8bf7f7b1caab7c7bc67e5f3cf82a330ca3e41f6ad39bbbff8ec1ceccb6e6c8d",
+    "selection_model_sha256": "8969ad88bec91358ece60d179b3435d7da70af6fd14c54c4e09d74f7ce835d85",
     "stellar_source_sha256": "b8883287f9daee42ea02d09bb420229f7d40ee30f08a397955d87fff28f4aea0",
     "hierarchical_source_sha256": "758797ec2ffb58be8a5caa12c68325bb5351e771c4dd4b1087df903371146948",
     "estimands": {
@@ -55,5 +55,5 @@
   },
   "boundary_policy": "The pipeline window coefficient fitted at its non-negative boundary is held fixed; other constrained draws must remain non-negative.",
   "interpretation": "Exact all-target effective-star exposure and analytic local coefficient derivatives at log-space quadrature nodes; not an occurrence rate.",
-  "csv_sha256": "264d294f3d85a17f1b5d7425fb7e8e35004b54ec082734419bd3a290b421f445"
+  "csv_sha256": "edc26e5e16518c033ecd90dca0b68d72a16586084abf17542062838257ee2593"
 }

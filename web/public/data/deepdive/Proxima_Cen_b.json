@@ -1,7 +1,7 @@
 {
  "planet": "Proxima Cen b",
  "hostname": "Proxima Cen",
- "generated_utc": "2026-09-23T09:24:20Z",
+ "generated_utc": "2026-10-24T08:57:53Z",
  "narrative": {
   "location": "Proxima Cen lies 4.24 light-years (1.301 pc) from the Sun.",
   "host_star": "Proxima Cen is a M5.5 V star with 0.122\u00d7 the Sun's mass and 0.141\u00d7 its radius (effective temperature 2900 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 1,
-  "earth2_index": 0.8762,
+  "earth2_index": 0.8764,
   "scores": {
-   "earth_similarity": 0.9139,
-   "conservative_habitability": 0.9467,
+   "earth_similarity": 0.915,
+   "conservative_habitability": 0.9462,
    "observational_confidence": 0.73,
    "characterisation_potential": null
   },
   "component_ranks": {
-   "earth_similarity": 7,
+   "earth_similarity": 6,
    "conservative_habitability": 2,
-   "observational_confidence": 1941
+   "observational_confidence": 1955
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.641,
    "source": "catalogue",
-   "p16": 0.5733,
-   "p84": 0.703
+   "p16": 0.5744,
+   "p84": 0.708
   },
   "equilibrium_temperature_k": {
    "value": 227.45,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 221.19,
-   "p84": 232.76,
+   "p16": 221.29,
+   "p84": 233.17,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -98,12 +98,12 @@
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
-  "conservative_probability": 0.9997,
+  "conservative_probability": 1.0,
   "optimistic_probability": 1.0,
   "position_across_conservative_hz": 0.35,
   "model_extrapolated": false,
   "teff_offset_from_validity_k": 0.0,
-  "teff_valid_fraction_of_draws": 0.999,
+  "teff_valid_fraction_of_draws": 0.9982,
   "boundaries_seff": {
    "recent_venus": 1.4918,
    "runaway_greenhouse": 0.8629,
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.9195,
-  "esi_p16": 0.8953,
-  "esi_p50": 0.9139,
-  "esi_p84": 0.9313,
+  "esi_p16": 0.8955,
+  "esi_p50": 0.915,
+  "esi_p84": 0.9323,
   "esi_interior": 0.9945,
   "esi_surface": 0.8501,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -333,7 +333,7 @@
  },
  "rv_analysis": {
   "target": "Proxima Cen",
-  "analysed_utc": "2026-09-23T09:24:20Z",
+  "analysed_utc": "2026-10-24T08:57:53Z",
   "status": "ok",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
@@ -352,7 +352,7 @@
    },
    "median_uncertainty_ms": 2.331,
    "rv_rms_ms": 9.25,
-   "retrieved_utc": "2026-09-23T09:24:22Z",
+   "retrieved_utc": "2026-10-24T08:57:56Z",
    "source": "DACE (public)",
    "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
   },
@@ -380,7 +380,7 @@
     {
      "period_days": 41.44688,
      "power": 0.22468,
-     "fap": 4.146930416202591e-31
+     "fap": 4.146930416202592e-31
     },
     {
      "period_days": 1.02321,
@@ -390,17 +390,17 @@
     {
      "period_days": 44.10225,
      "power": 0.21196,
-     "fap": 6.051923091615412e-29
+     "fap": 6.051923091615151e-29
     },
     {
      "period_days": 83.33005,
      "power": 0.19846,
-     "fap": 1.0952242312664063e-26
+     "fap": 1.0952242312664065e-26
     },
     {
      "period_days": 1.09654,
      "power": 0.19384,
-     "fap": 6.367348243743113e-26
+     "fap": 6.367348243742843e-26
     }
    ],
    "best_period_days": 11.18129,
@@ -6516,26 +6516,26 @@
      {
       "period_days": 1759.18992,
       "power": 0.75092,
-      "fap": 2.3589886222482635e-182
+      "fap": 2.3589886222476153e-182
      },
      {
       "period_days": 1649.24055,
       "power": 0.72004,
-      "fap": 9.914665942040204e-167
+      "fap": 9.914665942037782e-167
      },
      {
       "period_days": 1552.2264,
       "power": 0.69634,
-      "fap": 7.238562476958995e-156
+      "fap": 7.238562476957366e-156
      },
      {
       "period_days": 1884.84634,
       "power": 0.68734,
-      "fap": 5.807895864915829e-152
+      "fap": 5.807895864914559e-152
      }
     ],
     "best_period_days": 1759.18992,
-    "best_fap": 2.3589886222482635e-182,
+    "best_fap": 2.3589886222476153e-182,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "log R'HK (chromospheric emission)"
    },
@@ -6551,7 +6551,7 @@
      {
       "period_days": 2729.77746,
       "power": 0.08871,
-      "fap": 2.5698379646253606e-09
+      "fap": 2.569837964625457e-09
      },
      {
       "period_days": 2553.66278,
@@ -6561,16 +6561,16 @@
      {
       "period_days": 2931.9832,
       "power": 0.08067,
-      "fap": 3.6649053532424807e-08
+      "fap": 3.66490535324248e-08
      },
      {
       "period_days": 7.74291,
       "power": 0.07579,
-      "fap": 1.815676050277879e-07
+      "fap": 1.8156760502779443e-07
      }
     ],
     "best_period_days": 2729.77746,
-    "best_fap": 2.5698379646253606e-09,
+    "best_fap": 2.569837964625457e-09,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "H-alpha index"
    },
@@ -6696,12 +6696,12 @@
      {
       "period_days": 2083.25122,
       "power": 0.28486,
-      "fap": 1.7470772953326705e-41
+      "fap": 1.7470772953325866e-41
      },
      {
       "period_days": 768.57812,
       "power": 0.27755,
-      "fap": 3.950963286453252e-40
+      "fap": 3.950963286453065e-40
      },
      {
       "period_days": 1979.08866,
