@@ -1,7 +1,7 @@
 {
  "planet": "GJ 1002 b",
  "hostname": "GJ 1002",
- "generated_utc": "2026-09-23T09:24:26Z",
+ "generated_utc": "2026-10-24T08:57:59Z",
  "narrative": {
   "location": "GJ 1002 lies 15.81 light-years (4.849 pc) from the Sun.",
   "host_star": "GJ 1002 is a M5.5 V star with 0.12\u00d7 the Sun's mass and 0.137\u00d7 its radius (effective temperature 3024 K, versus the Sun's 5772 K).",
@@ -12,7 +12,7 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 3,
-  "earth2_index": 0.8489,
+  "earth2_index": 0.8488,
   "scores": {
    "earth_similarity": 0.9141,
    "conservative_habitability": 0.9453,
@@ -20,9 +20,9 @@
    "characterisation_potential": null
   },
   "component_ranks": {
-   "earth_similarity": 6,
+   "earth_similarity": 7,
    "conservative_habitability": 3,
-   "observational_confidence": 2597
+   "observational_confidence": 2616
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.67,
    "source": "catalogue",
-   "p16": 0.6307,
-   "p84": 0.7111
+   "p16": 0.6305,
+   "p84": 0.7075
   },
   "equilibrium_temperature_k": {
    "value": 229.98,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 226.53,
-   "p84": 233.42,
+   "p16": 226.51,
+   "p84": 233.13,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.9251,
-  "esi_p16": 0.8971,
+  "esi_p16": 0.8963,
   "esi_p50": 0.9141,
-  "esi_p84": 0.9277,
+  "esi_p84": 0.9274,
   "esi_interior": 0.9917,
   "esi_surface": 0.863,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -178,8 +178,8 @@
     "pl_orbsmax": 0.0738,
     "insol_used": 0.257,
     "teq_used": 181.0,
-    "hz_conservative_prob": 0.952,
-    "earth2_index": 0.7697,
+    "hz_conservative_prob": 0.953,
+    "earth2_index": 0.7702,
     "mass_class": "msini_lower_limit"
    }
   ]
@@ -325,7 +325,7 @@
  },
  "rv_analysis": {
   "target": "GJ 1002",
-  "analysed_utc": "2026-09-23T09:24:26Z",
+  "analysed_utc": "2026-10-24T08:57:59Z",
   "status": "ok",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
@@ -343,7 +343,7 @@
    },
    "median_uncertainty_ms": 0.608,
    "rv_rms_ms": 6.317,
-   "retrieved_utc": "2026-09-23T09:24:27Z",
+   "retrieved_utc": "2026-10-24T08:58:01Z",
    "source": "DACE (public)",
    "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
   },
@@ -365,12 +365,12 @@
     {
      "period_days": 211.47943,
      "power": 0.31385,
-     "fap": 0.0007409245610342966
+     "fap": 0.0007409245610342967
     },
     {
      "period_days": 1.0034,
      "power": 0.29084,
-     "fap": 0.0019831096854193877
+     "fap": 0.0019831096854193964
     },
     {
      "period_days": 319.65929,
@@ -380,7 +380,7 @@
     {
      "period_days": 5.28934,
      "power": 0.27267,
-     "fap": 0.004204289306875159
+     "fap": 0.00420428930687514
     },
     {
      "period_days": 201.72673,
@@ -394,7 +394,7 @@
     }
    ],
    "best_period_days": 211.47943,
-   "best_fap": 0.0007409245610342966,
+   "best_fap": 0.0007409245610342967,
    "curve": {
     "period_days": [
      1.00025,
@@ -6572,26 +6572,26 @@
      {
       "period_days": 6925.95118,
       "power": 0.38884,
-      "fap": 0.00010865254237812652
+      "fap": 0.0001086525423781259
      },
      {
       "period_days": 1.00009,
       "power": 0.35855,
-      "fap": 0.0004674591681242138
+      "fap": 0.00046745916812421625
      },
      {
       "period_days": 3777.79155,
       "power": 0.35493,
-      "fap": 0.0005536353706492642
+      "fap": 0.00055363537064927
      },
      {
       "period_days": 3957.68639,
       "power": 0.34349,
-      "fap": 0.0009393013990111627
+      "fap": 0.0009393013990111671
      }
     ],
     "best_period_days": 6925.95118,
-    "best_fap": 0.00010865254237812652,
+    "best_fap": 0.0001086525423781259,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "log R'HK (chromospheric emission)"
    },
@@ -6612,7 +6612,7 @@
      {
       "period_days": 6.68098,
       "power": 0.1531,
-      "fap": 0.8144394318254824
+      "fap": 0.8144394318254825
      },
      {
       "period_days": 2.63186,
@@ -6712,26 +6712,26 @@
      {
       "period_days": 6925.95118,
       "power": 0.76994,
-      "fap": 1.0724018331043788e-17
+      "fap": 1.072401833108099e-17
      },
      {
       "period_days": 6393.18571,
       "power": 0.57494,
-      "fap": 1.7063435085901489e-09
+      "fap": 1.7063435085933707e-09
      },
      {
       "period_days": 1.00009,
       "power": 0.56635,
-      "fap": 3.1492857427098106e-09
+      "fap": 3.1492857427132174e-09
      },
      {
       "period_days": 3613.53975,
       "power": 0.52648,
-      "fap": 4.6399320683735696e-08
+      "fap": 4.6399320683792526e-08
      }
     ],
     "best_period_days": 6925.95118,
-    "best_fap": 1.0724018331043788e-17,
+    "best_fap": 1.072401833108099e-17,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "CCF FWHM (line width)"
    },
@@ -6747,26 +6747,26 @@
      {
       "period_days": 6925.95118,
       "power": 0.7463,
-      "fap": 2.1890211553829662e-16
+      "fap": 2.1890211553829362e-16
      },
      {
       "period_days": 6393.18571,
       "power": 0.60151,
-      "fap": 2.3599482127345783e-10
+      "fap": 2.359948212734558e-10
      },
      {
       "period_days": 1.0001,
       "power": 0.54579,
-      "fap": 1.2996863631014851e-08
+      "fap": 1.2996863631014752e-08
      },
      {
       "period_days": 5936.52958,
       "power": 0.46164,
-      "fap": 2.321040540701012e-06
+      "fap": 2.3210405407010125e-06
      }
     ],
     "best_period_days": 6925.95118,
-    "best_fap": 2.1890211553829662e-16,
+    "best_fap": 2.1890211553829362e-16,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "CCF bisector span (line asymmetry)"
    },
