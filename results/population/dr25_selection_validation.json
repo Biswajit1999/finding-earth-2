@@ -341,15 +341,15 @@
     "total_selection_does_not_exceed_geometry_and_exposure_factorizes": true,
     "every_surface_cell_uses_all_selected_targets": true,
     "total_selection_nondecreasing_with_planet_radius": true,
-    "minimum_adjacent_radius_step": 1.2772339694986297e-08,
+    "minimum_adjacent_radius_step": 1.27723396949863e-08,
     "passed": true
   },
   "pinned_keplerports_comparison": {
     "target_kic": 3429335,
     "upstream_commit": "6770bc14516592f4e502a20d5c67e61d361c050f",
     "grid_cells_in_shared_domain": 25,
-    "mean_absolute_error": 0.022605452278805657,
-    "root_mean_squared_error": 0.048631523335705806,
+    "mean_absolute_error": 0.02260545227880566,
+    "root_mean_squared_error": 0.04863152333570581,
     "maximum_absolute_error": 0.18178147056981542,
     "thresholds": {
       "mean_absolute_error_at_most": 0.05,
