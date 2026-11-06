@@ -167,7 +167,7 @@ def fetch_product(
                 max_retries=Retry(
                     total=3,
                     backoff_factor=1,
-                    status_forcelist=[429, 500, 502, 503, 504],
+                    status_forcelist=[429, 500, 502, 503, 504, 525],
                     allowed_methods=["GET"],
                 )
             ),
