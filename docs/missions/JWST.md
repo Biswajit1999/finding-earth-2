@@ -39,7 +39,7 @@ This page is one independent observatory view. Its rows are not converted into a
 
 ## Evidence snapshot
 
-- **OBSERVED — published_atmosphere_reductions**: 396 separate spectrum reductions; 101 unique planets. Published reductions whose archive facility names JWST; reductions are not merged.
+- **OBSERVED — published_atmosphere_reductions**: 409 separate spectrum reductions; 104 unique planets. Published reductions whose archive facility names JWST; reductions are not merged.
 - **DERIVED — programme_status_coverage**: 0 reductions with programme status. The pinned NASA Archive spectrum table does not provide complete programme IDs or planned/approved/scheduled states.
 
 ## Observation / forecast boundary
