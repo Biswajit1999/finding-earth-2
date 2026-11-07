@@ -1,7 +1,7 @@
 {
  "planet": "GJ 1061 d",
  "hostname": "GJ 1061",
- "generated_utc": "2026-09-23T09:24:24Z",
+ "generated_utc": "2026-11-07T11:14:53Z",
  "narrative": {
   "location": "GJ 1061 lies 11.98 light-years (3.673 pc) from the Sun.",
   "host_star": "GJ 1061 is a M5.5 V star with 0.12\u00d7 the Sun's mass and 0.156\u00d7 its radius (effective temperature 2953 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 2,
-  "earth2_index": 0.8755,
+  "earth2_index": 0.8761,
   "scores": {
-   "earth_similarity": 0.8744,
-   "conservative_habitability": 0.8955,
+   "earth_similarity": 0.875,
+   "conservative_habitability": 0.8966,
    "observational_confidence": 0.8458,
    "characterisation_potential": null
   },
   "component_ranks": {
    "earth_similarity": 16,
    "conservative_habitability": 6,
-   "observational_confidence": 1649
+   "observational_confidence": 1677
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.6,
    "source": "catalogue",
-   "p16": 0.5033,
-   "p84": 0.701
+   "p16": 0.5004,
+   "p84": 0.6996
   },
   "equilibrium_temperature_k": {
    "value": 223.72,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 214.11,
-   "p84": 232.59,
+   "p16": 213.79,
+   "p84": 232.48,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -98,7 +98,7 @@
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
-  "conservative_probability": 0.995,
+  "conservative_probability": 0.9962,
   "optimistic_probability": 1.0,
   "position_across_conservative_hz": 0.4165,
   "model_extrapolated": false,
@@ -122,9 +122,9 @@
  },
  "earth_similarity": {
   "esi_global": 0.8796,
-  "esi_p16": 0.8438,
-  "esi_p50": 0.8744,
-  "esi_p84": 0.9017,
+  "esi_p16": 0.8436,
+  "esi_p50": 0.875,
+  "esi_p84": 0.9026,
   "esi_interior": 0.9614,
   "esi_surface": 0.8048,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -190,7 +190,7 @@
     "pl_orbsmax": 0.0342,
     "insol_used": 1.4,
     "teq_used": 276.5,
-    "hz_conservative_prob": 0.004,
+    "hz_conservative_prob": 0.002,
     "earth2_index": 0.1466,
     "mass_class": "measured"
    }
@@ -358,7 +358,7 @@
  },
  "rv_analysis": {
   "target": "GJ 1061",
-  "analysed_utc": "2026-09-23T09:24:24Z",
+  "analysed_utc": "2026-11-07T11:14:53Z",
   "status": "ok",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
@@ -376,7 +376,7 @@
    },
    "median_uncertainty_ms": 2.44,
    "rv_rms_ms": 6.373,
-   "retrieved_utc": "2026-09-23T09:24:25Z",
+   "retrieved_utc": "2026-11-07T11:14:54Z",
    "source": "DACE (public)",
    "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
   },
@@ -418,12 +418,12 @@
     {
      "period_days": 376.50292,
      "power": 0.22852,
-     "fap": 3.987557398346225e-08
+     "fap": 3.9875573983462756e-08
     },
     {
      "period_days": 411.15043,
      "power": 0.22407,
-     "fap": 6.642881516288177e-08
+     "fap": 6.642881516288091e-08
     }
    ],
    "best_period_days": 139.0405,
@@ -6541,12 +6541,12 @@
      {
       "period_days": 370.26254,
       "power": 0.68382,
-      "fap": 1.0304853523589753e-42
+      "fap": 1.0304853523590733e-42
      },
      {
       "period_days": 424.16152,
       "power": 0.67162,
-      "fap": 3.1487110603500255e-41
+      "fap": 3.1487110603501224e-41
      },
      {
       "period_days": 401.30251,
@@ -6560,7 +6560,7 @@
      }
     ],
     "best_period_days": 370.26254,
-    "best_fap": 1.0304853523589753e-42,
+    "best_fap": 1.0304853523590733e-42,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "log R'HK (chromospheric emission)"
    },
@@ -6646,7 +6646,7 @@
      {
       "period_days": 1.00422,
       "power": 0.09243,
-      "fap": 0.10014803632107082
+      "fap": 0.1001480363210708
      },
      {
       "period_days": 143.81442,
@@ -6665,7 +6665,7 @@
      }
     ],
     "best_period_days": 1.00422,
-    "best_fap": 0.10014803632107082,
+    "best_fap": 0.1001480363210708,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "Mount Wilson S-index"
    },
@@ -6686,7 +6686,7 @@
      {
       "period_days": 3942.20703,
       "power": 0.10493,
-      "fap": 0.03154468198694786
+      "fap": 0.03154468198694687
      },
      {
       "period_days": 3527.23787,
@@ -6696,7 +6696,7 @@
      {
       "period_days": 4188.59497,
       "power": 0.0968,
-      "fap": 0.06739068611724003
+      "fap": 0.06739068611724004
      }
     ],
     "best_period_days": 3723.19553,

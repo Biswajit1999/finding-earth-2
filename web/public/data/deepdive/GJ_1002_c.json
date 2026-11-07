@@ -1,7 +1,7 @@
 {
  "planet": "GJ 1002 c",
  "hostname": "GJ 1002",
- "generated_utc": "2026-09-23T09:24:53Z",
+ "generated_utc": "2026-11-07T11:15:19Z",
  "narrative": {
   "location": "GJ 1002 lies 15.81 light-years (4.849 pc) from the Sun.",
   "host_star": "GJ 1002 is a M5.5 V star with 0.12\u00d7 the Sun's mass and 0.137\u00d7 its radius (effective temperature 3024 K, versus the Sun's 5772 K).",
@@ -12,17 +12,17 @@
  "visualisation_disclaimer": "Any rendering of this world is a scientifically informed visualisation, not an image. No exoplanet has been imaged at surface resolution. Surface and cloud appearance are illustrative of a physically plausible class, not observations.",
  "ranking": {
   "earth2_rank": 7,
-  "earth2_index": 0.7697,
+  "earth2_index": 0.7678,
   "scores": {
-   "earth_similarity": 0.7507,
-   "conservative_habitability": 0.8793,
+   "earth_similarity": 0.751,
+   "conservative_habitability": 0.8735,
    "observational_confidence": 0.6442,
    "characterisation_potential": null
   },
   "component_ranks": {
    "earth_similarity": 83,
    "conservative_habitability": 7,
-   "observational_confidence": 2597
+   "observational_confidence": 2631
   }
  },
  "planet_parameters": {
@@ -52,15 +52,15 @@
   "insolation_earth": {
    "value": 0.257,
    "source": "catalogue",
-   "p16": 0.2419,
-   "p84": 0.2712
+   "p16": 0.2418,
+   "p84": 0.2718
   },
   "equilibrium_temperature_k": {
    "value": 180.99,
    "source": "derived_from_insolation_albedo_0.306",
    "albedo_assumed": 0.306,
-   "p16": 178.27,
-   "p84": 183.43,
+   "p16": 178.25,
+   "p84": 183.54,
    "note": "Equilibrium temperature excludes greenhouse warming by construction. Earth's is 254 K against a 288 K surface."
   }
  },
@@ -98,7 +98,7 @@
  "habitable_zone": {
   "conservative_nominal": 1.0,
   "optimistic_nominal": 1.0,
-  "conservative_probability": 0.9515,
+  "conservative_probability": 0.9453,
   "optimistic_probability": 0.9998,
   "position_across_conservative_hz": 0.9607,
   "model_extrapolated": false,
@@ -123,8 +123,8 @@
  "earth_similarity": {
   "esi_global": 0.759,
   "esi_p16": 0.7368,
-  "esi_p50": 0.7507,
-  "esi_p84": 0.7623,
+  "esi_p50": 0.751,
+  "esi_p84": 0.7629,
   "esi_interior": 0.9816,
   "esi_surface": 0.5869,
   "caveat": "A similarity metric on bulk properties. Not a probability of habitability, and not evidence of life. Venus scores 0.93 on the same metric."
@@ -179,7 +179,7 @@
     "insol_used": 0.67,
     "teq_used": 230.0,
     "hz_conservative_prob": 1.0,
-    "earth2_index": 0.8489,
+    "earth2_index": 0.8486,
     "mass_class": "msini_lower_limit"
    }
   ]
@@ -325,7 +325,7 @@
  },
  "rv_analysis": {
   "target": "GJ 1002",
-  "analysed_utc": "2026-09-23T09:24:53Z",
+  "analysed_utc": "2026-11-07T11:15:19Z",
   "status": "ok",
   "source": "DACE (public)",
   "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7.",
@@ -343,7 +343,7 @@
    },
    "median_uncertainty_ms": 0.608,
    "rv_rms_ms": 6.317,
-   "retrieved_utc": "2026-09-23T09:24:54Z",
+   "retrieved_utc": "2026-11-07T11:15:20Z",
    "source": "DACE (public)",
    "citation": "This research has made use of the Data & Analysis Center for Exoplanets (DACE), operated by the University of Geneva. Buchschacher, N., Segransan, D., Udry, S., Diaz, R. (2015), ASP Conference Series 495, 7."
   },
@@ -380,12 +380,12 @@
     {
      "period_days": 5.28934,
      "power": 0.27267,
-     "fap": 0.004204289306875159
+     "fap": 0.004204289306875178
     },
     {
      "period_days": 201.72673,
      "power": 0.26692,
-     "fap": 0.005306122142181136
+     "fap": 0.005306122142181158
     },
     {
      "period_days": 221.63044,
@@ -6647,7 +6647,7 @@
      {
       "period_days": 1888.89578,
       "power": 0.13204,
-      "fap": 0.9649271207182649
+      "fap": 0.9649271207182654
      },
      {
       "period_days": 913.31224,
@@ -6687,7 +6687,7 @@
      {
       "period_days": 913.31224,
       "power": 0.12001,
-      "fap": 0.9925198241874369
+      "fap": 0.9925198241874371
      },
      {
       "period_days": 1978.84319,
@@ -6712,12 +6712,12 @@
      {
       "period_days": 6925.95118,
       "power": 0.76994,
-      "fap": 1.0724018331043788e-17
+      "fap": 1.0724018331043949e-17
      },
      {
       "period_days": 6393.18571,
       "power": 0.57494,
-      "fap": 1.7063435085901489e-09
+      "fap": 1.7063435085901216e-09
      },
      {
       "period_days": 1.00009,
@@ -6727,11 +6727,11 @@
      {
       "period_days": 3613.53975,
       "power": 0.52648,
-      "fap": 4.6399320683735696e-08
+      "fap": 4.63993206837347e-08
      }
     ],
     "best_period_days": 6925.95118,
-    "best_fap": 1.0724018331043788e-17,
+    "best_fap": 1.0724018331043949e-17,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "CCF FWHM (line width)"
    },
@@ -6757,12 +6757,12 @@
      {
       "period_days": 1.0001,
       "power": 0.54579,
-      "fap": 1.2996863631014851e-08
+      "fap": 1.2996863631014752e-08
      },
      {
       "period_days": 5936.52958,
       "power": 0.46164,
-      "fap": 2.321040540701012e-06
+      "fap": 2.3210405407007796e-06
      }
     ],
     "best_period_days": 6925.95118,
@@ -6782,12 +6782,12 @@
      {
       "period_days": 4888.90672,
       "power": 0.56061,
-      "fap": 4.710463868581012e-09
+      "fap": 4.7104638685802114e-09
      },
      {
       "period_days": 4617.30079,
       "power": 0.52691,
-      "fap": 4.511008716308332e-08
+      "fap": 4.511008716308234e-08
      },
      {
       "period_days": 5194.46339,
@@ -6797,11 +6797,11 @@
      {
       "period_days": 4374.28496,
       "power": 0.45955,
-      "fap": 2.611218024267804e-06
+      "fap": 2.6112180242677715e-06
      }
     ],
     "best_period_days": 4888.90672,
-    "best_fap": 4.710463868581012e-09,
+    "best_fap": 4.7104638685802114e-09,
     "method": "generalised Lomb-Scargle (floating mean), Baluev FAP",
     "label": "CCF contrast (line depth)"
    }
