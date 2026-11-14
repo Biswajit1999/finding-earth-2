@@ -1,7 +1,7 @@
 {
   "archive": "NASA Exoplanet Archive",
   "archive_url": "https://exoplanetarchive.ipac.caltech.edu/",
-  "bytes_raw": 5039111,
+  "bytes_raw": 5056662,
   "citation": "This research has made use of the NASA Exoplanet Archive, which is operated by the California Institute of Technology, under contract with the National Aeronautics and Space Administration under the Exoplanet Exploration Program.",
   "columns": [
     "tid",
@@ -100,12 +100,12 @@
   "doi": "10.26134/ExoFOP5",
   "earth2_version": "2.1.2",
   "n_columns": 91,
-  "n_rows": 8148,
+  "n_rows": 8175,
   "notes": "TESS Objects of Interest. Candidates, not confirmed planets; tfopwg_disp carries the TFOP working group disposition.",
   "query": "select * from toi",
   "request_url": "https://exoplanetarchive.ipac.caltech.edu/TAP/sync?query=select+%2A+from+toi&format=csv",
-  "retrieved_utc": "2026-09-23T09:22:44Z",
-  "sha256": "f04e2776205e942bf420a65ff25290aaf1abffb84af53cdbc16e9b788e3d52bf",
+  "retrieved_utc": "2026-11-14T11:35:48Z",
+  "sha256": "c8e6455e6694af2f8e38a969dbaa56f93ba97f5d5976606ce4c4e780dff62002",
   "source_table": "toi",
   "status": "ok"
 }
