@@ -1,0 +1,156 @@
+{
+  "project": "Finding Earth 2.0 in Distant Worlds",
+  "repository": "https://github.com/Biswajit1999/finding-earth-2",
+  "files": [
+    {
+      "label": "Dr25 droplist inv",
+      "path": "data/manifests/population/dr25_droplist_inv.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 droplist scr1",
+      "path": "data/manifests/population/dr25_droplist_scr1.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 droplist scr2",
+      "path": "data/manifests/population/dr25_droplist_scr2.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 droplist scr3",
+      "path": "data/manifests/population/dr25_droplist_scr3.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 false alarm inv",
+      "path": "data/manifests/population/dr25_false_alarm_inv.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 false alarm scr1",
+      "path": "data/manifests/population/dr25_false_alarm_scr1.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 false alarm scr2",
+      "path": "data/manifests/population/dr25_false_alarm_scr2.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 false alarm scr3",
+      "path": "data/manifests/population/dr25_false_alarm_scr3.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 injections",
+      "path": "data/manifests/population/dr25_injections.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 koifpp",
+      "path": "data/manifests/population/dr25_koifpp.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 observed tces",
+      "path": "data/manifests/population/dr25_observed_tces.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Dr25 stars",
+      "path": "data/manifests/population/dr25_stars.json",
+      "role": "Data and provenance"
+    },
+    {
+      "label": "Analysis summary",
+      "path": "results/analysis_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Candidate identifiers",
+      "path": "results/candidate_identifiers.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Candidate ranking",
+      "path": "results/candidate_ranking.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Data coverage",
+      "path": "results/data_coverage.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Final release audit",
+      "path": "results/final_release_audit.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Provenance manifest",
+      "path": "results/provenance_manifest.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Transformation ledger",
+      "path": "results/transformation_ledger.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Transit validation",
+      "path": "results/transit_validation.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Analysis summary",
+      "path": "earth2-v2-data-release/results/analysis_summary.json",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Candidate identifiers",
+      "path": "earth2-v2-data-release/results/candidate_identifiers.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Candidate ranking",
+      "path": "earth2-v2-data-release/results/candidate_ranking.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Data coverage",
+      "path": "earth2-v2-data-release/results/data_coverage.csv",
+      "role": "Tables and numerical results"
+    },
+    {
+      "label": "Earth analogue spectrum screen",
+      "path": "results/atmosphere/earth_analogue_spectrum_screen.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Transmission observability",
+      "path": "results/atmosphere/transmission_observability.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Transmission observability",
+      "path": "results/atmosphere/transmission_observability.svg",
+      "role": "Figures"
+    },
+    {
+      "label": "Continuous hz sensitivity",
+      "path": "results/climate/continuous_hz_sensitivity.png",
+      "role": "Figures"
+    },
+    {
+      "label": "Continuous hz sensitivity",
+      "path": "results/climate/continuous_hz_sensitivity.svg",
+      "role": "Figures"
+    },
+    {
+      "label": "Composition model disagreement",
+      "path": "results/composition/composition_model_disagreement.png",
+      "role": "Figures"
+    }
+  ]
+}

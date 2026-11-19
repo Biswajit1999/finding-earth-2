@@ -1,0 +1,756 @@
+{
+  "schema": 1,
+  "project": "Finding Earth 2.0 in Distant Worlds",
+  "repository": "https://github.com/Biswajit1999/finding-earth-2",
+  "files": [
+    {
+      "label": "Dr25 droplist inv",
+      "path": "data/manifests/population/dr25_droplist_inv.json",
+      "role": "Data and provenance",
+      "bytes": 1157,
+      "sha256": "5d4d3da5e774b2c53a683efdbc5b495da130d7f84911bd7efa57dd8409a7007b",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 droplist scr1",
+      "path": "data/manifests/population/dr25_droplist_scr1.json",
+      "role": "Data and provenance",
+      "bytes": 1164,
+      "sha256": "4eba449d5dbf006ff31463af4f81fd34e651b88aa9a06e47d2695efffa99862e",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 droplist scr2",
+      "path": "data/manifests/population/dr25_droplist_scr2.json",
+      "role": "Data and provenance",
+      "bytes": 1164,
+      "sha256": "34ed3014e528af86bb6192b2ce85e3be55e1ddf3de2befb8e8d2b8659838e1b9",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 droplist scr3",
+      "path": "data/manifests/population/dr25_droplist_scr3.json",
+      "role": "Data and provenance",
+      "bytes": 1164,
+      "sha256": "bb1b647bcf8d70b1d5456db7db980a3211b15a7aebdc47846197d8c2ed0136ea",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 false alarm inv",
+      "path": "data/manifests/population/dr25_false_alarm_inv.json",
+      "role": "Data and provenance",
+      "bytes": 1186,
+      "sha256": "8570d47bc8ba41b4e76ce28daf1134fda265866f019bfd2f8e4b5183c3e3ee58",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 false alarm scr1",
+      "path": "data/manifests/population/dr25_false_alarm_scr1.json",
+      "role": "Data and provenance",
+      "bytes": 1192,
+      "sha256": "91b0eead6555fe691dfdb437c3da3c0af355e8eb80f14ab85aaa0cefd9f6d6cd",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 false alarm scr2",
+      "path": "data/manifests/population/dr25_false_alarm_scr2.json",
+      "role": "Data and provenance",
+      "bytes": 1192,
+      "sha256": "ff7ba879caacc4e12c0ce147963fa1001ebfc7ceb34d20132749408b2013f5a6",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 false alarm scr3",
+      "path": "data/manifests/population/dr25_false_alarm_scr3.json",
+      "role": "Data and provenance",
+      "bytes": 1192,
+      "sha256": "4fe79d8c2682398f60a2476ad500b4f61250d3a4328eaa2be28d4389619835af",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 injections",
+      "path": "data/manifests/population/dr25_injections.json",
+      "role": "Data and provenance",
+      "bytes": 1150,
+      "sha256": "7376087eee5524bbf3caaaefe4de036a0d5fa37e87c82bd24d10d92abc38619c",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 koifpp",
+      "path": "data/manifests/population/dr25_koifpp.json",
+      "role": "Data and provenance",
+      "bytes": 1200,
+      "sha256": "dc920cfe77d948e0fb01c6d1f91115fe572151e683dd900b9346f2375dc56a2c",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 observed tces",
+      "path": "data/manifests/population/dr25_observed_tces.json",
+      "role": "Data and provenance",
+      "bytes": 1187,
+      "sha256": "fd9c9bdbae052c726fcdc3b2fc3f0809c7b79fa5dec45a831e39b8cce785346f",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Dr25 stars",
+      "path": "data/manifests/population/dr25_stars.json",
+      "role": "Data and provenance",
+      "bytes": 1694,
+      "sha256": "6aec7a0529693b5f68c8ea9bb0403c01233b12b335d2f8adf6e971e6b722818a",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "schema_version",
+        "product",
+        "survey",
+        "release",
+        "experiment",
+        "source_url",
+        "resolved_url"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Analysis summary",
+      "path": "results/analysis_summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 20001,
+      "sha256": "c49952e1ee62d9a2dfa398f4b54d5289584c212cd330ee9c04fcd78357c362fb",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "generated_utc",
+        "earth2_version",
+        "monte_carlo",
+        "scale",
+        "population",
+        "measurement_coverage",
+        "observational_products"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Candidate identifiers",
+      "path": "results/candidate_identifiers.csv",
+      "role": "Tables and numerical results",
+      "bytes": 6237,
+      "sha256": "65766a85e53516ed66805fed3c693f9730200dfc55aa79f8582fde02f0353a67",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 12,
+      "columns": 25,
+      "headers": [
+        "query_name",
+        "resolved_name",
+        "system_name",
+        "n_stars_in_system",
+        "n_planets_in_system",
+        "match_method",
+        "match_confidence"
+      ],
+      "preview": [
+        [
+          "TRAPPIST-1 e",
+          "TRAPPIST-1 e",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "TRAPPIST-1 f",
+          "TRAPPIST-1 f",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "TRAPPIST-1 g",
+          "TRAPPIST-1 g",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "GJ 1061 d",
+          "GJ 1061 d",
+          "GJ 1061",
+          "1",
+          "3",
+          "alias_service",
+          "high"
+        ]
+      ]
+    },
+    {
+      "label": "Candidate ranking",
+      "path": "results/candidate_ranking.csv",
+      "role": "Tables and numerical results",
+      "bytes": 6901669,
+      "sha256": "ad17324b070d1a9bf8289fae04ffb2002c0bbb5aeaf8bd912d87b1b1b5b32e54",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 6371,
+      "columns": 121,
+      "headers": [
+        "pl_name",
+        "hostname",
+        "pl_letter",
+        "is_control",
+        "earth2_rank",
+        "earth2_index",
+        "rankable"
+      ],
+      "preview": [
+        [
+          "Proxima Cen b",
+          "Proxima Cen",
+          "b",
+          "False",
+          "1",
+          "0.8762299550846573",
+          "True"
+        ],
+        [
+          "GJ 1061 d",
+          "GJ 1061",
+          "d",
+          "False",
+          "2",
+          "0.8754771428552129",
+          "True"
+        ],
+        [
+          "GJ 1002 b",
+          "GJ 1002",
+          "b",
+          "False",
+          "3",
+          "0.8488580251900342",
+          "True"
+        ],
+        [
+          "Earth",
+          "Sun",
+          "",
+          "True",
+          "",
+          "0.848411446561805",
+          "True"
+        ]
+      ]
+    },
+    {
+      "label": "Data coverage",
+      "path": "results/data_coverage.csv",
+      "role": "Tables and numerical results",
+      "bytes": 906,
+      "sha256": "8983d0cff088ba162cde1759363d6c1cf4360e67619de1332a5954a6f0fb5467",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 15,
+      "columns": 7,
+      "headers": [
+        "quantity",
+        "column",
+        "n_with_value",
+        "pct_with_value",
+        "uncertainty_applicable",
+        "n_with_uncertainty",
+        "pct_with_uncertainty"
+      ],
+      "preview": [
+        [
+          "Planet radius",
+          "pl_rade",
+          "6316",
+          "99.21",
+          "True",
+          "4401.0",
+          "69.13"
+        ],
+        [
+          "Planet mass",
+          "pl_bmasse",
+          "6335",
+          "99.51",
+          "True",
+          "3086.0",
+          "48.48"
+        ],
+        [
+          "Bulk density",
+          "pl_dens",
+          "6222",
+          "97.74",
+          "True",
+          "1475.0",
+          "23.17"
+        ],
+        [
+          "Orbital period",
+          "pl_orbper",
+          "6016",
+          "94.5",
+          "True",
+          "5521.0",
+          "86.73"
+        ]
+      ]
+    },
+    {
+      "label": "Final release audit",
+      "path": "results/final_release_audit.json",
+      "role": "Tables and numerical results",
+      "bytes": 983,
+      "sha256": "87a98d41664ec9089b7d580b77340159213880dfc3a50db1b949f8e8fa3d14c9",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "failed",
+        "gate_count",
+        "gates",
+        "label",
+        "passed",
+        "release",
+        "schema_version"
+      ],
+      "arrays": {
+        "failed": 0
+      }
+    },
+    {
+      "label": "Provenance manifest",
+      "path": "results/provenance_manifest.json",
+      "role": "Tables and numerical results",
+      "bytes": 13801,
+      "sha256": "15683a25d2ba18be1429981e4a8d7bdf977aa3d8ba670c0d9e8b941b80b95dad",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "generated_utc",
+        "earth2_version",
+        "software",
+        "retrievals",
+        "total_source_records",
+        "transformations"
+      ],
+      "arrays": {
+        "retrievals": 13,
+        "transformations": 12
+      }
+    },
+    {
+      "label": "Transformation ledger",
+      "path": "results/transformation_ledger.json",
+      "role": "Tables and numerical results",
+      "bytes": 9557,
+      "sha256": "3c0e8ec483cf43423c5a94bbe1a60c69ee2e7c803c336b79b37704b1b5836e3f",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "ledger",
+        "generated_utc",
+        "n_steps",
+        "steps"
+      ],
+      "arrays": {
+        "steps": 12
+      }
+    },
+    {
+      "label": "Transit validation",
+      "path": "results/transit_validation.json",
+      "role": "Tables and numerical results",
+      "bytes": 72461,
+      "sha256": "3c323e12691cdfb0797fce7e5d7099727ff8cc4edae80ce74d943eaaff171de7",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "generated_utc",
+        "purpose",
+        "n_targets",
+        "n_attempted",
+        "n_validated",
+        "median_ratio_fitted_to_published",
+        "systematic_note"
+      ],
+      "arrays": {
+        "targets": 5
+      }
+    },
+    {
+      "label": "Analysis summary",
+      "path": "earth2-v2-data-release/results/analysis_summary.json",
+      "role": "Tables and numerical results",
+      "bytes": 19978,
+      "sha256": "a2c4b0b4c9bbc502db7bfd025858322fb8c99406fe00e9ff70f1ab21a1fb495d",
+      "hash_basis": "LF-normalised text",
+      "format": "JSON",
+      "keys": [
+        "generated_utc",
+        "earth2_version",
+        "monte_carlo",
+        "scale",
+        "population",
+        "measurement_coverage",
+        "observational_products"
+      ],
+      "arrays": {}
+    },
+    {
+      "label": "Candidate identifiers",
+      "path": "earth2-v2-data-release/results/candidate_identifiers.csv",
+      "role": "Tables and numerical results",
+      "bytes": 6237,
+      "sha256": "65766a85e53516ed66805fed3c693f9730200dfc55aa79f8582fde02f0353a67",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 12,
+      "columns": 25,
+      "headers": [
+        "query_name",
+        "resolved_name",
+        "system_name",
+        "n_stars_in_system",
+        "n_planets_in_system",
+        "match_method",
+        "match_confidence"
+      ],
+      "preview": [
+        [
+          "TRAPPIST-1 e",
+          "TRAPPIST-1 e",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "TRAPPIST-1 f",
+          "TRAPPIST-1 f",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "TRAPPIST-1 g",
+          "TRAPPIST-1 g",
+          "TRAPPIST-1",
+          "1",
+          "7",
+          "alias_service",
+          "high"
+        ],
+        [
+          "GJ 1061 d",
+          "GJ 1061 d",
+          "GJ 1061",
+          "1",
+          "3",
+          "alias_service",
+          "high"
+        ]
+      ]
+    },
+    {
+      "label": "Candidate ranking",
+      "path": "earth2-v2-data-release/results/candidate_ranking.csv",
+      "role": "Tables and numerical results",
+      "bytes": 6891861,
+      "sha256": "4ecf046f2906235a756819eef3c9c39fe531814071824746c9e1cc3859632929",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 6359,
+      "columns": 121,
+      "headers": [
+        "pl_name",
+        "hostname",
+        "pl_letter",
+        "is_control",
+        "earth2_rank",
+        "earth2_index",
+        "rankable"
+      ],
+      "preview": [
+        [
+          "Proxima Cen b",
+          "Proxima Cen",
+          "b",
+          "False",
+          "1",
+          "0.8764112843912955",
+          "True"
+        ],
+        [
+          "GJ 1061 d",
+          "GJ 1061",
+          "d",
+          "False",
+          "2",
+          "0.8754954151121703",
+          "True"
+        ],
+        [
+          "GJ 1002 b",
+          "GJ 1002",
+          "b",
+          "False",
+          "3",
+          "0.8488849518792323",
+          "True"
+        ],
+        [
+          "Earth",
+          "Sun",
+          "",
+          "True",
+          "",
+          "0.848411446561805",
+          "True"
+        ]
+      ]
+    },
+    {
+      "label": "Data coverage",
+      "path": "earth2-v2-data-release/results/data_coverage.csv",
+      "role": "Tables and numerical results",
+      "bytes": 904,
+      "sha256": "f01e97179e051480cc28e711bc299840e3bcadc436544229e51f1601a26ec8fa",
+      "hash_basis": "LF-normalised text",
+      "format": "CSV",
+      "rows": 15,
+      "columns": 7,
+      "headers": [
+        "quantity",
+        "column",
+        "n_with_value",
+        "pct_with_value",
+        "uncertainty_applicable",
+        "n_with_uncertainty",
+        "pct_with_uncertainty"
+      ],
+      "preview": [
+        [
+          "Planet radius",
+          "pl_rade",
+          "6304",
+          "99.21",
+          "True",
+          "4395.0",
+          "69.17"
+        ],
+        [
+          "Planet mass",
+          "pl_bmasse",
+          "6323",
+          "99.51",
+          "True",
+          "3078.0",
+          "48.44"
+        ],
+        [
+          "Bulk density",
+          "pl_dens",
+          "6212",
+          "97.77",
+          "True",
+          "1470.0",
+          "23.14"
+        ],
+        [
+          "Orbital period",
+          "pl_orbper",
+          "6009",
+          "94.57",
+          "True",
+          "5515.0",
+          "86.8"
+        ]
+      ]
+    },
+    {
+      "label": "Earth analogue spectrum screen",
+      "path": "results/atmosphere/earth_analogue_spectrum_screen.png",
+      "role": "Figures",
+      "bytes": 130652,
+      "sha256": "559f13588f8538da9f83c8b9dce7e29cd58b8263cfc79214848cd44d2a7f46a1",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Transmission observability",
+      "path": "results/atmosphere/transmission_observability.png",
+      "role": "Figures",
+      "bytes": 203420,
+      "sha256": "7df9986353e81e601b56168465d364468e9c185b9a9ce657943af21281e58571",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Transmission observability",
+      "path": "results/atmosphere/transmission_observability.svg",
+      "role": "Figures",
+      "bytes": 99740,
+      "sha256": "2f6647987d5546d720ee6565cd7bfc52e4563b492194cdd2574f230489211ce7",
+      "hash_basis": "LF-normalised text",
+      "format": "SVG"
+    },
+    {
+      "label": "Continuous hz sensitivity",
+      "path": "results/climate/continuous_hz_sensitivity.png",
+      "role": "Figures",
+      "bytes": 175655,
+      "sha256": "5a4c5fe77ed4c748cbaaee010143e4f6efb38ac1b0cab4aea96cc7a2422bcd23",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    },
+    {
+      "label": "Continuous hz sensitivity",
+      "path": "results/climate/continuous_hz_sensitivity.svg",
+      "role": "Figures",
+      "bytes": 240918,
+      "sha256": "bbf26578525af82555f226836377a3a4e53f99c9c95ed0e3753130df79525655",
+      "hash_basis": "LF-normalised text",
+      "format": "SVG"
+    },
+    {
+      "label": "Composition model disagreement",
+      "path": "results/composition/composition_model_disagreement.png",
+      "role": "Figures",
+      "bytes": 484718,
+      "sha256": "49e3d22650a6381ea06aff068ac5e50b7f766649dd3d815bb45fb4da0a8852df",
+      "hash_basis": "exact bytes",
+      "format": "PNG"
+    }
+  ]
+}
