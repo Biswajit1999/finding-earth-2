@@ -1,0 +1,572 @@
+{
+  "schema": 1,
+  "project": "Finding Earth 2.0 in Distant Worlds",
+  "tables": [
+    {
+      "path": "results/candidate_identifiers.csv",
+      "label": "Candidate identifiers",
+      "role": "Tables and numerical results",
+      "rows": 12,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "query_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "resolved_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "system_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_stars_in_system",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 1.0,
+          "maximum": 3.0
+        },
+        {
+          "name": "n_planets_in_system",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 1.0,
+          "maximum": 7.0
+        },
+        {
+          "name": "match_method",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "match_confidence",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "note",
+          "blank": 12,
+          "text": 0,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "planet_aliases",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_resolved",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_aliases",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_gaia_dr3",
+          "blank": 1,
+          "text": 0,
+          "finite": 11,
+          "nonfinite": 0,
+          "minimum": 3.5227046884571776e+16,
+          "maximum": 5.853498713190526e+18
+        },
+        {
+          "name": "host_id_tic",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 79611981.0,
+          "maximum": 388857263.0
+        },
+        {
+          "name": "host_id_gaia_dr2",
+          "blank": 1,
+          "text": 0,
+          "finite": 11,
+          "nonfinite": 0,
+          "minimum": 3.5227046884571776e+16,
+          "maximum": 5.853498713160607e+18
+        },
+        {
+          "name": "host_id_toi",
+          "blank": 9,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 6838.0,
+          "maximum": 6838.0
+        },
+        {
+          "name": "host_id_k2",
+          "blank": 9,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 112.0,
+          "maximum": 112.0
+        },
+        {
+          "name": "host_id_epic",
+          "blank": 7,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 60018069.0,
+          "maximum": 246199087.0
+        },
+        {
+          "name": "host_id_twomass",
+          "blank": 1,
+          "text": 11,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_wise",
+          "blank": 6,
+          "text": 6,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_gj",
+          "blank": 7,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 551.0,
+          "maximum": 1253.0
+        },
+        {
+          "name": "host_id_hip",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 70890.0,
+          "maximum": 84709.0
+        },
+        {
+          "name": "host_id_koi",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 2418.0,
+          "maximum": 3138.0
+        },
+        {
+          "name": "host_id_kepler",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 1229.0,
+          "maximum": 1649.0
+        },
+        {
+          "name": "host_id_kic",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 6444896.0,
+          "maximum": 10027247.0
+        },
+        {
+          "name": "host_id_hd",
+          "blank": 11,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 156384.0,
+          "maximum": 156384.0
+        }
+      ]
+    },
+    {
+      "path": "results/data_coverage.csv",
+      "label": "Data coverage",
+      "role": "Tables and numerical results",
+      "rows": 15,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "column",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_with_value",
+          "blank": 0,
+          "text": 0,
+          "finite": 15,
+          "nonfinite": 0,
+          "minimum": 4910.0,
+          "maximum": 6357.0
+        },
+        {
+          "name": "pct_with_value",
+          "blank": 0,
+          "text": 0,
+          "finite": 15,
+          "nonfinite": 0,
+          "minimum": 77.13,
+          "maximum": 99.86
+        },
+        {
+          "name": "uncertainty_applicable",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_with_uncertainty",
+          "blank": 2,
+          "text": 0,
+          "finite": 13,
+          "nonfinite": 0,
+          "minimum": 1475.0,
+          "maximum": 6228.0
+        },
+        {
+          "name": "pct_with_uncertainty",
+          "blank": 2,
+          "text": 0,
+          "finite": 13,
+          "nonfinite": 0,
+          "minimum": 23.17,
+          "maximum": 97.83
+        }
+      ]
+    },
+    {
+      "path": "earth2-v2-data-release/results/candidate_identifiers.csv",
+      "label": "Candidate identifiers",
+      "role": "Tables and numerical results",
+      "rows": 12,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "query_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "resolved_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "system_name",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_stars_in_system",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 1.0,
+          "maximum": 3.0
+        },
+        {
+          "name": "n_planets_in_system",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 1.0,
+          "maximum": 7.0
+        },
+        {
+          "name": "match_method",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "match_confidence",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "note",
+          "blank": 12,
+          "text": 0,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "planet_aliases",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_resolved",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_aliases",
+          "blank": 0,
+          "text": 12,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_gaia_dr3",
+          "blank": 1,
+          "text": 0,
+          "finite": 11,
+          "nonfinite": 0,
+          "minimum": 3.5227046884571776e+16,
+          "maximum": 5.853498713190526e+18
+        },
+        {
+          "name": "host_id_tic",
+          "blank": 0,
+          "text": 0,
+          "finite": 12,
+          "nonfinite": 0,
+          "minimum": 79611981.0,
+          "maximum": 388857263.0
+        },
+        {
+          "name": "host_id_gaia_dr2",
+          "blank": 1,
+          "text": 0,
+          "finite": 11,
+          "nonfinite": 0,
+          "minimum": 3.5227046884571776e+16,
+          "maximum": 5.853498713160607e+18
+        },
+        {
+          "name": "host_id_toi",
+          "blank": 9,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 6838.0,
+          "maximum": 6838.0
+        },
+        {
+          "name": "host_id_k2",
+          "blank": 9,
+          "text": 0,
+          "finite": 3,
+          "nonfinite": 0,
+          "minimum": 112.0,
+          "maximum": 112.0
+        },
+        {
+          "name": "host_id_epic",
+          "blank": 7,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 60018069.0,
+          "maximum": 246199087.0
+        },
+        {
+          "name": "host_id_twomass",
+          "blank": 1,
+          "text": 11,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_wise",
+          "blank": 6,
+          "text": 6,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "host_id_gj",
+          "blank": 7,
+          "text": 0,
+          "finite": 5,
+          "nonfinite": 0,
+          "minimum": 551.0,
+          "maximum": 1253.0
+        },
+        {
+          "name": "host_id_hip",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 70890.0,
+          "maximum": 84709.0
+        },
+        {
+          "name": "host_id_koi",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 2418.0,
+          "maximum": 3138.0
+        },
+        {
+          "name": "host_id_kepler",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 1229.0,
+          "maximum": 1649.0
+        },
+        {
+          "name": "host_id_kic",
+          "blank": 10,
+          "text": 0,
+          "finite": 2,
+          "nonfinite": 0,
+          "minimum": 6444896.0,
+          "maximum": 10027247.0
+        },
+        {
+          "name": "host_id_hd",
+          "blank": 11,
+          "text": 0,
+          "finite": 1,
+          "nonfinite": 0,
+          "minimum": 156384.0,
+          "maximum": 156384.0
+        }
+      ]
+    },
+    {
+      "path": "earth2-v2-data-release/results/data_coverage.csv",
+      "label": "Data coverage",
+      "role": "Tables and numerical results",
+      "rows": 15,
+      "width_mismatches": 0,
+      "columns": [
+        {
+          "name": "quantity",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "column",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_with_value",
+          "blank": 0,
+          "text": 0,
+          "finite": 15,
+          "nonfinite": 0,
+          "minimum": 4904.0,
+          "maximum": 6345.0
+        },
+        {
+          "name": "pct_with_value",
+          "blank": 0,
+          "text": 0,
+          "finite": 15,
+          "nonfinite": 0,
+          "minimum": 77.18,
+          "maximum": 99.86
+        },
+        {
+          "name": "uncertainty_applicable",
+          "blank": 0,
+          "text": 15,
+          "finite": 0,
+          "nonfinite": 0
+        },
+        {
+          "name": "n_with_uncertainty",
+          "blank": 2,
+          "text": 0,
+          "finite": 13,
+          "nonfinite": 0,
+          "minimum": 1470.0,
+          "maximum": 6217.0
+        },
+        {
+          "name": "pct_with_uncertainty",
+          "blank": 2,
+          "text": 0,
+          "finite": 13,
+          "nonfinite": 0,
+          "minimum": 23.14,
+          "maximum": 97.84
+        }
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "path": "results/candidate_ranking.csv",
+      "reason": "larger than 2,000,000 bytes"
+    },
+    {
+      "path": "earth2-v2-data-release/results/candidate_ranking.csv",
+      "reason": "larger than 2,000,000 bytes"
+    }
+  ]
+}
