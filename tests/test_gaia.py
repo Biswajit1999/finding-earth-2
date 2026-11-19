@@ -95,13 +95,13 @@ def test_tap_retries_invalid_success_response_and_caches_only_valid_csv(monkeypa
     monkeypatch.setattr(gaia.time, "sleep", Mock())
     monkeypatch.setattr(gaia, "write_cache", cache_write)
 
-    frame, digest, from_cache = gaia._post_adql("test_chunk", "select ...", False)
+    frame, digest, from_cache = gaia._post_adql("test_chunk", "select ...", False, [source_id])
 
     assert frame["source_id"].tolist() == [source_id]
     assert digest == sha256_bytes(valid)
     assert not from_cache
     assert post.call_count == 2
-    cache_write.assert_called_once_with("test_chunk", valid)
+    cache_write.assert_called_once_with(f"test_chunk_{sha256_bytes(b'select ...')}", valid)
 
 
 def test_tap_replaces_invalid_cache_with_valid_empty_result(monkeypatch):
@@ -113,13 +113,13 @@ def test_tap_replaces_invalid_cache_with_valid_empty_result(monkeypatch):
     monkeypatch.setattr(gaia, "read_cache", lambda _: b"<html>Unavailable</html>")
     monkeypatch.setattr(gaia, "write_cache", cache_write)
 
-    frame, _, from_cache = gaia._post_adql("test_chunk", "select ...", True)
+    frame, _, from_cache = gaia._post_adql("test_chunk", "select ...", True, [1])
 
     assert frame.empty
     assert list(frame.columns) == GAIA_COLUMNS
     assert not from_cache
     post.assert_called_once()
-    cache_write.assert_called_once_with("test_chunk", valid)
+    cache_write.assert_called_once_with(f"test_chunk_{sha256_bytes(b'select ...')}", valid)
 
 
 def test_tap_does_not_cache_permanent_invalid_success_responses(monkeypatch):
@@ -130,10 +130,36 @@ def test_tap_does_not_cache_permanent_invalid_success_responses(monkeypatch):
     monkeypatch.setattr(gaia, "write_cache", cache_write)
 
     with pytest.raises(ArchiveError, match="test_chunk.*unexpected Gaia TAP CSV structure"):
-        gaia._post_adql("test_chunk", "select ...", False)
+        gaia._post_adql("test_chunk", "select ...", False, [1])
 
     assert post.call_count == gaia.HTTP_RETRIES
     cache_write.assert_not_called()
+
+
+def test_chunk_cache_is_bound_to_the_requested_query(tmp_path, monkeypatch):
+    monkeypatch.setattr("earth2.data_sources.base.RAW_DIR", tmp_path)
+    responses = [
+        SimpleNamespace(status_code=200, content=_fake_gaia_dataframe([sid]).to_csv(index=False).encode())
+        for sid in (1, 2)
+    ]
+    post = Mock(side_effect=responses)
+    monkeypatch.setattr(gaia._SESSION, "post", post)
+
+    first, _, first_cached = gaia._post_adql("test_chunk", "WHERE source_id IN (1)", True, [1])
+    second, _, second_cached = gaia._post_adql("test_chunk", "WHERE source_id IN (2)", True, [2])
+    again, _, again_cached = gaia._post_adql("test_chunk", "WHERE source_id IN (1)", True, [1])
+
+    assert first["source_id"].tolist() == again["source_id"].tolist() == [1]
+    assert second["source_id"].tolist() == [2]
+    assert (first_cached, second_cached, again_cached) == (False, False, True)
+    assert post.call_count == 2
+
+
+@pytest.mark.parametrize("returned_ids", ([1, 1], [2]))
+def test_tap_rejects_duplicate_and_unrequested_source_ids(returned_ids):
+    payload = _fake_gaia_dataframe(returned_ids).to_csv(index=False).encode()
+    with pytest.raises(ArchiveError, match="duplicate or unrequested source IDs"):
+        gaia._parse_tap_csv(payload, "test_chunk", [1])
 
 
 def test_fetch_gaia_crossmatch_combines_chunks_into_one_manifest(tmp_path, monkeypatch):
@@ -143,9 +169,10 @@ def test_fetch_gaia_crossmatch_combines_chunks_into_one_manifest(tmp_path, monke
 
     source_ids = list(range(1, 11))  # 10 ids, chunk_size=4 -> 3 chunks
 
-    def fake_post_adql(chunk_id, adql, use_cache):
+    def fake_post_adql(chunk_id, adql, use_cache, source_ids):
         # Recover which ids were requested from the literal ADQL string.
         ids_in_query = [int(x) for x in adql.split("in (")[1].rstrip(")").split(",")]
+        assert ids_in_query == source_ids
         return _fake_gaia_dataframe(ids_in_query), "a" * 64, False
 
     with patch("earth2.data_sources.gaia._post_adql", side_effect=fake_post_adql):

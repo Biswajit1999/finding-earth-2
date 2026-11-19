@@ -156,7 +156,7 @@ def _chunk(seq: list[int], size: int) -> list[list[int]]:
 _SESSION = make_session()
 
 
-def _parse_tap_csv(payload: bytes, chunk_id: str) -> pd.DataFrame:
+def _parse_tap_csv(payload: bytes, chunk_id: str, source_ids: list[int]) -> pd.DataFrame:
     try:
         frame = pd.read_csv(io.BytesIO(payload), dtype={"source_id": "int64"})
     except ValueError as exc:
@@ -165,11 +165,16 @@ def _parse_tap_csv(payload: bytes, chunk_id: str) -> pd.DataFrame:
     if set(frame.columns) != set(GAIA_COLUMNS) or not isinstance(frame.index, pd.RangeIndex):
         preview = payload[:240].decode("utf-8", "replace")
         raise ArchiveError(f"{chunk_id}: unexpected Gaia TAP CSV structure; response starts {preview!r}")
+    returned_ids = frame["source_id"]
+    if not returned_ids.is_unique or not returned_ids.isin(source_ids).all():
+        raise ArchiveError(f"{chunk_id}: Gaia TAP returned duplicate or unrequested source IDs")
     return frame
 
 
-def _post_adql(chunk_id: str, adql: str, use_cache: bool) -> tuple[pd.DataFrame, str, bool]:
-    """POST one ADQL query to Gaia's TAP service, cached by ``chunk_id``.
+def _post_adql(
+    chunk_id: str, adql: str, use_cache: bool, source_ids: list[int],
+) -> tuple[pd.DataFrame, str, bool]:
+    """POST one ADQL query to Gaia's TAP service, cached by its query hash.
 
     Gaia's TAP endpoint rejects a GET whose query string exceeds its URL-length
     limit well before a few hundred 19-digit source_ids fit in an ``IN (...)``
@@ -179,13 +184,14 @@ def _post_adql(chunk_id: str, adql: str, use_cache: bool) -> tuple[pd.DataFrame,
     cannot reuse :func:`earth2.data_sources.base.fetch_csv`, which is GET-only,
     though it reuses that module's cache primitives directly.
     """
+    cache_key = f"{chunk_id}_{sha256_bytes(adql.encode('utf-8'))}"
     if use_cache:
-        age = cache_age_hours(chunk_id)
+        age = cache_age_hours(cache_key)
         if age is not None and age <= CACHE_MAX_AGE_HOURS:
             try:
-                payload = read_cache(chunk_id)
+                payload = read_cache(cache_key)
                 if payload is not None:
-                    return _parse_tap_csv(payload, chunk_id), sha256_bytes(payload), True
+                    return _parse_tap_csv(payload, chunk_id, source_ids), sha256_bytes(payload), True
             except (ArchiveError, EOFError, OSError):
                 pass  # Re-fetch invalid or incomplete cached responses.
 
@@ -202,11 +208,11 @@ def _post_adql(chunk_id: str, adql: str, use_cache: bool) -> tuple[pd.DataFrame,
         else:
             if r.status_code == 200:
                 try:
-                    frame = _parse_tap_csv(r.content, chunk_id)
+                    frame = _parse_tap_csv(r.content, chunk_id, source_ids)
                 except ArchiveError as exc:
                     last_exc = exc
                 else:
-                    write_cache(chunk_id, r.content)
+                    write_cache(cache_key, r.content)
                     return frame, sha256_bytes(r.content), False
             else:
                 error = ArchiveError(f"HTTP {r.status_code} from Gaia TAP: {r.text[:300]}")
@@ -259,7 +265,7 @@ def fetch_gaia_crossmatch(
         id_list = ", ".join(str(s) for s in chunk)
         adql = f"select {cols} from {GAIA_SOURCE_TABLE} where source_id in ({id_list})"
         chunk_id = f"{dataset_id}_chunk{i:04d}"
-        df, digest, from_cache = _post_adql(chunk_id, adql, use_cache)
+        df, digest, from_cache = _post_adql(chunk_id, adql, use_cache, chunk)
         frames.append(df)
         chunk_digests.append(digest)
         any_from_cache = any_from_cache or from_cache
