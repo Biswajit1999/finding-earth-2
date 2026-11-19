@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import gzip
 import io
+import tempfile
 import time
 from dataclasses import dataclass
 from pathlib import Path
@@ -79,8 +80,15 @@ def read_cache(dataset_id: str) -> bytes | None:
 def write_cache(dataset_id: str, payload: bytes) -> Path:
     RAW_DIR.mkdir(parents=True, exist_ok=True)
     p = _cache_path(dataset_id)
-    with gzip.open(p, "wb", compresslevel=6) as fh:
-        fh.write(payload)
+    with tempfile.NamedTemporaryFile(dir=RAW_DIR, delete=False) as staging:
+        temporary_path = Path(staging.name)
+    try:
+        with gzip.open(temporary_path, "wb", compresslevel=6) as fh:
+            fh.write(payload)
+        # Readers and concurrent writers see complete cache files only.
+        temporary_path.replace(p)
+    finally:
+        temporary_path.unlink(missing_ok=True)
     return p
 
 
