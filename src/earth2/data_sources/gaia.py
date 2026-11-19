@@ -56,6 +56,7 @@ import time
 from typing import Any
 
 import pandas as pd
+import requests
 
 from earth2 import __version__
 from earth2.config import CACHE_MAX_AGE_HOURS, HTTP_BACKOFF, HTTP_RETRIES, HTTP_TIMEOUT
@@ -155,6 +156,18 @@ def _chunk(seq: list[int], size: int) -> list[list[int]]:
 _SESSION = make_session()
 
 
+def _parse_tap_csv(payload: bytes, chunk_id: str) -> pd.DataFrame:
+    try:
+        frame = pd.read_csv(io.BytesIO(payload), dtype={"source_id": "int64"})
+    except ValueError as exc:
+        preview = payload[:240].decode("utf-8", "replace")
+        raise ArchiveError(f"{chunk_id}: invalid Gaia TAP CSV ({exc}); response starts {preview!r}") from exc
+    if set(frame.columns) != set(GAIA_COLUMNS) or not isinstance(frame.index, pd.RangeIndex):
+        preview = payload[:240].decode("utf-8", "replace")
+        raise ArchiveError(f"{chunk_id}: unexpected Gaia TAP CSV structure; response starts {preview!r}")
+    return frame
+
+
 def _post_adql(chunk_id: str, adql: str, use_cache: bool) -> tuple[pd.DataFrame, str, bool]:
     """POST one ADQL query to Gaia's TAP service, cached by ``chunk_id``.
 
@@ -166,40 +179,43 @@ def _post_adql(chunk_id: str, adql: str, use_cache: bool) -> tuple[pd.DataFrame,
     cannot reuse :func:`earth2.data_sources.base.fetch_csv`, which is GET-only,
     though it reuses that module's cache primitives directly.
     """
-    payload: bytes | None = None
-    from_cache = False
     if use_cache:
         age = cache_age_hours(chunk_id)
         if age is not None and age <= CACHE_MAX_AGE_HOURS:
-            payload = read_cache(chunk_id)
-            from_cache = payload is not None
-
-    if payload is None:
-        last_exc: Exception | None = None
-        for attempt in range(HTTP_RETRIES):
             try:
-                r = _SESSION.post(
-                    GAIA_TAP_SYNC,
-                    data={"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "csv", "QUERY": adql},
-                    timeout=HTTP_TIMEOUT,
-                )
-                if r.status_code == 200:
-                    payload = r.content
-                    break
-                if r.status_code in (429, 500, 502, 503, 504):
-                    last_exc = ArchiveError(f"HTTP {r.status_code} from Gaia TAP: {r.text[:300]}")
-                else:
-                    raise ArchiveError(f"HTTP {r.status_code} from Gaia TAP: {r.text[:600]}")
-            except Exception as exc:  # noqa: BLE001 -- retried below, re-raised after
-                last_exc = exc
-            if attempt < HTTP_RETRIES - 1:
-                time.sleep(HTTP_BACKOFF * (2**attempt))
-        if payload is None:
-            raise ArchiveError(f"Gaia TAP POST failed after {HTTP_RETRIES} attempts: {last_exc}")
-        write_cache(chunk_id, payload)
+                payload = read_cache(chunk_id)
+                if payload is not None:
+                    return _parse_tap_csv(payload, chunk_id), sha256_bytes(payload), True
+            except (ArchiveError, EOFError, OSError):
+                pass  # Re-fetch invalid or incomplete cached responses.
 
-    df = pd.read_csv(io.BytesIO(payload))
-    return df, sha256_bytes(payload), from_cache
+    last_exc: Exception | None = None
+    for attempt in range(HTTP_RETRIES):
+        try:
+            r = _SESSION.post(
+                GAIA_TAP_SYNC,
+                data={"REQUEST": "doQuery", "LANG": "ADQL", "FORMAT": "csv", "QUERY": adql},
+                timeout=HTTP_TIMEOUT,
+            )
+        except (requests.Timeout, requests.ConnectionError) as exc:
+            last_exc = exc
+        else:
+            if r.status_code == 200:
+                try:
+                    frame = _parse_tap_csv(r.content, chunk_id)
+                except ArchiveError as exc:
+                    last_exc = exc
+                else:
+                    write_cache(chunk_id, r.content)
+                    return frame, sha256_bytes(r.content), False
+            else:
+                error = ArchiveError(f"HTTP {r.status_code} from Gaia TAP: {r.text[:300]}")
+                if r.status_code not in (429, 500, 502, 503, 504, 525):
+                    raise error
+                last_exc = error
+        if attempt < HTTP_RETRIES - 1:
+            time.sleep(HTTP_BACKOFF * (2**attempt))
+    raise ArchiveError(f"{chunk_id}: Gaia TAP POST failed after {HTTP_RETRIES} attempts: {last_exc}") from last_exc
 
 
 def fetch_gaia_crossmatch(

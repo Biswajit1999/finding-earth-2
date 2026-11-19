@@ -8,12 +8,15 @@ even though it issues several HTTP requests under the hood.
 
 from __future__ import annotations
 
-from unittest.mock import patch
+from types import SimpleNamespace
+from unittest.mock import Mock, patch
 
 import numpy as np
 import pandas as pd
 import pytest
 
+from earth2.data_sources import gaia
+from earth2.data_sources.base import ArchiveError
 from earth2.data_sources.gaia import (
     GAIA_COLUMNS,
     crossmatch_summary,
@@ -21,6 +24,7 @@ from earth2.data_sources.gaia import (
     fetch_gaia_crossmatch,
     hosts_with_gaia_ids,
 )
+from earth2.provenance import sha256_bytes
 
 
 def test_extract_source_id_parses_the_archives_string_format():
@@ -76,6 +80,60 @@ def _fake_gaia_dataframe(source_ids):
         "radial_velocity": [0.0] * len(source_ids),
         "radial_velocity_error": [0.5] * len(source_ids),
     })
+
+
+def test_tap_retries_invalid_success_response_and_caches_only_valid_csv(monkeypatch):
+    source_id = 4919009555730599937  # Beyond float64's exact integer range.
+    valid = _fake_gaia_dataframe([source_id]).to_csv(index=False).encode()
+    error_page = b'<html>\n<head>Gaia TAP unavailable</head>\n<body>Error, retry</body>\n</html>'
+    post = Mock(side_effect=[
+        SimpleNamespace(status_code=200, content=error_page),
+        SimpleNamespace(status_code=200, content=valid),
+    ])
+    cache_write = Mock()
+    monkeypatch.setattr(gaia._SESSION, "post", post)
+    monkeypatch.setattr(gaia.time, "sleep", Mock())
+    monkeypatch.setattr(gaia, "write_cache", cache_write)
+
+    frame, digest, from_cache = gaia._post_adql("test_chunk", "select ...", False)
+
+    assert frame["source_id"].tolist() == [source_id]
+    assert digest == sha256_bytes(valid)
+    assert not from_cache
+    assert post.call_count == 2
+    cache_write.assert_called_once_with("test_chunk", valid)
+
+
+def test_tap_replaces_invalid_cache_with_valid_empty_result(monkeypatch):
+    valid = (",".join(GAIA_COLUMNS) + "\n").encode()
+    post = Mock(return_value=SimpleNamespace(status_code=200, content=valid))
+    cache_write = Mock()
+    monkeypatch.setattr(gaia._SESSION, "post", post)
+    monkeypatch.setattr(gaia, "cache_age_hours", lambda _: 0)
+    monkeypatch.setattr(gaia, "read_cache", lambda _: b"<html>Unavailable</html>")
+    monkeypatch.setattr(gaia, "write_cache", cache_write)
+
+    frame, _, from_cache = gaia._post_adql("test_chunk", "select ...", True)
+
+    assert frame.empty
+    assert list(frame.columns) == GAIA_COLUMNS
+    assert not from_cache
+    post.assert_called_once()
+    cache_write.assert_called_once_with("test_chunk", valid)
+
+
+def test_tap_does_not_cache_permanent_invalid_success_responses(monkeypatch):
+    post = Mock(return_value=SimpleNamespace(status_code=200, content=b"unavailable\n"))
+    cache_write = Mock()
+    monkeypatch.setattr(gaia._SESSION, "post", post)
+    monkeypatch.setattr(gaia.time, "sleep", Mock())
+    monkeypatch.setattr(gaia, "write_cache", cache_write)
+
+    with pytest.raises(ArchiveError, match="test_chunk.*unexpected Gaia TAP CSV structure"):
+        gaia._post_adql("test_chunk", "select ...", False)
+
+    assert post.call_count == gaia.HTTP_RETRIES
+    cache_write.assert_not_called()
 
 
 def test_fetch_gaia_crossmatch_combines_chunks_into_one_manifest(tmp_path, monkeypatch):
