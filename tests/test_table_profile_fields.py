@@ -4,7 +4,6 @@ from importlib import import_module
 from pathlib import Path
 
 
-
 def test_profiles_preserve_coverage_and_only_show_ranges_for_numeric_columns(monkeypatch):
     monkeypatch.syspath_prepend(str(Path(__file__).resolve().parents[1] / 'scripts'))
     profile_table = import_module('profile_evidence_tables').profile_table
