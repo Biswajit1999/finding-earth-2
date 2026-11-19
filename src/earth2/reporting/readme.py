@@ -115,7 +115,11 @@ def build_readme(summary: dict[str, Any]) -> str:
 
 **A reproducible, data-driven search for potentially Earth-like worlds across the public astronomical archives.**
 
-## Project tour and latest research snapshot
+## Project tour and research snapshot
+
+- [Explore individual planet records](https://biswajit1999.github.io/finding-earth-2/) in the interactive observatory.
+- [Inspect how Kepler selection changes the population estimate](results/population/dr25_observed_vs_intrinsic.png) and [download the selection grid](results/population/dr25_selection_surface.csv).
+- [Compare the committed catalogue summary](results/analysis_summary.json) with [the frozen v2.1.2 data release](earth2-v2-data-release/).
 
 <p align="center">
   <a href="media/finding-earth-2-project.mp4">
