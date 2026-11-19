@@ -15,9 +15,13 @@ def test_release_policy_excludes_archive_tables() -> None:
 
 def test_generated_macros_are_sourced_and_complete() -> None:
     macros = publication.latex_macros()
-    assert "\\newcommand{\\TotalSourceRecords}{164,209}" in macros
-    assert "\\newcommand{\\OccurrenceMedian}{0.692}" in macros
-    assert "\\newcommand{\\VenusESI}{0.874}" in macros
+    summary = publication.load("results/analysis_summary.json")
+    story = publication.load("results/population/dr25_observed_vs_intrinsic.json")
+    falsification = publication.load("results/falsification/falsification_summary.json")
+    assert f'\\newcommand{{\\TotalSourceRecords}}{{{summary["scale"]["total_source_records"]:,}}}' in macros
+    median = story["intrinsic_posterior"]["full_fixed_box"]["p50"]
+    assert f"\\newcommand{{\\OccurrenceMedian}}{{{median:.3f}}}" in macros
+    assert f'\\newcommand{{\\VenusESI}}{{{falsification["venus_esi"]:.3f}}}' in macros
     assert "% Source commit:" in macros
 
 
