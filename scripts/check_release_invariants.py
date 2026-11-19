@@ -353,11 +353,15 @@ def main() -> int:
     continuous = json.loads((climate_dir / "continuous_hz.json").read_text())
     continuous_records = continuous["records"]
     inferred_hz = [row for row in continuous_records if row["status"] == "inferred"]
+    catalogue_names = set(ranking.loc[~is_control, "pl_name"]) if is_control is not None else set()
+    climate_names = {row["pl_name"] for row in continuous_records}
     check(
         "continuous-HZ product preserves model label and full catalogue accounting",
         continuous["label"] == "MODEL-INFERRED"
-        and continuous["population"]["confirmed_planets_evaluated"] == 6354
-        and len(continuous_records) == 6354
+        and 0 < len(continuous_records) == len(climate_names)
+        == continuous["population"]["confirmed_planets_evaluated"]
+        == summary["population"]["n_confirmed_planets"]
+        and climate_names == catalogue_names
         and len(inferred_hz) == continuous["population"]["inferred"],
     )
     continuous_probabilities = [
@@ -672,29 +676,22 @@ def main() -> int:
             for scenario in hwo["instrument_scenarios"]
         ),
     )
+    forecast_counts = hwo["known_planet_forecast"]
+    scenarios = {scenario["name"] for scenario in hwo["instrument_scenarios"]}
+    probability = known_planet_forecast["p_observable"]
+    msini = known_planet_forecast["mass_class"].eq("msini_lower_limit")
+    deprojected = known_planet_forecast.loc[msini & known_planet_forecast["true_mass_scenario_p50"].notna()]
     check(
         "known-planet imaging forecasts retain M sin i as a separate quantity",
-        len(known_planet_forecast) == 744 * 3
-        and known_planet_forecast["pl_name"].nunique() == 744
-        and known_planet_forecast["hostname"].nunique() == 464
-        and known_planet_forecast["p_observable"].dropna().between(0, 1).all()
-        and known_planet_forecast.loc[
-            known_planet_forecast["mass_class"].eq("msini_lower_limit"),
-            "pl_name",
-        ].nunique()
-        == 406
-        and (
-            known_planet_forecast.loc[
-                known_planet_forecast["mass_class"].eq("msini_lower_limit")
-                & known_planet_forecast["true_mass_scenario_p50"].notna(),
-                "true_mass_scenario_p50",
-            ]
-            >= known_planet_forecast.loc[
-                known_planet_forecast["mass_class"].eq("msini_lower_limit")
-                & known_planet_forecast["true_mass_scenario_p50"].notna(),
-                "minimum_mass_earth",
-            ]
-        ).all(),
+        0 < forecast_counts["matched_planets"] == known_planet_forecast["pl_name"].nunique()
+        and forecast_counts["matched_hosts"] == known_planet_forecast["hostname"].nunique()
+        and set(known_planet_forecast["scenario"]) == scenarios
+        and len(known_planet_forecast) == forecast_counts["matched_planets"] * len(scenarios)
+        and not known_planet_forecast.duplicated(["pl_name", "scenario"]).any()
+        and probability.dropna().between(0, 1).all()
+        and known_planet_forecast.loc[probability.notna(), "pl_name"].nunique() == forecast_counts["supported_planets"]
+        and 0 < known_planet_forecast.loc[msini, "pl_name"].nunique() == forecast_counts["msini_planets_deprojected"]
+        and deprojected["true_mass_scenario_p50"].ge(deprojected["minimum_mass_earth"]).all(),
     )
     hwo_manifest = json.loads((hwo_dir / "hwo_products.json").read_text())
     hwo_hashes_match = all(
