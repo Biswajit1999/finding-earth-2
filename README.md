@@ -544,3 +544,18 @@ for required acknowledgements.
 ## Author
 
 **Biswajit Jana** — [github.com/Biswajit1999](https://github.com/Biswajit1999)
+
+## Research evidence and downloads
+
+- [Download the machine-readable table profiles](evidence/table-profiles.json) for 4 archived tables. Open `table-evidence.html` from the checkout for the coverage chart.
+- Start with [Analysis summary](results/analysis_summary.json), [Candidate identifiers](results/candidate_identifiers.csv), [Candidate ranking](results/candidate_ranking.csv).
+- [View Earth analogue spectrum screen](results/atmosphere/earth_analogue_spectrum_screen.png).
+
+Run these commands from the repository root to rebuild the published evidence.
+
+```sh
+python scripts/evidence_catalog.py
+python scripts/render_evidence_page.py
+python scripts/profile_evidence_tables.py
+python scripts/render_table_profiles.py
+```
