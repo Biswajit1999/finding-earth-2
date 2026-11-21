@@ -1,28 +1,28 @@
 {
   "files": {
     "results/atmosphere/atmosphere_evidence.json": {
-      "bytes": 345225,
-      "sha256": "ecc2d20540883ef1c035c1de38078a45f2e98fbe0a6898ed1c5b4d229cfb1140"
+      "bytes": 345217,
+      "sha256": "58c1faa4bba120a6343f810f4f59a833047cd9ad8bc517d6ce7aa18c0b8f38cb"
     },
     "results/atmosphere/observability_scenarios.csv": {
       "bytes": 19928,
-      "sha256": "edf93711c6828b70acfde9e8cdf5413a285c17bf48b71ab1bfaf1be653152261"
+      "sha256": "f41cad00e163fde4f7c7401c7a971a3abf7c038166175f93eb8b80a515c8767c"
     },
     "results/atmosphere/spectrum_measurements.csv.gz": {
-      "bytes": 174708,
-      "sha256": "c49d89a05a37f032d1bc0a8dabb945ec4a667226339564d3984b07fbdee953fe"
+      "bytes": 174700,
+      "sha256": "c1ed1ca2cd427c4da8967d3f628191307be4e46a920d9217bd3e85bcba19aeb2"
     },
     "results/atmosphere/spectrum_reductions.csv": {
-      "bytes": 565058,
-      "sha256": "6324966e2af9e6b856e40fb47b75b14d7eb9c587089d94eb4a54e3ddbbac061a"
+      "bytes": 589122,
+      "sha256": "4634554fe681808ce67e523f0760ecb6db72caad36f0b7a6cd9a69c7566c7ca3"
     },
     "results/atmosphere/transmission_observability.png": {
-      "bytes": 203420,
-      "sha256": "7df9986353e81e601b56168465d364468e9c185b9a9ce657943af21281e58571"
+      "bytes": 203416,
+      "sha256": "e83582dbd6b064c1860113d928aaceb53ec0949d9e6687d3588fff30cd4f0b02"
     },
     "results/atmosphere/transmission_observability.svg": {
-      "bytes": 99740,
-      "sha256": "2f6647987d5546d720ee6565cd7bfc52e4563b492194cdd2574f230489211ce7"
+      "bytes": 99772,
+      "sha256": "ab769137a6a1db57678c6d80aab39a7b4f5ee5adbdd1e8088512766410158483"
     }
   },
   "product": "Phase 9 atmospheric signal and spectrum evidence architecture",
