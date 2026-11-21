@@ -35,20 +35,20 @@
     },
     {
       "stage": "shape-weighted exposure",
-      "value": 78.27805927355968,
+      "value": 78.2780592735601,
       "interval": [
-        29.12159709226845,
-        184.7672114887792
+        29.121597092269127,
+        184.76721148877942
       ],
       "unit": "effective stars",
       "label": "MODEL-INFERRED"
     },
     {
       "stage": "intrinsic occurrence",
-      "value": 0.6920518850791126,
+      "value": 0.6920518850791042,
       "interval": [
-        0.26686720405933745,
-        1.918078759592883
+        0.26686720405933595,
+        1.9180787595928461
       ],
       "unit": "planets per selected star",
       "label": "MODEL-INFERRED"
@@ -57,8 +57,8 @@
   "observed_rates_for_explanation_only": {
     "raw_candidate_entries_per_selected_star": 0.0007799833486700846,
     "mean_imputed_valid_candidates_per_selected_star": 0.0004730263061799804,
-    "intrinsic_to_raw_catalogue_ratio": 887.2649477185635,
-    "intrinsic_to_reliability_adjusted_observed_ratio": 1463.0304404588353,
+    "intrinsic_to_raw_catalogue_ratio": 887.2649477185525,
+    "intrinsic_to_reliability_adjusted_observed_ratio": 1463.0304404588176,
     "warning": "These ratios explain scale; neither is the estimator. The posterior integrates target-specific selection over period-radius shape."
   },
   "earth_pivot_visibility": {
@@ -76,12 +76,12 @@
   },
   "intrinsic_posterior": {
     "full_fixed_box": {
-      "p025": 0.26686720405933745,
-      "p16": 0.4115480794499355,
-      "p50": 0.6920518850791126,
-      "p84": 1.2091864252833837,
-      "p975": 1.918078759592883,
-      "mean": 0.8037841969295202
+      "p025": 0.26686720405933595,
+      "p16": 0.4115480794499343,
+      "p50": 0.6920518850791042,
+      "p84": 1.2091864252833622,
+      "p975": 1.9180787595928461,
+      "mean": 0.803784196929509
     },
     "period_slope_alpha": {
       "p025": -0.4500000000000002,
@@ -100,28 +100,28 @@
       "mean": -0.7015000000000003
     },
     "gamma_earth_per_dlnp_dlnr": {
-      "p025": 0.05715898011316748,
-      "p16": 0.12077466643156083,
-      "p50": 0.24624151516592496,
-      "p84": 0.46685618456510475,
-      "p975": 0.781358339184218,
-      "mean": 0.2933146846444303
+      "p025": 0.05715898011316747,
+      "p16": 0.12077466643155994,
+      "p50": 0.24624151516592274,
+      "p84": 0.46685618456510175,
+      "p975": 0.7813583391842095,
+      "mean": 0.2933146846444263
     },
     "hsu_box_projection": {
-      "p025": 0.03114211541719711,
-      "p16": 0.06223796154682781,
-      "p50": 0.12213536243194935,
-      "p84": 0.2273747019006549,
-      "p975": 0.3755984216579548,
-      "mean": 0.1447072885296957
+      "p025": 0.031142115417197157,
+      "p16": 0.06223796154682769,
+      "p50": 0.1221353624319477,
+      "p84": 0.22737470190065043,
+      "p975": 0.3755984216579508,
+      "mean": 0.14470728852969378
     },
     "earth_20_percent_box_projection": {
-      "p025": 0.009594908780307465,
-      "p16": 0.020077580589591738,
-      "p50": 0.04107453752824276,
-      "p84": 0.07932116609139071,
-      "p975": 0.1321801703824754,
-      "mean": 0.04939850738061658
+      "p025": 0.009594908780307212,
+      "p16": 0.020077580589591394,
+      "p50": 0.04107453752824218,
+      "p84": 0.07932116609138981,
+      "p975": 0.1321801703824742,
+      "mean": 0.049398507380615894
     }
   },
   "story_steps": [
@@ -148,9 +148,9 @@
   ],
   "claim_boundary": "This is a fixed period-radius occurrence result. It is not a probability of habitability, biology or a star-dependent habitable-zone eta Earth.",
   "source_hashes": {
-    "occurrence_posterior": "a496be75beb622329155fd662e06ddd1192a437e86609322d5f02076f7ec5eb7",
-    "selection_surface": "4b463e17beb9c875c9fd4b49c42fd4a1fd0d87c9b3662d72f113005b198ff6de",
-    "candidate_reliability": "81ec878c19830a49b4f5b5335a4008c6ef05948cdcf546c61585e5546697bf39",
+    "occurrence_posterior": "ea1f047c076b7e7521459efd543da73c50e0cc1165f804fe170dbbace9859f3f",
+    "selection_surface": "cdd343bc3fc76b55888f89236a00ea94424e8efd742d1b733cb0aedd07903ecd",
+    "candidate_reliability": "6b35ba127868ccac50a4a7b4c1e160891890f3aafdd99c5d747d834ea8ad4fcc",
     "builder": "798737f5367c8ddee1aa9f400ddf37aeb93eca50e9bb0701f692b0e4d9f0611d"
   }
 }
